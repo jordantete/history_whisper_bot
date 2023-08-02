@@ -4,13 +4,15 @@ from typing import List
 from historical_figure import HistoricalFigure
 from utils import Utils
 
+TELEGRAM_BOT_TOKEN = Utils.get_environment_varibale("TELEGRAM_BOT_TOKEN")
+
 class Bot:
     def __init__(self):
-        self.bot = telebot.TeleBot(os.environ['TELEGRAM_BOT_TOKEN'])
+        self.bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
         self.database = Database()
 
     def send_daily_message(self):
-        figure = self.pick_random_figure()
+        figure = self.database.get_random_figure()
         message = f"{figure.name}\n{figure.description}"
         self.send_message("CHAT_ID", message)
     

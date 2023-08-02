@@ -1,27 +1,17 @@
 import os, psycopg2, random
 from historical_figure import HistoricalFigure
 from typing import List
+from logger import LOGGER
 
 class Database:
     def __init__(self):
-        self.conn = psycopg2.connect(
-            host=os.environ['DB_HOST'],
-            database=os.environ['DB_NAME'],
-            user=os.environ['DB_USER'],
-            password=os.environ['DB_PASSWORD']
-        )
+        LOGGER.info("init DB")
+        #self.conn = psycopg2.connect(host=os.environ['DB_HOST'], database=os.environ['DB_NAME'], user=os.environ['DB_USER'], password=os.environ['DB_PASSWORD'])
 
     def get_all_figures(self) -> List[HistoricalFigure]:
-        figures = []
-        with self.conn.cursor() as cur:
-            cur.execute("SELECT name, description FROM historical_figures")
-            rows = cur.fetchall()
-            for row in rows:
-                figure = HistoricalFigure(row[0], row[1])
-                figures.append(figure)
-        return figures
+        return self.historical_figures
     
-    def get_random_figures(self):
+    def get_random_figure(self):
         figures = self.get_all_figures()
         index = random.randint(0, len(figures)-1)
         return figures[index]

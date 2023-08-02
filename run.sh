@@ -1,5 +1,7 @@
-pip install pyTelegramBotAPI psycopg2-binary
+pip install pyTelegramBotAPI 
+pip install psycopg2-binary 
+pip install loguru
 
-python entrypoint.py
+python main.py
 
 serverless deploy

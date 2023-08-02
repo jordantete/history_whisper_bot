@@ -2,10 +2,10 @@ import os, json
 from logger import LOGGER
 
 class Utils:
-    @staticmethod
-    def get_environment_varibale(env_var: str):
+    @classmethod
+    def get_environment_varibale(self, env_var: str):
         if os.path.exists("secrets.json"):
-            secrets = read_secrets()
+            secrets = self.__read_secrets()
             return secrets[env_var]
         else:
             try:
@@ -14,8 +14,7 @@ class Utils:
             except KeyError:
                 LOGGER.error(f"Environment variable: {env_var} not found")
 
-    @staticmethod
-    def read_secrets() -> dict:
+    def __read_secrets() -> dict:
         filename = os.path.join("secrets.json")
         try:
             with open(filename, mode="r") as f:
