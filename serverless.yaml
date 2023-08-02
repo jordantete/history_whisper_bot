@@ -1,0 +1,34 @@
+service: telegram-bot-historical-figures
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: eu-west-3
+  environment:
+    TELEGRAM_BOT_TOKEN: ${env:TELEGRAM_BOT_TOKEN}
+    DB_HOST: ${env:DB_HOST}
+    DB_NAME: ${env:DB_NAME}
+    DB_USER: ${env:DB_USER}
+    DB_PASSWORD: ${env:DB_PASSWORD}
+
+functions:
+  telegramBotForHistoricalFigures:
+    handler: entrypoint.handler
+    events:
+        - eventBridge:
+          schedule: rate(1 day)
+
+resources:
+  Resources:
+    TelegramBotDatabase:
+      Type: AWS::RDS::DBInstance
+      Properties:
+        DBInstanceIdentifier: telegram-bot-db
+        AllocatedStorage: 20
+        DBInstanceClass: db.t2.micro
+        Engine: postgres
+        EngineVersion: "11.5"
+        MasterUsername: ${env:DB_USER}
+        MasterUserPassword: ${env:DB_PASSWORD}
+        DBName: ${env:DB_NAME}
+        PubliclyAccessible: false
