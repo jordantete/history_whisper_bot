@@ -1,4 +1,4 @@
-import os, psycopg2, random
+import os, random
 from historical_figure import HistoricalFigure
 from typing import List
 from logger import LOGGER

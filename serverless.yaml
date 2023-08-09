@@ -5,18 +5,24 @@ provider:
   runtime: python3.9
   stage: dev
   region: eu-west-3
+  versionFunctions: false
   environment:
     TELEGRAM_BOT_TOKEN: ${env:TELEGRAM_BOT_TOKEN}
 
 functions:
-  historicalFiguresTelegramBot:
+  webhook:
     handler: main.main
     events:
-        - eventBridge:
-          schedule: rate(1 day)
-    timeout: 60 # seconds
+      - http:
+          path: /
+          method: POST
+          cors: true
+    timeout: 30 # seconds
     memorySize: 256 # mb
-    description: historical-figures-whisper-bot
+    description: webhook to trigger the Historical Figures Whisper Telegram Bot
 
 package:
   individually: true
+
+plugins:
+  - serverless-python-requirements
