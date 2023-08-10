@@ -20,6 +20,7 @@ var/
 .installed.cfg
 *.egg
 node_modules
+.serverless/
 
 # Installer logs
 pip-log.txt

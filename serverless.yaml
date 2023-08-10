@@ -11,7 +11,7 @@ provider:
 
 functions:
   webhook:
-    handler: main.main
+    handler: main.lambda_handler
     events:
       - http:
           path: /

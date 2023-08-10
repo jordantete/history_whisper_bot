@@ -1,60 +1,54 @@
-import os, random, logging, json, telegram
 from database import Database
 from typing import List
 from historical_figure import HistoricalFigure
 from utils import Utils
 from logger import LOGGER
-from asyncio import run
+import asyncio, json
+from telegram import Update
+from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
 
 TELEGRAM_BOT_TOKEN = Utils.get_environment_varibale("TELEGRAM_BOT_TOKEN")
-OK_RESPONSE = {'statusCode': 200, 'headers': {'Content-Type': 'application/json'}, 'body': json.dumps('ok')}
-ERROR_RESPONSE = {'statusCode': 400, 'body': json.dumps('Oops, something went wrong!')}
 
 class Bot:
     def __init__(self, database: Database):
-        self.bot = telegram.Bot(TELEGRAM_BOT_TOKEN)
+        self.application = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
         self.database = database
     
-    async def __send_message(self, chat_id: str, text: str):
-        await self.bot.sendMessage(chat_id=chat_id, text=text)
-    
-    def start(self, event):
-        LOGGER.info("Bot started")
-        LOGGER.info('Event: {}'.format(event))
+    async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Start handler command called")
+        text = "Welcome to the Historical Figures Bot!"
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
-        if event.get('requestContext', {}).get('httpMethod') == 'POST' and event.get('body'): 
-            LOGGER.info('Message received')
-            update = telegram.Update.de_json(json.loads(event.get('body')), self.bot)
-            chat_id = update.message.chat.id
-            message = update.message.text
-            self.__hendle_input_messages(chat_id=chat_id, message=message)
-            LOGGER.info(f'Message sent to: chatID: {chat_id} - text: {message}')
-            return OK_RESPONSE
-        else:
-            LOGGER.error('An error occured')
-            return ERROR_RESPONSE
-    
-    def __hendle_input_messages(self, chat_id: str, message: str):
-        if message == '/start':
-            LOGGER.info("Handle start message")
-            text = "Welcome to the Historical Figure Bot!"
-            run(self.__send_message(chat_id=chat_id, text=text))
-        elif message == '/help':
-            LOGGER.info("Handle help message")
-            text = "This is an helpful message ;)"
-            run(self.__send_message(chat_id=chat_id, text=text))
-        elif message == '/new_figure':
-            LOGGER.info("Handle new_figure message")
-            self.__handle_new_figure_message(chat_id=chat_id)
-        else:
-            LOGGER.info("Unknown message received")
-            text = "Please enter a valid command"
-            run(self.__send_message(chat_id=chat_id, text=text))
+    async def __help_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Help handler command called")
+        text = "This is an helpful message ;)"
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
-    def __handle_new_figure_message(self, chat_id: str):
+    async def __new_figure_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Help handler command called")
         historical_figure = self.database.get_random_figure()
         if historical_figure:
             text = f"{historical_figure.name}\n{historical_figure.description}"
-            run(self.__send_message(chat_id=chat_id, text=text))
+            await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
         else:
-            run(self.__send_message(chat_id=chat_id, text=text))
+            await context.bot.send_message(chat_id=update.effective_chat.id, text="No figures found :'()")
+    
+    async def start(self, event):
+        LOGGER.info('Bot started with Event: {}'.format(event))
+
+        start_handler = CommandHandler('start', self.__start_handler)
+        self.application.add_handler(start_handler)
+
+        help_handler = CommandHandler('help', self.__help_handler)
+        self.application.add_handler(help_handler)
+
+        new_figure_handler = CommandHandler('new_figure', self.__new_figure_handler)
+        self.application.add_handler(new_figure_handler)
+        
+        LOGGER.info("App initialize")
+        await self.application.initialize()
+        await self.application.process_update(Update.de_json(json.loads(event["body"]), self.application.bot))
+        await self.application.shutdown()
+        LOGGER.info("App shutdown")
+
+
