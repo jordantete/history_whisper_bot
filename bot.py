@@ -25,7 +25,7 @@ class Bot:
         await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
     async def __new_figure_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        LOGGER.info("Help handler command called")
+        LOGGER.info("New figure handler command called")
         historical_figure = self.database.get_random_figure()
         if historical_figure:
             text = f"{historical_figure.name}\n{historical_figure.description}"
