@@ -1,7 +1,7 @@
 import asyncio, json
-from bot import Bot
-from database import Database
-from logger import LOGGER
+from src.bot import Bot
+from src.database import Database
+from src.logger import LOGGER
 
 OK_RESPONSE = {'statusCode': 200, 'headers': {'Content-Type': 'application/json'}, 'body': json.dumps('ok')}
 ERROR_RESPONSE = {'statusCode': 400, 'body': json.dumps('Oops, something went wrong!')}

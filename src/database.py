@@ -1,7 +1,7 @@
 import os, random
 from typing import List
-from historical_figure import HistoricalFigure
-from logger import LOGGER
+from src.historical_figure import HistoricalFigure
+from src.logger import LOGGER
 
 class Database:
     def __init__(self):

@@ -1,5 +1,5 @@
 import os, json
-from logger import LOGGER
+from src.logger import LOGGER
 
 class Utils:
     @classmethod

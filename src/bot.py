@@ -1,10 +1,10 @@
-from database import Database
-from historical_figure import HistoricalFigure
-from utils import Utils
-from logger import LOGGER
+from src.database import Database
+from src.historical_figure import HistoricalFigure
+from src.utils import Utils
+from src.logger import LOGGER
 from typing import List
-import asyncio, json
-from telegram import Update
+import asyncio, json, telegram
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
 TELEGRAM_BOT_TOKEN = Utils.get_environment_varibale("TELEGRAM_BOT_TOKEN")
@@ -14,23 +14,23 @@ class Bot:
         self.application = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
         self.database = database
         self.localizable_strings = Utils.load_localizable_data()
-        self.selected_language = "fr"
+        self.selected_language = "en"
     
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
-        text = localize("start-message", self.selected_language, self.localizable_data)
-        buttons = MultiItems(text ["start", "help", "new_figure"])
-        options = []
+        text = Utils.localize("start-message", self.selected_language, self.localizable_strings)
+        buttons = [
+            InlineKeyboardButton("start", callback_data="start"),
+            InlineKeyboardButton("help", callback_data="help"),
+            InlineKeyboardButton("new_figure", callback_data="new_figure"),
+        ]
 
-        for item in buttons.items:
-            options.append(InlineKeyboardButton(item, callback_data=item))
-
-        reply_markup = InlineKeyboardMarkup([options])
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=buttons.message, reply_markup=reply_markup)
+        reply_markup = InlineKeyboardMarkup([buttons])
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=text, reply_markup=reply_markup)
 
     async def __help_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Help handler command called")
-        text = "This is an helpful message ;)"
+        text = Utils.localize("help-message", self.selected_language, self.localizable_strings)
         await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
     async def __new_figure_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
