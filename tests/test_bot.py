@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import patch, Mock
 from bot import Bot
 from database import Database
-from telegram.ext import ApplicationBuilder
+from telegram.ext import Application
 
 class TestBot(unittest.TestCase):
     def setUp(self):
@@ -10,7 +10,7 @@ class TestBot(unittest.TestCase):
         self.bot = Bot(database=self.mock_database)
 
     def test_init(self):
-        self.assertIsInstance(self.bot.application, ApplicationBuilder)
+        self.assertIsInstance(self.bot.application, Application)
         self.assertEqual(self.bot.database, self.mock_database)
     
     @patch('bot.Update')
