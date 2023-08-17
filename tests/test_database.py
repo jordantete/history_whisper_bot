@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, Mock
-from database import Database
-from historical_figure import HistoricalFigure
+from src.database import Database
+from src.historical_figure import HistoricalFigure
 
 class TestDatabase(unittest.TestCase):
     def setUp(self):

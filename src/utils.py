@@ -22,3 +22,15 @@ class Utils:
         except FileNotFoundError:
             LOGGER.error("File which handle secrets not found")
             return {}
+
+    def load_localizable_data(file_path="src/localizable.json"):
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+        return data
+
+    def localize(key, language, localizable_data):
+        if language in localizable_data and key in localizable_data[language]:
+            return localizable_data[language][key]
+        else:
+            LOGGER.error(f"Missing translation for '{key}' in '{language}'")
+            return ""

@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import Mock, patch
-from main import main, OK_RESPONSE, ERROR_RESPONSE
+from src.main import main, OK_RESPONSE, ERROR_RESPONSE
 from tests.mocks import MockBot, MockDatabase, MockLogger
 
 def mock_get_event_loop():
@@ -12,7 +12,7 @@ def mock_get_event_loop():
 async def test_main_successful_execution():
     mock_event = {"body": {"text": "Coucou"}}
 
-    with patch('main.Database', MockDatabase), patch('main.Bot', return_value=MockBot()), patch('main.LOGGER', MockLogger), patch('main.asyncio.get_event_loop', mock_get_event_loop):
+    with patch('src.main.Database', MockDatabase), patch('src.main.Bot', return_value=MockBot()), patch('src.main.LOGGER', MockLogger), patch('src.main.asyncio.get_event_loop', mock_get_event_loop):
         response = await main(event=mock_event)
 
     assert response == OK_RESPONSE
@@ -21,7 +21,7 @@ async def test_main_successful_execution():
 async def test_main_exception():
     mock_event = {"body": {"text": "Coucou"}}
 
-    with patch('main.Database', MockDatabase), patch('main.Bot', return_value=MockBot), patch('main.LOGGER', MockLogger), patch('main.asyncio.get_event_loop', mock_get_event_loop):
+    with patch('src.main.Database', MockDatabase), patch('src.main.Bot', return_value=MockBot), patch('src.main.LOGGER', MockLogger), patch('src.main.asyncio.get_event_loop', mock_get_event_loop):
         # Raise an exception to simulate an error
         MockBot.start.side_effect = Exception()
         response = await main(event=mock_event)

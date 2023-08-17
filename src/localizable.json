@@ -1,0 +1,12 @@
+{
+    "en": {
+        "start-message": "🌟 Greetings, dear history enthusiast! 🌟 📚 Welcome to the Historical Figures Whisper Bot, where the pages of the past come alive to inspire and enlighten you each day! 📜 Wishing you endless enlightenment and a deep connection with the echoes of the past, The Historical Figures Whisper Bot 🌌",
+        "help-message": "List of bot commands: - /start: ...",
+        "another-message": "Hello"
+    },
+    "fr": {
+        "start-message": "🌟 Salut salut salut! 🌌",
+        "help-message": "La liste des commandes de ce bot est la suivante: - /start: ...",
+        "another-message": "Bonjour"
+    }
+}

@@ -1,6 +1,6 @@
 import os, random
-from historical_figure import HistoricalFigure
 from typing import List
+from historical_figure import HistoricalFigure
 from logger import LOGGER
 
 class Database:
