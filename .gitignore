@@ -39,3 +39,7 @@ secrets.json
 
 # Conda
 conda_packages.txt
+
+# Editor / IDE
+.vscode/
+settings.json
