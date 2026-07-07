@@ -15,8 +15,9 @@ def test_resolve_locale_falls_back_to_default():
 
 
 NEW_KEYS = [
-    "start-message", "help-message", "subscribe-soon",
-    "unsubscribe-soon", "feedback-prompt", "feedback-thanks", "no-figures",
+    "start-message", "help-message", "subscribe-soon", "unsubscribe-soon",
+    "feedback-ask", "feedback-placeholder", "feedback-cancel", "feedback-thanks",
+    "no-figures",
 ]
 
 

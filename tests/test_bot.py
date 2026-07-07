@@ -1,9 +1,10 @@
 import os
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
-from telegram.ext import Application
+from telegram import ForceReply
+from telegram.ext import Application, ConversationHandler
 from src.database import Database
-from src.bot import Bot
+from src.bot import Bot, FEEDBACK_WAITING
 
 
 def make_update(language_code="en", chat_id=42, username="alice", user_id=7):
@@ -88,30 +89,33 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         await self.bot._Bot__unsubscribe_handler(update, context)
         context.bot.send_message.assert_called_once()
 
-    async def test_feedback_without_text_prompts(self):
+    async def test_feedback_entry_without_text_asks_with_force_reply(self):
         update, context = make_update(), make_context()
         context.args = []
-        await self.bot._Bot__feedback_handler(update, context)
+        result = await self.bot._Bot__feedback_entry(update, context)
+        self.assertEqual(result, FEEDBACK_WAITING)
         context.bot.send_message.assert_called_once()
         _, kwargs = context.bot.send_message.call_args
         self.assertEqual(kwargs["chat_id"], update.effective_chat.id)
+        self.assertIsInstance(kwargs["reply_markup"], ForceReply)
 
-    async def test_feedback_with_owner_forwards_and_thanks(self):
+    async def test_feedback_entry_with_text_forwards_and_ends(self):
         update, context = make_update(), make_context()
         context.args = ["Add", "Ada", "Lovelace"]
         with patch.dict(os.environ, {"OWNER_CHAT_ID": "999"}):
-            await self.bot._Bot__feedback_handler(update, context)
+            result = await self.bot._Bot__feedback_entry(update, context)
+        self.assertEqual(result, ConversationHandler.END)
         self.assertEqual(context.bot.send_message.call_count, 2)
         forwarded_call = context.bot.send_message.call_args_list[0]
         self.assertEqual(forwarded_call.kwargs["chat_id"], "999")
         self.assertIn("Ada Lovelace", forwarded_call.kwargs["text"])
 
-    async def test_feedback_without_owner_still_thanks(self):
+    async def test_feedback_entry_without_owner_still_thanks(self):
         update, context = make_update(), make_context()
         context.args = ["hello"]
         with patch.dict(os.environ, {}, clear=False):
             os.environ.pop("OWNER_CHAT_ID", None)
-            await self.bot._Bot__feedback_handler(update, context)
+            await self.bot._Bot__feedback_entry(update, context)
         context.bot.send_message.assert_called_once()
         self.assertEqual(context.bot.send_message.call_args.kwargs["chat_id"], update.effective_chat.id)
 
@@ -120,10 +124,20 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context.args = ["hello"]
         context.bot.send_message = AsyncMock(side_effect=[Exception("boom"), None])
         with patch.dict(os.environ, {"OWNER_CHAT_ID": "999"}):
-            await self.bot._Bot__feedback_handler(update, context)
+            await self.bot._Bot__feedback_entry(update, context)
         self.assertEqual(context.bot.send_message.call_count, 2)
         thanks_call = context.bot.send_message.call_args_list[1]
         self.assertEqual(thanks_call.kwargs["chat_id"], update.effective_chat.id)
+
+    async def test_feedback_receive_forwards_and_ends(self):
+        update, context = make_update(), make_context()
+        update.message = Mock()
+        update.message.text = "Please add Ada Lovelace"
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "999"}):
+            result = await self.bot._Bot__feedback_receive(update, context)
+        self.assertEqual(result, ConversationHandler.END)
+        self.assertEqual(context.bot.send_message.call_count, 2)
+        self.assertIn("Ada Lovelace", context.bot.send_message.call_args_list[0].kwargs["text"])
 
     async def test_button_random_sends_figure_and_answers(self):
         figure = Mock()
@@ -171,4 +185,4 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()
         handlers = self.bot.application.handlers[0]
-        self.assertEqual(len(handlers), 8)  # 7 commands + 1 callback query
+        self.assertEqual(len(handlers), 8)  # 6 commands + 1 feedback conversation + 1 callback query

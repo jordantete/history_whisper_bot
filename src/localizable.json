@@ -4,7 +4,9 @@
         "help-message": "Here is what I can do:\n\n/today – the historical figure of the day\n/random – a random historical figure\n/subscribe – get a daily figure (coming soon)\n/unsubscribe – stop the daily figure (coming soon)\n/feedback <text> – suggest a figure or send feedback\n/help – show this message",
         "subscribe-soon": "📬 Daily delivery is coming soon! You'll be able to receive one historical figure every day.",
         "unsubscribe-soon": "You're not subscribed yet — daily delivery is still coming soon.",
-        "feedback-prompt": "Send your suggestion after the command, e.g. /feedback I'd love to see Ada Lovelace!",
+        "feedback-ask": "Go ahead — type your suggestion or feedback and send it (or /cancel):",
+        "feedback-placeholder": "Your suggestion…",
+        "feedback-cancel": "No worries — cancelled.",
         "feedback-thanks": "🙏 Thanks for your feedback — it has been noted!",
         "no-figures": "No figures found, please try again."
     },
@@ -13,7 +15,9 @@
         "help-message": "Voici ce que je sais faire :\n\n/today – la figure historique du jour\n/random – une figure historique au hasard\n/subscribe – recevoir une figure chaque jour (bientôt)\n/unsubscribe – arrêter la figure quotidienne (bientôt)\n/feedback <texte> – proposer une figure ou envoyer un retour\n/help – afficher ce message",
         "subscribe-soon": "📬 L'envoi quotidien arrive bientôt ! Tu pourras recevoir une figure historique chaque jour.",
         "unsubscribe-soon": "Tu n'es pas encore abonné — l'envoi quotidien arrive bientôt.",
-        "feedback-prompt": "Envoie ta suggestion après la commande, ex. /feedback J'aimerais voir Ada Lovelace !",
+        "feedback-ask": "Vas-y — écris ta suggestion ou ton retour, puis envoie (ou /cancel) :",
+        "feedback-placeholder": "Ta suggestion…",
+        "feedback-cancel": "Pas de souci — annulé.",
         "feedback-thanks": "🙏 Merci pour ton retour — c'est bien noté !",
         "no-figures": "Aucune figure trouvée, réessaie."
     }
