@@ -48,6 +48,16 @@ class Bot:
         LOGGER.info("Help handler command called")
         await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("help-message", update))
 
+    async def __random_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Random handler command called")
+        figure = self.database.get_random_figure()
+        await self._send_figure(update, context, figure)
+
+    async def __today_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Today handler command called")
+        figure = self.database.get_figure_of_the_day(date.today())
+        await self._send_figure(update, context, figure)
+
     def register_handlers(self):
         self.application.add_handler(CommandHandler('start', self.__start_handler))
         self.application.add_handler(CommandHandler('help', self.__help_handler))

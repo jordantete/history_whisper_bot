@@ -51,3 +51,29 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context.bot.send_message.assert_called_once()
         _, kwargs = context.bot.send_message.call_args
         self.assertIn("/today", kwargs["text"])
+
+    async def test_random_handler_sends_figure(self):
+        figure = Mock(name="Marie Curie", description="Physicist and chemist.")
+        figure.name = "Marie Curie"
+        figure.description = "Physicist and chemist."
+        self.mock_database.get_random_figure.return_value = figure
+        update, context = make_update(), make_context()
+
+        await self.bot._Bot__random_handler(update, context)
+
+        context.bot.send_message.assert_called_once()
+        _, kwargs = context.bot.send_message.call_args
+        self.assertIn("Marie Curie", kwargs["text"])
+
+    async def test_today_handler_uses_figure_of_the_day(self):
+        figure = Mock()
+        figure.name = "Leonardo da Vinci"
+        figure.description = "Polymath."
+        self.mock_database.get_figure_of_the_day.return_value = figure
+        update, context = make_update(), make_context()
+
+        await self.bot._Bot__today_handler(update, context)
+
+        self.mock_database.get_figure_of_the_day.assert_called_once()
+        _, kwargs = context.bot.send_message.call_args
+        self.assertIn("Leonardo da Vinci", kwargs["text"])
