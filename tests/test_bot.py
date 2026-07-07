@@ -115,6 +115,16 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context.bot.send_message.assert_called_once()
         self.assertEqual(context.bot.send_message.call_args.kwargs["chat_id"], update.effective_chat.id)
 
+    async def test_feedback_owner_send_failure_still_thanks(self):
+        update, context = make_update(), make_context()
+        context.args = ["hello"]
+        context.bot.send_message = AsyncMock(side_effect=[Exception("boom"), None])
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "999"}):
+            await self.bot._Bot__feedback_handler(update, context)
+        self.assertEqual(context.bot.send_message.call_count, 2)
+        thanks_call = context.bot.send_message.call_args_list[1]
+        self.assertEqual(thanks_call.kwargs["chat_id"], update.effective_chat.id)
+
     async def test_button_random_sends_figure_and_answers(self):
         figure = Mock()
         figure.name = "Marie Curie"
@@ -130,6 +140,22 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         update.callback_query.answer.assert_awaited_once()
         context.bot.send_message.assert_called_once()
         self.assertIn("Marie Curie", context.bot.send_message.call_args.kwargs["text"])
+
+    async def test_button_today_sends_figure_and_answers(self):
+        figure = Mock()
+        figure.name = "Leonardo da Vinci"
+        figure.description = "Polymath."
+        self.mock_database.get_figure_of_the_day.return_value = figure
+        update, context = make_update(), make_context()
+        update.callback_query = Mock()
+        update.callback_query.data = "today"
+        update.callback_query.answer = AsyncMock()
+
+        await self.bot._Bot__button_handler(update, context)
+
+        update.callback_query.answer.assert_awaited_once()
+        context.bot.send_message.assert_called_once()
+        self.assertIn("Leonardo da Vinci", context.bot.send_message.call_args.kwargs["text"])
 
     async def test_button_help_sends_help(self):
         update, context = make_update(language_code="fr"), make_context()

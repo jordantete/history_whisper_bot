@@ -87,7 +87,10 @@ class Bot:
         if owner_chat_id:
             user = update.effective_user
             who = f"@{user.username}" if user and user.username else (str(user.id) if user else "unknown")
-            await context.bot.send_message(chat_id=owner_chat_id, text=f"Feedback from {who}:\n{text}")
+            try:
+                await context.bot.send_message(chat_id=owner_chat_id, text=f"Feedback from {who}:\n{text}")
+            except Exception as e:
+                LOGGER.error(f"Failed to forward feedback to owner: {e}")
         else:
             LOGGER.warning("OWNER_CHAT_ID not set — feedback not forwarded")
         await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("feedback-thanks", update))
