@@ -50,7 +50,7 @@ Deployment mirrors the sibling bots (`arbitrage-bot`, `funding-rate-bot`, `enche
 ## Conventions & gotchas
 
 - **Secrets**: `.env` (gitignored) holds the runtime token (`TELEGRAM_BOT_TOKEN`) and the deploy target (`VPS_USER`, `VPS_HOST`, `VPS_BOT_PATH`, `SSH_KEY`). `.env.example` is the committed template. Never commit `.env`; never put tokens in git or Notion. Prefer a distinct bot/token per environment (dev/prod).
-- **Localization**: strings live in `src/localizable.json`, keyed by language then message key (`en`, `fr`). `Bot.selected_language` defaults to `"en"`. Add new user-facing strings there and fetch via `Utils.localize(key, lang, strings)` rather than hardcoding.
+- **Localization**: strings live in `src/localizable.json`, keyed by language then message key (`en`, `fr`). Locale is resolved per update from `update.effective_user.language_code` via `Bot._locale()` / `Utils.resolve_locale` (`fr*` → `fr`, else `en`) — no per-user storage. Add new user-facing strings there and fetch via `Utils.localize(key, lang, strings)` rather than hardcoding.
 - **Single poller per token**: only one process may poll a given token at once. Running the bot locally while the VPS instance is live (same token) causes a `getUpdates` conflict — use a separate dev token.
 - **Tests**: `pytest` from the project root. `test_bot.py` uses `unittest.IsolatedAsyncioTestCase` for the async handlers and sets a dummy `TELEGRAM_BOT_TOKEN` via `patch.dict(os.environ, ...)` so `Bot.__init__` can build the `Application` without a real token.
 
