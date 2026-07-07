@@ -22,3 +22,10 @@ class Utils:
             return localizable_data[language][key]
         LOGGER.error(f"Missing translation for '{key}' in '{language}'")
         return ""
+
+    @staticmethod
+    def resolve_locale(language_code, supported=("en", "fr"), default="en"):
+        if not language_code:
+            return default
+        primary = language_code.split("-")[0].lower()
+        return primary if primary in supported else default
