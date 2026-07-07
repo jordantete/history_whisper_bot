@@ -6,6 +6,22 @@ from src.database import Database
 from src.bot import Bot
 
 
+def make_update(language_code="en", chat_id=42, username="alice", user_id=7):
+    update = Mock()
+    update.effective_chat.id = chat_id
+    update.effective_user.language_code = language_code
+    update.effective_user.username = username
+    update.effective_user.id = user_id
+    return update
+
+
+def make_context():
+    context = Mock()
+    context.bot.send_message = AsyncMock(return_value=None)
+    context.args = []
+    return context
+
+
 class TestBot(unittest.IsolatedAsyncioTestCase):
     def setUp(self):
         patcher = patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "123456:ABC-test-token"})
@@ -18,29 +34,20 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         self.assertIsInstance(self.bot.application, Application)
         self.assertEqual(self.bot.database, self.mock_database)
 
-    async def test_start_handler_sends_message(self):
-        update = Mock()
-        update.effective_chat.id = 42
-        context = Mock()
-        context.bot.send_message = AsyncMock(return_value=None)
+    def test_locale_detection(self):
+        self.assertEqual(self.bot._locale(make_update(language_code="fr-FR")), "fr")
+        self.assertEqual(self.bot._locale(make_update(language_code="en")), "en")
 
+    async def test_start_handler_sends_message_with_buttons(self):
+        update, context = make_update(), make_context()
         await self.bot._Bot__start_handler(update, context)
-
-        context.bot.send_message.assert_called_once()
-
-    async def test_new_figure_handler_sends_figure(self):
-        figure = Mock()
-        figure.name = "Marie Curie"
-        figure.description = "Physicist and chemist."
-        self.mock_database.get_random_figure.return_value = figure
-
-        update = Mock()
-        update.effective_chat.id = 42
-        context = Mock()
-        context.bot.send_message = AsyncMock(return_value=None)
-
-        await self.bot._Bot__new_figure_handler(update, context)
-
         context.bot.send_message.assert_called_once()
         _, kwargs = context.bot.send_message.call_args
-        self.assertIn("Marie Curie", kwargs["text"])
+        self.assertIn("reply_markup", kwargs)
+
+    async def test_help_handler_localized(self):
+        update, context = make_update(language_code="fr"), make_context()
+        await self.bot._Bot__help_handler(update, context)
+        context.bot.send_message.assert_called_once()
+        _, kwargs = context.bot.send_message.call_args
+        self.assertIn("/today", kwargs["text"])

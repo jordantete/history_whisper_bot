@@ -1,8 +1,11 @@
+import os
+from datetime import date
+
 from src.database import Database
 from src.utils import Utils
 from src.logger import LOGGER
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
+from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler
 
 
 class Bot:
@@ -11,38 +14,43 @@ class Bot:
         self.application = ApplicationBuilder().token(token).build()
         self.database = database
         self.localizable_strings = Utils.load_localizable_data()
-        self.selected_language = "en"
+
+    def _locale(self, update: Update) -> str:
+        language_code = update.effective_user.language_code if update.effective_user else None
+        return Utils.resolve_locale(language_code)
+
+    def _t(self, key: str, update: Update) -> str:
+        return Utils.localize(key, self._locale(update), self.localizable_strings)
+
+    @staticmethod
+    def _format_figure(figure) -> str:
+        return f"{figure.name}\n{figure.description}"
+
+    async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
+        if figure:
+            text = self._format_figure(figure)
+        else:
+            text = self._t("no-figures", update)
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
-        text = Utils.localize("start-message", self.selected_language, self.localizable_strings)
+        text = self._t("start-message", update)
         buttons = [
-            InlineKeyboardButton("start", callback_data="start"),
-            InlineKeyboardButton("help", callback_data="help"),
-            InlineKeyboardButton("new_figure", callback_data="new_figure"),
+            InlineKeyboardButton("🎲 Random", callback_data="random"),
+            InlineKeyboardButton("📅 Today", callback_data="today"),
+            InlineKeyboardButton("❓ Help", callback_data="help"),
         ]
-
         reply_markup = InlineKeyboardMarkup([buttons])
         await context.bot.send_message(chat_id=update.effective_chat.id, text=text, reply_markup=reply_markup)
 
     async def __help_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Help handler command called")
-        text = Utils.localize("help-message", self.selected_language, self.localizable_strings)
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
-
-    async def __new_figure_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        LOGGER.info("New figure handler command called")
-        historical_figure = self.database.get_random_figure()
-        if historical_figure:
-            text = f"{historical_figure.name}\n{historical_figure.description}"
-            await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
-        else:
-            await context.bot.send_message(chat_id=update.effective_chat.id, text="No figures found, please try again.")
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("help-message", update))
 
     def register_handlers(self):
         self.application.add_handler(CommandHandler('start', self.__start_handler))
         self.application.add_handler(CommandHandler('help', self.__help_handler))
-        self.application.add_handler(CommandHandler('new_figure', self.__new_figure_handler))
 
     def run(self):
         LOGGER.info("Bot starting in long-polling mode")
