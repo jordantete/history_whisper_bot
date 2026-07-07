@@ -87,3 +87,30 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         update, context = make_update(), make_context()
         await self.bot._Bot__unsubscribe_handler(update, context)
         context.bot.send_message.assert_called_once()
+
+    async def test_feedback_without_text_prompts(self):
+        update, context = make_update(), make_context()
+        context.args = []
+        await self.bot._Bot__feedback_handler(update, context)
+        context.bot.send_message.assert_called_once()
+        _, kwargs = context.bot.send_message.call_args
+        self.assertEqual(kwargs["chat_id"], update.effective_chat.id)
+
+    async def test_feedback_with_owner_forwards_and_thanks(self):
+        update, context = make_update(), make_context()
+        context.args = ["Add", "Ada", "Lovelace"]
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "999"}):
+            await self.bot._Bot__feedback_handler(update, context)
+        self.assertEqual(context.bot.send_message.call_count, 2)
+        forwarded_call = context.bot.send_message.call_args_list[0]
+        self.assertEqual(forwarded_call.kwargs["chat_id"], "999")
+        self.assertIn("Ada Lovelace", forwarded_call.kwargs["text"])
+
+    async def test_feedback_without_owner_still_thanks(self):
+        update, context = make_update(), make_context()
+        context.args = ["hello"]
+        with patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("OWNER_CHAT_ID", None)
+            await self.bot._Bot__feedback_handler(update, context)
+        context.bot.send_message.assert_called_once()
+        self.assertEqual(context.bot.send_message.call_args.kwargs["chat_id"], update.effective_chat.id)

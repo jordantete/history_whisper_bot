@@ -66,6 +66,21 @@ class Bot:
         LOGGER.info("Unsubscribe handler command called")
         await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("unsubscribe-soon", update))
 
+    async def __feedback_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Feedback handler command called")
+        text = " ".join(context.args).strip() if context.args else ""
+        if not text:
+            await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("feedback-prompt", update))
+            return
+        owner_chat_id = os.environ.get("OWNER_CHAT_ID")
+        if owner_chat_id:
+            user = update.effective_user
+            who = f"@{user.username}" if user and user.username else (str(user.id) if user else "unknown")
+            await context.bot.send_message(chat_id=owner_chat_id, text=f"Feedback from {who}:\n{text}")
+        else:
+            LOGGER.warning("OWNER_CHAT_ID not set — feedback not forwarded")
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("feedback-thanks", update))
+
     def register_handlers(self):
         self.application.add_handler(CommandHandler('start', self.__start_handler))
         self.application.add_handler(CommandHandler('help', self.__help_handler))
