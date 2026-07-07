@@ -19,8 +19,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-node_modules
-.serverless/
+.venv/
+logs/
 
 # Installer logs
 pip-log.txt
@@ -34,8 +34,7 @@ nosetests.xml
 coverage.xml
 
 # Secrets
-secrets.json
-.env.yml
+.env
 
 # Conda
 conda_packages.txt

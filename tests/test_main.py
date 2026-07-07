@@ -1,29 +1,14 @@
-import pytest
-from unittest.mock import Mock, patch
-from src.main import main, OK_RESPONSE, ERROR_RESPONSE
-from tests.mocks import MockBot, MockDatabase, MockLogger
+from unittest.mock import patch
+from src.main import main
 
-def mock_get_event_loop():
-    loop = asyncio.new_event_loop()
-    loop.run_until_complete = asyncio.coroutine(lambda _: None)
-    return loop
 
-@pytest.mark.asyncio
-async def test_main_successful_execution():
-    mock_event = {"body": {"text": "Coucou"}}
+@patch("src.main.load_dotenv")
+@patch("src.main.Database")
+@patch("src.main.Bot")
+def test_main_wires_and_runs_bot(mock_bot_cls, mock_database_cls, mock_load_dotenv):
+    main()
 
-    with patch('src.main.Database', MockDatabase), patch('src.main.Bot', return_value=MockBot()), patch('src.main.LOGGER', MockLogger), patch('src.main.asyncio.get_event_loop', mock_get_event_loop):
-        response = await main(event=mock_event)
-
-    assert response == OK_RESPONSE
-
-@pytest.mark.asyncio
-async def test_main_exception():
-    mock_event = {"body": {"text": "Coucou"}}
-
-    with patch('src.main.Database', MockDatabase), patch('src.main.Bot', return_value=MockBot), patch('src.main.LOGGER', MockLogger), patch('src.main.asyncio.get_event_loop', mock_get_event_loop):
-        # Raise an exception to simulate an error
-        MockBot.start.side_effect = Exception()
-        response = await main(event=mock_event)
-
-    assert response == ERROR_RESPONSE
+    mock_load_dotenv.assert_called_once()
+    mock_database_cls.assert_called_once()
+    mock_bot_cls.assert_called_once_with(database=mock_database_cls.return_value)
+    mock_bot_cls.return_value.run.assert_called_once()

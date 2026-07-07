@@ -4,14 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A Telegram bot ("Historical Figures Whisper Bot") that serves random historical figures on command. It runs as a single AWS Lambda function behind an HTTP webhook, deployed with the Serverless Framework. Each incoming Telegram update is a fresh invocation — the bot builds, initializes, processes one update, and shuts down within a single request.
+A Telegram bot ("Historical Figures Whisper Bot") that serves historical figures on command. It runs as a long-running **long-polling** process (`Application.run_polling()`) — no public HTTP endpoint needed — deployed to a VPS inside a dedicated `tmux` session. Localized EN/FR.
 
 ## Commands
 
 ```bash
 # Install
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-npm install                      # serverless-python-requirements plugin
+
+# Configure secrets (local dev)
+cp .env.example .env          # then fill TELEGRAM_BOT_TOKEN
+
+# Run the bot locally (long-polling)
+python -m src.main
 
 # Run all tests (must run from project root — imports use the `src.` package prefix)
 python -m pytest tests/
@@ -20,26 +26,33 @@ python -m pytest tests/
 python -m pytest tests/test_database.py
 python -m pytest tests/test_database.py::TestDatabase::test_get_random_figure
 
-# Deploy to AWS (requires TELEGRAM_BOT_TOKEN in env; region eu-west-3, stage dev)
-serverless deploy
+# Deploy to the VPS (reads VPS_* + TELEGRAM_BOT_TOKEN from .env)
+./scripts/deploy.sh
 ```
 
 ## Architecture
 
-Request flow: Telegram → API Gateway → `src/main.py:lambda_handler` → `Bot.start(event)` → python-telegram-bot dispatches to a `CommandHandler`.
+Flow: `python -m src.main` → `Bot.run()` → `Application.run_polling()` → python-telegram-bot polls Telegram (`getUpdates`) and dispatches to a `CommandHandler`. It's a single continuous process, not a per-request invocation.
 
-- **`src/main.py`** — Lambda entrypoint. `lambda_handler` wraps the async `main()` with `run_until_complete`. `main()` always returns `OK_RESPONSE` (200) on success or `ERROR_RESPONSE` (400) on any exception — the bot never propagates errors to the Lambda runtime.
-- **`src/bot.py`** — `Bot` wraps a python-telegram-bot `Application`. `start()` registers command handlers (`/start`, `/help`, `/new_figure`), then `initialize()` → `process_update()` → `shutdown()` for the single update in `event["body"]`. Handlers are private (`__start_handler` etc.), so tests reach them via name-mangled `_Bot__start_handler`.
+- **`src/main.py`** — Entrypoint. Calls `load_dotenv()` (so a direct `python -m src.main` picks up `.env` without shell sourcing), then builds `Database` + `Bot` and calls `bot.run()`.
+- **`src/bot.py`** — `Bot` wraps a python-telegram-bot `Application`. The token is read from `os.environ` in `__init__` (after `load_dotenv`). `register_handlers()` registers `/start`, `/help`, `/new_figure`; `run()` starts long-polling. Handlers are private (`__start_handler` etc.), so tests reach them via name-mangled `_Bot__start_handler`.
 - **`src/database.py`** — `Database` currently holds an in-memory hardcoded list of `HistoricalFigure`s. The Postgres/`psycopg2` connection is stubbed out (commented) — this is the intended future backing store.
-- **`src/utils.py`** — `Utils.get_environment_varibale` reads config from `secrets.json` when that file exists (local dev), otherwise from `os.environ` (Lambda). `load_localizable_data` / `localize` implement the i18n lookup.
+- **`src/utils.py`** — `Utils.get_environment_variable` reads from `os.environ`. `load_localizable_data` / `localize` implement the i18n lookup.
 - **`src/logger.py`** — exports a configured `loguru` `LOGGER` singleton used everywhere.
+
+## Deployment
+
+Deployment mirrors the sibling bots (`arbitrage-bot`, `funding-rate-bot`, `encheres-scanner`): an SSH/rsync script that runs the bot in a `tmux` session on a VPS. There is **no AWS/serverless anymore** — don't reintroduce Lambda, API Gateway, webhooks, or the Serverless Framework.
+
+- **`scripts/deploy.sh`** — sources `.env`, rsyncs the code to `$VPS_HOST:$VPS_BOT_PATH` (excluding `.env`, `.venv`, `logs/`, caches), copies `.env` separately, (re)creates the venv + `pip install -r requirements.txt`, then restarts the `history-whisper-bot` tmux session.
+- **`scripts/start.sh`** — sources `.env` and `exec`s `python -m src.main`, logging to `logs/app.log`. This is what the tmux session runs.
 
 ## Conventions & gotchas
 
-- **Config resolution**: `secrets.json` (gitignored) is the local override; presence of the file short-circuits env-var lookup. `serverless.yaml` injects `TELEGRAM_BOT_TOKEN` from the deploy environment.
+- **Secrets**: `.env` (gitignored) holds the runtime token (`TELEGRAM_BOT_TOKEN`) and the deploy target (`VPS_USER`, `VPS_HOST`, `VPS_BOT_PATH`, `SSH_KEY`). `.env.example` is the committed template. Never commit `.env`; never put tokens in git or Notion. Prefer a distinct bot/token per environment (dev/prod).
 - **Localization**: strings live in `src/localizable.json`, keyed by language then message key (`en`, `fr`). `Bot.selected_language` defaults to `"en"`. Add new user-facing strings there and fetch via `Utils.localize(key, lang, strings)` rather than hardcoding.
-- **Tests are a mix of `unittest` and `pytest`**, and some are currently broken/aspirational — e.g. `tests/test_bot.py` patches `'bot.Update'` (should be `'src.bot.Update'`) and its async test isn't marked; `tests/test_main.py` references `asyncio` without importing it. Verify a test actually passes before treating it as a regression signal. Async tests rely on `pytest-asyncio` (`@pytest.mark.asyncio`), which is not yet in `requirements.txt`.
-- **Note the typo `get_environment_varibale`** in `Utils` — it's the real method name; match it when calling.
+- **Single poller per token**: only one process may poll a given token at once. Running the bot locally while the VPS instance is live (same token) causes a `getUpdates` conflict — use a separate dev token.
+- **Tests**: `pytest` from the project root. `test_bot.py` uses `unittest.IsolatedAsyncioTestCase` for the async handlers and sets a dummy `TELEGRAM_BOT_TOKEN` via `patch.dict(os.environ, ...)` so `Bot.__init__` can build the `Application` without a real token.
 
 ## Working guidelines (Karpathy / Multica)
 

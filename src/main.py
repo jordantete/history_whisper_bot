@@ -1,26 +1,16 @@
-import asyncio, json
+from dotenv import load_dotenv
 from src.bot import Bot
 from src.database import Database
 from src.logger import LOGGER
 
-OK_RESPONSE = {'statusCode': 200, 'headers': {'Content-Type': 'application/json'}, 'body': json.dumps('ok')}
-ERROR_RESPONSE = {'statusCode': 400, 'body': json.dumps('Oops, something went wrong!')}
 
-def lambda_handler(event=0, context=0):
-    return asyncio.get_event_loop().run_until_complete(main(event, context))
-
-async def main(event=0, context=0):
-    LOGGER.info("Webhook is triggered")
+def main():
+    load_dotenv()
+    LOGGER.info("Starting Historical Figures Whisper Bot")
     database = Database()
     bot = Bot(database=database)
-    try:
-        await bot.start(event=event)
-        LOGGER.info("Return OK RESPONSE")
-        return OK_RESPONSE
-    except:
-        LOGGER.info("Return ERROR RESPONSE")
-        return ERROR_RESPONSE
+    bot.run()
 
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(main())
+    main()
