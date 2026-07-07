@@ -29,3 +29,8 @@ class TestDatabase(unittest.TestCase):
         # 2026-01-03 -> tm_yday == 3 -> 3 % len(figures)
         expected = figures[3 % len(figures)]
         self.assertIs(self.database.get_figure_of_the_day(date(2026, 1, 3)), expected)
+
+    def test_loads_full_roster_from_json(self):
+        figures = self.database.get_all_figures()
+        self.assertEqual(len(figures), 76)
+        self.assertTrue(all(f.name and f.description for f in figures))
