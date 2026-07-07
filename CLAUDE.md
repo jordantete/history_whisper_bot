@@ -35,7 +35,7 @@ python -m pytest tests/test_database.py::TestDatabase::test_get_random_figure
 Flow: `python -m src.main` → `Bot.run()` → `Application.run_polling()` → python-telegram-bot polls Telegram (`getUpdates`) and dispatches to a `CommandHandler`. It's a single continuous process, not a per-request invocation.
 
 - **`src/main.py`** — Entrypoint. Calls `load_dotenv()` (so a direct `python -m src.main` picks up `.env` without shell sourcing), then builds `Database` + `Bot` and calls `bot.run()`.
-- **`src/bot.py`** — `Bot` wraps a python-telegram-bot `Application`. The token is read from `os.environ` in `__init__` (after `load_dotenv`). `register_handlers()` registers `/start`, `/help`, `/new_figure`; `run()` starts long-polling. Handlers are private (`__start_handler` etc.), so tests reach them via name-mangled `_Bot__start_handler`.
+- **`src/bot.py`** — `Bot` wraps a python-telegram-bot `Application`. The token is read from `os.environ` in `__init__` (after `load_dotenv`). `register_handlers()` registers `/start`, `/help`, `/random`, `/today`, `/subscribe`, `/unsubscribe`, `/feedback`, plus a `CallbackQueryHandler` for the inline buttons; `run()` starts long-polling. Handlers are private (`__start_handler` etc.), so tests reach them via name-mangled `_Bot__start_handler`.
 - **`src/database.py`** — `Database` currently holds an in-memory hardcoded list of `HistoricalFigure`s. The Postgres/`psycopg2` connection is stubbed out (commented) — this is the intended future backing store.
 - **`src/utils.py`** — `Utils.get_environment_variable` reads from `os.environ`. `load_localizable_data` / `localize` implement the i18n lookup.
 - **`src/logger.py`** — exports a configured `loguru` `LOGGER` singleton used everywhere.

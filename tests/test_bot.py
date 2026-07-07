@@ -141,3 +141,8 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
 
         update.callback_query.answer.assert_awaited_once()
         self.assertIn("/today", context.bot.send_message.call_args.kwargs["text"])
+
+    def test_register_handlers_registers_all(self):
+        self.bot.register_handlers()
+        handlers = self.bot.application.handlers[0]
+        self.assertEqual(len(handlers), 8)  # 7 commands + 1 callback query

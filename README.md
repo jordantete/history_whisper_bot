@@ -9,7 +9,45 @@ session. Localized EN/FR.
 1. `HistoricalFigure` — a historical figure (name + description).
 2. `Database` — holds the historical figures.
 3. `Bot` — the Telegram bot: registers command handlers (`/start`, `/help`,
-   `/new_figure`) and runs long-polling.
+   `/random`, `/today`, `/subscribe`, `/unsubscribe`, `/feedback`) plus the
+   inline-button callback handler, and runs long-polling.
+
+## Commands
+
+| Command | Description |
+|---|---|
+| `/start` | Welcome message + inline keyboard (Random / Today / Help) |
+| `/help` | List available commands |
+| `/random` | A random historical figure |
+| `/today` | The historical figure of the day |
+| `/subscribe` | Daily historical figure (coming soon — stub) |
+| `/unsubscribe` | Stop the daily figure (coming soon — stub) |
+| `/feedback` | Suggest a figure or send feedback (`/feedback <text>`) |
+
+These commands must also be declared to **@BotFather** via `/setcommands` so
+they show up in the Telegram command menu (EN and FR lists below):
+
+EN:
+```
+start - Welcome & how it works
+help - List available commands
+random - A random historical figure
+today - The historical figure of the day
+subscribe - Daily historical figure (coming soon)
+unsubscribe - Stop the daily figure (coming soon)
+feedback - Suggest a figure or send feedback
+```
+
+FR:
+```
+start - Bienvenue & fonctionnement
+help - Liste des commandes
+random - Une figure historique au hasard
+today - La figure historique du jour
+subscribe - Figure historique quotidienne (bientôt)
+unsubscribe - Arrêter la figure quotidienne (bientôt)
+feedback - Proposer une figure ou envoyer un retour
+```
 
 ## Local run
 

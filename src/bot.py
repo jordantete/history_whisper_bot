@@ -95,6 +95,12 @@ class Bot:
     def register_handlers(self):
         self.application.add_handler(CommandHandler('start', self.__start_handler))
         self.application.add_handler(CommandHandler('help', self.__help_handler))
+        self.application.add_handler(CommandHandler('random', self.__random_handler))
+        self.application.add_handler(CommandHandler('today', self.__today_handler))
+        self.application.add_handler(CommandHandler('subscribe', self.__subscribe_handler))
+        self.application.add_handler(CommandHandler('unsubscribe', self.__unsubscribe_handler))
+        self.application.add_handler(CommandHandler('feedback', self.__feedback_handler))
+        self.application.add_handler(CallbackQueryHandler(self.__button_handler))
 
     def run(self):
         LOGGER.info("Bot starting in long-polling mode")
