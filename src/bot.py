@@ -58,6 +58,14 @@ class Bot:
         figure = self.database.get_figure_of_the_day(date.today())
         await self._send_figure(update, context, figure)
 
+    async def __subscribe_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Subscribe handler command called")
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("subscribe-soon", update))
+
+    async def __unsubscribe_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Unsubscribe handler command called")
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("unsubscribe-soon", update))
+
     def register_handlers(self):
         self.application.add_handler(CommandHandler('start', self.__start_handler))
         self.application.add_handler(CommandHandler('help', self.__help_handler))

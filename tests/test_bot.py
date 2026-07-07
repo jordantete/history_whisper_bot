@@ -77,3 +77,13 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         self.mock_database.get_figure_of_the_day.assert_called_once()
         _, kwargs = context.bot.send_message.call_args
         self.assertIn("Leonardo da Vinci", kwargs["text"])
+
+    async def test_subscribe_handler_acknowledges(self):
+        update, context = make_update(), make_context()
+        await self.bot._Bot__subscribe_handler(update, context)
+        context.bot.send_message.assert_called_once()
+
+    async def test_unsubscribe_handler_acknowledges(self):
+        update, context = make_update(), make_context()
+        await self.bot._Bot__unsubscribe_handler(update, context)
+        context.bot.send_message.assert_called_once()
