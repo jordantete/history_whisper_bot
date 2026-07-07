@@ -15,6 +15,11 @@ class Database:
         figures = self.get_all_figures()
         index = random.randint(0, len(figures)-1)
         return figures[index]
+
+    def get_figure_of_the_day(self, day):
+        figures = self.get_all_figures()
+        index = day.timetuple().tm_yday % len(figures)
+        return figures[index]
     
     historical_figures = [
         HistoricalFigure("Albert Einstein", "Physicist who developed the theory of relativity."),
