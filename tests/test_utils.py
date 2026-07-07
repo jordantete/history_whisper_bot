@@ -12,3 +12,22 @@ def test_resolve_locale_falls_back_to_default():
     assert Utils.resolve_locale(None) == "en"
     assert Utils.resolve_locale("") == "en"
     assert Utils.resolve_locale("de") == "en"
+
+
+NEW_KEYS = [
+    "start-message", "help-message", "subscribe-soon",
+    "unsubscribe-soon", "feedback-prompt", "feedback-thanks", "no-figures",
+]
+
+
+def test_all_keys_present_in_both_languages():
+    data = Utils.load_localizable_data()
+    for lang in ("en", "fr"):
+        for key in NEW_KEYS:
+            assert Utils.localize(key, lang, data), f"missing {key} in {lang}"
+
+
+def test_another_message_key_removed():
+    data = Utils.load_localizable_data()
+    assert "another-message" not in data["en"]
+    assert "another-message" not in data["fr"]

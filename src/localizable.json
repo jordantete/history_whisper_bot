@@ -1,12 +1,20 @@
 {
     "en": {
-        "start-message": "🌟 Greetings, dear history enthusiast! 🌟 \n\n📚 Welcome to the Historical Figures Whisper Bot, where the pages of the past come alive to inspire and enlighten you each day!\n\n 📜 Wishing you endless enlightenment and a deep connection with the echoes of the past, \nThe Historical Figures Whisper Bot 🌌",
-        "help-message": "List of bot commands: - /start: ...",
-        "another-message": "Hello"
+        "start-message": "🌟 Greetings, dear history enthusiast! 🌟\n\n📚 Welcome to the Historical Figures Whisper Bot, where the pages of the past come alive to inspire you each day!\n\nUse /today for the figure of the day, /random for a surprise, or /help to see everything I can do.",
+        "help-message": "Here is what I can do:\n\n/today – the historical figure of the day\n/random – a random historical figure\n/subscribe – get a daily figure (coming soon)\n/unsubscribe – stop the daily figure (coming soon)\n/feedback <text> – suggest a figure or send feedback\n/help – show this message",
+        "subscribe-soon": "📬 Daily delivery is coming soon! You'll be able to receive one historical figure every day.",
+        "unsubscribe-soon": "You're not subscribed yet — daily delivery is still coming soon.",
+        "feedback-prompt": "Send your suggestion after the command, e.g. /feedback I'd love to see Ada Lovelace!",
+        "feedback-thanks": "🙏 Thanks for your feedback — it has been noted!",
+        "no-figures": "No figures found, please try again."
     },
     "fr": {
-        "start-message": "🌟 Salut salut salut! 🌌",
-        "help-message": "La liste des commandes de ce bot est la suivante: - /start: ...",
-        "another-message": "Bonjour"
+        "start-message": "🌟 Salut à toi, passionné d'histoire ! 🌟\n\n📚 Bienvenue sur le Historical Figures Whisper Bot, où les pages du passé s'animent pour t'inspirer chaque jour !\n\nUtilise /today pour la figure du jour, /random pour une surprise, ou /help pour tout voir.",
+        "help-message": "Voici ce que je sais faire :\n\n/today – la figure historique du jour\n/random – une figure historique au hasard\n/subscribe – recevoir une figure chaque jour (bientôt)\n/unsubscribe – arrêter la figure quotidienne (bientôt)\n/feedback <texte> – proposer une figure ou envoyer un retour\n/help – afficher ce message",
+        "subscribe-soon": "📬 L'envoi quotidien arrive bientôt ! Tu pourras recevoir une figure historique chaque jour.",
+        "unsubscribe-soon": "Tu n'es pas encore abonné — l'envoi quotidien arrive bientôt.",
+        "feedback-prompt": "Envoie ta suggestion après la commande, ex. /feedback J'aimerais voir Ada Lovelace !",
+        "feedback-thanks": "🙏 Merci pour ton retour — c'est bien noté !",
+        "no-figures": "Aucune figure trouvée, réessaie."
     }
 }
