@@ -1,4 +1,4 @@
-import os, random
+import random
 from typing import List
 from src.historical_figure import HistoricalFigure
 from src.logger import LOGGER

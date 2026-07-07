@@ -42,3 +42,6 @@ conda_packages.txt
 # Editor / IDE
 .vscode/
 settings.json
+
+# macOS
+.DS_Store

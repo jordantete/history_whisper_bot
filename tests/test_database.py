@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch, Mock
+from unittest.mock import patch
 from src.database import Database
 from src.historical_figure import HistoricalFigure
 
