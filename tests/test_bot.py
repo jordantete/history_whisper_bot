@@ -215,6 +215,10 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         self.assertIn("Highlights", cap)
         self.assertIn("short fact", cap)
 
+    def test_build_caption_never_exceeds_limit_even_with_large_facts(self):
+        cap = Bot._build_caption("Name", "", ["x" * 1200], "Highlights")
+        self.assertLessEqual(len(cap), 1024)
+
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()
         handlers = self.bot.application.handlers[0]

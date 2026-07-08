@@ -51,11 +51,21 @@ class Bot:
         caption = head + facts_block
         if len(caption) <= limit:
             return caption
-        # Over the limit: truncate the bio, keep name + faits block.
+        # Over the limit: truncate the bio, keep name + facts block.
         ellipsis = "…"
-        budget = limit - len(name) - len("\n\n") - len(ellipsis) - len(facts_block)
-        truncated_bio = bio[: max(0, budget)].rstrip() + ellipsis
-        return f"{name}\n\n{truncated_bio}{facts_block}"
+        separator = "\n\n"
+        budget = limit - len(name) - len(separator) - len(ellipsis) - len(facts_block)
+        if budget > 0:
+            truncated_bio = bio[:budget].rstrip() + ellipsis
+            return f"{name}{separator}{truncated_bio}{facts_block}"
+        # No room for any bio (name + facts block alone are already at/over the
+        # limit): drop the bio entirely.
+        without_bio = name + facts_block
+        if len(without_bio) <= limit:
+            return without_bio
+        # Last resort: even name + facts block exceed the limit. Hard-clamp to
+        # guarantee the length invariant holds, at the cost of content quality.
+        return without_bio[:limit]
 
     async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
         if figure:
