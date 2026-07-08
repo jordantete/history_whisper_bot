@@ -1,10 +1,11 @@
 import os
 import re
 import html
+import tempfile
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
 from telegram import ForceReply
-from telegram.error import TelegramError
+from telegram.error import TelegramError, Forbidden
 from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler, AIORateLimiter
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
@@ -38,7 +39,16 @@ def make_context():
 
 class TestBot(unittest.IsolatedAsyncioTestCase):
     def setUp(self):
-        patcher = patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "123456:ABC-test-token"})
+        # Point the subscriber store at a throwaway temp file so Bot tests never
+        # touch a real subscribers.json in the repo.
+        fd, self._subs_path = tempfile.mkstemp(suffix=".json")
+        os.close(fd)
+        os.unlink(self._subs_path)
+        self.addCleanup(lambda: os.path.exists(self._subs_path) and os.unlink(self._subs_path))
+        patcher = patch.dict(os.environ, {
+            "TELEGRAM_BOT_TOKEN": "123456:ABC-test-token",
+            "SUBSCRIBERS_FILE": self._subs_path,
+        })
         patcher.start()
         self.addCleanup(patcher.stop)
         self.mock_database = Mock(spec=Database)
@@ -111,15 +121,74 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context.bot.send_message.assert_called_once()
         self.assertIn("Big Img", context.bot.send_message.call_args.kwargs["text"])
 
-    async def test_subscribe_handler_acknowledges(self):
-        update, context = make_update(), make_context()
+    async def test_subscribe_handler_registers_subscriber(self):
+        update, context = make_update(chat_id=555), make_context()
         await self.bot._Bot__subscribe_handler(update, context)
+        self.assertTrue(self.bot.subscribers.is_subscribed(555))
         context.bot.send_message.assert_called_once()
 
-    async def test_unsubscribe_handler_acknowledges(self):
-        update, context = make_update(), make_context()
+    async def test_subscribe_twice_reports_already(self):
+        update, context = make_update(chat_id=555), make_context()
+        await self.bot._Bot__subscribe_handler(update, context)
+        await self.bot._Bot__subscribe_handler(update, context)
+        self.assertEqual(context.bot.send_message.call_count, 2)
+        first = context.bot.send_message.call_args_list[0].kwargs["text"]
+        second = context.bot.send_message.call_args_list[1].kwargs["text"]
+        self.assertNotEqual(first, second)  # "already subscribed" differs from "subscribed"
+
+    async def test_unsubscribe_handler_removes_subscriber(self):
+        update, context = make_update(chat_id=555), make_context()
+        self.bot.subscribers.subscribe(555, "en")
+        await self.bot._Bot__unsubscribe_handler(update, context)
+        self.assertFalse(self.bot.subscribers.is_subscribed(555))
+        context.bot.send_message.assert_called_once()
+
+    async def test_unsubscribe_when_not_subscribed_still_replies(self):
+        update, context = make_update(chat_id=555), make_context()
         await self.bot._Bot__unsubscribe_handler(update, context)
         context.bot.send_message.assert_called_once()
+
+    async def test_send_daily_delivers_localized_to_all_subscribers(self):
+        figure = HistoricalFigure(name="Ada Lovelace", description="d", bio_en="EN bio", bio_fr="FR bio")  # no image
+        self.mock_database.get_figure_of_the_day.return_value = figure
+        self.bot.subscribers.subscribe(111, "en")
+        self.bot.subscribers.subscribe(222, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        self.assertEqual(context.bot.send_message.call_count, 2)
+        texts = {c.kwargs["chat_id"]: c.kwargs["text"] for c in context.bot.send_message.call_args_list}
+        self.assertEqual(set(texts), {111, 222})
+        self.assertIn("EN bio", texts[111])
+        self.assertIn("FR bio", texts[222])
+
+    async def test_send_daily_removes_blocked_subscriber(self):
+        figure = HistoricalFigure(name="X", description="d", bio_en="bio")  # no image
+        self.mock_database.get_figure_of_the_day.return_value = figure
+        self.bot.subscribers.subscribe(111, "en")
+        context = make_context()
+        context.bot.send_message = AsyncMock(side_effect=Forbidden("bot was blocked by the user"))
+        await self.bot._send_daily(context)
+        self.assertFalse(self.bot.subscribers.is_subscribed(111))
+
+    async def test_send_daily_skips_when_no_figure(self):
+        self.mock_database.get_figure_of_the_day.return_value = None
+        self.bot.subscribers.subscribe(111, "en")
+        context = make_context()
+        await self.bot._send_daily(context)
+        context.bot.send_message.assert_not_called()
+        context.bot.send_photo.assert_not_called()
+
+    async def test_post_init_schedules_daily_job_at_noon_paris(self):
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        app.job_queue.run_daily = Mock()
+        await self.bot._post_init(app)
+        app.job_queue.run_daily.assert_called_once()
+        scheduled = app.job_queue.run_daily.call_args.kwargs["time"]
+        self.assertEqual(scheduled.hour, 12)
+        self.assertEqual(str(scheduled.tzinfo), "Europe/Paris")
 
     async def test_feedback_entry_without_text_asks_with_force_reply(self):
         update, context = make_update(), make_context()

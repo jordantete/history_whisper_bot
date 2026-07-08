@@ -42,6 +42,8 @@ rsync -av --delete \
     --exclude '.env' \
     --exclude '.venv' \
     --exclude 'logs/' \
+    --exclude 'subscribers.json' \
+    --exclude 'subscribers.json.tmp' \
     --exclude '.pytest_cache' \
     --exclude '.ruff_cache' \
     --exclude '__pycache__' \

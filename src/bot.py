@@ -1,14 +1,16 @@
 import os
 import html
 import time
-from datetime import date
+from datetime import date, time as dtime
+from zoneinfo import ZoneInfo
 
 from src.database import Database
+from src.subscribers import SubscriberStore
 from src.utils import Utils
 from src.logger import LOGGER
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, BotCommand
 from telegram.constants import ChatAction, ParseMode
-from telegram.error import TelegramError
+from telegram.error import TelegramError, Forbidden
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
     ConversationHandler, MessageHandler, TypeHandler, ApplicationHandlerStop,
@@ -18,13 +20,16 @@ from telegram.ext import (
 # ConversationHandler state: waiting for the user's feedback message.
 FEEDBACK_WAITING = 0
 
+# When the daily figure is delivered to subscribers (single timezone for now).
+DAILY_TIME = dtime(hour=12, minute=0, tzinfo=ZoneInfo("Europe/Paris"))
+
 
 class Bot:
     # Minimum delay between two feedback submissions forwarded to the owner,
     # per user — protects the owner's chat from a single user flooding it.
     FEEDBACK_COOLDOWN_SECONDS = 30
 
-    def __init__(self, database: Database):
+    def __init__(self, database: Database, subscriber_store: SubscriberStore = None):
         token = Utils.get_environment_variable("TELEGRAM_BOT_TOKEN")
         # AIORateLimiter paces outgoing API calls so a burst of traffic can't
         # trip Telegram's token-wide flood limits (which would mute the bot).
@@ -39,6 +44,8 @@ class Bot:
         self.database = database
         self.localizable_strings = Utils.load_localizable_data()
         self._feedback_last = {}  # user_id -> monotonic timestamp of last forwarded feedback
+        self.subscribers = subscriber_store or SubscriberStore(
+            os.environ.get("SUBSCRIBERS_FILE", "subscribers.json"))
 
     def _locale(self, update: Update) -> str:
         language_code = update.effective_user.language_code if update.effective_user else None
@@ -63,6 +70,12 @@ class Bot:
                 self._tl("bot-short-description", locale), language_code=language_code)
             await application.bot.set_my_description(
                 self._tl("bot-description", locale), language_code=language_code)
+        # Schedule the daily figure delivery to subscribers.
+        if application.job_queue:
+            application.job_queue.run_daily(self._send_daily, time=DAILY_TIME, name="daily-figure")
+            LOGGER.info(f"Scheduled daily delivery at {DAILY_TIME}")
+        else:
+            LOGGER.warning("JobQueue unavailable — daily delivery not scheduled")
 
     def _figure_bio(self, figure, locale: str) -> str:
         primary = figure.bio_fr if locale == "fr" else figure.bio_en
@@ -119,35 +132,63 @@ class Bot:
         site = "frwiki" if locale == "fr" else "enwiki"
         return f"https://www.wikidata.org/wiki/Special:GoToLinkedPage?site={site}&itemid={figure.wikidata_id}"
 
-    def _figure_keyboard(self, update: Update, figure) -> InlineKeyboardMarkup:
+    def _figure_keyboard(self, locale: str, figure) -> InlineKeyboardMarkup:
         rows = [[
-            InlineKeyboardButton(self._t("btn-another", update), callback_data="random"),
-            InlineKeyboardButton(self._t("btn-today", update), callback_data="today"),
+            InlineKeyboardButton(self._tl("btn-another", locale), callback_data="random"),
+            InlineKeyboardButton(self._tl("btn-today", locale), callback_data="today"),
         ]]
-        url = self._read_more_url(figure, self._locale(update))
+        url = self._read_more_url(figure, locale)
         if url:
-            rows.append([InlineKeyboardButton(self._t("btn-read-more", update), url=url)])
+            rows.append([InlineKeyboardButton(self._tl("btn-read-more", locale), url=url)])
         return InlineKeyboardMarkup(rows)
+
+    async def _deliver_figure(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, figure) -> None:
+        """Send a rendered figure card to a specific chat in a specific locale.
+        Shared by interactive commands and the daily job. Forbidden (user blocked
+        the bot) propagates so callers can react (e.g. drop the subscriber)."""
+        bio = self._figure_bio(figure, locale)
+        facts = self._figure_facts(figure, locale)
+        caption = self._build_caption(figure.name, bio, facts, self._tl("highlights-header", locale))
+        keyboard = self._figure_keyboard(locale, figure)
+        if figure.image_url:
+            try:
+                await context.bot.send_chat_action(chat_id=chat_id, action=ChatAction.UPLOAD_PHOTO)
+                await context.bot.send_photo(chat_id=chat_id, photo=figure.image_url,
+                                             caption=caption, parse_mode=ParseMode.HTML, reply_markup=keyboard)
+                return
+            except Forbidden:
+                raise
+            except TelegramError as e:
+                LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
+        await context.bot.send_message(chat_id=chat_id, text=caption,
+                                       parse_mode=ParseMode.HTML, reply_markup=keyboard)
 
     async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
         if not figure:
             await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("no-figures", update))
             return
-        locale = self._locale(update)
-        bio = self._figure_bio(figure, locale)
-        facts = self._figure_facts(figure, locale)
-        caption = self._build_caption(figure.name, bio, facts, self._t("highlights-header", update))
-        keyboard = self._figure_keyboard(update, figure)
-        if figure.image_url:
+        await self._deliver_figure(context, update.effective_chat.id, self._locale(update), figure)
+
+    async def _send_daily(self, context: ContextTypes.DEFAULT_TYPE) -> None:
+        """JobQueue callback: deliver the figure of the day to all subscribers,
+        each in their own locale. Subscribers who blocked the bot are dropped."""
+        figure = self.database.get_figure_of_the_day(date.today())
+        if not figure:
+            LOGGER.warning("No figure of the day — skipping daily delivery")
+            return
+        recipients = self.subscribers.all()
+        LOGGER.info(f"Daily delivery starting for {len(recipients)} subscriber(s)")
+        sent = 0
+        for chat_id, locale in recipients:
             try:
-                await context.bot.send_chat_action(chat_id=update.effective_chat.id, action=ChatAction.UPLOAD_PHOTO)
-                await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url,
-                                             caption=caption, parse_mode=ParseMode.HTML, reply_markup=keyboard)
-                return
+                await self._deliver_figure(context, chat_id, locale, figure)
+                sent += 1
+            except Forbidden:
+                LOGGER.info(f"Subscriber {chat_id} blocked the bot — removing")
+                self.subscribers.unsubscribe(chat_id)
             except TelegramError as e:
-                LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=caption,
-                                       parse_mode=ParseMode.HTML, reply_markup=keyboard)
+                LOGGER.warning(f"Daily delivery to {chat_id} failed: {e}")
+        LOGGER.info(f"Daily delivery done: {sent}/{len(recipients)} sent")
 
     async def __group_guard(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Runs before every handler. The bot is private-only: in any group /
@@ -201,11 +242,17 @@ class Bot:
 
     async def __subscribe_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Subscribe handler command called")
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("subscribe-soon", update))
+        chat_id = update.effective_chat.id
+        newly = self.subscribers.subscribe(chat_id, self._locale(update))
+        key = "subscribe-done" if newly else "subscribe-already"
+        await context.bot.send_message(chat_id=chat_id, text=self._t(key, update))
 
     async def __unsubscribe_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Unsubscribe handler command called")
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("unsubscribe-soon", update))
+        chat_id = update.effective_chat.id
+        was_subscribed = self.subscribers.unsubscribe(chat_id)
+        key = "unsubscribe-done" if was_subscribed else "unsubscribe-none"
+        await context.bot.send_message(chat_id=chat_id, text=self._t(key, update))
 
     def _feedback_allowed(self, user_id, now: float) -> bool:
         """Per-user cooldown gate. Returns True (and records `now`) if the user
