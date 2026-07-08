@@ -1,4 +1,5 @@
 import os
+import html
 import time
 from datetime import date
 
@@ -6,7 +7,7 @@ from src.database import Database
 from src.utils import Utils
 from src.logger import LOGGER
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, BotCommand
-from telegram.constants import ChatAction
+from telegram.constants import ChatAction, ParseMode
 from telegram.error import TelegramError
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
@@ -75,28 +76,38 @@ class Bot:
 
     @staticmethod
     def _build_caption(name: str, bio: str, facts, header: str, limit: int = 1024) -> str:
-        facts_block = ""
-        if facts:
-            facts_block = "\n\n" + header + "\n" + "\n".join(f"• {f}" for f in facts)
-        head = name if not bio else f"{name}\n\n{bio}"
-        caption = head + facts_block
-        if len(caption) <= limit:
-            return caption
-        # Over the limit: truncate the bio, keep name + facts block.
-        ellipsis = "…"
+        """Render an HTML caption (bold name, italic bio, bold header + bullets).
+        All dynamic content is HTML-escaped. Telegram's caption limit counts the
+        *visible* text (tags/entities excluded), so truncation is budgeted on the
+        raw text length while the output carries the markup."""
+        def esc(s):
+            return html.escape(s, quote=False)
+
         separator = "\n\n"
-        budget = limit - len(name) - len(separator) - len(ellipsis) - len(facts_block)
+        # facts block: visible form drives the budget, html form is emitted.
+        facts_visible = ""
+        facts_html = ""
+        if facts:
+            facts_visible = separator + header + "\n" + "\n".join(f"• {f}" for f in facts)
+            facts_html = separator + f"<b>{esc(header)}</b>\n" + "\n".join(f"• {esc(f)}" for f in facts)
+
+        name_html = f"<b>{esc(name)}</b>"
+        full_visible = len(name) + (len(separator) + len(bio) if bio else 0) + len(facts_visible)
+        if full_visible <= limit:
+            body = name_html if not bio else f"{name_html}{separator}<i>{esc(bio)}</i>"
+            return body + facts_html
+        # Over the limit: truncate the bio (visible budget), keep name + facts.
+        ellipsis = "…"
+        budget = limit - len(name) - len(separator) - len(ellipsis) - len(facts_visible)
         if budget > 0:
-            truncated_bio = bio[:budget].rstrip() + ellipsis
-            return f"{name}{separator}{truncated_bio}{facts_block}"
-        # No room for any bio (name + facts block alone are already at/over the
-        # limit): drop the bio entirely.
-        without_bio = name + facts_block
-        if len(without_bio) <= limit:
-            return without_bio
-        # Last resort: even name + facts block exceed the limit. Hard-clamp to
-        # guarantee the length invariant holds, at the cost of content quality.
-        return without_bio[:limit]
+            truncated = bio[:budget].rstrip()
+            return f"{name_html}{separator}<i>{esc(truncated)}{ellipsis}</i>{facts_html}"
+        # No room for any bio: drop it, keep name + facts.
+        if len(name) + len(facts_visible) <= limit:
+            return name_html + facts_html
+        # Last resort: even name + facts exceed the limit. Hard-clamp the visible
+        # text to guarantee the invariant, at the cost of formatting/content.
+        return esc((name + facts_visible)[:limit])
 
     @staticmethod
     def _read_more_url(figure, locale: str):
@@ -131,11 +142,12 @@ class Bot:
             try:
                 await context.bot.send_chat_action(chat_id=update.effective_chat.id, action=ChatAction.UPLOAD_PHOTO)
                 await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url,
-                                             caption=caption, reply_markup=keyboard)
+                                             caption=caption, parse_mode=ParseMode.HTML, reply_markup=keyboard)
                 return
             except TelegramError as e:
                 LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=caption, reply_markup=keyboard)
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=caption,
+                                       parse_mode=ParseMode.HTML, reply_markup=keyboard)
 
     async def __group_guard(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Runs before every handler. The bot is private-only: in any group /

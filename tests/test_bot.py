@@ -1,4 +1,6 @@
 import os
+import re
+import html
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
 from telegram import ForceReply
@@ -7,6 +9,12 @@ from telegram.ext import Application, ConversationHandler, ApplicationHandlerSto
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
 from src.historical_figure import HistoricalFigure
+
+
+def visible_len(html_str):
+    """Length of the text Telegram counts against the caption limit: HTML tags
+    are stripped and entities decoded back to single characters."""
+    return len(html.unescape(re.sub(r"<[^>]+>", "", html_str)))
 
 
 def make_update(language_code="en", chat_id=42, username="alice", user_id=7, chat_type="private"):
@@ -212,25 +220,33 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         f2 = HistoricalFigure(name="V", description="d")
         self.assertEqual(self.bot._figure_facts(f2, "fr"), [])
 
-    def test_build_caption_with_and_without_facts(self):
+    def test_build_caption_html_with_and_without_facts(self):
         cap = Bot._build_caption("Voltaire", "A bio.", ["f1", "f2"], "Highlights")
-        self.assertIn("Voltaire", cap)
-        self.assertIn("A bio.", cap)
-        self.assertIn("Highlights", cap)
+        self.assertIn("<b>Voltaire</b>", cap)
+        self.assertIn("<i>A bio.</i>", cap)
+        self.assertIn("<b>Highlights</b>", cap)
         self.assertIn("• f1", cap)
         no_facts = Bot._build_caption("Voltaire", "A bio.", [], "Highlights")
         self.assertNotIn("Highlights", no_facts)
+        self.assertIn("<b>Voltaire</b>", no_facts)
+
+    def test_build_caption_escapes_html_in_content(self):
+        cap = Bot._build_caption("A & B <x>", "bio & <i>hi</i>", ["m & n"], "Head <>")
+        self.assertIn("<b>A &amp; B &lt;x&gt;</b>", cap)
+        self.assertIn("bio &amp; &lt;i&gt;hi&lt;/i&gt;", cap)
+        self.assertIn("• m &amp; n", cap)
+        self.assertIn("<b>Head &lt;&gt;</b>", cap)
 
     def test_build_caption_truncates_over_limit(self):
         cap = Bot._build_caption("Name", "x" * 2000, ["short fact"], "Highlights")
-        self.assertLessEqual(len(cap), 1024)
+        self.assertLessEqual(visible_len(cap), 1024)
         self.assertIn("Name", cap)
         self.assertIn("Highlights", cap)
         self.assertIn("short fact", cap)
 
     def test_build_caption_never_exceeds_limit_even_with_large_facts(self):
         cap = Bot._build_caption("Name", "", ["x" * 1200], "Highlights")
-        self.assertLessEqual(len(cap), 1024)
+        self.assertLessEqual(visible_len(cap), 1024)
 
     async def test_group_guard_allows_private_chat(self):
         update, context = make_update(chat_type="private"), make_context()
