@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+"""Build-time enrichment: fetch bio + portrait from Wikipedia for each figure,
+write an enriched src/figures.json, and dump the intros for authoring faits.
+
+Run from the project root:  python -m scripts.enrich_figures
+Faits marquants (facts_en/facts_fr) are authored separately, grounded on the
+intros dumped to scripts/_intros.json, then merged into figures.json.
+"""
+import json
+import re
+import time
+import urllib.parse
+import urllib.request
+
+FIGURES_PATH = "src/figures.json"
+INTROS_PATH = "scripts/_intros.json"
+USER_AGENT = "history-whisper-bot/1.0 (contact: [redacted])"
+
+# name -> {"fr": title, "en": title, "wikidata_id": id} for ambiguous/legendary names.
+OVERRIDES = {
+    "Aristide": {"fr": "Aristide le Juste", "en": "Aristides", "wikidata_id": "Q184960"},
+    "Francis Bacon": {"fr": "Francis Bacon (philosophe)", "en": "Francis Bacon", "wikidata_id": "Q37388"},
+    "Sadi Carnot": {"fr": "Sadi Carnot (physicien)", "en": "Nicolas Léonard Sadi Carnot", "wikidata_id": "Q188905"},
+    "Lucrèce": {"fr": "Lucrèce", "en": "Lucretius", "wikidata_id": "Q189441"},
+    "Bourbon": {"fr": "Maison de Bourbon", "en": "House of Bourbon", "wikidata_id": "Q216901"},
+    "Scaramouche": {"fr": "Scaramouche", "en": "Scaramouche", "wikidata_id": "Q1988917"},
+}
+
+
+def normalize_image_width(url, width=800):
+    """Rewrite a Wikimedia thumbnail URL to a given pixel width; leave others as-is."""
+    if not url:
+        return url
+    return re.sub(r"/\d+px-", f"/{width}px-", url)
+
+
+def resolve_titles(name, overrides):
+    o = overrides.get(name, {})
+    return {
+        "fr": o.get("fr", name),
+        "en": o.get("en", name),
+        "wikidata_id": o.get("wikidata_id"),
+    }
+
+
+def _get_json(url):
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.load(r)
+
+
+def fetch_summary(lang, title):
+    """Return (extract, image_url) from the REST summary endpoint, or ('', None)."""
+    url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{urllib.parse.quote(title)}"
+    try:
+        d = _get_json(url)
+    except Exception as e:  # noqa: BLE001 — build tool, log and continue
+        print(f"  ! summary {lang}/{title}: {e}")
+        return "", None
+    extract = d.get("extract", "")
+    image = (d.get("originalimage") or d.get("thumbnail") or {}).get("source")
+    return extract, normalize_image_width(image)
+
+
+def fetch_intro(lang, title):
+    """Return the full plain-text intro (for grounding faits), or ''."""
+    params = urllib.parse.urlencode({
+        "action": "query", "format": "json", "prop": "extracts",
+        "exintro": "1", "explaintext": "1", "redirects": "1", "titles": title,
+    })
+    url = f"https://{lang}.wikipedia.org/w/api.php?{params}"
+    try:
+        pages = _get_json(url)["query"]["pages"]
+        return next(iter(pages.values())).get("extract", "")
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! intro {lang}/{title}: {e}")
+        return ""
+
+
+def main():
+    with open(FIGURES_PATH, "r", encoding="utf-8") as f:
+        figures = json.load(f)
+
+    intros = {}
+    for fig in figures:
+        name = fig["name"]
+        titles = resolve_titles(name, OVERRIDES)
+        if titles["wikidata_id"]:
+            fig["wikidata_id"] = titles["wikidata_id"]
+        bio_fr, img_fr = fetch_summary("fr", titles["fr"])
+        bio_en, img_en = fetch_summary("en", titles["en"])
+        if bio_fr:
+            fig["bio_fr"] = bio_fr
+        if bio_en:
+            fig["bio_en"] = bio_en
+        image = img_fr or img_en
+        if image:
+            fig["image_url"] = image
+        intros[name] = {
+            "fr": fetch_intro("fr", titles["fr"]),
+            "en": fetch_intro("en", titles["en"]),
+        }
+        print(f"{name}: bio_fr={'Y' if bio_fr else '-'} bio_en={'Y' if bio_en else '-'} img={'Y' if image else '-'}")
+        time.sleep(0.3)
+
+    with open(FIGURES_PATH, "w", encoding="utf-8") as f:
+        json.dump(figures, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    with open(INTROS_PATH, "w", encoding="utf-8") as f:
+        json.dump(intros, f, ensure_ascii=False, indent=2)
+
+    missing = [fig["name"] for fig in figures if not fig.get("image_url")]
+    print(f"\nDone. {len(figures)} figures. Missing image: {missing}")
+
+
+if __name__ == "__main__":
+    main()
