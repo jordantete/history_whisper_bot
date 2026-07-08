@@ -3,15 +3,16 @@ import unittest
 from unittest.mock import patch, Mock, AsyncMock
 from telegram import ForceReply
 from telegram.error import TelegramError
-from telegram.ext import Application, ConversationHandler
+from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
 from src.historical_figure import HistoricalFigure
 
 
-def make_update(language_code="en", chat_id=42, username="alice", user_id=7):
+def make_update(language_code="en", chat_id=42, username="alice", user_id=7, chat_type="private"):
     update = Mock()
     update.effective_chat.id = chat_id
+    update.effective_chat.type = chat_type
     update.effective_user.language_code = language_code
     update.effective_user.username = username
     update.effective_user.id = user_id
@@ -229,6 +230,42 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
     def test_build_caption_never_exceeds_limit_even_with_large_facts(self):
         cap = Bot._build_caption("Name", "", ["x" * 1200], "Highlights")
         self.assertLessEqual(len(cap), 1024)
+
+    async def test_group_guard_allows_private_chat(self):
+        update, context = make_update(chat_type="private"), make_context()
+        context.bot.leave_chat = AsyncMock()
+        # Private chats must pass through untouched: no leave, no stop raised.
+        await self.bot._Bot__group_guard(update, context)
+        context.bot.leave_chat.assert_not_called()
+
+    async def test_group_guard_leaves_group_and_stops(self):
+        update, context = make_update(chat_id=-100, chat_type="group"), make_context()
+        context.bot.leave_chat = AsyncMock()
+        with self.assertRaises(ApplicationHandlerStop):
+            await self.bot._Bot__group_guard(update, context)
+        context.bot.leave_chat.assert_awaited_once_with(chat_id=-100)
+
+    async def test_group_guard_stops_even_if_leave_fails(self):
+        update, context = make_update(chat_id=-100, chat_type="supergroup"), make_context()
+        context.bot.leave_chat = AsyncMock(side_effect=TelegramError("cannot leave"))
+        with self.assertRaises(ApplicationHandlerStop):
+            await self.bot._Bot__group_guard(update, context)
+        context.bot.leave_chat.assert_awaited_once()
+
+    async def test_group_guard_ignores_update_without_chat(self):
+        update, context = make_update(), make_context()
+        update.effective_chat = None
+        context.bot.leave_chat = AsyncMock()
+        # No chat (e.g. poll update): pass through, do not raise or leave.
+        await self.bot._Bot__group_guard(update, context)
+        context.bot.leave_chat.assert_not_called()
+
+    def test_group_guard_registered_in_low_group(self):
+        self.bot.register_handlers()
+        self.assertIn(-1, self.bot.application.handlers)
+        guard_handlers = self.bot.application.handlers[-1]
+        self.assertEqual(len(guard_handlers), 1)
+        self.assertIsInstance(guard_handlers[0], TypeHandler)
 
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()

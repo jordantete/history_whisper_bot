@@ -8,7 +8,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceRe
 from telegram.error import TelegramError
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
-    ConversationHandler, MessageHandler, filters,
+    ConversationHandler, MessageHandler, TypeHandler, ApplicationHandlerStop, filters,
 )
 
 # ConversationHandler state: waiting for the user's feedback message.
@@ -79,6 +79,20 @@ class Bot:
             except TelegramError as e:
                 LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
         await context.bot.send_message(chat_id=update.effective_chat.id, text=caption)
+
+    async def __group_guard(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Runs before every handler. The bot is private-only: in any group /
+        supergroup / channel it stays silent, leaves the chat, and stops all
+        further handling. No per-user access control — the bot is public."""
+        chat = update.effective_chat
+        if not chat or chat.type == "private":
+            return
+        LOGGER.info(f"Non-private chat {chat.id} ({chat.type}) — leaving and ignoring")
+        try:
+            await context.bot.leave_chat(chat_id=chat.id)
+        except Exception as e:
+            LOGGER.warning(f"Failed to leave chat {chat.id}: {e}")
+        raise ApplicationHandlerStop
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
@@ -162,6 +176,8 @@ class Bot:
         return ConversationHandler.END
 
     def register_handlers(self):
+        # Global gate (runs before all group-0 handlers): private-chat-only.
+        self.application.add_handler(TypeHandler(Update, self.__group_guard), group=-1)
         self.application.add_handler(CommandHandler('start', self.__start_handler))
         self.application.add_handler(CommandHandler('help', self.__help_handler))
         self.application.add_handler(CommandHandler('random', self.__random_handler))
