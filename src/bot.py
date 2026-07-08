@@ -1,4 +1,5 @@
 import os
+import time
 from datetime import date
 
 from src.database import Database
@@ -8,7 +9,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceRe
 from telegram.error import TelegramError
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
-    ConversationHandler, MessageHandler, TypeHandler, ApplicationHandlerStop, filters,
+    ConversationHandler, MessageHandler, TypeHandler, ApplicationHandlerStop,
+    AIORateLimiter, filters,
 )
 
 # ConversationHandler state: waiting for the user's feedback message.
@@ -16,11 +18,18 @@ FEEDBACK_WAITING = 0
 
 
 class Bot:
+    # Minimum delay between two feedback submissions forwarded to the owner,
+    # per user — protects the owner's chat from a single user flooding it.
+    FEEDBACK_COOLDOWN_SECONDS = 30
+
     def __init__(self, database: Database):
         token = Utils.get_environment_variable("TELEGRAM_BOT_TOKEN")
-        self.application = ApplicationBuilder().token(token).build()
+        # AIORateLimiter paces outgoing API calls so a burst of traffic can't
+        # trip Telegram's token-wide flood limits (which would mute the bot).
+        self.application = ApplicationBuilder().token(token).rate_limiter(AIORateLimiter()).build()
         self.database = database
         self.localizable_strings = Utils.load_localizable_data()
+        self._feedback_last = {}  # user_id -> monotonic timestamp of last forwarded feedback
 
     def _locale(self, update: Update) -> str:
         language_code = update.effective_user.language_code if update.effective_user else None
@@ -138,10 +147,25 @@ class Bot:
         LOGGER.info("Unsubscribe handler command called")
         await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("unsubscribe-soon", update))
 
+    def _feedback_allowed(self, user_id, now: float) -> bool:
+        """Per-user cooldown gate. Returns True (and records `now`) if the user
+        may submit feedback; False if they're still within the cooldown window.
+        Only allowed submissions update the timestamp, so continuous spam stays
+        capped at one forward per cooldown window."""
+        last = self._feedback_last.get(user_id)
+        if last is not None and now - last < self.FEEDBACK_COOLDOWN_SECONDS:
+            return False
+        self._feedback_last[user_id] = now
+        return True
+
     async def _forward_feedback(self, update: Update, context: ContextTypes.DEFAULT_TYPE, text: str) -> None:
+        user = update.effective_user
+        if user and not self._feedback_allowed(user.id, time.monotonic()):
+            LOGGER.info(f"Feedback from {user.id} throttled (cooldown)")
+            await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("feedback-cooldown", update))
+            return
         owner_chat_id = os.environ.get("OWNER_CHAT_ID")
         if owner_chat_id:
-            user = update.effective_user
             who = f"@{user.username}" if user and user.username else (str(user.id) if user else "unknown")
             try:
                 await context.bot.send_message(chat_id=owner_chat_id, text=f"Feedback from {who}:\n{text}")

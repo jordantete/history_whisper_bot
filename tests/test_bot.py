@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch, Mock, AsyncMock
 from telegram import ForceReply
 from telegram.error import TelegramError
-from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler
+from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler, AIORateLimiter
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
 from src.historical_figure import HistoricalFigure
@@ -259,6 +259,28 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         # No chat (e.g. poll update): pass through, do not raise or leave.
         await self.bot._Bot__group_guard(update, context)
         context.bot.leave_chat.assert_not_called()
+
+    def test_application_has_rate_limiter(self):
+        # Outgoing API calls are paced to avoid token-wide Telegram flood bans.
+        self.assertIsInstance(self.bot.application.bot.rate_limiter, AIORateLimiter)
+
+    def test_feedback_allowed_enforces_per_user_cooldown(self):
+        cd = self.bot.FEEDBACK_COOLDOWN_SECONDS
+        self.assertTrue(self.bot._feedback_allowed(7, now=1000.0))            # first: allowed
+        self.assertFalse(self.bot._feedback_allowed(7, now=1000.0 + cd - 0.1))  # too soon: blocked
+        self.assertTrue(self.bot._feedback_allowed(7, now=1000.0 + cd + 0.1))   # cooldown elapsed
+        self.assertTrue(self.bot._feedback_allowed(8, now=1000.0 + 1))         # other user independent
+
+    async def test_feedback_cooldown_blocks_second_forward(self):
+        update, context = make_update(), make_context()
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "999"}):
+            await self.bot._forward_feedback(update, context, "one")  # allowed: forward + thanks
+            context.bot.send_message.reset_mock()
+            await self.bot._forward_feedback(update, context, "two")  # blocked by cooldown
+        context.bot.send_message.assert_called_once()  # only the cooldown notice, no owner forward
+        kwargs = context.bot.send_message.call_args.kwargs
+        self.assertEqual(kwargs["chat_id"], update.effective_chat.id)
+        self.assertNotEqual(kwargs["chat_id"], "999")
 
     def test_group_guard_registered_in_low_group(self):
         self.bot.register_handlers()

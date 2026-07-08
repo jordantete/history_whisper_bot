@@ -8,6 +8,7 @@
         "feedback-placeholder": "Your suggestion…",
         "feedback-cancel": "No worries — cancelled.",
         "feedback-thanks": "🙏 Thanks for your feedback — it has been noted!",
+        "feedback-cooldown": "⏳ Thanks! You're sending feedback a bit fast — please wait a moment before sending more.",
         "highlights-header": "Highlights",
         "no-figures": "No figures found, please try again."
     },
@@ -20,6 +21,7 @@
         "feedback-placeholder": "Ta suggestion…",
         "feedback-cancel": "Pas de souci — annulé.",
         "feedback-thanks": "🙏 Merci pour ton retour — c'est bien noté !",
+        "feedback-cooldown": "⏳ Merci ! Tu envoies des retours un peu vite — patiente un instant avant d'en envoyer d'autres.",
         "highlights-header": "Faits marquants",
         "no-figures": "Aucune figure trouvée, réessaie."
     }
