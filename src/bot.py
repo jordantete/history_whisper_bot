@@ -28,10 +28,6 @@ class Bot:
     def _t(self, key: str, update: Update) -> str:
         return Utils.localize(key, self._locale(update), self.localizable_strings)
 
-    @staticmethod
-    def _format_figure(figure) -> str:
-        return f"{figure.name}\n{figure.description}"
-
     def _figure_bio(self, figure, locale: str) -> str:
         primary = figure.bio_fr if locale == "fr" else figure.bio_en
         secondary = figure.bio_en if locale == "fr" else figure.bio_fr
@@ -68,11 +64,17 @@ class Bot:
         return without_bio[:limit]
 
     async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
-        if figure:
-            text = self._format_figure(figure)
+        if not figure:
+            await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("no-figures", update))
+            return
+        locale = self._locale(update)
+        bio = self._figure_bio(figure, locale)
+        facts = self._figure_facts(figure, locale)
+        caption = self._build_caption(figure.name, bio, facts, self._t("highlights-header", update))
+        if figure.image_url:
+            await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url, caption=caption)
         else:
-            text = self._t("no-figures", update)
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=text)
+            await context.bot.send_message(chat_id=update.effective_chat.id, text=caption)
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
