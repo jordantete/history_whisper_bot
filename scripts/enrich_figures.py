@@ -59,6 +59,46 @@ OVERRIDES = {
     "Maurice de Saxe": {"fr": "Maurice de Saxe", "en": "Maurice de Saxe"},
     "Velázquez": {"fr": "Diego Vélasquez", "en": "Diego Velázquez"},
     "Goya": {"fr": "Francisco de Goya", "en": "Francisco Goya"},
+    # Top-tier additional subjects (China / Revolution / Victorian / semiotics)
+    "Cixi": {"fr": "Cixi", "en": "Empress Dowager Cixi"},  # vs the Zhejiang city
+    "Tchang Kaï-chek": {"fr": "Tchang Kaï-chek", "en": "Chiang Kai-shek"},  # accented FR transliteration
+    "Danton": {"fr": "Georges Jacques Danton", "en": "Georges Danton"},
+    "Saint-Just": {"fr": "Louis Antoine de Saint-Just", "en": "Louis Antoine de Saint-Just"},
+    "Marat": {"fr": "Jean-Paul Marat", "en": "Jean-Paul Marat"},
+    "Sieyès": {"fr": "Emmanuel-Joseph Sieyès", "en": "Emmanuel Joseph Sieyès"},
+    "Lazare Carnot": {"fr": "Lazare Nicolas Marguerite Carnot", "en": "Lazare Carnot"},  # NOT Sadi Carnot (already present)
+    "Victoria": {"fr": "Victoria (reine du Royaume-Uni)", "en": "Queen Victoria"},
+    "Darwin": {"fr": "Charles Darwin", "en": "Charles Darwin"},
+    "Dickens": {"fr": "Charles Dickens", "en": "Charles Dickens"},
+    "Faraday": {"fr": "Michael Faraday", "en": "Michael Faraday"},
+    "Nightingale": {"fr": "Florence Nightingale", "en": "Florence Nightingale"},
+    # Greek antiquity: Peloponnesian War actors + sea-monster myths
+    "Périclès": {"fr": "Périclès", "en": "Pericles"},
+    "Thucydide": {"fr": "Thucydide", "en": "Thucydides"},
+    "Alcibiade": {"fr": "Alcibiade", "en": "Alcibiades"},
+    "Lysandre": {"fr": "Lysandre", "en": "Lysander"},
+    "Scylla": {"fr": "Scylla (monstre)", "en": "Scylla"},  # legendary entry, like Prométhée/Hercule
+    "Charybde": {"fr": "Charybde", "en": "Charybdis"},
+    # Revolution (rest) + Victorian engineers (rest)
+    "Barras": {"fr": "Paul Barras", "en": "Paul Barras"},
+    "Tallien": {"fr": "Jean-Lambert Tallien", "en": "Jean-Lambert Tallien"},
+    "Babeuf": {"fr": "Gracchus Babeuf", "en": "François-Noël Babeuf"},  # EN/FR titles differ
+    "Hébert": {"fr": "Jacques-René Hébert", "en": "Jacques Hébert"},
+    "Couthon": {"fr": "Georges Couthon", "en": "Georges Couthon"},
+    "Brunel": {"fr": "Isambard Kingdom Brunel", "en": "Isambard Kingdom Brunel"},  # NOT Marc Isambard Brunel (father)
+    "Stephenson": {"fr": "George Stephenson", "en": "George Stephenson"},  # NOT Robert Stephenson (son)
+    # China Tier B + bench (Three Kingdoms / Ming / antiquity / Qing)
+    "Zhu Yuanzhang": {"fr": "Zhu Yuanzhang", "en": "Hongwu Emperor"},  # titled by birth name in FR
+    "Kangxi": {"fr": "Kangxi", "en": "Kangxi Emperor"},
+    "Yongle": {"fr": "Ming Chengzu", "en": "Yongle Emperor"},  # FR "Yongle" is a disambiguation page
+    "Laozi": {"fr": "Lao Tseu", "en": "Laozi"},
+    # Psychology (rest) + semiotics (rest) + Sumatra
+    "Skinner": {"fr": "Burrhus Frederic Skinner", "en": "B. F. Skinner"},
+    "Zimbardo": {"fr": "Philip Zimbardo", "en": "Philip Zimbardo"},
+    "John B. Watson": {"fr": "John Broadus Watson", "en": "John B. Watson"},  # vs many other Watsons
+    "Peirce": {"fr": "Charles Sanders Peirce", "en": "Charles Sanders Peirce"},
+    "Jakobson": {"fr": "Roman Jakobson", "en": "Roman Jakobson"},
+    "Greimas": {"fr": "Algirdas Julien Greimas", "en": "Algirdas Julien Greimas"},
 }
 
 

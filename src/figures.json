@@ -1256,5 +1256,1025 @@
       "His party merged with Jules Guesde's revolutionary party in 1905 to form the French Section of the Workers' International (SFIO).",
       "An antimilitarist, he was assassinated in 1914 at the outbreak of World War I but remains a major figure of the French Left."
     ]
+  },
+  {
+    "name": "Ferdinand de Saussure",
+    "description": "Ferdinand de Saussure, linguiste suisse (1857-1913), père de la linguistique moderne et de la sémiologie.",
+    "bio_fr": "Ferdinand de Saussure, né à Genève le 26 novembre 1857 et mort à Vufflens-le-Château le 22 février 1913, est un linguiste suisse. Reconnu comme le précurseur du structuralisme en linguistique, il s'est aussi distingué par ses travaux sur les langues indo-européennes.",
+    "bio_en": "Ferdinand Mongin de Saussure was a Swiss linguist, semiotician and philosopher. His ideas laid a foundation for many significant developments in both linguistics and semiotics in the 20th century. He is widely considered one of the founders of 20th-century linguistics and one of two major founders of semiotics, or semiology, as Saussure called it.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Ferdinand_de_Saussure_by_Jullien.png/330px-Ferdinand_de_Saussure_by_Jullien.png",
+    "facts_fr": [
+      "Son livre le plus célèbre, le « Cours de linguistique générale » (1916), n'a pas été écrit par lui : il est mort en 1913, et ce sont ses anciens élèves qui l'ont reconstitué à partir de leurs notes de cours.",
+      "On lui doit la fameuse distinction entre « langue » (le système partagé par une communauté) et « parole » (l'usage individuel), ainsi que l'idée que le signe linguistique est arbitraire : rien dans le mot « arbre » ne ressemble à un arbre.",
+      "Son influence a largement débordé la linguistique : ses concepts ont nourri l'ethnologie, l'analyse littéraire, la philosophie et même la psychanalyse de Jacques Lacan."
+    ],
+    "facts_en": [
+      "His most famous book, the \"Course in General Linguistics\" (1916), was not actually written by him: he died in 1913, and it was reconstructed by his former students from their lecture notes.",
+      "He is credited with the distinction between \"langue\" (the system shared by a community) and \"parole\" (individual speech), and with the idea that the linguistic sign is arbitrary: nothing about the word \"tree\" resembles a tree.",
+      "His influence spread well beyond linguistics: his concepts fed into anthropology, literary analysis, philosophy, and even the psychoanalysis of Jacques Lacan."
+    ]
+  },
+  {
+    "name": "Roland Barthes",
+    "description": "Roland Barthes, critique et sémiologue français (1915-1980), qui appliqua la sémiologie à la culture populaire.",
+    "bio_fr": "Roland Barthes, né le 12 novembre 1915 à Cherbourg, mort le 26 mars 1980 à Paris, est un critique littéraire et sémiologue français.",
+    "bio_en": "Roland Gérard Barthes was a French literary theorist, essayist, philosopher, critic, and semiotician. His work engaged in the analysis of a variety of sign systems, mainly derived from Western popular culture. His ideas explored a diverse range of fields, including structuralism, anthropology, literary theory, and post-structuralism, and influenced the development of multiple schools of theory.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Roland_Barthes_1969.jpg/330px-Roland_Barthes_1969.jpg",
+    "facts_fr": [
+      "Dans son recueil « Mythologies » (1957), il décortique la culture populaire de son époque, du catch au steak-frites en passant par la nouvelle Citroën DS, pour montrer comment le quotidien fabrique du sens caché.",
+      "Son essai « La Mort de l'auteur » (1967-1968) affirme qu'un texte n'appartient plus à son auteur une fois écrit : c'est le lecteur, et non les intentions de l'écrivain, qui lui donne son sens.",
+      "Sommet d'une carrière atypique, il fut élu au Collège de France, la plus prestigieuse institution universitaire française, après avoir longtemps enseigné à l'École pratique des hautes études puis à l'EHESS."
+    ],
+    "facts_en": [
+      "In his collection \"Mythologies\" (1957) he dissects the popular culture of his day, from wrestling to steak-frites to the new Citroën DS, to reveal how everyday life manufactures hidden meaning.",
+      "His essay \"The Death of the Author\" (1967-1968) argues that a text no longer belongs to its author once written: it is the reader, not the writer's intentions, who gives it meaning.",
+      "The peak of an unconventional career came when he was elected to the Collège de France, France's most prestigious academic institution, after years of teaching at the École pratique des hautes études and then the EHESS."
+    ]
+  },
+  {
+    "name": "Stanley Milgram",
+    "description": "Stanley Milgram, psychologue social américain (1933-1984), célèbre pour son expérience sur la soumission à l'autorité.",
+    "bio_fr": "Stanley Milgram, né le 15 août 1933 à New York et mort le 20 décembre 1984 dans la même ville, est un psychologue social américain. Il est principalement connu pour l'expérience de Milgram et l'expérience du petit monde. Il est considéré comme l'un des psychologues les plus importants du XXe siècle.",
+    "bio_en": "Stanley Milgram was an American social psychologist who conducted controversial experiments on obedience in the 1960s during his professorship at Yale.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Stanley_Milgram_1954.jpg/330px-Stanley_Milgram_1954.jpg",
+    "facts_fr": [
+      "Sa célèbre expérience sur la soumission à l'autorité fut menée dans le sous-sol d'un bâtiment de l'université Yale en 1961, seulement trois mois après l'ouverture du procès du criminel nazi Adolf Eichmann à Jérusalem, qui l'avait profondément marqué.",
+      "Le résultat le surprit lui-même : une très forte proportion de participants acceptaient d'obéir jusqu'au bout aux ordres d'infliger des souffrances à autrui, même à contrecœur.",
+      "Son autre expérience, dite « du petit monde », est à l'origine de l'idée des « six degrés de séparation » : deux inconnus quelconques seraient reliés par une courte chaîne de connaissances."
+    ],
+    "facts_en": [
+      "His famous experiment on obedience to authority was run in the basement of a Yale University building in 1961, just three months after the trial of Nazi war criminal Adolf Eichmann opened in Jerusalem, an event that had deeply affected him.",
+      "The result surprised even Milgram himself: a very high proportion of participants agreed to fully obey orders to harm another person, however reluctantly.",
+      "His other study, the \"small-world\" experiment, gave rise to the idea of \"six degrees of separation\": that any two strangers are linked by a short chain of acquaintances."
+    ]
+  },
+  {
+    "name": "Qin Shi Huang",
+    "description": "Qin Shi Huang, premier empereur de la Chine unifiée (IIIe siècle av. J.-C.), fondateur de la dynastie Qin.",
+    "bio_fr": "Qin Shi Huang, ou Qin Shi Huangdi, fut d'abord le roi de Qin de 247 à 221 av. J.-C. Il mit fin à la période féodale en conquérant un à un l'ensemble des Royaumes combattants entre 230 et 221 av. J.-C. et devint l'unificateur de l'Empire de Chine, et par conséquent l'empereur fondateur de la dynastie Qin.",
+    "bio_en": "Qin Shi Huang was the founder of the Qin dynasty and the first emperor of China. He invented the title huángdì rather than reuse the existing title for \"king\" ; the new title was used by monarchs in China and other countries for the next two millennia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Qinshihuang.jpg/330px-Qinshihuang.jpg",
+    "facts_fr": [
+      "Né à Handan, capitale de l'État de Zhao, il porta d'abord le nom de Ying Zheng ; c'est le riche marchand Lü Buwei qui l'aida à monter sur le trône de Qin.",
+      "Plutôt que de reprendre le titre de « roi » (wáng), il forgea pour lui-même le titre inédit d'« empereur » (huángdì), que les monarques de Chine allaient porter pendant les deux millénaires suivants.",
+      "C'est la découverte fortuite, en 1974 près de Xi'an, de son immense mausolée gardé par des milliers de soldats en terre cuite grandeur nature qui fascine aujourd'hui archéologues et grand public."
+    ],
+    "facts_en": [
+      "Born in Handan, the capital of the state of Zhao, he was first named Ying Zheng ; the wealthy merchant Lü Buwei helped him ascend the throne of Qin.",
+      "Rather than reuse the existing title of \"king\" (wáng), he coined the brand-new title of \"emperor\" (huángdì), which the monarchs of China would bear for the next two thousand years.",
+      "It was the chance discovery near Xi'an in 1974 of his vast mausoleum, guarded by thousands of life-sized terracotta soldiers, that still fascinates archaeologists and the public alike."
+    ]
+  },
+  {
+    "name": "Wu Zetian",
+    "description": "Wu Zetian, unique impératrice à avoir régné en titre sur la Chine (VIIe-VIIIe siècle), fondatrice de la dynastie Zhou.",
+    "bio_fr": "Wu Zetian, née le 17 février 624 à Lizhou et morte le 16 décembre 705, fut la seule impératrice régnante de toute l'histoire de Chine. Alors que le titre et la fonction d'empereur de Chine étaient exclusivement réservés aux hommes, Wu Zetian fonda sa propre dynastie, la dynastie Zhou deuxième du nom, régnant sous le nom d'« empereur saint et suprême » de 690 à 705.",
+    "bio_en": "Empress Wu, commonly known as Wu Zetian, personal name Wu Zhao, was the only undisputed female sovereign in the history of China. She had previously held power as the empress consort of Emperor Gaozong of the Tang dynasty from 660 to 683 and as empress dowager during the reigns of her sons, Emperors Zhongzong and Ruizong, between 683 and 690. She was the sole ruler of the self-styled Zhou dynasty from 690 to 705.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_%28%E5%B1%80%E9%83%A8%29_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png/330px-%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_%28%E5%B1%80%E9%83%A8%29_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png",
+    "facts_fr": [
+      "Elle entra à la cour comme concubine de l'empereur Taizong ; après la mort de celui-ci, elle épousa son successeur Gaozong et devint impératrice en 655.",
+      "Lorsque Gaozong fut frappé d'une attaque paralysante en 660, elle administra l'empire en son nom, puis empêcha ses propres fils de régner pour finalement se proclamer « empereur » en 690.",
+      "Elle institutionnalisa le recours aux délateurs et réforma le système des examens pour promouvoir le mérite ; elle fut renversée par le coup d'État de Shenlong, qui rétablit la dynastie Tang peu avant sa mort."
+    ],
+    "facts_en": [
+      "She entered court as a concubine of Emperor Taizong ; after his death she married his successor Gaozong and became empress in 655.",
+      "When Gaozong suffered a debilitating stroke in 660, she ran the empire on his behalf, later kept her own sons from ruling, and finally crowned herself \"emperor\" in 690.",
+      "She institutionalized the use of informants and reformed the civil-service exams to promote merit ; she was toppled by the Shenlong Coup, which restored the Tang dynasty shortly before her death."
+    ]
+  },
+  {
+    "name": "Cixi",
+    "description": "Cixi, impératrice douairière qui domina la fin de la dynastie Qing pendant près d'un demi-siècle, jusqu'en 1908.",
+    "bio_fr": "Cixi, ou Tseu-Hi, ou Ts'eu-hi, née le 29 novembre 1835 à Pékin et morte le 15 novembre 1908 à la Cité interdite, est une impératrice douairière de Chine de la dynastie Qing qui exerce la réalité du pouvoir en Chine pendant 47 ans, de 1861 à sa mort.",
+    "bio_en": "Empress Dowager Cixi was a Manchu noblewoman of the Yehe Nara clan who periodically controlled the government of the late Qing dynasty as empress dowager and regent from 1861 until her death in 1908.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Ci-Xi_Imperial_Dowager_Empress_%289.2%29.PNG/330px-The_Ci-Xi_Imperial_Dowager_Empress_%289.2%29.PNG",
+    "facts_fr": [
+      "Choisie adolescente comme concubine de l'empereur Xianfeng, elle lui donna un fils, le futur empereur Tongzhi, ce qui lui ouvrit la voie du pouvoir.",
+      "À la mort de Tongzhi en 1875, au mépris des règles de succession, elle plaça son propre neveu sur le trône sous le nom d'empereur Guangxu, qu'elle assigna plus tard à résidence après la réforme des Cent Jours de 1898.",
+      "Après la révolte des Boxers et l'occupation de Pékin par l'Alliance des huit nations, elle dut fuir jusqu'à Xi'an, puis, revenue, engagea les réformes institutionnelles qu'elle avait longtemps refusées."
+    ],
+    "facts_en": [
+      "Chosen as a teenager to be a concubine of the Xianfeng Emperor, she bore him a son, the future Tongzhi Emperor, which opened her path to power.",
+      "On Tongzhi's death in 1875, defying the succession rules, she placed her own nephew on the throne as the Guangxu Emperor, whom she later put under house arrest after the 1898 Hundred Days' Reform.",
+      "After the Boxer Rebellion and the occupation of Beijing by the Eight-Nation Alliance, she fled all the way to Xi'an, then, once back, launched the institutional reforms she had long refused."
+    ]
+  },
+  {
+    "name": "Zheng He",
+    "description": "Zheng He, amiral eunuque du XVe siècle qui mena sept grandes expéditions maritimes Ming jusqu'en Afrique de l'Est.",
+    "bio_fr": "Zheng He est un eunuque chinois musulman et un explorateur maritime célèbre, que ses voyages amenèrent jusqu'au Moyen-Orient et en Afrique de l'Est.",
+    "bio_en": "Zheng He was a Chinese admiral and diplomat from the early Ming dynasty. His extensive explorations along the Indian Ocean led to a major increase in China's political and commercial influence. A eunuch, he was born into a Muslim family as Ma He and later adopted the surname Zheng conferred onto him by the Yongle Emperor.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Zheng_He.jpg/330px-Zheng_He.jpg",
+    "facts_fr": [
+      "Entre 1405 et 1433, il commanda sept grandes « expéditions des flottes au trésor » à travers l'Asie, pour le compte de l'empereur Yongle puis de son successeur Xuande.",
+      "Selon la tradition, ses plus grands navires étaient presque deux fois plus longs que tout bateau en bois jamais recensé et transportaient des centaines de marins répartis sur quatre ponts.",
+      "Favori de l'empereur Yongle, qu'il avait aidé à s'emparer du trône lors de la campagne de Jingnan en 1402, il reçut le titre bouddhique de Sanbao taijian, le « Grand Eunuque aux trois joyaux »."
+    ],
+    "facts_en": [
+      "Between 1405 and 1433 he commanded seven great \"treasure fleet\" voyages across Asia, on commission from the Yongle Emperor and then his successor, the Xuande Emperor.",
+      "According to legend, his largest ships were almost twice as long as any wooden vessel ever recorded and carried hundreds of sailors across four decks.",
+      "A favorite of the Yongle Emperor, whom he had helped seize the throne in the Jingnan campaign of 1402, he was granted the Buddhist title Sanbao taijian, the \"Grand Eunuch of the Three Jewels.\""
+    ]
+  },
+  {
+    "name": "Sun Yat-sen",
+    "description": "Sun Yat-sen, « père de la Chine moderne », meneur révolutionnaire et premier président de la République de Chine en 1912.",
+    "bio_fr": "Sun Yat-sen, plus connu en Chine sous son surnom Sun Zhongshan, également appelé Sun Wen (孫文), né le 12 novembre 1866 et mort le 12 mars 1925, est un révolutionnaire et homme d'État chinois.",
+    "bio_en": "Sun Yat-sen was a Chinese physician, revolutionary and political philosopher who founded the Republic of China (ROC) and the Kuomintang (KMT). Sun is credited with leading the 1911 Revolution and overthrowing the Qing dynasty. He served as the first president of the Provisional Government of the Republic of China (1912) and as the inaugural premier of the Kuomintang.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sun_Yat-sen_2.jpg/330px-Sun_Yat-sen_2.jpg",
+    "facts_fr": [
+      "Fils d'une famille paysanne pauvre du Guangdong, il fut formé à Hawaï avant d'obtenir en 1892 son diplôme du Collège de médecine de Hong Kong pour Chinois.",
+      "En 1912, il céda rapidement la présidence de la toute jeune République de Chine à Yuan Shikai, en échange de l'abdication de la cour Qing, avant de repartir en exil au Japon.",
+      "Il est vénéré de part et d'autre du détroit : « Père de la nation » à Taïwan et « Précurseur de la Révolution » en Chine populaire, cas unique parmi les dirigeants chinois du XXe siècle."
+    ],
+    "facts_en": [
+      "Born to a poor peasant family in Guangdong, he was educated in Hawaii before graduating in 1892 from the Hong Kong College of Medicine for Chinese.",
+      "In 1912 he quickly handed the presidency of the fledgling Republic of China to Yuan Shikai in exchange for the Qing court's abdication, then went back into exile in Japan.",
+      "He is revered on both sides of the strait: \"Father of the Nation\" in Taiwan and \"Forerunner of the Revolution\" in mainland China, a distinction unique among 20th-century Chinese leaders."
+    ]
+  },
+  {
+    "name": "Puyi",
+    "description": "Puyi, dernier empereur de Chine, monté sur le trône à deux ans et déchu en 1912.",
+    "bio_fr": "Puyi, également orthographié Pou-yi ou P'ou-yi, nom de naissance : Aisin Gioro Puyi, mais appelé également de son nom de règne Xuantong, est le douzième et dernier empereur de la dynastie Qing, la dernière qui régna sur l'Empire chinois.",
+    "bio_en": "Puyi was the last emperor of China, having reigned as the Xuantong Emperor of the Qing dynasty and later as the Kangde Emperor of Manchukuo, a Japanese puppet state during World War II. After the war, he was held as a war criminal in the Soviet Union and China until 1959, when the Chinese Communist Party granted him amnesty and presented him as a model of successful reeducation.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Puyi-colorized.jpg",
+    "facts_fr": [
+      "Choisi en 1908 par l'impératrice douairière Cixi pour succéder à l'empereur Guangxu sans enfant, il monta sur le trône à l'âge de deux ans, son père le prince Chun assurant la régence.",
+      "Après son abdication, les « Articles de traitement favorable » lui permirent de conserver son titre impérial et de rester dans la Cité interdite, jusqu'à son expulsion par le seigneur de guerre Feng Yuxiang en 1924.",
+      "Détenu comme criminel de guerre jusqu'en 1959, il finit sa vie en homme ordinaire : jardinier puis chercheur, il fut protégé par Zhou Enlai pendant la Révolution culturelle et mourut sans descendance en 1967."
+    ],
+    "facts_en": [
+      "Chosen in 1908 by Empress Dowager Cixi to succeed the childless Guangxu Emperor, he ascended the throne at age two, with his father Prince Chun serving as regent.",
+      "After his abdication, the \"Articles of Favorable Treatment\" let him keep his imperial title and stay in the Forbidden City, until the warlord Feng Yuxiang expelled him in 1924.",
+      "Held as a war criminal until 1959, he ended his life as an ordinary man: a gardener and then a researcher, protected by Zhou Enlai during the Cultural Revolution, he died without issue in 1967."
+    ]
+  },
+  {
+    "name": "Tchang Kaï-chek",
+    "description": "Tchang Kaï-chek, chef du Kuomintang, dirigeant de la République de Chine puis de Taïwan, adversaire de Mao.",
+    "bio_fr": "Tchang Kaï-chek est un militaire et homme d'État chinois né le 31 octobre 1887 et mort le 5 avril 1975 à Taipei. Il est le dirigeant de la république de Chine de 1928 à sa mort. Son gouvernement est d'abord basé en Chine continentale jusqu'à sa défaite lors de la guerre civile chinoise, face au Parti communiste en 1949. Il continue par la suite de diriger la république de Chine sur l'île de Taïwan. Tchang est le chef du parti nationaliste Kuomintang (KMT) et le commandant en chef de l'Armée nationale révolutionnaire de 1926 à sa mort, période durant laquelle il porte le titre de généralissime.",
+    "bio_en": "Chiang Kai-shek was a Chinese military commander, revolutionary, and statesman who was the President of the Republic of China from 1948 to 1975 and the head of the Nationalist government from 1925 to 1948. As the de facto leader of the Republic of China (ROC), he ruled the country through World War II and oversaw the relocation of its government to Taiwan following defeat in the Chinese Civil War.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/%E8%94%A3%E4%B8%AD%E6%AD%A3%E7%B8%BD%E7%B5%B1%E7%8E%89%E7%85%A7.png/330px-%E8%94%A3%E4%B8%AD%E6%AD%A3%E7%B8%BD%E7%B5%B1%E7%8E%89%E7%85%A7.png",
+    "facts_fr": [
+      "En 1936, il fut enlevé par les hommes de son propre général Zhang Xueliang lors de l'incident de Xi'an et contraint de former un second front uni antijaponais avec les communistes.",
+      "Dirigeant d'une grande puissance alliée, il participa à la conférence du Caire en 1943 pour discuter des conditions de la capitulation du Japon, qui lui valut la restitution de Taïwan.",
+      "Vaincu par les communistes de Mao, il se replia sur Taïwan en 1949 et y imposa la loi martiale, maintenue jusqu'en 1987 ; il y fut réélu cinq fois président par le même « Parlement éternel »."
+    ],
+    "facts_en": [
+      "In 1936 he was kidnapped by the men of his own general Zhang Xueliang during the Xi'an Incident and forced to form a Second United Front with the Communists against Japan.",
+      "As leader of a major Allied power, he attended the 1943 Cairo Conference to discuss the terms of Japan's surrender, which brought about the retrocession of Taiwan to China.",
+      "Defeated by Mao's Communists, he retreated to Taiwan in 1949 and imposed martial law there that lasted until 1987 ; he was re-elected president five times by the same \"Eternal Parliament.\""
+    ]
+  },
+  {
+    "name": "Danton",
+    "description": "Georges Danton, tribun de la Révolution française et premier président du Comité de salut public, guillotiné en 1794.",
+    "bio_fr": "Georges Jacques Danton, dit aussi d'Anton, né le 26 octobre 1759 à Arcis-sur-Aube et mort guillotiné le 5 avril 1794 à Paris, est un homme politique français de la Révolution française.",
+    "bio_en": "Georges Jacques Danton was a French politician and leading figure of the French Revolution. A modest and unknown lawyer on the eve of the Revolution, Danton became a famous orator of the Cordeliers Club and was raised to governmental responsibilities as the French Minister of Justice following the fall of the monarchy on the tenth of August 1792, and was allegedly responsible for inciting the September Massacres. He was tasked by the National Convention to intervene in the military conquest of Belgium led by General Dumouriez, and in the spring of 1793 supported the foundation of a Revolutionary Tribunal, becoming the first president of the Committee of Public Safety.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Anonyme_-_Portrait_de_Georges_Danton_%281759-1794%29%2C_orateur_et_homme_politique_-_P712_-_mus%C3%A9e_Carnavalet_-_4.jpg/330px-Anonyme_-_Portrait_de_Georges_Danton_%281759-1794%29%2C_orateur_et_homme_politique_-_P712_-_mus%C3%A9e_Carnavalet_-_4.jpg",
+    "facts_fr": [
+      "Le 2 septembre 1792, face à l'invasion des armées coalisées, il galvanise la Convention avec une formule restée célèbre : « Il nous faut de l'audace, encore de l'audace, toujours de l'audace, et la Patrie sera sauvée. »",
+      "Après avoir soutenu la Terreur, il tente en 1794 d'y mettre fin comme « Indulgent » : ce revirement scelle sa rivalité mortelle avec Robespierre, qui le fait arrêter et juger.",
+      "Condamné pour conspiration et vénalité, il est guillotiné le 5 avril 1794 ; la tradition lui prête ce dernier mot au bourreau : « Tu montreras ma tête au peuple, elle en vaut la peine. »"
+    ],
+    "facts_en": [
+      "On 2 September 1792, with the coalition armies invading, he rallied the assembly with a line still quoted today: \"We must dare, dare again, always dare, and the Fatherland will be saved.\"",
+      "After backing the Terror, he tried in 1794 to end it as a moderate \"Indulgent\" — a reversal that sealed his deadly rivalry with Robespierre, who had him arrested and tried.",
+      "Convicted of conspiracy and venality, he was guillotined on 5 April 1794; tradition has him telling the executioner: \"Show my head to the people, it is worth seeing.\""
+    ]
+  },
+  {
+    "name": "Saint-Just",
+    "description": "Louis Antoine de Saint-Just, « l'Archange de la Terreur », plus jeune membre du Comité de salut public.",
+    "bio_fr": "Louis Antoine Léon de Saint-Just, parfois surnommé l'Archange de la Terreur, né le 25 août 1767 à Decize et mort guillotiné le 10 thermidor an II à Paris, place de la Révolution, est un homme politique français de la Révolution française.",
+    "bio_en": "Louis Antoine Léon de Saint-Just, sometimes nicknamed the Archangel of Terror, was a French revolutionary, political philosopher, member and president of the French National Convention, a Jacobin club leader, and a major figure of the French Revolution. The youngest person elected to the National Convention, he was a member of the Mountain faction and a steadfast supporter and close friend of Robespierre. He was swept away in Robespierre's downfall on 9 Thermidor, Year II.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Presumed_portrait_of_Louis-Antoine_de_Saint-Just_-_attributed_to_Angelique-Louise_Verrier-Maillard_01.jpg/330px-Presumed_portrait_of_Louis-Antoine_de_Saint-Just_-_attributed_to_Angelique-Louise_Verrier-Maillard_01.jpg",
+    "facts_fr": [
+      "Plus jeune député élu à la Convention, il n'avait que 25 ans, et fut surnommé « l'Archange de la Terreur » pour l'intransigeance glaciale de ses discours.",
+      "En novembre 1792, lors du procès de Louis XVI, il soutint que le roi déchu ne devait pas être jugé comme un citoyen mais tenu pour déjà coupable d'avoir trahi la nation : « on ne peut régner innocemment ».",
+      "Envoyé aux armées, il redressa la situation de l'armée du Rhin et contribua à la victoire de Fleurus en 1794 ; arrêté avec Robespierre le 9 thermidor, il resta silencieux jusqu'à sa mort, guillotiné à 26 ans le lendemain."
+    ],
+    "facts_en": [
+      "The youngest deputy elected to the Convention, he was only 25, and earned the nickname \"the Archangel of Terror\" for the icy rigidity of his speeches.",
+      "During Louis XVI's trial in late 1792 he argued the deposed king should not be tried as a citizen but treated as already guilty of betraying the nation: \"one cannot reign innocently.\"",
+      "Sent to the front, he restored the Army of the Rhine and helped win the victory at Fleurus in 1794; arrested with Robespierre on 9 Thermidor, he stayed silent until his death, guillotined the next day aged 26."
+    ]
+  },
+  {
+    "name": "Marat",
+    "description": "Jean-Paul Marat, médecin devenu journaliste incendiaire, « l'Ami du peuple », assassiné par Charlotte Corday en 1793.",
+    "bio_fr": "Jean-Paul Marat, né le 24 mai 1743 à Boudry et mort le 13 juillet 1793 à Paris, est un médecin, journaliste et homme politique français d'origine neuchâteloise. Usurpateur de noblesse avant la chute du régime monarchique, il devient député montagnard à la Convention à l'époque de la Révolution. Il joue un rôle de premier plan dans les premières années de la Révolution, grâce à son journal L'Ami du peuple. Fréquemment accusé d'inciter à la violence, il est l'un des principaux instigateurs des Massacres de Septembre.",
+    "bio_en": "Jean-Paul Marat was a French political theorist, physician, and scientist. A journalist and politician during the French Revolution, he was a vigorous defender of the sans-culottes, a radical voice, and published his views in pamphlets, placards and newspapers. His periodical L'Ami du peuple made him an unofficial link with the radical Jacobin group that came to power after June 1793.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Jean-Paul_Marat_portre.jpg/330px-Jean-Paul_Marat_portre.jpg",
+    "facts_fr": [
+      "Suisse d'origine (né à Boudry, dans la principauté de Neuchâtel), il fut médecin et savant avant la Révolution, avant de trouver sa voix dans le pamphlet avec son journal L'Ami du peuple.",
+      "Il fut assassiné le 13 juillet 1793 par Charlotte Corday, une sympathisante girondine, alors qu'il prenait un bain médicinal pour soigner une maladie de peau invalidante ; Corday fut exécutée quatre jours plus tard.",
+      "Devenu martyr de la Révolution, il fut immortalisé par le peintre Jacques-Louis David dans La Mort de Marat, et certains le pleurèrent en une étrange prière : « Ô cœur de Jésus ! Ô cœur sacré de Marat ! »"
+    ],
+    "facts_en": [
+      "Swiss-born (in Boudry, in the principality of Neuchâtel), he was a physician and scientist before the Revolution, only later finding his voice as a pamphleteer with his paper L'Ami du peuple.",
+      "He was assassinated on 13 July 1793 by Charlotte Corday, a Girondin sympathizer, while soaking in a medicinal bath for a debilitating skin condition; Corday was executed four days later.",
+      "Turned into a revolutionary martyr, he was immortalized by painter Jacques-Louis David in The Death of Marat, and some mourned him with a strange prayer: \"O heart of Jesus! O sacred heart of Marat!\""
+    ]
+  },
+  {
+    "name": "Sieyès",
+    "description": "Emmanuel-Joseph Sieyès, abbé et théoricien politique, auteur de « Qu'est-ce que le Tiers État ? » et artisan du 18 Brumaire.",
+    "bio_fr": "Emmanuel-Joseph Sieyès, souvent appelé l'« abbé Sieyès », né le 3 mai 1748 à Fréjus et mort le 20 juin 1836 à Paris, est un homme d'Église, homme politique et essayiste français, connu pour ses écrits et son action pendant la Révolution française, faisant partie des prêtres favorables au processus révolutionnaire et même des régicides de 1793, mais devenant ensuite plus conservateur et promouvant l'accession au pouvoir de Napoléon Bonaparte en 1799.",
+    "bio_en": "Emmanuel Joseph Sieyès, usually known as the Abbé Sieyès, was a French Catholic priest, abbé, and political writer who was a leading political theorist of the French Revolution (1789–1799). He also held offices in the governments of the French Consulate (1799–1804) and the First French Empire (1804–1815).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jacques-Louis_David_-_Portrait_of_Emmanuel-Joseph_Siey%C3%A8s_-_WGA06098.jpg/330px-Jacques-Louis_David_-_Portrait_of_Emmanuel-Joseph_Siey%C3%A8s_-_WGA06098.jpg",
+    "facts_fr": [
+      "Son pamphlet de 1789 « Qu'est-ce que le Tiers État ? » devint le manifeste politique de la Révolution et contribua à transformer les États généraux en Assemblée nationale.",
+      "Prêtre et régicide, il vota la mort de Louis XVI sans sursis en janvier 1793, puis se fit prudemment oublier pendant la Terreur ; interrogé plus tard sur ce qu'il avait fait durant cette période, il aurait répondu : « J'ai vécu. »",
+      "En dehors de la politique, il forgea le mot « sociologie » et fut l'un des organisateurs du coup d'État du 18 Brumaire (novembre 1799) qui porta Bonaparte au pouvoir."
+    ],
+    "facts_en": [
+      "His 1789 pamphlet \"What Is the Third Estate?\" became the political manifesto of the Revolution and helped transform the Estates-General into the National Assembly.",
+      "A priest and regicide, he voted for Louis XVI's death without reprieve in January 1793, then prudently kept a low profile during the Terror; asked later what he had done in those years, he reportedly replied: \"I survived.\"",
+      "Beyond politics, he coined the word \"sociologie\" and was one of the instigators of the Coup of 18 Brumaire (November 1799) that installed Napoleon Bonaparte in power."
+    ]
+  },
+  {
+    "name": "Lazare Carnot",
+    "description": "Lazare Carnot, mathématicien et membre du Comité de salut public, surnommé « l'Organisateur de la Victoire » en 1793-1794.",
+    "bio_fr": "Lazare Nicolas Marguerite Carnot, né le 13 mai 1753 à Nolay (France) et mort le 2 août 1823 à Magdebourg (Prusse), est un mathématicien, physicien, officier et homme d'État français.",
+    "bio_en": "Lazare Nicolas Marguerite, Comte Carnot was a French mathematician, physicist, military officer, politician and a leading member of the Committee of Public Safety during the French Revolution. His military reforms, which included the introduction of mass conscription, were instrumental in transforming the French Revolutionary Army into an effective fighting force.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lazare-Carnot-par-Boilly.jpg/330px-Lazare-Carnot-par-Boilly.jpg",
+    "facts_fr": [
+      "Membre du Comité de salut public en 1793-1794, il organisa la levée en masse et réorganisa les armées républicaines, ce qui lui valut le surnom d'« organisateur de la Victoire ».",
+      "Sa maîtrise de la stratégie ne resta pas théorique : à la bataille de Fleurus en 1794, il paya de sa personne et contribua directement à la victoire décisive des armées de la République.",
+      "Fondateur de l'École polytechnique avec Gaspard Monge, il fut aussi le patriarche d'une lignée célèbre : son petit-fils Sadi Carnot fut un pionnier de la thermodynamique."
+    ],
+    "facts_en": [
+      "A member of the Committee of Public Safety in 1793-1794, he organized the mass conscription (levée en masse) and overhauled the republican armies, earning him the nickname \"Organizer of Victory.\"",
+      "His grasp of strategy was not merely theoretical: at the Battle of Fleurus in 1794 he took to the field himself and directly contributed to the Republic's decisive victory.",
+      "A founder of the École Polytechnique alongside Gaspard Monge, he was also patriarch of a famous line: his grandson Sadi Carnot became a pioneer of thermodynamics."
+    ]
+  },
+  {
+    "name": "Victoria",
+    "description": "Victoria, reine du Royaume-Uni de 1837 à 1901, dont le règne de 63 ans donna son nom à toute une époque.",
+    "bio_fr": "Victoria, née Alexandrina Victoria le 24 mai 1819 au palais de Kensington à Londres et morte le 22 janvier 1901 à Osborne House sur l'île de Wight, est reine du Royaume-Uni de Grande-Bretagne et d'Irlande du 20 juin 1837 jusqu'à sa mort. À partir du 1er juillet 1867, elle est également reine du Canada, ainsi qu'impératrice des Indes à compter du 1er mai 1876, puis enfin reine d'Australie le 1er janvier 1901.",
+    "bio_en": "Victoria was Queen of the United Kingdom of Great Britain and Ireland from 20 June 1837 until her death in 1901. Her reign of 63 years and 216 days, which was longer than those of any of her predecessors, constituted the Victorian era, a period of industrial, political, scientific, and military change within the United Kingdom marked by a great expansion of the British Empire. In 1876, the British parliament voted to grant her the additional title of Empress of India.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Queen_Victoria_-_Winterhalter_1859.jpg/330px-Queen_Victoria_-_Winterhalter_1859.jpg",
+    "facts_fr": [
+      "Elle accède au trône à seulement 18 ans, après que les trois frères aînés de son père sont morts sans laisser d'héritier légitime.",
+      "En 1840, elle épouse par amour son cousin germain, le prince Albert de Saxe-Cobourg-Gotha ; leurs neuf enfants se marient dans les familles royales du continent, ce qui lui vaut le surnom de « grand-mère de l'Europe ».",
+      "Effondrée par la mort d'Albert en 1861, elle se retire de la vie publique pendant des années, au point de raviver le républicanisme, avant que ses jubilés d'or et de diamant ne relancent sa popularité."
+    ],
+    "facts_en": [
+      "She came to the throne at just 18, after her father's three elder brothers all died without leaving a legitimate heir.",
+      "In 1840 she married for love her first cousin, Prince Albert of Saxe-Coburg and Gotha; their nine children married into royal houses across the continent, earning her the nickname \"grandmother of Europe\".",
+      "Devastated by Albert's death in 1861, she withdrew from public life for years, so much so that republicanism briefly revived, until her Golden and Diamond jubilees restored her popularity."
+    ]
+  },
+  {
+    "name": "Darwin",
+    "description": "Charles Darwin, naturaliste anglais, auteur de « L'Origine des espèces » (1859) et père de la théorie de l'évolution.",
+    "bio_fr": "Charles Robert Darwin [tʃɑːlz ˈdɑːwɪn], né le 12 février 1809 à Shrewsbury dans le Shropshire et mort le 19 avril 1882 à Downe dans le Kent, est un naturaliste et paléontologue britannique dont les travaux sur l'évolution des espèces vivantes ont révolutionné la biologie avec son ouvrage L'Origine des espèces au moyen de la sélection naturelle ou la préservation des races favorisées dans la lutte pour la survie, paru en 1859.",
+    "bio_en": "Charles Robert Darwin was an English naturalist, geologist, and biologist, widely known for his contributions to evolutionary biology. His proposition that all species of life have descended from a common ancestor is now generally accepted and considered a fundamental scientific concept. In a joint presentation with Alfred Russel Wallace, he introduced his scientific theory that this branching pattern of evolution resulted from a process he called natural selection, in which the struggle for existence has a similar effect to the artificial selection involved in selective breeding. Darwin has been described as one of the most influential figures in human history and was honoured by burial in Westminster Abbey.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Charles_Darwin_portrait.jpg/330px-Charles_Darwin_portrait.jpg",
+    "facts_fr": [
+      "Son voyage de cinq ans autour du monde à bord du HMS Beagle (1831-1836) le fit d'abord connaître comme géologue, avant même ses idées sur l'évolution.",
+      "Il conçut sa théorie de la sélection naturelle dès 1838, mais attendit une vingtaine d'années avant de la publier, redoutant le scandale ; c'est un essai d'Alfred Russel Wallace, reçu en 1858, qui le poussa enfin à agir.",
+      "Son tout dernier ouvrage, paru en 1881, n'était pas consacré aux grands mammifères mais aux vers de terre et à leur action patiente sur les sols."
+    ],
+    "facts_en": [
+      "His five-year voyage around the world aboard HMS Beagle (1831-1836) first made his name as a geologist, even before his ideas on evolution.",
+      "He devised his theory of natural selection as early as 1838 but sat on it for some twenty years, fearing the outcry; it was an essay from Alfred Russel Wallace, received in 1858, that finally spurred him to act.",
+      "His very last book, published in 1881, was devoted not to great mammals but to earthworms and their patient work on the soil."
+    ]
+  },
+  {
+    "name": "Dickens",
+    "description": "Charles Dickens, romancier anglais le plus populaire de l'ère victorienne, peintre de l'Angleterre industrielle.",
+    "bio_fr": "Charles Dickens, né le 7 février 1812 à Landport, près de Portsmouth, dans le Hampshire, comté de la côte sud de l'Angleterre, et mort le 9 juin 1870 à Gad's Hill Place à Higham dans le Kent, est un écrivain anglais, considéré comme le plus grand romancier de l'époque victorienne. Ses premiers écrits le rendent célèbre, sa popularité ne cessant par la suite de croître au fil de ses publications.",
+    "bio_en": "Charles John Huffam Dickens was an English writer and journalist. He created some of literature's best-known fictional characters, and is regarded by many as the greatest novelist of the Victorian era. His works enjoyed unprecedented popularity during his lifetime and, by the 20th century, critics and scholars had recognised him as a literary genius. His novels and short stories are widely read today.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dickens_Gurney_head.jpg/330px-Dickens_Gurney_head.jpg",
+    "facts_fr": [
+      "À douze ans, il fut envoyé coller des étiquettes dans une fabrique de cirage pendant que son père était emprisonné pour dettes à la Marshalsea ; il considérait cette épreuve comme la clef de son génie.",
+      "Sa gloire éclata avec Les Papiers posthumes du Pickwick Club (1836), un phénomène d'édition amplifié par le personnage de Sam Weller, qui déclencha une véritable mode de produits dérivés « Pickwick ».",
+      "Ses romans paraissant en feuilletons, les plus pauvres, qui ne savaient pas lire, payaient un demi-penny pour se faire lire chaque nouvel épisode à voix haute."
+    ],
+    "facts_en": [
+      "At twelve he was sent to paste labels in a boot-blacking factory while his father sat in the Marshalsea debtors' prison; he saw this ordeal as the key to his genius.",
+      "His fame exploded with The Pickwick Papers (1836), a publishing sensation boosted by the character Sam Weller, which sparked a whole craze of \"Pickwick\" merchandise.",
+      "Because his novels appeared in instalments, the illiterate poor would each pay a halfpenny to have every new episode read aloud to them."
+    ]
+  },
+  {
+    "name": "Faraday",
+    "description": "Michael Faraday, physicien et chimiste britannique autodidacte, découvreur de l'induction électromagnétique.",
+    "bio_fr": "Michael Faraday est un physicien et chimiste britannique, connu pour ses travaux fondamentaux dans le domaine de l'électromagnétisme, l'électrochimie, l'induction électromagnétique, le diamagnétisme et l'électrolyse. Il donne son nom à de multiples lois et phénomènes dans ces domaines, notamment la loi de Faraday en induction électromagnétique, les lois de Faraday en électrochimie, l'effet Faraday, ou encore à des dispositifs expérimentaux comme la cage de Faraday et la cavité de Faraday. Le farad, unité de capacité électrique, est également nommée en son honneur.",
+    "bio_en": "Michael Faraday was an English chemist and physicist who contributed vastly to the study of electrochemistry and electromagnetism. His main discoveries include the principles underlying electromagnetic induction, diamagnetism, and electrolysis. Although Faraday received little formal education, as a self-made man, he was one of the most influential scientists in history. It was by his research on the magnetic field around a conductor carrying a direct current that Faraday established the concept of the electromagnetic field in physics. Faraday also established that magnetism could affect rays of light and that there was an underlying relationship between the two phenomena. He similarly discovered the principles of electromagnetic induction, diamagnetism, and the laws of electrolysis. His inventions of electromagnetic rotary devices formed the foundation of electric motor technology, and it was largely due to his efforts that electricity became practical for use in technology. The SI unit of capacitance, the farad, is named after him.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Michael_Faraday_001.jpg/330px-Michael_Faraday_001.jpg",
+    "facts_fr": [
+      "C'est lui qui a forgé, avec l'aide de savants, une partie du vocabulaire encore utilisé aujourd'hui en électrochimie : « anode », « cathode », « électrode » et « ion ».",
+      "Durant la guerre de Crimée, il refusa de participer à la mise au point d'armes chimiques, invoquant des scrupules éthiques.",
+      "Albert Einstein gardait dans son bureau un portrait de Faraday, aux côtés de ceux d'Isaac Newton et de James Clerk Maxwell."
+    ],
+    "facts_en": [
+      "He coined, with the help of fellow scholars, much of the vocabulary still used in electrochemistry today: \"anode\", \"cathode\", \"electrode\" and \"ion\".",
+      "During the Crimean War he refused to help develop chemical weapons, citing ethical reservations.",
+      "Albert Einstein kept a portrait of Faraday on his study wall, alongside those of Isaac Newton and James Clerk Maxwell."
+    ]
+  },
+  {
+    "name": "Nightingale",
+    "description": "Florence Nightingale, infirmière britannique, fondatrice des soins infirmiers modernes, héroïne de la guerre de Crimée.",
+    "bio_fr": "Florence Nightingale, née le 12 mai 1820 à Florence et morte le 13 août 1910 à Mayfair (Royaume-Uni), est une infirmière britannique, pionnière des soins infirmiers modernes et de l'utilisation des statistiques dans le domaine du médical.",
+    "bio_en": "Florence Nightingale was an English social reformer, statistician and the founder of modern nursing. Nightingale came to prominence while serving as a manager and trainer of nurses during the Crimean War, in which she organised care for wounded soldiers at Constantinople. She significantly reduced death rates by improving hygiene and living standards. Nightingale gave nursing a favourable reputation and became an icon of Victorian culture, especially in the persona of \"The Lady with the Lamp\" making ward rounds for wounded soldiers at night.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Florence_Nightingale.jpg/330px-Florence_Nightingale.jpg",
+    "facts_fr": [
+      "Elle doit son prénom à la ville de Florence, en Italie, où elle est née en 1820 lors d'un voyage de ses parents.",
+      "Pionnière des statistiques, elle a popularisé le « diagramme en aire polaire », dit diagramme rose de Nightingale, pour rendre ses données visuelles et convaincantes ; il est encore employé aujourd'hui.",
+      "En 1860, elle fonde à l'hôpital St Thomas de Londres la première école d'infirmières laïque au monde, aujourd'hui rattachée au King's College ; la Journée internationale des infirmières est célébrée le jour de son anniversaire."
+    ],
+    "facts_en": [
+      "She owes her first name to the city of Florence, in Italy, where she was born in 1820 during her parents' travels.",
+      "A pioneer of statistics, she popularised the \"polar area diagram\", known as the Nightingale rose diagram, to make her data visual and persuasive; it is still used today.",
+      "In 1860 she founded at St Thomas' Hospital in London the world's first secular nursing school, now part of King's College; International Nurses Day is celebrated on her birthday."
+    ]
+  },
+  {
+    "name": "Périclès",
+    "description": "Périclès, homme d'État athénien du Ve siècle av. J.-C., artisan de l'apogée d'Athènes et stratège au début de la guerre du Péloponnèse.",
+    "bio_fr": "Périclès, né vers 495 av. J.-C. et mort en 429 av. J.-C., est un stratège, orateur et homme d'État athénien.",
+    "bio_en": "Pericles was a Greek statesman \nand general during the Golden Age of Athens. He was prominent and influential in Ancient Athenian politics, particularly between the Greco-Persian Wars and the Peloponnesian War, and was acclaimed by Thucydides, a contemporary historian, as \"the first citizen of Athens\". Pericles turned the Delian League into an Athenian empire and led his countrymen during the first two years of the Peloponnesian War. The period during which he led Athens as its preeminent orator and statesman, roughly from 461 to 429 BC, is sometimes known as the \"Age of Pericles\", but the period thus denoted can include times as early as the Persian Wars or as late as the following century.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Pericles_Pio-Clementino_Inv269.jpg/330px-Pericles_Pio-Clementino_Inv269.jpg",
+    "facts_fr": [
+      "On lui doit le grand chantier de l'Acropole : c'est sous son impulsion que fut édifié le Parthénon, encore debout aujourd'hui.",
+      "Face à l'invasion spartiate, il fit rentrer la population des campagnes derrière les Longs Murs reliant Athènes au port du Pirée, misant sur la flotte plutôt que sur une bataille terrestre.",
+      "Il mourut en 429 av. J.-C., emporté par la peste qui ravageait Athènes assiégée et décimait sa population entassée dans la cité."
+    ],
+    "facts_en": [
+      "The great Acropolis building program was his doing: it was under his leadership that the Parthenon, still standing today, was raised.",
+      "Facing the Spartan invasion, he brought the rural population inside the Long Walls linking Athens to its port of Piraeus, betting on the fleet rather than a land battle.",
+      "He died in 429 BC, carried off by the plague that ravaged besieged Athens and decimated its population crammed inside the city."
+    ]
+  },
+  {
+    "name": "Thucydide",
+    "description": "Thucydide, historien et stratège athénien du Ve siècle av. J.-C., auteur de « La Guerre du Péloponnèse » et fondateur de l'histoire scientifique.",
+    "bio_fr": "Thucydide [en grec ancien : Θουκυδίδης, Thoukudídès, formé à partir des deux mots grecs Θου-κῦδος, Θεοῦ génitif de θεός (« dieu ») et κῦδος ] est un homme politique, stratège et historien athénien, né vers 460 av. J.-C. dans le dème d'Halimonte en Attique ; il est mort, peut-être assassiné, entre 400 av. J.-C. et 395 av. J.-C..",
+    "bio_en": "Thucydides was an Athenian historian and general. His History of the Peloponnesian War recounts the 5th century BC war between Sparta and Athens until the year 411 BC. Thucydides has been dubbed the father of \"scientific history\" by those who accept his claims to have applied strict standards of impartiality and evidence-gathering and analysis of cause and effect, without reference to intervention by the gods, as outlined in his introduction to his work.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Thucydides-bust-cutout_ROM.jpg/330px-Thucydides-bust-cutout_ROM.jpg",
+    "facts_fr": [
+      "Général athénien, il fut exilé après avoir échoué à sauver la cité d'Amphipolis en 424 av. J.-C. ; il mit à profit ses vingt années de bannissement pour recueillir des témoignages des deux camps.",
+      "Il attrapa lui-même la peste d'Athènes qu'il décrit avec une précision clinique, mais, contrairement à Périclès, il en réchappa.",
+      "Son récit de la Guerre du Péloponnèse s'interrompt brusquement en pleine phrase sur l'année 411, laissant l'ouvrage inachevé."
+    ],
+    "facts_en": [
+      "An Athenian general, he was exiled after failing to save the city of Amphipolis in 424 BC; he used his twenty years of banishment to gather testimony from both sides.",
+      "He caught the Plague of Athens himself, which he describes with clinical precision, but unlike Pericles he survived it.",
+      "His account of the Peloponnesian War breaks off abruptly mid-sentence in the year 411, leaving the work unfinished."
+    ]
+  },
+  {
+    "name": "Alcibiade",
+    "description": "Alcibiade, général et politique athénien (Ve siècle av. J.-C.), neveu de Périclès et élève de Socrate, figure brillante et versatile de la guerre.",
+    "bio_fr": "Alcibiade, né en 450 av. J.-C. et mort en 404 av. J.-C., est un stratège et un général athénien. Personnalité haute en couleur qui a fasciné ses contemporains, il réunit une naissance aristocratique, un patrimoine important de grandes propriétés foncières, une intelligence reconnue et une beauté enviée.",
+    "bio_en": "Alcibiades was an Athenian statesman and general. The last of the Alcmaeonidae, he played a major role in the second half of the Peloponnesian War as a strategic advisor, military commander, and politician, but subsequently fell from prominence.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bust_Alcibiades_Musei_Capitolini_MC1160.jpg/330px-Bust_Alcibiades_Musei_Capitolini_MC1160.jpg",
+    "facts_fr": [
+      "Il fut le principal artisan de l'expédition de Sicile, mais, accusé de sacrilège à la veille du départ, il passa à l'ennemi spartiate plutôt que d'affronter son procès.",
+      "Au cours de la guerre, il changea de camp à plusieurs reprises : d'Athènes à Sparte, puis chez le satrape perse Tissapherne, avant de revenir servir Athènes.",
+      "Élevé dans l'entourage de Périclès, son cousin, il fut un proche de Socrate, qui fait son éloge dans « Le Banquet » de Platon."
+    ],
+    "facts_en": [
+      "He was the chief promoter of the Sicilian Expedition, but, accused of sacrilege on the eve of departure, he defected to the Spartan enemy rather than face trial.",
+      "During the war he switched sides several times: from Athens to Sparta, then to the Persian satrap Tissaphernes, before returning to serve Athens.",
+      "Raised in the household of his cousin Pericles, he was a close companion of Socrates, who praises him in Plato's « Symposium »."
+    ]
+  },
+  {
+    "name": "Lysandre",
+    "description": "Lysandre, navarque spartiate, artisan de la victoire finale de Sparte sur Athènes en 405-404 av. J.-C.",
+    "bio_fr": "Lysandre , mort à Haliarte en 395 av. J.-C. est un homme d'État et général spartiate. Sa victoire décisive à la bataille d'Aigos Potamos (405) entraîne la reddition d'Athènes et met un terme à la guerre du Péloponnèse. Il joue un rôle central dans la domination lacédémonienne en Grèce pendant la décennie suivante jusqu'à sa mort lors de la bataille d'Haliarte.",
+    "bio_en": "Lysander was a Spartan commander and statesman who was one of the leading military and political leaders of Sparta during the Peloponnesian Wars. He destroyed the Athenian fleet at the Battle of Aegospotami in 405 BC, forcing Athens to capitulate and bringing the Peloponnesian Wars to an end. He then played a key role in Sparta's domination of Greece for the next decade until his death at the Battle of Haliartus.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Lysander-Sparta.jpg/330px-Lysander-Sparta.jpg",
+    "facts_fr": [
+      "Sa victoire navale d'Aigos Potamos, en 405 av. J.-C., anéantit la flotte athénienne et affama la cité jusqu'à la reddition.",
+      "Après la capitulation d'Athènes, il fit abattre les Longs Murs de la cité au son des joueuses de flûte, comme pour célébrer le premier jour de la liberté de la Grèce.",
+      "Il installa à Athènes un régime oligarchique, le gouvernement des Trente Tyrans, avant de trouver la mort à la bataille d'Haliarte en 395."
+    ],
+    "facts_en": [
+      "His naval victory at Aegospotami in 405 BC destroyed the Athenian fleet and starved the city into surrender.",
+      "After Athens capitulated, he had the city's Long Walls torn down to the music of flute-girls, as though marking the first day of Greece's freedom.",
+      "He set up an oligarchic regime in Athens, the rule of the Thirty Tyrants, before meeting his death at the Battle of Haliartus in 395."
+    ]
+  },
+  {
+    "name": "Nicias",
+    "description": "Nicias, général et homme politique athénien modéré, négociateur de la paix de 421 et chef malheureux de l'expédition de Sicile.",
+    "bio_fr": "Nicias est un homme politique et général athénien durant la guerre du Péloponnèse. Il œuvre pendant le conflit afin de mettre un terme aux combats et d'établir une paix entre les belligérants, puis en tant que général après la reprise des hostilités. Après la mort de Périclès, il devient l'un des plus importants meneurs d'Athènes, à la suite de la mort de Cléon, et est élu stratège à plusieurs reprises. Modéré, il s'oppose à l’impérialisme agressif des démocrates athéniens, et préside aux négociations avec Sparte après la bataille de Pylos. La paix déclarée en 421 av. J.-C. est nommée paix de Nicias en référence à son action, et met fin à la première partie de la guerre du Péloponnèse.\nAprès la reprise des hostilités, il commande l'armée d'Athènes en Sicile et est défait par les troupes de Syracuse commandées par le général lacédémonien Gylippos.",
+    "bio_en": "Nicias was an Athenian politician and general, who was prominent during the Peloponnesian War. A member of the Athenian aristocracy, he inherited a large fortune from his father, and had investments in the silver mines around Laurion, in south-east Attica.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Nicias%2C_p_105_%28World%27s_Famous_Orations_Vol_1%29.jpg/330px-Nicias%2C_p_105_%28World%27s_Famous_Orations_Vol_1%29.jpg",
+    "facts_fr": [
+      "La trêve conclue avec Sparte en 421 av. J.-C. porte son nom, la « paix de Nicias », en hommage à son rôle de négociateur.",
+      "En Sicile, une éclipse de lune convainquit ce chef superstitieux de retarder la retraite de l'armée athénienne, décision qui précipita le désastre.",
+      "Capturé après l'anéantissement de son expédition, il fut mis à mort par les Syracusains en 413 av. J.-C."
+    ],
+    "facts_en": [
+      "The truce made with Sparta in 421 BC bears his name, the « Peace of Nicias », in tribute to his role as negotiator.",
+      "In Sicily, a lunar eclipse convinced this superstitious commander to delay the Athenian army's retreat, a decision that hastened the disaster.",
+      "Captured after the annihilation of his expedition, he was put to death by the Syracusans in 413 BC."
+    ]
+  },
+  {
+    "name": "Scylla",
+    "description": "Scylla, monstre marin à six têtes de la mythologie grecque, nymphe changée en créature par Circé, guettant le détroit face à Charybde.",
+    "bio_fr": "Dans la mythologie grecque, Scylla, est une nymphe qui fut changée en monstre marin par Circé.",
+    "bio_en": "In Greek mythology, Scylla is a legendary, man-eating monster that lives on one side of a narrow channel of water, opposite her counterpart, the sea-swallowing monster Charybdis. The two sides of the strait are within an arrow's range of each other—so close that sailors attempting to avoid the whirlpools of Charybdis would pass dangerously close to Scylla and vice versa.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Scylla_Louvre_CA1341.jpg/330px-Scylla_Louvre_CA1341.jpg",
+    "facts_fr": [
+      "Selon l'Odyssée, Ulysse choisit de longer Scylla plutôt que Charybde, sacrifiant délibérément six de ses compagnons pour sauver le reste de l'équipage.",
+      "La légende raconte qu'elle fut jadis une belle nymphe, transformée en monstre par la magicienne Circé ; la Souda la décrit avec six têtes de chien.",
+      "Elle et Charybde gardaient les deux rives d'un détroit traditionnellement identifié au détroit de Messine, entre la Calabre et la Sicile."
+    ],
+    "facts_en": [
+      "According to the Odyssey, Odysseus chose to sail close to Scylla rather than Charybdis, deliberately sacrificing six of his companions to save the rest of the crew.",
+      "Legend says she was once a beautiful nymph, transformed into a monster by the sorceress Circe; the Suda describes her with six dog heads.",
+      "She and Charybdis guarded the two shores of a strait traditionally identified with the Strait of Messina, between Calabria and Sicily."
+    ]
+  },
+  {
+    "name": "Charybde",
+    "description": "Charybde, monstre marin de la mythologie grecque qui engloutit les eaux trois fois par jour, guettant le détroit face à Scylla.",
+    "bio_fr": "Dans la mythologie grecque, Charybde est un monstre marin qui fait face à Scylla, de part et d'autre d'un détroit, dévorant les marins de passage.",
+    "bio_en": "Charybdis is a sea monster in Greek mythology. Along with the sea monster Scylla, it appears as a challenge to epic characters such as Odysseus, Jason, and Aeneas. The descriptions of Greek mythical chroniclers and Greek historians locates her in the Strait of Messina.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Charybde_et_Scylla.jpg/330px-Charybde_et_Scylla.jpg",
+    "facts_fr": [
+      "Dans l'Odyssée, Charybde engloutit et recrache la mer trois fois par jour, formant un tourbillon capable d'aspirer un navire entier.",
+      "Elle affronte tour à tour plusieurs héros de l'épopée grecque, dont Ulysse, Jason et Énée, tous contraints de traverser son détroit.",
+      "De sa proximité redoutée avec Scylla est née l'expression « tomber de Charybde en Scylla », c'est-à-dire échapper à un danger pour tomber dans un pire encore."
+    ],
+    "facts_en": [
+      "In the Odyssey, Charybdis swallows and spews back the sea three times a day, forming a whirlpool able to suck down an entire ship.",
+      "She confronts in turn several heroes of Greek epic, including Odysseus, Jason and Aeneas, all forced to cross her strait.",
+      "From her dreaded closeness to Scylla comes the phrase « between Scylla and Charybdis », meaning to escape one danger only to fall into a worse one."
+    ]
+  },
+  {
+    "name": "Camille Desmoulins",
+    "description": "Camille Desmoulins, journaliste et pamphlétaire de la Révolution, l'un des déclencheurs de la prise de la Bastille, exécuté aux côtés de Danton en 1794.",
+    "bio_fr": "Camille Desmoulins, né le 2 mars 1760 à Guise et mort guillotiné le 16 germinal an II à Paris, est un journaliste et révolutionnaire français.",
+    "bio_en": "Lucie-Simplice-Camille-Benoît Desmoulins was a French journalist, politician and prominent figure of the French Revolution. He is best known for playing an instrumental role in the events that led to the Storming of the Bastille. Desmoulins was also noted for his radical criticism of the Reign of Terror as the editor of the journal Le Vieux Cordelier. He was a schoolmate and close friend of Maximilien Robespierre and a close friend and political ally of Georges Danton, who were leading figures in the French Revolution.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Camille_Desmoulins%2C_Mus%C3%A9e_Carnavalet.jpg/330px-Camille_Desmoulins%2C_Mus%C3%A9e_Carnavalet.jpg",
+    "facts_fr": [
+      "Le 12 juillet 1789, apprenant le renvoi du ministre Necker, il grimpe sur une table au Palais-Royal et harangue la foule, un pistolet à la main. Cet appel aux armes enflamme Paris et précipite la prise de la Bastille deux jours plus tard.",
+      "Affligé d'un léger bégaiement, il redoutait de parler en public ; c'est pourtant sa fougue improvisée de ce jour de juillet qui fit de lui l'une des voix de la Révolution.",
+      "Dans son journal Le Vieux Cordelier, il osa réclamer la clémence et dénoncer les excès de la Terreur, s'attirant la fureur de son ancien camarade de collège Robespierre. Sa jeune épouse Lucile fut guillotinée à son tour quelques jours après lui."
+    ],
+    "facts_en": [
+      "On 12 July 1789, on hearing that minister Necker had been dismissed, he leapt onto a table at the Palais-Royal and harangued the crowd, a pistol in his hand. His call to arms set Paris ablaze and led to the Storming of the Bastille two days later.",
+      "He suffered from a slight stutter and dreaded public speaking; yet it was his improvised fervour on that July day that made him one of the voices of the Revolution.",
+      "In his journal Le Vieux Cordelier he dared to plead for clemency and denounce the excesses of the Terror, enraging his former schoolmate Robespierre. His young wife Lucile was guillotined in her turn a few days after him."
+    ]
+  },
+  {
+    "name": "Barras",
+    "description": "Paul Barras, homme fort du Directoire, seul membre présent durant toute son existence (1795-1799), qui lança la carrière de Bonaparte.",
+    "bio_fr": "Paul de Barras, dit le vicomte de Barras, puis Paul Barras, né le 30 juin 1755 à Fox-Amphoux et mort le 29 janvier 1829 à Paris, est un noble français, homme politique révolutionnaire, général de la Révolution et de l’Empire qui fut l'un des principaux Directeurs de la République à partir du 31 octobre 1795, et jusqu'au coup d'État du 18 brumaire an VIII.",
+    "bio_en": "Paul François Jean Nicolas, Vicomte de Barras, commonly known as Paul Barras, was a French politician of the French Revolution, and the main executive leader of the Directory regime of 1795–1799.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Paul_Barras_%281755%E2%80%931829%29.jpg/330px-Paul_Barras_%281755%E2%80%931829%29.jpg",
+    "facts_fr": [
+      "Membre de la noblesse provençale, ce vicomte devenu révolutionnaire vota pourtant la mort de Louis XVI à la Convention.",
+      "En vendémiaire an IV (octobre 1795), chargé de mater une insurrection royaliste à Paris, il confia la défense de la Convention à un jeune général inconnu : Napoléon Bonaparte, qui dispersa les insurgés à la mitraille.",
+      "Homme fort du Directoire et deux fois président de celui-ci, il fut balayé par le coup d'État du 18 brumaire, orchestré par ce même Bonaparte qu'il avait naguère lancé."
+    ],
+    "facts_en": [
+      "A member of the Provençal nobility, this viscount turned revolutionary nonetheless voted for the death of Louis XVI at the Convention.",
+      "In Vendémiaire Year IV (October 1795), tasked with crushing a royalist uprising in Paris, he handed the Convention's defence to an unknown young general: Napoleon Bonaparte, who scattered the insurgents with grapeshot.",
+      "The strongman of the Directory and twice its president, he was swept aside by the coup of 18 Brumaire, engineered by the very Bonaparte he had once launched."
+    ]
+  },
+  {
+    "name": "Tallien",
+    "description": "Jean-Lambert Tallien, conventionnel, l'un des principaux instigateurs de la chute de Robespierre au 9 Thermidor.",
+    "bio_fr": "Jean-Lambert Tallien, né le 23 janvier 1767 à Paris, baptisé paroisse Saint-Gervais, mort le 16 novembre 1820 dans la même ville dans l'ancien 1er arrondissement, est un journaliste et un homme politique de la Révolution française.",
+    "bio_en": "Jean-Lambert Tallien was a French politician of the revolutionary period. Though initially an active agent of the Reign of Terror, he eventually clashed with its leader, Maximilien Robespierre, and is best known as one of the key figures of the Thermidorian Reaction that led to the fall of Robespierre and the end of the Terror.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Jean_Lambert_Tallien.JPG/330px-Jean_Lambert_Tallien.JPG",
+    "facts_fr": [
+      "D'abord zélé agent de la Terreur, il fut l'un des principaux meneurs de la journée du 9 Thermidor an II qui abattit Robespierre et mit fin à la Terreur.",
+      "Son revirement fut aiguillonné par sa maîtresse Thérésa Cabarrus, emprisonnée et menacée de l'échafaud : la sauver le poussa à frapper le premier contre Robespierre.",
+      "Journaliste de formation, cet homme de plume devint acteur de premier plan du drame politique, avant de sombrer dans l'oubli et de mourir à Paris en 1820."
+    ],
+    "facts_en": [
+      "At first a zealous agent of the Terror, he became one of the chief leaders of the 9 Thermidor Year II that brought down Robespierre and ended the Terror.",
+      "His about-face was spurred by his mistress Thérésa Cabarrus, imprisoned and threatened with the scaffold: saving her drove him to strike first against Robespierre.",
+      "A journalist by training, this man of the pen became a leading actor in the political drama, before fading into obscurity and dying in Paris in 1820."
+    ]
+  },
+  {
+    "name": "Babeuf",
+    "description": "Gracchus Babeuf, révolutionnaire et journaliste, meneur de la « Conjuration des Égaux » (1796), souvent considéré comme le premier communiste.",
+    "bio_fr": "Gracchus Babeuf, de son vrai nom François Noël Babeuf, né le 23 novembre 1760 à Saint-Quentin et mort guillotiné le 27 mai 1797 à Vendôme, est un protagoniste de la Révolution française, à l'origine d'une tentative d'orientation démocratique contre le régime du Directoire, la « conjuration des Égaux », dont l'échec aboutit à son exécution par la guillotine.",
+    "bio_en": "François-Noël Babeuf, also known as Gracchus Babeuf, was a French proto-communist, revolutionary, and journalist of the French Revolutionary period. His newspaper Le Tribun du Peuple was best known for its advocacy for the poor and calling for a popular revolt against the Directory, the government of France. He was a leading advocate for democracy and the abolition of private property. He made his own variant of Jacobinism (Robespierrism) which is called Neo-Jacobinism. Besides the influence of Robespierrism on his thought, due to his proto-communism, his political views were more aligned with the ideology of the Enragés. He angered the authorities who were clamping down hard on their radical enemies. In spite of the efforts of his Jacobin friends to save him, Babeuf was executed for his lead role in the Conspiracy of the Equals.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fran%C3%A7ois-No%C3%ABl_Babeuf.jpg/330px-Fran%C3%A7ois-No%C3%ABl_Babeuf.jpg",
+    "facts_fr": [
+      "Il prit le surnom de « Gracchus » en hommage aux Gracques, ces tribuns de la Rome antique qui défendaient le peuple pauvre contre les riches.",
+      "Sa « conjuration des Égaux » de 1796, qui réclamait l'abolition de la propriété privée, est souvent tenue pour la première tentative de révolution à visée communiste de l'histoire.",
+      "Condamné à mort, il se poignarda en plein tribunal ; blessé mais survivant, il fut tout de même conduit à la guillotine à Vendôme en 1797."
+    ],
+    "facts_en": [
+      "He took the nickname \"Gracchus\" in homage to the Gracchi, the tribunes of ancient Rome who defended the poor against the rich.",
+      "His 1796 \"Conspiracy of the Equals,\" which demanded the abolition of private property, is often held to be the first attempt at a communist revolution in history.",
+      "Sentenced to death, he stabbed himself in the middle of the courtroom; wounded but alive, he was taken to the guillotine at Vendôme all the same in 1797."
+    ]
+  },
+  {
+    "name": "Hébert",
+    "description": "Jacques-René Hébert, journaliste ultra-radical, auteur du « Père Duchesne », chef des Hébertistes guillotinés en mars 1794.",
+    "bio_fr": "Jacques-René Hébert, né le 15 novembre 1757 à Alençon et mort guillotiné le 24 mars 1794, est un pamphlétaire, figure marquante de la presse sous la Révolution française. Issu de la bourgeoisie d’Ancien Régime, il connait une période de grande précarité. À la fin de l’année 1789, il commence une carrière de publiciste et embrasse les idéaux révolutionnaires. Inspiré par le théâtre et le folklore populaire, il fonde Le Père Duchesne en 1790, un journal au ton provocateur et au langage familier qui rencontre un immense succès et connaît une large diffusion.",
+    "bio_en": "Jacques René Hébert was a French journalist and a prominent figure of the French Revolution. The founder and editor of the radical newspaper Le Père Duchesne, he was the chief spokesman for the Parisian sans-culottes. He and his followers, known as the Hébertists, played a major role in ushering in some of the most radical measures of the revolutionary period that culminated in the Reign of Terror.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Jacques_Ren%C3%A9_H%C3%A9bert.JPG/330px-Jacques_Ren%C3%A9_H%C3%A9bert.JPG",
+    "facts_fr": [
+      "En 1790, il lance Le Père Duchesne, un journal au ton ordurier et au langage de charretier qui devint la voix des sans-culottes parisiens et connut une diffusion énorme.",
+      "Issu de la bourgeoisie, il avait été ruiné par un procès et vécut près de dix ans dans la misère à Paris avant que la Révolution ne fasse de lui un pamphlétaire célèbre.",
+      "Champion de la déchristianisation, il jugea le Comité de salut public trop mou et le défia ; accusé de complot, il fut guillotiné en mars 1794."
+    ],
+    "facts_en": [
+      "In 1790 he launched Le Père Duchesne, a newspaper of scurrilous tone and gutter language that became the voice of the Parisian sans-culottes and enjoyed enormous circulation.",
+      "Born into the bourgeoisie, he had been ruined by a lawsuit and lived nearly a decade in destitution in Paris before the Revolution made him a famous pamphleteer.",
+      "A champion of dechristianization, he judged the Committee of Public Safety too moderate and defied it; accused of conspiracy, he was guillotined in March 1794."
+    ]
+  },
+  {
+    "name": "Couthon",
+    "description": "Georges Couthon, membre paralysé du triumvirat du Comité de salut public avec Robespierre et Saint-Just, rédacteur de la loi de Prairial.",
+    "bio_fr": "Georges Auguste Couthon, également connu sous le nom d’Aristide Couthon, est un avocat, homme politique et révolutionnaire français, né le 22 décembre 1755 à Orcet, guillotiné le 28 juillet 1794, place de la Révolution, à Paris.",
+    "bio_en": "Georges Auguste Couthon was a French politician and lawyer known for his service as a deputy in the Legislative Assembly during the French Revolution. Couthon was elected to the Committee of Public Safety on 30 May 1793. Along with his close associate Louis Antoine de Saint-Just and Maximilien Robespierre, he formed an unofficial triumvirate within the committee which wielded power during the Reign of Terror until the three were arrested and executed in 1794 during the Thermidorian Reaction. A Freemason, Couthon played an important role in the development of the Law of 22 Prairial, which was responsible for a sharp increase in the number of executions of accused counter-revolutionaries.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Fran%C3%A7ois_Bonneville_-_Portrait_pr%C3%A9sum%C3%A9_de_Georges_Couthon_%281755-1794%29%2C_conventionnel_-_P16_-_Mus%C3%A9e_Carnavalet.jpg/330px-Fran%C3%A7ois_Bonneville_-_Portrait_pr%C3%A9sum%C3%A9_de_Georges_Couthon_%281755-1794%29%2C_conventionnel_-_P16_-_Mus%C3%A9e_Carnavalet.jpg",
+    "facts_fr": [
+      "Paralysé des jambes, il siégeait au sommet du pouvoir révolutionnaire dans un fauteuil roulant qu'il avait lui-même conçu.",
+      "Avec Robespierre et Saint-Just, il formait le « triumvirat » du Comité de salut public et porta la terrible loi du 22 prairial (juin 1794), qui accéléra les exécutions en privant les accusés de défense.",
+      "Emporté par la chute de Robespierre au 9 Thermidor, il fut guillotiné avec lui le lendemain, place de la Révolution."
+    ],
+    "facts_en": [
+      "Paralysed in the legs, he sat at the summit of revolutionary power in a wheelchair he had designed himself.",
+      "With Robespierre and Saint-Just he formed the \"triumvirate\" of the Committee of Public Safety and pushed through the dreaded Law of 22 Prairial (June 1794), which sped up executions by denying the accused any defence.",
+      "Caught in Robespierre's fall on 9 Thermidor, he was guillotined alongside him the next day on the Place de la Révolution."
+    ]
+  },
+  {
+    "name": "Brunel",
+    "description": "Isambard Kingdom Brunel, ingénieur britannique de génie de la révolution industrielle : chemins de fer, ponts et paquebots transatlantiques.",
+    "bio_fr": "Isambard Kingdom Brunel, né à Portsmouth le 9 avril 1806 et mort à Londres le 15 septembre 1859, est un ingénieur britannique. Il est surtout connu pour avoir créé le Great Western Railway, une série de bateaux à vapeur, de nombreux ponts et des tunnels importants. Ses réalisations ont révolutionné les transports publics et l'ingénierie moderne.",
+    "bio_en": "Isambard Kingdom Brunel was an English civil and marine engineer considered by his biographers \"one of the greatest figures of the Industrial Revolution\", \"perhaps the most eminent Victorian engineer\", and one whose work \"altered the lives of almost every person in Britain, and millions abroad\". The first engineer of the Great Western Railway (GWR), he was responsible for the design and construction of its London–Bristol main line. His maritime career saw the construction of the largest steamships in the world at the time, the SS Great Western, SS Great Britain, and SS Great Eastern. His career was marred by continual financial and engineering setbacks. His first major project, the Thames Tunnel, was cancelled after a collapse nearly killed him, and was only completed later without his involvement. While recovering, he began his work on the Clifton Suspension Bridge; after riots in Bristol around government policy, work on the bridge was cancelled and it was only completed after his death.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/IKBrunelChains.jpg/330px-IKBrunelChains.jpg",
+    "facts_fr": [
+      "Bourreau de travail, Brunel fumait jusqu'à 40 cigares par jour et ne dormait que quatre heures par nuit.",
+      "Pour la ligne Londres-Bristol, il perça le tunnel de Box, le plus long du monde à l'époque, malgré ceux qui juraient qu'on ne pourrait jamais le creuser sans danger.",
+      "Son gigantesque navire, le SS Great Eastern, entra dans l'histoire des télécommunications en posant avec succès le premier câble télégraphique reliant les deux rives de l'Atlantique, soit 2 400 kilomètres."
+    ],
+    "facts_en": [
+      "A relentless workaholic, Brunel smoked up to 40 cigars a day and slept only four hours a night.",
+      "For the London–Bristol line he drove the Box Tunnel, the longest in the world at the time, despite claims that it could never be dug safely.",
+      "His giant ship the SS Great Eastern earned a place in telecommunications history by successfully laying the first telegraph cable across the 2,400 kilometres of the Atlantic Ocean."
+    ]
+  },
+  {
+    "name": "James Watt",
+    "description": "James Watt, ingénieur écossais dont les perfectionnements de la machine à vapeur furent un moteur de la révolution industrielle.",
+    "bio_fr": "James Watt, né le 19 janvier 1736 à Greenock en Écosse et mort le 25 août 1819 à Heathfield Hall, dans sa maison à Handsworth est un ingénieur écossais dont les améliorations sur la machine à vapeur furent une des étapes clé dans la révolution industrielle. Il a animé la Lunar Society de Birmingham. En hommage à ses recherches, le watt, a été donné à l'Unité internationale de puissance, ou de flux énergétique.",
+    "bio_en": "James Watt was a Scottish inventor, engineer and chemist who improved on Thomas Newcomen's 1712 Newcomen steam engine with his Watt steam engine in 1776, which was fundamental to the changes brought by the Industrial Revolution in both his native Great Britain and the rest of the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Watt_James_von_Breda.jpg/330px-Watt_James_von_Breda.jpg",
+    "facts_fr": [
+      "Watt ne partait pas de rien : il perfectionna la machine à vapeur de Thomas Newcomen, dont l'idée géniale fut d'ajouter un condenseur séparé qui cessait de gaspiller de l'énergie à refroidir et réchauffer sans cesse le cylindre.",
+      "C'est en travaillant comme fabricant d'instruments à l'université de Glasgow qu'il se passionna pour la vapeur ; longtemps ruiné par son invention, il ne fit fortune qu'après son association avec Matthew Boulton en 1775.",
+      "On lui doit aussi le concept de « cheval-vapeur » (horsepower), forgé pour comparer ses machines à la force des chevaux qu'elles remplaçaient."
+    ],
+    "facts_en": [
+      "Watt did not start from scratch: he improved on Thomas Newcomen's engine, his key insight being a separate condenser that stopped wasting energy by endlessly cooling and reheating the cylinder.",
+      "It was while working as an instrument maker at the University of Glasgow that he became fascinated by steam; long ruined by his invention, he only grew wealthy after partnering with Matthew Boulton in 1775.",
+      "He also coined the concept of \"horsepower,\" devised to compare his engines against the strength of the horses they replaced."
+    ]
+  },
+  {
+    "name": "Stephenson",
+    "description": "George Stephenson, ingénieur anglais surnommé « le père des chemins de fer », constructeur de la première ligne interurbaine à locomotives.",
+    "bio_fr": "George Stephenson, né le 9 juin 1781 à Wylam et mort le 12 août 1848 à Chesterfield dans sa maison de Tapton House (en), est un ingénieur anglais, pionnier du chemin de fer à vapeur. La Locomotion, construite par lui et son fils Robert, est la première locomotive à vapeur à transporter des passagers sur une ligne ferroviaire publique, en 1825.",
+    "bio_en": "George Stephenson was an English civil engineer and mechanical engineer. Renowned as the \"Father of Railways\", Stephenson was considered by the Victorians as a great example of diligent application and thirst for improvement. His chosen rail gauge, sometimes called \"Stephenson gauge\", was the basis for the 4-foot-8+1⁄2-inch (1.435 m) standard gauge used by most of the world's railways.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/George_Stephenson.png/330px-George_Stephenson.png",
+    "facts_fr": [
+      "L'écartement des rails qu'il choisit, surnommé « écartement Stephenson », est devenu la norme de 1,435 m adoptée aujourd'hui par la majorité des chemins de fer du monde.",
+      "Sa Locomotion no 1 tracta les premiers passagers d'une ligne publique, le Stockton and Darlington Railway, en 1825.",
+      "En 1830, il ouvrit le Liverpool and Manchester Railway, première ligne interurbaine au monde entièrement exploitée par des locomotives, ce qui lui valut le surnom de « père des chemins de fer »."
+    ],
+    "facts_en": [
+      "The rail gauge he chose, nicknamed the \"Stephenson gauge,\" became the 1.435 m standard now used by most of the world's railways.",
+      "His Locomotion No. 1 hauled the first passengers on a public line, the Stockton and Darlington Railway, in 1825.",
+      "In 1830 he opened the Liverpool and Manchester Railway, the world's first inter-city line worked entirely by locomotives, earning him the title \"Father of Railways.\""
+    ]
+  },
+  {
+    "name": "Ada Lovelace",
+    "description": "Ada Lovelace, mathématicienne anglaise, fille de Lord Byron, considérée comme la première programmeuse de l'histoire.",
+    "bio_fr": "Ada Lovelace, de son nom complet Augusta Ada King, comtesse de Lovelace, née Ada Byron le 10 décembre 1815 à Londres et morte le 27 novembre 1852 à Marylebone dans la même ville, est une pionnière de la science informatique.",
+    "bio_en": "Augusta Ada King, Countess of Lovelace, also known as Ada Lovelace, was an English mathematician and writer chiefly known for work on Charles Babbage's proposed mechanical general-purpose computer, the analytical engine. She was the first to recognise the machine had applications beyond pure calculation. Lovelace is often considered the first computer programmer.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850_-_cropped.png/330px-Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850_-_cropped.png",
+    "facts_fr": [
+      "Fille unique et légitime du poète Lord Byron, elle décrivait sa propre démarche comme une « science poétique », se présentant en « analyste et métaphysicienne ».",
+      "En traduisant un article de l'ingénieur Luigi Menabrea, elle y ajouta sept longues notes ; l'une d'elles détaille une méthode de calcul des nombres de Bernoulli, souvent tenue pour le premier programme informatique jamais publié.",
+      "Bien avant tous ses contemporains, elle pressentit qu'une telle machine pourrait manipuler bien plus que des chiffres — par exemple composer de la musique. Un langage de programmation, l'Ada, porte aujourd'hui son nom."
+    ],
+    "facts_en": [
+      "The only legitimate child of the poet Lord Byron, she described her own approach as \"poetical science\" and called herself an \"Analyst (& Metaphysician).\"",
+      "Translating an article by the engineer Luigi Menabrea, she added seven long notes; one lays out a method for computing Bernoulli numbers, often regarded as the first published computer program.",
+      "Long before her contemporaries, she foresaw that such a machine could manipulate far more than numbers — even compose music. A programming language, Ada, is named after her today."
+    ]
+  },
+  {
+    "name": "Charles Babbage",
+    "description": "Charles Babbage, mathématicien et inventeur anglais, concepteur de la « machine analytique », ancêtre théorique de l'ordinateur.",
+    "bio_fr": "Charles Babbage, né le 26 décembre 1791 à Southwark (Londres) et mort le 18 octobre 1871 à Marylebone (Londres), est un polymathe, mathématicien et inventeur visionnaire britannique du XIXe siècle qui est l'un des principaux précurseurs de l'informatique.",
+    "bio_en": "Charles Babbage was an English polymath. A mathematician, philosopher, inventor and mechanical engineer, Babbage originated the concept of a digital programmable computer.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Charles_Babbage_-_1860.jpg/330px-Charles_Babbage_-_1860.jpg",
+    "facts_fr": [
+      "Pour donner des instructions à sa machine analytique, il emprunta le principe des cartes perforées du métier à tisser Jacquard, imaginant ainsi l'ancêtre mécanique de l'ordinateur.",
+      "Figure mondaine du Londres scientifique, on lui attribue l'importation depuis la France de la « soirée scientifique », ses réceptions du samedi soir étant très courues.",
+      "Il n'acheva jamais ses machines, mais en 1991 on en construisit une d'après ses plans, avec les tolérances du XIXe siècle : elle fonctionna parfaitement, prouvant qu'elle aurait pu voir le jour de son vivant."
+    ],
+    "facts_en": [
+      "To feed instructions to his analytical engine, he borrowed the punched-card principle of the Jacquard loom, thereby imagining the mechanical ancestor of the computer.",
+      "A fixture of London's scientific social scene, he is credited with importing the \"scientific soirée\" from France, his well-attended Saturday evening gatherings becoming famous.",
+      "He never finished his machines, but in 1991 one was built from his plans to 19th-century tolerances: it worked perfectly, proving it could have been made in his own lifetime."
+    ]
+  },
+  {
+    "name": "Zhu Yuanzhang",
+    "description": "Zhu Yuanzhang, l'empereur Hongwu : paysan devenu moine mendiant puis fondateur de la dynastie Ming (règne 1368-1398).",
+    "bio_fr": "L'empereur chinois Hongwu est le fondateur de la dynastie Ming, à la tête de laquelle il règne de 1368 à sa mort. Unificateur et libérateur autoproclamé de la Chine après une longue période d'occupations barbares, il est l'artisan du rétablissement d'un Empire chinois revendiquant une suprématie politique et civilisationnelle universelle.",
+    "bio_en": "The Hongwu Emperor, personal name Zhu Yuanzhang, was the founding emperor of the Ming dynasty of China, reigning from 1368 to 1398.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Portrait_assis_de_l%27empereur_Ming_Taizu.jpg/330px-Portrait_assis_de_l%27empereur_Ming_Taizu.jpg",
+    "facts_fr": [
+      "Orphelin à 16 ans après la mort de ses parents et de son frère lors d'une épidémie, il survécut quelque temps comme moine novice, mendiant son pain sur les routes — une expérience qui lui donna un mépris durable pour les lettrés dépendants de leurs livres.",
+      "Son ascension commença en 1352 quand il rejoignit les rebelles des Turbans rouges contre les Yuan ; il prit Nankin en 1356 et se proclama roi de Wu en 1364, avant de fonder les Ming.",
+      "Le nom « Ming » signifie « Grande Radiance » (Da Ming), tandis que son nom d'ère Hongwu veut dire « Puissamment Martial » : deux formules qui résumaient son ambition de restaurer une Chine glorieuse et guerrière."
+    ],
+    "facts_en": [
+      "Orphaned at 16 after his parents and brother died in an epidemic, he survived for a time as a novice monk begging for alms on the roads — an experience that left him with a lasting contempt for book-dependent scholars.",
+      "His rise began in 1352 when he joined the Red Turban rebels against the Yuan; he captured Nanjing in 1356 and declared himself King of Wu in 1364 before founding the Ming.",
+      "The name “Ming” means “Great Radiance” (Da Ming), while his era name Hongwu means “Vastly Martial”: two mottos that captured his ambition to restore a glorious, martial China."
+    ]
+  },
+  {
+    "name": "Cao Cao",
+    "description": "Cao Cao, seigneur de guerre et poète de la fin des Han, fondateur de l'État de Wei à l'aube des Trois Royaumes.",
+    "bio_fr": "Cao Cao ou Ts’ao Ts’ao, de son prénom social Mengde, est un seigneur de guerre, écrivain et poète de la fin de la dynastie Han en Chine antique.",
+    "bio_en": "Cao Cao, courtesy name Mengde, was a Chinese statesman, warlord, and poet who rose to power during the end of the Han dynasty, ultimately taking effective control of the Han central government. He laid the foundation for the state of Cao Wei, established by his son and successor Cao Pi, who ended the Eastern Han dynasty and inaugurated the Three Kingdoms period. Beginning in his own lifetime, a corpus of legends developed around Cao Cao which built upon his talent, his cruelty, and his perceived eccentricities.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Cao_Cao_scth.jpg/330px-Cao_Cao_scth.jpg",
+    "facts_fr": [
+      "En 208, alors qu'il tentait de conquérir le sud de la Chine, il fut battu à la bataille de la Falaise Rouge (Chibi) par l'alliance de Sun Quan et Liu Bei : cette défaite marqua durablement la division de l'empire.",
+      "Fin lettré, il forma avec ses fils Cao Pi et Cao Zhi la figure de proue de la poésie dite « jian'an » ; on les surnommait les « Trois Cao ». Il fut aussi l'un des commentateurs classiques de « L'Art de la guerre » de Sun Zi.",
+      "Le roman « Les Trois Royaumes » et l'opéra chinois l'ont transformé en archétype du ministre félon et machiavélique, une image très éloignée de l'administrateur et poète qu'il fut réellement."
+    ],
+    "facts_en": [
+      "In 208, while campaigning to conquer southern China, he was defeated at the Battle of Red Cliffs (Chibi) by the alliance of Sun Quan and Liu Bei, a defeat that cemented the lasting division of the empire.",
+      "A refined man of letters, he formed with his sons Cao Pi and Cao Zhi the leading trio of the so-called \"Jian'an\" style of poetry, and the three were nicknamed the \"Three Caos\". He was also one of the classic commentators on Sun Zi's \"Art of War\".",
+      "The novel \"Romance of the Three Kingdoms\" and Chinese opera recast him as the archetype of the treacherous, scheming minister, an image far removed from the able administrator and poet he actually was."
+    ]
+  },
+  {
+    "name": "Zhuge Liang",
+    "description": "Zhuge Liang, stratège légendaire du royaume de Shu (IIIe siècle), incarnation chinoise de l'intelligence tactique.",
+    "bio_fr": "Zhuge Liang, né en 181 et mort le 23 août 234, parfois orthographié Tchou-kö Lieang, Tchou-ko Lieang ou Chu-ko Liang, était un célèbre stratège chinois et, avec Sima Yi et Zhou Yu, l’un des plus brillants tacticiens de l’époque des Trois Royaumes. Il s’allia à Liu Bei et en tant que Premier ministre des Shu, mena cinq invasions du royaume de Wei dans le but de restaurer la dynastie Han.",
+    "bio_en": "Zhuge Liang, courtesy name Kongming, was a Chinese statesman and strategist who lived through the collapse of the Eastern Han dynasty and became the principal architect of the Shu Han state. He served as chancellor under its founding emperor Liu Bei from 221 and as regent to the young emperor Liu Shan after 223 until his death.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg/330px-%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg",
+    "facts_fr": [
+      "Avant de servir Liu Bei, il vivait retiré dans une ferme de Longzhong, ce qui lui valut le surnom taoïste de « Dragon Assoupi » (Wolong) ; son nom est depuis devenu en Chine synonyme d'intelligence et d'esprit.",
+      "Selon les Chroniques des Trois Royaumes, Liu Bei vint le supplier trois fois d'entrer à son service ; touché par sa sincérité, il accepta de quitter sa ferme alors qu'il n'avait que vingt-six ans.",
+      "La tradition et le roman lui attribuent des ruses restées célèbres, comme les « flèches empruntées » à l'ennemi ou le stratagème de la « ville vide » ; il mourut en campagne en 234, à la plaine de Wuzhang, lors de sa dernière expédition contre le Wei."
+    ],
+    "facts_en": [
+      "Before serving Liu Bei he lived in seclusion on a farm at Longzhong, which earned him the Taoist nickname \"Sleeping Dragon\" (Wolong); in China his name has since become a byword for intelligence and wit.",
+      "According to the Chronicles of the Three Kingdoms, Liu Bei came three times to beg him to join his cause; moved by his sincerity, he agreed to leave his farm when he was only twenty-six.",
+      "Legend and the novel credit him with famous ruses such as \"borrowing arrows\" from the enemy and the \"empty city\" stratagem; he died on campaign in 234 at the Wuzhang Plains during his final expedition against Wei."
+    ]
+  },
+  {
+    "name": "Sun Tzu",
+    "description": "Sun Tzu, général et stratège du Ve siècle av. J.-C., auteur présumé de « L'Art de la guerre ».",
+    "bio_fr": "Sun Tzu, aussi appelé Sun Tse, Sun Zi ou encore Souen Tseu (chinois simplifié : 孙子 ; chinois traditionnel : 孫子 ; pinyin : Sūn zi ; Wade : Sun1 Tzu5, prononcé /suən.ts̩/, littéralement « maître Sun »), de son vrai nom Sun Wu (孙武 / 孫武, Sūn Wǔ, Wade : Sun1 Wu3, wǔ signifiant « militaire », « martial »), est un général chinois du VIe siècle av. J.-C. (544-496 av. J.-C.).",
+    "bio_en": "Sun Tzu was a Chinese military general, strategist, philosopher, and writer who lived during the Eastern Zhou period. Sun Tzu is traditionally credited as the author of The Art of War, a Classical Chinese text on military strategy from the Warring States period, though the earliest parts of the work probably date to at least a century after him.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Enchoen27n3200.jpg/330px-Enchoen27n3200.jpg",
+    "facts_fr": [
+      "L'idée maîtresse de « L'Art de la guerre » est de contraindre l'ennemi à renoncer, si possible sans combat, par la ruse, l'espionnage, la mobilité et l'adaptation — inaugurant ce qu'on appelle la théorie de l'approche indirecte.",
+      "Selon la tradition, pour démontrer sa méthode au roi Helü de Wu, il aurait entrepris de discipliner 180 concubines de la cour en régiment, faisant exécuter deux favorites du roi qui riaient au lieu d'obéir.",
+      "Son existence historique même est débattue : longtemps confondu avec son descendant Sun Bin, également surnommé « maître Sun », il n'en fut distingué qu'après la redécouverte du traité de Sun Bin en 1972."
+    ],
+    "facts_en": [
+      "The central idea of “The Art of War” is to force the enemy to give up, ideally without fighting, through cunning, espionage, mobility, and adaptation — pioneering what is called the theory of the indirect approach.",
+      "According to tradition, to prove his method to King Helü of Wu he set out to drill 180 palace concubines like a regiment, having two of the king's favorites executed when they laughed instead of obeying.",
+      "His very historical existence is debated: long confused with his descendant Sun Bin, also called “Master Sun,” he was only distinguished from him after Sun Bin's own treatise was rediscovered in 1972."
+    ]
+  },
+  {
+    "name": "Kangxi",
+    "description": "Kangxi, empereur Qing au règne le plus long de l'histoire chinoise (61 ans, 1661-1722).",
+    "bio_fr": "Kangxi, dont le nom personnel est Xuanye, né le 4 mai 1654 à Pékin dans la Cité interdite et mort le 20 décembre 1722, est un empereur de Chine, le quatrième de la dynastie Qing. Il fut l'empereur qui eut le règne le plus long de l'histoire de la Chine, de 1661 à 1722, soit plus de soixante-et-un ans. Il est considéré comme l'un des plus grands empereurs de la Chine impériale.",
+    "bio_en": "The Kangxi Emperor, also known by his temple name Emperor Shengzu of Qing, personal name Xuanye, was the third emperor of the Qing dynasty, and the second Qing emperor to rule over China proper. His reign of 61 years makes him the longest-reigning emperor in Chinese history and one of the longest-reigning rulers in history. He is considered one of China's greatest emperors.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg/330px-Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg",
+    "facts_fr": [
+      "Intronisé à seulement 7 ans à la mort de son père Shunzhi, il ne prit véritablement le pouvoir qu'à 15 ans, en 1669, en écartant le régent Oboi qui gouvernait à sa place.",
+      "Souverain lettré, il accueillit d'abord favorablement les jésuites, jusqu'à ce que la querelle des rites chinois mette fin à cette tolérance ; il figea aussi les frontières avec la Russie par le traité de Nertchinsk en 1689.",
+      "Sa cour produisit des œuvres monumentales, dont le dictionnaire de Kangxi recensant 47 035 caractères et une anthologie réunissant quelque 49 000 poèmes de la dynastie Tang."
+    ],
+    "facts_en": [
+      "Enthroned at just seven when his father Shunzhi died, he did not take real power until he was fifteen, in 1669, when he ousted the regent Oboi who had been ruling in his place.",
+      "A learned ruler, he at first welcomed the Jesuits, until the Chinese Rites controversy ended that tolerance; he also fixed the border with Russia through the Treaty of Nerchinsk in 1689.",
+      "His court produced monumental works, including the Kangxi Dictionary cataloguing 47,035 characters and an anthology gathering some 49,000 poems from the Tang dynasty."
+    ]
+  },
+  {
+    "name": "Yongle",
+    "description": "Yongle, troisième empereur Ming (règne 1402-1424), commanditaire de la Cité interdite et des expéditions de Zheng He.",
+    "bio_fr": "Ming Chengzu, qui prend le nom de règne de Yongle, de son nom personnel Zhu Di, est le troisième empereur de la dynastie Ming et l'un des plus célèbres empereurs chinois. Fils d'un des meneurs de la révolte des Turbans rouges, il renverse son neveu Jianwen et règne de 1402 à 1424. Il mène une politique centralisatrice et expansionniste et transfère la capitale de Nankin à Pékin afin de surveiller plus facilement l'activité des Mongols. Il est l'initiateur de la construction de la Cité interdite de Pékin.",
+    "bio_en": "The Yongle Emperor, personal name Zhu Di, was the third emperor of the Ming dynasty of China, reigning from 1402 to 1424. He was the fourth son of the Hongwu Emperor, the founder of the dynasty.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg/330px-Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg",
+    "facts_fr": [
+      "Avant de devenir empereur, il portait le titre de prince de Yan et gardait la frontière nord-est depuis Pékin ; en 1399 il se souleva contre son neveu, l'empereur Jianwen, lors de la guerre civile dite campagne de Jingnan, victorieuse après trois ans de combats.",
+      "La construction de sa nouvelle capitale, entre 1407 et 1420, employa des centaines de milliers d'ouvriers, et il fit aussi reconstruire le Grand Canal pour ravitailler Pékin et les armées du Nord.",
+      "Il commandita la colossale encyclopédie Yongle, à laquelle travaillèrent environ deux mille lettrés, et envoya au loin les grandes expéditions maritimes de l'amiral eunuque Zheng He, qui atteignirent l'Asie du Sud-Est, l'Inde, la Perse et les côtes de l'Afrique de l'Est."
+    ],
+    "facts_en": [
+      "Before becoming emperor he held the title of Prince of Yan and guarded the northeastern frontier from Beijing; in 1399 he rebelled against his nephew, the Jianwen Emperor, in the civil war known as the Jingnan campaign, winning after three years of fighting.",
+      "Building his new capital between 1407 and 1420 employed hundreds of thousands of workers, and he also had the Grand Canal reconstructed to supply Beijing and the northern armies.",
+      "He sponsored the colossal Yongle Encyclopedia, worked on by around two thousand scholars, and dispatched the great maritime expeditions of the eunuch admiral Zheng He, which reached Southeast Asia, India, Persia, and the shores of East Africa."
+    ]
+  },
+  {
+    "name": "Sima Qian",
+    "description": "Sima Qian, historien de la dynastie Han (IIe-Ier siècle av. J.-C.), « père de l'histoire chinoise », auteur des « Mémoires historiques ».",
+    "bio_fr": "Sima Qian est un historien chinois, le premier à avoir tenté de décrire l'histoire de la Chine depuis sa création. Tous les historiens impériaux chinois se sont par la suite inspirés de son œuvre, le Shiji.",
+    "bio_en": "Sima Qian was a Chinese historian during the early Han dynasty. He is considered the father of Chinese historiography for the Shiji, a general history of China covering more than two thousand years from the rise of the legendary Yellow Emperor and formation of the first Chinese polity to the reign of Emperor Wu of Han, during which Sima wrote. As the first universal history of the world as it was known to the ancient Chinese, the Shiji served as a model for official histories for subsequent dynasties across the Sinosphere until the 20th century.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sima_Qian_%28painted_portrait%29.jpg/330px-Sima_Qian_%28painted_portrait%29.jpg",
+    "facts_fr": [
+      "En 99 av. J.-C., pour avoir défendu le général Li Ling accusé d'un échec contre les Xiongnu, il fut condamné : sommé de choisir entre l'exécution et la castration, il accepta cette mutilation infamante afin de pouvoir achever son œuvre.",
+      "Le projet du Shiji fut d'abord conçu par son père, Sima Tan, historien de cour ; Sima Qian hérita de sa charge et accomplit son vœu de mort en menant à bien cette histoire monumentale.",
+      "Au-delà de l'historien, il fut aussi un poète et prosateur doué, et il participa à l'élaboration du calendrier Taichu, promulgué officiellement en 104 av. J.-C."
+    ],
+    "facts_en": [
+      "In 99 BC, for defending the general Li Ling who was blamed for a failed campaign against the Xiongnu, he was sentenced: forced to choose between execution and castration, he accepted the disgraceful mutilation so that he could finish his work.",
+      "The Shiji was first conceived by his father, Sima Tan, a court historian; Sima Qian inherited the post and fulfilled his father's dying wish by completing this monumental history.",
+      "Beyond being a historian, he was also a gifted poet and prose writer, and he took part in devising the Taichu calendar, officially promulgated in 104 BC."
+    ]
+  },
+  {
+    "name": "Laozi",
+    "description": "Laozi (Lao Tseu), sage semi-légendaire de la Chine antique, fondateur du taoïsme et auteur attribué du « Dao de jing ».",
+    "bio_fr": "Lao Tseu ou Lao-Tseu, Laozi ou Lao Zi, plus communément appelé en Chine Tàishàng lǎojūn, de son vrai nom Li Er, aurait été un sage chinois et, selon la tradition, un contemporain de Confucius. Il est considéré a posteriori comme le père fondateur du taoïsme. Il serait né dans le pays de Chu du royaume des Zhou et serait parti pour une retraite spirituelle vers l’ouest de la Chine actuelle avec une destination inconnue. Les informations historiques le concernant sont rares et incertaines et sa biographie se développe à partir de la dynastie Han, essentiellement à partir d’éléments surnaturels et religieux ; quelques chercheurs sceptiques estiment depuis la fin du XXe siècle qu'il s’agit d’un personnage fictif ou composite, et non proprement historique.",
+    "bio_en": "Laozi was a legendary Chinese philosopher considered to be the author of the Tao Te Ching, one of the foundational texts of Taoism. Modern scholarship generally regards his biographical details as later inventions and his opus a collaboration of various writers, with the name Laozi, literally meaning 'Old Master', likely intended to portray an archaic anonymity that could converse with Confucianism. Traditional accounts addend him as Li Er, born in the 6th-century BC state of Chu during China's Spring and Autumn period. Serving as the royal archivist for the Zhou court at Wangcheng, he met and impressed Confucius on one occasion, composing the Dào Dé Jīng in a single session before retiring into the western wilderness.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg/330px-Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg",
+    "facts_fr": [
+      "Son nom, Laozi, signifie littéralement « Vieux Maître » : selon certains chercheurs, ce titre servait surtout à évoquer une antiquité anonyme capable de dialoguer d'égal à égal avec le confucianisme.",
+      "La légende le représente en vieillard à la barbe blanche partant vers l'ouest, monté sur un buffle, pour une retraite spirituelle dont la destination resta inconnue.",
+      "Vénéré par les taoïstes comme un dieu sous le nom de Tàishàng lǎojūn (« Seigneur suprême Lao »), il fut aussi revendiqué comme ancêtre par les empereurs de la dynastie Tang."
+    ],
+    "facts_en": [
+      "His name, Laozi, literally means “Old Master”: according to some scholars, the title was chosen mainly to evoke an anonymous antiquity able to converse as an equal with Confucianism.",
+      "Legend depicts him as a white-bearded old man riding a water buffalo westward into a spiritual retreat whose destination remained unknown.",
+      "Revered by Taoists as a god under the name Taishang Laojun (“Supreme Lord Lao”), he was also claimed as an ancestor by the emperors of the Tang dynasty."
+    ]
+  },
+  {
+    "name": "Liu Bei",
+    "description": "Liu Bei, seigneur de guerre fondateur du royaume de Shu à l'époque des Trois Royaumes (IIIe siècle).",
+    "bio_fr": "Liu Bei ou Lieou Pei en transcription EFEO était un puissant seigneur chinois de la fin de la dynastie Han et du début de la période des Trois Royaumes. Son prénom social était Xuande. Il fonda avec l'aide du stratège Zhuge Liang le royaume de Shu dont il se proclama empereur en 221, établissant l'éphémère dynastie des Shu-Han. Après sa mort, il reçut le nom posthume d’empereur Zhaolie. Liu Bei fut immortalisé dans le roman Histoire des Trois Royaumes où il est dépeint comme un monarque vertueux, empli des valeurs confucéennes.",
+    "bio_en": "Liu Bei, courtesy name Xuande (玄德), was a Chinese warlord in the late Eastern Han dynasty who later became the founding emperor of Shu Han, one of the Three Kingdoms of China.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Liu_Bei_Tang.jpg/330px-Liu_Bei_Tang.jpg",
+    "facts_fr": [
+      "Le roman le rend célèbre pour le « serment du jardin des pêchers », par lequel il jure fraternité à Guan Yu et Zhang Fei ; historiquement, les trois hommes étaient bien frères d'armes très proches.",
+      "En 222-223, il lança une campagne désastreuse contre le royaume de Wu pour venger la mort de son frère d'armes Guan Yu ; vaincu, il en mourut peu après.",
+      "Bien que dépeint comme un souverain vertueux empreint de valeurs confucéennes, son style de gouvernement a été résumé comme « confucéen en apparence, mais légaliste dans le fond »."
+    ],
+    "facts_en": [
+      "The novel made him famous for the \"Oath of the Peach Garden\", in which he swears brotherhood to Guan Yu and Zhang Fei; historically the three men were indeed very close sworn brothers-in-arms.",
+      "In 222-223 he launched a disastrous campaign against the kingdom of Wu to avenge the death of his sworn brother Guan Yu; defeated, he died shortly afterwards.",
+      "Though portrayed as a virtuous ruler imbued with Confucian values, his style of government has been summed up as \"Confucian in appearance but Legalist in substance\"."
+    ]
+  },
+  {
+    "name": "Guan Yu",
+    "description": "Guan Yu, général des Trois Royaumes divinisé après sa mort comme dieu chinois de la guerre.",
+    "bio_fr": "Guan Yu ou Kouan Yu, né vers 160-162 et mort vers octobre 219-220, qui avait pris comme prénom usuel Yunchang, et qu'on mentionne souvent sous le nom de Guan Gong, était un général chinois de la fin de la dynastie Han et du début de la période des Trois Royaumes.",
+    "bio_en": "Guan Yu, courtesy name Yunchang, was a Chinese military general serving under the warlord Liu Bei during the late Eastern Han dynasty of China. Along with Zhang Fei, he shared a brotherly relationship with Liu Bei and accompanied him on most of his early exploits. Guan Yu played a significant role in the events leading up to the end of the Han dynasty and the establishment of Liu Bei's state of Shu Han during the Three Kingdoms period. While he is remembered for his loyalty towards Liu Bei, he is also known for repaying Cao Cao's kindness by slaying Yan Liang, a general under Cao Cao's rival Yuan Shao, at the Battle of Boma. After Liu Bei gained control of Yi Province in 214, Guan Yu remained in Jing Province to govern and defend the area for about seven years. In 219, while he was away fighting Cao Cao's forces at the Battle of Fancheng, Liu Bei's ally Sun Quan broke the Sun–Liu alliance and sent his general Lü Meng to conquer Liu Bei's territories in Jing Province. By the time Guan Yu learned about the loss of Jing Province after his defeat at Fancheng, it was too late. He was subsequently captured in an ambush by Sun Quan's forces and executed at Linju, Xiangyang Commandery.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Guanyu.jpg/330px-Guanyu.jpg",
+    "facts_fr": [
+      "Quelques siècles après sa mort, il fut divinisé sous le nom de Guandi, le « Saint empereur Guan » ; il est encore vénéré aujourd'hui, aussi bien par les taoïstes que par les bouddhistes, comme dieu de la guerre mais aussi des hommes d'affaires et des policiers.",
+      "Alors qu'il servait temporairement Cao Cao, il paya sa générosité en tuant Yan Liang, un général rival, lors de la bataille de Boma, avant de repartir rejoindre Liu Bei.",
+      "La tradition le représente en géant à la face rouge, symbole de loyauté et de droiture, doté d'une très longue barbe et maniant un guandao qui, selon la légende, pesait plus de 40 kg."
+    ],
+    "facts_en": [
+      "A few centuries after his death he was deified as Guandi, the \"Holy Emperor Guan\"; he is still worshipped today by Taoists and Buddhists alike as a god of war but also of businessmen and police officers.",
+      "While temporarily serving Cao Cao, he repaid his kindness by slaying Yan Liang, a rival general, at the Battle of Boma, before setting off again to rejoin Liu Bei.",
+      "Tradition depicts him as a red-faced giant, a symbol of loyalty and righteousness, with a very long beard and wielding a guandao that legend claims weighed more than 40 kg."
+    ]
+  },
+  {
+    "name": "Sun Quan",
+    "description": "Sun Quan, fondateur du royaume de Wu et l'un des trois grands rivaux de l'époque des Trois Royaumes.",
+    "bio_fr": "Sun Quan, avec Zhongmou pour prénom social, était un seigneur de guerre chinois de la fin de la dynastie Han et du début de la période des trois royaumes, et le premier empereur de la dynastie des Wu occidentaux. Comme de nombreuses personnalités de son époque Sun Quan fut immortalisé dans le Roman des Trois Royaumes de Luo Guanzhong.",
+    "bio_en": "Sun Quan, courtesy name Zhongmou (仲謀), posthumously known as Emperor Da of Wu, was the founder of Eastern Wu, one of the Three Kingdoms of China. He inherited control of the warlord regime established by his elder brother, Sun Ce, in 200 AD. He declared formal independence and ruled from November 222 to May 229 as the King of Wu and from May 229 to May 252 as the Emperor of Wu. Unlike his rivals Cao Cao and Liu Bei, Sun Quan was much younger and governed his state mostly separate of politics and ideology. He is sometimes portrayed as neutral considering he adopted a flexible foreign policy between his two rivals with the goal of pursuing the greatest interests for the country.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sun_Quan_Tang.jpg/330px-Sun_Quan_Tang.jpg",
+    "facts_fr": [
+      "Il hérita du Jiangdong à seulement dix-huit ans, en l'an 200, après l'assassinat de son frère aîné Sun Ce ; soutenu par des conseillers chevronnés comme Zhou Yu, il consolida ce territoire au fil des années.",
+      "Allié à Liu Bei, il défendit l'indépendance de son territoire face à Cao Cao en remportant la bataille de la Falaise Rouge en 208.",
+      "Il ne se proclama officiellement empereur qu'en 229 et régna jusqu'en 252 : ce fut le plus long règne parmi tous les fondateurs des Trois Royaumes."
+    ],
+    "facts_en": [
+      "He inherited the Jiangdong region at only eighteen, in the year 200, after the assassination of his elder brother Sun Ce; backed by seasoned advisers such as Zhou Yu, he consolidated the territory over the years.",
+      "Allied with Liu Bei, he defended his realm's independence against Cao Cao by winning the Battle of Red Cliffs in 208.",
+      "He formally proclaimed himself emperor only in 229 and reigned until 252, the longest reign of any founder of the Three Kingdoms."
+    ]
+  },
+  {
+    "name": "Ivan Pavlov",
+    "description": "Ivan Pavlov, physiologiste russe (1849-1936), prix Nobel, découvreur du conditionnement classique (« le chien de Pavlov »).",
+    "bio_fr": "Ivan Petrovitch Pavlov, né le 26 septembre 1849 à Riazan et mort le 27 février 1936 à Léningrad (URSS), est un médecin et un physiologiste russe, lauréat du prix Nobel de physiologie ou médecine de 1904 et de la médaille Copley en 1915.",
+    "bio_en": "Ivan Petrovich Pavlov was a Russian and Soviet experimental neurologist and physiologist known for his discovery of classical conditioning through his experiments with dogs. Pavlov also conducted significant research on the physiology of digestion, for which he was awarded the Nobel Prize in Physiology or Medicine in 1904.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Ivan_Petrovitch_Pavlov._Photograph_after_a_photograph_taken_Wellcome_V0027010.jpg/330px-Ivan_Petrovitch_Pavlov._Photograph_after_a_photograph_taken_Wellcome_V0027010.jpg",
+    "facts_fr": [
+      "Son prix Nobel de 1904 récompensait ses travaux sur la digestion, et non le fameux conditionnement : c'est en étudiant les sécrétions gastriques de ses chiens qu'il remarqua qu'ils salivaient avant même de recevoir la nourriture.",
+      "Le « réflexe conditionné » naquit d'un détail : ses chiens se mettaient à saliver au seul son associé au repas, comme les pas de l'assistant qui les nourrissait, révélant un apprentissage par association.",
+      "Opposé au régime bolchevique dont il critiquait ouvertement les méthodes, il fut néanmoins protégé par Lénine, qui tenait à conserver au pays un savant de renommée mondiale."
+    ],
+    "facts_en": [
+      "His 1904 Nobel Prize honored his work on digestion, not the famous conditioning: while studying his dogs' gastric secretions, he noticed they salivated even before food arrived.",
+      "The \"conditioned reflex\" grew from a small observation: his dogs began to salivate at any sound linked to feeding, such as the footsteps of the assistant who fed them, revealing learning by association.",
+      "Openly critical of the Bolshevik regime and its methods, he was nonetheless shielded by Lenin, who wanted to keep such a world-renowned scientist in the country."
+    ]
+  },
+  {
+    "name": "Skinner",
+    "description": "B. F. Skinner, psychologue américain (1904-1990), figure majeure du behaviorisme et du conditionnement opérant.",
+    "bio_fr": "Burrhus Frederic Skinner, né le 20 mars 1904 à Susquehanna Depot (Pennsylvanie) et mort le 18 août 1990 à Cambridge (Massachusetts), est un psychologue et penseur américain. Penseur influent du behaviorisme, il a été fortement influencé par les travaux d'Ivan Pavlov et ceux du premier comportementaliste John Watson. Il occupe la première place sur la liste des psychologues les plus importants du XXe siècle établie en 2002 par la Review of General Psychology.",
+    "bio_en": "Burrhus Frederic Skinner was an American psychologist, behaviorist, inventor, and social philosopher. He was the Edgar Pierce Professor of Psychology at Harvard University from 1948 until his retirement in 1974.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/B.F._Skinner_at_Harvard_circa_1950_%28cropped%29.jpg/330px-B.F._Skinner_at_Harvard_circa_1950_%28cropped%29.jpg",
+    "facts_fr": [
+      "Pour étudier le conditionnement, il inventa la « boîte de Skinner », une cage où un animal actionne un levier pour obtenir une récompense, devenue un outil classique de la psychologie expérimentale.",
+      "Pendant la Seconde Guerre mondiale, il dirigea le « Project Pigeon », un projet secret visant à installer des pigeons dressés à l'intérieur de missiles pour en guider la trajectoire.",
+      "En 1948, il exposa sa vision d'une société régie par le conditionnement dans un roman utopique, « Walden Two »."
+    ],
+    "facts_en": [
+      "To study conditioning, he invented the \"Skinner box,\" a chamber in which an animal presses a lever to earn a reward, which became a classic tool of experimental psychology.",
+      "During World War II he led \"Project Pigeon,\" a secret effort to place trained pigeons inside missiles to steer them toward their targets.",
+      "In 1948 he laid out his vision of a society shaped by conditioning in a utopian novel, \"Walden Two.\""
+    ]
+  },
+  {
+    "name": "Zimbardo",
+    "description": "Philip Zimbardo, psychologue américain (1933-2024), connu pour l'expérience de la prison de Stanford.",
+    "bio_fr": "Philip George Zimbardo, né le 23 mars 1933 à New York et mort le 14 octobre 2024 à San Francisco, est un psychologue américain connu pour avoir mené l'expérience dite de Stanford, laquelle a donné lieu à des théories controversées sur le rôle de la position sociale dans la psychologie des individus.",
+    "bio_en": "Philip George Zimbardo was an American psychologist and a professor at Stanford University. He was an internationally known educator, researcher, author and media personality in psychology who authored more than 500 articles, chapters, textbooks, and trade books covering a wide range of topics, including time perspective, cognitive dissonance, the psychology of evil, persuasion, cults, deindividuation, shyness, and heroism. He became known for his 1971 Stanford prison experiment, which was later criticized for its use of methods which allowed Zimbardo himself and whatever biases he may have had to influence the results. He authored various widely used, introductory psychology textbooks for college students, and other notable works, including Shyness, The Lucifer Effect, and The Time Paradox.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Philip_Zimbardo_%28cropped%29.jpg/330px-Philip_Zimbardo_%28cropped%29.jpg",
+    "facts_fr": [
+      "Sa célèbre expérience de la prison de Stanford, menée en 1971, devait durer deux semaines mais fut interrompue au bout de seulement six jours, tant les « gardiens » étudiants devenaient abusifs.",
+      "Des décennies plus tard, il témoigna comme expert au procès des sévices d'Abou Ghraib, plaidant que la situation, plus que la seule personnalité, pousse des individus ordinaires vers la cruauté.",
+      "Il résuma cette idée dans le concept de « l'effet Lucifer », titre de son livre expliquant comment de bonnes personnes peuvent basculer dans le mal."
+    ],
+    "facts_en": [
+      "His famous Stanford prison experiment, run in 1971, was meant to last two weeks but was shut down after just six days as the student \"guards\" turned abusive.",
+      "Decades later he served as an expert witness at the Abu Ghraib abuse trial, arguing that the situation, more than personality alone, pushes ordinary people toward cruelty.",
+      "He captured this idea in the concept of \"the Lucifer Effect,\" the title of his book on how good people can turn to evil."
+    ]
+  },
+  {
+    "name": "John B. Watson",
+    "description": "John B. Watson, psychologue américain (1878-1958), fondateur du behaviorisme et auteur de l'expérience du « petit Albert ».",
+    "bio_fr": "John Broadus Watson, né le 9 janvier 1878 à Greenville et mort le 25 septembre 1958 à New York, est un psychologue américain, fondateur du béhaviorisme. Voulant faire de la psychologie une science objective, il défend l'idée que celle-ci doit se cantonner à l'étude rigoureuse des comportements observables tels qu'ils se produisent en réponse à un stimulus défini en excluant tout recours à l'introspection. Watson accorde ainsi une place centrale aux phénomènes d'apprentissage et notamment d'association stimulus-réponse, dans le droit fil des travaux de Pavlov. Convaincu de l'intérêt de l'approche behavioriste pour les applications de la psychologie, Watson porte ses recherches sur l'étude du comportement animal, la publicité et l'éducation des enfants, notamment à travers l'expérience très controversée dite « du petit Albert ».",
+    "bio_en": "John Broadus Watson was an American psychologist who popularized the scientific theory of behaviorism, establishing it as a psychological school. Watson advanced this change in the psychological discipline through his 1913 address at Columbia University, titled Psychology as the Behaviorist Views It. Through his behaviorist approach, Watson conducted research on animal behavior, child rearing, and advertising, as well as conducting the controversial \"Little Albert\" experiment and the Kerplunk experiment. He was also the editor of Psychological Review from 1910 to 1915. A Review of General Psychology survey, published in 2002, ranked Watson as the 17th most cited psychologist of the 20th century.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/John_Broadus_Watson.JPG",
+    "facts_fr": [
+      "En 1920, sa très controversée expérience « du petit Albert » consista à conditionner un bébé à craindre un rat blanc en associant l'animal à un bruit effrayant.",
+      "Il posa les fondations du behaviorisme dès 1913 avec un manifeste retentissant, sa conférence « La psychologie telle que le behavioriste la voit ».",
+      "Après un scandale qui mit fin à sa carrière universitaire, il se reconvertit avec succès dans la publicité, appliquant ses idées sur le comportement à la vente."
+    ],
+    "facts_en": [
+      "In 1920 his highly controversial \"Little Albert\" experiment conditioned a baby to fear a white rat by pairing the animal with a frightening noise.",
+      "He laid the foundations of behaviorism as early as 1913 with a landmark manifesto, his lecture \"Psychology as the Behaviorist Views It.\"",
+      "After a scandal ended his academic career, he successfully reinvented himself in advertising, applying his ideas about behavior to selling products."
+    ]
+  },
+  {
+    "name": "Umberto Eco",
+    "description": "Umberto Eco, sémioticien et romancier italien (1932-2016), théoricien du signe et auteur du « Nom de la rose ».",
+    "bio_fr": "Umberto Eco, né le 5 janvier 1932 à Alexandrie, dans le Piémont, et mort le 19 février 2016 à Milan, est un universitaire, philosophe, sémioticien et écrivain italien. Reconnu pour ses nombreux essais universitaires sur la sémiotique, l'esthétique médiévale, la communication de masse, la linguistique et la philosophie, il est surtout connu du grand public pour ses œuvres romanesques.",
+    "bio_en": "Umberto Eco was an Italian medievalist, philosopher, semiotician, novelist, cultural critic, and political and social commentator. In English, he is best known for his popular 1980 novel The Name of the Rose, a historical mystery combining semiotics in fiction with biblical analysis, medieval studies and literary theory, as well as Foucault's Pendulum, his 1988 novel which touches on similar themes.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Oliver_Mark_-_Umberto_Eco%2C_Milan_2011.jpg/330px-Oliver_Mark_-_Umberto_Eco%2C_Milan_2011.jpg",
+    "facts_fr": [
+      "Son roman « Le Nom de la rose » (1980), une enquête sémiotique déguisée en polar médiéval, devint un best-seller mondial et fut porté à l'écran.",
+      "Dès 1985, il tint dans l'hebdomadaire L'Espresso une chronique bimensuelle, « La Bustina di Minerva » (la pochette d'allumettes de Minerve) ; sa toute dernière parut le 27 janvier 2016, quelques semaines avant sa mort.",
+      "En 1992, il fut nommé à la tête de la chaire européenne du Collège de France ; son essai de 1995 « Ur-Fascism » y énumère les quatorze traits qu'il attribue aux idéologies fascistes."
+    ],
+    "facts_en": [
+      "His novel The Name of the Rose (1980), a semiotic inquiry disguised as a medieval whodunit, became a worldwide best-seller and was adapted for the screen.",
+      "From 1985 he wrote a twice-monthly column, \"La Bustina di Minerva\" (Minerva's Matchbook), in the magazine L'Espresso; his very last one appeared on 27 January 2016, weeks before his death.",
+      "In his 1995 essay \"Ur-Fascism\" he laid out fourteen features he believed characterize fascist ideologies, an essay that gained fresh recognition in the 21st century."
+    ]
+  },
+  {
+    "name": "Peirce",
+    "description": "Charles Sanders Peirce, philosophe et logicien américain (1839-1914), fondateur du pragmatisme et de la sémiotique.",
+    "bio_fr": "Charles Sanders Peirce , né le 10 septembre 1839 à Cambridge dans le Massachusetts et mort le 19 avril 1914 à Milford en Pennsylvanie, est un sémiologue et philosophe américain. Il est considéré comme le fondateur du courant pragmatiste, avec William James, et, avec Ferdinand de Saussure, comme l'un des deux pères de la sémiologie moderne, ainsi qu'un des plus grands logiciens de la fin du XIXe siècle. Il est considéré comme un novateur dans de nombreux domaines, en particulier dans la façon de concevoir les méthodes d'enquête et de recherche, ainsi que dans la philosophie des sciences. William James, qui a introduit le pragmatisme en philosophie, attribue à Peirce l'origine du terme. Toutefois, contrairement à d'autres pragmatistes comme James ou John Dewey, Peirce conçoit le pragmatisme comme une méthode scientifique employée dans l'élaboration d'idées ou de problèmes philosophiques.",
+    "bio_en": "Charles Sanders Peirce was an American scientist, mathematician, logician, and philosopher who is sometimes known as \"the father of pragmatism\". According to philosopher Paul Weiss, writing in 1934, Peirce was \"the most original and versatile of America's philosophers and America's greatest logician\". Bertrand Russell wrote in 1959, \"he was one of the most original minds of the later nineteenth century and certainly the greatest American thinker ever\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Charles_Sanders_Peirce_theb3558.jpg/330px-Charles_Sanders_Peirce_theb3558.jpg",
+    "facts_fr": [
+      "Aux côtés de Ferdinand de Saussure, il est considéré comme l'un des deux pères de la sémiotique moderne, qu'il concevait comme la branche formelle de la logique.",
+      "C'est lui qui définit le raisonnement par abduction, en plus de formuler rigoureusement l'induction mathématique et le raisonnement déductif ; il fut aussi l'un des fondateurs des statistiques.",
+      "Dès 1886, il comprit que des opérations logiques pouvaient être réalisées par des circuits électriques à commutation, une idée reprise des décennies plus tard pour concevoir les ordinateurs numériques."
+    ],
+    "facts_en": [
+      "Alongside Ferdinand de Saussure he is regarded as one of the two fathers of modern semiotics, which he saw as the formal branch of logic.",
+      "He defined the concept of abductive reasoning and rigorously formulated mathematical induction and deductive reasoning; he was also one of the founders of statistics.",
+      "As early as 1886 he realized that logical operations could be carried out by electrical switching circuits, an idea used decades later to build digital computers."
+    ]
+  },
+  {
+    "name": "Jakobson",
+    "description": "Roman Jakobson, linguiste russo-américain (1896-1982), théoricien des fonctions du langage et de la communication.",
+    "bio_fr": "Roman Ossipovitch Jakobson ou Yakobson, né le 28 septembre 1896 à Moscou et mort le 18 juillet 1982 à Cambridge (États-Unis), est un penseur russo-tchéco-américain qui est l'un des linguistes les plus célèbres et les plus influents du XXe siècle, en posant les premières pierres du développement de l'analyse structurelle du langage, de la poésie et de l'art dont le cinéma, à travers une œuvre abondante et variée. Ses travaux exercent une influence décisive sur Claude Lévi-Strauss, Noam Chomsky, Tzvetan Todorov, Roland Barthes, Émile Benveniste, Michael Silverstein ou Richard Bauman, et Jakobson reste une figure centrale dans l'adaptation de l'analyse structurelle à des disciplines au-delà de la linguistique, notamment la philosophie, l'anthropologie, la communication ou la théorie de la littérature.",
+    "bio_en": "Roman Osipovich Jakobson was a Russian linguist and literary theorist. A pioneer of structural linguistics, Jakobson was one of the most celebrated and influential linguists of the twentieth century. With Nikolai Trubetzkoy, he developed revolutionary new techniques for the analysis of linguistic sound systems, in effect founding the modern discipline of phonology. Jakobson went on to extend similar principles and techniques to the study of other aspects of language such as syntax, morphology and semantics. He made numerous contributions to Slavic linguistics, most notably two studies of Russian case and an analysis of the categories of the Russian verb. Drawing on insights from C. S. Peirce's semiotics, as well as from communication theory and cybernetics, he proposed methods for the investigation of poetry, music, and the visual arts including cinema.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Roman_Jakobson.jpg",
+    "facts_fr": [
+      "Avec Nikolaï Troubetzkoy, il mit au point des techniques révolutionnaires d'analyse des systèmes sonores, fondant de fait la discipline moderne de la phonologie.",
+      "S'inspirant de la sémiotique de C. S. Peirce ainsi que de la théorie de la communication et de la cybernétique, il proposa des méthodes pour étudier la poésie, la musique et les arts visuels, dont le cinéma.",
+      "Sa célèbre théorie des traits distinctifs influença de façon décisive la pensée du jeune Noam Chomsky, qui domina ensuite la linguistique théorique de la seconde moitié du XXe siècle."
+    ],
+    "facts_en": [
+      "With Nikolai Trubetzkoy he developed revolutionary techniques for analyzing sound systems, in effect founding the modern discipline of phonology.",
+      "Drawing on C. S. Peirce's semiotics as well as communication theory and cybernetics, he proposed methods for studying poetry, music, and the visual arts, including cinema.",
+      "His celebrated theory of distinctive features decisively shaped the early thinking of Noam Chomsky, who went on to dominate theoretical linguistics in the later 20th century."
+    ]
+  },
+  {
+    "name": "Greimas",
+    "description": "Algirdas Julien Greimas, sémioticien lituanien d'expression française (1917-1992), créateur du « carré sémiotique ».",
+    "bio_fr": "Algirdas Julien Greimas né en 1917 à Toula (Russie) et mort en 1992 à Paris (France), est un linguiste et sémioticien d'origine lituanienne et d'expression française.",
+    "bio_en": "Algirdas Julien Greimas was a Lithuanian literary scientist who wrote most of his body of work in French while living in France. Greimas is known among other things for the Greimas square. He is, along with Roland Barthes, considered the most prominent of the French semioticians. With his training in structural linguistics, he added to the theory of signification, plastic semiotics, and laid the foundations for the Paris school of semiotics. Among Greimas's major contributions to semiotics are the concepts of isotopy, the actantial model, the narrative program, and the semiotics of the natural world. He also researched Lithuanian mythology and Proto-Indo-European religion, and was influential in semiotic literary criticism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Algirdas_Julien_Greimas_2017_stamp_of_Lithuania.jpg/330px-Algirdas_Julien_Greimas_2017_stamp_of_Lithuania.jpg",
+    "facts_fr": [
+      "On lui doit le « carré sémiotique », qui modélise les oppositions de sens, ainsi que des concepts comme l'isotopie et le modèle actantiel.",
+      "Directeur d'études à l'École des hautes études en sciences sociales, il fonda la sémantique structurale et anima l'École sémiotique de Paris.",
+      "Au-delà de la théorie, il consacra des recherches à la mythologie lituanienne et à la religion proto-indo-européenne."
+    ],
+    "facts_en": [
+      "He is best known for the Greimas square (le carré sémiotique), which models oppositions of meaning, along with concepts such as isotopy and the actantial model.",
+      "As a director of studies at the École des hautes études en sciences sociales, he founded structural semantics and led the Paris school of semiotics.",
+      "Beyond theory, he devoted research to Lithuanian mythology and Proto-Indo-European religion."
+    ]
+  },
+  {
+    "name": "Iskandar Muda",
+    "description": "Iskandar Muda, douzième sultan d'Aceh (règne 1607-1636), apogée militaire et commerciale du sultanat sur le nord de Sumatra.",
+    "bio_fr": "Le sultan Iskandar Muda (1583? - 27 décembre 1636, « Alexandre le Jeune » en malais, était le 12e souverain d'Aceh dans le nord de l'île de Sumatra en Indonésie. C'est sous son règne que le royaume atteint sa plus grande extension territoriale et devient l'État le plus puissant et le plus prospère de l'ouest de l'archipel indonésien. Sous Iskandar Muda, Aceh fait conquête sur conquête et devient un centre commercial et religieux de renommée internationale.",
+    "bio_en": "Iskandar Muda was the twelfth Sultan of Acèh Darussalam, under whom the sultanate achieved its greatest territorial extent, holding sway as the strongest power and wealthiest state in the western Indonesian archipelago and the Strait of Malacca.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Lukisan_Iskandar_muda.jpg",
+    "facts_fr": [
+      "Son nom signifie littéralement « le jeune Alexandre » en malais, et ses conquêtes étaient volontiers comparées à celles d'Alexandre le Grand.",
+      "Sous son règne, Aceh s'imposa comme la puissance la plus forte et l'État le plus riche de l'ouest de l'archipel indonésien et du détroit de Malacca, en plus de devenir un centre international du savoir islamique et du commerce.",
+      "Il fut le dernier sultan d'Aceh descendant direct en lignée masculine du fondateur du sultanat, Ali Mughayat Syah ; à sa mort, la dynastie fondatrice, la maison de Meukuta Alam, s'éteignit."
+    ],
+    "facts_en": [
+      "His name literally means \"young Alexander\" in Malay, and his conquests were often compared to those of Alexander the Great.",
+      "Under his rule Aceh became the strongest power and wealthiest state in the western Indonesian archipelago and the Strait of Malacca, as well as an international centre of Islamic learning and trade.",
+      "He was the last Sultan of Aceh directly descended in the male line from the sultanate's founder, Ali Mughayat Syah; at his death the founding House of Meukuta Alam died out."
+    ]
+  },
+  {
+    "name": "Adityawarman",
+    "description": "Adityawarman, roi de Malayapura au centre de Sumatra (règne 1347-1375), fondateur de la dynastie Minangkabau de Pagaruyung.",
+    "bio_fr": "Adityawarman ou Adityavarman est un roi qui régna de 1347 à 1375 dans la province de Sumatra occidental en Indonésie. Son nom nous est connu par près d'une vingtaine de prasasti, aujourd'hui rassemblées dans un musée à Pagaruyung. Son nom signifie en sanskrit « bouclier (varman) le soleil (adhitya) ».",
+    "bio_en": "Adityawarman was a king of Malayapura Suvarnabhumi, and is the successor of the Mauli dynasty based in central Sumatra. He was the cousin of Jayanegara, king of Majapahit from 1309 to 1328, and the grandson of Tribhuwanaraja, king of Melayu Kingdom. Adityawarman was awarded the Senior Minister of Majapahit (wreddamantri) and used this authority to launch Majapahit military expansion plans and conquer east coast region in Sumatra. Adityawarman then founded the royal dynasty of Minangkabau in Pagaruyung and presided over the central Sumatra region to take control of the gold trade between 1347 and 1375.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Adityawarman_batu_tulis.jpg/330px-Adityawarman_batu_tulis.jpg",
+    "facts_fr": [
+      "Son nom nous est connu par près d'une vingtaine de prasasti (inscriptions sur pierre), aujourd'hui rassemblées dans un musée à Pagaruyung.",
+      "Cousin de Jayanegara, roi de Majapahit, et petit-fils de Tribhuwanaraja du royaume de Melayu, il reçut le titre de grand ministre (wreddamantri) de Majapahit.",
+      "Après avoir fondé la dynastie royale de Minangkabau à Pagaruyung, il présida le centre de Sumatra pour prendre le contrôle du commerce de l'or entre 1347 et 1375."
+    ],
+    "facts_en": [
+      "His name is known to us through nearly twenty prasasti (stone inscriptions), now gathered in a museum at Pagaruyung.",
+      "A cousin of Jayanegara, king of Majapahit, and grandson of Tribhuwanaraja of the Melayu Kingdom, he was awarded the title of Senior Minister (wreddamantri) of Majapahit.",
+      "After founding the royal dynasty of Minangkabau at Pagaruyung, he presided over central Sumatra to control the gold trade between 1347 and 1375."
+    ]
+  },
+  {
+    "name": "Mao Zedong",
+    "description": "Mao Zedong, révolutionnaire et homme d'État, fondateur de la République populaire de Chine (1949) et dirigeant du Parti communiste chinois.",
+    "bio_fr": "Mao Zedong est un homme d'État, chef militaire chinois né le 26 décembre 1893 à Shaoshan et mort le 9 septembre 1976 à Pékin. Fondateur d'un régime dictatorial et totalitaire, la république populaire de Chine, il en a été le principal dirigeant de 1949 à sa mort.",
+    "bio_en": "Mao Zedong was a Chinese communist revolutionary, writer, political theorist and the founder of the People's Republic of China (PRC). He led China from the PRC's establishment in October 1949 until his death in September 1976, primarily through his role as the Chairman of the Chinese Communist Party (CCP). His theories, which he advocated as a Chinese adaptation of Marxism–Leninism, are known as Maoism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mao_Tse_Tung.jpg/330px-Mao_Tse_Tung.jpg",
+    "facts_fr": [
+      "Sa « Longue Marche » de 1934-1935, une retraite de plusieurs milliers de kilomètres face aux nationalistes, forgea sa légende et assit son autorité sur le Parti communiste chinois.",
+      "Son « Grand Bond en avant » (1958-1962), campagne d'industrialisation et de collectivisation forcées, provoqua l'une des plus graves famines de l'histoire.",
+      "En 1966, il lança la Révolution culturelle, mobilisant les Gardes rouges contre les « quatre vieilleries » et ses propres rivaux, plongeant la Chine dans une décennie de bouleversements."
+    ],
+    "facts_en": [
+      "His 1934-1935 \"Long March\", a retreat of thousands of kilometres from the Nationalist forces, forged his legend and secured his authority over the Chinese Communist Party.",
+      "His \"Great Leap Forward\" (1958-1962), a campaign of forced industrialisation and collectivisation, triggered one of the deadliest famines in history.",
+      "In 1966 he launched the Cultural Revolution, mobilising the Red Guards against the \"Four Olds\" and his own rivals, plunging China into a decade of upheaval."
+    ]
   }
 ]
