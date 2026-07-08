@@ -45,3 +45,6 @@ settings.json
 
 # macOS
 .DS_Store
+
+# Enrichment build scratch (regenerable via scripts/enrich_figures.py)
+scripts/_intros.json

@@ -18,12 +18,33 @@ USER_AGENT = "history-whisper-bot/1.0 (contact: [redacted])"
 
 # name -> {"fr": title, "en": title, "wikidata_id": id} for ambiguous/legendary names.
 OVERRIDES = {
+    # Ambiguous / legendary (disambiguation control)
     "Aristide": {"fr": "Aristide le Juste", "en": "Aristides", "wikidata_id": "Q184960"},
     "Francis Bacon": {"fr": "Francis Bacon (philosophe)", "en": "Francis Bacon", "wikidata_id": "Q37388"},
     "Sadi Carnot": {"fr": "Sadi Carnot (physicien)", "en": "Nicolas Léonard Sadi Carnot", "wikidata_id": "Q188905"},
     "Lucrèce": {"fr": "Lucrèce", "en": "Lucretius", "wikidata_id": "Q189441"},
     "Bourbon": {"fr": "Maison de Bourbon", "en": "House of Bourbon", "wikidata_id": "Q216901"},
     "Scaramouche": {"fr": "Scaramouche", "en": "Scaramouche", "wikidata_id": "Q1988917"},
+    "Icare et Dédale": {"fr": "Icare", "en": "Icarus"},
+    # Full-name / correct-title resolution (avoid disambiguation pages & cross-lang titles)
+    "Colbert": {"fr": "Jean-Baptiste Colbert", "en": "Jean-Baptiste Colbert"},
+    "De Lesseps": {"fr": "Ferdinand de Lesseps", "en": "Ferdinand de Lesseps"},
+    "De Vinci": {"fr": "Léonard de Vinci", "en": "Leonardo da Vinci"},
+    "César": {"fr": "Jules César", "en": "Julius Caesar"},
+    "Richelieu": {"fr": "Armand Jean du Plessis de Richelieu", "en": "Cardinal Richelieu"},
+    "Fouché": {"fr": "Joseph Fouché", "en": "Joseph Fouché"},
+    "Ivan le Terrible": {"fr": "Ivan le Terrible", "en": "Ivan the Terrible"},
+    "Ivan Kriloff": {"fr": "Ivan Krylov", "en": "Ivan Krylov"},
+    "Plutarque": {"fr": "Plutarque", "en": "Plutarch"},
+    "Parménide": {"fr": "Parménide", "en": "Parmenides"},
+    "Héraclite": {"fr": "Héraclite", "en": "Heraclitus"},
+    "Cicéron": {"fr": "Cicéron", "en": "Cicero"},
+    "Kennedy": {"fr": "John Fitzgerald Kennedy", "en": "John F. Kennedy"},
+    "Eisenhower": {"fr": "Dwight D. Eisenhower", "en": "Dwight D. Eisenhower"},
+    "Barnum": {"fr": "Phineas Taylor Barnum", "en": "P. T. Barnum"},
+    "Bismarck": {"fr": "Otto von Bismarck", "en": "Otto von Bismarck"},
+    "Henri IV": {"fr": "Henri IV (roi de France)", "en": "Henry IV of France"},
+    "Jaurès": {"fr": "Jean Jaurès", "en": "Jean Jaurès"},
 }
 
 

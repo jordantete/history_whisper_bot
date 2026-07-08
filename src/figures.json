@@ -1,78 +1,540 @@
 [
-  {"name": "Colbert", "description": "Jean-Baptiste Colbert, ministre de Louis XIV et artisan du mercantilisme (XVIIe s.)."},
-  {"name": "De Lesseps", "description": "Ferdinand de Lesseps, diplomate français concepteur du canal de Suez (XIXe s.)."},
-  {"name": "De Vinci", "description": "Léonard de Vinci, peintre et polymathe de la Renaissance italienne (XVe-XVIe s.)."},
-  {"name": "Talleyrand", "description": "Diplomate français, ministre sous plusieurs régimes successifs (XVIIIe-XIXe s.)."},
-  {"name": "George Sand", "description": "Romancière française (de son vrai nom Aurore Dupin) (XIXe s.)."},
-  {"name": "César", "description": "Jules César, général et homme d'État romain (Ier s. av. J.-C.)."},
-  {"name": "Balzac", "description": "Honoré de Balzac, romancier français, auteur de La Comédie humaine (XIXe s.)."},
-  {"name": "Flaubert", "description": "Gustave Flaubert, romancier français, auteur de Madame Bovary (XIXe s.)."},
-  {"name": "Velázquez", "description": "Diego Vélasquez, peintre baroque espagnol de la cour de Philippe IV (XVIIe s.)."},
-  {"name": "Goya", "description": "Francisco de Goya, peintre et graveur espagnol (XVIIIe-XIXe s.)."},
-  {"name": "Picasso", "description": "Pablo Picasso, peintre espagnol, cofondateur du cubisme (XXe s.)."},
-  {"name": "Van Gogh", "description": "Vincent van Gogh, peintre postimpressionniste néerlandais (XIXe s.)."},
-  {"name": "Prométhée", "description": "Titan de la mythologie grecque, qui déroba le feu aux dieux (figure légendaire)."},
-  {"name": "Machiavel", "description": "Nicolas Machiavel, penseur politique florentin, auteur du Prince (XVe-XVIe s.)."},
-  {"name": "Borgia", "description": "Famille italienne de la Renaissance, dont Rodrigo (Alexandre VI) et César Borgia (XVe-XVIe s.)."},
-  {"name": "Richelieu", "description": "Cardinal et principal ministre de Louis XIII (XVIIe s.)."},
-  {"name": "Ivan le Terrible", "description": "Premier tsar de toutes les Russies (XVIe s.)."},
-  {"name": "cardinal de Retz", "description": "Jean-François Paul de Gondi, mémorialiste et meneur de la Fronde (XVIIe s.)."},
-  {"name": "Fouché", "description": "Joseph Fouché, ministre de la Police sous la Révolution et l'Empire (XVIIIe-XIXe s.)."},
-  {"name": "Ivan Kriloff", "description": "Ivan Krylov, fabuliste russe (XVIIIe-XIXe s.)."},
-  {"name": "Pancho Villa", "description": "Chef révolutionnaire mexicain (début XXe s.)."},
-  {"name": "Plutarque", "description": "Historien et moraliste grec, auteur des Vies parallèles (Ier-IIe s.)."},
-  {"name": "Diane de Poitiers", "description": "Favorite du roi de France Henri II (XVIe s.)."},
-  {"name": "Mazarin", "description": "Cardinal et principal ministre, successeur de Richelieu (XVIIe s.)."},
-  {"name": "Socrate", "description": "Philosophe grec d'Athènes, maître de Platon (Ve s. av. J.-C.)."},
-  {"name": "Aristote", "description": "Philosophe grec, élève de Platon et précepteur d'Alexandre (IVe s. av. J.-C.)."},
-  {"name": "Parménide", "description": "Philosophe présocratique grec, fondateur de l'école d'Élée (VIe-Ve s. av. J.-C.)."},
-  {"name": "Héraclite", "description": "Philosophe présocratique grec, connu pour le « tout s'écoule » (VIe-Ve s. av. J.-C.)."},
-  {"name": "Ovide", "description": "Poète latin, auteur des Métamorphoses (Ier s. av.-Ier s. apr. J.-C.)."},
-  {"name": "Hercule", "description": "Héros de la mythologie gréco-romaine, célèbre pour ses douze travaux (figure légendaire)."},
-  {"name": "Confucius", "description": "Philosophe et lettré chinois, fondateur du confucianisme (VIe-Ve s. av. J.-C.)."},
-  {"name": "Kennedy", "description": "John F. Kennedy, 35e président des États-Unis (XXe s.)."},
-  {"name": "Eisenhower", "description": "Dwight D. Eisenhower, général puis 34e président des États-Unis (XXe s.)."},
-  {"name": "Aristide", "description": "Aristide « le Juste », homme d'État et général athénien (Ve s. av. J.-C.)."},
-  {"name": "Cromwell", "description": "Oliver Cromwell, homme d'État anglais, Lord Protecteur du Commonwealth (XVIIe s.)."},
-  {"name": "Jonas Salk", "description": "Médecin américain, inventeur du premier vaccin contre la poliomyélite (XXe s.)."},
-  {"name": "Planck", "description": "Max Planck, physicien allemand, fondateur de la théorie quantique (XIXe-XXe s.)."},
-  {"name": "Barnum", "description": "P. T. Barnum, entrepreneur de spectacle américain, pionnier du cirque moderne (XIXe s.)."},
-  {"name": "Bismarck", "description": "Otto von Bismarck, chancelier artisan de l'unité allemande (XIXe s.)."},
-  {"name": "Bourbon", "description": "Maison de Bourbon, dynastie royale française et espagnole (à partir du XVIe s.)."},
-  {"name": "Cicéron", "description": "Orateur, avocat et homme d'État romain (Ier s. av. J.-C.)."},
-  {"name": "Caligula", "description": "Empereur romain de la dynastie julio-claudienne (Ier s.)."},
-  {"name": "Icare et Dédale", "description": "Figures de la mythologie grecque, associées au vol et à la chute d'Icare (légendaires)."},
-  {"name": "Freud", "description": "Sigmund Freud, neurologue autrichien, fondateur de la psychanalyse (XIXe-XXe s.)."},
-  {"name": "Goethe", "description": "Johann Wolfgang von Goethe, écrivain allemand, auteur de Faust (XVIIIe-XIXe s.)."},
-  {"name": "Musset", "description": "Alfred de Musset, poète et dramaturge romantique français (XIXe s.)."},
-  {"name": "Montesquieu", "description": "Penseur français des Lumières, auteur de De l'esprit des lois (XVIIIe s.)."},
-  {"name": "Jules Hardouin-Mansart", "description": "Architecte de Louis XIV, œuvres majeures au château de Versailles (XVIIe-XVIIIe s.)."},
-  {"name": "Gengis Khan", "description": "Fondateur et premier empereur de l'Empire mongol (XIIe-XIIIe s.)."},
-  {"name": "Arthur Conan Doyle", "description": "Écrivain britannique, créateur de Sherlock Holmes (XIXe-XXe s.)."},
-  {"name": "Nerval", "description": "Gérard de Nerval, poète et écrivain romantique français (XIXe s.)."},
-  {"name": "Platon", "description": "Philosophe grec, disciple de Socrate et fondateur de l'Académie (Ve-IVe s. av. J.-C.)."},
-  {"name": "Amedeo Modigliani", "description": "Peintre et sculpteur italien de l'École de Paris (XXe s.)."},
-  {"name": "Francis Bacon", "description": "Philosophe et homme d'État anglais, promoteur de la méthode expérimentale (XVIe-XVIIe s.)."},
-  {"name": "La Pérouse", "description": "Jean-François de Galaup de La Pérouse, explorateur et navigateur français (XVIIIe s.)."},
-  {"name": "Marquis de Sade", "description": "Donatien Alphonse François de Sade, écrivain français (XVIIIe-XIXe s.)."},
-  {"name": "Vauban", "description": "Sébastien Le Prestre de Vauban, ingénieur militaire de Louis XIV (XVIIe s.)."},
-  {"name": "Charles Quint", "description": "Charles Quint, empereur du Saint-Empire et roi d'Espagne (XVIe s.)."},
-  {"name": "Sadi Carnot", "description": "Nicolas Léonard Sadi Carnot, physicien, fondateur de la thermodynamique (XIXe s.)."},
-  {"name": "Charles le Téméraire", "description": "Dernier duc de Bourgogne de la maison de Valois (XVe s.)."},
-  {"name": "Clemenceau", "description": "Georges Clemenceau, homme d'État français, « Père la Victoire » (XIXe-XXe s.)."},
-  {"name": "Anatole France", "description": "Écrivain français, prix Nobel de littérature 1921 (XIXe-XXe s.)."},
-  {"name": "Maurice de Saxe", "description": "Maréchal général de France, vainqueur de Fontenoy (XVIIIe s.)."},
-  {"name": "Général Boulanger", "description": "Georges Boulanger, général et homme politique français (XIXe s.)."},
-  {"name": "Blaise Pascal", "description": "Mathématicien, physicien et philosophe français (XVIIe s.)."},
-  {"name": "Daniel Bernoulli", "description": "Mathématicien et physicien suisse, pionnier de l'hydrodynamique (XVIIIe s.)."},
-  {"name": "Alphonse de Lamartine", "description": "Poète romantique et homme politique français (XIXe s.)."},
-  {"name": "David Hume", "description": "Philosophe empiriste et historien écossais (XVIIIe s.)."},
-  {"name": "Robespierre", "description": "Maximilien de Robespierre, figure de la Révolution française (XVIIIe s.)."},
-  {"name": "Voltaire", "description": "Écrivain et philosophe français des Lumières (XVIIIe s.)."},
-  {"name": "Rousseau", "description": "Jean-Jacques Rousseau, philosophe et écrivain des Lumières (XVIIIe s.)."},
-  {"name": "Henri IV", "description": "Roi de France, premier souverain de la dynastie des Bourbons (XVIe-XVIIe s.)."},
-  {"name": "Scaramouche", "description": "Personnage type de la commedia dell'arte (personnage de fiction, non historique)."},
-  {"name": "Lucrèce", "description": "Lucrèce (Titus Lucretius Carus), poète et philosophe latin, auteur du De rerum natura (Ier s. av. J.-C.)."},
-  {"name": "Xénophon", "description": "Historien, militaire et philosophe grec, disciple de Socrate (Ve-IVe s. av. J.-C.)."},
-  {"name": "Jaurès", "description": "Jean Jaurès, homme politique socialiste français (XIXe-XXe s.)."}
+  {
+    "name": "Colbert",
+    "description": "Jean-Baptiste Colbert, ministre de Louis XIV et artisan du mercantilisme (XVIIe s.).",
+    "bio_fr": "Jean-Baptiste Colbert, baron de Seignelay et de Sceaux, dit le Grand Colbert, né le 29 août 1619 à Reims et mort le 6 septembre 1683 à Paris, est un homme d'État français.",
+    "bio_en": "Jean-Baptiste Colbert was a French statesman who served as First Minister of State from 1661 until his death in 1683 under the rule of King Louis XIV. His lasting impact on the organization of the country's politics and markets, known as Colbertism, a doctrine often characterized as a variant of mercantilism, earned him the nickname le Grand Colbert.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Colbert1666.jpg"
+  },
+  {
+    "name": "De Lesseps",
+    "description": "Ferdinand de Lesseps, diplomate français concepteur du canal de Suez (XIXe s.).",
+    "bio_en": "Ferdinand Marie de Lesseps was a French Orientalist diplomat and later developer of the Suez Canal, which in 1869, joined the Mediterranean and Red Seas, substantially reducing sailing distances and times between Europe and East Asia.",
+    "bio_fr": "Ferdinand de Lesseps dit le comte de Lesseps, né le 19 novembre 1805 à Versailles et mort le 7 décembre 1894 à La Chesnaye près de Guilly (Indre), est un diplomate et entrepreneur français principalement connu pour avoir dirigé la construction du canal de Suez, un exploit technique et économique majeur du XIXe siècle, et pour son implication dans le scandale de Panama.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Retrato_de_Ferdinand_de_Lesseps%2C_por_Felix_Nadar.jpg"
+  },
+  {
+    "name": "De Vinci",
+    "description": "Léonard de Vinci, peintre et polymathe de la Renaissance italienne (XVe-XVIe s.).",
+    "bio_fr": "Léonard de Vinci, né le 14 avril 1452 du calendrier actuel — le 15 avril 1452, date de l'époque — à Vinci (Toscane) et mort le 2 mai 1519 à Amboise (Touraine), est un peintre polymathe toscan de la Renaissance italienne, simultanément artiste, organisateur de spectacles et de fêtes, scientifique, ingénieur, inventeur, anatomiste, sculpteur, peintre, architecte, urbaniste, botaniste, musicien, philosophe et écrivain.",
+    "bio_en": "Leonardo di ser Piero da Vinci was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, and architect. While his fame initially rested on his achievements as a painter, he has also become known for his notebooks, in which he made drawings and notes on a variety of subjects, including anatomy, astronomy, botany, cartography, painting, and palaeontology. Leonardo is widely regarded as a genius who epitomised the Renaissance humanist ideal, and his collective works contributed to the development of European art to an extent rivalled only by that of his younger contemporary Michelangelo.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png"
+  },
+  {
+    "name": "Talleyrand",
+    "description": "Diplomate français, ministre sous plusieurs régimes successifs (XVIIIe-XIXe s.).",
+    "bio_fr": "Charles-Maurice de Talleyrand-Périgord, communément appelé Talleyrand, né le 2 février 1754 à Paris où il est mort le 17 mai 1838, est un homme d'Église, un homme d'État et un diplomate français, actif du règne de Louis XVI à celui de Louis-Philippe, particulièrement pendant les périodes de la Révolution, de l'Empire et de la Restauration.",
+    "bio_en": "Charles-Maurice de Talleyrand-Périgord, 1st Prince of Benevento, then Prince of Talleyrand, was a French secularized clergyman, statesman, and leading diplomat. After studying theology, he became Agent-General of the Clergy in 1780. In 1789, just before the French Revolution, he became Bishop of Autun. He worked at the highest levels of successive French governments, most commonly as foreign minister or in some other diplomatic capacity. He served as the French representative to the Congress of Vienna. His career spanned the regimes of Louis XVI, the years of the French Revolution, Napoleon, Louis XVIII, Charles X, and Louis Philippe I. Those Talleyrand served often distrusted him but found him extremely useful. The name \"Talleyrand\" has become a byword for crafty and cynical diplomacy.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Talleyrand_01.jpg"
+  },
+  {
+    "name": "George Sand",
+    "description": "Romancière française (de son vrai nom Aurore Dupin) (XIXe s.).",
+    "bio_fr": "George Sand [ʒɔʁʒ sɑ̃d], nom de plume d'Aurore Dupin, par son mariage baronne Dudevant, est une romancière, dramaturge, épistolière, critique littéraire, journaliste et peintre française, née le 1er juillet 1804 à Paris et morte le 8 juin 1876 au château de Nohant-Vic. Elle compte parmi les écrivains les plus prolifiques, avec plus de 70 romans à son actif et 50 volumes d'œuvres diverses dont des nouvelles, des contes, des pièces de théâtre et des textes politiques.",
+    "bio_en": "Amantine Lucile Aurore Dupin de Francueil, best known by her pen name George Sand, was a French novelist, memoirist and journalist. Being more renowned than either Victor Hugo or Honoré de Balzac in Britain in the 1830s and 1840s, Sand is recognised as one of the most notable writers of the European Romantic era. She has more than 50 volumes of various works to her credit, including tales, plays and political texts, alongside her 70 novels.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/George_Sand.PNG"
+  },
+  {
+    "name": "César",
+    "description": "Jules César, général et homme d'État romain (Ier s. av. J.-C.).",
+    "bio_fr": "Jules César, aussi simplement appelé César, est un conquérant, homme d'État et écrivain romain, né le 12 ou le 13 juillet 100 av. J.-C. à Rome et mort assassiné le 15 mars 44 av. J.-C. dans la même ville.",
+    "bio_en": "Gaius Julius Caesar was a Roman general, statesman, and author who was the dictator of the Roman Republic almost continuously from 49 BC until his assassination in 44 BC. A member of the First Triumvirate, he led the Roman armies through the Gallic Wars and defeated his political rival Pompey in Caesar's civil war. He consolidated power and proclaimed himself dictator for life in 44 BC, helping create the political conditions that led to the collapse of the Roman Republic and the emergence of the Roman Empire. For his role in these events, he is regarded as one of history’s most influential figures.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg"
+  },
+  {
+    "name": "Balzac",
+    "description": "Honoré de Balzac, romancier français, auteur de La Comédie humaine (XIXe s.).",
+    "bio_fr": "Honoré de Balzac, nom de plume d'Honoré Balzac, né le 20 mai 1799 à Tours et mort le 18 août 1850 à Paris, est un écrivain français. Romancier, critique d'art, dramaturge, critique littéraire, essayiste, journaliste et imprimeur, il a laissé l'une des plus imposantes œuvres romanesques de la littérature française, avec plus de quatre-vingt-dix romans et nouvelles parus de 1829 à 1855, réunis sous le titre de La Comédie humaine. À cela s'ajoutent Les Cent Contes drolatiques, ainsi que des romans de jeunesse publiés sous des pseudonymes et quelque vingt-cinq œuvres ébauchées.",
+    "bio_en": "Honoré de Balzac was a French novelist and playwright. The novel sequence La Comédie humaine, described as a panorama of post-Napoleonic French life, is generally viewed as his magnum opus.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%E5%A5%A5%C2%B7%E5%B7%B4%E5%B0%94%E6%89%8E%E5%85%8B.png"
+  },
+  {
+    "name": "Flaubert",
+    "description": "Gustave Flaubert, romancier français, auteur de Madame Bovary (XIXe s.).",
+    "bio_fr": "Gustave Flaubert est un écrivain français, né à Rouen le 12 décembre 1821 et mort à Croisset, lieu-dit de la commune de Canteleu, le 8 mai 1880. Considéré comme l'un des plus grands romanciers du XIXe siècle, aux côtés de Victor Hugo, Stendhal, Balzac et Zola, il se distingue par sa conception exigeante du métier d'écrivain et par la modernité de sa poétique romanesque.",
+    "bio_en": "Gustave Flaubert was a French novelist. He has been considered the leading exponent of literary realism in his country and abroad. He is known especially for his debut novel Madame Bovary (1857), his Correspondence, and his scrupulous devotion to his style and aesthetics. The celebrated writer Guy de Maupassant was a protégé of Flaubert.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Gustave_Flaubert.jpg"
+  },
+  {
+    "name": "Velázquez",
+    "description": "Diego Vélasquez, peintre baroque espagnol de la cour de Philippe IV (XVIIe s.).",
+    "bio_fr": "Velázquez, ou Velazquez, Velásquez ou Vélasquez, est un patronyme espagnol signifiant « fils de Velasco ».",
+    "bio_en": "Velázquez, also Velazquez, Velásquez or Velasquez, is a surname from Spain. It is a patronymic name, meaning \"son of Velasco\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Coats_of_arms_of_Vel%C3%A1zquez.svg/800px-Coats_of_arms_of_Vel%C3%A1zquez.svg.png"
+  },
+  {
+    "name": "Goya",
+    "description": "Francisco de Goya, peintre et graveur espagnol (XVIIIe-XIXe s.).",
+    "bio_fr": "Goya est un nom basque dont l’étymologie d’origine est « goia », mot qui signifie « la hauteur, le sommet ». Goya peut faire référence à :",
+    "bio_en": "Francisco José de Goya y Lucientes was a Spanish romantic painter and printmaker. He is considered the most important Spanish artist of the late 18th and early 19th centuries. His paintings, drawings, and engravings reflected contemporary historical upheavals and influenced important 19th- and 20th-century painters. Goya is often referred to as the last of the Old Masters and the first of the moderns. He is widely regarded as one of the most influential figures in the history of Western art.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg"
+  },
+  {
+    "name": "Picasso",
+    "description": "Pablo Picasso, peintre espagnol, cofondateur du cubisme (XXe s.).",
+    "bio_fr": "Pablo Ruiz Picasso, né le 25 octobre 1881 à Malaga et mort le 8 avril 1973 à Mougins, est un peintre, dessinateur, sculpteur et graveur espagnol ayant passé l'essentiel de sa vie en France.",
+    "bio_en": "Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso was a Spanish painter and sculptor who spent most of his adult life in France. One of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture, the co-invention of collage, and for the wide variety of styles that he helped develop and explore. Among his most famous works are the proto-Cubist Les Demoiselles d'Avignon (1907) and the anti-war painting Guernica (1937), a dramatic portrayal of the bombing of Guernica by German and Italian air forces during the Spanish Civil War. His career spanned more than 76 years, from his late teens to his death in 1973.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Pablo_picasso_1.jpg"
+  },
+  {
+    "name": "Van Gogh",
+    "description": "Vincent van Gogh, peintre postimpressionniste néerlandais (XIXe s.).",
+    "bio_fr": "Vincent van Gogh, né le 30 mars 1853 à Zundert aux Pays-Bas et mort le 29 juillet 1890 à Auvers-sur-Oise en France à l'âge de 37 ans, est un peintre et dessinateur néerlandais. Son œuvre pleine de naturalisme, inspirée par l'impressionnisme et le pointillisme, annonce le fauvisme et l'expressionnisme.",
+    "bio_en": "Vincent Willem van Gogh was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. His suicide at 37 followed years of mental illness and poverty.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Self-Portrait_with_a_Straw_Hat_%28obverse-_The_Potato_Peeler%29_MET_ep67.187.70A.R.jpg"
+  },
+  {
+    "name": "Prométhée",
+    "description": "Titan de la mythologie grecque, qui déroba le feu aux dieux (figure légendaire).",
+    "bio_fr": "Dans la mythologie grecque, Prométhée est un Titan.",
+    "bio_en": "Prometheus is a figure in Greek mythology.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Atlas_Typhoeus_Prometheus.png"
+  },
+  {
+    "name": "Machiavel",
+    "description": "Nicolas Machiavel, penseur politique florentin, auteur du Prince (XVe-XVIe s.).",
+    "bio_fr": "Nicolas Machiavel est un humaniste italien de la Renaissance né le 3 mai 1469 à Florence et mort dans cette même ville le 21 juin 1527.",
+    "bio_en": "Machiavel is the traditional French rendition of the surname of the Italian philosopher Niccolò Machiavelli.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg"
+  },
+  {
+    "name": "Borgia",
+    "description": "Famille italienne de la Renaissance, dont Rodrigo (Alexandre VI) et César Borgia (XVe-XVIe s.).",
+    "bio_fr": "La famille Borgia, italianisation du nom catalan Borja, est une famille éteinte originaire du royaume de Valence, qui a exercé une grande influence politique dans l’Italie des XVe et XVIe siècles. Cette dynastie qui a régné pendant un siècle sur Rome, fournit deux papes, plusieurs cardinaux, des militaires, tous princes de la Renaissance, dont quelques-uns acquièrent une fâcheuse renommée, et sont à l'origine d'une légende noire construite par l'Église dès le XVIe siècle.",
+    "bio_en": "The House of Borgia was a noble family of Spanish origins, which rose to prominence during the Italian Renaissance. They were from Xàtiva, Kingdom of Valencia, the surname being a toponymic from the town of Borja, then in the Crown of Aragon, in Spain.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Arms_of_the_house_of_Borgia_%281%29.svg/langfr-500px-Arms_of_the_house_of_Borgia_%281%29.svg.png"
+  },
+  {
+    "name": "Richelieu",
+    "description": "Cardinal et principal ministre de Louis XIII (XVIIe s.).",
+    "bio_en": "Armand Jean du Plessis, 1st Duke of Richelieu, commonly known as Cardinal Richelieu, was a French Catholic prelate and statesman who had an outsized influence in civil and religious affairs. He became known as the Red Eminence, a term derived from the style of Eminence applied to cardinals and their customary red robes.",
+    "bio_fr": "Armand Jean du Plessis de Richelieu, dit le cardinal de Richelieu, né le 9 septembre 1585 à Paris et mort le 4 décembre 1642 dans cette même ville, est un ecclésiastique et homme d'État français. Cardinal (1622), duc de Richelieu (1631), duc de Fronsac (1634) et pair de France, il fut le principal ministre du roi Louis XIII.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cardinal_de_Richelieu.jpg"
+  },
+  {
+    "name": "Ivan le Terrible",
+    "description": "Premier tsar de toutes les Russies (XVIe s.).",
+    "bio_fr": "Ivan IV Vassiliévitch, dit Ivan le Terrible, né le 25 août 1530 à Kolomenskoïe, près de Moscou, et mort le 28 mars 1584 à Moscou, grand-prince de Vladimir et de Moscou de 1533 à 1584, est le premier tsar de Russie de 1547 à sa mort. De tous les souverains russes, il eut le plus long règne.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ivan_grozny_frame.jpg",
+    "bio_en": "Ivan IV Vasilyevich, commonly known as Ivan the Terrible, was Grand Prince of Moscow and all Russia from 1533 to 1547, and the first Tsar and Grand Prince of all Russia from 1547 until his death in 1584. Ivan's reign was characterised by Russia's transformation from a medieval state to a fledgling empire, but at an immense cost to its people and long-term economy."
+  },
+  {
+    "name": "cardinal de Retz",
+    "description": "Jean-François Paul de Gondi, mémorialiste et meneur de la Fronde (XVIIe s.).",
+    "bio_fr": "Jean-François Paul de Gondi, plus connu sous le nom de cardinal de Retz [ʁɛ], né le 20 septembre 1613 à Montmirail et mort le 24 août 1679 à Paris, est un homme d'État, homme d'Église et écrivain français. Il est notamment connu pour ses Mémoires.",
+    "bio_en": "Jean François Paul de Gondi, Cardinal de Retz was a French churchman, writer of memoirs, and agitator in the Fronde.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jacob_Ferdinand_Voet_-_Cardinal_de_Retz.jpg/800px-Jacob_Ferdinand_Voet_-_Cardinal_de_Retz.jpg"
+  },
+  {
+    "name": "Fouché",
+    "description": "Joseph Fouché, ministre de la Police sous la Révolution et l'Empire (XVIIIe-XIXe s.).",
+    "bio_en": "Joseph Fouché, 1st Duke d'Otrante, 1st Count Fouché was a French statesman, revolutionary, and Minister of Police under First Consul Napoleon Bonaparte. Fouché later became a subordinate of Emperor Napoleon. He was particularly known for the ferocity with which he suppressed the Lyon insurrection during the Revolution in 1793. But he also was a highly competent minister of police under the Directory, the Consulate, and the Empire. In 1815, he served as President of the Executive Commission, which was the provisional government of France installed after the abdication of Napoleon. In English texts, his title is often translated as Duke of Otranto.",
+    "bio_fr": "Joseph Fouché, dit Fouché de Nantes, duc d'Otrante, comte Fouché, est un homme politique français, né le 21 mai 1759 au Pellerin, près de Nantes, et mort le 26 décembre 1820 à Trieste,. Personnage complexe qui a fasciné de nombreux auteurs, Fouché est particulièrement connu pour son implication dans la répression violente de l'insurrection lyonnaise en 1793, et pour avoir été ministre de la Police sous le Directoire, le Consulat, l'Empire et la Seconde Restauration. Il est l'un des personnages les plus controversés de l'Histoire de France.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Joseph_Fouch%C3%A9.png"
+  },
+  {
+    "name": "Ivan Kriloff",
+    "description": "Ivan Krylov, fabuliste russe (XVIIIe-XIXe s.).",
+    "bio_fr": "Ivan Andreïevitch Krylov, né le 2 février 1769 à Moscou et mort le 9 novembre 1844 à Saint-Pétersbourg, est un écrivain et fabuliste russe.",
+    "bio_en": "Ivan Andreyevich Krylov is Russia's best-known fabulist and probably the most epigrammatic of all Russian authors. Formerly a dramatist and journalist, he only discovered his true genre at the age of 40. While many of his earlier fables were loosely based on Aesop's and La Fontaine's, later fables were original work, often with a satirical bent.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Eggink-Portrait_of_Ivan_Krylov.jpg"
+  },
+  {
+    "name": "Pancho Villa",
+    "description": "Chef révolutionnaire mexicain (début XXe s.).",
+    "bio_fr": "José Doroteo Arango Arámbula, plus connu sous le pseudonyme de Francisco Villa, ainsi que sous l'hypocoristique mexicain de Francisco, Pancho, né le 5 juin 1878 à La Coyotada, municipalité de San Juan del Rio, Durango, et mort le 20 juillet 1923 à Parral, Chihuahua, est un hors-la-loi mexicain devenu chef de la División del Norte (es) et général de l'armée fédérale au cours de la révolution mexicaine.",
+    "bio_en": "Francisco \"Pancho\" Villa was a Mexican revolutionary, guerrilla leader, and politician. He was a key figure in the Mexican Revolution, which forced out President and dictator Porfirio Díaz, subsequently ending the Porfiriato, and brought Francisco I. Madero to power in 1911. When Madero was ousted by a coup led by General Victoriano Huerta in February 1913, Villa joined the anti-Huerta forces in the Constitutionalist Army led by Venustiano Carranza. After the defeat and exile of Huerta in July 1914, Villa broke with Carranza. Villa dominated the meeting of revolutionary generals that excluded Carranza and helped create a coalition government. Emiliano Zapata and Villa became formal allies in this period. Like Zapata, Villa was strongly in favor of land reform, but did not implement it when he had power. Villa served as provisional governor of Chihuahua from 1913 to 1914.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Pancho_villa_horseback.jpg"
+  },
+  {
+    "name": "Plutarque",
+    "description": "Historien et moraliste grec, auteur des Vies parallèles (Ier-IIe s.).",
+    "bio_fr": "Plutarque, de son nom de citoyen romain Lucius Mestrius Plutarchus, né vers 44 à Chéronée en Béotie et mort vers 125, est un philosophe, biographe, moraliste, polygraphe et penseur majeur de la Rome antique. Grec d'origine, il est considéré comme un médio-platoniste. Il s'oppose dans certaines de ses Œuvres morales ou Moralia aux courants stoïcien et épicurien et est notamment reconnu pour son oeuvre majeure, les Vies parallèles, qui eut une postérité considérable.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Plutarch_head_only.jpg",
+    "bio_en": "Plutarch was a Greek and later Roman Middle Platonist philosopher, historian, biographer, essayist, and priest at the Temple of Apollo in Delphi. He is known primarily for his Parallel Lives, a series of biographies of illustrious Greeks and Romans, and Moralia, a collection of essays and speeches. Upon becoming a Roman citizen, he was possibly named Lucius Mestrius Plutarchus."
+  },
+  {
+    "name": "Diane de Poitiers",
+    "description": "Favorite du roi de France Henri II (XVIe s.).",
+    "bio_fr": "Diane de Poitiers est une comtesse de Saint-Vallier, duchesse de Valentinois, demeurée pendant plus de vingt ans la favorite d'Henri II, roi de France.",
+    "bio_en": "Diane de Poitiers was a French noblewoman and courtier who wielded much power and influence as King Henry II's royal mistress and adviser until his death. Her position increased her wealth and family's status. She was a major patron of French Renaissance architecture.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Diane_de_Poitiers_Atelier_Clouet.jpg"
+  },
+  {
+    "name": "Mazarin",
+    "description": "Cardinal et principal ministre, successeur de Richelieu (XVIIe s.).",
+    "bio_fr": "Jules Raymond Mazarin, connu sous son titre de cardinal Mazarin, né à Pescina, dans les Abruzzes, le 14 juillet 1602 et mort à Vincennes le 9 mars 1661, est un prélat, diplomate et homme politique français d'origine italienne, d'abord au service de la papauté, puis des rois de France Louis XIII et Louis XIV. Il succède à Richelieu en tant que principal ministre d'État de 1643 à 1661.",
+    "bio_en": "Mazarin may refer to:Cardinal Mazarin, 17th-century minister to the French king\nRethel, formerly the Duchy of Mazarin, a commune in France\nMazarin River, a river in Canada\nMazarin (album), a 2003 pop music album\nHoc Mazarin, historical French card game\nMazarin (pastry), Swedish almond tart\nQuartier Mazarin, a historical neighborhood in Aix-en-Provence, France",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Cardinal_Mazarin_by_Pierre_Mignard_%28Mus%C3%A9e_Cond%C3%A9%29.jpg"
+  },
+  {
+    "name": "Socrate",
+    "description": "Philosophe grec d'Athènes, maître de Platon (Ve s. av. J.-C.).",
+    "bio_fr": "Socrate est un philosophe grec du Ve siècle av. J.-C., né vers -470/469 et mort empoisonné en -399 à Athènes. Il est connu comme l'un des « fondateurs » de la philosophie. Socrate n'a laissé aucun écrit, sa pensée et sa réputation se sont transmises par des témoignages indirects. Ses disciples, Platon et Xénophon, ont notablement œuvré à maintenir l'image de leur maître, qui est mis en scène dans leurs œuvres respectives.",
+    "bio_en": "Socrate is a work for voice and piano by Erik Satie. First published in 1919 for voice and piano, in 1920 a different publisher reissued the piece \"revised and corrected\". A third version of the work exists, for small orchestra and voice, for which the manuscript has disappeared and which is available now only in print. The text is composed of excerpts of Victor Cousin's translation of Plato's dialogues, all of the chosen texts referring to Socrates.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Socrate_du_Louvre.jpg"
+  },
+  {
+    "name": "Aristote",
+    "description": "Philosophe grec, élève de Platon et précepteur d'Alexandre (IVe s. av. J.-C.).",
+    "bio_fr": "Aristote, né en 384 et mort en 322 av. J.-C. est un philosophe et polymathe grec de l'Antiquité. Il est avec Platon, dont il a été le disciple à l'Académie, l'un des penseurs les plus influents que le monde occidental ait connus. Il est aussi l'un des rares à avoir abordé presque tous les domaines de connaissance de son temps : biologie, physique, métaphysique, logique, poétique, politique, rhétorique, éthique et, de façon ponctuelle, économie. Chez Aristote, la philosophie, à l’origine « amour de la sagesse », est comprise dans un sens plus large comme recherche du savoir pour lui-même, interrogation sur le monde et science des sciences.",
+    "bio_en": "Aristotle was an ancient Greek philosopher and polymath. His writings span the natural sciences, philosophy, linguistics, economics, politics, psychology, and the arts. As the founder of the Peripatetic school of philosophy in the Lyceum in Athens, he began the wider Aristotelian tradition that followed, which set the groundwork for the development of modern science.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Aristoteles_Louvre.jpg"
+  },
+  {
+    "name": "Parménide",
+    "description": "Philosophe présocratique grec, fondateur de l'école d'Élée (VIe-Ve s. av. J.-C.).",
+    "bio_fr": "Parménide d'Élée est un philosophe grec présocratique, pythagoricien, puis éléate, né à Élée à la fin du VIe siècle av. J.-C. et mort au milieu du Ve siècle av. J.-C.. Il est célèbre pour un poème en vers, De la nature, qui exerça une influence notable sur la pensée de son époque. Ses découvertes intellectuelles, en particulier l'introduction de la logique dans la pensée hellénique, à côté de la philosophie milésienne de la nature et des théories arithmétiques de Pythagore, font de Parménide l'un des philosophes les plus considérables dans l'histoire de la philosophie grecque. Platon a consacré un dialogue qui porte son nom, le Parménide, pour traiter la question de l'Être, dont Parménide a inlassablement répété qu'il est, tandis que le Non-Être n'est pas.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Parmenides.jpg",
+    "bio_en": "Parmenides of Elea was a pre-Socratic Greek philosopher from Elea in Magna Graecia."
+  },
+  {
+    "name": "Héraclite",
+    "description": "Philosophe présocratique grec, connu pour le « tout s'écoule » (VIe-Ve s. av. J.-C.).",
+    "bio_fr": "Héraclite d'Éphèse est un des principaux philosophes grecs dits présocratiques.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Ca%27_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg/800px-Ca%27_Rezzonico_-_Eraclito_1705_-_Giuseppe_Torretti.jpg",
+    "bio_en": "Heraclitus was an ancient Greek pre-Socratic philosopher from the city of Ephesus, which was then part of the Persian Empire. He exerts a wide influence on Western philosophy, both ancient and modern, through the works of such authors as Plato, Aristotle, the Stoics, Georg Wilhelm Friedrich Hegel, Friedrich Nietzsche, and Martin Heidegger."
+  },
+  {
+    "name": "Ovide",
+    "description": "Poète latin, auteur des Métamorphoses (Ier s. av.-Ier s. apr. J.-C.).",
+    "bio_fr": "Ovide, en latin Publius Ovidius Naso, né en 43 av. J.-C. à Sulmone dans le centre de l'Italie et mort en 17 ou 18 ap. J.-C., en exil à Tomis, est un poète latin qui vécut durant la période de la naissance de l'Empire romain. Ses œuvres les plus connues sont L'Art d'aimer et les Métamorphoses.",
+    "bio_en": "Ovide may refer to:Ovide, a brand name for the insecticide malathion\nOvide, a character in the animated television show Ovide and the Gang\nOvide Plouffe, a character in The Crime of Ovide Plouffe\nOvide River, Quebec, Canada",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Publius_Ovidius_Naso.jpg"
+  },
+  {
+    "name": "Hercule",
+    "description": "Héros de la mythologie gréco-romaine, célèbre pour ses douze travaux (figure légendaire).",
+    "bio_fr": "Héraclès, de son premier nom Alcide, fils de Zeus et d’Alcmène, est l'un des héros les plus vénérés de la Grèce antique. La mythologie grecque lui prête un très grand nombre d’aventures qui le voient voyager à travers le monde connu des Doriens puis dans toute la Méditerranée, à partir de l’expansion de la Grande-Grèce, jusqu’aux Enfers. Les plus célèbres de ses exploits sont les Douze Travaux. Il est mentionné dans la littérature grecque dès Homère.",
+    "bio_en": "Hercule may refer to:",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Herakles_Niobid_krater_Louvre_G341.jpg"
+  },
+  {
+    "name": "Confucius",
+    "description": "Philosophe et lettré chinois, fondateur du confucianisme (VIe-Ve s. av. J.-C.).",
+    "bio_fr": "Confucius, né le 28 septembre 551 av. J.-C. à Zou (陬) et mort le 11 avril 479 av. J.-C. à Qufu (曲阜) dans l’actuelle province du Shandong, est un philosophe chinois. Son patronyme est Kong, son prénom Qiu, et son prénom social Zhongni. Il est le personnage historique qui a le plus marqué la civilisation chinoise, et est considéré comme le premier « éducateur » de la Chine.",
+    "bio_en": "Confucius, born Kong Qiu, was a Chinese philosopher of the Spring and Autumn period who is traditionally considered the paragon of Chinese sages. Much of the shared cultural heritage of the Sinosphere originates in the philosophy and teachings of Confucius. His philosophical teachings, called Confucianism, emphasized personal and governmental morality, harmonious social relationships, righteousness, kindness, sincerity, and a ruler's responsibilities to lead by virtue.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Konfuzius-1770.jpg"
+  },
+  {
+    "name": "Kennedy",
+    "description": "John F. Kennedy, 35e président des États-Unis (XXe s.).",
+    "bio_fr": "John Fitzgerald Kennedy, dit Jack Kennedy, généralement appelé John F. Kennedy et également connu sous ses initiales JFK, né le 29 mai 1917 à Brookline (Massachusetts) et mort assassiné le 22 novembre 1963 à Dallas (Texas), est un homme d'État américain. Membre du Parti démocrate, il est le 35e président des États-Unis, en fonction du 20 janvier 1961 jusqu'à sa mort.",
+    "bio_en": "John Fitzgerald Kennedy, also known as JFK, was the 35th president of the United States, serving from 1961 until his assassination in 1963. He was the youngest person elected president, at 43 years, and the first Catholic president. Kennedy served at the height of the Cold War, and the majority of his foreign policy concerned relations with the Soviet Union and Cuba. A member of the Democratic Party, Kennedy represented Massachusetts in both houses of the United States Congress before his presidency.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg"
+  },
+  {
+    "name": "Eisenhower",
+    "description": "Dwight D. Eisenhower, général puis 34e président des États-Unis (XXe s.).",
+    "bio_en": "Dwight David Eisenhower, also known as Ike, was the 34th president of the United States from 1953 to 1961. In his previously military career, he led the Allied Expeditionary Force during the Second World War, launching decisive campaigns in North Africa and Normandy and becoming a General of the Army.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg",
+    "bio_fr": "Dwight David Eisenhower, généralement appelé Dwight D. Eisenhower et surnommé Ike, né le 14 octobre 1890 à Denison (Texas) et mort le 28 mars 1969 à Washington, D.C., est un militaire et homme d'État américain. Membre du Parti républicain, il est le 34e président des États-Unis, en fonction du 20 janvier 1953 au 20 janvier 1961."
+  },
+  {
+    "name": "Aristide",
+    "description": "Aristide « le Juste », homme d'État et général athénien (Ve s. av. J.-C.).",
+    "wikidata_id": "Q184960",
+    "bio_fr": "Aristide le Juste, né vers 550 av. J.-C. dans le dème d'Alopèce, et mort en 467 av. J.-C., est un homme d'État et général athénien. En tant que stratège, il prend une part active aux victoires athéniennes de Salamine et de Platées. Rival politique de Thémistocle, il contribue à la fondation de la ligue de Délos.",
+    "bio_en": "Aristides was an ancient Athenian statesman. Nicknamed \"the Just\", he flourished at the beginning of Athens' Classical period and is remembered for his generalship in the Persian War. The ancient historian Herodotus cited him as \"the best and most honourable man in Athens\", and he received similarly reverent treatment in Plato's Socratic dialogues.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Augustins_-_Aristide%2C_1806_-_Charles_Brocas.jpg/800px-Augustins_-_Aristide%2C_1806_-_Charles_Brocas.jpg"
+  },
+  {
+    "name": "Cromwell",
+    "description": "Oliver Cromwell, homme d'État anglais, Lord Protecteur du Commonwealth (XVIIe s.).",
+    "bio_fr": "Cromwell désigne notamment :",
+    "bio_en": "Oliver Cromwell was an English statesman, farmer and soldier, widely regarded as one of the most important figures in British history. He came to prominence during the Wars of the Three Kingdoms, initially as a senior commander in the Parliamentarian army and later as a politician. A leading advocate of the execution of Charles I in January 1649, which led to the establishment of the Commonwealth of England, Cromwell ruled as Lord Protector from December 1653 until his death in September 1658.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Oliver_Cromwell_by_Samuel_Cooper.jpg"
+  },
+  {
+    "name": "Jonas Salk",
+    "description": "Médecin américain, inventeur du premier vaccin contre la poliomyélite (XXe s.).",
+    "bio_fr": "Jonas Edward Salk, né le 28 octobre 1914 à New York et mort le 23 juin 1995 à La Jolla, est un biologiste américain d'origine russe et inventeur du premier vaccin contre la poliomyélite.",
+    "bio_en": "Jonas Edward Salk was an American virologist and medical researcher who developed one of the first successful polio vaccines. He was born in New York City and attended the City College of New York and New York University School of Medicine.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Jonas_Salk_candid.jpg"
+  },
+  {
+    "name": "Planck",
+    "description": "Max Planck, physicien allemand, fondateur de la théorie quantique (XIXe-XXe s.).",
+    "bio_fr": "Le mot Planck peut renvoyer à :Max Planck (1858-1947), un physicien allemand. Plusieurs notions lui sont rattachées :\nconstante de Planck, une constante fondamentale qui intervient en mécanique quantique ;\nconstante de Planck réduite, une constante fondamentale dérivée de la précédente ;\nrelation de Planck-Einstein, une relation de base de la mécanique quantique traduisant le modèle corpusculaire de la lumière,\nloi de Planck, une loi physique qui décrit l'émission d'un corps noir ;\nlongueur de Planck, concept physique ;\nunités de Planck, un système d'unités de mesure déterminées à partir des constantes fondamentales G, c et h ;\nère de Planck, une période de l'histoire de l'univers qui nécessite, pour la décrire, de faire appel à une théorie de la gravitation quantique ;\nparticule de Planck, une particule dont le rayon de Schwarzschild est de l'ordre de sa longueur d'onde de Compton ;\nmédaille Max-Planck, un prix scientifique allemand, décerné tous les ans ;\nPlanck, nom d'un satellite artificiel de l'Agence spatiale européenne lancé en mai 2009 ;\nsociété Max-Planck, un organisme de recherche scientifique allemand dont les différents centres sont répartis sur tout le pays ;\nPlanck, un des plus grands cratères d'impact situés sur la face cachée de la Lune ;\nfonction de Planck, une fonction caractéristique employée en thermodynamique ;\nprincipe de Planck, un concept de la sociologie de la connaissance scientifique ;\nErwin Planck, quatrième et dernier enfant de Max Planck, était un homme politique allemand et un résistant au Troisième Reich ;\nGottlieb Planck (1824-1910), juriste et homme politique allemand ;\nRobert H. Planck (1902-1971) est un directeur américain de la photographie pour le cinéma américain.",
+    "bio_en": "Max Karl Ernst Ludwig Planck was a German theoretical physicist. He was awarded the 1918 Nobel Prize in Physics \"for the services he rendered to the advancement of physics by his discovery of energy quanta\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg"
+  },
+  {
+    "name": "Barnum",
+    "description": "P. T. Barnum, entrepreneur de spectacle américain, pionnier du cirque moderne (XIXe s.).",
+    "bio_en": "Phineas Taylor Barnum was an American showman, businessman, and politician remembered for promoting celebrated hoaxes and founding the Ringling Bros. and Barnum & Bailey Circus with James Anthony Bailey. He was also an author, publisher, and philanthropist, although he said of himself: \"I am a showman by profession ... and all the gilding shall make nothing else of me.\" The adage \"there's a sucker born every minute\" has frequently been attributed to him, although no evidence exists that he had coined the phrase.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Phineas_Taylor_Barnum.jpg",
+    "bio_fr": "Phineas Taylor Barnum, né le 5 juillet 1810 à Bethel (Connecticut) et mort le 7 avril 1891 à Bridgeport (Connecticut), est un homme d'affaires et entrepreneur du monde du spectacle américain, devenu par la suite homme politique."
+  },
+  {
+    "name": "Bismarck",
+    "description": "Otto von Bismarck, chancelier artisan de l'unité allemande (XIXe s.).",
+    "bio_fr": "Otto von Bismarck /ˈɔto fɔn ˈbɪsmaʁk/, duc de Lauenburg et prince de Bismarck, né le 1er avril 1815 à Schönhausen et mort le 30 juillet 1898 à Friedrichsruh, est un homme d'État prussien puis allemand.",
+    "bio_en": "Otto Eduard Leopold, Prince of Bismarck, Count of Bismarck-Schönhausen, Duke of Lauenburg, was a German statesman and diplomat who oversaw the unification of Germany and served as its first chancellor from 1871 to 1890. Bismarck's Realpolitik and firm governance earned him the nickname Iron Chancellor.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Bundesarchiv_Bild_146-2005-0057%2C_Otto_von_Bismarck.jpg"
+  },
+  {
+    "name": "Bourbon",
+    "description": "Maison de Bourbon, dynastie royale française et espagnole (à partir du XVIe s.).",
+    "wikidata_id": "Q216901",
+    "bio_fr": "L'expression « maison de Bourbon » désigne d'une manière générale la Maison capétienne de Bourbon, mais aussi les trois dynasties successives qui possédèrent la seigneurie de Bourbon-l'Archambault puis le duché de Bourbon.",
+    "bio_en": "The House of Bourbon is a dynasty that originated in the Kingdom of France as a branch of the Capetian dynasty, the royal House of France. Bourbon kings first ruled France and Navarre in the 16th century. A branch descended from the French Bourbons came to rule Spain in the 18th century and is the current Spanish royal family. Other branches, descended from the Spanish Bourbons, held thrones in Naples, Sicily, and Parma. Today, Spain and Luxembourg have monarchs from the House of Bourbon.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Grand_Royal_Coat_of_Arms_of_France.svg/800px-Grand_Royal_Coat_of_Arms_of_France.svg.png"
+  },
+  {
+    "name": "Cicéron",
+    "description": "Orateur, avocat et homme d'État romain (Ier s. av. J.-C.).",
+    "bio_fr": "Cicéron, dont le nom romain est Marcus Tullius Cicero, né le 3 janvier 106 av. J.-C. à Arpinum en Italie et mort assassiné le 7 décembre 43 av. J.-C. à Formies, est un avocat, homme d'État, philosophe et écrivain romain. Il intervient dans les crises de la fin de la République romaine et finit victime des proscriptions en -43.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bust_of_Cicero_%281st-cent._BC%29_-_Palazzo_Nuovo_-_Musei_Capitolini_-_Rome_2016.jpg",
+    "bio_en": "Marcus Tullius Cicero was a Roman statesman, lawyer, scholar, philosopher, orator, and writer who tried to uphold optimate principles during the political crises of the Roman Republic that led to the establishment of the Roman Empire. The extensive writings of Cicero include treatises on rhetoric, philosophy, and politics. He is considered one of Rome's greatest orators and prose stylists and the innovator of what became known as \"Ciceronian rhetoric\". Cicero was educated in Rome and in Greece. He came from a wealthy municipal family of the Roman equestrian order, and served as consul in 63 BC."
+  },
+  {
+    "name": "Caligula",
+    "description": "Empereur romain de la dynastie julio-claudienne (Ier s.).",
+    "bio_fr": "Caligula, de son nom complet Caius Julius Caesar Augustus Germanicus, né le 31 août 12 à Antium et mort assassiné le 24 janvier 41 à Rome, est le troisième empereur romain. Il règne de 37 à 41, succédant à son grand-oncle Tibère.",
+    "bio_en": "Gaius Julius Caesar Augustus Germanicus, also called Gaius and Caligula, was the third Roman emperor, ruling from AD 37 until his assassination in AD 41. He was the son of the Roman general Germanicus and Agrippina the Elder, Augustus' granddaughter, members of the first ruling family of the Roman Empire. He was born two years before Tiberius became emperor. Gaius accompanied his father, mother and siblings on campaign in Germania, at little more than four or five years old. He had been named after Gaius Julius Caesar, but his father's soldiers affectionately nicknamed him \"Caligula\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/MBALyon2018_-_Expo_Claude_-_Statue_Caligula_%28detail%29.jpg/800px-MBALyon2018_-_Expo_Claude_-_Statue_Caligula_%28detail%29.jpg"
+  },
+  {
+    "name": "Icare et Dédale",
+    "description": "Figures de la mythologie grecque, associées au vol et à la chute d'Icare (légendaires).",
+    "bio_fr": "Dans la mythologie grecque, Icare est le fils de l'architecte athénien Dédale et de Naucraté, une esclave crétoise. Il meurt d'une chute dans la mer qui porte désormais son nom en ayant voulu voler trop près du Soleil alors qu'il s'échappe du labyrinthe avec des ailes en cire et en plumes créées par son père.",
+    "bio_en": "In Greek mythology, Icarus was the son of the master craftsman Daedalus, the architect of the labyrinth of Crete, and his wife Naucrate. After Theseus, king of Athens and enemy of King Minos, escaped from the labyrinth, Minos suspected that Icarus and Daedalus had revealed the labyrinth's secrets and thus imprisoned them—either in a large tower overlooking the ocean or in the labyrinth itself, depending upon the account. Icarus and Daedalus escaped using wings Daedalus constructed from birds' molted feathers, threads from blankets, the leather straps from their sandals, and beeswax. Before escaping, Daedalus warned Icarus not to fly too low or the water would soak the feathers and not to fly too close to the Sun or the heat would melt the wax. Icarus ignored Daedalus' instructions not to fly too close to the Sun, causing the beeswax in his wings to melt. Icarus fell from the sky, plunged into the sea, and drowned. The myth gave rise to the idiom, \"fly too close to the Sun\". In some versions of the tale, Daedalus and Icarus escape by ship.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg/800px-Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg"
+  },
+  {
+    "name": "Freud",
+    "description": "Sigmund Freud, neurologue autrichien, fondateur de la psychanalyse (XIXe-XXe s.).",
+    "bio_fr": "\n\n\nSigmund Freud, le 6 mai 1856 à Freiberg, et mort le 23 septembre 1939 à Londres (Royaume-Uni), est un neurologue autrichien, fondateur de la psychanalyse et considéré comme l'une des plus grandes figures intellectuelles du XXe siècle.",
+    "bio_en": "Sigmund Freud was an Austrian neurologist and the founder of psychoanalysis, a clinical method for evaluating and treating pathologies arising from conflicts in the psyche through dialogue between patient and psychoanalyst, and the distinctive theory of mind and human agency derived from it.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg"
+  },
+  {
+    "name": "Goethe",
+    "description": "Johann Wolfgang von Goethe, écrivain allemand, auteur de Faust (XVIIIe-XIXe s.).",
+    "bio_fr": "Johann Wolfgang von Goethe /ˈjoːhan ˈvɔlfɡaŋ fɔn ˈɡøːtə/, né le 28 août 1749 à Francfort et mort le 22 mars 1832 à Weimar, est un romancier, dramaturge, poète, scientifique, théoricien de l'art et homme d'État de la ville libre de Francfort.",
+    "bio_en": "Johann Wolfgang von Goethe was a German polymath who is widely regarded as the most influential writer in the German language. His work has had a wide-ranging influence on literary, political, Christian views, and philosophical thought in the Western world from the late 18th century to the present. A poet, playwright, novelist, scientist, statesman, theatre-director, and critic, Goethe wrote a wide range of works, including plays, poetry and aesthetic criticism, as well as treatises on botany, anatomy, and colour.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Goethe_%28Stieler_1828%29.jpg"
+  },
+  {
+    "name": "Musset",
+    "description": "Alfred de Musset, poète et dramaturge romantique français (XIXe s.).",
+    "bio_fr": "Musset est un nom de famille notamment porté par :\nJoseph-Mathurin Musset (1749-1831), prêtre et révolutionnaire français ;\nLouis Alexandre Marie de Musset (1753-1839), parrain d’Alfred, homme politique, écrivain et militaire français ;\nPaul de Musset (1804-1880), frère du suivant, écrivain français.\nAlfred de Musset (1810-1857), écrivain romantique français ;\nGeorges Musset (1844-1928), historien français ;\nRené Musset (1881-1977), géographe français ;\nLucien Musset (1922-2004), historien français ;\nAlain Musset (1959-), géographe français ;\nIsabelle Musset (1960-), footballeuse internationale française ;\nChristophe Musset (1985-), auteur-compositeur-interprète français.",
+    "bio_en": "Alfred Louis Charles de Musset-Pathay was a French dramatist, poet, and novelist. Along with his poetry, he is known for writing the autobiographical novel La Confession d'un enfant du siècle.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Alfred_de_Musset.jpg"
+  },
+  {
+    "name": "Montesquieu",
+    "description": "Penseur français des Lumières, auteur de De l'esprit des lois (XVIIIe s.).",
+    "bio_fr": "Charles Louis de Secondat, baron de La Brède et de Montesquieu, est un magistrat, penseur politique, précurseur de la sociologie, philosophe et écrivain français des Lumières, né le 18 janvier 1689 à La Brède et mort le 10 février 1755 à Paris.",
+    "bio_en": "Charles Louis de Secondat, baron de La Brède et de Montesquieu, generally referred to as simply Montesquieu, was a French judge, intellectual, historian, and political philosopher.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Montesquieu_1.png"
+  },
+  {
+    "name": "Jules Hardouin-Mansart",
+    "description": "Architecte de Louis XIV, œuvres majeures au château de Versailles (XVIIe-XVIIIe s.).",
+    "bio_fr": "Jules Hardouin-Mansart, comte de Sagonne (1699), né le 16 avril 1646 à Paris et mort le 11 mai 1708 à Marly-le-Roi, est un architecte français. Il fut Premier architecte du roi Louis XIV et surintendant des Bâtiments du roi.",
+    "bio_en": "Jules Hardouin-Mansart was a French Baroque architect and builder whose major work included the Place des Victoires (1684–1690); Place Vendôme (1690); the domed chapel of Les Invalides (1690), and the Grand Trianon of the Palace of Versailles. His monumental work was designed to glorify the reign of Louis XIV.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Jules_Hardouin-Mansart%2C_Hyacinthe_Rigaud.jpg"
+  },
+  {
+    "name": "Gengis Khan",
+    "description": "Fondateur et premier empereur de l'Empire mongol (XIIe-XIIIe s.).",
+    "bio_fr": "Temüjin Borjigin, dit Gengis Khan, né vers 1155 ou 1162 dans le Khamag Mongol, l'actuelle province de Khentii en Mongolie, et mort en août 1227 dans l'actuel xian de Qingshui (Chine), est le fondateur de l'Empire mongol.",
+    "bio_en": "Genghis Khan, also known as Chinggis Khan, was the founder and first khan of the Mongol Empire. After spending most of his life uniting the Mongol tribes, he launched a series of military campaigns, conquering large parts of China and Central Asia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/YuanEmperorAlbumGenghisPortrait.jpg"
+  },
+  {
+    "name": "Arthur Conan Doyle",
+    "description": "Écrivain britannique, créateur de Sherlock Holmes (XIXe-XXe s.).",
+    "bio_fr": "Arthur Conan Doyle, né Arthur Ignatius Conan Doyle le 22 mai 1859 à Édimbourg en Écosse et mort le 7 juillet 1930 à Crowborough, est un écrivain et médecin écossais. Conan est son troisième prénom et son nom de famille est Doyle, mais il signe la plupart de ses écrits sous le nom de « A. Conan Doyle » — ce qui explique qu'il soit fréquemment désigné sous le nom de « Conan Doyle ».",
+    "bio_en": "Sir Arthur Ignatius Conan Doyle was a British writer and physician. He is best known for his four novels and fifty-six short stories about the fictional consulting detective Sherlock Holmes and his assistant Dr. Watson, which are milestones in crime fiction, and for his first work featuring Professor Challenger, The Lost World (1912), which gave its name to a subgenre of speculative fiction. He was a prolific writer who produced over 200 stories and articles, four volumes of poetry, and a number of works for the stage. He was knighted by King Edward VII in the 1902 Coronation Honours.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Conan_doyle.jpg"
+  },
+  {
+    "name": "Nerval",
+    "description": "Gérard de Nerval, poète et écrivain romantique français (XIXe s.).",
+    "bio_fr": "Gérard de Nerval, de son vrai nom Gérard Labrunie, est un écrivain et un poète français, né le 22 mai 1808 à Paris, où il est mort le 26 janvier 1855. Figure majeure du romantisme français, le « plus pur des écrivains romantiques de la France » selon Georges Gusdorf, il est essentiellement connu pour ses poèmes et ses nouvelles, notamment son ouvrage Les Filles du feu (1854), recueil de nouvelles qui comprend Sylvie et les sonnets Les Chimères, et pour sa nouvelle Aurélia publiée en 1855. En 1851, il publie un récit de voyage, le Voyage en Orient.",
+    "bio_en": "Gérard de Nerval was the pen name of Gérard Labrunie, a French travel writer, essayist, poet, and translator. He was a major figure during the era of French romanticism, and best known for his novellas and poems, especially the collection Les Filles du feu, which included the novella Sylvie and the poem \"El Desdichado\". Through his translations, Nerval played a major role in introducing French readers to the works of German Romantic authors, including Klopstock, Schiller, Bürger and Goethe. His later work merged poetry and journalism in a fictional context and influenced Marcel Proust. His last novella, Aurélia ou le rêve et la vie, influenced André Breton and Surrealism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg"
+  },
+  {
+    "name": "Platon",
+    "description": "Philosophe grec, disciple de Socrate et fondateur de l'Académie (Ve-IVe s. av. J.-C.).",
+    "bio_fr": "Platon, né en 428 / 427 av. J.-C. et mort en 348 / 347 av. J.-C. à Athènes, est un philosophe antique de la Grèce classique, contemporain de la démocratie athénienne et des sophistes qu'il critiqua vigoureusement. Il reprit le travail philosophique de certains de ses prédécesseurs, notamment Socrate dont il fut l'élève, ainsi que Parménide, Héraclite et Pythagore, afin d'élaborer sa propre pensée. Celle-ci explore la plupart des champs importants, c'est-à-dire la métaphysique, l'éthique, l'esthétique et la politique. Il fonda une Académie à Athènes, où naquit le Moyen-platonisme et où Aristote fut élève puis enseignant pendant plus de vingt ans.",
+    "bio_en": "Platon is a masculine given name and surname which may refer to:",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Plato_Pio-Clemetino_Inv305.jpg"
+  },
+  {
+    "name": "Amedeo Modigliani",
+    "description": "Peintre et sculpteur italien de l'École de Paris (XXe s.).",
+    "bio_fr": "Amedeo Clemente Modigliani, né le 12 juillet 1884 à Livourne (Italie) et mort le 24 janvier 1920 à Paris, est un peintre et sculpteur italien rattaché à l'École de Paris.",
+    "bio_en": "Amedeo Clemente Modigliani was an Italian painter and sculptor of the École de Paris who worked mainly in France. He is known for portraits and nudes in a modern style characterised by a surreal elongation of faces, necks, and figures — works that were not received well during his lifetime, but later became much sought after. Modigliani was born and spent his youth in Italy, where he studied the art of antiquity and the Renaissance. In 1906, he moved to Paris, where he came into contact with such artists as Pablo Picasso and Constantin Brâncuși. By 1912, Modigliani was exhibiting highly stylised sculptures with Cubists of the Section d'Or group at the Salon d'Automne.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Amedeo_Modigliani_1918_restored.jpg"
+  },
+  {
+    "name": "Francis Bacon",
+    "description": "Philosophe et homme d'État anglais, promoteur de la méthode expérimentale (XVIe-XVIIe s.).",
+    "wikidata_id": "Q37388",
+    "bio_fr": "Francis Bacon, né le 22 janvier 1561 à Londres et mort à Highgate en 1626, baron de Verulam, vicomte de St Albans, Chancelier d'Angleterre, est un scientifique, un philosophe et un homme d'État anglais. Francis Bacon développe dans son œuvre le De dignitate et augmentis scientiarum une théorie empiriste de la connaissance et, en 1620, il précise les règles de la méthode expérimentale dans le Novum organum, ce qui fait de lui l’un des pionniers de la pensée scientifique moderne.",
+    "bio_en": "Francis Bacon, 1st Viscount St Alban was an English philosopher and statesman who served as Attorney General and Lord Chancellor of England under King James I. Bacon argued for the importance of natural philosophy, guided by the scientific method, and his works remained influential throughout the Scientific Revolution.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Francis_Bacon.jpg"
+  },
+  {
+    "name": "La Pérouse",
+    "description": "Jean-François de Galaup de La Pérouse, explorateur et navigateur français (XVIIIe s.).",
+    "bio_fr": "Jean-François de Galaup, comte de La Pérouse, dit Lapérouse, né au château du Gô, dans la paroisse de Saint-Julien à deux lieues d'Albi (Tarn), est un officier de marine et un explorateur français.",
+    "bio_en": "La Perouse, La Pérouse, or Lapérouse may refer to:",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jean-Fran%C3%A7ois_de_Galaup_de_La_P%C3%A9rouse_jeune.jpg"
+  },
+  {
+    "name": "Marquis de Sade",
+    "description": "Donatien Alphonse François de Sade, écrivain français (XVIIIe-XIXe s.).",
+    "bio_fr": "Donatien Alphonse François de Sade, communément appelé le Marquis de Sade, né le 2 juin 1740 à Paris et mort le 2 décembre 1814 à Charenton-Saint-Maurice, est un romancier, pornographe, philosophe et criminel français.",
+    "bio_en": "Donatien Alphonse François, Marquis de Sade was a French writer, libertine, political activist, and nobleman best known for his libertine novels and imprisonment for sex crimes, blasphemy, and pornography. His works include novels, short stories, plays, dialogues, and political tracts. Some of these were published under his own name during his lifetime, but most appeared anonymously or posthumously.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Marquis_de_sade.jpg"
+  },
+  {
+    "name": "Vauban",
+    "description": "Sébastien Le Prestre de Vauban, ingénieur militaire de Louis XIV (XVIIe s.).",
+    "bio_fr": "Sébastien Le Prestre de Vauban, marquis de Vauban, dit Vauban, né le 1er mai 1633 à Saint-Léger-de-Foucheret et mort le 30 mars 1707 à Paris, est un ingénieur, architecte militaire, urbaniste, hydraulicien et essayiste français. Il est nommé maréchal de France par Louis XIV.",
+    "bio_en": "Sébastien Le Prestre, Marquis of Vauban was a French Royal Army officer who served under Louis XIV. One of the most important military engineers in European history, his defensive principles remained in use for nearly 100 years after his death, while aspects of his offensive tactics were employed into the 20th century.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Vauban.jpg"
+  },
+  {
+    "name": "Charles Quint",
+    "description": "Charles Quint, empereur du Saint-Empire et roi d'Espagne (XVIe s.).",
+    "bio_fr": "Charles de Habsbourg, couramment appelé en français Charles Quint, né le 24 février 1500 à Gand et mort le 21 septembre 1558 au monastère de Yuste (Espagne), élu le 28 juin 1519 empereur sous le nom de Charles V, est le monarque européen le plus puissant de la première moitié du XVIe siècle. Fils de Philippe le Beau et de Jeanne la Folle, il est héritier par son père des possessions de la maison de Habsbourg ainsi que des dix-sept provinces des Pays-Bas et de la Franche-Comté, et par sa mère des royaumes de Castille et d'Aragon et de l'empire colonial espagnol, ainsi que du royaume de Naples.",
+    "bio_en": "Charles V was Holy Roman Emperor and Archduke of Austria from 1519 to 1556, King of Spain from 1516 to 1556, King of Sicily and Naples from 1516 to 1554, and also Lord of the Netherlands and titular Duke of Burgundy from 1506 to 1555. He was heir to and then head of the rising House of Habsburg. His dominions in Europe included the Holy Roman Empire, extending from Germany to northern Italy with rule over the Austrian hereditary lands and Burgundian Low Countries, and Spain with its possessions of the southern Italian kingdoms of Sicily, Naples, and Sardinia. In the Americas, he oversaw the continuation of Spanish colonisation and a short-lived German colonisation. The personal union of the European and American territories he ruled was the first collection of realms labelled \"the empire on which the sun never sets\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Emperor_charles_v.png"
+  },
+  {
+    "name": "Sadi Carnot",
+    "description": "Nicolas Léonard Sadi Carnot, physicien, fondateur de la thermodynamique (XIXe s.).",
+    "wikidata_id": "Q188905",
+    "bio_fr": "Nicolas Léonard Sadi Carnot est un physicien et ingénieur français né le 1er juin 1796 à Paris et mort le 24 août 1832 à Ivry-sur-Seine.",
+    "bio_en": "Nicolas Léonard Sadi Carnot was a French military engineer and physicist. A graduate of the École polytechnique, Carnot served as an officer in the Engineering Arm of the French Army. He also pursued scientific studies, and in June 1824 published an essay titled Reflections on the Motive Power of Fire. In that book, which would be his only publication, Carnot developed the first successful theory of the maximum efficiency of heat engines.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Sadi_Carnot.jpeg"
+  },
+  {
+    "name": "Charles le Téméraire",
+    "description": "Dernier duc de Bourgogne de la maison de Valois (XVe s.).",
+    "bio_fr": "Charles de Bourgogne, dit Charles le Hardi ou Charles le Travaillant, plus connu sous son surnom posthume de Charles le Téméraire, né le 10 novembre 1433 à Dijon et mort le 5 janvier 1477 près de Nancy, est, après Philippe le Hardi, Jean sans Peur et Philippe le Bon, le quatrième et dernier duc de Bourgogne de la maison de Valois, seigneur et maître d'un ensemble de provinces connu aujourd'hui sous le nom d'État bourguignon.",
+    "bio_en": "Charles the Bold, also called the Rash, was Duke of Burgundy from 1467 to 1477. A member of the House of Valois-Burgundy, he was the only surviving legitimate son of Philip the Good and his third wife, Isabella of Portugal. As heir and as ruler, Charles competed for power with rivals including his overlord, King Louis XI of France. In 1465, Charles played a leading role in the War of the Public Weal.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Charles_the_Bold_1460.jpg"
+  },
+  {
+    "name": "Clemenceau",
+    "description": "Georges Clemenceau, homme d'État français, « Père la Victoire » (XIXe-XXe s.).",
+    "bio_fr": "Georges Clemenceau, né le 28 septembre 1841 à Mouilleron-en-Pareds (Vendée) et mort le 24 novembre 1929 à Paris (Seine), est un homme d'État français, président du Conseil de 1906 à 1909 puis de 1917 à 1920.",
+    "bio_en": "Georges Benjamin Clemenceau was a French statesman who was prime minister of France from 1906 to 1909 and again from 1917 until 1920. A physician turned journalist, he played a central role in the politics of the Third Republic, particularly amid the end of the First World War. He was a key figure of the Independent Radicals, advocating for the separation of church and state, as well as the amnesty of the Communards exiled to New Caledonia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Georges_Clemenceau_par_Nadar.jpg"
+  },
+  {
+    "name": "Anatole France",
+    "description": "Écrivain français, prix Nobel de littérature 1921 (XIXe-XXe s.).",
+    "bio_fr": "Anatole France, pour l'état civil François Anatole Thibault, né le 16 avril 1844 à Paris et mort le 12 octobre 1924 à Saint-Cyr-sur-Loire (Indre-et-Loire), est un écrivain français. Il est considéré comme l’un des plus grands de l'époque de la Troisième République, dont il a également été un des plus importants critiques littéraires.",
+    "bio_en": "Anatole France was a French poet, journalist, and novelist with several best-sellers. Ironic and skeptical, he was considered in his day the ideal French man of letters. He was a member of the Académie Française, and won the 1921 Nobel Prize in Literature \"in recognition of his brilliant literary achievements, characterized as they are by a nobility of style, a profound human sympathy, grace, and a true Gallic temperament\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Anatole_France_young_years.jpg"
+  },
+  {
+    "name": "Maurice de Saxe",
+    "description": "Maréchal général de France, vainqueur de Fontenoy (XVIIIe s.).",
+    "bio_fr": "Plusieurs personnes sont connues sous le titre de Maurice de Saxe :Maurice de Saxe (1521-1553), prince de Saxe dès 1547 ;\nMaurice de Saxe (1696-1750), maréchal général français.",
+    "bio_en": "Maurice de Saxe was a prominent soldier, general and military theorist in the first half of the 18th century. The illegitimate son of Augustus II the Strong, he initially served in the Army of the Holy Roman Empire, then the Imperial Army, before entering French service.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Maurice_de_Saxe_%281696-1750%29.PNG"
+  },
+  {
+    "name": "Général Boulanger",
+    "description": "Georges Boulanger, général et homme politique français (XIXe s.).",
+    "bio_fr": "Georges Ernest Jean-Marie Boulanger, né le 29 avril 1837 à la Caliorne à Rennes (France) et mort le 30 septembre 1891 à Ixelles (Belgique), est un officier général et homme politique français. Ministre de la Guerre en 1886, il est notamment connu pour avoir ébranlé la Troisième République, porté par un mouvement nommé « boulangisme ».",
+    "bio_en": "Georges Ernest Jean-Marie Boulanger, nicknamed Général Revanche, was a French Army officer and politician. An enormously popular public figure during the second decade of the Third Republic, he won multiple elections. At the zenith of his popularity in January 1889, he was feared to be powerful enough to establish himself as dictator. His base of support was the working-class districts of Paris and other cities, plus rural traditionalist Catholics and royalists. He advocated revanche, révision, and restauration.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Georges_Ernest_Boulanger_by_Atelier_Nadar.jpg"
+  },
+  {
+    "name": "Blaise Pascal",
+    "description": "Mathématicien, physicien et philosophe français (XVIIe s.).",
+    "bio_fr": "Blaise Pascal, né le 19 juin 1623 à Clairmont en Auvergne et mort le 19 août 1662 à Paris, est un polymathe : mathématicien, physicien, inventeur, philosophe, moraliste et théologien français.",
+    "bio_en": "Blaise Pascal was a French mathematician, physicist, inventor, philosopher, and Catholic writer.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Blaise_Pascal_Versailles.JPG"
+  },
+  {
+    "name": "Daniel Bernoulli",
+    "description": "Mathématicien et physicien suisse, pionnier de l'hydrodynamique (XVIIIe s.).",
+    "bio_fr": "Daniel Bernoulli est un médecin, physicien et mathématicien suisse, né à Groningue le 8 février 1700, et mort à Bâle, le 17 mars 1782.",
+    "bio_en": "Daniel Bernoulli was a Swiss mathematician and physicist and was one of the many prominent mathematicians in the Bernoulli family from Basel. He is particularly remembered for his applications of mathematics to mechanics, especially fluid mechanics, and for his pioneering work in probability and statistics. His name is commemorated in Bernoulli's principle, a particular example of the conservation of energy, which describes the mathematics of the mechanism underlying the operation of two important technologies of the 20th century: the carburetor and the aeroplane wing.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.tif_%28cropped%29.jpg"
+  },
+  {
+    "name": "Alphonse de Lamartine",
+    "description": "Poète romantique et homme politique français (XIXe s.).",
+    "bio_fr": "Alphonse de Lamartine, de son nom complet Alphonse Marie Louis de Prat de Lamartine, né le 21 octobre 1790 à Mâcon et mort le 28 février 1869 à Paris, est un poète, romancier, dramaturge, historien et homme politique français. Il est l'une des grandes figures du romantisme en France. Il participe également à la révolution de 1848 et proclame la Deuxième République.",
+    "bio_en": "Alphonse Marie Louis de Prat de Lamartine was a French author, poet, and statesman. Initially a moderate royalist, he became one of the leading critics of the July Monarchy of Louis-Philippe, aligning more with the Republican Left and Social Catholicism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Alphonse_de_Lamartine.PNG"
+  },
+  {
+    "name": "David Hume",
+    "description": "Philosophe empiriste et historien écossais (XVIIIe s.).",
+    "bio_fr": "David Hume, né le 7 mai 1711 à Édimbourg et mort le 25 août 1776 dans la même ville, est un philosophe, économiste et historien écossais.",
+    "bio_en": "David Hume was a Scottish philosopher, historian, economist and essayist who is known for his highly influential system of empiricism, philosophical scepticism and metaphysical naturalism. Beginning with A Treatise of Human Nature (1739–40), Hume strove to create a naturalistic science of man that examined the psychological basis of human nature. Following John Locke, Hume rejected the existence of innate ideas, holding that all our ideas derive ultimately from impressions, but in his fork he distinguished relations of ideas, known a priori, from matters of fact, whose knowledge rests on experience. This places him in the empiricist tradition of Locke and George Berkeley, while drawing his experimental method from Francis Bacon.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Painting_of_David_Hume.jpg"
+  },
+  {
+    "name": "Robespierre",
+    "description": "Maximilien de Robespierre, figure de la Révolution française (XVIIIe s.).",
+    "bio_fr": "Maximilien de Robespierre, ou Maximilien Robespierre, est un avocat et homme politique français né le 6 mai 1758 à Arras et mort guillotiné le 28 juillet 1794 à Paris, place de la Révolution. Il est l'une des principales figures de la Révolution française et demeure l'un des personnages les plus controversés de cette période.",
+    "bio_en": "Maximilien François Marie Isidore de Robespierre was a French lawyer and statesman, widely recognised as one of the most influential figures of the French Revolution. Robespierre fervently campaigned for the voting rights of all men and their unimpeded admission to the National Guard. Additionally, he advocated the right to petition, the right to bear arms in self-defence, and the abolition of the Atlantic slave trade.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Robespierre.jpg"
+  },
+  {
+    "name": "Voltaire",
+    "description": "Écrivain et philosophe français des Lumières (XVIIIe s.).",
+    "bio_fr": "Voltaire, de son vrai nom François-Marie Arouet, né le 21 novembre 1694 à Paris où il meurt le 30 mai 1778, est un écrivain et philosophe français d'esprit libéral, jouissant de son vivant d'une célébrité internationale et considéré aujourd'hui comme une figure emblématique et centrale des Lumières.",
+    "bio_en": "François-Marie Arouet, known by his pen name Voltaire, was a French Enlightenment writer, philosopher (philosophe), satirist, and historian. Famous for his wit and his criticism of Christianity and of slavery, Voltaire was an advocate of freedom of speech, freedom of religion, and separation of church and state.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Atelier_de_Nicolas_de_Largilli%C3%A8re%2C_portrait_de_Voltaire%2C_d%C3%A9tail_%28mus%C3%A9e_Carnavalet%29_-002.jpg/800px-Atelier_de_Nicolas_de_Largilli%C3%A8re%2C_portrait_de_Voltaire%2C_d%C3%A9tail_%28mus%C3%A9e_Carnavalet%29_-002.jpg"
+  },
+  {
+    "name": "Rousseau",
+    "description": "Jean-Jacques Rousseau, philosophe et écrivain des Lumières (XVIIIe s.).",
+    "bio_fr": "Le nom Rousseau est un surnom donné à une personne aux cheveux roux. En ancien français, rossel est un dérivé de roux, rougeâtre. Ce nom désigne le plus souvent Jean-Jacques Rousseau (1712-1778), philosophe francophone originaire de Genève.",
+    "bio_en": "Jean-Jacques Rousseau was a Genevan philosopher, philosophe, writer, and composer. His political philosophy influenced the progress of the Age of Enlightenment throughout Europe, as well as aspects of the French Revolution and the development of modern political, economic, and educational thought.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_adjusted.jpg"
+  },
+  {
+    "name": "Henri IV",
+    "description": "Roi de France, premier souverain de la dynastie des Bourbons (XVIe-XVIIe s.).",
+    "bio_en": "Henry IV, also known by the epithets Good King Henry or Henry the Great, was King of Navarre from 1572 and King of France from 1589 to 1610. He was the first monarch of France from the House of Bourbon, a cadet branch of the Capetian dynasty. He pragmatically balanced the interests of the Catholic and Protestant parties in France, as well as among the European states. He was assassinated in Paris in 1610 by a Catholic zealot, and was succeeded by his son Louis XIII.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Henri_IV_portant_la_croix_du_Saint-Esprit_-_Frans_Pourbus_le_Jeune.jpg",
+    "bio_fr": "Henri IV, dit « le Grand » ou « Le Vert Galant », ou encore « Le Bon Roi Henri », né sous le nom d'Henri de Bourbon le 13 décembre 1553 à Pau et mort assassiné le 14 mai 1610 à Paris, est roi de Navarre à partir du 9 juin 1572 sous le nom d'Henri III, et roi de France sous le nom d'Henri IV du 2 août 1589 jusqu'à sa mort en 1610. Il réunit ainsi les dignités de roi de France et de Navarre et est le premier roi de France de la maison capétienne de Bourbon."
+  },
+  {
+    "name": "Scaramouche",
+    "description": "Personnage type de la commedia dell'arte (personnage de fiction, non historique).",
+    "wikidata_id": "Q1988917",
+    "bio_fr": "Le terme Scaramouche désigne notamment :",
+    "bio_en": "Scaramouche or Scaramouch is a stock clown character of the 16th-century commedia dell'arte. The role combined characteristics of the Zanni (servant) and il Capitano, with some assortment of villainous traits. Usually attired in black Spanish dress and burlesquing a don, he was often beaten by Harlequin for his boasting and cowardice.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pietro_Paolini_-_Portrait_of_Tiberio_Fiorilli_as_Scaramouche.jpg"
+  },
+  {
+    "name": "Lucrèce",
+    "description": "Lucrèce (Titus Lucretius Carus), poète et philosophe latin, auteur du De rerum natura (Ier s. av. J.-C.).",
+    "wikidata_id": "Q189441",
+    "bio_fr": "Lucrèce est un poète et philosophe latin du Ier siècle av. J.-C., auteur d'un seul ouvrage en six parties, le De rerum natura, un long poème en style épique qui décrit le monde selon les principes d'Épicure.",
+    "bio_en": "Titus Lucretius Carus was a Roman poet and philosopher. His only known work is the philosophical poem De rerum natura, a didactic work about the tenets and philosophy of Epicureanism, which usually is translated into English as On the Nature of Things—and somewhat less often as On the Nature of the Universe. \nVery little is known about Lucretius's life; the only certainty is that he was either a friend or client of Gaius Memmius, to whom the poem was addressed and dedicated. De rerum natura was a considerable influence on the Augustan poets, particularly Virgil and Horace. The work was almost lost during the Middle Ages, but was rediscovered in 1417 in a monastery in Germany by Poggio Bracciolini. It played an important role both in the development of atomism and the efforts of various figures of the Enlightenment era to construct a new Christian humanism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lucretius1.png"
+  },
+  {
+    "name": "Xénophon",
+    "description": "Historien, militaire et philosophe grec, disciple de Socrate (Ve-IVe s. av. J.-C.).",
+    "bio_fr": "Xénophon est un historien, philosophe et chef militaire de la Grèce antique né à Athènes vers 430 av. J.-C. et mort vers 355 av. J.-C. Outre l’Anabase et la Cyropédie, il a écrit une suite à l’Histoire de la guerre du Péloponnèse de Thucydide intitulée les Helléniques.",
+    "bio_en": "Xenophon of Athens was a Greek military leader, philosopher, and historian. At the age of 30, he was elected as one of the leaders of the retreating Greek mercenaries, the Ten Thousand, who had been part of Cyrus the Younger's attempt to seize control of the Achaemenid Empire. As the military historian Theodore Ayrault Dodge wrote, \"the centuries since have devised nothing to surpass the genius of this warrior\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Xenophon.jpg"
+  },
+  {
+    "name": "Jaurès",
+    "description": "Jean Jaurès, homme politique socialiste français (XIXe-XXe s.).",
+    "bio_fr": "Jean Jaurès, né le 3 septembre 1859 à Castres et mort assassiné le 31 juillet 1914 à Paris, est un journaliste et homme politique français.",
+    "bio_en": "Auguste Marie Joseph Jean Léon Jaurès, commonly referred to as Jean Jaurès, was a French socialist leader. Initially a Moderate Republican, he later became a social democrat and one of the first possibilists and in 1902 the leader of the French Socialist Party, which opposed Jules Guesde's revolutionary Socialist Party of France. The two parties merged in 1905 into the French Section of the Workers' International (SFIO). An antimilitarist, he was assassinated in 1914 at the outbreak of World War I but remains one of the main historical figures of the French Left. As a heterodox Marxist, Jaurès rejected the concept of the dictatorship of the proletariat and tried to conciliate idealism and materialism, individualism and collectivism, democracy and class struggle, and patriotism and internationalism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Jean_Jaur%C3%A8s%2C_1904%2C_by_Nadar.jpg"
+  }
 ]
