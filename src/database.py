@@ -16,7 +16,19 @@ class Database:
     def _load_figures(figures_path: str) -> List[HistoricalFigure]:
         with open(figures_path, "r", encoding="utf-8") as file:
             data = json.load(file)
-        return [HistoricalFigure(name=item["name"], description=item["description"]) for item in data]
+        return [
+            HistoricalFigure(
+                name=item["name"],
+                description=item.get("description", ""),
+                wikidata_id=item.get("wikidata_id"),
+                image_url=item.get("image_url"),
+                bio_en=item.get("bio_en"),
+                bio_fr=item.get("bio_fr"),
+                facts_en=item.get("facts_en", []),
+                facts_fr=item.get("facts_fr", []),
+            )
+            for item in data
+        ]
 
     def get_all_figures(self) -> List[HistoricalFigure]:
         return self.historical_figures
