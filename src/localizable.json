@@ -10,7 +10,18 @@
         "feedback-thanks": "🙏 Thanks for your feedback — it has been noted!",
         "feedback-cooldown": "⏳ Thanks! You're sending feedback a bit fast — please wait a moment before sending more.",
         "highlights-header": "Highlights",
-        "no-figures": "No figures found, please try again."
+        "no-figures": "No figures found, please try again.",
+        "btn-another": "🔀 Another",
+        "btn-today": "📅 Today",
+        "btn-read-more": "🔖 Read more",
+        "bot-short-description": "One remarkable historical figure a day — short bio, photo, and a link to read more.",
+        "bot-description": "📜 Meet a remarkable historical figure every day: a short biography, a photo, key highlights, and a link to read more. Tap /today for today's figure, /random for a surprise, or /help to see everything I can do. Available in English and French.",
+        "cmd-today": "Historical figure of the day",
+        "cmd-random": "A random historical figure",
+        "cmd-subscribe": "Get a daily figure (coming soon)",
+        "cmd-unsubscribe": "Stop the daily figure (coming soon)",
+        "cmd-feedback": "Suggest a figure or send feedback",
+        "cmd-help": "Show what I can do"
     },
     "fr": {
         "start-message": "🌟 Salut à toi, passionné d'histoire ! 🌟\n\n📚 Bienvenue sur le Historical Figures Whisper Bot, où les pages du passé s'animent pour t'inspirer chaque jour !\n\nUtilise /today pour la figure du jour, /random pour une surprise, ou /help pour tout voir.",
@@ -23,6 +34,17 @@
         "feedback-thanks": "🙏 Merci pour ton retour — c'est bien noté !",
         "feedback-cooldown": "⏳ Merci ! Tu envoies des retours un peu vite — patiente un instant avant d'en envoyer d'autres.",
         "highlights-header": "Faits marquants",
-        "no-figures": "Aucune figure trouvée, réessaie."
+        "no-figures": "Aucune figure trouvée, réessaie.",
+        "btn-another": "🔀 Une autre",
+        "btn-today": "📅 Aujourd'hui",
+        "btn-read-more": "🔖 En savoir plus",
+        "bot-short-description": "Une figure historique remarquable chaque jour — bio courte, photo et un lien pour en savoir plus.",
+        "bot-description": "📜 Découvre une figure historique remarquable chaque jour : une courte biographie, une photo, des faits marquants et un lien pour en savoir plus. Tape /today pour la figure du jour, /random pour une surprise, ou /help pour tout voir. Disponible en français et en anglais.",
+        "cmd-today": "La figure historique du jour",
+        "cmd-random": "Une figure historique au hasard",
+        "cmd-subscribe": "Recevoir une figure chaque jour (bientôt)",
+        "cmd-unsubscribe": "Arrêter la figure quotidienne (bientôt)",
+        "cmd-feedback": "Proposer une figure ou envoyer un retour",
+        "cmd-help": "Voir ce que je sais faire"
     }
 }

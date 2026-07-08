@@ -23,6 +23,7 @@ def make_context():
     context = Mock()
     context.bot.send_message = AsyncMock(return_value=None)
     context.bot.send_photo = AsyncMock(return_value=None)
+    context.bot.send_chat_action = AsyncMock(return_value=None)
     context.args = []
     return context
 
@@ -281,6 +282,57 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         kwargs = context.bot.send_message.call_args.kwargs
         self.assertEqual(kwargs["chat_id"], update.effective_chat.id)
         self.assertNotEqual(kwargs["chat_id"], "999")
+
+    def test_read_more_url_uses_wikidata_and_locale(self):
+        f = HistoricalFigure(name="X", description="d", wikidata_id="Q42")
+        en = Bot._read_more_url(f, "en")
+        fr = Bot._read_more_url(f, "fr")
+        self.assertIn("Q42", en)
+        self.assertIn("enwiki", en)
+        self.assertIn("Q42", fr)
+        self.assertIn("frwiki", fr)
+        f2 = HistoricalFigure(name="X", description="d")  # no wikidata_id
+        self.assertIsNone(Bot._read_more_url(f2, "en"))
+
+    async def test_send_figure_sends_chat_action_and_keyboard_with_read_more(self):
+        figure = HistoricalFigure(name="Marie Curie", description="d", image_url="http://img",
+                                  bio_en="Physicist.", wikidata_id="Q7186")
+        update, context = make_update(), make_context()
+        await self.bot._send_figure(update, context, figure)
+        context.bot.send_chat_action.assert_awaited_once()
+        markup = context.bot.send_photo.call_args.kwargs["reply_markup"]
+        callbacks = [b.callback_data for row in markup.inline_keyboard for b in row if b.callback_data]
+        urls = [b.url for row in markup.inline_keyboard for b in row if b.url]
+        self.assertIn("random", callbacks)
+        self.assertIn("today", callbacks)
+        self.assertTrue(any("Q7186" in u and "enwiki" in u for u in urls))
+
+    async def test_send_figure_message_has_keyboard_without_read_more(self):
+        figure = HistoricalFigure(name="No Image", description="desc", bio_fr="bio fr")  # no image, no wikidata
+        update, context = make_update(language_code="fr"), make_context()
+        await self.bot._send_figure(update, context, figure)
+        markup = context.bot.send_message.call_args.kwargs["reply_markup"]
+        callbacks = [b.callback_data for row in markup.inline_keyboard for b in row if b.callback_data]
+        urls = [b.url for row in markup.inline_keyboard for b in row if b.url]
+        self.assertIn("random", callbacks)
+        self.assertIn("today", callbacks)
+        self.assertEqual(urls, [])
+
+    async def test_post_init_sets_localized_commands_and_descriptions(self):
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        await self.bot._post_init(app)
+        cmd_calls = app.bot.set_my_commands.call_args_list
+        self.assertEqual(len(cmd_calls), 2)  # default (en) + fr
+        langs = {c.kwargs.get("language_code") for c in cmd_calls}
+        self.assertEqual(langs, {None, "fr"})
+        for c in cmd_calls:
+            commands = c.args[0] if c.args else c.kwargs["commands"]
+            self.assertGreaterEqual(len(commands), 1)
+        self.assertEqual(app.bot.set_my_description.call_count, 2)
+        self.assertEqual(app.bot.set_my_short_description.call_count, 2)
 
     def test_group_guard_registered_in_low_group(self):
         self.bot.register_handlers()

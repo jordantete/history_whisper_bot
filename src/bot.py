@@ -5,7 +5,8 @@ from datetime import date
 from src.database import Database
 from src.utils import Utils
 from src.logger import LOGGER
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, BotCommand
+from telegram.constants import ChatAction
 from telegram.error import TelegramError
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
@@ -26,7 +27,14 @@ class Bot:
         token = Utils.get_environment_variable("TELEGRAM_BOT_TOKEN")
         # AIORateLimiter paces outgoing API calls so a burst of traffic can't
         # trip Telegram's token-wide flood limits (which would mute the bot).
-        self.application = ApplicationBuilder().token(token).rate_limiter(AIORateLimiter()).build()
+        # post_init publishes the localized command menu + profile descriptions.
+        self.application = (
+            ApplicationBuilder()
+            .token(token)
+            .rate_limiter(AIORateLimiter())
+            .post_init(self._post_init)
+            .build()
+        )
         self.database = database
         self.localizable_strings = Utils.load_localizable_data()
         self._feedback_last = {}  # user_id -> monotonic timestamp of last forwarded feedback
@@ -37,6 +45,23 @@ class Bot:
 
     def _t(self, key: str, update: Update) -> str:
         return Utils.localize(key, self._locale(update), self.localizable_strings)
+
+    def _tl(self, key: str, locale: str) -> str:
+        return Utils.localize(key, locale, self.localizable_strings)
+
+    async def _post_init(self, application) -> None:
+        """Publish the localized command menu and profile descriptions to
+        Telegram once, at startup. Default (no language_code) carries English;
+        French is registered explicitly. Shown in the '/' menu and on the
+        bot's start screen / profile."""
+        menu = ("today", "random", "subscribe", "unsubscribe", "feedback", "help")
+        for locale, language_code in (("en", None), ("fr", "fr")):
+            commands = [BotCommand(cmd, self._tl(f"cmd-{cmd}", locale)) for cmd in menu]
+            await application.bot.set_my_commands(commands, language_code=language_code)
+            await application.bot.set_my_short_description(
+                self._tl("bot-short-description", locale), language_code=language_code)
+            await application.bot.set_my_description(
+                self._tl("bot-description", locale), language_code=language_code)
 
     def _figure_bio(self, figure, locale: str) -> str:
         primary = figure.bio_fr if locale == "fr" else figure.bio_en
@@ -73,6 +98,26 @@ class Bot:
         # guarantee the length invariant holds, at the cost of content quality.
         return without_bio[:limit]
 
+    @staticmethod
+    def _read_more_url(figure, locale: str):
+        """Wikidata redirect to the figure's Wikipedia article in the given
+        locale, resolved from its Wikidata id (robust to title mismatches).
+        Returns None when the figure has no Wikidata id."""
+        if not figure.wikidata_id:
+            return None
+        site = "frwiki" if locale == "fr" else "enwiki"
+        return f"https://www.wikidata.org/wiki/Special:GoToLinkedPage?site={site}&itemid={figure.wikidata_id}"
+
+    def _figure_keyboard(self, update: Update, figure) -> InlineKeyboardMarkup:
+        rows = [[
+            InlineKeyboardButton(self._t("btn-another", update), callback_data="random"),
+            InlineKeyboardButton(self._t("btn-today", update), callback_data="today"),
+        ]]
+        url = self._read_more_url(figure, self._locale(update))
+        if url:
+            rows.append([InlineKeyboardButton(self._t("btn-read-more", update), url=url)])
+        return InlineKeyboardMarkup(rows)
+
     async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
         if not figure:
             await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("no-figures", update))
@@ -81,13 +126,16 @@ class Bot:
         bio = self._figure_bio(figure, locale)
         facts = self._figure_facts(figure, locale)
         caption = self._build_caption(figure.name, bio, facts, self._t("highlights-header", update))
+        keyboard = self._figure_keyboard(update, figure)
         if figure.image_url:
             try:
-                await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url, caption=caption)
+                await context.bot.send_chat_action(chat_id=update.effective_chat.id, action=ChatAction.UPLOAD_PHOTO)
+                await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url,
+                                             caption=caption, reply_markup=keyboard)
                 return
             except TelegramError as e:
                 LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=caption)
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=caption, reply_markup=keyboard)
 
     async def __group_guard(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Runs before every handler. The bot is private-only: in any group /
