@@ -24,7 +24,7 @@ OVERRIDES = {
     "Sadi Carnot": {"fr": "Sadi Carnot (physicien)", "en": "Nicolas Léonard Sadi Carnot", "wikidata_id": "Q188905"},
     "Lucrèce": {"fr": "Lucrèce", "en": "Lucretius", "wikidata_id": "Q189441"},
     "Bourbon": {"fr": "Maison de Bourbon", "en": "House of Bourbon", "wikidata_id": "Q216901"},
-    "Scaramouche": {"fr": "Scaramouche", "en": "Scaramouche", "wikidata_id": "Q1988917"},
+    "Scaramouche": {"fr": "Scaramouche (personnage)", "en": "Scaramouche", "wikidata_id": "Q1988917"},
     "Icare et Dédale": {"fr": "Icare", "en": "Icarus"},
     # Full-name / correct-title resolution (avoid disambiguation pages & cross-lang titles)
     "Colbert": {"fr": "Jean-Baptiste Colbert", "en": "Jean-Baptiste Colbert"},
@@ -45,6 +45,21 @@ OVERRIDES = {
     "Bismarck": {"fr": "Otto von Bismarck", "en": "Otto von Bismarck"},
     "Henri IV": {"fr": "Henri IV (roi de France)", "en": "Henry IV of France"},
     "Jaurès": {"fr": "Jean Jaurès", "en": "Jean Jaurès"},
+    # Wrong-entity bios detected during faits authoring (disambiguation in one language)
+    "Prométhée": {"fr": "Prométhée", "en": "Prometheus"},
+    "Machiavel": {"fr": "Nicolas Machiavel", "en": "Niccolò Machiavelli"},
+    "Mazarin": {"fr": "Jules Mazarin", "en": "Cardinal Mazarin"},
+    "Socrate": {"fr": "Socrate", "en": "Socrates"},
+    "Ovide": {"fr": "Ovide", "en": "Ovid"},
+    "Hercule": {"fr": "Hercule", "en": "Hercules"},
+    "Platon": {"fr": "Platon", "en": "Plato"},
+    "La Pérouse": {"fr": "Jean-François de La Pérouse", "en": "Jean-François de Galaup, comte de Lapérouse"},
+    "Cromwell": {"fr": "Oliver Cromwell", "en": "Oliver Cromwell"},
+    "Planck": {"fr": "Max Planck", "en": "Max Planck"},
+    "Musset": {"fr": "Alfred de Musset", "en": "Alfred de Musset"},
+    "Maurice de Saxe": {"fr": "Maurice de Saxe", "en": "Maurice de Saxe"},
+    "Velázquez": {"fr": "Diego Vélasquez", "en": "Diego Velázquez"},
+    "Goya": {"fr": "Francisco de Goya", "en": "Francisco Goya"},
 }
 
 
