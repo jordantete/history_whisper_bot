@@ -8,6 +8,7 @@
         "feedback-placeholder": "Your suggestion…",
         "feedback-cancel": "No worries — cancelled.",
         "feedback-thanks": "🙏 Thanks for your feedback — it has been noted!",
+        "highlights-header": "Highlights",
         "no-figures": "No figures found, please try again."
     },
     "fr": {
@@ -19,6 +20,7 @@
         "feedback-placeholder": "Ta suggestion…",
         "feedback-cancel": "Pas de souci — annulé.",
         "feedback-thanks": "🙏 Merci pour ton retour — c'est bien noté !",
+        "highlights-header": "Faits marquants",
         "no-figures": "Aucune figure trouvée, réessaie."
     }
 }
