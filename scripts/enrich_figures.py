@@ -7,7 +7,6 @@ Faits marquants (facts_en/facts_fr) are authored separately, grounded on the
 intros dumped to scripts/_intros.json, then merged into figures.json.
 """
 import json
-import re
 import time
 import urllib.parse
 import urllib.request
@@ -63,13 +62,6 @@ OVERRIDES = {
 }
 
 
-def normalize_image_width(url, width=800):
-    """Rewrite a Wikimedia thumbnail URL to a given pixel width; leave others as-is."""
-    if not url:
-        return url
-    return re.sub(r"/\d+px-", f"/{width}px-", url)
-
-
 def resolve_titles(name, overrides):
     o = overrides.get(name, {})
     return {
@@ -94,8 +86,11 @@ def fetch_summary(lang, title):
         print(f"  ! summary {lang}/{title}: {e}")
         return "", None
     extract = d.get("extract", "")
-    image = (d.get("originalimage") or d.get("thumbnail") or {}).get("source")
-    return extract, normalize_image_width(image)
+    # Use the Wikimedia-generated thumbnail URL as-is (already a valid, small, served
+    # size — rewriting its width yields 400s). Fall back to the original only when no
+    # thumbnail exists; the runtime send_photo→send_message fallback covers oversize.
+    image = (d.get("thumbnail") or d.get("originalimage") or {}).get("source")
+    return extract, image
 
 
 def fetch_intro(lang, title):

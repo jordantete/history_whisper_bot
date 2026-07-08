@@ -2,6 +2,7 @@ import os
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
 from telegram import ForceReply
+from telegram.error import TelegramError
 from telegram.ext import Application, ConversationHandler
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
@@ -90,6 +91,15 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         caption = context.bot.send_photo.call_args.kwargs["caption"]
         self.assertIn("Faits marquants", caption)
         self.assertIn("• fait un", caption)
+
+    async def test_send_figure_falls_back_to_message_on_photo_error(self):
+        figure = HistoricalFigure(name="Big Img", description="d", image_url="http://img", bio_en="A bio.")
+        update, context = make_update(), make_context()
+        context.bot.send_photo = AsyncMock(side_effect=TelegramError("Photo too big"))
+        await self.bot._send_figure(update, context, figure)
+        context.bot.send_photo.assert_called_once()
+        context.bot.send_message.assert_called_once()
+        self.assertIn("Big Img", context.bot.send_message.call_args.kwargs["text"])
 
     async def test_subscribe_handler_acknowledges(self):
         update, context = make_update(), make_context()

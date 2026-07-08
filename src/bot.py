@@ -5,6 +5,7 @@ from src.database import Database
 from src.utils import Utils
 from src.logger import LOGGER
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
+from telegram.error import TelegramError
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
     ConversationHandler, MessageHandler, filters,
@@ -72,9 +73,12 @@ class Bot:
         facts = self._figure_facts(figure, locale)
         caption = self._build_caption(figure.name, bio, facts, self._t("highlights-header", update))
         if figure.image_url:
-            await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url, caption=caption)
-        else:
-            await context.bot.send_message(chat_id=update.effective_chat.id, text=caption)
+            try:
+                await context.bot.send_photo(chat_id=update.effective_chat.id, photo=figure.image_url, caption=caption)
+                return
+            except TelegramError as e:
+                LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=caption)
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
