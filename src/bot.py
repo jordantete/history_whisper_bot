@@ -32,6 +32,31 @@ class Bot:
     def _format_figure(figure) -> str:
         return f"{figure.name}\n{figure.description}"
 
+    def _figure_bio(self, figure, locale: str) -> str:
+        primary = figure.bio_fr if locale == "fr" else figure.bio_en
+        secondary = figure.bio_en if locale == "fr" else figure.bio_fr
+        return primary or secondary or figure.description or ""
+
+    def _figure_facts(self, figure, locale: str) -> list:
+        primary = figure.facts_fr if locale == "fr" else figure.facts_en
+        secondary = figure.facts_en if locale == "fr" else figure.facts_fr
+        return primary or secondary or []
+
+    @staticmethod
+    def _build_caption(name: str, bio: str, facts, header: str, limit: int = 1024) -> str:
+        facts_block = ""
+        if facts:
+            facts_block = "\n\n" + header + "\n" + "\n".join(f"• {f}" for f in facts)
+        head = name if not bio else f"{name}\n\n{bio}"
+        caption = head + facts_block
+        if len(caption) <= limit:
+            return caption
+        # Over the limit: truncate the bio, keep name + faits block.
+        ellipsis = "…"
+        budget = limit - len(name) - len("\n\n") - len(ellipsis) - len(facts_block)
+        truncated_bio = bio[: max(0, budget)].rstrip() + ellipsis
+        return f"{name}\n\n{truncated_bio}{facts_block}"
+
     async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
         if figure:
             text = self._format_figure(figure)

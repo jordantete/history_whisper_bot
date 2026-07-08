@@ -5,6 +5,7 @@ from telegram import ForceReply
 from telegram.ext import Application, ConversationHandler
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
+from src.historical_figure import HistoricalFigure
 
 
 def make_update(language_code="en", chat_id=42, username="alice", user_id=7):
@@ -181,6 +182,38 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
 
         update.callback_query.answer.assert_awaited_once()
         self.assertIn("/today", context.bot.send_message.call_args.kwargs["text"])
+
+    def test_figure_bio_locale_and_fallback(self):
+        f = HistoricalFigure(name="V", description="desc", bio_fr="fr", bio_en="en")
+        self.assertEqual(self.bot._figure_bio(f, "fr"), "fr")
+        self.assertEqual(self.bot._figure_bio(f, "en"), "en")
+        f2 = HistoricalFigure(name="V", description="desc", bio_en="en")  # no fr
+        self.assertEqual(self.bot._figure_bio(f2, "fr"), "en")
+        f3 = HistoricalFigure(name="V", description="desc")  # no bio at all
+        self.assertEqual(self.bot._figure_bio(f3, "fr"), "desc")
+
+    def test_figure_facts_locale_and_fallback(self):
+        f = HistoricalFigure(name="V", description="d", facts_fr=["a"], facts_en=["b"])
+        self.assertEqual(self.bot._figure_facts(f, "fr"), ["a"])
+        self.assertEqual(self.bot._figure_facts(f, "en"), ["b"])
+        f2 = HistoricalFigure(name="V", description="d")
+        self.assertEqual(self.bot._figure_facts(f2, "fr"), [])
+
+    def test_build_caption_with_and_without_facts(self):
+        cap = Bot._build_caption("Voltaire", "A bio.", ["f1", "f2"], "Highlights")
+        self.assertIn("Voltaire", cap)
+        self.assertIn("A bio.", cap)
+        self.assertIn("Highlights", cap)
+        self.assertIn("• f1", cap)
+        no_facts = Bot._build_caption("Voltaire", "A bio.", [], "Highlights")
+        self.assertNotIn("Highlights", no_facts)
+
+    def test_build_caption_truncates_over_limit(self):
+        cap = Bot._build_caption("Name", "x" * 2000, ["short fact"], "Highlights")
+        self.assertLessEqual(len(cap), 1024)
+        self.assertIn("Name", cap)
+        self.assertIn("Highlights", cap)
+        self.assertIn("short fact", cap)
 
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()
