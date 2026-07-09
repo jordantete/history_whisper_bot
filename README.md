@@ -1,65 +1,110 @@
-# Historical Figures Whisper Bot
+<p align="center">
+  <img src="assets/logo.png" alt="Historical Figures Whisper Bot" width="120" height="120" />
+</p>
 
-Telegram bot serving historical figures. Runs as a long-running **long-polling**
-process (no public endpoint required), deployed to a VPS inside a dedicated `tmux`
-session. Localized EN/FR.
+<h1 align="center">Historical Figures Whisper Bot</h1>
 
-## Core classes
+<p align="center">
+  <strong>A bilingual Telegram bot that serves historical figures on demand.</strong><br/>
+  Figure cards, an optional daily subscription, and inline discovery, in English and French.
+</p>
 
-1. `HistoricalFigure` — a historical figure (name + description).
-2. `Database` — holds the historical figures.
-3. `Bot` — the Telegram bot: registers command handlers (`/start`, `/help`,
-   `/random`, `/today`, `/subscribe`, `/unsubscribe`, `/feedback`) plus the
-   inline-button callback handler, and runs long-polling.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/python--telegram--bot-22.8-2CA5E0?logo=telegram&logoColor=white" alt="python-telegram-bot" />
+  <img src="https://img.shields.io/badge/i18n-EN%20%7C%20FR-8A2BE2" alt="Localization" />
+  <img src="https://img.shields.io/badge/deploy-VPS%20%2B%20tmux-121011?logo=gnu-bash&logoColor=white" alt="Deployment" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License" /></a>
+</p>
+
+---
+
+## About
+
+Historical Figures Whisper Bot sends you a historical figure whenever you ask for one. Use `/random`
+for a figure at random, `/today` for the figure of the day, or `/subscribe` to get one automatically
+each day. Every figure arrives as a card with a portrait, a short biography, a few highlights, and a
+link to read more on Wikipedia.
+
+The bot runs as a single long-polling process, so it needs no public HTTP endpoint and no webhook. It
+is deployed to a VPS inside a dedicated `tmux` session. All user-facing text is available in English
+and French, and the language is picked automatically from each user's Telegram settings.
+
+## Features
+
+|                     |                                                                                     |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| **136 figures**     | Hand-picked historical figures with biographies and highlights, enriched from Wikidata |
+| **Bilingual EN/FR** | Language chosen per user from their Telegram `language_code`, with no per-user storage |
+| **Figure cards**    | HTML cards with a bold name, an italic biography, highlights, a portrait, and a Wikipedia link |
+| **Daily delivery**  | Optional daily figure sent to subscribers at 12:00 Europe/Paris through the JobQueue |
+| **Inline buttons**  | Random, Today, and Read more buttons under every card                                |
+| **Feedback**        | `/feedback` forwards suggestions to the owner, with a per-user cooldown against flooding |
+| **Private only**    | The bot leaves any group or channel and works one to one                            |
+| **Rate limited**    | `AIORateLimiter` paces outgoing calls so bursts of traffic stay within Telegram's limits |
 
 ## Commands
 
 | Command | Description |
-|---|---|
-| `/start` | Welcome message + inline keyboard (Random / Today / Help) |
-| `/help` | List available commands |
+| ------- | ----------- |
+| `/start` | Welcome message with an inline keyboard (Random, Today, Help) |
+| `/help` | List the available commands |
 | `/random` | A random historical figure |
 | `/today` | The historical figure of the day |
-| `/subscribe` | Daily historical figure (coming soon — stub) |
-| `/unsubscribe` | Stop the daily figure (coming soon — stub) |
-| `/feedback` | Suggest a figure or send feedback (`/feedback <text>`) |
+| `/subscribe` | Start receiving the daily figure |
+| `/unsubscribe` | Stop the daily figure |
+| `/feedback` | Suggest a figure or send feedback, either as `/feedback <text>` or interactively |
 
-These commands must also be declared to **@BotFather** via `/setcommands` so
-they show up in the Telegram command menu (EN and FR lists below):
+## Tech Stack
 
-EN:
-```
-start - Welcome & how it works
-help - List available commands
-random - A random historical figure
-today - The historical figure of the day
-subscribe - Daily historical figure (coming soon)
-unsubscribe - Stop the daily figure (coming soon)
-feedback - Suggest a figure or send feedback
-```
+- Python 3.10+ with `asyncio`
+- [python-telegram-bot](https://python-telegram-bot.org/) 22.8, using the `rate-limiter` and `job-queue` extras for flood control and the daily scheduler
+- loguru for logging to `logs/app.log`
+- python-dotenv for `.env` configuration
+- JSON files for storage: figures in `src/figures.json` and subscribers in `subscribers.json`. Postgres is planned as the future backing store.
 
-FR:
-```
-start - Bienvenue & fonctionnement
-help - Liste des commandes
-random - Une figure historique au hasard
-today - La figure historique du jour
-subscribe - Figure historique quotidienne (bientôt)
-unsubscribe - Arrêter la figure quotidienne (bientôt)
-feedback - Proposer une figure ou envoyer un retour
-```
-
-## Local run
+## Quick Start
 
 ```bash
+# Clone
+git clone https://github.com/jordantete/history_whisper_bot.git
+cd history_whisper_bot
+
+# Install
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+
+# Configure
 cp .env.example .env          # then fill TELEGRAM_BOT_TOKEN
-python -m src.main            # starts long-polling
+
+# Run (long-polling)
+python -m src.main
 ```
 
-`src/main.py` loads `.env` via `python-dotenv`, so a direct `python -m src.main`
-picks up the token without sourcing the shell.
+`src/main.py` loads `.env` via python-dotenv, so `python -m src.main` picks up the token without
+sourcing your shell.
+
+> Only one process can poll a given bot token at a time. If you run the bot locally while the VPS
+> instance is live with the same token, Telegram returns a `getUpdates` conflict. Use a separate
+> token for development.
+
+## Configuration
+
+All configuration lives in `.env` (gitignored). Copy `.env.example` and fill it in.
+
+| Variable | Required | Description |
+| -------- | :------: | ----------- |
+| `TELEGRAM_BOT_TOKEN` | Yes | Bot token from [@BotFather](https://t.me/BotFather) |
+| `OWNER_CHAT_ID` | No | Chat that receives forwarded `/feedback` messages |
+| `SUBSCRIBERS_FILE` | No | Path to the daily-delivery subscribers file (default `subscribers.json`) |
+| `VPS_USER`, `VPS_HOST`, `VPS_BOT_PATH`, `SSH_KEY` | Deploy | VPS target used by `scripts/deploy.sh` |
+
+### BotFather setup
+
+Set the avatar and command menu through [@BotFather](https://t.me/BotFather):
+
+- `/setuserpic` uploads `assets/logo.png` as the bot avatar.
+- `/setcommands` is optional, because the localized menus are published automatically at startup in `Bot._post_init`.
 
 ## Tests
 
@@ -67,16 +112,49 @@ picks up the token without sourcing the shell.
 python -m pytest tests/
 ```
 
-## Deploy (VPS + tmux)
+Run the tests from the project root. Imports use the `src.` package prefix, so pytest has to run from
+the root for them to resolve.
 
-Fill the deployment vars in `.env` (`VPS_USER`, `VPS_HOST`, `VPS_BOT_PATH`,
-`SSH_KEY`), then:
+## Deployment (VPS + tmux)
+
+Fill the deployment variables in `.env` (`VPS_USER`, `VPS_HOST`, `VPS_BOT_PATH`, `SSH_KEY`), then run:
 
 ```bash
 ./scripts/deploy.sh
 ```
 
-`scripts/deploy.sh` rsyncs the code to the VPS, copies `.env`, (re)creates the
-venv + installs `requirements.txt`, and restarts the `history-whisper-bot` tmux
-session (which runs `scripts/start.sh` → `python -m src.main`, logging to
-`logs/app.log`).
+`scripts/deploy.sh` rsyncs the code to the VPS, copies `.env` separately, recreates the venv, installs
+`requirements.txt`, and restarts the `history-whisper-bot` `tmux` session. That session runs
+`scripts/start.sh`, which execs `python -m src.main` and logs to `logs/app.log`.
+
+```bash
+# Follow the logs
+ssh $VPS_USER@$VPS_HOST 'tail -f $VPS_BOT_PATH/logs/app.log'
+
+# Attach to the session (detach with Ctrl-b then d)
+ssh $VPS_USER@$VPS_HOST 'tmux attach -t history-whisper-bot'
+```
+
+## Project Structure
+
+```
+src/
+├── main.py               # entrypoint: load_dotenv, build Database + Bot, bot.run()
+├── bot.py                # Bot: handlers, figure cards, daily job, feedback
+├── database.py           # Database: loads and serves figures from figures.json
+├── subscribers.py        # SubscriberStore: JSON-persisted daily subscribers
+├── historical_figure.py  # HistoricalFigure model
+├── utils.py              # env vars and i18n (localize, resolve_locale)
+├── logger.py             # configured loguru LOGGER singleton
+├── figures.json          # 136 curated figures (bios, facts, Wikidata ids)
+└── localizable.json      # EN/FR strings, keyed by locale
+scripts/
+├── deploy.sh             # rsync, venv, restart the tmux session
+├── start.sh              # exec python -m src.main (what tmux runs)
+└── enrich_figures.py     # Wikidata enrichment for the figure dataset
+tests/                    # pytest suite
+```
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
