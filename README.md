@@ -34,7 +34,7 @@ and French, and the language is picked automatically from each user's Telegram s
 
 |                     |                                                                                     |
 | ------------------- | ----------------------------------------------------------------------------------- |
-| **136 figures**     | Hand-picked historical figures with biographies and highlights, enriched from Wikidata |
+| **Curated figures** | Hand-picked historical figures with biographies and highlights, enriched from Wikidata |
 | **Bilingual EN/FR** | Language chosen per user from their Telegram `language_code`, with no per-user storage |
 | **Figure cards**    | HTML cards with a bold name, an italic biography, highlights, a portrait, and a Wikipedia link |
 | **Daily delivery**  | Optional daily figure sent to subscribers at 12:00 Europe/Paris through the JobQueue |
@@ -61,7 +61,7 @@ and French, and the language is picked automatically from each user's Telegram s
 - [python-telegram-bot](https://python-telegram-bot.org/) 22.8, using the `rate-limiter` and `job-queue` extras for flood control and the daily scheduler
 - loguru for logging to `logs/app.log`
 - python-dotenv for `.env` configuration
-- JSON files for storage: figures in `src/figures.json` and subscribers in `subscribers.json`. Postgres is planned as the future backing store.
+- JSON files for storage: figures in `src/figures.json` and subscribers in `subscribers.json`
 
 ## Quick Start
 
@@ -146,7 +146,7 @@ src/
 ├── historical_figure.py  # HistoricalFigure model
 ├── utils.py              # env vars and i18n (localize, resolve_locale)
 ├── logger.py             # configured loguru LOGGER singleton
-├── figures.json          # 136 curated figures (bios, facts, Wikidata ids)
+├── figures.json          # curated figures (bios, facts, Wikidata ids)
 └── localizable.json      # EN/FR strings, keyed by locale
 scripts/
 ├── deploy.sh             # rsync, venv, restart the tmux session

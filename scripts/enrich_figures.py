@@ -13,7 +13,7 @@ import urllib.request
 
 FIGURES_PATH = "src/figures.json"
 INTROS_PATH = "scripts/_intros.json"
-USER_AGENT = "history-whisper-bot/1.0 (contact: [redacted])"
+USER_AGENT = "history-whisper-bot/1.0 (+https://github.com/jordantete/history_whisper_bot)"
 
 # name -> {"fr": title, "en": title, "wikidata_id": id} for ambiguous/legendary names.
 OVERRIDES = {

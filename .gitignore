@@ -52,3 +52,6 @@ settings.json
 
 # Enrichment build scratch (regenerable via scripts/enrich_figures.py)
 scripts/_intros.json
+
+# Internal planning docs (kept local, not published)
+docs/superpowers/
