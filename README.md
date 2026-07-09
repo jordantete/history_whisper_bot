@@ -17,6 +17,12 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License" /></a>
 </p>
 
+<p align="center">
+  <a href="https://jordantete.github.io/history_whisper_bot/"><img src="https://img.shields.io/badge/Landing_page-Visit-e6c36c?style=for-the-badge&labelColor=241c07&logo=githubpages&logoColor=e6c36c" alt="Landing page" /></a>
+  &nbsp;
+  <a href="https://t.me/HistoricalFiguresWhisperBot"><img src="https://img.shields.io/badge/Telegram-Open-2CA5E0?style=for-the-badge&labelColor=241c07&logo=telegram&logoColor=2CA5E0" alt="Open in Telegram" /></a>
+</p>
+
 ---
 
 ## About
