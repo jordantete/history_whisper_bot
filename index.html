@@ -143,33 +143,46 @@
   .sec-head h2{font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--parchment)}
   .divider{width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto 0}
 
-  /* ---------- Sample figure card ---------- */
+  /* ---------- Telegram screenshot mockup ---------- */
   .card-stage{display:flex;justify-content:center}
-  .figcard{
-    width:min(430px,100%);background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
-    border:1px solid var(--line);border-radius:20px;overflow:hidden;
-    box-shadow:0 30px 70px rgba(0,0,0,.55);position:relative;
+  .phone{
+    width:min(360px,100%);background:#0b1119;border-radius:40px;padding:11px;
+    border:1px solid rgba(255,255,255,.07);
+    box-shadow:0 44px 100px rgba(0,0,0,.6), 0 0 0 1px rgba(230,195,108,.16), 0 0 70px rgba(230,195,108,.10);
   }
-  .figcard .portrait{
-    height:210px;position:relative;overflow:hidden;
-    background:
-      radial-gradient(120% 120% at 30% 20%, rgba(230,195,108,.35), transparent 60%),
-      linear-gradient(160deg,#2a2758,#161431);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .portrait .bust{width:132px;height:132px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.5))}
-  .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,19,46,.9))}
-  .figcard .body{padding:22px 24px 18px;position:relative;z-index:2}
-  .figcard .name{font-family:var(--display);font-weight:600;font-size:1.5rem;color:var(--gold-hi);margin-top:-52px;position:relative;z-index:3;text-shadow:0 2px 10px rgba(0,0,0,.6)}
-  .figcard .dates{font-size:.9rem;color:var(--muted);letter-spacing:.08em;margin-bottom:12px}
-  .figcard .bio{font-style:italic;color:#dcd7ef;font-size:1.02rem;margin-bottom:16px}
-  .figcard .hl-title{font-family:var(--display);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-  .figcard ul{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
-  .figcard li{position:relative;padding-left:20px;font-size:.99rem;color:#e7e2d3}
-  .figcard li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
-  .figcard .btns{display:flex;gap:8px;flex-wrap:wrap}
-  .chip{border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:.86rem;color:var(--parchment);background:rgba(230,195,108,.05);display:inline-flex;gap:6px;align-items:center}
-  .chip.read{margin-left:auto;color:var(--gold);border-color:rgba(230,195,108,.4)}
+  .screen{background:#0e1621;border-radius:30px;overflow:hidden}
+  .tg-status{display:flex;justify-content:space-between;align-items:center;padding:11px 22px 7px;
+    font-family:-apple-system,'Segoe UI',Roboto,sans-serif;font-weight:600;font-size:.82rem;color:#fff}
+  .tg-status .icons{display:flex;gap:6px;align-items:center}
+  .tg-status .icons svg{height:12px;fill:#fff}
+  .tg-head{display:flex;align-items:center;gap:10px;padding:9px 14px;background:#17212b}
+  .tg-head .back{color:#5ea9ea;font-size:1.7rem;line-height:.7;margin-right:1px}
+  .tg-head img{width:40px;height:40px;border-radius:50%}
+  .tg-head .who{display:flex;flex-direction:column;line-height:1.28;font-family:-apple-system,'Segoe UI',Roboto,sans-serif}
+  .tg-head .who b{color:#fff;font-size:.92rem;font-weight:600}
+  .tg-head .who span{color:#5ea9ea;font-size:.76rem}
+  .tg-body{padding:16px 12px 18px;display:flex;flex-direction:column;gap:9px;
+    background:radial-gradient(120% 70% at 50% 0,#1a2836,#0e1621);
+    font-family:-apple-system,'Segoe UI',Roboto,sans-serif}
+  .tg-out{align-self:flex-end;max-width:72%;background:#2b5278;color:#fff;font-size:.9rem;
+    padding:7px 11px 5px;border-radius:15px 15px 5px 15px}
+  .tg-out .t{display:block;text-align:right;font-size:.62rem;color:#a9c7e8;margin-top:1px}
+  .tg-in{align-self:flex-start;max-width:88%;background:#1b2735;border-radius:15px 15px 15px 5px;overflow:hidden;
+    box-shadow:0 1px 2px rgba(0,0,0,.35)}
+  .tg-in .ph{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;object-position:50% 22%}
+  .tg-cap{padding:9px 12px 8px;color:#e7edf2;font-size:.86rem;line-height:1.46}
+  .tg-cap .nm{font-weight:700;color:#fff}
+  .tg-cap .bi{font-style:italic;color:#c6d1db;display:block;margin-top:3px}
+  .tg-cap .hh{font-weight:700;color:#fff;display:block;margin-top:9px}
+  .tg-cap ul{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:3px}
+  .tg-cap li{padding-left:14px;position:relative;color:#d4dde5}
+  .tg-cap li::before{content:"•";position:absolute;left:2px;color:#5ea9ea}
+  .tg-cap .t{text-align:right;font-size:.62rem;color:#7d8e9e;margin-top:5px}
+  .tg-kb{border-top:1px solid rgba(255,255,255,.08)}
+  .tg-kb .row{display:flex}
+  .tg-kb .row + .row{border-top:1px solid rgba(255,255,255,.08)}
+  .tg-kb b{flex:1;text-align:center;padding:11px 6px;color:#d5e6f7;font-weight:500;font-size:.84rem}
+  .tg-kb b + b{border-left:1px solid rgba(255,255,255,.08)}
 
   /* ---------- Commands ---------- */
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
@@ -272,34 +285,53 @@
       <div class="divider"></div>
     </div>
     <div class="card-stage reveal" data-delay="1">
-      <article class="figcard">
-        <div class="portrait">
-          <svg class="bust" viewBox="0 0 100 100" fill="none" aria-hidden="true">
-            <circle cx="50" cy="50" r="46" stroke="#e6c36c" stroke-width="1.2" opacity=".5"/>
-            <path d="M50 22c-9 0-15 7-15 17 0 6 3 10 3 14 0 3-2 5-2 9 0 6 6 10 14 10s14-4 14-10c0-4-2-6-2-9 0-4 3-8 3-14 0-10-6-17-15-17Z" fill="#e6c36c" opacity=".92"/>
-            <path d="M34 74c3-4 9-6 16-6s13 2 16 6c-4 5-10 7-16 7s-12-2-16-7Z" fill="#c49e4e"/>
-          </svg>
-        </div>
-        <div class="body">
-          <div class="name">Leonardo da Vinci</div>
-          <div class="dates">1452 – 1519</div>
-          <p class="bio"
-             data-en="Italian polymath of the Renaissance: painter of the Mona Lisa, engineer, anatomist, and relentless keeper of notebooks."
-             data-fr="Génie universel de la Renaissance italienne : peintre de la Joconde, ingénieur, anatomiste et infatigable carnettiste.">
-             Italian polymath of the Renaissance: painter of the Mona Lisa, engineer, anatomist, and relentless keeper of notebooks.
-          </p>
-          <div class="hl-title" data-en="Highlights" data-fr="Faits marquants">Highlights</div>
-          <ul>
-            <li data-en="Painted the Mona Lisa and The Last Supper" data-fr="A peint la Joconde et la Cène">Painted the Mona Lisa and The Last Supper</li>
-            <li data-en="Sketched flying machines centuries ahead of their time" data-fr="A dessiné des machines volantes des siècles en avance">Sketched flying machines centuries ahead of their time</li>
-          </ul>
-          <div class="btns">
-            <span class="chip">🎲 <span data-en="Another" data-fr="Une autre">Another</span></span>
-            <span class="chip">📅 <span data-en="Today" data-fr="Aujourd'hui">Today</span></span>
-            <span class="chip read">🔗 <span data-en="Read more" data-fr="En savoir plus">Read more</span></span>
+      <!-- Portrait: Ada Lovelace daguerreotype by Antoine Claudet (c.1843), public domain — via Wikimedia Commons -->
+      <div class="phone" role="img" aria-label="Screenshot of the bot inside Telegram, showing a figure card for Ada Lovelace">
+        <div class="screen">
+          <div class="tg-status">
+            <span>9:41</span>
+            <span class="icons">
+              <svg viewBox="0 0 18 12" aria-hidden="true"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+              <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M8 2.4c2.6 0 5 1 6.8 2.7l1.2-1.3A11.4 11.4 0 0 0 8 .5 11.4 11.4 0 0 0 0 3.8L1.2 5A9.4 9.4 0 0 1 8 2.4Zm0 3.6c1.6 0 3.1.6 4.2 1.7l1.2-1.3A8 8 0 0 0 8 4a8 8 0 0 0-5.4 2.4L3.8 7.7A6 6 0 0 1 8 6Zm0 3.5 2.1-2.2a3 3 0 0 0-4.2 0L8 9.5Z"/></svg>
+              <svg viewBox="0 0 26 12" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="11" rx="3" fill="none" stroke="#fff" stroke-opacity=".5"/><rect x="2" y="2" width="17" height="8" rx="1.5"/><rect x="23.5" y="4" width="2" height="4" rx="1"/></svg>
+            </span>
+          </div>
+          <div class="tg-head">
+            <span class="back" aria-hidden="true">‹</span>
+            <img src="assets/logo.png" alt="" />
+            <div class="who">
+              <b>Historical Figures Whisper Bot</b>
+              <span data-en="bot" data-fr="bot">bot</span>
+            </div>
+          </div>
+          <div class="tg-body">
+            <div class="tg-out">/random<span class="t">9:41</span></div>
+            <div class="tg-in">
+              <img class="ph" src="assets/figure-ada.png" alt="Portrait of Ada Lovelace" />
+              <div class="tg-cap">
+                <span class="nm">Ada Lovelace</span>
+                <span class="bi"
+                  data-en="English mathematician and writer, known for her work on Charles Babbage's proposed Analytical Engine."
+                  data-fr="Mathématicienne et écrivaine anglaise, connue pour ses travaux sur la machine analytique de Charles Babbage.">
+                  English mathematician and writer, known for her work on Charles Babbage's proposed Analytical Engine.</span>
+                <span class="hh" data-en="✨ Highlights" data-fr="✨ Faits marquants">✨ Highlights</span>
+                <ul>
+                  <li data-en="Wrote what is regarded as the first published computer program." data-fr="A écrit ce qui est considéré comme le premier programme informatique publié.">Wrote what is regarded as the first published computer program.</li>
+                  <li data-en="The programming language Ada is named in her honour." data-fr="Le langage de programmation Ada porte son nom.">The programming language Ada is named in her honour.</li>
+                </ul>
+                <div class="t">9:41</div>
+              </div>
+              <div class="tg-kb">
+                <div class="row">
+                  <b data-en="🎲 Another" data-fr="🎲 Une autre">🎲 Another</b>
+                  <b data-en="📅 Today" data-fr="📅 Aujourd'hui">📅 Today</b>
+                </div>
+                <div class="row"><b data-en="🔗 Read more" data-fr="🔗 En savoir plus">🔗 Read more</b></div>
+              </div>
+            </div>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   </div>
 </section>
