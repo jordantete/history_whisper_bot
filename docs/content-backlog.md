@@ -5,9 +5,16 @@ Objectif : élargir le backlog **au-delà des figures individuelles**. Recherche
 chaque figure vérifiée contre la contrainte dure du pipeline (`scripts/enrich_figures.py`) :
 **article Wikipédia EN + FR** (bio auto-fetch par titre) **+ portrait/illustration sur Commons**.
 
-## État d'implémentation (76 → 136 figures)
+## État d'implémentation (76 → 164 figures)
 
-**60 figures ajoutées** en 5 lots + Mao. Tous les sujets Notion couverts. Chaque figure = bio EN+FR +
+**60 figures ajoutées** en 5 lots + Mao. Tous les sujets Notion couverts.
+**+ Lafayette** (demande utilisateur, 2026-07-16) — héros des deux mondes ; Lamartine était déjà présent.
+**+ 27 figures « incontournables »** (lot 2026-07-16, validé utilisateur) — comblement des trous au cœur
+des périodes déjà couvertes : Révolution/Empire (Napoléon Bonaparte, Louis XVI, Marie-Antoinette,
+Mirabeau, Olympe de Gouges) · Ancien Régime/médiéval (Louis XIV, François Ier, Catherine de Médicis,
+Jeanne d'Arc) · Antiquité (Alexandre le Grand, Cléopâtre, Auguste, Hannibal, Néron) · Sciences
+(Isaac Newton, Galilée, Louis Pasteur, Marie Curie, Lavoisier) · Lettres (Victor Hugo, Molière, Zola,
+Alexandre Dumas) · Mythes (Ulysse, Achille, Méduse, Orphée). Chaque figure = bio EN+FR +
 portrait Commons + 3 faits marquants EN/FR *grounded* et distincts de la bio.
 
 - **Ajoutées** : Saussure, Barthes, Milgram · Chine (Qin Shi Huang, Wu Zetian, Cixi, Zheng He, Sun Yat-sen,

@@ -35,7 +35,7 @@ class TestDatabase(unittest.TestCase):
 
     def test_loads_full_roster_from_json(self):
         figures = self.database.get_all_figures()
-        self.assertEqual(len(figures), 136)
+        self.assertEqual(len(figures), 164)
         self.assertTrue(all(f.name and f.description for f in figures))
 
     def test_loads_enriched_and_minimal_entries(self):

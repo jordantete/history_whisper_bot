@@ -92,6 +92,27 @@ OVERRIDES = {
     "Kangxi": {"fr": "Kangxi", "en": "Kangxi Emperor"},
     "Yongle": {"fr": "Ming Chengzu", "en": "Yongle Emperor"},  # FR "Yongle" is a disambiguation page
     "Laozi": {"fr": "Lao Tseu", "en": "Laozi"},
+    # Revolution / two worlds
+    "Lafayette": {"fr": "Gilbert du Motier de La Fayette", "en": "Gilbert du Motier, Marquis de Lafayette", "wikidata_id": "Q186652"},
+    # 2026-07 batch: Revolution & Empire / Ancien Régime / antiquity / science / letters / myths
+    "Napoléon Bonaparte": {"fr": "Napoléon Ier", "en": "Napoleon"},
+    "Marie-Antoinette": {"fr": "Marie-Antoinette d'Autriche", "en": "Marie Antoinette"},
+    "Mirabeau": {"fr": "Honoré-Gabriel Riqueti de Mirabeau", "en": "Honoré Gabriel Riqueti, comte de Mirabeau"},
+    "François Ier": {"fr": "François Ier (roi de France)", "en": "Francis I of France"},
+    "Catherine de Médicis": {"fr": "Catherine de Médicis", "en": "Catherine de' Medici"},
+    "Jeanne d'Arc": {"fr": "Jeanne d'Arc", "en": "Joan of Arc"},
+    "Alexandre le Grand": {"fr": "Alexandre le Grand", "en": "Alexander the Great"},
+    "Cléopâtre": {"fr": "Cléopâtre VII", "en": "Cleopatra"},  # FR bare title is ambiguous
+    "Auguste": {"fr": "Auguste", "en": "Augustus"},
+    "Hannibal": {"fr": "Hannibal Barca", "en": "Hannibal"},
+    "Néron": {"fr": "Néron", "en": "Nero"},
+    "Galilée": {"fr": "Galilée (savant)", "en": "Galileo Galilei"},  # vs the Galilee region
+    "Lavoisier": {"fr": "Antoine Lavoisier", "en": "Antoine Lavoisier"},
+    "Zola": {"fr": "Émile Zola", "en": "Émile Zola"},
+    "Ulysse": {"fr": "Ulysse", "en": "Odysseus"},
+    "Achille": {"fr": "Achille", "en": "Achilles"},
+    "Méduse": {"fr": "Méduse (mythologie)", "en": "Medusa"},  # vs the jellyfish
+    "Orphée": {"fr": "Orphée", "en": "Orpheus"},
     # Psychology (rest) + semiotics (rest) + Sumatra
     "Skinner": {"fr": "Burrhus Frederic Skinner", "en": "B. F. Skinner"},
     "Zimbardo": {"fr": "Philip Zimbardo", "en": "Philip Zimbardo"},

@@ -140,7 +140,14 @@
     "bio_en": "Diego Rodríguez de Silva y Velázquez was a Spanish Baroque painter, the leading artist in the court of King Philip IV of Spain and Portugal, and of the Spanish Golden Age. He is generally considered one of the greatest artists in the history of Western art.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Diego_Vel%C3%A1zquez_Autorretrato_45_x_38_cm_-_Colecci%C3%B3n_Real_Academia_de_Bellas_Artes_de_San_Carlos_-_Museo_de_Bellas_Artes_de_Valencia.jpg/330px-Diego_Vel%C3%A1zquez_Autorretrato_45_x_38_cm_-_Colecci%C3%B3n_Real_Academia_de_Bellas_Artes_de_San_Carlos_-_Museo_de_Bellas_Artes_de_Valencia.jpg",
     "facts_en": [
-      "The surname Velázquez, without a first name, often refers to the Spanish painter Diego Velázquez."
+      "As painter of the chamber to King Philip IV — the highest post among royal painters — he portrayed the royal family and Spanish grandees, culminating in his masterpiece Las Meninas (1656).",
+      "As superintendent of royal works he acquired antique sculptures and old-master paintings in Italy for the royal collections, now the heart of the Prado Museum.",
+      "A model for 19th-century realists and impressionists, he was reinterpreted in the 20th century by Picasso, Dalí and Francis Bacon."
+    ],
+    "facts_fr": [
+      "Peintre de la Chambre du roi Philippe IV — la charge la plus haute parmi les peintres royaux —, il portraiture la famille royale et les Grands d'Espagne, jusqu'à son chef-d'œuvre Les Ménines (1656).",
+      "Surintendant des travaux royaux, il acquiert en Italie sculptures antiques et tableaux de maîtres pour les collections royales, aujourd'hui cœur du musée du Prado.",
+      "Modèle des réalistes et des impressionnistes du XIXe siècle, il est réinterprété au XXe par Picasso, Dalí et Francis Bacon."
     ]
   },
   {
@@ -150,9 +157,14 @@
     "bio_en": "Francisco José de Goya y Lucientes was a Spanish romantic painter and printmaker. He is considered the most important Spanish artist of the late 18th and early 19th centuries. His paintings, drawings, and engravings reflected contemporary historical upheavals and influenced important 19th- and 20th-century painters. Goya is often referred to as the last of the Old Masters and the first of the moderns. He is widely regarded as one of the most influential figures in the history of Western art.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%28Castres%29_Autoportrait_aux_lunettes%2C_Francisco_de_Goya_y_Lucientes%2C_Mus%C3%A9e_Goya.jpg/330px-%28Castres%29_Autoportrait_aux_lunettes%2C_Francisco_de_Goya_y_Lucientes%2C_Mus%C3%A9e_Goya.jpg",
     "facts_en": [
-      "Goya became a court painter to the Spanish Crown in 1786 and reached the rank of Primer Pintor de Cámara in 1799.",
-      "A severe, undiagnosed illness in 1793 left him deaf, after which his work grew progressively darker and more pessimistic.",
-      "His Black Paintings of 1819-1823 were made after he retreated into near isolation, disillusioned by Spain's political developments."
+      "A court painter to the Spanish Crown from 1786, he began with portraits of the aristocracy and Rococo tapestry cartoons for the royal palace.",
+      "A severe illness left him deaf in 1793, after which his work grew progressively darker and more pessimistic — and strikingly more original.",
+      "Often called the last of the Old Masters and the first of the moderns, his art is seen as a forerunner of the 20th-century avant-gardes."
+    ],
+    "facts_fr": [
+      "Peintre de la cour d'Espagne à partir de 1786, il débute par des portraits de l'aristocratie et des cartons de tapisserie rococo pour la manufacture royale Santa Barbara.",
+      "Une grave maladie le laisse sourd en 1793 : son œuvre devient alors plus sombre, plus libre et plus originale, amorçant sa transition vers le romantisme.",
+      "Souvent qualifié de « dernier des maîtres anciens et premier des modernes », son art est considéré comme précurseur des avant-gardes picturales du XXe siècle."
     ]
   },
   {
@@ -567,9 +579,14 @@
     "bio_en": "Oliver Cromwell was an English statesman, farmer and soldier, widely regarded as one of the most important figures in British history. He came to prominence during the Wars of the Three Kingdoms, initially as a senior commander in the Parliamentarian army and later as a politician. A leading advocate of the execution of Charles I in January 1649, which led to the establishment of the Commonwealth of England, Cromwell ruled as Lord Protector from December 1653 until his death in September 1658.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Oliver_Cromwell_by_Samuel_Cooper.jpg/330px-Oliver_Cromwell_by_Samuel_Cooper.jpg",
     "facts_en": [
-      "Oliver Cromwell (1599-1658) was an English statesman, farmer and soldier who ruled as Lord Protector from December 1653 until his death in 1658.",
-      "He was a leading advocate of the execution of Charles I in January 1649, which led to the establishment of the Commonwealth of England.",
-      "After the 1660 Stuart Restoration, his body was removed from Westminster Abbey and posthumously hanged at Tyburn."
+      "A gentleman farmer of modest means who became a religious Independent, he believed his successes were the work of divine providence.",
+      "As commander of the New Model Army cavalry he played a key role in Parliament's victory, and was a leading advocate of the execution of Charles I (1649).",
+      "Lord Protector from 1653 until his death, he conquered Ireland and Scotland and dominated the republican Commonwealth of England."
+    ],
+    "facts_fr": [
+      "Gentilhomme aux revenus modestes converti au puritanisme, il croit ses succès guidés par la providence divine.",
+      "Commandant de la cavalerie de la New Model Army, il joue un rôle clé dans la victoire du Parlement et défend l'exécution du roi Charles Ier (1649).",
+      "Lord-protecteur de 1653 à sa mort, il conquiert l'Irlande et l'Écosse et domine le Commonwealth, le gouvernement républicain de l'Angleterre."
     ]
   },
   {
@@ -2275,6 +2292,483 @@
       "His 1934-1935 \"Long March\", a retreat of thousands of kilometres from the Nationalist forces, forged his legend and secured his authority over the Chinese Communist Party.",
       "His \"Great Leap Forward\" (1958-1962), a campaign of forced industrialisation and collectivisation, triggered one of the deadliest famines in history.",
       "In 1966 he launched the Cultural Revolution, mobilising the Red Guards against the \"Four Olds\" and his own rivals, plunging China into a decade of upheaval."
+    ]
+  },
+  {
+    "name": "Lafayette",
+    "description": "Gilbert du Motier, marquis de La Fayette, « héros des deux mondes » : général de la révolution américaine et acteur clé de la Révolution française.",
+    "wikidata_id": "Q186652",
+    "bio_fr": "Gilbert du Motier, marquis de La Fayette, né le 6 septembre 1757 au château de Chavaniac près de Saint-Georges-d'Aurac, et mort le 20 mai 1834 à Paris, est un officier et homme politique français, célèbre en raison de son engagement dans les rangs de l'armée des insurgés américains (1777-1783), puis dans l'aile libérale et réformiste de l'aristocratie française (1784-1792), enfin dans l'opposition libérale au régime de la monarchie de Juillet qu'il avait pourtant contribué à établir lors des Trois Glorieuses.",
+    "bio_en": "Marie-Joseph Paul Yves Roch Gilbert du Motier, Marquis de La Fayette, known in the United States as Lafayette, was a French military officer and politician who volunteered to join the Continental Army, led by General George Washington, in the American Revolutionary War. Lafayette commanded Continental Army troops in the decisive siege of Yorktown in 1781, the Revolutionary War's final major battle, which secured American independence. After returning to France, Lafayette became a key figure in the French Revolution of 1789 and the July Revolution of 1830 and continues to be celebrated as a hero in both France and the United States.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gilbert_du_Motier_Marquis_de_Lafayette.jpg/330px-Gilbert_du_Motier_Marquis_de_Lafayette.jpg",
+    "facts_fr": [
+      "Nommé général par George Washington à seulement 19 ans, il joue un rôle décisif dans la guerre d'indépendance américaine, jusqu'à la victoire de Yorktown en 1781.",
+      "Grande figure de 1789, il participe à la rédaction de la Déclaration des droits de l'homme et du citoyen et commande la Garde nationale après la prise de la Bastille.",
+      "Surnommé le « héros des deux mondes », il effectue en 1824 une tournée triomphale dans 182 villes des 24 États américains, et devient en 2002 citoyen d'honneur des États-Unis."
+    ],
+    "facts_en": [
+      "Commissioned an officer at 13, he was made a major general in the Continental Army at just 19 and played a decisive role through the victorious siege of Yorktown in 1781.",
+      "He helped write the Declaration of the Rights of Man and of the Citizen with Thomas Jefferson's assistance, and commanded France's National Guard after the storming of the Bastille.",
+      "Nicknamed the “Hero of the Two Worlds”, he made a triumphal 1824 tour of 182 cities across all 24 U.S. states and was made an honorary citizen of the United States in 2002."
+    ]
+  },
+  {
+    "name": "Napoléon Bonaparte",
+    "description": "Général de la Révolution puis empereur des Français (1804-1815), conquérant de l'Europe et père du Code civil.",
+    "bio_fr": "Napoléon Bonaparte, né le 15 août 1769 à Ajaccio en Corse et mort le 5 mai 1821 à Longwood sur l’île de Sainte-Hélène, est un militaire et homme d'État français. Il est le premier empereur des Français du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Ier.",
+    "bio_en": "Napoleon Bonaparte, later known by his regnal name Napoleon I, was Emperor of the French from 18 May 1804 until his first abdication in 1814, with a brief restoration during the Hundred Days in 1815. He rose to prominence as a general during the French Revolution and led a series of military campaigns across Europe and the Middle East during the French Revolutionary and Napoleonic Wars. As a statesman, he implemented numerous legal and administrative reforms in France and Europe.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project_2.jpg/330px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project_2.jpg",
+    "facts_fr": [
+      "Général à 24 ans dans les armées de la République, il s'empare du pouvoir par le coup d'État du 18 Brumaire (1799) avant d'être sacré empereur à Notre-Dame de Paris en 1804, en présence du pape Pie VII.",
+      "Ses victoires fulgurantes — Arcole, les Pyramides, Marengo, Austerlitz, Iéna, Friedland — disloquent les quatre premières coalitions européennes montées contre la France.",
+      "En 1803, il vend la Louisiane aux États-Unis ; après les Cent-Jours, il meurt en 1821 en exil à Sainte-Hélène, îlot perdu de l'Atlantique Sud."
+    ],
+    "facts_en": [
+      "A general at 24 in the armies of the Republic, he seized power in the Coup of 18 Brumaire (1799) and was crowned Emperor at Notre-Dame de Paris in 1804, with Pope Pius VII in attendance.",
+      "His lightning victories — Arcole, the Pyramids, Marengo, Austerlitz, Jena, Friedland — shattered the first four European coalitions raised against revolutionary France.",
+      "He sold the Louisiana territory to the United States in 1803; after the Hundred Days, he died in 1821 in exile on Saint Helena, a remote island in the South Atlantic."
+    ]
+  },
+  {
+    "name": "Louis XVI",
+    "description": "Roi de France (1774-1792), renversé par la Révolution et guillotiné en janvier 1793.",
+    "bio_fr": "Louis XVI, né le 23 août 1754 au château de Versailles sous le nom de Louis-Auguste de France et mort guillotiné le 21 janvier 1793 à Paris, est roi de France et de Navarre du 10 mai 1774 au 13 septembre 1791, puis roi des Français du 13 septembre 1791 au 21 septembre 1792.",
+    "bio_en": "Louis XVI was the last king of France before the fall of the monarchy during the French Revolution. The son of Louis, Dauphin of France, and Maria Josepha of Saxony, Louis became the new Dauphin when his father died in 1765. In 1770, he married Marie Antoinette. He became King of France and Navarre on his paternal grandfather's death on 10 May 1774, and reigned until the abolition of the monarchy on 21 September 1792. From 1791 onwards, he used the style of king of the French.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Louis_XVI_en_costume_de_sacre_-_Joseph-Siffred_Duplessis.jpg/330px-Louis_XVI_en_costume_de_sacre_-_Joseph-Siffred_Duplessis.jpg",
+    "facts_fr": [
+      "Roi réformateur à ses débuts, il abolit la torture et fait évoluer le droit des personnes, mais ses réformes fiscales échouent toutes face au blocage des parlements, du clergé et de la noblesse.",
+      "Son soutien décisif aux insurgés américains offre à la France une grande victoire sur l'Angleterre — mais achève de ruiner les finances du royaume.",
+      "La convocation des états généraux en 1789 pour refinancer le royaume déclenche la Révolution ; jugé par la Convention, il est guillotiné le 21 janvier 1793."
+    ],
+    "facts_en": [
+      "An early reformer, he abolished torture and the death penalty for deserters, but his fiscal reforms were all blocked by the nobility, the clergy and the parlements.",
+      "His decisive support for the American colonists helped win their independence from Britain — and the resulting debt ruined the kingdom's finances.",
+      "Convening the Estates General in 1789 to refinance the kingdom triggered the Revolution; he was guillotined on 21 January 1793."
+    ]
+  },
+  {
+    "name": "Marie-Antoinette",
+    "description": "Archiduchesse d'Autriche devenue reine de France, épouse de Louis XVI, guillotinée en octobre 1793.",
+    "bio_fr": "Marie-Antoinette Josèphe Jeanne de Habsbourg-Lorraine, archiduchesse d'Autriche, princesse de Bohême et de Hongrie, née le 2 novembre 1755 à Vienne en Autriche, est reine de France et de Navarre de 1774 à 1791, puis reine des Français de 1791 à 1792. Dernière reine de l'Ancien Régime, elle meurt guillotinée le 16 octobre 1793 sur la place de la Révolution à Paris.",
+    "bio_en": "Marie Antoinette was Queen Consort of France as the wife of Louis XVI from 10 May 1774 until the abolition of the French monarchy in 1792 during the French Revolution.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marie-Antoinette%3B_koningin_der_FransenFXD.jpg/330px-Marie-Antoinette%3B_koningin_der_FransenFXD.jpg",
+    "facts_fr": [
+      "Fille de l'impératrice Marie-Thérèse, mariée à 14 ans au futur Louis XVI pour renforcer l'alliance franco-autrichienne, elle devient reine de France à 18 ans.",
+      "Surnommée « l'Autrichienne » ou « Madame Déficit », elle est injustement compromise dans l'affaire du collier, escroquerie rocambolesque dont elle n'était nullement complice.",
+      "Après l'échec de la fuite à Varennes en 1791 et la chute de la monarchie, elle est guillotinée le 16 octobre 1793 — dernière reine de l'Ancien Régime."
+    ],
+    "facts_en": [
+      "Daughter of Empress Maria Theresa, she was married at 14 to the future Louis XVI to strengthen the Franco-Austrian alliance, becoming queen of France at 18.",
+      "Nicknamed 'Madame Déficit' by hostile pamphlets, she was falsely accused in the Affair of the Diamond Necklace — a swindle that wrecked her reputation anyway.",
+      "After the failed flight to Varennes in 1791 and the fall of the monarchy, she was guillotined on 16 October 1793, the last queen of the Ancien Régime."
+    ]
+  },
+  {
+    "name": "Mirabeau",
+    "description": "Orateur le plus célèbre des débuts de la Révolution française, tribun du Tiers état.",
+    "bio_fr": "Honoré Gabriel Riqueti, aussi orthographié Riquetti, « comte » de Mirabeau, plus communément appelé Mirabeau, né le 9 mars 1749 dans le château de Bignon-Mirabeau, dans le Loiret, et mort le 2 avril 1791 à Paris, est un écrivain, diplomate, journaliste et homme politique français, figure de la Révolution.",
+    "bio_en": "Honoré Gabriel Riqueti, Count of Mirabeau, known simply as Mirabeau, was a French writer, orator, and statesman, and a prominent figure of the early stages of the French Revolution.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Boze_-_Honor%C3%A9_de_Mirabeau.jpg/330px-Boze_-_Honor%C3%A9_de_Mirabeau.jpg",
+    "facts_fr": [
+      "Noble rejeté par son propre ordre, il se fait élire député du tiers état et devient « l'Orateur du peuple », premier symbole de l'éloquence parlementaire en France.",
+      "À sa mort en 1791, il est célébré comme un père fondateur de la Révolution et devient le tout premier occupant du Panthéon.",
+      "La découverte de ses relations secrètes et rémunérées avec la cour retourne l'opinion : sa dépouille est retirée du Panthéon deux ans plus tard."
+    ],
+    "facts_en": [
+      "A nobleman rejected by his own order, he was elected to the Estates-General by the Third Estate and became the Revolution's most celebrated orator.",
+      "When he died in 1791 he was hailed as a father of the Revolution and became the very first person interred in the Panthéon.",
+      "The later discovery that he had secretly been in the pay of the king disgraced him posthumously: his remains were removed from the Panthéon two years on."
+    ]
+  },
+  {
+    "name": "Olympe de Gouges",
+    "description": "Femme de lettres et pionnière du féminisme, auteure de la Déclaration des droits de la femme et de la citoyenne (1791).",
+    "bio_fr": "Olympe de Gouges, de son nom de naissance Marie Gouze, née le 7 mai 1748 à Montauban et morte guillotinée le 3 novembre 1793 à Paris, est une femme de lettres, dramaturge et femme politique française. Rédactrice en 1791 de la Déclaration des droits de la femme et de la citoyenne, elle a laissé de nombreux écrits et pamphlets en faveur des droits civils et politiques des femmes et de l'abolition de l'esclavage des Noirs dans les colonies. Elle est considérée comme l'une des pionnières françaises du féminisme, et est souvent prise pour emblème par les mouvements pour la libération des femmes.",
+    "bio_en": "Olympe de Gouges was a French playwright and political activist. She is best known for her Declaration of the Rights of Woman and of the Female Citizen and other writings on women's rights and abolitionism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Olympe_de_Gouges.png/330px-Olympe_de_Gouges.png",
+    "facts_fr": [
+      "En 1791, elle répond à la Déclaration de 1789 par sa Déclaration des droits de la femme et de la citoyenne, remettant en cause l'autorité masculine et réclamant l'égalité des droits.",
+      "Dramaturge prolifique, elle est l'une des premières figures publiques à s'opposer à l'esclavage en France ; ses écrits traitent aussi du divorce, des droits de l'enfant et de la sécurité sociale.",
+      "Proche des Girondins et opposée à l'exécution de Louis XVI, ses attaques contre Robespierre et les Montagnards la mènent à la guillotine le 3 novembre 1793."
+    ],
+    "facts_en": [
+      "In 1791 she answered the 1789 Declaration with her own Declaration of the Rights of Woman and of the Female Citizen, challenging male authority and demanding equal rights.",
+      "A prolific playwright, she was one of France's earliest public opponents of slavery; her writings also covered divorce, children's rights and social security.",
+      "Aligned with the moderate Girondins and opposed to executing Louis XVI, her attacks on Robespierre's Montagnards led to her execution by guillotine on 3 November 1793."
+    ]
+  },
+  {
+    "name": "Louis XIV",
+    "description": "Le Roi-Soleil : monarque absolu de 1643 à 1715, bâtisseur de Versailles, plus long règne de l'histoire de France.",
+    "bio_fr": "Louis XIV, dit « le Grand » ou « le Roi-Soleil », né le 5 septembre 1638 au château Neuf de Saint-Germain-en-Laye et mort le 1er septembre 1715 au château de Versailles, est un roi de France et de Navarre. Son règne s'étend du 14 mai 1643 — sous la régence de sa mère Anne d'Autriche jusqu'au 7 septembre 1651 — à sa mort en 1715. Son règne d’une durée de 72 ans est l'un des plus longs de l'histoire de l'Europe et le plus long de l'histoire de France.",
+    "bio_en": "Louis XIV was King of France from 14 May 1643 until his death in 1715. He is a symbol of the Age of Absolutism in Europe for styling himself as \"The Sun King\" and \"Louis the Great\", which portrayed him as supreme leader. He presided over a great expansion of the French colonial empire and a patronage of arts in his court at the Palace of Versailles that defined the Baroque style of French architecture. His reign of 72 years and 110 days remains the longest of any sovereign monarch in history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Louis_XIV_of_France.jpg/330px-Louis_XIV_of_France.jpg",
+    "facts_fr": [
+      "Roi avant son cinquième anniversaire, marqué par la Fronde durant sa minorité, il gouverne personnellement à partir de la mort de Mazarin en 1661.",
+      "Son règne de 72 ans et 110 jours reste le plus long de tout monarque souverain de l'histoire.",
+      "Il pacifie la noblesse en l'installant à Versailles et révoque l'édit de Nantes, poussant les protestants à l'exil ou à la conversion par les dragonnades."
+    ],
+    "facts_en": [
+      "King before his fifth birthday and scarred by the Fronde rebellions during his minority, he began his personal rule at Mazarin's death in 1661.",
+      "His reign of 72 years and 110 days remains the longest of any sovereign monarch in history.",
+      "He pacified the aristocracy by compelling it to reside at Versailles, and his revocation of the Edict of Nantes drove the Huguenots to convert or emigrate."
+    ]
+  },
+  {
+    "name": "François Ier",
+    "description": "Roi de France (1515-1547), vainqueur de Marignan et père de la Renaissance française.",
+    "bio_fr": "François Ier, né sous le nom de François d’Angoulême le 12 septembre 1494 à Cognac et mort le 31 mars 1547 à Rambouillet, est un roi de France ayant régné de 1515 jusqu’à sa mort. Fils de Charles d'Orléans et de Louise de Savoie, il appartient à la branche de Valois-Angoulême de la dynastie capétienne.",
+    "bio_en": "Francis I was King of France from 1515 until his death in 1547. He was the son of Charles, Count of Angoulême, and Louise of Savoy. He succeeded his first cousin once removed and father-in-law Louis XII, who died without a legitimate son.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Fran%C3%A7ois_Ier_Louvre.jpg/330px-Fran%C3%A7ois_Ier_Louvre.jpg",
+    "facts_fr": [
+      "Mécène de la Renaissance, il attire en France de nombreux artistes italiens dont Léonard de Vinci — qui apporte la Joconde, acquise par le roi.",
+      "Sa rivalité de toute une vie avec Charles Quint, qui encercle la France, facilite malgré lui la diffusion de la Réforme et l'avancée ottomane jusqu'aux portes de Vienne.",
+      "Surnommé « le Père et Restaurateur des Lettres », il lance l'exploration française du Nouveau Monde avec Jacques Cartier."
+    ],
+    "facts_en": [
+      "A prodigious patron of the Renaissance, he attracted Italian artists to France including Leonardo da Vinci — who brought the Mona Lisa, which Francis acquired.",
+      "His lifelong rivalry with Emperor Charles V, whose possessions encircled France, unwittingly eased the spread of the Reformation and the Ottoman advance to the gates of Vienna.",
+      "Known as the 'Father and Restorer of Letters', he launched French exploration of the New World through Jacques Cartier's voyages."
+    ]
+  },
+  {
+    "name": "Catherine de Médicis",
+    "description": "Reine puis reine mère de France, mère de trois rois, figure centrale des guerres de Religion.",
+    "bio_fr": "Catherine de Médicis, née le 13 avril 1519 à Florence et morte le 5 janvier 1589 à Blois (France), est reine de France de 1547 à 1559.",
+    "bio_en": "Catherine de' Medici was Queen of France from 1547 to 1559 by marriage to King Henry II. She was the mother of French kings Francis II, Charles IX, and Henry III, and a cousin to Pope Clement VII. The years during which her sons reigned have been called \"the age of Catherine de' Medici\" since she had extensive, albeit at times varying, influence on the political life of France.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Catherine_de_M%C3%A9dicis_-_atelier_de_Fran%C3%A7ois_Clouet.jpg/330px-Catherine_de_M%C3%A9dicis_-_atelier_de_Fran%C3%A7ois_Clouet.jpg",
+    "facts_fr": [
+      "Florentine mariée à 14 ans au futur Henri II, elle est longtemps éclipsée à la cour par la favorite du roi, Diane de Poitiers.",
+      "Mère des rois François II, Charles IX et Henri III, elle gouverne la France comme reine mère et régente — on parle de « l'âge de Catherine de Médicis ».",
+      "Une légende noire persistante en fait une intrigante prête à tout crime ; l'historiographie moderne réhabilite cette partisane de la conciliation dans une période très troublée."
+    ],
+    "facts_en": [
+      "A Florentine married at 14 to the future Henry II, she was long eclipsed at court by the king's chief mistress, Diane de Poitiers.",
+      "Mother of kings Francis II, Charles IX and Henry III, she wielded such influence as queen mother and regent that the era is called 'the age of Catherine de' Medici'.",
+      "A persistent black legend paints her as a schemer who stopped at no crime; modern historians have largely rehabilitated her as a conciliator in an age of religious civil war."
+    ]
+  },
+  {
+    "name": "Jeanne d'Arc",
+    "description": "Héroïne de la guerre de Cent Ans, brûlée vive à Rouen en 1431, sainte et figure nationale française.",
+    "bio_fr": "Jeanne d'Arc, dite « la Pucelle », née vers 1412 à Domrémy, village du duché de Bar, et morte sur le bûcher le 30 mai 1431 à Rouen, capitale du duché de Normandie alors possession anglaise, est une héroïne de l'histoire de France, chef de guerre et sainte de l'Église catholique, surnommée posthumément « la Pucelle d’Orléans ».",
+    "bio_en": "Joan of Arc is a patron saint of France, honored as a defender of the French nation for her role in the siege of Orléans and her insistence on the coronation of Charles VII of France during the Hundred Years' War. Stating that she acted under divine guidance, she became a military leader who gained recognition as a savior of France.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Contemporaine_afb_jeanne_d_arc.png/330px-Contemporaine_afb_jeanne_d_arc.png",
+    "facts_fr": [
+      "Jeune paysanne affirmant avoir reçu mission des saints Michel, Marguerite et Catherine, elle convainc Charles VII à 17 ans, lève le siège d'Orléans et conduit le roi au sacre à Reims (1429).",
+      "Capturée par les Bourguignons à Compiègne et vendue aux Anglais pour dix mille livres, elle est brûlée vive à Rouen en 1431 après un procès en hérésie mené par Pierre Cauchon.",
+      "Un second procès la réhabilite entièrement dès 1456 ; béatifiée en 1909 puis canonisée en 1920, elle est sainte patronne de la France."
+    ],
+    "facts_en": [
+      "A peasant girl of about seventeen claiming guidance from Saint Michael, Saint Margaret and Saint Catherine, she convinced Charles VII, lifted the siege of Orléans and led him to his coronation at Reims (1429).",
+      "Captured by the Burgundians at Compiègne and sold to the English for ten thousand livres, she was burned at the stake in Rouen in 1431 after a heresy trial led by Pierre Cauchon.",
+      "A retrial fully rehabilitated her in 1456; beatified in 1909 and canonized in 1920, she is a patron saint of France."
+    ]
+  },
+  {
+    "name": "Alexandre le Grand",
+    "description": "Roi de Macédoine, conquérant d'un empire s'étendant de la Grèce à l'Indus, mort à 32 ans.",
+    "bio_fr": "Alexandre le Grand ou Alexandre III, né le 21 juillet 356 av. J.-C. à Pella et mort le 11 juin 323 av. J.-C. à Babylone, est un roi de Macédoine et l'un des personnages les plus célèbres de l'Antiquité. Fils de Philippe II, élève d'Aristote et roi de Macédoine à partir de 336, il devient l'un des plus grands conquérants de l'histoire en prenant possession de l'immense Empire perse et en s'avançant jusqu'aux rives de l'Indus.",
+    "bio_en": "Alexander III of Macedon, most commonly known as Alexander the Great, was king of the ancient Greek kingdom of Macedon. He succeeded his father Philip II to the throne in 336 BC at the age of 20, and spent most of his reign conducting a lengthy military campaign throughout Asia and Egypt. By the age of 30, he had created one of the largest empires in history, stretching from Greece to northwestern India. He was undefeated in battle and is widely considered to be one of history's greatest and most successful military commanders.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Alexander_the_Great%2C_from_Alexandria%2C_Egypt%2C_3rd_cent._BCE%2C_Ny_Carlsberg_Glyptotek%2C_Copenhagen_%285%29_%2836375553176%29.jpg/330px-Alexander_the_Great%2C_from_Alexandria%2C_Egypt%2C_3rd_cent._BCE%2C_Ny_Carlsberg_Glyptotek%2C_Copenhagen_%285%29_%2836375553176%29.jpg",
+    "facts_fr": [
+      "Élève d'Aristote jusqu'à 16 ans et roi à 20, il conquiert l'immense Empire perse en dix ans de campagne — Granique, Issos, Gaugamèles — et est proclamé pharaon en Égypte.",
+      "Invaincu au combat, il pousse jusqu'au Pendjab où il gagne la bataille de l'Hydaspe ; en 326, ses soldats épuisés refusent d'avancer plus loin.",
+      "Il meurt à Babylone à 32 ans, probablement de maladie, laissant un empire qui s'étend de la Grèce à l'Indus."
+    ],
+    "facts_en": [
+      "Tutored by Aristotle until 16 and king at 20, he conquered the entire Persian Empire in a ten-year campaign — Granicus, Issus, Gaugamela — and was proclaimed pharaoh in Egypt.",
+      "Undefeated in battle, he pushed as far as the Punjab and won the Battle of the Hydaspes; in 326 BC his exhausted soldiers refused to march any further.",
+      "He died in Babylon at 32, probably of illness, leaving an empire stretching from Greece to the Indus."
+    ]
+  },
+  {
+    "name": "Cléopâtre",
+    "description": "Dernière reine de l'Égypte ptolémaïque, alliée de Jules César puis de Marc Antoine.",
+    "bio_fr": "Cléopâtre VII Philopator ou simplement Cléopâtre, née vers 69 av. J.-C. à Alexandrie (Égypte) et morte dans la même ville le 12 août 30 av. J.-C., est une reine d'Égypte antique de la dynastie lagide.",
+    "bio_en": "Cleopatra VII Thea Philopator was Queen of the Ptolemaic Kingdom of Egypt from 51 to 30 BC, and the last active Hellenistic pharaoh. A member of the Ptolemaic dynasty, she was a descendant of its founder Ptolemy I Soter, a Macedonian Greek general and companion of Alexander the Great. Her first language was Koine Greek, and she is the only Ptolemaic ruler known to have learned the Egyptian language, among several others. After her death, Egypt became a province of the Roman Empire, marking the end of the Hellenistic period in the Mediterranean, which had begun during the reign of Alexander.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cleopatra_VII%2C_dalla_via_appia_tra_ariccia_e_genzano%2C_40-30_ac_ca._02.JPG/330px-Cleopatra_VII%2C_dalla_via_appia_tra_ariccia_e_genzano%2C_40-30_ac_ca._02.JPG",
+    "facts_fr": [
+      "Descendante du général macédonien Ptolémée, elle est la seule souveraine lagide connue pour avoir appris la langue égyptienne.",
+      "Compagne de Jules César puis de Marc Antoine, elle a des enfants des deux hommes et pèse sur les guerres civiles romaines.",
+      "Vaincue avec Antoine à Actium (31 av. J.-C.), sa mort l'année suivante fait de l'Égypte une province romaine — fin de l'Égypte pharaonique et de l'époque hellénistique."
+    ],
+    "facts_en": [
+      "A descendant of Alexander's general Ptolemy, she was the only Ptolemaic ruler known to have learned the Egyptian language.",
+      "Companion of Julius Caesar and then Mark Antony, she had children with both men and shaped Rome's civil wars.",
+      "Defeated with Antony at Actium (31 BC), her death the following year turned Egypt into a Roman province — the end of pharaonic Egypt and the Hellenistic age."
+    ]
+  },
+  {
+    "name": "Auguste",
+    "description": "Premier empereur romain, héritier de César, fondateur du principat et de la Pax Romana.",
+    "bio_fr": "Auguste, né le 23 septembre 63 av. J.-C. à Rome et mort le 19 août 14 apr. J.-C. à Nola, près de Naples, est le premier empereur romain, régnant du 16 janvier 27 av. J.-C. jusqu'à sa mort. Connu sous le nom d'Octave durant ses années de jeunesse, il est adopté par Jules César en 45 av. J.-C. et prend celui d'Octavien. Titré Augustus par le Sénat romain en 27 av. J.-C., il est ensuite appelé officiellement Imperator Caesar Divi Filius Augustus.",
+    "bio_en": "Augustus, also known as Octavian, was the founder of the Roman Empire and the first Roman emperor from 27 BC until his death in AD 14. The reign of Augustus initiated an imperial cult and an era of imperial peace when the Roman world was largely free of armed conflict. The principate, a style of government in which the emperor showed nominal deference to the Senate, was established during his reign and lasted until the Crisis of the Third Century.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Glyptothek_M%C3%BCnchen_%E2%80%93_18.04.2022_%E2%80%93_Augustus_Bevilacqua_%284%29.jpg/330px-Glyptothek_M%C3%BCnchen_%E2%80%93_18.04.2022_%E2%80%93_Augustus_Bevilacqua_%284%29.jpg",
+    "facts_fr": [
+      "Adopté par testament par son grand-oncle Jules César, il devient à 19 ans l'héritier du dictateur assassiné et marche sur Rome pour s'imposer.",
+      "Triumvir avec Marc Antoine et Lépide, il exile l'un et vainc l'autre à Actium (31 av. J.-C.), restant seul maître de Rome.",
+      "Feignant de restaurer la République, il fonde en réalité le principat et inaugure la Pax Romana, une ère de paix impériale durable."
+    ],
+    "facts_en": [
+      "Named primary heir in Julius Caesar's will, he inherited the dictator's name and estate at 19 and marched on Rome to claim power.",
+      "Triumvir with Mark Antony and Lepidus, he exiled one and defeated the other at Actium (31 BC), leaving him sole master of Rome.",
+      "While showing nominal deference to the Senate, he founded the principate and ushered in the Pax Romana, an era of lasting imperial peace."
+    ]
+  },
+  {
+    "name": "Hannibal",
+    "description": "Général carthaginois qui franchit les Alpes avec ses éléphants pour défier Rome (deuxième guerre punique).",
+    "bio_fr": "Hannibal Barca, généralement appelé Annibal ou Hannibal, né en 247 av. J.-C. à Carthage et mort entre 183 av. J.-C. et 181 av. J.-C. en Bithynie, est un général et homme politique carthaginois, considéré comme l'un des plus grands tacticiens militaires de l'Histoire.",
+    "bio_en": "Hannibal was a Carthaginian general and statesman who commanded the forces of Carthage in their battle against the Roman Republic during the Second Punic War. Hannibal lived during a period of great tension in the Mediterranean Basin, triggered by the emergence of the Roman Republic as a great power with its defeat of Carthage in the First Punic War. Revanchism prevailed in Carthage, symbolized by the pledge that Hannibal made to his father to \"never be a friend of Rome\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hannibal_Barca_bust_from_Capua_photo.jpg/330px-Hannibal_Barca_bust_from_Capua_photo.jpg",
+    "facts_fr": [
+      "Fils d'Hamilcar Barca, il aurait juré à son père de « ne jamais être l'ami de Rome » — les Anciens appelaient la deuxième guerre punique « guerre d'Hannibal ».",
+      "En 218 av. J.-C., il quitte l'Espagne, franchit les Pyrénées puis les Alpes avec ses éléphants de guerre, et écrase Rome à la Trébie, au lac Trasimène et à Cannes.",
+      "Il occupe le sud de l'Italie pendant 15 ans sans pouvoir prendre Rome, que sauve la stratégie d'usure de Fabius Maximus."
+    ],
+    "facts_en": [
+      "Son of Hamilcar Barca, he famously pledged to his father to 'never be a friend of Rome' — the ancients called the Second Punic War 'Hannibal's war'.",
+      "In 218 BC he left Spain, crossed the Pyrenees and then the Alps with his war elephants, and crushed the Romans at the Trebia, Lake Trasimene and Cannae.",
+      "He occupied most of southern Italy for 15 years without taking Rome, which was saved by Fabius Maximus's war of attrition."
+    ]
+  },
+  {
+    "name": "Néron",
+    "description": "Empereur romain (54-68), associé au grand incendie de Rome et à la persécution des premiers chrétiens.",
+    "bio_fr": "Néron, né Lucius Domitius Ahenobarbus le 15 décembre 37 à Antium et mort le 9 juin 68 à Rome, est empereur romain du 13 octobre 54 jusqu'à sa mort. Il est le cinquième et dernier empereur romain de la dynastie julio-claudienne.",
+    "bio_en": "Nero was Roman emperor from 54 AD until his suicide in 68 AD, as the final emperor of the Julio-Claudian dynasty.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Et%C3%A0_romana_imperiale%2C_busto_di_nerone%2C_da_olbia%2C_54-59_dc_ca.jpg/330px-Et%C3%A0_romana_imperiale%2C_busto_di_nerone%2C_da_olbia%2C_54-59_dc_ca.jpg",
+    "facts_fr": [
+      "Adopté par l'empereur Claude au détriment de son propre fils Britannicus, il monte sur le trône à 16 ans et fait vite éliminer ses rivaux — jusqu'à sa propre mère Agrippine.",
+      "Après le grand incendie de Rome en 64, il en fait porter la responsabilité aux chrétiens, déclenchant leur persécution.",
+      "Il scandalise l'aristocratie en se produisant en public comme acteur, poète, musicien et cocher ; renversé en 68, il se suicide — dernier empereur julio-claudien."
+    ],
+    "facts_en": [
+      "Adopted by Emperor Claudius over his own son Britannicus, he took the throne at 16 and soon eliminated his rivals — including his own mother Agrippina.",
+      "After the Great Fire of Rome in 64 AD, he blamed the Christians for the disaster, unleashing their persecution.",
+      "He scandalized the aristocracy by performing publicly as an actor, poet, musician and charioteer; overthrown in 68 AD, he took his own life — the last Julio-Claudian emperor."
+    ]
+  },
+  {
+    "name": "Isaac Newton",
+    "description": "Physicien et mathématicien anglais : lois du mouvement, gravitation universelle, calcul infinitésimal.",
+    "bio_fr": "Isaac Newton est un mathématicien, physicien, philosophe, alchimiste, astronome et théologien anglais, puis britannique. Figure emblématique des sciences, il est surtout reconnu pour avoir fondé la mécanique classique, pour sa théorie de la gravitation universelle et la création, en concurrence avec Gottfried Wilhelm Leibniz, du calcul infinitésimal.",
+    "bio_en": "Sir Isaac Newton was an English polymath who was a mathematician, physicist, astronomer, alchemist, theologian, author and inventor. He was a key figure in the Scientific Revolution and the Enlightenment that followed. His book Philosophiæ Naturalis Principia Mathematica, first published in 1687, achieved the first great unification in physics and established classical mechanics. Newton also made seminal contributions to optics, and shares credit with the German mathematician Gottfried Wilhelm Leibniz for formulating infinitesimal calculus, although he developed calculus years before Leibniz. Newton contributed to and refined the scientific method, and his work is considered the most influential in bringing forth modern science.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/330px-GodfreyKneller-IsaacNewton-1689.jpg",
+    "facts_fr": [
+      "Ses Principia (1687) réalisent la première grande unification de la physique : les mêmes lois gouvernent la chute des corps sur Terre et le mouvement des planètes.",
+      "Il crée le calcul infinitésimal en rivalité avec Leibniz, et montre qu'un prisme décompose la lumière blanche en un spectre de couleurs.",
+      "Il invente le télescope à réflexion qui porte son nom ; sa mécanique restera la référence jusqu'à la relativité, et reste une excellente approximation au quotidien."
+    ],
+    "facts_en": [
+      "His Principia (1687) achieved the first great unification in physics: the same laws govern falling bodies on Earth and the motion of the planets.",
+      "He formulated infinitesimal calculus in rivalry with Leibniz, and showed that a prism splits white light into a spectrum of colours.",
+      "He invented the reflecting telescope that bears his name; his mechanics reigned until relativity and remains an excellent approximation for everyday physics."
+    ]
+  },
+  {
+    "name": "Galilée",
+    "description": "Astronome et physicien italien, père de la science moderne, condamné par l'Inquisition en 1633.",
+    "bio_fr": "Galilée, né à Pise le 15 février 1564 et mort à Arcetri près de Florence le 8 janvier 1642, est un mathématicien, géomètre, physicien et astronome italien du XVIIe siècle.",
+    "bio_en": "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo Galilei or mononymously as Galileo, was an Italian astronomer, physicist, engineer and polymath. He was born in Pisa, then part of the Duchy of Florence. Galileo has been called the father of observational astronomy, classical physics, the scientific method, and modern science.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg/330px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg",
+    "facts_fr": [
+      "Avec la lunette qu'il a perfectionnée, il observe les quatre grands satellites de Jupiter, les phases de Vénus, les cratères de la Lune et les taches solaires.",
+      "Défenseur de l'héliocentrisme de Copernic, son Dialogue de 1632 lui vaut un procès : jugé « véhémentement suspect d'hérésie » par l'Inquisition, il doit abjurer.",
+      "Partisan de « l'écriture mathématique du livre de l'Univers », il est considéré comme le père de l'astronomie d'observation et de la méthode scientifique."
+    ],
+    "facts_en": [
+      "With the telescope he improved, he observed Jupiter's four largest moons, the phases of Venus, lunar craters and sunspots.",
+      "A champion of Copernican heliocentrism, his 1632 Dialogue brought him before the Inquisition: found 'vehemently suspect of heresy', he was forced to recant.",
+      "An advocate of reading 'the book of the Universe written in mathematics', he is called the father of observational astronomy and the scientific method."
+    ]
+  },
+  {
+    "name": "Louis Pasteur",
+    "description": "Chimiste et microbiologiste français : pasteurisation, vaccin contre la rage, théorie des germes.",
+    "bio_fr": "Louis Pasteur, né le 27 décembre 1822 à Dole (Jura) et mort le 28 septembre 1895 à Marnes-la-Coquette, est un scientifique français, chimiste et physicien de formation.",
+    "bio_en": "Louis Pasteur was a French chemist, pharmacist, and microbiologist renowned for his discoveries of the principles of vaccination, microbial fermentation, and pasteurization, the last of which was named after him. His research in chemistry led to remarkable breakthroughs in the understanding of the causes and preventions of diseases, which laid down the foundations of hygiene, public health and much of modern medicine. Pasteur's works are credited with saving millions of lives through the developments of vaccines for rabies and anthrax. He is regarded as one of the founders of modern bacteriology and has been honored as the \"father of bacteriology\" and the \"father of microbiology\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Louis_Pasteur_%281822_-_1895%29%2C_microbiologist_and_chemist_Wellcome_V0026980.jpg/330px-Louis_Pasteur_%281822_-_1895%29%2C_microbiologist_and_chemist_Wellcome_V0026980.jpg",
+    "facts_fr": [
+      "Ses expériences sur des ballons stérilisés réfutent la doctrine de la génération spontanée, ce qui lui vaut le prix Alhumbert de l'Académie des sciences en 1862.",
+      "Père de la théorie microbienne des maladies, ses travaux fondent l'hygiène et la santé publique modernes — la pasteurisation porte son nom.",
+      "Ses vaccins contre la rage et le charbon sont crédités de millions de vies sauvées ; celui contre la rage le rend mondialement célèbre."
+    ],
+    "facts_en": [
+      "His sealed-flask experiments disproved the doctrine of spontaneous generation, earning him the French Academy of Sciences' Alhumbert Prize in 1862.",
+      "A father of the germ theory of disease, his work laid the foundations of modern hygiene and public health — pasteurization is named after him.",
+      "His vaccines against rabies and anthrax are credited with saving millions of lives; the rabies vaccine made him world-famous."
+    ]
+  },
+  {
+    "name": "Marie Curie",
+    "description": "Physicienne et chimiste franco-polonaise, pionnière de la radioactivité, seule double lauréate Nobel en deux sciences.",
+    "bio_fr": "Marie Curie, née le 7 novembre 1867 à Varsovie et morte le 4 juillet 1934 à Passy (Haute-Savoie), dans le sanatorium de Sancellemoz, est une physicienne et chimiste polonaise, naturalisée française par son mariage avec le physicien Pierre Curie en 1895. Scientifique d'exception, elle est la première femme à avoir reçu le prix Nobel et la seule femme à en avoir reçu deux. Elle reste la seule personne à avoir été récompensée dans deux domaines scientifiques distincts. Elle est également la première femme lauréate, avec son mari, de la médaille Davy de 1903 pour ses travaux sur le radium. En France, Marie Curie est la première femme à enseigner à la Sorbonne, et la première femme honorée pour ses propres mérites à reposer au Panthéon.",
+    "bio_en": "Maria Salomea Skłodowska Curie, better known as Marie Curie was a Polish and naturalised-French physicist and chemist. She shared the 1903 Nobel Prize in Physics with her husband, Pierre Curie, \"for their joint researches on the radioactivity phenomena discovered by Professor Henri Becquerel\". She won the 1911 Nobel Prize in Chemistry \"[for] the discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable element\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Marie_Curie_c1920.jpg/330px-Marie_Curie_c1920.jpg",
+    "facts_fr": [
+      "Première femme prix Nobel (physique, 1903, avec Pierre Curie et Becquerel), elle reçoit un second Nobel en chimie en 1911 — seule personne récompensée dans deux sciences distinctes.",
+      "Formée clandestinement à Varsovie dans l'« université volante » avant de rejoindre Paris, elle devient la première femme à enseigner à la Sorbonne.",
+      "Elle a forgé le terme « radioactivité » ; première femme honorée pour ses propres mérites au Panthéon, elle fonde les Instituts Curie de Paris et de Varsovie."
+    ],
+    "facts_en": [
+      "The first woman to win a Nobel Prize (physics, 1903, with Pierre Curie and Becquerel), she won a second in chemistry in 1911 — the only person awarded in two different sciences.",
+      "Educated at Warsaw's clandestine 'Flying University' before moving to Paris, she became the first woman professor at the University of Paris.",
+      "She coined the term 'radioactivity'; the first woman interred in the Panthéon on her own merits, she founded the Curie Institutes in Paris and Warsaw."
+    ]
+  },
+  {
+    "name": "Lavoisier",
+    "description": "Père de la chimie moderne (conservation de la masse, rôle de l'oxygène), guillotiné sous la Terreur en 1794.",
+    "bio_fr": "Antoine Lavoisier, ci-devant de Lavoisier jusqu'en 1790, est un chimiste, philosophe et économiste français, né le 26 août 1743 à Paris et guillotiné le 8 mai 1794 dans la même ville. Il est souvent présenté comme le père de la chimie moderne, qui se développera à partir des bases et des notions qu'il a établies et d'une nouvelle exigence de précision offerte par les instruments qu'il a mis au point. Il a inauguré la méthode scientifique, à la fois expérimentale et mathématique, dans ce domaine qui, au contraire de la mécanique, semblait devoir y échapper.",
+    "bio_en": "Antoine-Laurent de Lavoisier, also Antoine Lavoisier after the French Revolution, was a French nobleman and chemist who was central to the 18th-century chemical revolution and who had a large influence on both the history of chemistry and the history of biology.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%29.jpg/330px-David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%29.jpg",
+    "facts_fr": [
+      "Il nomme l'oxygène (1778) et l'hydrogène (1783) et renverse la théorie du phlogistique grâce à des mesures d'une précision inédite.",
+      "Ses équations chimiques respectent la loi de conservation de la masse ; il participe à la création du système métrique et de la nomenclature chimique moderne, avec sa femme Marie-Anne pour collaboratrice.",
+      "Fermier général de l'Ancien Régime, il est guillotiné le 8 mai 1794 sous la Terreur, à 50 ans."
+    ],
+    "facts_en": [
+      "He named oxygen (1778) and hydrogen (1783) and overturned the phlogiston theory through measurements of unprecedented precision.",
+      "His balanced chemical equations embodied the law of conservation of mass; he helped build the metric system and modern chemical nomenclature, with his wife Marie-Anne as his scientific collaborator.",
+      "A tax farmer of the Ancien Régime, he was guillotined on 8 May 1794 during the Terror, aged 50."
+    ]
+  },
+  {
+    "name": "Victor Hugo",
+    "description": "Géant des lettres françaises (Les Misérables, Notre-Dame de Paris), opposant exilé au Second Empire.",
+    "bio_fr": "Victor Hugo, né le 7 ventôse an X à Besançon et mort le 22 mai 1885 à Paris, est un poète, dramaturge, romancier et dessinateur français associé au romantisme. Il est considéré comme l'un des écrivains de la langue française et de la littérature mondiale les plus importants. Hugo est aussi une personnalité politique et un intellectuel engagé qui a un rôle idéologique majeur et occupe une place marquante dans l'histoire des lettres françaises au XIXe siècle.",
+    "bio_en": "Victor-Marie Hugo, vicomte Hugo was a French Romantic author, poet, essayist, playwright, journalist, human rights activist and politician.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Victor_Hugo_001.jpg/330px-Victor_Hugo_001.jpg",
+    "facts_fr": [
+      "Ses préfaces de Cromwell (1827) et d'Hernani (1830), véritables manifestes, font de lui le chef de file du drame romantique français.",
+      "Opposant farouche à Napoléon III, il publie Les Châtiments (1853) depuis l'exil et devient la conscience républicaine du siècle.",
+      "Ses funérailles nationales en 1885 rassemblent plus de deux millions de personnes — les plus grandes de l'histoire de France — avant son inhumation au Panthéon."
+    ],
+    "facts_en": [
+      "His prefaces to Cromwell (1827) and Hernani (1830), true manifestos, made him the standard-bearer of French Romantic drama.",
+      "A fierce opponent of Napoleon III, he published Les Châtiments (1853) from exile and campaigned against capital punishment and slavery.",
+      "His 1885 state funeral drew over two million people — the largest in French history — before his burial in the Panthéon."
+    ]
+  },
+  {
+    "name": "Molière",
+    "description": "Comédien et dramaturge du Grand Siècle, maître de la comédie française (Tartuffe, Le Misanthrope).",
+    "bio_fr": "Jean-Baptiste Poquelin, dit Molière, baptisé le 15 janvier 1622 à l'église Saint-Eustache de Paris et mort le 17 février 1673 à son domicile de la rue de Richelieu, est le plus célèbre auteur de comédies de la langue française.",
+    "bio_en": "Jean-Baptiste Poquelin, known by his stage name Molière, was a French playwright, actor, and poet, widely regarded as one of the great writers in the French language and world literature. His extant works include comedies, farces, tragicomedies, comédie-ballets, and more. His plays have been translated into every major living language and are performed at the Comédie-Française more often than those of any other playwright today. His influence is such that the French language is often referred to as the \"language of Molière\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Moli%C3%A8re_-_Nicolas_Mignard_%281658%29.jpg/330px-Moli%C3%A8re_-_Nicolas_Mignard_%281658%29.jpg",
+    "facts_fr": [
+      "Après l'échec de son Illustre Théâtre à Paris, il sillonne les provinces pendant douze ans avant de devenir le comédien et auteur favori du jeune Louis XIV.",
+      "Créateur de formes comiques — verbal, gestuel, de situation —, il interprète lui-même le rôle principal de la plupart de ses pièces, et meurt brutalement à 51 ans.",
+      "Le français est souvent appelé « la langue de Molière » ; ses pièces restent aujourd'hui les plus jouées de la Comédie-Française."
+    ],
+    "facts_en": [
+      "After his Illustre Théâtre failed in Paris, he toured the provinces for twelve years before becoming the favourite actor-playwright of the young Louis XIV.",
+      "A master of every comic register — verbal, physical, situational — he played the lead in most of his own plays, and died suddenly at 51.",
+      "French is often called 'the language of Molière'; his plays are still performed at the Comédie-Française more than any other playwright's."
+    ]
+  },
+  {
+    "name": "Zola",
+    "description": "Chef de file du naturalisme (Les Rougon-Macquart), auteur de « J'accuse…! » dans l'affaire Dreyfus.",
+    "bio_fr": "Émile Zola est un écrivain et journaliste français né le 2 avril 1840 à Paris et mort le 29 septembre 1902 dans la même ville. Considéré comme le chef de file du naturalisme, c'est l'un des romanciers français les plus populaires et l'un des plus publiés, traduits et commentés dans le monde entier. Il a durablement marqué de son empreinte le monde littéraire français. Ses romans ont connu de très nombreuses adaptations au cinéma et à la télévision.",
+    "bio_en": "Émile Édouard Charles Antoine Zola was a French novelist, journalist, playwright, the best-known practitioner of the literary school of naturalism, and an important contributor to the development of theatrical naturalism. He was a major figure in the political liberalization of France and in the exoneration of the falsely accused and convicted army officer Alfred Dreyfus, which is encapsulated in his renowned newspaper opinion headlined J'Accuse...!  Zola was nominated for the first and second Nobel Prizes in Literature in 1901 and 1902.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Emile_Zola_1902.jpg/330px-Emile_Zola_1902.jpg",
+    "facts_fr": [
+      "Les Rougon-Macquart, fresque en vingt romans, dépeint la société du Second Empire — la mine dans Germinal, les grands magasins dans Au Bonheur des Dames, la courtisane dans Nana.",
+      "Son « J'accuse…! » (1898) en défense du capitaine Dreyfus, injustement condamné, contribue de façon décisive à l'exonération de l'officier.",
+      "Il fut nommé aux deux tout premiers prix Nobel de littérature, en 1901 et 1902."
+    ],
+    "facts_en": [
+      "His twenty-novel cycle Les Rougon-Macquart portrays Second Empire society — the mines in Germinal, department stores in Au Bonheur des Dames, the demi-monde in Nana.",
+      "His open letter 'J'Accuse...!' (1898) in defence of the falsely convicted captain Alfred Dreyfus proved decisive in the officer's exoneration.",
+      "He was nominated for the very first and second Nobel Prizes in Literature, in 1901 and 1902."
+    ]
+  },
+  {
+    "name": "Alexandre Dumas",
+    "description": "Romancier populaire du XIXe siècle : Les Trois Mousquetaires, Le Comte de Monte-Cristo.",
+    "bio_fr": "Alexandre Dumas est un écrivain français né le 24 juillet 1802 à Villers-Cotterêts (Aisne) et mort le 5 décembre 1870 au hameau de Puys, ancienne commune de Neuville-lès-Dieppe, aujourd'hui intégrée à Dieppe (Seine-Maritime).",
+    "bio_en": "Alexandre Dumas, also known as Alexandre Dumas père, was a French novelist and playwright.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nadar_-_Alexander_Dumas_p%C3%A8re_%281802-1870%29_-_Google_Art_Project_2.jpg/330px-Nadar_-_Alexander_Dumas_p%C3%A8re_%281802-1870%29_-_Google_Art_Project_2.jpg",
+    "facts_fr": [
+      "Il est le fils du général Thomas Alexandre Dumas, lui-même né à Saint-Domingue d'un noble français et d'une esclave africaine.",
+      "En 1844-1846, il publie coup sur coup en feuilleton Les Trois Mousquetaires ET Le Comte de Monte-Cristo, entamant aussi la trilogie des mousquetaires.",
+      "Soupçonné de recourir à des prête-plumes, il collaborait en réalité avec Auguste Maquet dont il dynamisait les ébauches ; ses romans ont inspiré près de 200 films."
+    ],
+    "facts_en": [
+      "He was the son of General Thomas-Alexandre Dumas, himself born in Saint-Domingue (present-day Haiti) to a French nobleman and an enslaved African woman.",
+      "In 1844-1846 he serialized The Three Musketeers AND The Count of Monte Cristo almost back to back, launching the musketeer trilogy along the way.",
+      "Accused of using ghostwriters, he in fact ran a genuine collaboration with Auguste Maquet, whose drafts he reworked; his novels have inspired nearly 200 films."
+    ]
+  },
+  {
+    "name": "Ulysse",
+    "description": "Roi d'Ithaque à la ruse légendaire, héros de l'Odyssée et inventeur du cheval de Troie.",
+    "bio_fr": "Ulysse, ou Odysseus, est l'un des héros les plus célèbres de la mythologie grecque. Roi d'Ithaque, fils de Laërte et d'Anticlée, il est marié à Pénélope dont il a un fils, Télémaque.",
+    "bio_en": "In Greek and Roman mythology, Odysseus, also known by the Latin variant Ulysses, is a legendary Greek king of Ithaca and the hero of Homer's epic poem, the Odyssey. Odysseus also plays a key role in Homer's Iliad and other works in that same epic cycle.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/%28Venice%29_Ancient_Roman_statues_in_the_Museo_archeologico_nazionale_-_Ulysses.jpg/330px-%28Venice%29_Ancient_Roman_statues_in_the_Museo_archeologico_nazionale_-_Ulysses.jpg",
+    "facts_fr": [
+      "Contrairement aux autres héros grecs, il se distingue moins par la force guerrière que par la mètis, cette « intelligence rusée » qui rend son conseil si écouté devant Troie.",
+      "Son retour vers Ithaque dure dix ans après les dix années de la guerre de Troie — ce nostos donne son nom à l'Odyssée.",
+      "Rentré chez lui, il délivre Pénélope et son foyer des prétendants qui convoitaient sa femme et ses biens."
+    ],
+    "facts_en": [
+      "Unlike most Greek heroes, he stands out less for martial prowess than for mêtis — the 'cunning intelligence' that earned him the epithet 'Odysseus the Cunning'.",
+      "His journey home to Ithaca took ten eventful years after the decade-long Trojan War — the nostos that gives the Odyssey its name.",
+      "Once home, he freed Penelope and his household from the suitors who coveted his wife and his estate."
+    ]
+  },
+  {
+    "name": "Achille",
+    "description": "Héros quasi invincible de la guerre de Troie, vulnérable au seul talon.",
+    "bio_fr": "Achille est un héros légendaire de la guerre de Troie, fils de Pélée, roi de Phthie en Thessalie, et de Thétis, une Néréide. Il est fréquemment appelé « Péléide » ou « Éacide », épithètes qui rappellent son ascendance.",
+    "bio_en": "In Greek mythology, Achilles or Achilleus was a hero of the Trojan War who was known as being the greatest of all the Greek warriors. The central character in Homer's Iliad, he was the son of the Nereid Thetis and Peleus, king of Phthia and famous Argonaut. Achilles was raised in Phthia along with his childhood companion Patroclus and received his education by the centaur Chiron. In the Iliad, he is presented as the commander of the mythical tribe of the Myrmidons.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Achilles_and_Penthesilea.jpg/330px-Achilles_and_Penthesilea.jpg",
+    "facts_fr": [
+      "Plongé dans le Styx par sa mère Thétis pour le rendre invulnérable, il reste mortel au talon par lequel elle le tenait — d'où le « talon d'Achille ».",
+      "Encore adolescent, il choisit une vie courte mais glorieuse plutôt qu'une longue existence sans éclat ; sa « colère » contre Agamemnon ouvre l'Iliade.",
+      "Il tue Hector, le meilleur des Troyens, pour venger son ami intime Patrocle — avant de tomber sous une flèche de Pâris guidée par Apollon."
+    ],
+    "facts_en": [
+      "Dipped in the Styx by his mother Thetis to make him invulnerable, he stayed mortal at the heel she held him by — hence the 'Achilles heel'.",
+      "Still a youth, he chose a short and glorious life over a long, unremarkable one; his 'wrath' against Agamemnon opens the Iliad.",
+      "He slew Hector, the greatest of the Trojans, to avenge his beloved companion Patroclus — before falling to an arrow of Paris guided by Apollo."
+    ]
+  },
+  {
+    "name": "Méduse",
+    "description": "Gorgone au regard qui pétrifie, décapitée par Persée.",
+    "bio_fr": "Méduse, parfois Médusa, appelée aussi la Gorgone, est dans la mythologie grecque l'une des trois Gorgones. Elle est la seule à être mortelle. Fille de Phorcys et Céto, et donc petite-fille de l'union de la Terre (Gaïa) avec l'Océan (Pontos), elle appartient au groupe des divinités primordiales, tout comme ses cousines la Chimère et l'Hydre de Lerne qui, elles aussi, avaient des traits associés à l'image du serpent et ont été détruites par des héros. Même si elle figure au fronton de plusieurs temples, elle ne faisait l'objet d'aucun culte.",
+    "bio_en": "In Greek mythology, Medusa, also called Gorgo or the Gorgon, was one of the three Gorgons. Medusa is generally described as a woman with living snakes in place of hair; her appearance was so hideous that anyone who looked upon her was turned to stone. Medusa and her Gorgon sisters Euryale and Stheno were usually described as daughters of Phorcys and Ceto; of the three, only Medusa was mortal.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gorgoneion.JPG/330px-Gorgoneion.JPG",
+    "facts_fr": [
+      "Des trois Gorgones, sœurs Euryale et Sthéno comprises, elle est la seule mortelle — et ses yeux pétrifient quiconque croise son regard.",
+      "Décapitée par Persée, sa tête est remise à Athéna qui la fixe sur son égide ; ce gorgonéion servit longtemps de protection contre le mauvais œil.",
+      "Monstre archaïque aux crocs de sanglier et à la chevelure de serpents, elle s'humanise à l'âge classique jusqu'à devenir l'archétype de la femme fatale."
+    ],
+    "facts_en": [
+      "Of the three Gorgons — her sisters being Euryale and Stheno — she alone was mortal, and her gaze turned onlookers to stone.",
+      "Beheaded by Perseus, her head was given to Athena, who set it on her shield; this Gorgoneion long served as a charm against the evil eye.",
+      "An archaic monster with tusks and living snakes for hair, she was humanized in the classical age and eventually became the archetype of the femme fatale."
+    ]
+  },
+  {
+    "name": "Orphée",
+    "description": "Poète et musicien mythique, descendu aux Enfers pour ramener Eurydice.",
+    "bio_fr": "Orphée est un héros de la mythologie grecque, fils du roi de Thrace Œagre et de la muse Calliope. Poète et musicien, il était parfois considéré comme un prophète et a inspiré un mouvement religieux appelé « orphisme », qui était lié aux pythagoriciens et aux mystères dionysiaques. Orphée a fait partie des Argonautes ; sa descente aux Enfers et son échec à ramener son épouse Eurydice dans le monde des vivants ont façonné son mythe.",
+    "bio_en": "In Greek mythology, Orpheus was a Thracian bard, legendary musician and prophet. He was also a renowned poet and, according to legend, travelled with Jason and the Argonauts in search of the Golden Fleece, and descended into the underworld to recover his lost wife, Eurydice.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Orpheus_death_Louvre_G416.jpg/330px-Orpheus_death_Louvre_G416.jpg",
+    "facts_fr": [
+      "Fils de la muse Calliope, sa lyre charme les êtres vivants et jusqu'aux pierres ; il participe à l'expédition des Argonautes en quête de la Toison d'or.",
+      "Descendu aux Enfers pour ramener son épouse Eurydice, il échoue au dernier moment — l'épisode fondateur de son mythe.",
+      "Prophète des mystères « orphiques », il meurt selon la légende sous les coups des ménades de Dionysos ; en 1912, Apollinaire baptise « orphisme » un courant pictural en son honneur."
+    ],
+    "facts_en": [
+      "Son of the muse Calliope, his lyre charmed all living things and even stones; he sailed with Jason and the Argonauts in search of the Golden Fleece.",
+      "He descended into the underworld to bring back his wife Eurydice — and failed at the very last moment, the defining episode of his myth.",
+      "A prophet of the 'Orphic' mysteries, legend has him killed by the maenads of Dionysus; in 1912 Apollinaire named the 'Orphism' art movement after him."
     ]
   }
 ]
