@@ -71,8 +71,13 @@ class Bot:
             await application.bot.set_my_description(
                 self._tl("bot-description", locale), language_code=language_code)
         # Schedule the daily figure delivery to subscribers.
+        # misfire_grace_time widens APScheduler's default 1s window: if the event
+        # loop is briefly blocked at noon (e.g. a Telegram getUpdates retry storm),
+        # the job still fires within the hour instead of being silently dropped.
         if application.job_queue:
-            application.job_queue.run_daily(self._send_daily, time=DAILY_TIME, name="daily-figure")
+            application.job_queue.run_daily(
+                self._send_daily, time=DAILY_TIME, name="daily-figure",
+                job_kwargs={"misfire_grace_time": 3600})
             LOGGER.info(f"Scheduled daily delivery at {DAILY_TIME}")
         else:
             LOGGER.warning("JobQueue unavailable — daily delivery not scheduled")

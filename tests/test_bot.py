@@ -189,6 +189,9 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         scheduled = app.job_queue.run_daily.call_args.kwargs["time"]
         self.assertEqual(scheduled.hour, 12)
         self.assertEqual(str(scheduled.tzinfo), "Europe/Paris")
+        # A brief event-loop stall at noon must not silently drop the delivery.
+        job_kwargs = app.job_queue.run_daily.call_args.kwargs["job_kwargs"]
+        self.assertGreaterEqual(job_kwargs["misfire_grace_time"], 60)
 
     async def test_feedback_entry_without_text_asks_with_force_reply(self):
         update, context = make_update(), make_context()
