@@ -1,4 +1,4 @@
-import json, random
+import json, random, re
 from typing import List
 from src.historical_figure import HistoricalFigure
 from src.logger import LOGGER
@@ -12,20 +12,33 @@ class Database:
         self.historical_figures = self._load_figures(figures_path)
         LOGGER.info(f"Loaded {len(self.historical_figures)} figures")
 
-    @staticmethod
-    def _load_figures(figures_path: str) -> List[HistoricalFigure]:
+    # Ordinary whitespace only: U+00A0 is left alone, French typography uses it
+    # before ':' / ';' and inside "Ier siècle" and must not become a break point.
+    _WHITESPACE = r"[ \t\r\n\f\v]"
+
+    @classmethod
+    def _clean(cls, text):
+        """Collapse whitespace in scraped prose. Bios and facts are rendered
+        verbatim inside the Telegram caption, so a stray newline (Wikipedia
+        paragraph break, leading blank lines) shows up as a broken layout."""
+        if not text:
+            return text
+        return re.sub(cls._WHITESPACE + "+", " ", text).strip(" \t\r\n\f\v")
+
+    @classmethod
+    def _load_figures(cls, figures_path: str) -> List[HistoricalFigure]:
         with open(figures_path, "r", encoding="utf-8") as file:
             data = json.load(file)
         return [
             HistoricalFigure(
                 name=item["name"],
-                description=item.get("description", ""),
+                description=cls._clean(item.get("description", "")),
                 wikidata_id=item.get("wikidata_id"),
                 image_url=item.get("image_url"),
-                bio_en=item.get("bio_en"),
-                bio_fr=item.get("bio_fr"),
-                facts_en=item.get("facts_en", []),
-                facts_fr=item.get("facts_fr", []),
+                bio_en=cls._clean(item.get("bio_en")),
+                bio_fr=cls._clean(item.get("bio_fr")),
+                facts_en=[cls._clean(f) for f in item.get("facts_en", [])],
+                facts_fr=[cls._clean(f) for f in item.get("facts_fr", [])],
             )
             for item in data
         ]

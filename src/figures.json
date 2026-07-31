@@ -11,7 +11,7 @@
       "Ministre de la Marine, il commanda la première enquête sur l'administration et l'économie des colonies pratiquant l'esclavage."
     ],
     "facts_en": [
-      "Colbert served as First Minister of State to Louis XIV from 1661 until his death in 1683.",
+      "As Secretary of State of the Navy from 1669, he rebuilt the French fleet from a few dozen vessels into one of the largest in Europe.",
       "He became Controller-General of Finances after the arrest of Nicolas Fouquet for embezzlement.",
       "He founded the Manufacture royale de glaces de miroirs in 1665 and suggested creating the Académie des sciences in 1666."
     ]
@@ -28,7 +28,7 @@
       "Consul à Alexandrie, il se lia d'amitié avec le vice-roi Méhémet Ali, ce qui favorisa son projet de canal de Suez."
     ],
     "facts_en": [
-      "Ferdinand de Lesseps developed the Suez Canal, which joined the Mediterranean and Red Seas in 1869.",
+      "The Suez Canal opened in November 1869 with a lavish ceremony, Empress Eugénie leading the first convoy aboard the imperial yacht L'Aigle.",
       "His attempt to build a sea-level Panama Canal in the 1880s failed due to disease epidemics and financial problems.",
       "The unfinished Panama Canal project was later bought out and completed by the United States in 1914."
     ]
@@ -80,7 +80,7 @@
     ],
     "facts_en": [
       "At her Nohant estate she hosted artists such as Frédéric Chopin — her companion for nearly a decade — Franz Liszt, Eugène Delacroix and Gustave Flaubert.",
-      "She was more renowned than Victor Hugo or Honoré de Balzac in Britain during the 1830s and 1840s.",
+      "In 1836 she obtained a legal separation from Baron Dudevant — rare for the time — recovering her Nohant estate and her own income.",
       "She was considered scandalous for her turbulent love life, masculine clothing, and masculine pseudonym."
     ]
   },
@@ -126,11 +126,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Gustave_Flaubert.jpg/330px-Gustave_Flaubert.jpg",
     "facts_fr": [
       "Gustave Flaubert est l'auteur de grands romans comme Madame Bovary (1857), Salammbô (1862) et L'Éducation sentimentale (1869).",
-      "À sa parution en 1857, Madame Bovary vaut à Flaubert un procès pour « outrage à la morale publique et religieuse » ; son acquittement et le scandale assurent le succès du roman."
+      "À sa parution en 1857, Madame Bovary vaut à Flaubert un procès pour « outrage à la morale publique et religieuse » ; son acquittement et le scandale assurent le succès du roman.",
+      "En quête du « mot juste », il pouvait passer une semaine sur une seule page ; sa correspondance avec Louise Colet documente ce travail acharné."
     ],
     "facts_en": [
-      "Flaubert is known especially for his debut novel Madame Bovary, published in 1857.",
-      "On its publication in 1857, Madame Bovary earned Flaubert a trial for \"offences against public morality and religion\"; his acquittal and the scandal made the novel a success."
+      "In search of le mot juste he could spend a week on a single page, a struggle documented at length in his letters to Louise Colet.",
+      "On its publication in 1857, Madame Bovary earned Flaubert a trial for \"offences against public morality and religion\"; his acquittal and the scandal made the novel a success.",
+      "Beyond Madame Bovary he wrote Salammbô (1862) and Sentimental Education (1869); the young Guy de Maupassant was his protégé."
     ]
   },
   {
@@ -159,12 +161,12 @@
     "facts_en": [
       "A court painter to the Spanish Crown from 1786, he began with portraits of the aristocracy and Rococo tapestry cartoons for the royal palace.",
       "A severe illness left him deaf in 1793, after which his work grew progressively darker and more pessimistic — and strikingly more original.",
-      "Often called the last of the Old Masters and the first of the moderns, his art is seen as a forerunner of the 20th-century avant-gardes."
+      "Between 1819 and 1823 he covered the walls of his farmhouse with the fourteen Black Paintings, among them Saturn Devouring His Son."
     ],
     "facts_fr": [
       "Peintre de la cour d'Espagne à partir de 1786, il débute par des portraits de l'aristocratie et des cartons de tapisserie rococo pour la manufacture royale Santa Barbara.",
       "Une grave maladie le laisse sourd en 1793 : son œuvre devient alors plus sombre, plus libre et plus originale, amorçant sa transition vers le romantisme.",
-      "Souvent qualifié de « dernier des maîtres anciens et premier des modernes », son art est considéré comme précurseur des avant-gardes picturales du XXe siècle."
+      "Entre 1819 et 1823, il couvre les murs de sa maison des quatorze Peintures noires, dont Saturne dévorant un de ses fils."
     ]
   },
   {
@@ -180,8 +182,8 @@
     ],
     "facts_en": [
       "After the 1901 suicide of his friend Carlos Casagemas, Picasso entered his melancholic Blue Period (1901–1904), dominated by cold tones, before moving on to the Rose Period and then Cubism.",
-      "He is also known for inventing constructed sculpture and co-inventing collage.",
-      "His most famous works include the proto-Cubist Les Demoiselles d'Avignon (1907) and the anti-war painting Guernica (1937), depicting the bombing of Guernica during the Spanish Civil War."
+      "He produced nearly 50,000 works, including 1,885 paintings, 1,228 sculptures and some 30,000 prints.",
+      "He insisted that Guernica stay out of Spain until public liberties returned; the canvas remained at New York's MoMA until 1981."
     ]
   },
   {
@@ -204,7 +206,7 @@
   {
     "name": "Prométhée",
     "description": "Titan de la mythologie grecque, qui déroba le feu aux dieux (figure légendaire).",
-    "bio_fr": "Dans la mythologie grecque, Prométhée est un Titan.",
+    "bio_fr": "Dans la mythologie grecque, Prométhée est un Titan, présenté selon les traditions comme le créateur ou le protecteur de l'humanité à ses débuts. Il défia les dieux de l'Olympe en leur dérobant le feu pour l'offrir aux hommes, leur donnant du même coup la technique, le savoir et, plus largement, la civilisation.",
     "bio_en": "In Greek mythology, Prometheus is a Titan responsible for creating or aiding humanity in its earliest days. He defied the Olympian gods by taking fire from them and giving it to humanity in the form of technology, knowledge and, more generally, civilization.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Atlas_Typhoeus_Prometheus.png/330px-Atlas_Typhoeus_Prometheus.png",
     "facts_fr": [
@@ -259,7 +261,7 @@
     "bio_fr": "Armand Jean du Plessis de Richelieu, dit le cardinal de Richelieu, né le 9 septembre 1585 à Paris et mort le 4 décembre 1642 dans cette même ville, est un ecclésiastique et homme d'État français. Cardinal (1622), duc de Richelieu (1631), duc de Fronsac (1634) et pair de France, il fut le principal ministre du roi Louis XIII.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Cardinal_de_Richelieu.jpg/330px-Cardinal_de_Richelieu.jpg",
     "facts_fr": [
-      "Armand Jean du Plessis de Richelieu, né le 9 septembre 1585 à Paris et mort le 4 décembre 1642, fut créé cardinal en 1622 et devint principal ministre de Louis XIII en 1624.",
+      "Le siège de La Rochelle (1627-1628), qu'il dirige en personne, met fin à la puissance militaire des protestants français.",
       "Il est considéré comme l'un des fondateurs majeurs de l'État moderne en France, ayant œuvré au renforcement du pouvoir royal.",
       "Il lutte contre les Habsbourg à l'extérieur et contre la noblesse et les protestants à l'intérieur, réprimant duels meurtriers et révoltes fiscales paysannes."
     ],
@@ -294,11 +296,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jacob_Ferdinand_Voet_-_Cardinal_de_Retz.jpg/330px-Jacob_Ferdinand_Voet_-_Cardinal_de_Retz.jpg",
     "facts_fr": [
       "Figure majeure de la Fronde, il intrigue sans relâche contre le cardinal Mazarin, qui le fait arrêter et emprisonner en 1652 ; il s'évadera pour gagner l'exil.",
-      "Rédigés à la fin de sa vie, ses Mémoires sont restés célèbres pour leurs portraits mordants des grands personnages de son temps."
+      "Rédigés à la fin de sa vie, ses Mémoires sont restés célèbres pour leurs portraits mordants des grands personnages de son temps.",
+      "Nommé cardinal en 1652, il renonce finalement à l'archevêché de Paris en 1662 et se retire sur ses terres pour y écrire."
     ],
     "facts_en": [
       "A leading figure of the Fronde, he plotted relentlessly against Cardinal Mazarin, who had him arrested and imprisoned in 1652; he later escaped into exile.",
-      "Written late in his life, his Memoirs remain celebrated for their biting portraits of the great figures of his era."
+      "Written late in his life, his Memoirs remain celebrated for their biting portraits of the great figures of his era.",
+      "Made a cardinal in 1652, he eventually renounced the archbishopric of Paris in 1662 and withdrew to his estates to write."
     ]
   },
   {
@@ -309,13 +313,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Joseph_Fouch%C3%A9.png",
     "facts_fr": [
       "Élu à la Convention nationale, il vote la mort de Louis XVI en janvier 1793 ; Napoléon le fera plus tard duc d'Otrante.",
-      "Il est particulièrement connu pour son implication dans la répression violente de l'insurrection lyonnaise en 1793.",
-      "Il fut ministre de la Police sous le Directoire, le Consulat, l'Empire et la Seconde Restauration."
+      "Envoyé en mission à Lyon après la révolte de la ville, il y fait mitrailler des dizaines de condamnés — ce qui lui vaut d'être rappelé par Robespierre.",
+      "Son réseau d'informateurs était si dense que Napoléon s'appuya sur lui tout en le redoutant, avant de le renvoyer en 1810."
     ],
     "facts_en": [
       "Elected to the National Convention, he voted for the execution of Louis XVI in January 1793; Napoleon would later make him Duke of Otranto.",
-      "He was particularly known for the ferocity with which he suppressed the Lyon insurrection during the Revolution in 1793.",
-      "In 1815 he served as President of the Executive Commission, the provisional government installed after Napoleon's abdication."
+      "Sent on mission to Lyon after the city's revolt, he had dozens of condemned prisoners shot down by cannon — which got him recalled by Robespierre.",
+      "His network of informers was so dense that Napoleon both leaned on him and feared him, dismissing him in 1810."
     ]
   },
   {
@@ -331,7 +335,8 @@
     ],
     "facts_en": [
       "Krylov is reckoned the most epigrammatic of all Russian authors, and many lines from his fables passed into everyday Russian speech as proverbs.",
-      "He discovered his true genre at age 40; many of his earlier fables were loosely based on Aesop's and La Fontaine's, while later ones were original."
+      "He began with satirical drama and journalism, publishing his first collection of fables only in 1809, at the age of 40.",
+      "His fables often borrowed their subjects from Aesop and La Fontaine before he turned to wholly original, satirical material."
     ]
   },
   {
@@ -342,11 +347,12 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pancho_villa_horseback.jpg/330px-Pancho_villa_horseback.jpg",
     "facts_fr": [
       "Artisan de sa propre légende, Villa incarna son propre rôle dans des films hollywoodiens et accorda des entretiens à des journalistes étrangers, notamment l'Américain John Reed.",
-      "Il signait officiellement « Francisco Villa », y compris sur les proclamations, actes officiels et émissions de numéraire."
+      "Il signait officiellement « Francisco Villa », y compris sur les proclamations, actes officiels et émissions de numéraire.",
+      "En 1916, il attaque la ville frontalière de Columbus, au Nouveau-Mexique, déclenchant une expédition américaine qui échoua à le capturer."
     ],
     "facts_en": [
       "A crafter of his own legend, Villa starred as himself in Hollywood films and gave interviews to foreign journalists, most notably the American John Reed.",
-      "After Madero was ousted in 1913, Villa joined the Constitutionalist Army against Huerta, then broke with Carranza in 1914.",
+      "As provisional governor of Chihuahua in 1913-1914 he printed his own currency and seized haciendas to fund his División del Norte.",
       "In 1916, Villa raided the border town of Columbus, New Mexico, prompting a US military expedition that failed to capture him."
     ]
   },
@@ -358,13 +364,13 @@
     "bio_en": "Plutarch was a Greek and later Roman Middle Platonist philosopher, historian, biographer, essayist, and priest at the Temple of Apollo in Delphi. He is known primarily for his Parallel Lives, a series of biographies of illustrious Greeks and Romans, and Moralia, a collection of essays and speeches. Upon becoming a Roman citizen, he was possibly named Lucius Mestrius Plutarchus.",
     "facts_fr": [
       "Durant les dernières décennies de sa vie, il fut l'un des prêtres du temple d'Apollon à Delphes.",
-      "Il est reconnu pour son œuvre majeure, les Vies parallèles, qui eut une postérité considérable.",
-      "Il s'oppose, dans ses Œuvres morales (Moralia), aux courants stoïcien et épicurien."
+      "Ses Vies parallèles confrontent deux à deux un Grec et un Romain — Alexandre et César, Démosthène et Cicéron — pour en comparer les caractères.",
+      "Shakespeare puisa directement dans la traduction anglaise des Vies pour Jules César, Antoine et Cléopâtre et Coriolan."
     ],
     "facts_en": [
       "During the last decades of his life he served as one of the priests at the Temple of Apollo in Delphi.",
-      "He is known primarily for his Parallel Lives, biographies of illustrious Greeks and Romans, and for his essay collection Moralia.",
-      "Upon becoming a Roman citizen, he was possibly named Lucius Mestrius Plutarchus."
+      "His Parallel Lives pair a Greek with a Roman — Alexander with Caesar, Demosthenes with Cicero — to compare their characters.",
+      "Shakespeare drew directly on the English translation of the Lives for Julius Caesar, Antony and Cleopatra and Coriolanus."
     ]
   },
   {
@@ -380,8 +386,8 @@
     ],
     "facts_en": [
       "Henry II gave her the Château de Chenonceau; after the king's death in 1559, Catherine de' Medici forced her to trade it for the Château de Chaumont.",
-      "Her position as royal favorite increased her personal wealth and her family's status.",
-      "She was a major patron of French Renaissance architecture."
+      "Twenty years older than Henry II, she held her ascendancy over him from his adolescence until his death in a tournament in 1559.",
+      "Analysis of her remains in 2009 revealed high levels of gold, consistent with drinking a gold-based elixir believed to preserve youth."
     ]
   },
   {
@@ -393,7 +399,7 @@
     "facts_fr": [
       "Face à la Fronde, révolte des nobles et du parlement de Paris à partir de 1648, Mazarin doit fuir la capitale avec Anne d'Autriche et le jeune Louis XIV, avant d'y rentrer en triomphe en 1653.",
       "Grand mécène, Mazarin introduisit l'opéra italien à Paris à grande échelle et fonda la Bibliothèque Mazarine, première véritable bibliothèque publique de France.",
-      "Né à Pescina, dans le royaume de Naples, le 14 juillet 1602, il meurt à Vincennes le 9 mars 1661."
+      "À sa mort, il laissait la plus grande fortune privée du royaume et légua sa bibliothèque de quelque 40 000 volumes au collège des Quatre-Nations."
     ],
     "facts_en": [
       "During the Fronde, the revolt of the nobles and the Parlement of Paris from 1648, Mazarin had to flee the capital with Anne of Austria and the young Louis XIV, returning in triumph in 1653.",
@@ -409,7 +415,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/330px-Socrate_du_Louvre.jpg",
     "facts_fr": [
       "Pratiquant l'art du dialogue par questions et réponses (la maïeutique), il affirmait ne savoir qu'une seule chose : qu'il ne savait rien.",
-      "N'ayant laissé aucun écrit, sa pensée nous est connue par les témoignages indirects de ses disciples Platon et Xénophon.",
+      "Accusé d'impiété et de corruption de la jeunesse, il fut condamné à mort en 399 av. J.-C. et refusa les offres d'évasion de ses amis.",
       "Selon Démétrios de Phalère et Maxime de Tyr, Socrate serait mort à l'âge de 70 ans."
     ],
     "facts_en": [
@@ -443,8 +449,8 @@
     "bio_en": "Parmenides of Elea was a pre-Socratic Greek philosopher from Elea in Magna Graecia.",
     "facts_fr": [
       "Dans son poème, il oppose la « voie de la vérité » — où l'être est un, immuable et hors du temps — à la « voie de l'opinion », trompeuse et née des sens.",
-      "Il est célèbre pour avoir introduit la logique dans la pensée hellénique, aux côtés de la philosophie milésienne et des théories arithmétiques de Pythagore.",
-      "Platon lui a consacré un dialogue portant son nom, le Parménide, traitant de la question de l'Être."
+      "Son unique ouvrage connu, un poème souvent appelé De la nature, ne nous est parvenu que par fragments cités par des auteurs postérieurs.",
+      "Il est considéré comme le fondateur de l'ontologie et de l'école d'Élée, à laquelle appartiennent aussi Zénon d'Élée et Mélissos de Samos."
     ],
     "facts_en": [
       "In his poem he contrasts the \"way of truth\"—where being is one, unchanging and timeless—with the deceptive \"way of opinion\" born of the senses.",
@@ -516,7 +522,7 @@
     ],
     "facts_en": [
       "He formulated the Silver Rule: \"Do not do unto others what you do not want done to yourself.\"",
-      "His teachings, called Confucianism, emphasized personal and governmental morality, harmonious social relationships, and a ruler's duty to lead by virtue.",
+      "He is traditionally credited with editing the Chinese classics, and his sayings were gathered by his disciples in the Analects.",
       "His ideas gained prominence during the Warring States period and later received official sanction under Emperor Wu of Han."
     ]
   },
@@ -533,7 +539,7 @@
     ],
     "facts_en": [
       "During the Pacific war he commanded PT boats; after PT-109 was sunk, he rescued his crew, which made him a war hero.",
-      "He was the youngest person elected president, at age 43, and the first Catholic president.",
+      "He was elected in 1960 by one of the narrowest popular-vote margins in US history, after the first televised presidential debates.",
       "His presidency included the Cuban Missile Crisis, the failed Bay of Pigs Invasion, and the continuation of the Apollo program."
     ]
   },
@@ -568,7 +574,7 @@
     ],
     "facts_en": [
       "A famous anecdote tells that an illiterate citizen, not recognising him, asked him to write 'Aristides' on his ostracism shard, admitting he was tired of hearing him everywhere called 'the Just'; Aristides wrote his own name and was banished around 482 BC.",
-      "The historian Herodotus described him as 'the best and most honourable man in Athens,' and Plato gave him similarly reverent treatment in his dialogues.",
+      "He commanded the Athenian contingent at Plataea in 479 BC, the battle that ended the Persian invasion of Greece.",
       "Entrusted with setting the tribute of the Delian League's member cities, he assessed it so scrupulously fairly that it sealed his nickname 'the Just.'"
     ]
   },
@@ -597,7 +603,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jonas_Salk_candid.jpg/330px-Jonas_Salk_candid.jpg",
     "facts_fr": [
       "En 1954, son vaccin fut testé lors d'un essai géant portant sur près de 1,8 million d'écoliers américains, surnommés les « Polio Pioneers ».",
-      "Il est l'inventeur du premier vaccin contre la poliomyélite."
+      "À l'annonce du succès du vaccin en avril 1955, il choisit de ne pas le breveter afin d'en maximiser la diffusion mondiale.",
+      "En 1963, il fonde le Salk Institute for Biological Studies à La Jolla, en Californie."
     ],
     "facts_en": [
       "In 1954 his vaccine was tested in a massive field trial involving nearly 1.8 million American schoolchildren, nicknamed the \"Polio Pioneers.\"",
@@ -612,10 +619,12 @@
     "bio_en": "Max Karl Ernst Ludwig Planck was a German theoretical physicist. He was awarded the 1918 Nobel Prize in Physics \"for the services he rendered to the advancement of physics by his discovery of energy quanta\".",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bundesarchiv_Bild_183-R0116-504%2C_Max_Planck.jpg/330px-Bundesarchiv_Bild_183-R0116-504%2C_Max_Planck.jpg",
     "facts_fr": [
-      "Max Planck (1858-1947) est un physicien allemand dont plusieurs notions scientifiques portent le nom, comme la constante de Planck et la loi de Planck."
+      "Max Planck (1858-1947) est un physicien allemand dont plusieurs notions scientifiques portent le nom, comme la constante de Planck et la loi de Planck.",
+      "En 1900, pour expliquer le rayonnement du corps noir, il introduit l'idée que l'énergie s'échange par quanta — acte de naissance de la physique quantique.",
+      "Resté en Allemagne sous le nazisme, il perdit son fils Erwin, exécuté en 1945 pour sa participation au complot du 20 juillet contre Hitler."
     ],
     "facts_en": [
-      "Planck was awarded the 1918 Nobel Prize in Physics for his discovery of energy quanta.",
+      "In 1900, to explain black-body radiation, he introduced the idea that energy is exchanged in discrete quanta — the birth of quantum physics.",
       "He is known for the Planck constant, foundational to quantum physics, from which he derived Planck units.",
       "He served twice as President of the Kaiser Wilhelm Society, which was renamed the Max Planck Society in 1948."
     ]
@@ -663,12 +672,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Grand_Royal_Coat_of_Arms_of_France.svg/330px-Grand_Royal_Coat_of_Arms_of_France.svg.png",
     "facts_fr": [
       "Le plus illustre des Bourbons, Louis XIV, le Roi-Soleil, régna soixante-douze ans (1643-1715), le plus long règne d'un monarque souverain de l'histoire européenne.",
-      "Le chef actuel de la maison capétienne de Bourbon est Louis de Bourbon, duc d'Anjou, né en 1974."
+      "Le chef actuel de la maison capétienne de Bourbon est Louis de Bourbon, duc d'Anjou, né en 1974.",
+      "Les Bourbons régnèrent aussi sur l'Espagne, Naples, la Sicile et Parme ; l'Espagne et le Luxembourg ont aujourd'hui encore un souverain issu de cette maison."
     ],
     "facts_en": [
       "The most illustrious Bourbon, Louis XIV, the Sun King, reigned for seventy-two years (1643–1715), the longest reign of any sovereign monarch in European history.",
       "Bourbon kings first ruled France and Navarre in the 16th century, with Henry IV becoming king of France in 1589.",
-      "Branches of the House of Bourbon have ruled Spain, Naples, Sicily, and Parma, and today Spain and Luxembourg have monarchs from this house."
+      "The senior Spanish line still reigns today in Felipe VI, while Luxembourg's grand ducal family descends from the Parma branch."
     ]
   },
   {
@@ -683,7 +693,7 @@
       "Il est proscrit et tué en 43 av. J.-C. après avoir prononcé quatorze discours (les Philippiques) contre Marc Antoine."
     ],
     "facts_en": [
-      "He served as consul in 63 BC and suppressed the Catilinarian conspiracy.",
+      "His speeches, letters and treatises survive in unusual bulk — over 900 letters alone — making him the best-documented figure of the Roman Republic.",
       "After Caesar's assassination, he led the Senate against Mark Antony, attacking him in the Philippicae speeches.",
       "He was proscribed and executed in late 43 BC, and his severed hands and head were displayed on the Rostra."
     ]
@@ -695,12 +705,12 @@
     "bio_en": "Gaius Julius Caesar Augustus Germanicus, also called Gaius and Caligula, was the third Roman emperor, ruling from AD 37 until his assassination in AD 41. He was the son of the Roman general Germanicus and Agrippina the Elder, Augustus' granddaughter, members of the first ruling family of the Roman Empire. He was born two years before Tiberius became emperor. Gaius accompanied his father, mother and siblings on campaign in Germania, at little more than four or five years old. He had been named after Gaius Julius Caesar, but his father's soldiers affectionately nicknamed him \"Caligula\".",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/MBALyon2018_-_Expo_Claude_-_Statue_Caligula_%28detail%29.jpg/330px-MBALyon2018_-_Expo_Claude_-_Statue_Caligula_%28detail%29.jpg",
     "facts_fr": [
-      "Troisième empereur romain, il règne de 37 à 41 après avoir succédé à son grand-oncle Tibère.",
+      "Après une première année de règne populaire, une grave maladie en 37 marque, selon les sources antiques, le basculement vers la tyrannie.",
       "Il est surnommé « Caligula » (petite sandalette) par les soldats de son père lors d'une campagne en Germanie.",
       "Il est tué en 41 par Cassius Chaerea, un tribun de sa garde personnelle."
     ],
     "facts_en": [
-      "He was the third Roman emperor, ruling from AD 37 until his assassination in AD 41.",
+      "After a popular first year, a severe illness in AD 37 marked, according to the ancient sources, his turn towards tyranny.",
       "He began construction of two aqueducts in Rome, the Aqua Claudia and the Anio Novus.",
       "He was assassinated in early 41 by officers of the Praetorian Guard, senators, and courtiers."
     ]
@@ -713,7 +723,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg/330px-Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg",
     "facts_fr": [
       "Selon le mythe, Dédale avait construit pour le roi Minos le labyrinthe de Crète ; soupçonné d'en avoir livré le secret, il y fut enfermé avec son fils.",
-      "Il meurt noyé en mer après avoir volé trop près du Soleil avec des ailes de cire et de plumes créées par son père."
+      "Avant l'envol, Dédale avait prévenu son fils de ne voler ni trop bas — l'eau alourdirait les plumes — ni trop haut, le soleil ferait fondre la cire.",
+      "Le mythe a donné l'expression « voler trop près du soleil » ; dans certaines versions du récit, Dédale et Icare s'échappent au contraire par bateau."
     ],
     "facts_en": [
       "According to the myth, Daedalus had built the labyrinth of Crete for King Minos; suspected of revealing its secret, he was imprisoned there with his son.",
@@ -724,7 +735,7 @@
   {
     "name": "Freud",
     "description": "Sigmund Freud, neurologue autrichien, fondateur de la psychanalyse (XIXe-XXe s.).",
-    "bio_fr": "\n\n\nSigmund Freud, le 6 mai 1856 à Freiberg, et mort le 23 septembre 1939 à Londres (Royaume-Uni), est un neurologue autrichien, fondateur de la psychanalyse et considéré comme l'une des plus grandes figures intellectuelles du XXe siècle.",
+    "bio_fr": "Sigmund Freud, né le 6 mai 1856 à Freiberg et mort le 23 septembre 1939 à Londres (Royaume-Uni), est un neurologue autrichien, fondateur de la psychanalyse et considéré comme l'une des plus grandes figures intellectuelles du XXe siècle.",
     "bio_en": "Sigmund Freud was an Austrian neurologist and the founder of psychoanalysis, a clinical method for evaluating and treating pathologies arising from conflicts in the psyche through dialogue between patient and psychoanalyst, and the distinctive theory of mind and human agency derived from it.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg/330px-Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg",
     "facts_fr": [
@@ -762,12 +773,14 @@
     "bio_en": "Alfred Louis Charles de Musset-Pathay was a French dramatist, poet, and novelist. Along with his poetry, he is known for writing the autobiographical novel La Confession d'un enfant du siècle.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Landelle%2C_Charles_-_Alfred_de_Musset_-_Mus%C3%A9e_d%27Orsay.png/330px-Landelle%2C_Charles_-_Alfred_de_Musset_-_Mus%C3%A9e_d%27Orsay.png",
     "facts_fr": [
-      "Alfred de Musset (1810-1857) est un écrivain romantique français.",
-      "Paul de Musset (1804-1880), frère d'Alfred, est également un écrivain français."
+      "Enfant prodige des lettres, il publie ses Contes d'Espagne et d'Italie à 19 ans et devient la coqueluche du cénacle romantique de Charles Nodier.",
+      "Sa liaison orageuse avec George Sand et leur voyage à Venise en 1833-1834 nourrissent La Confession d'un enfant du siècle et le cycle des Nuits.",
+      "Ses pièces — On ne badine pas avec l'amour, Lorenzaccio — furent d'abord écrites pour la lecture, « un spectacle dans un fauteuil », avant de devenir des classiques de la scène."
     ],
     "facts_en": [
-      "Alfred de Musset (11 December 1810 – 2 May 1857) was a French dramatist, poet, and novelist.",
-      "He is known for writing the autobiographical novel La Confession d'un enfant du siècle."
+      "A literary prodigy, he published Contes d'Espagne et d'Italie at 19 and became the darling of Charles Nodier's Romantic circle.",
+      "His stormy affair with George Sand and their 1833-34 journey to Venice fed both La Confession d'un enfant du siècle and the Nuits poems.",
+      "His plays — On ne badine pas avec l'amour, Lorenzaccio — were written to be read, « a show in an armchair », before becoming stage classics."
     ]
   },
   {
@@ -783,7 +796,8 @@
     ],
     "facts_en": [
       "He is the principal source of the theory of separation of powers, implemented in many constitutions worldwide.",
-      "His anonymously published The Spirit of Law (1748) influenced the Founding Fathers in drafting the U.S. Constitution."
+      "His anonymously published The Spirit of Law (1748) influenced the Founding Fathers in drafting the U.S. Constitution.",
+      "He spent more than a year in England observing its constitutional and parliamentary monarchy, which shaped The Spirit of the Laws."
     ]
   },
   {
@@ -794,11 +808,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Jules_Hardouin-Mansart%2C_Hyacinthe_Rigaud.jpg/330px-Jules_Hardouin-Mansart%2C_Hyacinthe_Rigaud.jpg",
     "facts_fr": [
       "À Versailles, il conçoit la célèbre galerie des Glaces, commencée en 1678, ainsi que les ailes du château et sa chapelle royale.",
-      "Il est le petit-neveu de l'architecte François Mansart."
+      "Il est le petit-neveu de l'architecte François Mansart.",
+      "Premier architecte du roi à 35 ans, il dirigea aussi la place Vendôme, la place des Victoires et le dôme des Invalides."
     ],
     "facts_en": [
       "At Versailles he designed the famous Hall of Mirrors, begun in 1678, along with the palace's wings and its Royal Chapel.",
-      "He designed the domed chapel of Les Invalides (1690) and the Grand Trianon of the Palace of Versailles."
+      "He was the great-nephew of the architect François Mansart, whose drawings and library he inherited.",
+      "First Architect to the King at 35, he also directed the Place Vendôme, the Place des Victoires and the dome of Les Invalides."
     ]
   },
   {
@@ -832,7 +848,7 @@
     "facts_en": [
       "His first Sherlock Holmes novel, A Study in Scarlet, was published in 1887.",
       "He killed off Holmes in \"The Final Problem\" (1893) but revived him due to public outcry in The Hound of the Baskervilles (1901).",
-      "He was knighted by King Edward VII in the 1902 Coronation Honours."
+      "He twice stood for Parliament and campaigned publicly to overturn two criminal convictions he judged unjust, those of George Edalji and Oscar Slater."
     ]
   },
   {
@@ -843,13 +859,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg/330px-F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg",
     "facts_fr": [
       "On rapporte que Nerval promenait un homard au bout d'un ruban bleu dans les jardins du Palais-Royal, jugeant l'animal paisible et connaissant « les secrets de la mer ».",
-      "Il est surtout connu pour Les Filles du feu (1854), recueil incluant Sylvie et les sonnets Les Chimères, et pour sa nouvelle Aurélia (1855).",
+      "Sa traduction du Faust de Goethe, saluée par l'auteur lui-même, fit découvrir aux Français les romantiques allemands.",
       "Sombrant dans la folie, il finit par se suicider lors d'une nuit d'hiver glaciale."
     ],
     "facts_en": [
       "Nerval was said to walk a pet lobster on a blue ribbon through the gardens of the Palais-Royal, deeming it a peaceful creature that knew \"the secrets of the sea.\"",
-      "He is best known for the collection Les Filles du feu, which included the novella Sylvie and the poem \"El Desdichado\".",
-      "His translations introduced French readers to German Romantic authors such as Klopstock, Schiller, Bürger and Goethe."
+      "His translation of Goethe's Faust, praised by Goethe himself, introduced French readers to the German Romantics.",
+      "Sinking into madness, he was found hanged in a squalid Paris alley on a freezing winter night in January 1855."
     ]
   },
   {
@@ -865,7 +881,8 @@
     ],
     "facts_en": [
       "His legacy is such that the philosopher Alfred North Whitehead summed up the entire European philosophical tradition as 'a series of footnotes to Plato.'",
-      "Written almost exclusively as dialogues, his work has survived complete some 2,400 years later—an almost unique case, whereas the writings of nearly all his contemporaries have been lost."
+      "Written almost exclusively as dialogues, his work has survived complete some 2,400 years later—an almost unique case, whereas the writings of nearly all his contemporaries have been lost.",
+      "He developed the theory of Forms and, in the Republic, the idea of the philosopher-king."
     ]
   },
   {
@@ -881,7 +898,7 @@
     ],
     "facts_en": [
       "The day after his death, his companion Jeanne Hébuterne, pregnant with their second child, took her own life at the age of 21.",
-      "He moved to Paris in 1906, where he met Pablo Picasso and Constantin Brâncuși, and exhibited stylised sculptures with the Cubists in 1912.",
+      "His only solo exhibition, in 1917, was shut down by the police on its opening day because of the nudes displayed in the window.",
       "He devoted himself mainly to sculpture from 1909 to 1914, then died of tubercular meningitis at age 35."
     ]
   },
@@ -894,7 +911,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Francis_Bacon.jpg/330px-Francis_Bacon.jpg",
     "facts_fr": [
       "Selon une anecdote célèbre, il mourut en 1626 d'une pneumonie contractée en bourrant un poulet de neige pour tester la conservation de la viande par le froid.",
-      "En 1620, il précise les règles de la méthode expérimentale dans le Novum organum, en faisant un pionnier de la pensée scientifique moderne.",
+      "Père de l'empirisme, il soutenait que la connaissance scientifique s'atteint par le raisonnement inductif et l'observation méthodique.",
       "Il fut membre de la Chambre des communes puis procureur général, avant de devenir chancelier à l'âge de 57 ans."
     ],
     "facts_en": [
@@ -916,7 +933,8 @@
     ],
     "facts_en": [
       "Born 23 August 1741, La Pérouse was a French naval officer and explorer who served in the Royal Navy during the Seven Years' War.",
-      "Louis XVI put him in charge of a round-the-world expedition to complete James Cook's discoveries in the Pacific; the expedition was lost at Vanikoro in 1788."
+      "Louis XVI put him in charge of a round-the-world expedition to complete James Cook's discoveries in the Pacific; the expedition was lost at Vanikoro in 1788.",
+      "The expedition's fate stayed unknown until 1826, when wreckage was identified on the reefs of Vanikoro, nearly forty years after the ships vanished."
     ]
   },
   {
@@ -961,7 +979,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Emperor_charles_v.png/330px-Emperor_charles_v.png",
     "facts_fr": [
       "Sans capitale fixe, il effectua une quarantaine de voyages à travers ses domaines et passa près d'un quart de son règne à parcourir ses États.",
-      "Il hérite des possessions des Habsbourg, des Pays-Bas, de la Castille, de l'Aragon et de l'empire colonial espagnol.",
+      "Il met Martin Luther au ban de l'Empire à la diète de Worms en 1521 et fait prisonnier François Ier à la bataille de Pavie en 1525.",
       "En 1555-1556, il abdique, cédant les Pays-Bas et l'Espagne à son fils Philippe et l'Autriche et le titre impérial à son frère Ferdinand."
     ],
     "facts_en": [
@@ -984,7 +1002,7 @@
     ],
     "facts_en": [
       "He was the son of Lazare Carnot, the mathematician and \"Organizer of Victory\" of the French Revolutionary armies.",
-      "In 1824 he published Reflections on the Motive Power of Fire, developing the first theory of the maximum efficiency of heat engines.",
+      "He died of cholera at 36; his belongings, including most of his unpublished notes, were burned as a sanitary precaution.",
       "His work was later used by Clausius to define entropy and by Thomson to build an absolute temperature scale; he is called the \"father of thermodynamics\"."
     ]
   },
@@ -1012,12 +1030,12 @@
     "bio_en": "Georges Benjamin Clemenceau was a French statesman who was prime minister of France from 1906 to 1909 and again from 1917 until 1920. A physician turned journalist, he played a central role in the politics of the Third Republic, particularly amid the end of the First World War. He was a key figure of the Independent Radicals, advocating for the separation of church and state, as well as the amnesty of the Communards exiled to New Caledonia.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Georges_Clemenceau_par_Nadar.jpg/330px-Georges_Clemenceau_par_Nadar.jpg",
     "facts_fr": [
-      "Président du Conseil français de 1906 à 1909 puis de 1917 à 1920, surnommé « le Tigre ».",
+      "Maire de Montmartre en 1870 puis député, il fit tomber tant de gouvernements sous la Troisième République qu'on le surnomma « le Tombeur de ministères ».",
       "Fondateur du journal La Justice, il défend le capitaine Dreyfus et publie L'Iniquité en 1899.",
       "Partisan d'une victoire totale sur l'Allemagne, il négocie la paix à la conférence de Paris et fait promulguer la loi des huit heures en 1919."
     ],
     "facts_en": [
-      "Prime minister of France from 1906 to 1909 and again from 1917 to 1920, a physician turned journalist.",
+      "Mayor of Montmartre in 1870 and later a deputy, he brought down so many governments under the Third Republic that he was called the wrecker of ministries.",
       "He demanded total victory over Germany and achieved reparations and the return of Alsace-Lorraine via the Treaty of Versailles.",
       "Nicknamed \"Père la Victoire\" (Father Victory) or \"Le Tigre\" (The Tiger)."
     ]
@@ -1029,29 +1047,29 @@
     "bio_en": "Anatole France was a French poet, journalist, and novelist with several best-sellers. Ironic and skeptical, he was considered in his day the ideal French man of letters. He was a member of the Académie Française, and won the 1921 Nobel Prize in Literature \"in recognition of his brilliant literary achievements, characterized as they are by a nobility of style, a profound human sympathy, grace, and a true Gallic temperament\".",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Anatole_France_young_years.jpg/330px-Anatole_France_young_years.jpg",
     "facts_fr": [
-      "Écrivain français né en 1844, considéré comme l'un des plus grands de la Troisième République et important critique littéraire.",
+      "Il légua l'intégralité de son prix Nobel aux victimes de la famine qui frappait alors la Russie.",
       "Il reçoit le prix Nobel de littérature en 1921 pour l'ensemble de son œuvre.",
       "Il s'engage pour de nombreuses causes sociales et politiques du début du XXe siècle."
     ],
     "facts_en": [
-      "French poet, journalist and novelist with several best-sellers, considered in his day the ideal French man of letters.",
-      "Member of the Académie Française, he won the 1921 Nobel Prize in Literature.",
+      "He gave the whole of his Nobel Prize money to the victims of the famine then raging in Russia.",
+      "The Catholic Church placed his complete works on the Index of Forbidden Books in 1922, the year after his Nobel.",
       "He is widely believed to be the model for Bergotte, Marcel's literary idol in Proust's In Search of Lost Time."
     ]
   },
   {
     "name": "Maurice de Saxe",
     "description": "Maréchal général de France, vainqueur de Fontenoy (XVIIIe s.).",
-    "bio_fr": "Plusieurs personnes sont connues sous le titre de Maurice de Saxe :Maurice de Saxe (1521-1553), prince de Saxe dès 1547 ;\nMaurice de Saxe (1696-1750), maréchal général français.",
+    "bio_fr": "Maurice de Saxe, né le 28 octobre 1696 à Goslar et mort le 30 novembre 1750 au château de Chambord, est un homme de guerre et théoricien militaire, fils illégitime d'Auguste II le Fort, électeur de Saxe et roi de Pologne. Passé au service de la France, il y fut fait maréchal de France en 1744, puis maréchal général des camps et armées du roi après ses victoires en Flandre.",
     "bio_en": "Maurice de Saxe was a prominent soldier, general and military theorist in the first half of the 18th century. The illegitimate son of Augustus II the Strong, he initially served in the Army of the Holy Roman Empire, then the Imperial Army, before entering French service.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Maurice_de_Saxe_%281696-1750%29.PNG/330px-Maurice_de_Saxe_%281696-1750%29.PNG",
     "facts_fr": [
       "Fils illégitime d'Auguste II le Fort, il devient général et théoricien militaire de premier plan au XVIIIe siècle.",
-      "Il est nommé maréchal de France puis promu maréchal général de France.",
+      "Il consigne ses idées militaires dans Mes Rêveries, écrit en treize nuits de fièvre en 1732 et publié après sa mort.",
       "Il est surtout connu pour ses victoires lors de la guerre de Succession d'Autriche (1740-1748), notamment à la bataille de Fontenoy."
     ],
     "facts_en": [
-      "Illegitimate son of Augustus II the Strong, he became a prominent soldier, general and military theorist in the first half of the 18th century.",
+      "He set down his military ideas in Mes Rêveries, written in thirteen feverish nights in 1732 and published after his death.",
       "He was appointed first Marshal of France, then promoted further to Marshal General of France.",
       "He is best known for his victories in the 1740-1748 War of the Austrian Succession, particularly the Battle of Fontenoy."
     ]
@@ -1063,11 +1081,12 @@
     "bio_en": "Georges Ernest Jean-Marie Boulanger, nicknamed Général Revanche, was a French Army officer and politician. An enormously popular public figure during the second decade of the Third Republic, he won multiple elections. At the zenith of his popularity in January 1889, he was feared to be powerful enough to establish himself as dictator. His base of support was the working-class districts of Paris and other cities, plus rural traditionalist Catholics and royalists. He advocated revanche, révision, and restauration.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Georges_Ernest_Boulanger_by_Atelier_Nadar.jpg/330px-Georges_Ernest_Boulanger_by_Atelier_Nadar.jpg",
     "facts_fr": [
-      "Officier général et homme politique français, il est ministre de la Guerre en 1886.",
-      "Surnommé « Général Revanche », il aurait pu marcher sur l'Élysée au soir de son triomphe électoral parisien de janvier 1889, mais renonça au coup de force ; deux ans plus tard, il se suicida sur la tombe de sa maîtresse à Ixelles."
+      "Ministre de la Guerre en 1886, il fit peindre les guérites en tricolore et améliora l'ordinaire du soldat, ce qui le rendit immensément populaire.",
+      "Surnommé « Général Revanche », il aurait pu marcher sur l'Élysée au soir de son triomphe électoral parisien de janvier 1889, mais renonça au coup de force ; deux ans plus tard, il se suicida sur la tombe de sa maîtresse à Ixelles.",
+      "Son mouvement s'effondra après les élections de septembre 1889, miné par la réforme électorale et par son exil volontaire."
     ],
     "facts_en": [
-      "Nicknamed \"Général Revanche\", he was an enormously popular French Army officer and politician who won multiple elections.",
+      "As War Minister in 1886 he had sentry boxes painted in the tricolour and improved the soldiers' rations, which made him immensely popular.",
       "Nicknamed 'Général Revanche,' he could have marched on the Élysée on the night of his Paris electoral triumph in January 1889 but shrank from the coup; two years later he shot himself on his mistress's grave in Ixelles.",
       "His movement collapsed after the September 1889 elections, undermined by changed electoral laws and his self-imposed exile."
     ]
@@ -1097,12 +1116,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.tif_%28cropped%29.jpg/330px-ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.tif_%28cropped%29.jpg",
     "facts_fr": [
       "Il remporta dix fois le grand prix de l'Académie des sciences de Paris ; l'une de ces victoires, partagée avec son père Jean, rendit ce dernier si jaloux qu'il le chassa de la maison.",
-      "Il est le fils de Jean Bernoulli, le neveu de Jacques Bernoulli et le frère de Nicolas et de Jean Bernoulli."
+      "Il est le fils de Jean Bernoulli, le neveu de Jacques Bernoulli et le frère de Nicolas et de Jean Bernoulli.",
+      "Son principe, publié dans l'Hydrodynamica en 1738, explique la portance de l'aile d'avion et le fonctionnement du carburateur."
     ],
     "facts_en": [
       "He won the grand prize of the Paris Academy of Sciences ten times; one such win, shared with his father Johann, made the latter so jealous that he threw Daniel out of the house.",
-      "Remembered for applying mathematics to mechanics, especially fluid mechanics, and for pioneering work in probability and statistics.",
-      "His name is commemorated in Bernoulli's principle, which underlies the operation of the carburetor and the aeroplane wing."
+      "In 1760 he applied probability to medicine, modelling the benefit of smallpox inoculation — one of the first uses of mathematics in epidemiology.",
+      "His principle, published in Hydrodynamica in 1738, explains the lift of an aeroplane wing and the working of the carburettor."
     ]
   },
   {
@@ -1134,7 +1154,7 @@
       "Son influence est considérable sur Kant, la philosophie analytique et la phénoménologie ; il est vu comme un précurseur des sciences cognitives."
     ],
     "facts_en": [
-      "Scottish philosopher known for empiricism and philosophical scepticism, he wrote A Treatise of Human Nature (1739-40).",
+      "A Treatise of Human Nature (1739-40) 'fell dead-born from the press' in his own words, and found its audience only long after his death.",
       "He argued that inductive reasoning and belief in causality cannot be justified empirically, and first clearly expounded the is-ought problem.",
       "Chiefly known in his lifetime as a historian and essayist, his History of England became a bestseller; Kant credited him with awakening him from his \"dogmatic slumbers\"."
     ]
@@ -1146,12 +1166,12 @@
     "bio_en": "Maximilien François Marie Isidore de Robespierre was a French lawyer and statesman, widely recognised as one of the most influential figures of the French Revolution. Robespierre fervently campaigned for the voting rights of all men and their unimpeded admission to the National Guard. Additionally, he advocated the right to petition, the right to bear arms in self-defence, and the abolition of the Atlantic slave trade.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Robespierre.jpg/330px-Robespierre.jpg",
     "facts_fr": [
-      "Avocat et homme politique, il est l'une des principales figures de la Révolution française et défend l'abolition de la peine de mort et de l'esclavage.",
+      "Surnommé « l'Incorruptible » pour son intégrité personnelle, il vivait modestement chez le menuisier Duplay, rue Saint-Honoré.",
       "Membre du Comité de salut public à partir de juillet 1793, il participe à l'instauration du gouvernement révolutionnaire et de la Terreur.",
       "Attaqué et isolé à la Convention le 8 thermidor, il est arrêté puis guillotiné le 10 thermidor (28 juillet 1794) avec vingt-et-un de ses partisans."
     ],
     "facts_en": [
-      "A French lawyer and statesman, he campaigned for voting rights for all men and advocated the abolition of the Atlantic slave trade.",
+      "Nicknamed 'the Incorruptible' for his personal integrity, he lived modestly in the home of the carpenter Duplay on the rue Saint-Honoré.",
       "Elected to the National Convention in September 1792, he joined the Committee of Public Safety in July 1793 and argued for the harsh measures of the Reign of Terror.",
       "Accusations of excesses came to a head on 9 Thermidor; he was arrested and, with around 90 others, executed without trial."
     ]
@@ -1168,7 +1188,7 @@
       "Poète et dramaturge (Œdipe, Zaïre, La Henriade), il est aussi l'auteur de contes philosophiques comme Candide, Zadig et Micromégas."
     ],
     "facts_en": [
-      "French Enlightenment writer and philosopher famous for his wit and his criticism of Christianity and of slavery.",
+      "Twice imprisoned in the Bastille, he spent much of his life away from Paris — in England, at Frederick II's court in Prussia, and finally at Ferney near the Swiss border.",
       "A prolific writer, he produced works in almost every literary form and wrote more than 20,000 letters and 2,000 books and pamphlets.",
       "His best-known work, Candide, ridicules many events, thinkers and philosophies of his time, notably Leibniz's belief in the \"best of all possible worlds\"."
     ]
@@ -1176,12 +1196,13 @@
   {
     "name": "Rousseau",
     "description": "Jean-Jacques Rousseau, philosophe et écrivain des Lumières (XVIIIe s.).",
-    "bio_fr": "Le nom Rousseau est un surnom donné à une personne aux cheveux roux. En ancien français, rossel est un dérivé de roux, rougeâtre. Ce nom désigne le plus souvent Jean-Jacques Rousseau (1712-1778), philosophe francophone originaire de Genève.",
+    "bio_fr": "Jean-Jacques Rousseau, né le 28 juin 1712 à Genève et mort le 2 juillet 1778 à Ermenonville, est un philosophe, écrivain et compositeur genevois de langue française. Sa philosophie politique a marqué les Lumières dans toute l'Europe, la Révolution française, ainsi que la pensée politique, économique et éducative moderne.",
     "bio_en": "Jean-Jacques Rousseau was a Genevan philosopher, philosophe, writer, and composer. His political philosophy influenced the progress of the Age of Enlightenment throughout Europe, as well as aspects of the French Revolution and the development of modern political, economic, and educational thought.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_adjusted.jpg/330px-Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_adjusted.jpg",
     "facts_fr": [
       "Son « Du contrat social » (1762) s'ouvre sur la formule célèbre : « L'homme est né libre, et partout il est dans les fers. »",
-      "Ses « Confessions », publiées après sa mort, inaugurent l'autobiographie moderne par leur franchise sur sa vie intime."
+      "Ses « Confessions », publiées après sa mort, inaugurent l'autobiographie moderne par leur franchise sur sa vie intime.",
+      "Son roman Julie ou la Nouvelle Héloïse (1761) et son traité Émile ou De l'éducation (1762) façonnèrent le préromantisme et la pensée éducative."
     ],
     "facts_en": [
       "His The Social Contract (1762) opens with the famous line: \"Man is born free, and everywhere he is in chains.\"",
@@ -1203,23 +1224,25 @@
     "facts_en": [
       "Married to Marguerite de Valois days before the St. Bartholomew's Day massacre of August 1572, the young king of Navarre escaped death only by temporarily abjuring Protestantism.",
       "After years of conflict with the Catholic League, he converted to Catholicism and issued the Edict of Nantes in 1598, ending the French Wars of Religion.",
-      "He was assassinated in Paris in 1610 by a Catholic zealot and was succeeded by his son Louis XIII."
+      "The 'chicken in every pot' he supposedly wished for each peasant on Sundays became the most enduring image of his reign, though the phrase is a later legend."
     ]
   },
   {
     "name": "Scaramouche",
     "description": "Personnage type de la commedia dell'arte (personnage de fiction, non historique).",
     "wikidata_id": "Q1988917",
-    "bio_fr": null,
+    "bio_fr": "Scaramouche est un personnage type de la commedia dell'arte, apparu au XVIe siècle. Mêlant les traits du Zanni, le valet, et du Capitano, le soldat fanfaron, il est habituellement vêtu de noir à l'espagnole et parodie un « don » : hâbleur et poltron, il se fait régulièrement rosser par Arlequin.",
     "bio_en": "Scaramouche or Scaramouch is a stock clown character of the 16th-century commedia dell'arte. The role combined characteristics of the Zanni (servant) and il Capitano, with some assortment of villainous traits. Usually attired in black Spanish dress and burlesquing a don, he was often beaten by Harlequin for his boasting and cowardice.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Pietro_Paolini_-_Portrait_of_Tiberio_Fiorilli_as_Scaramouche.jpg/330px-Pietro_Paolini_-_Portrait_of_Tiberio_Fiorilli_as_Scaramouche.jpg",
     "facts_fr": [
-      "Scaramouche est un personnage type de clown de la commedia dell'arte du XVIe siècle, mêlant les traits du Zanni (serviteur) et du Capitano.",
-      "Habituellement vêtu de noir à l'espagnole en parodie d'un « don », il était souvent battu par Arlequin pour sa vantardise et sa lâcheté."
+      "Le rôle doit sa célébrité au comédien napolitain Tiberio Fiorilli (1608-1694), qui le joua à Paris pendant plus de trente ans.",
+      "Fiorilli abandonna le masque traditionnel de la commedia dell'arte au profit du seul jeu du visage, poudré de blanc.",
+      "Son nom vient de l'italien scaramuccia, « escarmouche » ; Queen l'a fait entrer dans la culture pop avec Bohemian Rhapsody en 1975."
     ],
     "facts_en": [
-      "Scaramouche is a stock clown character of the 16th-century commedia dell'arte, combining traits of the Zanni (servant) and il Capitano.",
-      "Usually attired in black Spanish dress and burlesquing a don, he was often beaten by Harlequin for his boasting and cowardice."
+      "The role owes its fame to the Neapolitan actor Tiberio Fiorilli (1608-1694), who played it in Paris for more than thirty years.",
+      "Fiorilli dropped the traditional commedia dell'arte mask in favour of pure facial acting, his face powdered white.",
+      "The name comes from the Italian scaramuccia, 'skirmish'; Queen carried it into pop culture with Bohemian Rhapsody in 1975."
     ]
   },
   {
@@ -1227,7 +1250,7 @@
     "description": "Lucrèce (Titus Lucretius Carus), poète et philosophe latin, auteur du De rerum natura (Ier s. av. J.-C.).",
     "wikidata_id": "Q189441",
     "bio_fr": "Lucrèce est un poète et philosophe latin du Ier siècle av. J.-C., auteur d'un seul ouvrage en six parties, le De rerum natura, un long poème en style épique qui décrit le monde selon les principes d'Épicure.",
-    "bio_en": "Titus Lucretius Carus was a Roman poet and philosopher. His only known work is the philosophical poem De rerum natura, a didactic work about the tenets and philosophy of Epicureanism, which usually is translated into English as On the Nature of Things—and somewhat less often as On the Nature of the Universe. \nVery little is known about Lucretius's life; the only certainty is that he was either a friend or client of Gaius Memmius, to whom the poem was addressed and dedicated. De rerum natura was a considerable influence on the Augustan poets, particularly Virgil and Horace. The work was almost lost during the Middle Ages, but was rediscovered in 1417 in a monastery in Germany by Poggio Bracciolini. It played an important role both in the development of atomism and the efforts of various figures of the Enlightenment era to construct a new Christian humanism.",
+    "bio_en": "Titus Lucretius Carus was a Roman poet and philosopher. His only known work is the philosophical poem De rerum natura, a didactic work about the tenets and philosophy of Epicureanism, which usually is translated into English as On the Nature of Things—and somewhat less often as On the Nature of the Universe. Very little is known about Lucretius's life; the only certainty is that he was either a friend or client of Gaius Memmius, to whom the poem was addressed and dedicated. De rerum natura was a considerable influence on the Augustan poets, particularly Virgil and Horace. The work was almost lost during the Middle Ages, but was rediscovered in 1417 in a monastery in Germany by Poggio Bracciolini. It played an important role both in the development of atomism and the efforts of various figures of the Enlightenment era to construct a new Christian humanism.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Lucretius1.png/330px-Lucretius1.png",
     "facts_fr": [
       "Selon une tradition tardive rapportée par saint Jérôme, Lucrèce aurait sombré dans la folie après avoir bu un philtre d'amour et se serait donné la mort — récit invérifiable mais devenu légendaire.",
@@ -1236,8 +1259,8 @@
     ],
     "facts_en": [
       "According to a late tradition reported by Saint Jerome, Lucretius was driven mad by a love potion and took his own life—an unverifiable but famous legend.",
-      "Little is known of his life beyond his connection to Gaius Memmius, to whom the poem was dedicated.",
-      "His work influenced Augustan poets like Virgil and Horace, was rediscovered in 1417 by Poggio Bracciolini, and shaped later atomism."
+      "The poem argues that the universe is made of atoms falling through void and that the soul dies with the body, so death is nothing to fear.",
+      "His work is the main surviving source on Epicureanism, since Epicurus's own writings have almost entirely disappeared."
     ]
   },
   {
@@ -1270,8 +1293,8 @@
     ],
     "facts_en": [
       "On 31 July 1914, on the eve of the war, he was shot dead at the Café du Croissant in Paris by the nationalist Raoul Villain; his remains were moved to the Panthéon in 1924.",
-      "His party merged with Jules Guesde's revolutionary party in 1905 to form the French Section of the Workers' International (SFIO).",
-      "An antimilitarist, he was assassinated in 1914 at the outbreak of World War I but remains a major figure of the French Left."
+      "He backed the Carmaux miners' strike, defended Captain Dreyfus, founded the French Socialist Party in 1902 and the newspaper L'Humanité.",
+      "He helped create the SFIO in 1905 and fought until his death to prevent the outbreak of the First World War."
     ]
   },
   {
@@ -1618,7 +1641,7 @@
     "name": "Périclès",
     "description": "Périclès, homme d'État athénien du Ve siècle av. J.-C., artisan de l'apogée d'Athènes et stratège au début de la guerre du Péloponnèse.",
     "bio_fr": "Périclès, né vers 495 av. J.-C. et mort en 429 av. J.-C., est un stratège, orateur et homme d'État athénien.",
-    "bio_en": "Pericles was a Greek statesman \nand general during the Golden Age of Athens. He was prominent and influential in Ancient Athenian politics, particularly between the Greco-Persian Wars and the Peloponnesian War, and was acclaimed by Thucydides, a contemporary historian, as \"the first citizen of Athens\". Pericles turned the Delian League into an Athenian empire and led his countrymen during the first two years of the Peloponnesian War. The period during which he led Athens as its preeminent orator and statesman, roughly from 461 to 429 BC, is sometimes known as the \"Age of Pericles\", but the period thus denoted can include times as early as the Persian Wars or as late as the following century.",
+    "bio_en": "Pericles was a Greek statesman and general during the Golden Age of Athens. He was prominent and influential in Ancient Athenian politics, particularly between the Greco-Persian Wars and the Peloponnesian War, and was acclaimed by Thucydides, a contemporary historian, as \"the first citizen of Athens\". Pericles turned the Delian League into an Athenian empire and led his countrymen during the first two years of the Peloponnesian War. The period during which he led Athens as its preeminent orator and statesman, roughly from 461 to 429 BC, is sometimes known as the \"Age of Pericles\", but the period thus denoted can include times as early as the Persian Wars or as late as the following century.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Pericles_Pio-Clementino_Inv269.jpg/330px-Pericles_Pio-Clementino_Inv269.jpg",
     "facts_fr": [
       "On lui doit le grand chantier de l'Acropole : c'est sous son impulsion que fut édifié le Parthénon, encore debout aujourd'hui.",
@@ -1685,7 +1708,7 @@
   {
     "name": "Nicias",
     "description": "Nicias, général et homme politique athénien modéré, négociateur de la paix de 421 et chef malheureux de l'expédition de Sicile.",
-    "bio_fr": "Nicias est un homme politique et général athénien durant la guerre du Péloponnèse. Il œuvre pendant le conflit afin de mettre un terme aux combats et d'établir une paix entre les belligérants, puis en tant que général après la reprise des hostilités. Après la mort de Périclès, il devient l'un des plus importants meneurs d'Athènes, à la suite de la mort de Cléon, et est élu stratège à plusieurs reprises. Modéré, il s'oppose à l’impérialisme agressif des démocrates athéniens, et préside aux négociations avec Sparte après la bataille de Pylos. La paix déclarée en 421 av. J.-C. est nommée paix de Nicias en référence à son action, et met fin à la première partie de la guerre du Péloponnèse.\nAprès la reprise des hostilités, il commande l'armée d'Athènes en Sicile et est défait par les troupes de Syracuse commandées par le général lacédémonien Gylippos.",
+    "bio_fr": "Nicias est un homme politique et général athénien durant la guerre du Péloponnèse. Il œuvre pendant le conflit afin de mettre un terme aux combats et d'établir une paix entre les belligérants, puis en tant que général après la reprise des hostilités. Après la mort de Périclès, il devient l'un des plus importants meneurs d'Athènes, à la suite de la mort de Cléon, et est élu stratège à plusieurs reprises. Modéré, il s'oppose à l’impérialisme agressif des démocrates athéniens, et préside aux négociations avec Sparte après la bataille de Pylos. La paix déclarée en 421 av. J.-C. est nommée paix de Nicias en référence à son action, et met fin à la première partie de la guerre du Péloponnèse. Après la reprise des hostilités, il commande l'armée d'Athènes en Sicile et est défait par les troupes de Syracuse commandées par le général lacédémonien Gylippos.",
     "bio_en": "Nicias was an Athenian politician and general, who was prominent during the Peloponnesian War. A member of the Athenian aristocracy, he inherited a large fortune from his father, and had investments in the silver mines around Laurion, in south-east Attica.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Nicias%2C_p_105_%28World%27s_Famous_Orations_Vol_1%29.jpg/330px-Nicias%2C_p_105_%28World%27s_Famous_Orations_Vol_1%29.jpg",
     "facts_fr": [
@@ -2086,7 +2109,7 @@
     ],
     "facts_en": [
       "A few centuries after his death he was deified as Guandi, the \"Holy Emperor Guan\"; he is still worshipped today by Taoists and Buddhists alike as a god of war but also of businessmen and police officers.",
-      "While temporarily serving Cao Cao, he repaid his kindness by slaying Yan Liang, a rival general, at the Battle of Boma, before setting off again to rejoin Liu Bei.",
+      "Tradition holds that, wounded by an arrow, he calmly played a board game while a surgeon scraped the poison from the bone of his arm.",
       "Tradition depicts him as a red-faced giant, a symbol of loyalty and righteousness, with a very long beard and wielding a guandao that legend claims weighed more than 40 kg."
     ]
   },
@@ -2221,8 +2244,8 @@
       "Sa célèbre théorie des traits distinctifs influença de façon décisive la pensée du jeune Noam Chomsky, qui domina ensuite la linguistique théorique de la seconde moitié du XXe siècle."
     ],
     "facts_en": [
-      "With Nikolai Trubetzkoy he developed revolutionary techniques for analyzing sound systems, in effect founding the modern discipline of phonology.",
-      "Drawing on C. S. Peirce's semiotics as well as communication theory and cybernetics, he proposed methods for studying poetry, music, and the visual arts, including cinema.",
+      "He fled Prague hours ahead of the Nazi occupation in 1939, escaping through Denmark, Norway and Sweden before reaching New York in 1941.",
+      "His model of the six functions of language — referential, emotive, conative, phatic, metalingual and poetic — became a standard of communication theory.",
       "His celebrated theory of distinctive features decisively shaped the early thinking of Noam Chomsky, who went on to dominate theoretical linguistics in the later 20th century."
     ]
   },
@@ -2240,7 +2263,7 @@
     "facts_en": [
       "He is best known for the Greimas square (le carré sémiotique), which models oppositions of meaning, along with concepts such as isotopy and the actantial model.",
       "As a director of studies at the École des hautes études en sciences sociales, he founded structural semantics and led the Paris school of semiotics.",
-      "Beyond theory, he devoted research to Lithuanian mythology and Proto-Indo-European religion."
+      "His Sémantique structurale (1966) laid the foundations of the Paris school of semiotics and remains his most influential book."
     ]
   },
   {
@@ -2267,14 +2290,14 @@
     "bio_en": "Adityawarman was a king of Malayapura Suvarnabhumi, and is the successor of the Mauli dynasty based in central Sumatra. He was the cousin of Jayanegara, king of Majapahit from 1309 to 1328, and the grandson of Tribhuwanaraja, king of Melayu Kingdom. Adityawarman was awarded the Senior Minister of Majapahit (wreddamantri) and used this authority to launch Majapahit military expansion plans and conquer east coast region in Sumatra. Adityawarman then founded the royal dynasty of Minangkabau in Pagaruyung and presided over the central Sumatra region to take control of the gold trade between 1347 and 1375.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Adityawarman_batu_tulis.jpg/330px-Adityawarman_batu_tulis.jpg",
     "facts_fr": [
-      "Son nom nous est connu par près d'une vingtaine de prasasti (inscriptions sur pierre), aujourd'hui rassemblées dans un musée à Pagaruyung.",
+      "Il fit ériger à Bukit Gombak une statue colossale le représentant en Bhairava, forme terrifiante de Shiva, haute de plus de quatre mètres.",
       "Cousin de Jayanegara, roi de Majapahit, et petit-fils de Tribhuwanaraja du royaume de Melayu, il reçut le titre de grand ministre (wreddamantri) de Majapahit.",
       "Après avoir fondé la dynastie royale de Minangkabau à Pagaruyung, il présida le centre de Sumatra pour prendre le contrôle du commerce de l'or entre 1347 et 1375."
     ],
     "facts_en": [
       "His name is known to us through nearly twenty prasasti (stone inscriptions), now gathered in a museum at Pagaruyung.",
-      "A cousin of Jayanegara, king of Majapahit, and grandson of Tribhuwanaraja of the Melayu Kingdom, he was awarded the title of Senior Minister (wreddamantri) of Majapahit.",
-      "After founding the royal dynasty of Minangkabau at Pagaruyung, he presided over central Sumatra to control the gold trade between 1347 and 1375."
+      "He had a colossal statue raised at Bukit Gombak showing him as Bhairava, a terrifying form of Shiva, standing over four metres tall.",
+      "His name means 'shield of the sun' in Sanskrit, from aditya (sun) and varman (shield)."
     ]
   },
   {
@@ -2355,7 +2378,7 @@
     "facts_fr": [
       "Fille de l'impératrice Marie-Thérèse, mariée à 14 ans au futur Louis XVI pour renforcer l'alliance franco-autrichienne, elle devient reine de France à 18 ans.",
       "Surnommée « l'Autrichienne » ou « Madame Déficit », elle est injustement compromise dans l'affaire du collier, escroquerie rocambolesque dont elle n'était nullement complice.",
-      "Après l'échec de la fuite à Varennes en 1791 et la chute de la monarchie, elle est guillotinée le 16 octobre 1793 — dernière reine de l'Ancien Régime."
+      "Elle joua un rôle politique réel dans les derniers mois de la monarchie, correspondant en secret avec Vienne par lettres chiffrées pour tenter de sauver le trône."
     ],
     "facts_en": [
       "Daughter of Empress Maria Theresa, she was married at 14 to the future Louis XVI to strengthen the Franco-Austrian alliance, becoming queen of France at 18.",
@@ -2405,12 +2428,12 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Louis_XIV_of_France.jpg/330px-Louis_XIV_of_France.jpg",
     "facts_fr": [
       "Roi avant son cinquième anniversaire, marqué par la Fronde durant sa minorité, il gouverne personnellement à partir de la mort de Mazarin en 1661.",
-      "Son règne de 72 ans et 110 jours reste le plus long de tout monarque souverain de l'histoire.",
+      "À quatorze ans, il danse le rôle du Soleil levant dans le Ballet royal de la nuit (1653) — l'image qui lui vaudra son surnom.",
       "Il pacifie la noblesse en l'installant à Versailles et révoque l'édit de Nantes, poussant les protestants à l'exil ou à la conversion par les dragonnades."
     ],
     "facts_en": [
       "King before his fifth birthday and scarred by the Fronde rebellions during his minority, he began his personal rule at Mazarin's death in 1661.",
-      "His reign of 72 years and 110 days remains the longest of any sovereign monarch in history.",
+      "At fourteen he danced the role of the rising Sun in the Ballet royal de la nuit (1653), the image that gave him his enduring nickname.",
       "He pacified the aristocracy by compelling it to reside at Versailles, and his revocation of the Edict of Nantes drove the Huguenots to convert or emigrate."
     ]
   },
@@ -2494,7 +2517,7 @@
       "Vaincue avec Antoine à Actium (31 av. J.-C.), sa mort l'année suivante fait de l'Égypte une province romaine — fin de l'Égypte pharaonique et de l'époque hellénistique."
     ],
     "facts_en": [
-      "A descendant of Alexander's general Ptolemy, she was the only Ptolemaic ruler known to have learned the Egyptian language.",
+      "She co-ruled with her brothers Ptolemy XIII and XIV, then with Caesarion, whom she presented as Caesar's son.",
       "Companion of Julius Caesar and then Mark Antony, she had children with both men and shaped Rome's civil wars.",
       "Defeated with Antony at Actium (31 BC), her death the following year turned Egypt into a Roman province — the end of pharaonic Egypt and the Hellenistic age."
     ]
@@ -2597,7 +2620,7 @@
     ],
     "facts_en": [
       "His sealed-flask experiments disproved the doctrine of spontaneous generation, earning him the French Academy of Sciences' Alhumbert Prize in 1862.",
-      "A father of the germ theory of disease, his work laid the foundations of modern hygiene and public health — pasteurization is named after him.",
+      "In July 1885 he treated nine-year-old Joseph Meister, bitten by a rabid dog — the first human use of his rabies vaccine.",
       "His vaccines against rabies and anthrax are credited with saving millions of lives; the rabies vaccine made him world-famous."
     ]
   },
@@ -2666,7 +2689,7 @@
     "facts_en": [
       "After his Illustre Théâtre failed in Paris, he toured the provinces for twelve years before becoming the favourite actor-playwright of the young Louis XIV.",
       "A master of every comic register — verbal, physical, situational — he played the lead in most of his own plays, and died suddenly at 51.",
-      "French is often called 'the language of Molière'; his plays are still performed at the Comédie-Française more than any other playwright's."
+      "He collapsed on stage while playing the title role of Le Malade imaginaire and died a few hours later, on 17 February 1673."
     ]
   },
   {
@@ -2683,7 +2706,7 @@
     "facts_en": [
       "His twenty-novel cycle Les Rougon-Macquart portrays Second Empire society — the mines in Germinal, department stores in Au Bonheur des Dames, the demi-monde in Nana.",
       "His open letter 'J'Accuse...!' (1898) in defence of the falsely convicted captain Alfred Dreyfus proved decisive in the officer's exoneration.",
-      "He was nominated for the very first and second Nobel Prizes in Literature, in 1901 and 1902."
+      "Convicted of libel after J'Accuse…! he fled to England for a year; his death by carbon-monoxide poisoning in 1902 is still suspected by some of being murder."
     ]
   },
   {

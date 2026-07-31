@@ -4,7 +4,7 @@ from datetime import date
 import json
 import tempfile
 import os
-from src.database import Database
+from src.database import Database, FIGURES_PATH
 from src.historical_figure import HistoricalFigure
 
 class TestDatabase(unittest.TestCase):
@@ -37,6 +37,42 @@ class TestDatabase(unittest.TestCase):
         figures = self.database.get_all_figures()
         self.assertEqual(len(figures), 164)
         self.assertTrue(all(f.name and f.description for f in figures))
+
+    def test_raw_json_prose_is_free_of_line_breaks(self):
+        """Bios and facts land verbatim in the Telegram caption, so a newline
+        renders as a broken card (the bug seen on Freud and Périclès). Database
+        ._clean() scrubs this at load time; this guards the source data itself,
+        which is also what the enrichment script writes."""
+        with open(FIGURES_PATH, encoding="utf-8") as f:
+            raw = json.load(f)
+        for item in raw:
+            name = item["name"]
+            for key in ("description", "bio_fr", "bio_en"):
+                text = item.get(key)
+                if text:
+                    self.assertNotIn("\n", text, f"{name}.{key}")
+                    self.assertEqual(text, text.strip(), f"{name}.{key}")
+            for key in ("facts_fr", "facts_en"):
+                for i, fact in enumerate(item.get(key) or []):
+                    self.assertNotIn("\n", fact, f"{name}.{key}[{i}]")
+                    self.assertEqual(fact, fact.strip(), f"{name}.{key}[{i}]")
+
+    def test_every_figure_has_three_facts_in_both_languages(self):
+        for figure in self.database.get_all_figures():
+            self.assertEqual(len(figure.facts_fr), 3, f"{figure.name}.facts_fr")
+            self.assertEqual(len(figure.facts_en), 3, f"{figure.name}.facts_en")
+
+    def test_every_figure_has_both_bios(self):
+        for figure in self.database.get_all_figures():
+            self.assertTrue(figure.bio_fr, f"{figure.name}.bio_fr")
+            self.assertTrue(figure.bio_en, f"{figure.name}.bio_en")
+
+    def test_clean_collapses_whitespace_but_keeps_non_breaking_spaces(self):
+        self.assertEqual(Database._clean("\n\n\nSigmund Freud, né le 6 mai"),
+                         "Sigmund Freud, né le 6 mai")
+        self.assertEqual(Database._clean("a Greek statesman \nand general"),
+                         "a Greek statesman and general")
+        self.assertEqual(Database._clean("Ier\xa0siècle\xa0av. J.-C."), "Ier\xa0siècle\xa0av. J.-C.")
 
     def test_loads_enriched_and_minimal_entries(self):
         data = [
