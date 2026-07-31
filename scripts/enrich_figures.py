@@ -180,13 +180,17 @@ def fetch_intro_strict(lang, title):
     url = f"https://{lang}.wikipedia.org/w/api.php?{params}"
     try:
         pages = _get_json(url)["query"]["pages"]
+        # L'accès au payload reste DANS le try : une réponse valide mais vide
+        # ({"query": {"pages": {}}}) ferait lever StopIteration à next(), que le
+        # wrapper indulgent ne rattraperait pas — l'exception traverserait
+        # jusqu'à main() et interromprait le parcours du roster.
+        return next(iter(pages.values())).get("extract", "")
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return ""
         raise FetchError(f"intro {lang}/{title}: HTTP {e.code}") from e
     except Exception as e:  # noqa: BLE001
         raise FetchError(f"intro {lang}/{title}: {e}") from e
-    return next(iter(pages.values())).get("extract", "")
 
 
 def fetch_summary(lang, title):

@@ -4,7 +4,7 @@ from unittest.mock import patch
 import pytest
 
 from scripts.enrich_figures import (
-    FetchError, fetch_summary, fetch_summary_strict, resolve_titles,
+    FetchError, fetch_intro, fetch_intro_strict, fetch_summary, fetch_summary_strict, resolve_titles,
 )
 
 
@@ -53,3 +53,16 @@ def test_lenient_wrapper_still_swallows():
     err = urllib.error.HTTPError("url", 429, "Too Many Requests", {}, None)
     with patch("scripts.enrich_figures._get_json", side_effect=err):
         assert fetch_summary("fr", "William Shakespeare") == ("", None)
+
+
+def test_intro_strict_raises_on_empty_pages_payload():
+    """Réponse valide mais vide : doit devenir un FetchError, jamais une
+    exception nue qui traverserait jusqu'à main()."""
+    with patch("scripts.enrich_figures._get_json", return_value={"query": {"pages": {}}}):
+        with pytest.raises(FetchError):
+            fetch_intro_strict("fr", "X")
+
+
+def test_lenient_intro_swallows_empty_pages_payload():
+    with patch("scripts.enrich_figures._get_json", return_value={"query": {"pages": {}}}):
+        assert fetch_intro("fr", "X") == ""
