@@ -8,12 +8,20 @@ intros dumped to scripts/_intros.json, then merged into figures.json.
 """
 import json
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
 FIGURES_PATH = "src/figures.json"
 INTROS_PATH = "scripts/_intros.json"
 USER_AGENT = "history-whisper-bot/1.0 (+https://github.com/jordantete/history_whisper_bot)"
+
+
+class FetchError(Exception):
+    """Wikipédia n'a pas pu répondre (throttling, timeout, 5xx). Ne signifie
+    JAMAIS que l'article est absent — confondre les deux a déjà produit 40 faux
+    rejets, dont Shakespeare et Churchill."""
+
 
 # name -> {"fr": title, "en": title, "wikidata_id": id} for ambiguous/legendary names.
 OVERRIDES = {
@@ -138,24 +146,33 @@ def _get_json(url):
         return json.load(r)
 
 
-def fetch_summary(lang, title):
-    """Return (extract, image_url) from the REST summary endpoint, or ('', None)."""
+def fetch_summary_strict(lang, title):
+    """(extract, image_url) depuis l'endpoint REST summary.
+
+    Un 404 est une réponse valide : l'article n'existe pas, on renvoie
+    ("", None). Toute autre défaillance lève FetchError — l'appelant doit
+    pouvoir réessayer plutôt que conclure à une absence."""
     url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{urllib.parse.quote(title)}"
     try:
         d = _get_json(url)
-    except Exception as e:  # noqa: BLE001 — build tool, log and continue
-        print(f"  ! summary {lang}/{title}: {e}")
-        return "", None
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return "", None
+        raise FetchError(f"summary {lang}/{title}: HTTP {e.code}") from e
+    except Exception as e:  # noqa: BLE001 — réseau, timeout, JSON illisible
+        raise FetchError(f"summary {lang}/{title}: {e}") from e
     extract = d.get("extract", "")
-    # Use the Wikimedia-generated thumbnail URL as-is (already a valid, small, served
-    # size — rewriting its width yields 400s). Fall back to the original only when no
-    # thumbnail exists; the runtime send_photo→send_message fallback covers oversize.
+    # On garde l'URL de vignette générée par Wikimedia telle quelle (taille déjà
+    # valide et servie — en réécrire la largeur produit des 400). Repli sur
+    # l'original faute de vignette ; le fallback send_photo→send_message du
+    # runtime couvre les images trop lourdes.
     image = (d.get("thumbnail") or d.get("originalimage") or {}).get("source")
     return extract, image
 
 
-def fetch_intro(lang, title):
-    """Return the full plain-text intro (for grounding faits), or ''."""
+def fetch_intro_strict(lang, title):
+    """Intro en texte brut (pour grounder les faits). Mêmes règles d'erreur que
+    fetch_summary_strict."""
     params = urllib.parse.urlencode({
         "action": "query", "format": "json", "prop": "extracts",
         "exintro": "1", "explaintext": "1", "redirects": "1", "titles": title,
@@ -163,9 +180,31 @@ def fetch_intro(lang, title):
     url = f"https://{lang}.wikipedia.org/w/api.php?{params}"
     try:
         pages = _get_json(url)["query"]["pages"]
-        return next(iter(pages.values())).get("extract", "")
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return ""
+        raise FetchError(f"intro {lang}/{title}: HTTP {e.code}") from e
     except Exception as e:  # noqa: BLE001
-        print(f"  ! intro {lang}/{title}: {e}")
+        raise FetchError(f"intro {lang}/{title}: {e}") from e
+    return next(iter(pages.values())).get("extract", "")
+
+
+def fetch_summary(lang, title):
+    """Variante indulgente : journalise et poursuit. main() parcourt tout le
+    roster et ne doit pas s'arrêter sur une figure."""
+    try:
+        return fetch_summary_strict(lang, title)
+    except FetchError as e:
+        print(f"  ! {e}")
+        return "", None
+
+
+def fetch_intro(lang, title):
+    """Variante indulgente, cf. fetch_summary."""
+    try:
+        return fetch_intro_strict(lang, title)
+    except FetchError as e:
+        print(f"  ! {e}")
         return ""
 
 
