@@ -31,7 +31,6 @@ def make_update(language_code="en", chat_id=42, username="alice", user_id=7, cha
 def make_context():
     context = Mock()
     context.bot.send_message = AsyncMock(return_value=None)
-    context.bot.send_photo = AsyncMock(return_value=None)
     context.bot.send_chat_action = AsyncMock(return_value=None)
     context.args = []
     return context
@@ -76,30 +75,32 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         _, kwargs = context.bot.send_message.call_args
         self.assertIn("/today", kwargs["text"])
 
-    async def test_random_handler_sends_photo(self):
+    async def test_random_handler_sends_card(self):
         figure = HistoricalFigure(name="Marie Curie", description="d", image_url="http://img", bio_en="Physicist and chemist.")
         self.mock_database.get_random_figure.return_value = figure
         update, context = make_update(), make_context()
         await self.bot._Bot__random_handler(update, context)
-        context.bot.send_photo.assert_called_once()
-        self.assertEqual(context.bot.send_photo.call_args.kwargs["photo"], "http://img")
-        self.assertIn("Marie Curie", context.bot.send_photo.call_args.kwargs["caption"])
+        context.bot.send_message.assert_called_once()
+        kwargs = context.bot.send_message.call_args.kwargs
+        self.assertIn("Marie Curie", kwargs["text"])
+        self.assertEqual(kwargs["link_preview_options"].url, "http://img")
 
-    async def test_today_handler_sends_photo(self):
+    async def test_today_handler_sends_card(self):
         figure = HistoricalFigure(name="Leonardo da Vinci", description="d", image_url="http://img", bio_en="Polymath.")
         self.mock_database.get_figure_of_the_day.return_value = figure
         update, context = make_update(), make_context()
         await self.bot._Bot__today_handler(update, context)
         self.mock_database.get_figure_of_the_day.assert_called_once()
-        self.assertIn("Leonardo da Vinci", context.bot.send_photo.call_args.kwargs["caption"])
+        self.assertIn("Leonardo da Vinci", context.bot.send_message.call_args.kwargs["text"])
 
     async def test_send_figure_without_image_uses_message(self):
         figure = HistoricalFigure(name="No Image", description="desc", bio_fr="bio fr")
         update, context = make_update(language_code="fr"), make_context()
         await self.bot._send_figure(update, context, figure)
         context.bot.send_message.assert_called_once()
-        self.assertIn("bio fr", context.bot.send_message.call_args.kwargs["text"])
-        context.bot.send_photo.assert_not_called()
+        kwargs = context.bot.send_message.call_args.kwargs
+        self.assertIn("bio fr", kwargs["text"])
+        self.assertTrue(kwargs["link_preview_options"].is_disabled)
 
     async def test_send_figure_renders_facts_for_locale(self):
         figure = HistoricalFigure(
@@ -108,18 +109,20 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         )
         update, context = make_update(language_code="fr"), make_context()
         await self.bot._send_figure(update, context, figure)
-        caption = context.bot.send_photo.call_args.kwargs["caption"]
-        self.assertIn("Faits marquants", caption)
-        self.assertIn("• fait un", caption)
+        text = context.bot.send_message.call_args.kwargs["text"]
+        self.assertIn("Faits marquants", text)
+        self.assertIn("• fait un", text)
 
-    async def test_send_figure_falls_back_to_message_on_photo_error(self):
+    async def test_send_figure_carries_image_as_large_preview_above_text(self):
+        """The portrait rides as a link preview so the card gets the 4096-char
+        text budget instead of the 1024-char caption budget."""
         figure = HistoricalFigure(name="Big Img", description="d", image_url="http://img", bio_en="A bio.")
         update, context = make_update(), make_context()
-        context.bot.send_photo = AsyncMock(side_effect=TelegramError("Photo too big"))
         await self.bot._send_figure(update, context, figure)
-        context.bot.send_photo.assert_called_once()
-        context.bot.send_message.assert_called_once()
-        self.assertIn("Big Img", context.bot.send_message.call_args.kwargs["text"])
+        preview = context.bot.send_message.call_args.kwargs["link_preview_options"]
+        self.assertEqual(preview.url, "http://img")
+        self.assertTrue(preview.prefer_large_media)
+        self.assertTrue(preview.show_above_text)
 
     async def test_subscribe_handler_registers_subscriber(self):
         update, context = make_update(chat_id=555), make_context()
@@ -176,7 +179,6 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context = make_context()
         await self.bot._send_daily(context)
         context.bot.send_message.assert_not_called()
-        context.bot.send_photo.assert_not_called()
 
     async def test_post_init_schedules_daily_job_at_noon_paris(self):
         app = Mock()
@@ -243,7 +245,7 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(context.bot.send_message.call_count, 2)
         self.assertIn("Ada Lovelace", context.bot.send_message.call_args_list[0].kwargs["text"])
 
-    async def test_button_random_sends_photo_and_answers(self):
+    async def test_button_random_sends_card_and_answers(self):
         figure = HistoricalFigure(name="Marie Curie", description="d", image_url="http://img", bio_en="Physicist.")
         self.mock_database.get_random_figure.return_value = figure
         update, context = make_update(), make_context()
@@ -252,9 +254,9 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         update.callback_query.answer = AsyncMock()
         await self.bot._Bot__button_handler(update, context)
         update.callback_query.answer.assert_awaited_once()
-        self.assertIn("Marie Curie", context.bot.send_photo.call_args.kwargs["caption"])
+        self.assertIn("Marie Curie", context.bot.send_message.call_args.kwargs["text"])
 
-    async def test_button_today_sends_photo_and_answers(self):
+    async def test_button_today_sends_card_and_answers(self):
         figure = HistoricalFigure(name="Leonardo da Vinci", description="d", image_url="http://img", bio_en="Polymath.")
         self.mock_database.get_figure_of_the_day.return_value = figure
         update, context = make_update(), make_context()
@@ -263,7 +265,7 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         update.callback_query.answer = AsyncMock()
         await self.bot._Bot__button_handler(update, context)
         update.callback_query.answer.assert_awaited_once()
-        self.assertIn("Leonardo da Vinci", context.bot.send_photo.call_args.kwargs["caption"])
+        self.assertIn("Leonardo da Vinci", context.bot.send_message.call_args.kwargs["text"])
 
     async def test_button_help_sends_help(self):
         update, context = make_update(language_code="fr"), make_context()
@@ -292,33 +294,33 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         f2 = HistoricalFigure(name="V", description="d")
         self.assertEqual(self.bot._figure_facts(f2, "fr"), [])
 
-    def test_build_caption_html_with_and_without_facts(self):
-        cap = Bot._build_caption("Voltaire", "A bio.", ["f1", "f2"], "Highlights")
+    def test_build_card_text_html_with_and_without_facts(self):
+        cap = Bot._build_card_text("Voltaire", "A bio.", ["f1", "f2"], "Highlights")
         self.assertIn("<b>Voltaire</b>", cap)
         self.assertIn("<i>A bio.</i>", cap)
         self.assertIn("<b>Highlights</b>", cap)
         self.assertIn("• f1", cap)
-        no_facts = Bot._build_caption("Voltaire", "A bio.", [], "Highlights")
+        no_facts = Bot._build_card_text("Voltaire", "A bio.", [], "Highlights")
         self.assertNotIn("Highlights", no_facts)
         self.assertIn("<b>Voltaire</b>", no_facts)
 
-    def test_build_caption_escapes_html_in_content(self):
-        cap = Bot._build_caption("A & B <x>", "bio & <i>hi</i>", ["m & n"], "Head <>")
+    def test_build_card_text_escapes_html_in_content(self):
+        cap = Bot._build_card_text("A & B <x>", "bio & <i>hi</i>", ["m & n"], "Head <>")
         self.assertIn("<b>A &amp; B &lt;x&gt;</b>", cap)
         self.assertIn("bio &amp; &lt;i&gt;hi&lt;/i&gt;", cap)
         self.assertIn("• m &amp; n", cap)
         self.assertIn("<b>Head &lt;&gt;</b>", cap)
 
-    def test_build_caption_truncates_over_limit(self):
-        cap = Bot._build_caption("Name", "x" * 2000, ["short fact"], "Highlights")
-        self.assertLessEqual(visible_len(cap), 1024)
+    def test_build_card_text_truncates_over_limit(self):
+        cap = Bot._build_card_text("Name", "x" * 6000, ["short fact"], "Highlights")
+        self.assertLessEqual(visible_len(cap), 4096)
         self.assertIn("Name", cap)
         self.assertIn("Highlights", cap)
         self.assertIn("short fact", cap)
 
-    def test_build_caption_never_exceeds_limit_even_with_large_facts(self):
-        cap = Bot._build_caption("Name", "", ["x" * 1200], "Highlights")
-        self.assertLessEqual(visible_len(cap), 1024)
+    def test_build_card_text_never_exceeds_limit_even_with_large_facts(self):
+        cap = Bot._build_card_text("Name", "", ["x" * 5000], "Highlights")
+        self.assertLessEqual(visible_len(cap), 4096)
 
     async def test_group_guard_allows_private_chat(self):
         update, context = make_update(chat_type="private"), make_context()
@@ -388,7 +390,7 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         update, context = make_update(), make_context()
         await self.bot._send_figure(update, context, figure)
         context.bot.send_chat_action.assert_awaited_once()
-        markup = context.bot.send_photo.call_args.kwargs["reply_markup"]
+        markup = context.bot.send_message.call_args.kwargs["reply_markup"]
         callbacks = [b.callback_data for row in markup.inline_keyboard for b in row if b.callback_data]
         urls = [b.url for row in markup.inline_keyboard for b in row if b.url]
         self.assertIn("random", callbacks)

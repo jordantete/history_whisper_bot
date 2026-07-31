@@ -8,8 +8,9 @@ from src.database import Database
 from src.subscribers import SubscriberStore
 from src.utils import Utils
 from src.logger import LOGGER
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, BotCommand
-from telegram.constants import ChatAction, ParseMode
+from telegram import (Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, BotCommand,
+                      LinkPreviewOptions)
+from telegram.constants import ChatAction, MessageLimit, ParseMode
 from telegram.error import TelegramError, Forbidden
 from telegram.ext import (
     ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler,
@@ -93,9 +94,10 @@ class Bot:
         return primary or secondary or []
 
     @staticmethod
-    def _build_caption(name: str, bio: str, facts, header: str, limit: int = 1024) -> str:
-        """Render an HTML caption (bold name, italic bio, bold header + bullets).
-        All dynamic content is HTML-escaped. Telegram's caption limit counts the
+    def _build_card_text(name: str, bio: str, facts, header: str,
+                         limit: int = MessageLimit.MAX_TEXT_LENGTH) -> str:
+        """Render an HTML card (bold name, italic bio, bold header + bullets).
+        All dynamic content is HTML-escaped. Telegram's length limit counts the
         *visible* text (tags/entities excluded), so truncation is budgeted on the
         raw text length while the output carries the markup."""
         def esc(s):
@@ -149,24 +151,26 @@ class Bot:
 
     async def _deliver_figure(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, figure) -> None:
         """Send a rendered figure card to a specific chat in a specific locale.
-        Shared by interactive commands and the daily job. Forbidden (user blocked
-        the bot) propagates so callers can react (e.g. drop the subscriber)."""
+        Shared by interactive commands and the daily job.
+
+        The portrait rides along as a link preview rather than a photo caption:
+        Telegram caps captions at 1024 visible characters but allows 4096 in
+        message text, and 64 of the cards did not fit in 1024. Rendering is
+        identical (large image above the text) — verified against send_photo.
+        The trade-off is that a preview Telegram cannot fetch fails silently,
+        where send_photo used to raise; the reader still gets the full card,
+        so only the log warning is lost.
+
+        Forbidden (user blocked the bot) propagates so callers can react."""
         bio = self._figure_bio(figure, locale)
         facts = self._figure_facts(figure, locale)
-        caption = self._build_caption(figure.name, bio, facts, self._tl("highlights-header", locale))
-        keyboard = self._figure_keyboard(locale, figure)
-        if figure.image_url:
-            try:
-                await context.bot.send_chat_action(chat_id=chat_id, action=ChatAction.UPLOAD_PHOTO)
-                await context.bot.send_photo(chat_id=chat_id, photo=figure.image_url,
-                                             caption=caption, parse_mode=ParseMode.HTML, reply_markup=keyboard)
-                return
-            except Forbidden:
-                raise
-            except TelegramError as e:
-                LOGGER.warning(f"send_photo failed for {figure.name} ({figure.image_url}): {e}; falling back to text")
-        await context.bot.send_message(chat_id=chat_id, text=caption,
-                                       parse_mode=ParseMode.HTML, reply_markup=keyboard)
+        text = self._build_card_text(figure.name, bio, facts, self._tl("highlights-header", locale))
+        preview = (LinkPreviewOptions(url=figure.image_url, prefer_large_media=True, show_above_text=True)
+                   if figure.image_url else LinkPreviewOptions(is_disabled=True))
+        await context.bot.send_chat_action(chat_id=chat_id, action=ChatAction.TYPING)
+        await context.bot.send_message(chat_id=chat_id, text=text, parse_mode=ParseMode.HTML,
+                                       reply_markup=self._figure_keyboard(locale, figure),
+                                       link_preview_options=preview)
 
     async def _send_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE, figure) -> None:
         if not figure:
