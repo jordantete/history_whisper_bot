@@ -4,7 +4,7 @@ import html
 import tempfile
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
-from telegram import ForceReply
+from telegram import ForceReply, BotName
 from telegram.error import TelegramError, Forbidden
 from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler, AIORateLimiter
 from src.database import Database
@@ -266,6 +266,8 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         app.bot.set_my_commands = AsyncMock()
         app.bot.set_my_description = AsyncMock()
         app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(return_value=BotName("stale name"))
+        app.bot.set_my_name = AsyncMock()
         app.job_queue.run_daily = Mock()
         await self.bot._post_init(app)
         app.job_queue.run_daily.assert_called_once()
@@ -494,6 +496,8 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         app.bot.set_my_commands = AsyncMock()
         app.bot.set_my_description = AsyncMock()
         app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(return_value=BotName("stale name"))
+        app.bot.set_my_name = AsyncMock()
         await self.bot._post_init(app)
         cmd_calls = app.bot.set_my_commands.call_args_list
         self.assertEqual(len(cmd_calls), 2)  # default (en) + fr
@@ -504,6 +508,37 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
             self.assertGreaterEqual(len(commands), 1)
         self.assertEqual(app.bot.set_my_description.call_count, 2)
         self.assertEqual(app.bot.set_my_short_description.call_count, 2)
+        name_calls = app.bot.set_my_name.call_args_list
+        self.assertEqual(len(name_calls), 2)  # default (en) + fr
+        self.assertEqual({c.kwargs.get("language_code") for c in name_calls}, {None, "fr"})
+        names = [c.args[0] if c.args else c.kwargs["name"] for c in name_calls]
+        self.assertEqual(names, ["History Bot · Historical Figures Daily",
+                                 "Histoire · Figures Historiques du Jour"])
+
+    async def test_post_init_skips_name_write_when_already_current(self):
+        """Telegram rate-limits name changes, so an unchanged name must not be rewritten."""
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(side_effect=[
+            BotName("History Bot · Historical Figures Daily"),
+            BotName("Histoire · Figures Historiques du Jour"),
+        ])
+        app.bot.set_my_name = AsyncMock()
+        await self.bot._post_init(app)
+        app.bot.set_my_name.assert_not_called()
+
+    async def test_post_init_survives_name_rate_limit(self):
+        """A rejected name change must not abort startup — commands still get published."""
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(return_value=BotName("stale name"))
+        app.bot.set_my_name = AsyncMock(side_effect=TelegramError("Too Many Requests"))
+        await self.bot._post_init(app)
+        self.assertEqual(app.bot.set_my_commands.call_count, 2)
 
     def test_group_guard_registered_in_low_group(self):
         self.bot.register_handlers()

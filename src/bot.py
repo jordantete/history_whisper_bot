@@ -68,6 +68,17 @@ class Bot:
         bot's start screen / profile."""
         menu = ("today", "random", "subscribe", "unsubscribe", "feedback", "help")
         for locale, language_code in (("en", None), ("fr", "fr")):
+            # The display name is Telegram's top in-app search ranking factor, so it
+            # carries keywords. Telegram rate-limits name changes, hence the read
+            # first / write only on drift — a restart with an unchanged name is a no-op.
+            name = self._tl("bot-name", locale)
+            current = await application.bot.get_my_name(language_code=language_code)
+            if current.name != name:
+                try:
+                    await application.bot.set_my_name(name, language_code=language_code)
+                    LOGGER.info(f"Updated bot name [{locale}]: {name}")
+                except TelegramError as error:
+                    LOGGER.warning(f"Could not set bot name [{locale}]: {error}")
             commands = [BotCommand(cmd, self._tl(f"cmd-{cmd}", locale)) for cmd in menu]
             await application.bot.set_my_commands(commands, language_code=language_code)
             await application.bot.set_my_short_description(
