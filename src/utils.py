@@ -1,4 +1,4 @@
-import os, json
+import os, json, unicodedata
 from src.logger import LOGGER
 
 
@@ -29,3 +29,26 @@ class Utils:
             return default
         primary = language_code.split("-")[0].lower()
         return primary if primary in supported else default
+
+    @staticmethod
+    def normalize_name(name) -> str:
+        """Forme comparable d'un nom de figure : casse neutralisée, accents
+        dépouillés, espaces collapsés. Le roster mêle des saisies manuelles et
+        des titres Wikipédia, dont l'accentuation diverge."""
+        if not name:
+            return ""
+        decomposed = unicodedata.normalize("NFKD", name)
+        stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
+        return " ".join(stripped.casefold().split())
+
+    @staticmethod
+    def names_match(a, b) -> bool:
+        """Vrai quand l'un des deux noms normalisés contient l'autre.
+        Volontairement lâche : le roster stocke des formes courtes ('De Lesseps')
+        qu'un nom complet tapé à la main doit reconnaître. Produit de vrais faux
+        positifs ('Philippe Auguste' vs 'Auguste') — les appelants décident
+        quoi en faire."""
+        na, nb = Utils.normalize_name(a), Utils.normalize_name(b)
+        if not na or not nb:
+            return False
+        return na in nb or nb in na
