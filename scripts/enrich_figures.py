@@ -128,6 +128,118 @@ OVERRIDES = {
     "Peirce": {"fr": "Charles Sanders Peirce", "en": "Charles Sanders Peirce"},
     "Jakobson": {"fr": "Roman Jakobson", "en": "Roman Jakobson"},
     "Greimas": {"fr": "Algirdas Julien Greimas", "en": "Algirdas Julien Greimas"},
+    # ---- Lot 2026-07-31 (115 figures) ----
+    # Sciences & mathématiques antiques
+    "Archimède": {"fr": "Archimède", "en": "Archimedes"},
+    "Pythagore": {"fr": "Pythagore", "en": "Pythagoras"},
+    "Euclide": {"fr": "Euclide", "en": "Euclid"},
+    "Hippocrate": {"fr": "Hippocrate", "en": "Hippocrates"},
+    "Ératosthène": {"fr": "Ératosthène", "en": "Eratosthenes"},
+    "Ptolémée": {"fr": "Claude Ptolémée", "en": "Ptolemy"},
+    # Philosophie moderne
+    "Descartes": {"fr": "René Descartes", "en": "René Descartes"},
+    "Kant": {"fr": "Emmanuel Kant", "en": "Immanuel Kant"},
+    "Nietzsche": {"fr": "Friedrich Nietzsche", "en": "Friedrich Nietzsche"},
+    "Marx": {"fr": "Karl Marx", "en": "Karl Marx"},
+    "Spinoza": {"fr": "Baruch Spinoza", "en": "Baruch Spinoza"},
+    "Hegel": {"fr": "Georg Wilhelm Friedrich Hegel", "en": "Georg Wilhelm Friedrich Hegel"},
+    "Érasme": {"fr": "Érasme", "en": "Erasmus"},
+    # Renaissance & arts
+    "Michel-Ange": {"fr": "Michel-Ange", "en": "Michelangelo"},
+    "Raphaël": {"fr": "Raphaël (peintre)", "en": "Raphael"},  # vs l'archange
+    "Botticelli": {"fr": "Sandro Botticelli", "en": "Sandro Botticelli"},
+    "Vermeer": {"fr": "Johannes Vermeer", "en": "Johannes Vermeer"},
+    "Dürer": {"fr": "Albrecht Dürer", "en": "Albrecht Dürer"},
+    "Monet": {"fr": "Claude Monet", "en": "Claude Monet"},
+    "Rodin": {"fr": "Auguste Rodin", "en": "Auguste Rodin"},
+    "Le Caravage": {"fr": "Le Caravage", "en": "Caravaggio"},
+    # Musique
+    "Mozart": {"fr": "Wolfgang Amadeus Mozart", "en": "Wolfgang Amadeus Mozart"},
+    "Beethoven": {"fr": "Ludwig van Beethoven", "en": "Ludwig van Beethoven"},
+    "Jean-Sébastien Bach": {"fr": "Jean-Sébastien Bach", "en": "Johann Sebastian Bach"},
+    "Chopin": {"fr": "Frédéric Chopin", "en": "Frédéric Chopin"},
+    "Wagner": {"fr": "Richard Wagner", "en": "Richard Wagner"},
+    "Vivaldi": {"fr": "Antonio Vivaldi", "en": "Antonio Vivaldi"},
+    "Verdi": {"fr": "Giuseppe Verdi", "en": "Giuseppe Verdi"},
+    # Sciences modernes
+    "Einstein": {"fr": "Albert Einstein", "en": "Albert Einstein"},
+    "Copernic": {"fr": "Nicolas Copernic", "en": "Nicolaus Copernicus"},
+    "Kepler": {"fr": "Johannes Kepler", "en": "Johannes Kepler"},
+    "Mendeleïev": {"fr": "Dmitri Mendeleïev", "en": "Dmitri Mendeleev"},
+    "Mendel": {"fr": "Gregor Mendel", "en": "Gregor Mendel"},
+    "Tesla": {"fr": "Nikola Tesla", "en": "Nikola Tesla"},
+    "Edison": {"fr": "Thomas Edison", "en": "Thomas Edison"},
+    "Turing": {"fr": "Alan Turing", "en": "Alan Turing"},
+    "Fleming": {"fr": "Alexander Fleming", "en": "Alexander Fleming"},
+    "Ampère": {"fr": "André-Marie Ampère", "en": "André-Marie Ampère"},
+    # Explorateurs
+    "Christophe Colomb": {"fr": "Christophe Colomb", "en": "Christopher Columbus"},
+    "Magellan": {"fr": "Fernand de Magellan", "en": "Ferdinand Magellan"},
+    "Vasco de Gama": {"fr": "Vasco de Gama", "en": "Vasco da Gama"},
+    "Amundsen": {"fr": "Roald Amundsen", "en": "Roald Amundsen"},
+    "Shackleton": {"fr": "Ernest Shackleton", "en": "Ernest Shackleton"},
+    "Champlain": {"fr": "Samuel de Champlain", "en": "Samuel de Champlain"},
+    "Livingstone": {"fr": "David Livingstone", "en": "David Livingstone"},
+    # Monde arabo-musulman
+    "Averroès": {"fr": "Averroès", "en": "Averroes"},
+    "Avicenne": {"fr": "Avicenne", "en": "Avicenna"},
+    "Ibn Khaldoun": {"fr": "Ibn Khaldoun", "en": "Ibn Khaldun"},
+    "Soliman le Magnifique": {"fr": "Soliman le Magnifique", "en": "Suleiman the Magnificent"},
+    "Haroun al-Rachid": {"fr": "Haroun ar-Rachid", "en": "Harun al-Rashid"},
+    # Médiéval européen
+    "Guillaume le Conquérant": {"fr": "Guillaume le Conquérant", "en": "William the Conqueror"},
+    "Aliénor d'Aquitaine": {"fr": "Aliénor d'Aquitaine", "en": "Eleanor of Aquitaine"},
+    "Saint Louis": {"fr": "Louis IX", "en": "Louis IX of France"},
+    "Thomas d'Aquin": {"fr": "Thomas d'Aquin", "en": "Thomas Aquinas"},
+    "Frédéric Barberousse": {"fr": "Frédéric Barberousse", "en": "Frederick Barbarossa"},
+    "Philippe Auguste": {"fr": "Philippe II Auguste", "en": "Philip II of France"},
+    # Russie
+    "Pierre le Grand": {"fr": "Pierre Ier le Grand", "en": "Peter the Great"},  # titre nu = homonymie
+    "Catherine II": {"fr": "Catherine II", "en": "Catherine the Great"},
+    "Tolstoï": {"fr": "Léon Tolstoï", "en": "Leo Tolstoy"},
+    "Dostoïevski": {"fr": "Fiodor Dostoïevski", "en": "Fyodor Dostoevsky"},
+    "Lénine": {"fr": "Vladimir Ilitch Lénine", "en": "Vladimir Lenin"},
+    "Raspoutine": {"fr": "Grigori Raspoutine", "en": "Grigori Rasputin"},
+    # Japon
+    "Meiji": {"fr": "Mutsuhito", "en": "Emperor Meiji"},
+    # Inde
+    "Gandhi": {"fr": "Mohandas Karamchand Gandhi", "en": "Mahatma Gandhi"},
+    "Bouddha": {"fr": "Siddhartha Gautama", "en": "Gautama Buddha"},
+    # Afrique & Égypte antique
+    "Mansa Moussa": {"fr": "Mansa Moussa", "en": "Mansa Musa"},
+    "Chaka Zulu": {"fr": "Chaka Zoulou", "en": "Shaka"},  # "Chaka" nu = page de renvoi
+    "Ramsès II": {"fr": "Ramsès II", "en": "Ramesses II"},
+    "Hatchepsout": {"fr": "Hatchepsout", "en": "Hatshepsut"},
+    "Néfertiti": {"fr": "Néfertiti", "en": "Nefertiti"},
+    # Amériques
+    "Moctezuma": {"fr": "Moctezuma II", "en": "Moctezuma II"},
+    "Cortés": {"fr": "Hernán Cortés", "en": "Hernán Cortés"},
+    "Lincoln": {"fr": "Abraham Lincoln", "en": "Abraham Lincoln"},
+    "Bolívar": {"fr": "Simón Bolívar", "en": "Simón Bolívar"},
+    # XXe siècle
+    "Churchill": {"fr": "Winston Churchill", "en": "Winston Churchill"},
+    "De Gaulle": {"fr": "Charles de Gaulle", "en": "Charles de Gaulle"},
+    "Roosevelt": {"fr": "Franklin Delano Roosevelt", "en": "Franklin D. Roosevelt"},
+    "Martin Luther King": {"fr": "Martin Luther King", "en": "Martin Luther King Jr."},
+    # Réforme & religion
+    "Luther": {"fr": "Martin Luther", "en": "Martin Luther"},
+    "Calvin": {"fr": "Jean Calvin", "en": "John Calvin"},
+    "Saint Augustin": {"fr": "Augustin d'Hippone", "en": "Augustine of Hippo"},
+    # Lettres
+    "Shakespeare": {"fr": "William Shakespeare", "en": "William Shakespeare"},
+    "Cervantès": {"fr": "Miguel de Cervantès", "en": "Miguel de Cervantes"},
+    "Dante": {"fr": "Dante Alighieri", "en": "Dante Alighieri"},
+    "Homère": {"fr": "Homère", "en": "Homer"},
+    "Virgile": {"fr": "Virgile", "en": "Virgil"},
+    "Baudelaire": {"fr": "Charles Baudelaire", "en": "Charles Baudelaire"},
+    "Rimbaud": {"fr": "Arthur Rimbaud", "en": "Arthur Rimbaud"},
+    # Mythes
+    "Thésée": {"fr": "Thésée", "en": "Theseus"},
+    "Persée": {"fr": "Persée", "en": "Perseus"},
+    "Pandore": {"fr": "Pandore", "en": "Pandora"},
+    "Sisyphe": {"fr": "Sisyphe", "en": "Sisyphus"},
+    "Minotaure": {"fr": "Minotaure", "en": "Minotaur"},
+    "Antigone": {"fr": "Antigone (mythologie)", "en": "Antigone"},  # titre nu = homonymie illustrée
 }
 
 

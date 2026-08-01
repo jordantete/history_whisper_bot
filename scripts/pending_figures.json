@@ -1,1 +1,1039 @@
-{"figures": []}
+{
+  "figures": [
+    {
+      "name": "Archimède",
+      "description": "",
+      "bio_fr": "Archimède de Syracuse, né à Syracuse vers 287 av. J.-C. et mort en cette même ville en 212 av. J.-C., est un grand scientifique grec de Sicile (Grande-Grèce) de l'Antiquité : physicien, astronome, mathématicien et ingénieur.",
+      "bio_en": "Archimedes of Syracuse was an Ancient Greek mathematician, physicist, engineer, astronomer, and inventor from the city of Syracuse in Sicily. Although few details of his life are known, based on his surviving work, he is considered one of the leading scientists in classical antiquity, and one of the greatest mathematicians of all time. Archimedes anticipated modern calculus and analysis by applying the concept of the infinitesimals and the method of exhaustion to derive and rigorously prove many geometrical theorems, including the area of a circle, the surface area and volume of a sphere, the area of an ellipse, the area under a parabola, the volume of a segment of a paraboloid of revolution, the volume of a segment of a hyperboloid of revolution, and the area of a spiral.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg/330px-Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Pythagore",
+      "description": "",
+      "bio_fr": "Pythagore est un philosophe présocratique qui serait né aux environs de 580 av. J.-C. à Samos, une île du sud-est de la mer Égée ; on situe sa mort vers 495 av. J.-C., à l'âge de 85 ans. Il a introduit la notion de métempsycose dans le monde grec ; son nom est aussi lié aux mathématiques, à la philosophie des nombres ainsi qu'à la notion d'harmonie céleste — même si l'approfondissement de ces notions est plutôt dû à ses disciples et épigones, ceux que l'on appelle les pythagoriciens. Par ailleurs, maître de sagesse charismatique, il a fondé en Italie du Sud, à Crotone, une communauté à mi-chemin entre la politique et la philosophie, qui s'est distinguée par son mode de vie spécifique.",
+      "bio_en": "Pythagoras of Samos was an ancient Ionian Greek philosopher, polymath, and the eponymous founder of Pythagoreanism. His political and religious teachings were well known in Magna Graecia and influenced the philosophies of Plato, Aristotle, and, through them, Western philosophy. Modern scholars disagree regarding Pythagoras's education and influences, but most agree that he travelled to Croton in southern Italy around 530 BC, where he founded a school in which initiates were allegedly sworn to secrecy and lived a communal, ascetic lifestyle.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg/330px-Kapitolinischer_Pythagoras_adjusted.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Euclide",
+      "description": "",
+      "bio_fr": "Euclide, dit parfois Euclide d'Alexandrie, est un mathématicien de la Grèce antique, auteur d’un traité de mathématiques, qui constitue l'un des textes fondateurs de cette discipline en Occident. Aucune information fiable n'est parvenue sur la vie ou la mort d'Euclide ; il est possible qu'il ait vécu vers 300 avant notre ère.",
+      "bio_en": "Euclid was an ancient Greek mathematician active as a geometer and logician. Considered the \"father of geometry\", he is chiefly known for the Elements treatise, which established the foundations of geometry that largely dominated the field until the early 19th century. His system, now referred to as Euclidean geometry, involved innovations in combination with a synthesis of theories from earlier Greek mathematicians, including Eudoxus of Cnidus, Hippocrates of Chios, Thales and Theaetetus. With Archimedes and Apollonius of Perga, Euclid is generally considered among the greatest mathematicians of antiquity, and one of the most influential in the history of mathematics.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Euklid-von-Alexandria_1.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hippocrate",
+      "description": "",
+      "bio_fr": "Hippocrate de Kos, ou simplement Hippocrate, né vers 460 avant J.-C. sur l’île de Kos et mort vers 377 av. J.-C. à Larissa, est un médecin et philosophe grec du siècle de Périclès, considéré traditionnellement comme le « père de la médecine ».",
+      "bio_en": "Hippocrates of Kos, also known as Hippocrates II, named after his grandfather Hippocrates I was a Greek physician and philosopher of the classical period who is considered one of the most outstanding figures in the history of medicine. He is traditionally referred to as the \"Father of Medicine\" in recognition of his lasting contributions to the field, such as the use of prognosis and clinical observation, the systematic categorization of diseases, and the formulation of humoral theory. His studies set out the basic ideas of modern-day specialties, including surgery, urology, neurology, acute medicine and orthopedics, and advanced the systematic study of clinical medicine.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hippocrates_rubens.jpg/330px-Hippocrates_rubens.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ératosthène",
+      "description": "",
+      "bio_fr": "Ératosthène ou Ératosthène de Cyrène, né vers 276 av. J.-C. à Cyrène et mort vers 194 av. J.-C. à Alexandrie, est un astronome, géographe, philosophe et mathématicien grec. Érudit reconnu par ses pairs, il est nommé directeur de la bibliothèque d'Alexandrie par le roi d'Égypte Ptolémée III vers 245 av. J.-C.",
+      "bio_en": "Eratosthenes of Cyrene was an Ancient Greek polymath: a philosopher, scholar, mathematician, geographer, poet, astronomer, and music theorist. Eratosthenes eventually became the chief librarian at the Library of Alexandria. His work was the precursor to the modern discipline of geography, and he introduced some of its terminology, coining the terms geography and geographer.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Eratosthene.01.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ptolémée",
+      "description": "",
+      "bio_fr": "Claude Ptolémée, communément appelé Ptolémée, né vers 100 et mort vers 168 à Canope, est un astronome, astrologue, mathématicien et géographe grec qui vécut à Alexandrie (Égypte). Il est également l’un des précurseurs de la géographie. Sa vie est mal connue. Son cognomen Ptolemæus semble indiquer des origines gréco-égyptiennes, et son nomen Claudius une citoyenneté romaine. Son prænomen est inconnu.",
+      "bio_en": "Claudius Ptolemy, better known mononymously as Ptolemy, was a Greco-Roman mathematician, astronomer, astrologer, geographer, and music theorist who wrote about a dozen scientific treatises, three of which were important to later Byzantine, Islamic, and Western European science. The first was his astronomical treatise now known as the Almagest, originally entitled Mathēmatikḗ Syntaxis. The second is the Geography, which is a thorough discussion on maps and the geographic knowledge of the Greco-Roman world. The third is the astrological treatise in which he attempted to adapt horoscopic astrology to the Aristotelian natural philosophy of his day. This is sometimes known as the Apotelesmatika but more commonly known as the Tetrábiblos.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ptolemy_16century.jpg/330px-Ptolemy_16century.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Descartes",
+      "description": "",
+      "bio_fr": "René Descartes est un mathématicien, physicien et philosophe français, né le 31 mars 1596 à La Haye-en-Touraine, commune de l'Indre-et-Loire qui porte aujourd'hui son nom, et mort le 11 février 1650 à Stockholm.",
+      "bio_en": "René Descartes was a French polymath, active across philosophy, including metaphysics, epistemology, ethics, and the philosophy of science; theology; mathematics, in which he connected the previously separate fields of geometry and algebra into analytic geometry; science, including physics, optics, mechanics, cosmology, and meteorology; physiology; and medicine. He has been credited as the father of modern philosophy, particularly due to his transformation of methodology by introducing a systematic, method-based approach to pursuing knowledge.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/330px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Kant",
+      "description": "",
+      "bio_fr": "Emmanuel Kant, né le 22 avril 1724 à Königsberg en Prusse, et mort le 12 février 1804 dans cette même ville, est un philosophe prussien, fondateur du criticisme et de l’idéalisme transcendantal.",
+      "bio_en": "Immanuel Kant was a German philosopher. Born in Königsberg in the Kingdom of Prussia, he is considered one of the central thinkers of the Enlightenment. His comprehensive and systematic works in epistemology, metaphysics, logic, ethics, aesthetics, political theory, and the philosophy of religion have made him one of the most influential and highly discussed figures in modern Western philosophy.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/330px-Immanuel_Kant_-_Gemaelde_1.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Nietzsche",
+      "description": "",
+      "bio_fr": "Friedrich Nietzsche, né le 15 octobre 1844 à Röcken en Prusse et mort le 25 août 1900 à Weimar en Saxe-Weimar-Eisenach, est un philosophe, philologue, critique culturel, compositeur, poète, et écrivain allemand dont l'œuvre a exercé une profonde influence sur l'histoire intellectuelle contemporaine.",
+      "bio_en": "Friedrich Wilhelm Nietzsche was a German philosopher and writer who started his career as a classical philologist and turned to philosophy early in his academic career. In 1869, at age 24, he was appointed Professor of Classical Philology at the University of Basel. Plagued by health problems for most of his life, he resigned from the university in 1879. He afterward lived as an independent writer, spending much of his life in relative solitude and financial insecurity while moving between Switzerland, Italy, and southern France in search of climates that might alleviate his condition, and in the following decade, he completed much of his core writing. In 1889, aged 44, he suffered a neurological collapse, and thereafter a complete loss of his mental faculties, with paralysis and vascular dementia; he lived out his remaining 11 years, first under the care of his mother, and later his sister, until his death. His works and his philosophy have fostered not only extensive scholarship but also much popular interest.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Portrait_of_Friedrich_Nietzsche.jpg/330px-Portrait_of_Friedrich_Nietzsche.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Marx",
+      "description": "",
+      "bio_fr": "Karl Marx, né le 5 mai 1818 à Trèves dans le grand-duché du Bas-Rhin et mort le 14 mars 1883 à Londres, est un philosophe, économiste, historien, sociologue, journaliste, théoricien de la révolution, du socialisme, du socialisme libertaire et du communisme, un internationaliste et idéologue prussien.",
+      "bio_en": "Karl Marx was a German philosopher, social and political theorist, economist, and revolutionary socialist. He developed the theory of historical materialism, analyzing class struggle under capitalism and predicting the system's overthrow by the proletariat in favour of communism. Marx co-authored The Communist Manifesto (1848) with Friedrich Engels, and undertook a critique of classical political economy in his magnum opus, Das Kapital (1867–1894). Marx's ideas and their subsequent development, collectively known as Marxism, have had enormous influence and have influenced revolutions and uprisings in many countries.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png/330px-Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Spinoza",
+      "description": "",
+      "bio_fr": "Baruch Spinoza, né le 24 novembre 1632 à Amsterdam et mort le 21 février 1677 à La Haye, est un philosophe ayant vécu aux Pays-Bas ou Provinces-Unies à l'époque, d'origine portugaise, issu de la communauté séfarade. Son père, Miguel de Espinosa, est né à Vidigueira (Alentejo) et sa mère, Ana Débora Gomes Garcês de Espinosa, à Ponte de Lima (Minho). Baruch Spinoza occupe une place importante dans l'histoire de la philosophie, sa pensée, appartenant au courant des modernes rationalistes, ayant eu une influence considérable sur ses contemporains et nombre de penseurs ultérieurs.",
+      "bio_en": "Baruch (de) Spinoza, also known under his Latinized pen name Benedictus de Spinoza, was a philosopher of Portuguese-Jewish origin who was born and lived in the Dutch Republic. A forerunner of the Enlightenment, Spinoza significantly influenced modern biblical criticism, 17th-century rationalism, and Dutch intellectual culture, establishing himself as one of the most important and radical philosophers of the early modern period. Influenced by Stoicism, Thomas Hobbes, René Descartes, and heterodox Christians, Spinoza was a leading philosopher of the Dutch Golden Age.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Spinoza.jpg/330px-Spinoza.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "John Locke",
+      "description": "",
+      "bio_fr": "John Locke, né le 29 août 1632 à Wrington et mort le 28 octobre 1704 à High Laver, est un philosophe anglais. Il vit à une époque charnière qui voit la fin des guerres de Religion, les débuts du rationalisme et une forte opposition à l'absolutisme en Angleterre. Proche du comte de Shaftesbury, homme politique influent, Locke est partie prenante à ses débats et aux théories alors naissantes du contrat social, de la loi et du droit naturel, ainsi que de l'état de nature. Il s'intéresse aussi au droit de propriété et aux prémices de ce qui sera appelé à compter du XIXe siècle le libéralisme.",
+      "bio_en": "John Locke was an English philosopher and physician, widely regarded as one of the most influential of the Enlightenment thinkers and commonly known as the \"father of liberalism\". His important works include A Letter Concerning Toleration (1689), Two Treatises of Government (1689/90), both published anonymously, and An Essay Concerning Human Understanding (1689/90). His writing on toleration contends that religion is a matter for the individual and that the churches are voluntary associations, ruling out religious coercion and uniformity; these lead to the idea of separation of church and state. His Two Treatises on Government argues for government based on the consent of the governed and the right to revolt against tyrannous government which has lost consent. The Two Treatises are believed to have influenced the language that Thomas Jefferson chose in his drafting the July 1776 Declaration of Independence during the War of American Independence.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JohnLocke.png/330px-JohnLocke.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hegel",
+      "description": "",
+      "bio_fr": "Georg Wilhelm Friedrich Hegel, né le 27 août 1770 à Stuttgart et mort le 14 novembre 1831 à Berlin, est un philosophe allemand.",
+      "bio_en": "Georg Wilhelm Friedrich Hegel was a German philosopher and a major figure in the tradition of German idealism. His influence on Western philosophy extends across a wide range of topics—from metaphysical issues in epistemology and ontology, to political philosophy, to philosophy of art and philosophy of religion.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Hegel_by_Schlesinger.jpg/330px-Hegel_by_Schlesinger.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Érasme",
+      "description": "",
+      "bio_fr": "Érasme, également appelé Érasme de Rotterdam, Didier Érasme et Désiré Érasme de Rotterdam, né dans la nuit du 27 au 28 octobre 1466, 1467 ou en 1469, à Rotterdam, mort le 12 juillet 1536 à Bâle, est un chanoine régulier de Saint-Augustin, philosophe, humaniste et théologien néerlandais, considéré comme l'une des figures majeures de la culture néerlandaise et occidentale.",
+      "bio_en": "Desiderius Erasmus Roterodamus, commonly known in English as Erasmus of Rotterdam or simply Erasmus, was a Dutch humanist, Catholic theologian, and pioneering philologist and educationalist. He was, through his writings and translations, one of the most influential scholars of the Northern Renaissance and a major figure of Western culture.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Portrait_of_Erasmus_by_Hans_Holbein_d._J.-Kunstmuseum_Basel.jpg/330px-Portrait_of_Erasmus_by_Hans_Holbein_d._J.-Kunstmuseum_Basel.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Michel-Ange",
+      "description": "",
+      "bio_fr": "Michel-Ange [mikɛlɑ̃ʒ], mononyme de Michelangelo di Lodovico Buonarroti Simoni [mikeˈland͡ʒelo di lodoˈviːko ˌbwɔnarˈrɔːti siˈmoːni], né le 6 mars 1475 à Caprese et mort le 18 février 1564 à Rome, est un sculpteur, peintre, architecte, poète et urbaniste florentin de la Haute Renaissance.",
+      "bio_en": "Michelangelo di Lodovico Buonarroti Simoni, known mononymously as Michelangelo, was an Italian sculptor, painter, architect, and poet of the High Renaissance. He was born in the Republic of Florence but was mostly active in Rome from his 30s onwards. His work was inspired by models from classical antiquity and had a lasting influence on Western art. Michelangelo's creative abilities and mastery in a range of artistic arenas define him as an archetypal Renaissance man, along with his rival and elder contemporary, Leonardo da Vinci. Given the sheer volume of surviving correspondence, sketches, and reminiscences, Michelangelo is one of the best-documented artists of the 16th century. He was lauded by contemporary biographers as the most accomplished artist of his era.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/330px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Raphaël",
+      "description": "",
+      "bio_fr": "Raphaël, nom francisé de Raffaello Sanzio, est un peintre et architecte italien de la Haute Renaissance, né le 28 mars ou 6 avril 1483 à Urbino dans les Marches italiennes et mort le 6 avril 1520 à Rome.",
+      "bio_en": "Raffaello Sanzio da Urbino, now generally known in English as Raphael, was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Leonardo da Vinci and Michelangelo, he forms the traditional trinity of great masters of that period.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/330px-Raffaello_Sanzio.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Botticelli",
+      "description": "",
+      "bio_fr": "Alessandro di Mariano di Vanni Filipepi, dit Sandro Botticelli, est un peintre toscan, né à Florence le 1er mars 1445 et mort le 17 mai 1510 dans la même ville. Botticelli est l'un des peintres les plus importants de la Renaissance italienne et de l'histoire de l'art.",
+      "bio_en": "Alessandro di Mariano di Vanni Filipepi, better known as Sandro Botticelli or simply Botticelli, was an Italian painter of the Early Renaissance. Botticelli's posthumous reputation suffered until the late 19th century, when he was rediscovered by the Pre-Raphaelites who stimulated a reappraisal of his work. Since then, his paintings have been seen to represent the linear grace of late Italian Gothic and some Early Renaissance painting, even though they date from the latter half of the Italian Renaissance period.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sandro_Botticelli_Self-portrait_ca_1475.jpg/330px-Sandro_Botticelli_Self-portrait_ca_1475.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Rembrandt",
+      "description": "",
+      "bio_fr": "Rembrandt Harmenszoon van Rijn, habituellement désigné sous son seul prénom Rembrandt, est un peintre et graveur néerlandais, né à Leyde le 15 juillet 1606 ou 1607 et mort à Amsterdam le 4 octobre 1669. Artiste innovant et prolifique, il est l'un des plus grands artistes visuels de l'histoire de la peinture et l'un des principaux peintres de l'École hollandaise du XVIIe siècle, le siècle d'or néerlandais.",
+      "bio_en": "Rembrandt Harmenszoon van Rijn, known mononymously as Rembrandt, was a Dutch Golden Age painter, printmaker, and draughtsman. He is generally considered one of the greatest visual artists in the history of Western art. It is estimated that Rembrandt's surviving works amount to about three hundred paintings, three hundred etchings, and several hundred drawings.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/330px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Vermeer",
+      "description": "",
+      "bio_fr": "Johannes ou Jan Van der Meer, dit Vermeer ou Vermeer de Delft, né à une date inconnue, baptisé le 31 octobre 1632 à Delft, et mort le 15 décembre 1675 dans cette même ville, est un peintre néerlandais du mouvement de la peinture de genre néerlandaise.",
+      "bio_en": "Johannes Vermeer was a Dutch painter who specialized in domestic interior scenes of middle-class life. He is considered one of the greatest painters of the Dutch Golden Age. During his lifetime, he was a moderately successful provincial genre painter, recognized in Delft and The Hague. He produced relatively few paintings, primarily earning his living as an art dealer. He was not wealthy; at his death, his wife was left in debt.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg/330px-Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Dürer",
+      "description": "",
+      "bio_fr": "Albrecht Dürer, né le 21 mai 1471 à Nuremberg, où il est mort le 6 avril 1528, est un dessinateur, graveur et peintre allemand de la Renaissance, également connu comme théoricien de la géométrie et de la perspective linéaire. Prenant racine en sa ville natale, Dürer établit sa réputation et son influence à travers l'Europe dans sa vingtaine grâce à ses gravures sur bois de haute qualité. Il est en contact avec les grands artistes italiens de son temps, dont Raphaël, Giovanni Bellini et Léonard de Vinci et, à partir de 1512, il est patronné par l'empereur Maximilien Ier.",
+      "bio_en": "Albrecht Dürer, sometimes spelled in English as Durer or Duerer, was a German painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe in his twenties due to his high-quality woodcut prints. He was in contact with the major Italian artists of his time, including Raphael, Giovanni Bellini and Leonardo da Vinci, and from 1512 was patronized by Emperor Maximilian I.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg/330px-Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Monet",
+      "description": "",
+      "bio_fr": "Oscar Claude Monet, dit Claude Monet, né le 14 novembre 1840 à Paris et mort le 5 décembre 1926 à Giverny, est un peintre français et l’un des fondateurs de l'impressionnisme.",
+      "bio_en": "Oscar-Claude Monet was a French painter and founder of Impressionism who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of Impressionism's philosophy of expressing one's perceptions of nature, especially as applied to plein air (outdoor) landscape painting. The term \"Impressionism\" is derived from the title of his painting Impression, Sunrise, which was exhibited in 1874 at the First Impressionist Exhibition, initiated by Monet and a number of like-minded artists as an alternative to the Salon.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/330px-Claude_Monet_1899_Nadar_crop.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Rodin",
+      "description": "",
+      "bio_fr": "Auguste Rodin, né à Paris le 12 novembre 1840 et mort à Meudon le 17 novembre 1917, est l'un des plus importants sculpteurs français de la seconde moitié du XIXe siècle, considéré comme un des pères de la sculpture moderne.",
+      "bio_en": "François Auguste René Rodin was a French sculptor generally considered the founder of modern sculpture. He was schooled traditionally and took a craftsman-like approach to his work. Rodin possessed a unique ability to model a complex, turbulent, and deeply pocketed surface in clay. He is known for such sculptures as The Thinker, Monument to Balzac, The Kiss, The Burghers of Calais, and The Gates of Hell.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg/330px-Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Le Caravage",
+      "description": "",
+      "bio_fr": "Michelangelo Merisi da Caravaggio, francisé Caravage ou le Caravage, est un peintre italien, né le 29 septembre 1571 à Milan et mort le 18 juillet 1610 à Porto Ercole.",
+      "bio_en": "Michelangelo Merisi da Caravaggio, known mononymously as Caravaggio, was an Italian painter active in Rome for a significant portion of his artistic life. He began his apprenticeship in Milan in 1584, and during the final four years of his life, he moved between Naples, Malta, and Sicily. His paintings have been characterized by art critics as combining a realistic observation of the human state, both physical and emotional, with a dramatic use of lighting, which had a formative influence on Baroque painting.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg/330px-Bild-Ottavio_Leoni%2C_Caravaggio.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Mozart",
+      "description": "",
+      "bio_fr": "Wolfgang Amadeus Mozart ou Johannes Chrysostomus Wolfgangus Theophilus Mozart, né le 27 janvier 1756 à Salzbourg et mort le 5 décembre 1791 à Vienne, est un compositeur germano-autrichien de la période classique. Il est considéré comme l'un des plus grands compositeurs de l'histoire de la musique. Avec Joseph Haydn et Ludwig van Beethoven, il porte à son apogée l'école classique viennoise.",
+      "bio_en": "Wolfgang Amadeus Mozart was a Classical composer and musician. He completed more than 800 works in his life—including outstanding examples of most of the genres of his time: symphonies, concertos, chamber music, opera, and choral music—and is regarded as one of the greatest composers in the history of Western music.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mozart_%28unfinished%29_by_Lange_1782.jpg/330px-Mozart_%28unfinished%29_by_Lange_1782.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Beethoven",
+      "description": "",
+      "bio_fr": "Ludwig van Beethoven est un compositeur, pianiste et chef d'orchestre allemand né le 15 ou le 16 décembre 1770 à Bonn et mort le 26 mars 1827 à Vienne.",
+      "bio_en": "Ludwig van Beethoven was a German composer, conductor, and pianist. Regarded as one of the greatest composers in the history of Western music, he was mentored during the Classical period, and his musical style was a key driver of the transition to Romantic music, and the expansion of instrumental forms such as the symphony, the piano sonata and the string quartet. His compositions have attracted extraordinary casual and scholarly interest, and remain among the most performed in the world.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/330px-Beethoven.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Jean-Sébastien Bach",
+      "description": "",
+      "bio_fr": "Jean-Sébastien Bach est un compositeur et musicien allemand né le 21 mars 1685 à Eisenach dans le duché de Saxe-Eisenach et mort le 28 juillet 1750 à Leipzig. Il est souvent surnommé le « Cantor de Leipzig ».",
+      "bio_en": "Johann Sebastian Bach was a German composer and musician of the late Baroque period. He is known for his prolific output across a variety of instruments and forms, including the orchestral Brandenburg Concertos; solo instrumental works such as the Cello Suites and Sonatas and Partitas for Solo Violin; keyboard works such as the Goldberg Variations and The Well-Tempered Clavier; organ works such as the Schübler Chorales and the Toccata and Fugue in D minor; and choral works such as the St. Matthew Passion and the Mass in B minor. He is known for his mastery of counterpoint, as heard in The Musical Offering and The Art of Fugue. Felix Mendelssohn precipitated the Bach Revival with a performance of the St. Matthew Passion in 1829. Ever since, Bach has been acclaimed as one of the greatest composers in the history of Western music.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/330px-Johann_Sebastian_Bach.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Chopin",
+      "description": "",
+      "bio_fr": "Frédéric Chopin, né Fryderyk Franciszek Chopin le 1er mars 1810 à Żelazowa Wola et mort le 17 octobre 1849 dans le 2e arrondissement de Paris (Seine), est un compositeur et pianiste d'ascendance franco-polonaise.",
+      "bio_en": "Frédéric François Chopin was a Polish composer and virtuoso pianist of the early Romantic period who wrote primarily for solo piano. He has maintained worldwide renown as a leading composer of his era whose \"poetic genius was based on a professional technique that was without equal in his generation\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Frederic_Chopin_photo.jpeg/330px-Frederic_Chopin_photo.jpeg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Wagner",
+      "description": "",
+      "bio_fr": "Wilhelm Richard Wagner [ˈʁɪçaʁt ˈvaːɡnɐ], né le 22 mai 1813 à Leipzig et mort le 13 février 1883 à Venise, est un compositeur, directeur de théâtre, écrivain et chef d'orchestre allemand de la période romantique. Il est particulièrement connu pour ses quatorze opéras et drames lyriques, dont les dix principaux sont régulièrement joués lors du Festival annuel, qu'il a créé en 1876, qui se déroule chaque été dans le palais des festivals de Bayreuth, conçu par lui-même pour l'exécution de ses œuvres. Il est par ailleurs, auteur de plus d'une vingtaine d'ouvrages philosophiques et théoriques.",
+      "bio_en": "Wilhelm Richard Wagner was a German composer, theatre director, essayist, and conductor, best known for his operas, although his mature works are often referred to as music dramas. Unlike most composers, Wagner wrote both the libretti and the music for all of his stage works. He first achieved recognition with works in the Romantic tradition of Carl Maria von Weber and Giacomo Meyerbeer, but revolutionised the genre through his concept of the Gesamtkunstwerk, which sought to unite poetic, musical, visual, and dramatic elements. In that approach, the drama unfolds as a continuously sung narrative, with the music evolving organically from the text rather than alternating between arias and recitatives. Wagner outlined those ideas in a series of essays published between 1849 and 1852, most fully realising them in the first half of his four-opera cycle Der Ring des Nibelungen.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RichardWagner.jpg/330px-RichardWagner.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Vivaldi",
+      "description": "",
+      "bio_fr": "Antonio Lucio Vivaldi [anˈtɔːnjo ˈluːtʃo viˈvaldi], né le 4 mars 1678 à Venise et mort le 28 juillet 1741 à Vienne, est un violoniste et compositeur de musique baroque italien. Il était également prêtre de l'Église catholique.",
+      "bio_en": "Antonio Lucio Vivaldi was an Italian composer, virtuoso violinist and impresario of Baroque music. Regarded as one of the greatest Baroque composers, Vivaldi's influence during his lifetime was widespread across Europe, giving origin to many imitators and admirers. He pioneered many developments in orchestration, violin technique and programmatic music. He consolidated the emerging concerto form, especially the solo concerto, into a widely accepted and followed idiom.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Antonio_Vivaldi.jpg/330px-Antonio_Vivaldi.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Verdi",
+      "description": "",
+      "bio_fr": "Giuseppe Fortunino Francesco Verdi, né Joseph Fortunin François Verdi le 10 octobre 1813 à Roncole et mort le 27 janvier 1901 à Milan, est un compositeur romantique italien. Son œuvre, composée essentiellement d'opéras, unissant le pouvoir mélodique à la profondeur psychologique et légendaire, est l'une des plus importantes de l'histoire du théâtre musical.",
+      "bio_en": "Giuseppe Fortunino Francesco Verdi was an Italian composer best known for his operas. He was born near Busseto, a small town in the modern province of Parma, to a family of moderate means, receiving a musical education with the help of a local patron named Antonio Barezzi.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Verdi-photo-Brogi.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Einstein",
+      "description": "",
+      "bio_fr": "Albert Einstein, né le 14 mars 1879 à Ulm et mort le 18 avril 1955 à Princeton, est un physicien théoricien helvético-américain d'origine allemande.",
+      "bio_en": "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity. Einstein also made important contributions to quantum theory. His mass–energy equivalence formula E = mc2, which arises from special relativity, has been called \"the world's most famous equation\". He received the 1921 Nobel Prize in Physics for \"his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/330px-Albert_Einstein_Head_cleaned.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Copernic",
+      "description": "",
+      "bio_fr": "Nicolas Copernic est un astronome polonais, également chanoine, médecin et mathématicien, né le 19 février 1473 à Thorn (Toruń) en Prusse royale, et mort le 24 mai 1543 à Frauenburg.",
+      "bio_en": "Nicolaus Copernicus was a Renaissance polymath who formulated a model of the universe that placed the Sun rather than Earth at its center. The publication of Copernicus's model in his book De revolutionibus orbium coelestium, just before his death in 1543, was a major event in the history of science, triggering the Copernican Revolution and making a pioneering contribution to the Scientific Revolution. Though a similar heliocentric model had been developed eighteen centuries earlier by Aristarchus of Samos, an ancient Greek astronomer, Copernicus likely arrived at his model independently.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/330px-Nikolaus_Kopernikus.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Kepler",
+      "description": "",
+      "bio_fr": "Johannes Kepler, né le 27 décembre 1571 à Weil der Stadt et mort le 15 novembre 1630 à Ratisbonne, est un astronome allemand célèbre pour avoir étudié l'hypothèse héliocentrique de Nicolas Copernic, affirmant que la Terre tourne autour du Soleil, et surtout pour avoir découvert que les planètes ne tournent pas autour du Soleil en suivant des trajectoires circulaires parfaites, mais elliptiques.",
+      "bio_en": "Johannes Kepler was a German polymath who was an astronomer, mathematician, astrologer, natural philosopher and music theorist. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion, and his books Astronomia nova, Harmonice Mundi, and Epitome Astronomiae Copernicanae. The variety and impact of his work made Kepler one of the founders and fathers of modern astronomy, the scientific method, natural science, and modern science. He has been described as the \"father of science fiction\" for his novel Somnium.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/JKepler.jpg/330px-JKepler.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Mendeleïev",
+      "description": "",
+      "bio_fr": "Dmitri Ivanovitch Mendeleïev, né le 27 janvier 1834 à Tobolsk et mort le 20 janvier 1907 à Saint-Pétersbourg, est un chimiste russe.",
+      "bio_en": "Dmitri Ivanovich Mendeleev was a Russian chemist known for formulating the periodic law and creating a version of the periodic table of elements. He used the periodic law not only to correct the then-accepted properties of some known elements, such as the valence and atomic weight of uranium, but also to predict the properties of three elements that were yet to be discovered. The synthetic element mendelevium is named in his honor.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/DIMendeleevCab.jpg/330px-DIMendeleevCab.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Tesla",
+      "description": "",
+      "bio_fr": "Nikola Tesla, né le 10 juillet 1856 à Smiljan dans l'empire d'Autriche et mort le 7 janvier 1943 à New York, est un inventeur et ingénieur américain d'origine serbe. Il est connu pour son rôle prépondérant dans le développement et l'adoption du courant alternatif pour le transport et la distribution de l'électricité.",
+      "bio_en": "Nikola Tesla was a Serbian-American engineer, futurist, and inventor. He is known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/330px-Tesla_circa_1890.jpeg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Edison",
+      "description": "",
+      "bio_fr": "Thomas Edison, né le 11 février 1847 à Milan (Ohio) et mort le 18 octobre 1931 à West Orange, est un inventeur, scientifique et industriel américain.",
+      "bio_en": "Thomas Alva Edison was an American inventor and businessman known for his work on the incandescent light bulb, the phonograph, electric power distribution and early motion pictures. The merger of the Edison General Electric Company and the competitor Thomson-Houston Electric Company resulted in the formation of General Electric. Edison registered 1,093 patents in the United States.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/330px-Thomas_Edison2.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Turing",
+      "description": "",
+      "bio_fr": "Alan Mathison Turing, né le 23 juin 1912 à Londres et mort le 7 juin 1954 à Wilmslow, est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique. Il est aussi un des pionniers de l'Intelligence artificielle.",
+      "bio_en": "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/330px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Fleming",
+      "description": "",
+      "bio_fr": "Alexander Fleming est un médecin, biologiste et pharmacologue britannique, né le 6 août 1881 à Darvel, Ayrshire en Écosse et mort le 11 mars 1955 à Londres. Il a publié de nombreux articles concernant la bactériologie, l'immunologie et la chimiothérapie.",
+      "bio_en": "Sir Alexander Fleming was a Scottish physician and microbiologist. He shared the 1945 Nobel Prize in Physiology or Medicine with Howard Florey and Ernst Chain \"for the discovery of penicillin and its curative effect in various infectious diseases\".\nThis was the first antibiotic substance discovered. His discovery in 1928 of what was later named benzylpenicillin from the mould Penicillium rubens has been described as the \"single greatest victory ever achieved over disease\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Alexander_Fleming_1945.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ampère",
+      "description": "",
+      "bio_fr": "André-Marie Ampère est un mathématicien, physicien, chimiste et philosophe français. Il a été membre de l'Académie des sciences, ainsi que professeur à l'École polytechnique et au Collège de France.",
+      "bio_en": "André-Marie Ampère was a French physicist and mathematician who was one of the founders of the science of classical electromagnetism, which he referred to as electrodynamics. He made also important contributions in chemistry and philosophy. He is also the inventor of numerous applications, such as the solenoid and the electrical telegraph. As an autodidact, Ampère was a member of the French Academy of Sciences and professor at the École polytechnique and the Collège de France.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Ampere_portrait_at_the_Musee_Poleymieux.jpg/330px-Ampere_portrait_at_the_Musee_Poleymieux.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Christophe Colomb",
+      "description": "",
+      "bio_fr": "Christophe Colomb est un navigateur génois, né en 1451 sur le territoire de la république de Gênes et mort le 20 mai 1506 à Valladolid (Espagne). Il est célèbre pour avoir, selon la formulation traditionnelle mais contestée, « découvert l'Amérique » en octobre 1492, alors qu’il est au service des « Rois catholiques », Isabelle de Castille et Ferdinand d'Aragon.",
+      "bio_en": "Christopher Columbus was an Italian explorer and navigator from the Republic of Genoa who completed four Spanish transatlantic voyages in the name of the Catholic Monarchs, opening the way for the widespread European exploration and colonization of the Americas. His expeditions were the first known European contact with the Caribbean and Central and South America.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg/330px-Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Magellan",
+      "description": "",
+      "bio_fr": "Fernand de Magellan, né vers 1480 probablement à Porto et mort le 27 avril 1521 sur l'île de Mactan, est un navigateur et explorateur portugais de l'époque des grandes découvertes, passé au service de la couronne de Castille, avec le projet d'atteindre les Indes orientales, notamment les îles Moluques en Indonésie, en naviguant vers l'ouest, ce qui était le projet inabouti de Christophe Colomb en 1492 ; Magellan espère donc trouver un passage de l'océan Atlantique à l'océan oriental auquel il donnera le nom d'océan Pacifique.",
+      "bio_en": "Ferdinand Magellan was a Portuguese explorer best known for planning and leading the 1519–1522 Spanish expedition to the East Indies. During this expedition, he became the first European to encounter the Strait of Magellan, performed the first European crossing of the Pacific Ocean, and made the first known European contact with the Philippines. Magellan was killed in battle in the Philippines in 1521, but his crew, commanded by Spanish navigator Juan Sebastián Elcano, completed the return trip to Spain in 1522, achieving the first circumnavigation of Earth in history.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ferdinand_Magellan.jpg/330px-Ferdinand_Magellan.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Vasco de Gama",
+      "description": "",
+      "bio_fr": "Vasco de Gama né vers 1460 ou 1469 à Sines (Portugal) et mort le 24 décembre 1524 à Cochin aux Indes orientales, est un grand navigateur portugais, considéré comme le premier Européen à atteindre les Indes orientales par la route des Indes maritime, vers l'océan Indien, en contournant en 1498 le cap de Bonne-Espérance en Afrique du Sud, découvert en 1488 par Bartolomeu Dias, pendant la période des grandes découvertes.",
+      "bio_en": "Vasco da Gama was a Portuguese mariner, explorer and nobleman. His discovery of the first direct maritime route between Europe and India via the Cape of Good Hope and across the Indian Ocean from Malindi in Kenya to Kozhikode was to open up European exploration of, and commerce with, India, and is considered a landmark event and a turning point in world history.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vasco_da_Gama_-_1838.png/330px-Vasco_da_Gama_-_1838.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Marco Polo",
+      "description": "",
+      "bio_fr": "Marco Polo ou Marc Pol est un célèbre marchand, explorateur, diplomate, ethnologue et écrivain vénitien, de la période des préludes des grandes découvertes, devenu mondialement célèbre pour une des plus anciennes descriptions qu'il a données de l'empire sino-mongol du Khagan Kubilai Khan, avec son Livre de Marco Polo de 1298, recopié et traduit avec succès en de nombreuses langues.",
+      "bio_en": "Marco Polo was a Venetian merchant, explorer, and writer who travelled through Asia along the Silk Road between 1271 and 1295. His travels are recorded in The Travels of Marco Polo, a book that described the then-mysterious culture and inner workings of the Eastern world, including the wealth and great size of the Mongol Empire and China under the Yuan dynasty, giving Europeans their first comprehensive look into China, Persia, India, Japan, and other Asian societies.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg/330px-Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "James Cook",
+      "description": "",
+      "bio_fr": "James Cook est un navigateur, explorateur et cartographe britannique, né le 7 novembre 1728 à Marton (Middlesbrough) et mort le 14 février 1779 à Hawaï.",
+      "bio_en": "Captain James Cook was a British Royal Navy officer, explorer, and cartographer who led three voyages of exploration to the Pacific and Southern Oceans between 1768 and 1779. He completed the first recorded circumnavigation of the main islands of New Zealand, and led the first recorded visit by Europeans to the east coast of Australia and the Hawaiian Islands.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Amundsen",
+      "description": "",
+      "bio_fr": "Roald Engelbregt Gravning Amundsen, né le 16 juillet 1872 à Borge en Norvège et mort le 18 juin 1928 vers l'île aux Ours, est un marin et explorateur polaire norvégien.",
+      "bio_en": "Roald Engelbregt Gravning Amundsen was a Norwegian explorer of polar regions. He was a key figure of the period known as the Heroic Age of Antarctic Exploration.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amundsen_in_fur_skins.jpg/330px-Amundsen_in_fur_skins.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Shackleton",
+      "description": "",
+      "bio_fr": "Ernest Shackleton, né le 15 février 1874 à Kilkea en Irlande et mort le 5 janvier 1922 sur l'île de la Géorgie du Sud, est un explorateur anglo-irlandais, considéré comme l'une des principales figures de l'âge héroïque de l'exploration en Antarctique.",
+      "bio_en": "Sir Ernest Henry Shackleton was an Anglo-Irish Antarctic explorer who led three British expeditions to the Antarctic. He was one of the principal figures of the period known as the Heroic Age of Antarctic Exploration.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/South_-_the_story_of_Shackleton%27s_last_expedition%2C_1914-1917_-_The_Leader_%28cropped%29.jpg/330px-South_-_the_story_of_Shackleton%27s_last_expedition%2C_1914-1917_-_The_Leader_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ibn Battuta",
+      "description": "",
+      "bio_fr": "Ibn Battûta, de son nom complet ʾAbu ʿAbd Allah Muḥammad Ibn ʿAbd Allah al-Lawātī aṭ-Ṭanjī Ibn Baṭṭūṭa, né le 24 février 1304 à Tanger et mort en 1368 à Fès ou Marrakech, est un explorateur et voyageur d'origine berbère qui aurait parcouru plus de 120 000 km entre 1325 et 1349, de l'ancien territoire du khanat bulgare de la Volga au nord, jusqu'à Tombouctou au sud, et de Tanger à l’ouest jusqu'à Quanzhou en Extrême-Orient.",
+      "bio_en": "Ibn Battuta was a Maghrebi Muslim traveller, explorer and scholar from Tangier. Over a period of 30 years from 1325 to 1354, he visited much of Africa, Asia, and the Iberian Peninsula. Near the end of his life, Ibn Battuta dictated an account of his journeys, titled A Gift to Those Who Contemplate the Wonders of Cities and the Marvels of Travelling, commonly known as The Rihla. Ibn Battuta travelled more than any other explorer in pre-modern history, totalling around 117,000 km (73,000 mi), surpassing Zheng He with about 50,000 km (31,000 mi) and Marco Polo with 24,000 km (15,000 mi).",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg/330px-Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Jacques Cartier",
+      "description": "",
+      "bio_fr": "Jacques Cartier, né vers 1491 à Saint-Malo où il meurt le 1er septembre 1557, est un navigateur et explorateur français de Bretagne. Mandaté par le roi de France François Ier, il atteint en mai 1534 le golfe du Saint-Laurent et explore les territoires alentour, auxquels il donne le nom de « Canada », tiré du mot iroquoien kanata (« village »). Il y effectue un second voyage en 1535-1536, et un troisième en 1541-1542 qui constitue l'une des premières tentatives de colonisation française des Amériques.",
+      "bio_en": "Jacques Cartier was a French maritime explorer from Brittany. Jacques Cartier was the first European to describe and map the Gulf of Saint Lawrence and the shores of the Saint Lawrence River, which he named \"Canada\" after the Iroquoian names for the two big settlements he saw at Stadacona and at Hochelaga.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jacques_Cartier_1851-1852.jpg/330px-Jacques_Cartier_1851-1852.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Champlain",
+      "description": "",
+      "bio_fr": "Samuel de Champlain, né vraisemblablement à Brouage entre 1567 et 1574 et mort à Québec en Nouvelle-France le 25 décembre 1635, est un colonisateur, navigateur, cartographe, soldat, explorateur, ethnologue, géographe, commandant et auteur de récits de voyage français. Il fonde la ville de Québec le 3 juillet 1608.",
+      "bio_en": "Samuel de Champlain was a French explorer, navigator, cartographer, soldier, geographer, diplomat, and chronicler who founded Quebec City and established New France as a permanent French colony in North America.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Samchamprifle.jpg/330px-Samchamprifle.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Livingstone",
+      "description": "",
+      "bio_fr": "David Livingstone, né le 19 mars 1813 à Blantyre et mort le 1er mai 1873 près du lac Bangwelo, est un médecin, missionnaire protestant et explorateur britannique qui contribue à la fois au développement et à la promotion de l'empire commercial britannique d'une part, à la lutte contre la traite esclavagiste et à l'évangélisation du Sud du continent africain d'autre part.",
+      "bio_en": " David Livingstone was a Scottish doctor, Congregationalist, pioneer Christian missionary with the London Missionary Society, and an explorer in Africa. Livingstone was married to Mary Moffat Livingstone, from the prominent 18th-century Moffat missionary family. Livingstone came to have a mythic status as a Protestant missionary martyr, working-class \"rags-to-riches\" inspirational story, scientific investigator and explorer, imperial reformer, anti-slavery crusader, and advocate of British commercial and colonial expansion. As a result, he became one of the most popular British heroes of the late 19th-century Victorian era.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/David_Livingstone_by_Thomas_Annan.jpg/330px-David_Livingstone_by_Thomas_Annan.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Saladin",
+      "description": "",
+      "bio_fr": "Saladin, né en 1138 à Tikrit et mort le 4 mars 1193 à Damas, est le premier dirigeant de la dynastie ayyoubide, dynastie musulmane qui tient son nom de son père Najm ad-Din Ayyub et qui a régné sur l'Égypte de 1169 à 1250 et sur la Syrie de 1174 à 1260. Saladin dirige l'Égypte de 1169 à 1193, Damas de 1174 à 1193 et Alep de 1183 à 1193.",
+      "bio_en": "Salah ad-Din Yusuf ibn Ayyub, commonly known as Saladin, was a Kurdish commander and political leader. He was the founder of the Ayyubid dynasty and the first sultan of both Egypt and Syria. An important figure of the Third Crusade, he spearheaded the Muslim military effort against the Crusader states in the Levant. At the height of his power, the Ayyubid realm spanned Egypt, Syria, Upper Mesopotamia, the Hejaz, Yemen, and Nubia.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Saladin_coin_obverse.jpg/330px-Saladin_coin_obverse.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Averroès",
+      "description": "",
+      "bio_fr": "Ibn Rochd de Cordoue , plus connu en Occident sous son nom latinisé Averroès, est un philosophe, théologien, juriste et médecin musulman andalou de langue arabe du XIIe siècle, né le 14 avril 1126 à Cordoue en Andalousie et mort le 10 décembre 1198 à Marrakech au Maroc. Il exerce les fonctions de grand cadi à Séville et à Cordoue, et de médecin privé des sultans almohades, à Marrakech, à une époque charnière où le pouvoir passe des Almoravides aux Almohades.",
+      "bio_en": "Ibn Rushd, Latinized as Averroes, was an Andalusian polymath and jurist who was proficient in a variety of intellectual fields, including philosophy, theology, medicine, astronomy, physics, psychology, mathematics, neurology, Islamic jurisprudence and law, and linguistics. The author of more than 100 books and treatises, his philosophical works include numerous commentaries on Aristotle, for which he was known in the Western world as \"The Commentator\" and \"Father of Rationalism\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/AverroesColor.jpg/330px-AverroesColor.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Avicenne",
+      "description": "",
+      "bio_fr": "Ibn Sina, connu en Occident sous le nom d'Avicenne, est un philosophe et médecin persan, né le 7 août 980 à Afshona, près de Boukhara, dans l'actuel Ouzbékistan et mort en août 1037 à Hamadan (Iran). Il est l'auteur d'ouvrages de référence en médecine et en philosophie, ainsi que de sciences voisines comme l'astronomie, l'alchimie, et la psychologie, rédigés principalement en arabe classique.",
+      "bio_en": "Ibn Sina, commonly known in the West as Avicenna, was a preeminent philosopher and physician of the Muslim world. He was a seminal figure of the Islamic Golden Age, serving in the courts of various Iranian rulers, and was influential to medieval European medical and Scholastic thought. Avicenna is considered one of the greatest thinkers and medical scholars in history.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Avicenna-miniatur.jpg/330px-Avicenna-miniatur.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ibn Khaldoun",
+      "description": "",
+      "bio_fr": "Ibn Khaldoun (en arabe : [ɪbn̩ χɐlduːn]; nom complet : أبو زيد عبد الرحمن بن محمد بن خلدون الحضرمي, né le 27 mai 1332 à Tunis et mort le 17 mars 1406 au Caire, est un historien, économiste, géographe, démographe, précurseur de la sociologie et homme d'État arabe.",
+      "bio_en": "Ibn Khaldun was an Arab scholar, historian, philosopher, and sociologist. He is widely acknowledged to be one of the greatest social scientists of the Middle Ages, and is considered by a number of scholars to be a major forerunner of historiography, sociology, economics, and demography studies.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bust_of_Ibn_Khaldun_%28Casbah_of_Bejaia%2C_Algeria%29.jpg/330px-Bust_of_Ibn_Khaldun_%28Casbah_of_Bejaia%2C_Algeria%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Soliman le Magnifique",
+      "description": "",
+      "bio_fr": "Soliman Ier est probablement né le 6 novembre 1494 à Trébizonde dans l'actuelle Turquie et mort le 6 septembre 1566 à Szigetvár dans l'actuelle Hongrie",
+      "bio_en": "Suleiman I, commonly known as Suleiman the Magnificent, was the Ottoman sultan from 1520 to 1566. The longest reign among the Ottoman sultans, his rule brought about a notable peak in the Ottoman Empire's economic, military and political power, and raised the number of the empire's subjects to at least 25 million people.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EmperorSuleiman.jpg/330px-EmperorSuleiman.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Al-Khwarizmi",
+      "description": "",
+      "bio_fr": "Muḥammad ibn Mūsā al-Khwārizmī, généralement appelé Al-Khwârizmî, latinisé en Algoritmi ou Algorizmi, né dans les années 780, probablement à Khiva dans la région du Khwarezm, dans l'actuel Ouzbékistan, mort vers 850 à Bagdad, est un mathématicien, géographe, astrologue et astronome, membre de la Maison de la sagesse de Bagdad. Ses écrits, rédigés en langue arabe, puis traduits en latin à partir du XIIe siècle, ont permis l'introduction de l'algèbre en Europe. Sa vie s'est déroulée en totalité à l'époque de la dynastie abbasside.",
+      "bio_en": "Muhammad ibn Musa al-Khwarizmi, or simply al-Khwarizmi was a mathematician active during the Islamic Golden Age, who produced Arabic-language works in mathematics, astronomy, and geography. Around 820, he worked at the House of Wisdom in Baghdad, the contemporary capital city of the Abbasid Caliphate. One of the most prominent scholars of the period, his works were widely influential on later authors, both in the Islamic world and Europe.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/1983_CPA_5426.jpg/330px-1983_CPA_5426.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Haroun al-Rachid",
+      "description": "",
+      "bio_fr": "Hâroun ar-Rachîd ben Muhammad ben al-Mansûr  également connu sous son nom de règne (laqab) Hārūn al-Rašīd , né en 765 ou 766 à Ray et mort à Tûs en 809, est le cinquième calife abbasside qui succède à son frère al-Hâdî en 786 et règne jusqu'à sa mort en 809. Il est traditionnellement appelé Aaron en occident. Son épithète arabe al-Rachîd se traduit par «l'Orthodoxe », il est parfois surnommé «Aaron l'Orthodoxe ».",
+      "bio_en": "Abū Jaʿfar Hārūn ibn Muḥammad ar-Rashīd, or simply Hārūn ibn al-Mahdī, famously known as Hārūn al-Rashīd, was the fifth of the Abbasid caliphs, reigning from September 786 until his death in March 809. His reign is traditionally regarded to be the beginning of the Islamic Golden Age. His epithet al-Rashid translates to \"the Just\", \"the Upright\", or \"the Rightly-Guided\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Harun_Al-Rashid_and_the_World_of_the_Thousand_and_One_Nights.jpg/330px-Harun_Al-Rashid_and_the_World_of_the_Thousand_and_One_Nights.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Charlemagne",
+      "description": "",
+      "bio_fr": "Charlemagne, du latin Carolus Magnus, ou Charles Ier dit « le Grand », Karl de son nom usuel dans sa langue maternelle le francique rhénan, né à une date inconnue, mort le 28 janvier 814 à Aix-la-Chapelle, est un roi des Francs et empereur. Il appartient à la dynastie des Carolingiens. Fils de Pépin le Bref et de Bertrade de Laon, il est roi des Francs à partir de 768, devient par conquête roi des Lombards en 774 et est couronné empereur à Rome par le pape Léon III le 24 ou 25 décembre 800, relevant une dignité disparue en Occident depuis la déposition, trois siècles auparavant, de Romulus Augustule en 476.",
+      "bio_en": "Charlemagne was King of the Franks from 768, King of the Lombards from 774, and Emperor of what is now known as the Carolingian Empire from 800. He united most of Western and Central Europe and was the first recognised emperor to rule from the west after the fall of the Western Roman Empire approximately three centuries earlier. Charlemagne's reign was marked by political and social changes that had lasting influence on Europe throughout the Middle Ages.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/330px-Charlemagne_denier_Mayence_812_814.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Guillaume le Conquérant",
+      "description": "",
+      "bio_fr": "Guillaume le Conquérant, appelé également Guillaume le Bâtard ou Guillaume de Normandie, est né à Falaise en 1027 ou 1028 et mort à Rouen le 9 septembre 1087. Il fut duc de Normandie, sous le nom de Guillaume II, de 1035 à sa mort, et roi d'Angleterre, sous le nom de Guillaume Ier, de 1066 à sa mort.",
+      "bio_en": "William the Conqueror, sometimes called William the Bastard, was the first Norman king of England, reigning from 1066 until his death. A descendant of Rollo, he was Duke of Normandy from 1035 onward. By 1060, following a long struggle, his hold on Normandy was secure. In 1066, following the death of Edward the Confessor, William invaded England, leading a Franco-Norman army to victory over the Anglo-Saxon forces of Harold Godwinson at the Battle of Hastings. He suppressed subsequent English revolts in what has become known as the Norman Conquest. The rest of his life was marked by struggles to consolidate his hold over England and his continental lands, and by difficulties with his eldest son, Robert Curthose.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bayeux_Tapestry_William.jpg/330px-Bayeux_Tapestry_William.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Aliénor d'Aquitaine",
+      "description": "",
+      "bio_fr": "Aliénor d'Aquitaine, aussi connue sous le nom d'Éléonore d'Aquitaine ou d'Éléonore de Guyenne, née vers 1124 et morte à Poitiers le 31 mars ou le 1er avril 1204, a été tour à tour reine de France, puis reine d'Angleterre.",
+      "bio_en": "Eleanor of Aquitaine was Duchess of Aquitaine from 1137 to 1204, Queen of France from 1137 to 1152 as the wife of King Louis VII, and queen of England from 1154 to 1189 as the wife of King Henry II. As the reigning duchess of Aquitaine, she ruled jointly with her husbands and two of her sons, Kings Richard I and John of England. As the heiress of the House of Poitiers, which controlled much of southwestern France, she was one of the wealthiest and most powerful people in Western Europe during the High Middle Ages.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg/330px-Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Saint Louis",
+      "description": "",
+      "bio_fr": "Louis IX, parfois dit « le Prud'homme » et plus communément appelé Saint Louis, est un roi de France capétien, né le 25 avril 1214 à Poissy et mort le 25 août 1270 à Carthage, près de Tunis. Il régna pendant plus de 43 ans, de 1226 jusqu'à sa mort. Considéré comme un saint de son vivant, il est canonisé par l'Église catholique en 1297.",
+      "bio_en": "Louis IX, also known as Saint Louis, was King of France from 1226 until his death in 1270. He is widely recognized as the most distinguished of the Direct Capetians, is the sole king of France to be canonised as a saint of the Catholic Church, and is also the direct ancestor of all subsequent French kings. Following the death of his father, Louis VIII, he was crowned in Reims at the age of 12. His mother, Blanche of Castile, effectively ruled the kingdom as regent until he came of age, and continued to serve as his trusted adviser until her death.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Saintlouis_%28cropped%29.jpg/330px-Saintlouis_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Thomas d'Aquin",
+      "description": "",
+      "bio_fr": "Thomas d'Aquin, né en 1225 ou 1226 au château de Roccasecca près d'Aquino, dans la partie péninsulaire du royaume de Sicile (Latium), et mort le 7 mars 1274 à l'abbaye de Fossanova près de Priverno dans les États pontificaux, est un religieux italien de l'ordre dominicain, célèbre pour son œuvre théologique et philosophique.",
+      "bio_en": "Thomas Aquinas was an Italian Dominican friar and priest, theologian, and philosopher. He is considered one of the most influential thinkers in the history of Catholic theology and Western philosophy. He is the father of a school of thought known as Thomism.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/St-thomas-aquinasFXD.jpg/330px-St-thomas-aquinasFXD.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Frédéric Barberousse",
+      "description": "",
+      "bio_fr": "Frédéric Ier de Hohenstaufen est un empereur du Saint-Empire romain germanique de 1155 à sa mort. Il est surnommé Frédéric Barberousse en raison de son éblouissante barbe rousse.",
+      "bio_en": "Frederick Barbarossa, also known as Frederick I, was the Holy Roman Emperor from 1155 until his death in 1190. He was elected King of Germany in Frankfurt on 4 March 1152 and crowned in Aachen on 9 March 1152. He was crowned King of Italy on 24 April 1155 in Pavia and emperor by Pope Adrian IV on 18 June 1155 in Rome. Two years later, the term sacrum (\"holy\") first appeared in a document in connection with his empire. He was later formally crowned King of Burgundy, at Arles on 30 June 1178. His nickname of Barbarossa \"was first used by the Florentines only in 1298 to differentiate the emperor from his grandson, Frederick II ... and was never employed in medieval Germany\". In German, he was known as Kaiser Rotbart, which in English means \"Emperor Redbeard\". The prevalence of the Italian nickname, even in later German usage, reflects the centrality of the Italian campaigns under his reign, and \"remains to this day one of the [most] powerful historical monikers.\"",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Friedrich-barbarossa-und-soehne-welfenchronik_1-1000x1540.jpg/330px-Friedrich-barbarossa-und-soehne-welfenchronik_1-1000x1540.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Pierre le Grand",
+      "description": "",
+      "bio_fr": "Pierre Ier, plus connu sous le nom de Pierre le Grand, né le 30 mai 1672 à Moscou et mort le 28 janvier 1725 à Saint-Pétersbourg, devient tsar de Russie en 1682 et reçoit le titre d'empereur de toutes les Russies en 1721.",
+      "bio_en": "Peter I was the Tsar of all Russia from 1682 and the first Emperor of Russia from 1721 until his death in 1725. He reigned jointly with his half-brother Ivan V until 1696. Peter, as an autocrat, organized a well-ordered police state.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Peter_der-Grosse_1838.jpg/330px-Peter_der-Grosse_1838.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Catherine II",
+      "description": "",
+      "bio_fr": "Catherine II ou Catherine la Grande, née Sophie Frédérique Augusta d'Anhalt-Zerbst le 2 mai 1729 à Stettin en Poméranie et morte le 17 novembre 1796 à Saint-Pétersbourg, est l'épouse de l'empereur Pierre III. Elle devient impératrice régnante de Russie, du 9 juillet 1762 à sa mort le 17 novembre 1796, à la suite d'un coup d'État contre Pierre III, incarcéré puis exécuté le 17 juillet sur les ordres de Catherine.",
+      "bio_en": "Catherine II, commonly known as Catherine the Great, was the Empress of Russia from 1762 to 1796. She came to power after a coup d'état against her husband, Peter III. Her long reign helped Russia thrive under a golden age during the Enlightenment. This renaissance led to the founding of many new cities, universities, and theatres, along with large-scale immigration from the rest of Europe and the recognition of Russia as one of the great powers of Europe.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Catherine_II_after_Roslin%2C_Rokotov_%281780s%2C_Kunsthistorisches_Museum%29.jpg/330px-Catherine_II_after_Roslin%2C_Rokotov_%281780s%2C_Kunsthistorisches_Museum%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Tolstoï",
+      "description": "",
+      "bio_fr": "Léon Tolstoï, nom francisé de Lev Nikolaïevitch Tolstoï, né le 28 août 1828 à Iasnaïa Poliana, et mort le 7 novembre 1910 à Astapovo, est un écrivain russe. Il est célèbre pour ses romans et ses nouvelles qui dépeignent la vie du peuple russe à l'époque des tsars, mais aussi pour ses essais, dans lesquels il condamne les pouvoirs civils et ecclésiastiques. Il est excommunié par l'Église orthodoxe russe ; après sa mort, ses manuscrits sont détruits par la censure tsariste. Il veut et entend mettre en lumière dans ses œuvres les grands enjeux de la Civilisation. Il laisse également des contes et des pièces de théâtre.",
+      "bio_en": "Count Lev Nikolayevich Tolstoy, usually referred to in English as Leo Tolstoy, was a Russian writer. He is regarded as one of the greatest and most influential authors of all time.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/L.N.Tolstoy_Prokudin-Gorsky.jpg/330px-L.N.Tolstoy_Prokudin-Gorsky.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Dostoïevski",
+      "description": "",
+      "bio_fr": "Fiodor Mikhaïlovitch Dostoïevski, né le 11 novembre 1821 à Moscou et mort le 9 février 1881 à Saint-Pétersbourg, est un écrivain russe.",
+      "bio_en": "Fyodor Mikhailovich Dostoevsky was a Russian philosopher, novelist, short story writer, essayist and journalist. He is regarded as one of the greatest novelists in both Russian and world literature, and many of his works are considered highly influential masterpieces. Dostoevsky's literary works explore the human condition in the troubled political, social and spiritual atmospheres of 19th century Russia, and engage with a variety of philosophical and religious themes. His most acclaimed novels include Crime and Punishment (1866), The Idiot (1869), Demons (1872), The Adolescent (1875) and The Brothers Karamazov (1880). His Notes from Underground, a novella published in 1864, is considered one of the first works of existentialist literature.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dostoevsky_1879.jpg/330px-Dostoevsky_1879.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Lénine",
+      "description": "",
+      "bio_fr": "Vladimir Ilitch Oulianov, dit Lénine, est un révolutionnaire bolchévique, idéologue, théoricien politique communiste et homme d'État russe puis soviétique, né le 10 avril 1870 à Simbirsk et mort le 21 janvier 1924 à Vichnie Gorki.",
+      "bio_en": "Vladimir Ilyich Ulyanov, better known as Vladimir Lenin, was a Russian revolutionary, politician and political theorist. He was the first head of government of Soviet Russia from 1917 to 1922, and the first head of government of the Soviet Union from 1922 until his death in 1924. As the Bolsheviks' founder, Lenin led the October Revolution, which established the world's first communist state. His government won the Russian Civil War and created a one-party state under the Communist Party. Ideologically a Marxist, his developments to the ideology are collectively called Leninism.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lenin_in_1920_%28cropped%29.jpg/330px-Lenin_in_1920_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Raspoutine",
+      "description": "",
+      "bio_fr": "Grigori Raspoutine, né le 21 janvier 1869 à Pokrovskoïe et assassiné le 30 décembre 1916 à Pétrograd, est un paysan russe devenu pèlerin itinérant, mystique populaire et guérisseur par la prière. Sa notoriété est liée à sa proximité avec la cour du dernier empereur de Russie, Nicolas II, et de l'impératrice Alexandra Fiodorovna. De son vivant, il est perçu comme une figure dotée d'une aura mystique singulière, perception qui contribue largement à la formation de sa légende.",
+      "bio_en": "Grigori Yefimovich Rasputin was a Russian mystic and faith healer. He is best known for having befriended the imperial family of Nicholas II, the last Emperor of Russia, through whom he gained considerable influence in the final years of the Russian Empire.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Grigori_Rasputin_1916.jpg/330px-Grigori_Rasputin_1916.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Oda Nobunaga",
+      "description": "",
+      "bio_fr": "Oda Nobunaga (織田 信長, né le 23 juin 1534 et mort le 21 juin 1582) était un daimyō important de la période Sengoku de l'histoire du Japon. Fils d'Oda Nobuhide, un seigneur de guerre mineur qui ne possédait que peu de terres dans la province d'Owari, Oda Nobunaga a passé sa vie sur les champs de bataille et a conquis une grande partie du Japon avant sa mort en 1582.",
+      "bio_en": "Oda Nobunaga  was a Japanese samurai and daimyō and one of the leading figures of the Sengoku and Azuchi-Momoyama periods. He was the Tenka-bito  and regarded as the first \"Great Unifier\" of Japan. He is sometimes referred as the \"Demon Daimyō\" and \"Demon King of the Sixth Heaven\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Odanobunaga.jpg/330px-Odanobunaga.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Tokugawa Ieyasu",
+      "description": "",
+      "bio_fr": "Tokugawa Ieyasu (徳川 家康, né le 31 janvier 1543 et mort le 1er juin 1616) est daimyo puis shogun du Japon.",
+      "bio_en": "Tokugawa Ieyasu was a Japanese samurai, daimyo and the founder and first shogun of the Tokugawa shogunate of Japan, which ruled from 1603 until the Meiji Restoration in 1868. He was the third of the three \"Great Unifiers\" of Japan, along with his former lord Oda Nobunaga and fellow Oda subordinate Toyotomi Hideyoshi. The son of a minor daimyo, Ieyasu once lived as a hostage under daimyo Imagawa Yoshimoto on behalf of his father. He later succeeded as daimyo after his father's death, serving as ally, vassal, and general of the Oda clan, and building up his strength under Oda Nobunaga.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tokugawa_Ieyasu2_full.JPG/330px-Tokugawa_Ieyasu2_full.JPG",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Toyotomi Hideyoshi",
+      "description": "",
+      "bio_fr": "Toyotomi Hideyoshi (豊臣秀吉, 17 mars 1537 - 18 septembre 1598) est le deuxième des « Trois unificateurs » du Japon durant l'époque Sengoku, précédé par Oda Nobunaga et suivi par Tokugawa Ieyasu.",
+      "bio_en": "Toyotomi Hideyoshi , otherwise known as Kinoshita Tōkichirō  and Hashiba Hideyoshi , was a Japanese samurai and daimyō of the late Sengoku and Azuchi-Momoyama periods, regarded as the second \"Great Unifier\" of Japan. Although he came from a peasant background, he rose to the rank and title of Kampaku  and Daijō-daijin , the highest official position and title in the nobility class. He was the first base-born person in history to become a Kampaku. He then passed the position and title of Kampaku to his nephew, Toyotomi Hidetsugu. He remained in power as Taikō (太閤), the title of a retired Kampaku, until his death.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Toyotomi_Hideyoshi_c1598_Kodai-ji_Temple.png/330px-Toyotomi_Hideyoshi_c1598_Kodai-ji_Temple.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Miyamoto Musashi",
+      "description": "",
+      "bio_fr": "Miyamoto Musashi (宮本 武蔵), de son vrai nom Shinmen Musashi (新免 武蔵), né en 1584 dans la province de Mimasaka et mort le 19 mai 1645, est un maître bushi, calligraphe, peintre et philosophe japonais.",
+      "bio_en": "Miyamoto Musashi  was a Japanese swordsman, strategist, artist, and writer who became renowned through stories of his unique double-bladed swordsmanship and undefeated record in his 62 duels. Musashi is considered a kensei of Japan. He was the founder of the Niten Ichi-ryū style of swordsmanship. In his final years, Musashi authored The Book of Five Rings  and Dokkōdō.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Miyamoto_Musashi-Portrait-Edo-period.png/330px-Miyamoto_Musashi-Portrait-Edo-period.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Meiji",
+      "description": "",
+      "bio_fr": "L'empereur Meiji (明治天皇, Meiji Tennō), ou prince Sachi no Miya, connu de son vivant en Occident par son nom personnel Mutsuhito (睦仁), né à Kyoto le 3 novembre 1852, fut le 122e empereur du Japon du 3 février 1867 à sa mort le 30 juillet 1912.",
+      "bio_en": "Emperor Meiji was Emperor of Japan from 30 January 1867 until his death in 1912. The Meiji Restoration proclaimed the Empire of Japan in 1868, beginning the Meiji era. During his reign, Japan transformed from a feudal state under the Tokugawa shogunate into a major imperial power.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mutsuhito-Emperor-Meiji-1873.png/330px-Mutsuhito-Emperor-Meiji-1873.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ashoka",
+      "description": "",
+      "bio_fr": "Ashoka ou Aśoka, né vers 304 av. J.-C. et mort en 232 av. J.-C., est le troisième empereur de la dynastie indienne des Maurya.",
+      "bio_en": "Ashoka, also known as Asoka or Aśoka, most commonly known as Ashoka the Great, was Emperor of Magadha from c. 268 BCE until his death, and the third ruler from the Mauryan dynasty. His empire covered a large part of the Indian subcontinent, stretching from present-day Afghanistan in the west to present-day Bangladesh in the east, with its capital at Pataliputra. A patron of Buddhism, he is credited with an important role in the spread of Buddhism across ancient Asia.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg/330px-Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Gandhi",
+      "description": "",
+      "bio_fr": "Mohandas Karamchand Gandhi, né à Porbandar (Gujarat) le 2 octobre 1869 et mort assassiné à New Delhi le 30 janvier 1948, est un avocat indien, un nationaliste, anti-colonialiste et une personnalité politique connue pour avoir employé la résistance non violente.",
+      "bio_en": "Mohandas Karamchand Gandhi was an Indian lawyer, anti-colonial nationalist and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule, and to later inspire movements for civil rights and freedom across the world. The honorific Mahātmā, first applied to him in 1914 in South Africa, is now used throughout the world.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/330px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Akbar",
+      "description": "",
+      "bio_fr": "Jalâluddin Muhammad Akbar, né le 15 octobre 1542 à Amarkot et mort le 27 octobre 1605 à Āgrā, est un empereur moghol. Son règne, qui correspond à l'apogée de l'Empire moghol, est marqué par d'importantes réformes administratives et une tolérance religieuse qui renforcèrent l'unité de son empire. Ses contributions à l'art et à l'architecture firent rayonner la culture moghole dans toute l'Asie du Sud.",
+      "bio_en": "Akbar, also known as Akbar the Great, was the third Mughal emperor, who reigned from 1556 to 1605. Akbar succeeded his father, Humayun, under a regent, Bairam Khan, who helped the young emperor expand and consolidate Mughal domains in the Indian subcontinent. He is generally considered one of the greatest Mughal emperors.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Akbar_at_his_court.jpg/330px-Akbar_at_his_court.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Bouddha",
+      "description": "",
+      "bio_fr": "Siddhārtha Gautama, plus couramment désigné comme le Bouddha (« l’Éveillé »), parfois comme Shakyamuni, est un maître spirituel qui vécut au VIe siècle av. J.-C. ou au Ve siècle av. J.-C., fondateur historique d'une communauté de moines errants qui donna naissance au bouddhisme.",
+      "bio_en": "Siddhartha Gautama, most commonly referred to as the Buddha, was a wandering ascetic and religious teacher who lived in the eastern Indo-Gangetic Plains during the 6th or 5th century BCE and founded Buddhism. According to Buddhist legends, he was born in Lumbini, in what is now Nepal, to royal parents of the Shakya clan, but renounced his home life to live as a wandering ascetic. After leading a life of mendicancy, asceticism, and meditation, he attained nirvana at Bodh Gaya in what is now Bihar, India. The Buddha then wandered through the lower Indo-Gangetic Plain, teaching and building a monastic order (sangha). Buddhist tradition holds he died in Kushinagar and reached parinirvana.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/330px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Mansa Moussa",
+      "description": "",
+      "bio_fr": "Mansa Moussa, aussi connu sous le nom de Mansa Musa et de Kankou Moussa, est le dixième mansa de l’empire du Mali, au pouvoir entre 1312 et 1337. Son règne marque l’apogée politique, économique et culturelle de l’Empire, étendu du Fouta-Djalon jusqu’au Gao, en passant par les anciens territoires du Ghana.",
+      "bio_en": "Mansa Musa was the ninth Mansa of the Mali Empire, which reached its territorial peak during his reign. Musa's reign is often regarded as the zenith of Mali's power and prestige, although he features less in Mandinka oral traditions than his predecessors.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Kanga_Moussa_Atlas_Catalan.jpg/330px-Kanga_Moussa_Atlas_Catalan.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Ramsès II",
+      "description": "",
+      "bio_fr": "Ramsès II, né aux alentours de 1304 / 1301 av. J.-C. et mort à Pi-Ramsès vers 1213 av. J.-C., est le troisième pharaon de la XIXe dynastie égyptienne, au Nouvel Empire. Il est aussi appelé « Ramsès le Grand » ou encore « Ozymandias ». Manéthon l'appelle « Ramsès ».",
+      "bio_en": "Ramesses II, commonly known as Ramesses the Great, was the third pharaoh of the Nineteenth Dynasty of Egypt. Ramesses II is often regarded as the greatest, most celebrated, and most powerful pharaoh of the New Kingdom, which itself was the most powerful period of ancient Egypt. He is also widely considered one of ancient Egypt's most successful warrior pharaohs, conducting no fewer than 15 military campaigns, all resulting in victories, excluding the Battle of Kadesh, which is generally considered a stalemate. His 66-year rule was also the longest recorded reign of any pharaoh, possibly alongside Pepi II, who lived 1000 years earlier and is said to have reigned for over 90 years.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Le_mus%C3%A9e_%C3%A9gyptien_%28Turin%29_%282866334984%29.jpg/330px-Le_mus%C3%A9e_%C3%A9gyptien_%28Turin%29_%282866334984%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hatchepsout",
+      "description": "",
+      "bio_fr": "Hatchepsout est une reine de l'Égypte antique, qui est devenue pharaonne, cinquième souveraine de la XVIIIe dynastie.",
+      "bio_en": "Hatshepsut was the sixth pharaoh of the Eighteenth Dynasty of Egypt, ruling first as regent, then as queen regnant from c. 1479 BC until c. 1458 BC and the Great Royal Wife of Pharaoh Thutmose II. She was Egypt's second confirmed woman who ruled in her own right, the first being Sobekneferu/Neferusobek in the Twelfth Dynasty.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/WLANL_-_koopmanrob_-_Maat-ka-Re_Hatsjepsoet_%28RMO%29.jpg/330px-WLANL_-_koopmanrob_-_Maat-ka-Re_Hatsjepsoet_%28RMO%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Toussaint Louverture",
+      "description": "",
+      "bio_fr": "François-Dominique Toussaint Louverture, généralement appelé simplement Toussaint Louverture, à l'origine Toussaint de Bréda, est un esclave affranchi, général et homme politique franco-haïtien d'origine africaine, né vers 1743 à l'habitation Bréda du Haut-du-Cap près du Cap-Français, et mort en captivité le 7 avril 1803 à La Cluse-et-Mijoux, dans le département du Doubs, en France métropolitaine.",
+      "bio_en": "François-Dominique Toussaint Louverture, also known as Toussaint L'Ouverture or Toussaint Bréda, was a Haitian general and the most prominent leader of the Haitian Revolution. During his life, Louverture first fought and allied with Spanish forces against Saint-Domingue Royalists, then joined with Republican France, becoming Governor-General-for-life of Saint-Domingue, and lastly fought against Bonaparte's republican troops. As a revolutionary leader, Louverture displayed military and political acumen that helped transform the fledgling slave rebellion into a revolutionary movement. Along with Jean-Jacques Dessalines, Louverture is now known as one of the \"Fathers of Haiti\" and a figure of Haitian mythology, where he was celebrated as a founder of the black nation.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Toussaint_Louverture_par_Pierre-Charles_Baquoy.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Nelson Mandela",
+      "description": "",
+      "bio_fr": "Nelson Rolihlahla Mandela, dont le nom du clan tribal est « Madiba », né le 18 juillet 1918 à Mvezo et mort le 5 décembre 2013 à Johannesburg (Gauteng), est un homme d'État sud-africain. Il a été l'un des dirigeants historiques de la lutte contre le système politique institutionnel de ségrégation raciale de l'apartheid, avant de devenir président de la république d'Afrique du Sud de 1994 à 1999, à la suite des premières élections nationales non ségrégationnistes de l'histoire du pays.",
+      "bio_en": "Nelson Rolihlahla Mandela was a South African anti-apartheid revolutionary, politician, and philanthropist, who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election. His government focused on dismantling the legacy of apartheid by tackling institutionalised racism and fostering racial reconciliation. Ideologically an African nationalist and socialist, he served as President of the African National Congress (ANC) party from 1991 to 1997.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Néfertiti",
+      "description": "",
+      "bio_fr": "Néfertiti est une reine d'Égypte, grande épouse royale d'Akhenaton, l'un des derniers rois de la XVIIIe dynastie. Elle a vécu aux environs de 1370 à 1333 av. J.-C.",
+      "bio_en": "Nefertiti was a queen of the 18th Dynasty of Ancient Egypt, the great royal wife of Pharaoh Akhenaten. Nefertiti and her husband were known for their radical overhaul of state religious policy, in which they promoted an exclusivist and possibly even monotheistic religion, Atenism, centred on the sun disc and its direct connection to the royal household. With her husband, she reigned at what was arguably the wealthiest period of ancient Egyptian history.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Nofretete_Neues_Museum.jpg/330px-Nofretete_Neues_Museum.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Moctezuma",
+      "description": "",
+      "bio_fr": "Moctezuma II, de son nom complet en nahuatl Motecuhzoma Xocoyotzin, né vers 1466 et mort le 29 juin 1520 à Mexico-Tenochtitlan, neuvième tlatoani de la cité de Mexico-Tenochtitlan, est à la tête de l'Empire aztèque de 1502 à 1520.",
+      "bio_en": "Moctezuma Xocoyotzin, retroactively referred to in European sources as Moctezuma II, and often called Montezuma, was the ninth emperor of the Aztec Empire, reigning from 1502 or 1503 to 1520. Through his marriage with Queen Tlapalizquixochtzin of Ecatepec, one of his two wives, he was also the king consort of the altepetl.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Fig1_Moctezuma_%28C%C3%B3dice_Diego_Dur%C3%A1n%29.jpg/330px-Fig1_Moctezuma_%28C%C3%B3dice_Diego_Dur%C3%A1n%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Atahualpa",
+      "description": "",
+      "bio_fr": "Atahualpa, né vers 1500 et mort le 29 août 1533, est le dernier empereur de l'Empire inca indépendant. D'abord implanté dans la partie nord du royaume, une région dont les principales villes sont à l'époque Quito et Tomebamba, il s'empare du trône impérial de Cuzco après sa victoire lors de la guerre fratricide qui l'oppose à son demi-frère Huascar pour le pouvoir après la mort de leur père, l'empereur Huayna Capac. Sa victoire coïncide toutefois avec l'arrivée au Pérou des conquistadors espagnols.",
+      "bio_en": "Atawallpa, also Atahualpa or Ataw Wallpa, whose regnal name was Caccha Pachacuti Inca Yupanqui Inca, was the last effective Inca emperor, reigning from April 1532 until his capture and execution in July of the following year, as part of the Spanish conquest of the Inca Empire.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Atahualpa_Inca_XIV.png/330px-Atahualpa_Inca_XIV.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Cortés",
+      "description": "",
+      "bio_fr": "Hernán Cortés, de son nom complet Hernando Cortés de Monroy y Pizarro Altamirano, probablement né en 1485 à Medellín (Estrémadure) et mort le 2 décembre 1547 à Castilleja de la Cuesta, près de Séville, est un conquistador espagnol qui, en 1521-1522, s'est emparé de l'Empire aztèque au nom de Charles Quint, roi de Castille et roi d'Aragon, acte fondateur de la Nouvelle-Espagne.",
+      "bio_en": "Hernán Cortés, 1st Marquis of the Valley of Oaxaca was a Spanish conquistador, military commander, explorer, captain general, and writer who led an expedition that caused the fall of the Aztec Empire and brought large portions of what is now mainland Mexico under the rule of the King of Castile in the early 16th century. Cortés was part of the generation of Spanish explorers and conquistadors who began the first phase of the Spanish colonization of the Americas.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg/330px-Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "George Washington",
+      "description": "",
+      "bio_fr": "George Washington, né le 22 février 1732 à Pope's Creek et mort le 14 décembre 1799 à Mount Vernon (Virginie), est un militaire, planteur esclavagiste et homme d'État américain. Après avoir été commandant en chef de l'Armée continentale pendant la guerre d'indépendance entre 1775 et 1783, il est le 1er président des États-Unis, en fonction du 30 avril 1789 au 4 mars 1797.",
+      "bio_en": "George Washington was a Founding Father and the first president of the United States, serving from 1789 to 1797. As commander of the Continental Army, Washington led Patriot forces to victory in the American Revolutionary War against the British Empire. He is commonly known as the Father of His Country for his role in bringing about American independence.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Lincoln",
+      "description": "",
+      "bio_fr": "Abraham Lincoln, né le 12 février 1809 à Hodgenville (Kentucky) et mort assassiné le 15 avril 1865 à Washington, D.C., est un homme d'État américain. Il est le 16e président des États-Unis, en fonction du 4 mars 1861 jusqu'à sa mort, et le premier issu du Parti républicain. Figure emblématique de l'histoire américaine, Lincoln préside les États-Unis durant la guerre de Sécession — la pire crise constitutionnelle, militaire et morale qu'ait connue le pays —, préserve l'Union contre les États confédérés et fait adopter le 13e amendement abolissant l'esclavage. Sorti victorieux du conflit, il est assassiné cinq jours après la fin des hostilités, au début de son second mandat, dans le cadre d'un complot mené par des partisans confédérés.",
+      "bio_en": "Abraham Lincoln was the 16th president of the United States, serving from 1861 until his assassination in 1865. He led the United States through the American Civil War, defeating the Confederacy and playing a major role in the abolition of slavery.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/330px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Bolívar",
+      "description": "",
+      "bio_fr": "Simón Bolívar /siˈmon boˈliβaɾ/, de son nom complet Simón José Antonio de la Santísima Trinidad Bolívar y Palacios, surnommé El Libertador, né le 24 juillet 1783 à Caracas dans la vice-royauté de Nouvelle-Grenade, et mort le 17 décembre 1830 à Santa Marta en Grande Colombie, est un général et homme d'État vénézuélien.",
+      "bio_en": "Simón José Antonio de la Santísima Trinidad Bolívar Palacios Ponte y Blanco was a Venezuelan military officer and statesman who led what are currently the countries of Bolivia, Colombia, Ecuador, Panama, Peru, and Venezuela to independence from the Spanish Empire. He is known colloquially as El Libertador, \"the Liberator,\" of America.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Portrait_of_Sim%C3%B3n_Bol%C3%ADvar_by_Arturo_Michelena.jpg/330px-Portrait_of_Sim%C3%B3n_Bol%C3%ADvar_by_Arturo_Michelena.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Benjamin Franklin",
+      "description": "",
+      "bio_fr": "Benjamin Franklin /ˈbɛnd͡ʒəmɪn ˈfɹæŋklɪn/, né le 17 janvier 1706 à Boston et mort le 17 avril 1790 à Philadelphie, est un imprimeur, éditeur, écrivain, naturaliste, humaniste, inventeur, abolitionniste, diplomate et homme politique américain.",
+      "bio_en": "Benjamin Franklin was an American polymath who was one of the Founding Fathers of the United States; a drafter and signer of the Declaration of Independence; and the first postmaster general.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Benjamin_Franklin_1767.jpg/330px-Benjamin_Franklin_1767.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Churchill",
+      "description": "",
+      "bio_fr": "Winston Churchill est un homme d'État et écrivain britannique, né le 30 novembre 1874 à Woodstock et mort le 24 janvier 1965 à Londres. Membre du Parti conservateur malgré un intermède au Parti libéral, il est Premier ministre du Royaume-Uni de mai 1940 à juillet 1945 puis d’octobre 1951 à avril 1955 ; il joue un rôle décisif dans la victoire des Alliés lors de la Seconde Guerre mondiale.",
+      "bio_en": "Sir Winston Leonard Spencer Churchill was a British statesman, military officer, and writer who was Prime Minister of the United Kingdom from 1940 to 1945, during the Second World War, and again from 1951 to 1955. For some 62 of the years between 1900 and 1964, he was a Member of Parliament (MP) and represented a total of five constituencies over that time. Ideologically an adherent to economic liberalism and imperialism, he was for most of his career a member of the Conservative Party, which he led from 1940 to 1955. He was a member of the Liberal Party from 1904 to 1924.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sir_Winston_Churchill_-_19086236948_%28cropped2%29.jpg/330px-Sir_Winston_Churchill_-_19086236948_%28cropped2%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "De Gaulle",
+      "description": "",
+      "bio_fr": "Charles de Gaulle, couramment appelé le général de Gaulle ou simplement le Général, né le 22 novembre 1890 à Lille (Nord) et mort le 9 novembre 1970 à Colombey-les-Deux-Églises (Haute-Marne), est un militaire, résistant, homme d'État et écrivain français. Pendant la Seconde Guerre mondiale, Charles de Gaulle a fondé la France libre ; à la Libération, il préside le gouvernement provisoire à partir de 1944 jusqu'en 1946. Instigateur de la Ve République, il en a été le premier président du 8 janvier 1959 au 28 avril 1969.",
+      "bio_en": "Charles André Joseph Marie de Gaulle was a French general and statesman who led the Free French Forces against Nazi Germany and Vichy France in World War II and chaired the Provisional Government of the French Republic from 1944 to 1946 to restore democracy in France. Following the 1958 Algiers putsch, he came out of retirement at the request of President René Coty, who appointed him Prime Minister. He commissioned a new constitution which was approved by voters in a referendum, establishing the Fifth Republic. He was subsequently elected President of France later that year, a position he held until his resignation in 1969.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/De_Gaulle-OWI_%283x4_cropped%29_%282%29.jpg/330px-De_Gaulle-OWI_%283x4_cropped%29_%282%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Roosevelt",
+      "description": "",
+      "bio_fr": "Franklin Delano Roosevelt, généralement appelé Franklin D. Roosevelt et également connu sous ses initiales FDR, né le 30 janvier 1882 à Hyde Park et mort le 12 avril 1945 à Warm Springs, est un homme d'État américain. Membre du Parti démocrate, il est le 32e président des États-Unis, en fonction du 4 mars 1933 jusqu'à sa mort. Roosevelt préside les États-Unis juste après l'arrivée au pouvoir d'Adolf Hitler en Allemagne et jusqu'aux derniers mois de la Seconde Guerre mondiale.",
+      "bio_en": "Franklin Delano Roosevelt, also known as FDR, was the 32nd president of the United States, serving from 1933 until his death in 1945. He is the longest-serving US president and the only one to have served more than two terms. His first two terms were centered on combating the Great Depression, while his third and fourth focused on US involvement in World War II. A member of the Democratic Party, Roosevelt served in the New York State Senate from 1911 to 1913 and as the 44th governor of New York from 1929 to 1932.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/1944_Official_Campaign_Portrait_session_%288145288140%29.jpg/330px-1944_Official_Campaign_Portrait_session_%288145288140%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Martin Luther King",
+      "description": "",
+      "bio_fr": "Martin Luther King Jr., né Michael King Jr., plus couramment appelé Martin Luther King, né à Atlanta, en Géorgie, le 15 janvier 1929, et mort assassiné le 4 avril 1968 à Memphis, dans le Tennessee, est un pasteur chrétien baptiste et militant non violent afro-américain pour le mouvement américain des droits civiques, fervent militant pour la paix et contre la pauvreté.",
+      "bio_en": "Martin Luther King Jr. was an American civil rights activist and Baptist minister who was a prominent leader of the civil rights movement from 1955 until his assassination in 1968. He advanced civil rights for people of color in the United States through the use of nonviolent resistance and civil disobedience against Jim Crow laws and other forms of legalized discrimination, which most commonly affected African Americans.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/330px-Martin_Luther_King%2C_Jr..jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Calvin",
+      "description": "",
+      "bio_fr": "Jean Calvin, né Jehan Cauvin le 10 juillet 1509 à Noyon et mort le 27 mai 1564 à Genève, est un théologien français, un important réformateur, et un pasteur emblématique de la Réforme protestante du XVIe siècle, notamment pour son apport à la doctrine dite du calvinisme.",
+      "bio_en": "John Calvin was a French theologian, pastor and reformer in Geneva during the Protestant Reformation. He was the principal figure in the development of the system of Christian theology later called Calvinism, including its doctrines of predestination and of God's absolute sovereignty in the salvation of the human soul from death and eternal damnation. Calvinist doctrines were influenced by and elaborated upon Augustinian and other Christian traditions. Various Reformed Church movements, including Continental Reformed, Congregationalism, Presbyterianism, Waldensians, Baptist Reformed, Calvinist Methodism, and Reformed Anglican Churches, which look to Calvin as the chief expositor of their beliefs, have spread throughout the world.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png/330px-John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Saint Augustin",
+      "description": "",
+      "bio_fr": "Augustin d'Hippone ou saint Augustin, dont le nom latin est Aurelius Augustinus, né le 13 novembre 354 à Thagaste et mort le 28 août 430 à Hippone, est un philosophe et théologien chrétien romain originaire d'Afrique romaine qui, après une carrière de rhéteur, occupe la fonction d'évêque à Hippone. Canonisé en 1298, il est avec Ambroise de Milan, Jérôme de Stridon et Grégoire le Grand, l'un des quatre premiers Pères de l'Église latine à se voir conférer le titre honorifique de docteur de l'Église.",
+      "bio_en": "Augustine of Hippo was a Christian theologian and philosopher from Thagaste, Numidia Cirtensis and the Bishop of Hippo Regius. He is generally regarded as one of the most influential philosophers in the history of the Western world, and he is viewed as one of the most important Church Fathers of the Latin Church in the Patristic Period.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sandro_Botticelli_050.jpg/330px-Sandro_Botticelli_050.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Shakespeare",
+      "description": "",
+      "bio_fr": "William Shakespeare est un dramaturge, poète et acteur anglais né le 23 avril 1564 à Stratford-upon-Avon et mort le 23 avril 1616 dans la même ville. Surnommé « le Barde d'Avon », « le Barde immortel » ou simplement « le Barde », il est considéré comme l'un des plus grands poètes et dramaturges de langue anglaise. Son œuvre, traduite dans de nombreuses langues, se compose de 39 pièces, 154 sonnets et quelques poèmes supplémentaires, dont certains ne lui sont pas attribués de manière certaine.",
+      "bio_en": "William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\" or simply \"the Bard\". His extant works, including collaborations, consist of some 39 plays, 154 sonnets, three long narrative poems and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright. Shakespeare remains arguably the most influential writer in the English language, and his works continue to be studied and reinterpreted.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/330px-Shakespeare.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Cervantès",
+      "description": "",
+      "bio_fr": "Miguel de Cervantes, parfois francisé en Michel de Cervantès, né le 29 septembre 1547 à Alcalá de Henares et enterré le 23 avril 1616 à Madrid, est un romancier, poète et dramaturge espagnol. Il est célèbre pour son roman L’Ingénieux Hidalgo Don Quichotte de la Manche, publié en 1605 et reconnu comme le premier roman moderne.",
+      "bio_en": "Miguel de Cervantes Saavedra was a Spanish writer widely regarded as the greatest writer in the Spanish language and one of the world's pre-eminent novelists. He is best known for his two-part novel Don Quixote, a work considered to be the first modern novel. Don Quixote has been labelled by many well-known authors as the \"best book of all time\" and the \"best and most central work in world literature\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/330px-Cervantes_J%C3%A1uregui.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Dante",
+      "description": "",
+      "bio_fr": "Dante Alighieri est un poète, écrivain, penseur et homme politique italien de la république de Florence, né entre 1265 et 1267 à Florence et mort le 14 septembre 1321 à Ravenne.",
+      "bio_en": "Dante Alighieri, widely known mononymously as Dante, was an Italian poet, writer, and philosopher. His Divine Comedy, originally called Comedìa and later christened Divina by Giovanni Boccaccio, is widely considered one of the most important poems of the Middle Ages and the greatest literary work in the Italian language.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_de_Dante.jpg/330px-Portrait_de_Dante.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Homère",
+      "description": "",
+      "bio_fr": "Homère aurait été un aède de la fin du VIIIe siècle av. J.-C. Il était surnommé « le Poète » par les Anciens. Les deux premières œuvres de la littérature occidentale que sont l'Iliade et l'Odyssée lui sont attribuées.",
+      "bio_en": "Homer was an ancient Greek poet who is widely credited as the author of the Iliad and the Odyssey, two epic poems that are foundational works of ancient Greek literature. Although his life and authorship remain obscure, Homer was revered in ancient Greek society and is considered one of the most influential authors in history.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Homeros_MFA_Munich_272.jpg/330px-Homeros_MFA_Munich_272.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Virgile",
+      "description": "",
+      "bio_fr": "Virgile, dit « le Cygne de Mantoue », né vers le 15 octobre 70 av. J.-C. à Andes, dans l'actuelle Lombardie et mort le 21 septembre 19 av. J.-C. à Brindisi, est un poète latin contemporain de la fin de la République romaine et du début du règne de l'empereur Auguste.",
+      "bio_en": "Publius Vergilius Maro, usually called Virgil or Vergil in English, was an ancient Roman poet of the Augustan period. He composed three of the most famous poems in Latin literature: the Eclogues, the Georgics, and the epic Aeneid. Some minor poems, collected in the Appendix Vergiliana, were attributed to him in ancient times, but modern scholars regard these as spurious, with the possible exception of some short pieces.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Virgilio.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Jules Verne",
+      "description": "",
+      "bio_fr": "Jules Verne, né le 8 février 1828 à Nantes et mort le 24 mars 1905 à Amiens, est un écrivain français dont l'œuvre est, pour la plus grande partie, constituée de romans d'aventures évoquant les progrès scientifiques du XIXe siècle.",
+      "bio_en": "Jules Gabriel Verne was a French novelist, poet, and playwright.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg/330px-F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Baudelaire",
+      "description": "",
+      "bio_fr": "Charles Baudelaire, né le 9 avril 1821 à Paris et mort dans la même ville le 31 août 1867, est un poète français.",
+      "bio_en": "Charles-Pierre Baudelaire was a French poet, essayist, translator and art critic. His poems are described as exhibiting mastery of rhythm and rhyme, containing an exoticism inherited from the Romantics, and are based on observations of real life.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%C3%89tienne_Carjat%2C_Portrait_of_Charles_Baudelaire%2C_circa_1862.jpg/330px-%C3%89tienne_Carjat%2C_Portrait_of_Charles_Baudelaire%2C_circa_1862.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Rimbaud",
+      "description": "",
+      "bio_fr": "Arthur Rimbaud est un poète français, né le 20 octobre 1854 à Charleville et mort le 10 novembre 1891 à Marseille. Bien que brève, son œuvre poétique est caractérisée par une prodigieuse densité thématique et stylistique, faisant de lui une des grandes figures de la littérature française.",
+      "bio_en": "Jean Nicolas Arthur Rimbaud was a French poet known for his transgressive and surreal themes and for his influence on modern literature and arts, prefiguring surrealism.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Rimbaud.PNG/330px-Rimbaud.PNG",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Thésée",
+      "description": "",
+      "bio_fr": "Dans la mythologie grecque, Thésée est un héros de l'Attique, fils d'Égée et d'Éthra. Son nom proviendrait de la même racine que θεσμός / thesmós, « institution sacrée, loi divine »[réf. souhaitée]. La légende la plus célèbre de Thésée est son combat et sa victoire contre le Minotaure, mi-homme mi-taureau.",
+      "bio_en": "Theseus was a divine hero in Greek mythology, famous for slaying the Minotaur. The myths surrounding Theseus, his journeys, exploits, and friends, have provided material for storytelling throughout the ages.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg/330px-Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Persée",
+      "description": "",
+      "bio_fr": "Persée, roi argien, est un héros de la mythologie grecque.",
+      "bio_en": "In Greek mythology, Perseus is the legendary founder of the Perseid dynasty. He was, alongside Cadmus and Bellerophon, the greatest Greek hero and slayer of monsters before the days of Heracles. He beheaded the Gorgon Medusa for Polydectes and saved Andromeda from the sea monster Cetus. He was a demigod, being the son of Zeus and the mortal Danaë, as well as the half-brother and great-grandfather of Heracles.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Perseus_Cellini_Loggia_dei_Lanzi_2005_09_13.jpg/330px-Perseus_Cellini_Loggia_dei_Lanzi_2005_09_13.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Pandore",
+      "description": "",
+      "bio_fr": "Dans la mythologie grecque, Pandore ou Pandora est la première femme humaine, façonnée dans l'argile par Héphaïstos et animée par la déesse Athéna. Elle est associée à la légende de la « boîte de Pandore » — en fait, une jarre.",
+      "bio_en": "In Greek mythology, Pandora was the first human woman, created by Hephaestus on the instructions of Zeus. As Hesiod related it, each deity cooperated by giving her unique gifts. Her other name—inscribed against her figure on a white-ground kylix in the British Museum—is Anesidora.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ca%27_Rezzonico_-_Il_vaso_di_Pandora_%28Inv.70%29_-_Pietro_della_Vecchia.jpg/330px-Ca%27_Rezzonico_-_Il_vaso_di_Pandora_%28Inv.70%29_-_Pietro_della_Vecchia.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Sisyphe",
+      "description": "",
+      "bio_fr": "Dans la mythologie grecque, Sisyphe, fils d'Énarété et d'Éole fils d'Hellen, est le fondateur mythique de Corinthe. Certains textes de l'Antiquité le nomment « Sesephos ». Il est surtout connu pour son châtiment, consistant à pousser une pierre au sommet d'une montagne, d'où elle finit toujours par retomber.",
+      "bio_en": "In Greek mythology, Sisyphus or Sisyphos is the founder and king of Ephyra. He reveals Zeus's abduction of Aegina to the river god Asopus, thereby incurring Zeus's wrath. His subsequent cheating of death earns him eternal punishment in the underworld, once he dies of old age. The gods condemned him to push an immense boulder up a hill only for it to roll back down every time it neared the top, repeating this action for eternity. Through the classical influence on contemporary culture, tasks that are laborious, futile, and never-ending are therefore often described as Sisyphean.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Punishment_sisyph.jpg/330px-Punishment_sisyph.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Minotaure",
+      "description": "",
+      "bio_fr": "Dans la mythologie grecque, le Minotaure est un monstre fabuleux au corps d'un homme et à tête d'un taureau ou mi-homme et mi-taureau.",
+      "bio_en": "In Greek mythology, the Minotaur, also known as Asterion or Asterius, is a mythical creature portrayed during classical antiquity with the head and tail of a bull and the body of a man or, as described by Roman poet Ovid, a being \"part man and part bull\". He dwelt at the center of the Labyrinth, which was an elaborate maze-like construction designed by the architect Daedalus and his son Icarus, upon command of King Minos of Crete. According to tradition, every nine years the people of Athens were compelled by King Minos to choose fourteen young noble citizens to be offered as sacrificial victims to the Minotaur in retribution for the death of Minos's son Androgeus. The Minotaur was eventually slain by the Athenian hero Theseus, who managed to navigate the labyrinth with the help of a thread offered to him by the King's daughter, Ariadne.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Statue_of_the_Minotaur_%28Roman_copy_after_an_original_by_Myron%29_at_the_National_Archaeological_Museum_of_Athens_on_3_April_2018.jpg/330px-Statue_of_the_Minotaur_%28Roman_copy_after_an_original_by_Myron%29_at_the_National_Archaeological_Museum_of_Athens_on_3_April_2018.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Philippe Auguste",
+      "description": "",
+      "bio_fr": "Philippe II dit « Auguste » né le 21 août 1165 à Paris et mort à Mantes le 14 juillet 1223, est le septième roi (1180-1223) de la dynastie des Capétiens et le premier monarque auquel est attribué le titre de roi de France. Il est le fils héritier de Louis VII et d'Adèle de Champagne.",
+      "bio_en": "Philip II, also known as Philip Augustus, was King of France from 1180 to 1223. His predecessors had been known as kings of the Franks, but from 1190 onward, Philip became the first French monarch to style himself \"King of France\". The only son of King Louis VII and his third wife, Adela of Champagne, he was originally nicknamed 'God-given' because he was a first son and born late in his father's life. Philip was given the epithet \"Augustus\" by the chronicler Rigord for having extended the crown lands of France so remarkably.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Sceau_de_Philippe_Auguste._-_Archives_Nationales_-_SC-D157.jpg/330px-Sceau_de_Philippe_Auguste._-_Archives_Nationales_-_SC-D157.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Mendel",
+      "description": "",
+      "bio_fr": "Johann Gregor Mendel, né le 20 juillet 1822 à Hynčice et mort le 6 janvier 1884 à Brno, est un moine catholique, puis abbé mitré de l'abbaye Saint-Thomas de Brno, généticien et botaniste germanophone de nationalité autrichienne, communément reconnu comme le père fondateur de la génétique. Il est à l'origine des lois de Mendel déterminant la transmission des gènes de génération en génération.",
+      "bio_en": "Gregor Johann Mendel was an Austrian biologist, meteorologist, mathematician, Augustinian friar and abbot of St. Thomas' Abbey in Brno (Brünn), Margraviate of Moravia. Mendel was born in a German-speaking family in the Silesian part of the Austrian Empire and gained posthumous recognition as the founder of the modern science of genetics. Though farmers had known for millennia that crossbreeding of animals and plants could favor certain desirable traits, Mendel's pea plant experiments conducted between 1856 and 1863 established many of the rules of heredity, now referred to as the laws of Mendelian inheritance.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gregor_Mendel_2.jpg/330px-Gregor_Mendel_2.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Luther",
+      "description": "",
+      "bio_fr": "Martin Luther [maʁtɛ̃ lytɛʁ], né le 10 novembre 1483 à Eisleben (Saxe) et mort le 18 février 1546 dans la même ville, est un prêtre augustin, théologien et professeur d'université allemand. Initiateur du protestantisme et réformateur de l'Église, ses idées exercèrent une grande influence sur la Réforme protestante, qui changea le cours de la civilisation occidentale.",
+      "bio_en": "Martin Luther was a German priest, theologian, author, hymnwriter, professor, and former Augustinian friar. Luther was the seminal figure of the Protestant Reformation, and his theological beliefs form the basis of Lutheranism. He is considered one of the most influential figures in Western and Christian history.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Lucas_Cranach_d.%C3%84._%28Werkst.%29_-_Portr%C3%A4t_des_Martin_Luther_%28Lutherhaus_Wittenberg%29.jpg/330px-Lucas_Cranach_d.%C3%84._%28Werkst.%29_-_Portr%C3%A4t_des_Martin_Luther_%28Lutherhaus_Wittenberg%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Antigone",
+      "description": "",
+      "bio_fr": "Dans la mythologie grecque, Antigone est la fille d'Œdipe, roi de Thèbes, et de la reine Jocaste. Elle est la sœur d'Étéocle, de Polynice, d'Ismène. Son oncle Créon, frère de Jocaste, est également le père de son fiancé Hémon. Elle est surtout connue par deux tragédies de l'auteur athénien Sophocle, conservées jusqu'à nos jours : Antigone, où Antigone s'oppose jusqu'à la mort à Créon qui avait interdit d'ensevelir son frère Polynice pour des raisons politiques, et Œdipe à Colone, où elle apparaît principalement en tant que guide de son père Œdipe, aveugle et exilé. Ces deux pièces ont connu une abondante postérité dans les arts pendant et après l'Antiquité, jusqu'à l'époque actuelle. Antigone, et en particulier son combat contre Créon, ont revêtu de nombreuses significations selon les œuvres.",
+      "bio_en": "In Greek mythology, Antigone was a Theban princess and a character in several ancient Greek tragedies. She was the daughter of Oedipus, king of Thebes; her mother/grandmother was either Jocasta or, in another variation of the myth, Euryganeia. She was the sister of Polynices, Eteocles, and Ismene.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lytras_nikiforos_antigone_polynices.jpeg/330px-Lytras_nikiforos_antigone_polynices.jpeg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Chaka Zulu",
+      "description": "",
+      "bio_fr": "Chaka kaSenzangakhona, aussi appelé Chaka Zoulou ou Shaka Zulu, né en 1787 et mort en 1828, est un roi zoulou. Il est le fondateur du royaume zoulou.",
+      "bio_en": "Shaka kaSenzangakhona, also known as Shaka Zulu, Shaka the Zulu, and Sigidi kaSenzangakhona, was the king of the Zulu Kingdom from 1816 to 1828. One of the most influential monarchs of the Zulu, he ordered wide-reaching reforms that reorganized the military into a formidable force.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/KingShaka.jpg/330px-KingShaka.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    }
+  ]
+}
