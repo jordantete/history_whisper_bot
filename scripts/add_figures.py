@@ -16,6 +16,7 @@ import json
 import os
 import time
 
+from src.database import Database
 from src.utils import Utils
 from scripts.enrich_figures import (
     OVERRIDES, FetchError, fetch_intro_strict, fetch_summary_strict, resolve_titles,
@@ -74,6 +75,8 @@ def build_entry(name):
     titles = resolve_titles(name, OVERRIDES)
     bio_fr, img_fr = with_retry(fetch_summary_strict, "fr", titles["fr"])
     bio_en, img_en = with_retry(fetch_summary_strict, "en", titles["en"])
+    bio_fr = Database._clean(bio_fr)
+    bio_en = Database._clean(bio_en)
     image = img_fr or img_en
 
     missing = [label for label, value in

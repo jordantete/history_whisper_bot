@@ -62,6 +62,29 @@ class TestBuildEntry(unittest.TestCase):
             entry, _ = build_entry("Aristide")
         self.assertEqual(entry["wikidata_id"], "Q184960")
 
+    def test_fetched_prose_is_whitespace_cleaned_before_staging(self):
+        """Regression for the Fleming bug: a Wikipedia paragraph break landed
+        verbatim in src/figures.json because build_entry never normalised the
+        fetched summary. Must strip \\n like Database._clean does, but must
+        NOT touch U+00A0 (non-breaking space), which French typography relies
+        on before ':'/';' and inside "Ier siècle" — a naive str.split()/\\s
+        normalisation would destroy it."""
+        with patch("scripts.add_figures.fetch_summary_strict",
+                   side_effect=[("bio fr line one\nbio fr line two", "http://img/x.jpg"),
+                                ("bio en line one\nbio en line two", None)]):
+            entry, reason = build_entry("Whitespace Test")
+        self.assertIsNone(reason)
+        self.assertNotIn("\n", entry["bio_fr"])
+        self.assertNotIn("\n", entry["bio_en"])
+
+    def test_non_breaking_space_survives_cleaning(self):
+        with patch("scripts.add_figures.fetch_summary_strict",
+                   side_effect=[("Ier\xa0siècle\xa0av. J.-C.", "http://img/x.jpg"),
+                                ("bio en", None)]):
+            entry, reason = build_entry("Non Breaking Space Test")
+        self.assertIsNone(reason)
+        self.assertIn("\xa0", entry["bio_fr"])
+
 
 class TestWithRetry(unittest.TestCase):
     def test_retries_then_succeeds(self):
