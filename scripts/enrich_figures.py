@@ -305,6 +305,27 @@ def fetch_intro_strict(lang, title):
         raise FetchError(f"intro {lang}/{title}: {e}") from e
 
 
+def fetch_article_strict(lang, title, max_chars=8000):
+    """Texte intégral de l'article (chapeau + premières sections), tronqué à
+    max_chars — assez pour dépasser un chapeau trop mince sans charger un
+    article-fleuve en entier. Mêmes règles d'erreur que fetch_intro_strict."""
+    params = urllib.parse.urlencode({
+        "action": "query", "format": "json", "prop": "extracts",
+        "explaintext": "1", "redirects": "1", "titles": title,
+    })
+    url = f"https://{lang}.wikipedia.org/w/api.php?{params}"
+    try:
+        pages = _get_json(url)["query"]["pages"]
+        text = next(iter(pages.values())).get("extract", "")
+        return text[:max_chars]
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return ""
+        raise FetchError(f"article {lang}/{title}: HTTP {e.code}") from e
+    except Exception as e:  # noqa: BLE001
+        raise FetchError(f"article {lang}/{title}: {e}") from e
+
+
 def fetch_summary(lang, title):
     """Variante indulgente : journalise et poursuit. main() parcourt tout le
     roster et ne doit pas s'arrêter sur une figure."""
