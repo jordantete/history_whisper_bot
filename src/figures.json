@@ -3116,5 +3116,277 @@
       "His woodcut series are stylistically more Gothic than the rest of his output, yet they revolutionised the potential of that medium.",
       "His introduction of classical motifs and the nude into Northern art, drawing on his knowledge of Italian artists and German humanists, secured his reputation as one of the most important figures of the Northern Renaissance, reinforced by his theoretical treatises on linear perspective and body proportions."
     ]
+  },
+  {
+    "name": "Monet",
+    "description": "Peintre français, l'un des fondateurs de l'impressionnisme (XIXe-XXe s.).",
+    "bio_fr": "Oscar Claude Monet, dit Claude Monet, né le 14 novembre 1840 à Paris et mort le 5 décembre 1926 à Giverny, est un peintre français et l’un des fondateurs de l'impressionnisme.",
+    "bio_en": "Oscar-Claude Monet was a French painter and founder of Impressionism who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of Impressionism's philosophy of expressing one's perceptions of nature, especially as applied to plein air (outdoor) landscape painting. The term \"Impressionism\" is derived from the title of his painting Impression, Sunrise, which was exhibited in 1874 at the First Impressionist Exhibition, initiated by Monet and a number of like-minded artists as an alternative to the Salon.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/330px-Claude_Monet_1899_Nadar_crop.jpg",
+    "facts_fr": [
+      "Il commence sa carrière en réalisant des portraits-charge des notables du Havre, avant de partir tenter sa chance à Paris en 1859 sur le conseil d'Eugène Boudin.",
+      "En 1866, il connaît le succès au Salon grâce à La Femme à la robe verte, représentant Camille Doncieux, qu'il épouse en 1870.",
+      "À partir de 1890, il se consacre à des séries peignant le même motif à différentes heures et saisons, notamment Les Meules, les Cathédrales de Rouen, puis Les Nymphéas de son jardin, déclinés en grand format pour les « grandes décorations » du musée de l'Orangerie."
+    ],
+    "facts_en": [
+      "His mother, who supported his ambition to become a painter, died in January 1857 when he was sixteen, after which he was sent to live with his wealthy aunt, Marie-Jeanne Lecadre.",
+      "He studied at the Académie Suisse and under Charles Gleyre, where he was a classmate of Auguste Renoir; Eugène Boudin was a key early influence who introduced him to plein air painting.",
+      "From 1883 he lived in Giverny, where he bought a house and began a landscaping project including a water-lily pond that occupied his art for the last 20 years of his life."
+    ]
+  },
+  {
+    "name": "Rodin",
+    "description": "Sculpteur français, considéré comme un des pères de la sculpture moderne (XIXe-XXe s.).",
+    "bio_fr": "Auguste Rodin, né à Paris le 12 novembre 1840 et mort à Meudon le 17 novembre 1917, est l'un des plus importants sculpteurs français de la seconde moitié du XIXe siècle, considéré comme un des pères de la sculpture moderne.",
+    "bio_en": "François Auguste René Rodin was a French sculptor generally considered the founder of modern sculpture. He was schooled traditionally and took a craftsman-like approach to his work. Rodin possessed a unique ability to model a complex, turbulent, and deeply pocketed surface in clay. He is known for such sculptures as The Thinker, Monument to Balzac, The Kiss, The Burghers of Calais, and The Gates of Hell.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg/330px-Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg",
+    "facts_fr": [
+      "Surnommé en son temps le « Bouc sacré », il fut, une partie de sa vie, le compagnon de la sculptrice Camille Claudel.",
+      "Son art réaliste, croisement de romantisme et d'impressionnisme, modèle la sculpture par la lutte entre la forme et la lumière.",
+      "Grâce à sa grande capacité de travail et d'organisation, il laisse une œuvre hors norme, dont le musée Rodin de Paris détient seul le droit moral et inaliénable."
+    ],
+    "facts_en": [
+      "His first major figure, marked by an unexpected naturalism, was inspired by a trip to Italy in 1875.",
+      "His students included Camille Claudel, who became his associate, lover and creative rival, as well as Antoine Bourdelle, Constantin Brâncuși and Charles Despiau.",
+      "He married his lifelong companion, Rose Beuret, in the last year of both their lives."
+    ]
+  },
+  {
+    "name": "Le Caravage",
+    "description": "Peintre italien, maître du clair-obscur et précurseur du baroque (XVIe-XVIIe s.).",
+    "bio_fr": "Michelangelo Merisi da Caravaggio, francisé Caravage ou le Caravage, est un peintre italien, né le 29 septembre 1571 à Milan et mort le 18 juillet 1610 à Porto Ercole.",
+    "bio_en": "Michelangelo Merisi da Caravaggio, known mononymously as Caravaggio, was an Italian painter active in Rome for a significant portion of his artistic life. He began his apprenticeship in Milan in 1584, and during the final four years of his life, he moved between Naples, Malta, and Sicily. His paintings have been characterized by art critics as combining a realistic observation of the human state, both physical and emotional, with a dramatic use of lighting, which had a formative influence on Baroque painting.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg/330px-Bild-Ottavio_Leoni%2C_Caravaggio.jpg",
+    "facts_fr": [
+      "Son art naturaliste, parfois brutal, impose la technique du clair-obscur poussée jusqu'au ténébrisme, donnant naissance après lui au mouvement du caravagisme.",
+      "En 1606, après de nombreux démêlés avec la justice des États pontificaux, il blesse mortellement un adversaire en duel et doit fuir Rome, passant le reste de sa vie en exil à Naples, à Malte puis en Sicile.",
+      "Oublié pendant des siècles, son génie n'est pleinement reconnu qu'au début du XXe siècle ; il est aujourd'hui exposé dans les plus grands musées du monde malgré le nombre limité de peintures qui ont survécu."
+    ],
+    "facts_en": [
+      "He worked rapidly with live models, preferring to forgo drawings and work directly on the canvas.",
+      "He killed Ranuccio Tomassoni in a brawl, which led to a death sentence for murder and forced him to flee to Naples.",
+      "He died in 1610 under uncertain circumstances; reports stated he died of a fever, possibly due to wounds, though some have suggested he was murdered or died of lead poisoning."
+    ]
+  },
+  {
+    "name": "Mozart",
+    "description": "Compositeur germano-autrichien, enfant prodige et figure majeure du classicisme viennois (XVIIIe s.).",
+    "bio_fr": "Wolfgang Amadeus Mozart ou Johannes Chrysostomus Wolfgangus Theophilus Mozart, né le 27 janvier 1756 à Salzbourg et mort le 5 décembre 1791 à Vienne, est un compositeur germano-autrichien de la période classique. Il est considéré comme l'un des plus grands compositeurs de l'histoire de la musique. Avec Joseph Haydn et Ludwig van Beethoven, il porte à son apogée l'école classique viennoise.",
+    "bio_en": "Wolfgang Amadeus Mozart was a Classical composer and musician. He completed more than 800 works in his life—including outstanding examples of most of the genres of his time: symphonies, concertos, chamber music, opera, and choral music—and is regarded as one of the greatest composers in the history of Western music.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mozart_%28unfinished%29_by_Lange_1782.jpg/330px-Mozart_%28unfinished%29_by_Lange_1782.jpg",
+    "facts_fr": [
+      "Enfant prodige, il se produit en public dès l'âge de sept ans à travers l'Europe, où il subjugue les auditoires aux côtés de sa sœur Maria Anna.",
+      "Mort à trente-cinq ans, il laisse une œuvre considérable de 893 pièces répertoriées dans le catalogue Köchel.",
+      "Virtuose au piano comme au violon selon ses contemporains, il porte le concerto, la symphonie et la sonate à un point de perfection."
+    ],
+    "facts_en": [
+      "At age five he was already competent on keyboard and violin, had begun to compose, and had performed before European royalty.",
+      "In 1781, a quarrel with his Salzburg employers led to his dismissal; he chose to remain in Vienna, where he stayed for the rest of his life.",
+      "His final years produced many of his best-known works, including his last three symphonies and the operas Le nozze di Figaro, Don Giovanni and Die Zauberflöte; his Requiem was left largely unfinished at his death at 35."
+    ]
+  },
+  {
+    "name": "Beethoven",
+    "description": "Compositeur, pianiste et chef d'orchestre allemand, dernier grand représentant du classicisme viennois (XVIIIe-XIXe s.).",
+    "bio_fr": "Ludwig van Beethoven est un compositeur, pianiste et chef d'orchestre allemand né le 15 ou le 16 décembre 1770 à Bonn et mort le 26 mars 1827 à Vienne.",
+    "bio_en": "Ludwig van Beethoven was a German composer, conductor, and pianist. Regarded as one of the greatest composers in the history of Western music, he was mentored during the Classical period, and his musical style was a key driver of the transition to Romantic music, and the expansion of instrumental forms such as the symphony, the piano sonata and the string quartet. His compositions have attracted extraordinary casual and scholarly interest, and remain among the most performed in the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/330px-Beethoven.jpg",
+    "facts_fr": [
+      "Dernier grand représentant du classicisme viennois après Gluck, Haydn et Mozart, il prépare l'évolution vers le romantisme et influence la musique occidentale pendant une grande partie du XIXe siècle.",
+      "Si sa musique symphonique est la principale source de sa popularité, il exerce une influence tout aussi considérable dans l'écriture pianistique et la musique de chambre.",
+      "Il surmonte à force de volonté les épreuves d'une vie marquée par la surdité, qui le frappe dès l'âge de vingt-sept ans."
+    ],
+    "facts_en": [
+      "At age 21 he moved to Vienna, which subsequently became his base, and studied composition with Joseph Haydn.",
+      "Around the time he composed his Pathétique Sonata in 1798, he began experiencing symptoms of hearing loss.",
+      "His Ninth Symphony, premiered in 1824, was the first major example of a choral symphony."
+    ]
+  },
+  {
+    "name": "Jean-Sébastien Bach",
+    "description": "Compositeur et organiste allemand du baroque tardif, souvent surnommé le « Cantor de Leipzig » (XVIIe-XVIIIe s.).",
+    "bio_fr": "Jean-Sébastien Bach est un compositeur et musicien allemand né le 21 mars 1685 à Eisenach dans le duché de Saxe-Eisenach et mort le 28 juillet 1750 à Leipzig. Il est souvent surnommé le « Cantor de Leipzig ».",
+    "bio_en": "Johann Sebastian Bach was a German composer and musician of the late Baroque period. He is known for his prolific output across a variety of instruments and forms, including the orchestral Brandenburg Concertos; solo instrumental works such as the Cello Suites and Sonatas and Partitas for Solo Violin; keyboard works such as the Goldberg Variations and The Well-Tempered Clavier; organ works such as the Schübler Chorales and the Toccata and Fugue in D minor; and choral works such as the St. Matthew Passion and the Mass in B minor. He is known for his mastery of counterpoint, as heard in The Musical Offering and The Art of Fugue. Felix Mendelssohn precipitated the Bach Revival with a performance of the St. Matthew Passion in 1829. Ever since, Bach has been acclaimed as one of the greatest composers in the history of Western music.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/330px-Johann_Sebastian_Bach.jpg",
+    "facts_fr": [
+      "Formé d'abord par son père puis, après la mort de celui-ci, par son frère aîné Johann Christoph Bach, il se perfectionne en autodidacte en copiant sans relâche les œuvres de ses prédécesseurs.",
+      "Virtuose du clavecin et de l'orgue autant que du violon et de l'alto, il prétend tout jouer à première vue et peut improviser sur-le-champ une fugue à trois voix.",
+      "Il pratique tous les genres musicaux de son époque à l'exception de l'opéra, mais son œuvre, comprenant plus de mille compositions, tombe plus ou moins dans l'oubli après sa mort avant d'être pleinement redécouverte au XIXe siècle."
+    ],
+    "facts_en": [
+      "Orphaned at age 10, he lived for five years with his eldest brother, Johann Christoph, then continued his musical education in Lüneburg.",
+      "By 1723 he was hired as Thomaskantor, the church music director of Leipzig, responsible for music in four Lutheran city churches and for the St. Thomas School.",
+      "He died in 1750, at age 65, due to complications following eye surgery; four of his twenty children became composers."
+    ]
+  },
+  {
+    "name": "Chopin",
+    "description": "Compositeur et pianiste franco-polonais de la période romantique, virtuose du piano (XIXe s.).",
+    "bio_fr": "Frédéric Chopin, né Fryderyk Franciszek Chopin le 1er mars 1810 à Żelazowa Wola et mort le 17 octobre 1849 dans le 2e arrondissement de Paris (Seine), est un compositeur et pianiste d'ascendance franco-polonaise.",
+    "bio_en": "Frédéric François Chopin was a Polish composer and virtuoso pianist of the early Romantic period who wrote primarily for solo piano. He has maintained worldwide renown as a leading composer of his era whose \"poetic genius was based on a professional technique that was without equal in his generation\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Frederic_Chopin_photo.jpeg/330px-Frederic_Chopin_photo.jpeg",
+    "facts_fr": [
+      "Formé à la Haute École de musique de Varsovie, il quitte la Pologne puis, à vingt-et-un ans, s'installe en France, où son père avait des origines lorraines.",
+      "À Paris, il rencontre George Sand, qui sera sa compagne pendant neuf ans.",
+      "Avec Franz Liszt, il est considéré comme le père de la technique moderne du piano et influence des compositeurs tels que Claude Debussy, Alexandre Scriabine, Maurice Ravel et Sergueï Rachmaninov."
+    ],
+    "facts_en": [
+      "He left Poland at age 20, less than a month before the outbreak of the November 1830 Uprising, and settled in Paris at 21.",
+      "After settling in Paris, he gave only 30 public performances, preferring the more intimate atmosphere of the salon, and supported himself by selling compositions and giving piano lessons.",
+      "He created the instrumental ballade as a genre, and his major piano works also include mazurkas, waltzes, nocturnes, polonaises, études, impromptus, scherzi, preludes and sonatas."
+    ]
+  },
+  {
+    "name": "Wagner",
+    "description": "Compositeur, chef d'orchestre et théoricien allemand du romantisme, créateur de l'« œuvre d'art totale » (XIXe s.).",
+    "bio_fr": "Wilhelm Richard Wagner [ˈʁɪçaʁt ˈvaːɡnɐ], né le 22 mai 1813 à Leipzig et mort le 13 février 1883 à Venise, est un compositeur, directeur de théâtre, écrivain et chef d'orchestre allemand de la période romantique. Il est particulièrement connu pour ses quatorze opéras et drames lyriques, dont les dix principaux sont régulièrement joués lors du Festival annuel, qu'il a créé en 1876, qui se déroule chaque été dans le palais des festivals de Bayreuth, conçu par lui-même pour l'exécution de ses œuvres. Il est par ailleurs, auteur de plus d'une vingtaine d'ouvrages philosophiques et théoriques.",
+    "bio_en": "Wilhelm Richard Wagner was a German composer, theatre director, essayist, and conductor, best known for his operas, although his mature works are often referred to as music dramas. Unlike most composers, Wagner wrote both the libretti and the music for all of his stage works. He first achieved recognition with works in the Romantic tradition of Carl Maria von Weber and Giacomo Meyerbeer, but revolutionised the genre through his concept of the Gesamtkunstwerk, which sought to unite poetic, musical, visual, and dramatic elements. In that approach, the drama unfolds as a continuously sung narrative, with the music evolving organically from the text rather than alternating between arias and recitatives. Wagner outlined those ideas in a series of essays published between 1849 and 1852, most fully realising them in the first half of his four-opera cycle Der Ring des Nibelungen.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RichardWagner.jpg/330px-RichardWagner.jpg",
+    "facts_fr": [
+      "Il compose lui-même la musique et écrit en stabreim les livrets de ses opéras, dont Tristan und Isolde, considéré comme le point de départ des principales avancées de la musique au XXe siècle, et L'Anneau du Nibelung, conçu en un prologue et trois journées comme une « œuvre d'art totale ».",
+      "Révolutionnaire sans le sou et fugitif traqué par la police dans sa jeunesse, il devient plus tard le confident intime du roi Louis II de Bavière et l'ami du révolutionnaire Mikhaïl Bakounine.",
+      "Marqué par l'antisémitisme de son époque, il voit ses idées récupérées après sa mort, dans un contexte entièrement différent, par les nazis."
+    ],
+    "facts_en": [
+      "His advances in musical language, including extreme chromaticism and quickly shifting tonal centres, greatly influenced the development of classical music; Tristan und Isolde is regarded as an important precursor to modernist music.",
+      "He had his own opera house built to his specifications, the Bayreuth Festspielhaus, which hosted the premieres of The Ring and Parsifal and remains devoted to staging his mature works at the annual Bayreuth Festival.",
+      "After his death his wife Cosima assumed leadership of the festival, which has since remained under the management of their descendants."
+    ]
+  },
+  {
+    "name": "Vivaldi",
+    "description": "Violoniste virtuose, compositeur baroque italien et prêtre catholique, auteur des Quatre Saisons (XVIIe-XVIIIe s.).",
+    "bio_fr": "Antonio Lucio Vivaldi [anˈtɔːnjo ˈluːtʃo viˈvaldi], né le 4 mars 1678 à Venise et mort le 28 juillet 1741 à Vienne, est un violoniste et compositeur de musique baroque italien. Il était également prêtre de l'Église catholique.",
+    "bio_en": "Antonio Lucio Vivaldi was an Italian composer, virtuoso violinist and impresario of Baroque music. Regarded as one of the greatest Baroque composers, Vivaldi's influence during his lifetime was widespread across Europe, giving origin to many imitators and admirers. He pioneered many developments in orchestration, violin technique and programmatic music. He consolidated the emerging concerto form, especially the solo concerto, into a widely accepted and followed idiom.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Antonio_Vivaldi.jpg/330px-Antonio_Vivaldi.jpg",
+    "facts_fr": [
+      "Initiateur principal du concerto de soliste, il a une influence telle que Bach a adapté et transcrit plus d'œuvres de lui que de n'importe quel autre musicien.",
+      "Il se targuait de pouvoir composer un concerto plus vite que le copiste ne pouvait le transcrire ; sa chevelure rousse lui valut le surnom d'« il Prete rosso » (le Prêtre roux).",
+      "Oubliée après sa mort, son œuvre ne retrouve une véritable reconnaissance qu'au XXe siècle ; Les Quatre Saisons comptent aujourd'hui parmi les pièces les plus populaires du répertoire classique."
+    ],
+    "facts_en": [
+      "He wrote many of his compositions for the all-female music ensemble of the Ospedale della Pietà, a home for abandoned children in his native Venice.",
+      "He began studying for the Catholic priesthood at 15 and was ordained at 25, but was given dispensation to stop saying public Masses because of a health problem.",
+      "After meeting Emperor Charles VI he moved to Vienna hoping for royal support, but the Emperor died soon after his arrival and Vivaldi died in poverty less than a year later."
+    ]
+  },
+  {
+    "name": "Verdi",
+    "description": "Compositeur romantique italien, maître de l'opéra (Rigoletto, La traviata, Aida) au XIXe s.",
+    "bio_fr": "Giuseppe Fortunino Francesco Verdi, né Joseph Fortunin François Verdi le 10 octobre 1813 à Roncole et mort le 27 janvier 1901 à Milan, est un compositeur romantique italien. Son œuvre, composée essentiellement d'opéras, unissant le pouvoir mélodique à la profondeur psychologique et légendaire, est l'une des plus importantes de l'histoire du théâtre musical.",
+    "bio_en": "Giuseppe Fortunino Francesco Verdi was an Italian composer best known for his operas. He was born near Busseto, a small town in the modern province of Parma, to a family of moderate means, receiving a musical education with the help of a local patron named Antonio Barezzi.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Verdi-photo-Brogi.jpg",
+    "facts_fr": [
+      "Certains de ses thèmes sont passés dans la culture populaire, comme « La donna è mobile » de Rigoletto, le « Brindisi » de La traviata, « Va, pensiero » de Nabucco ou la « Marche triomphale » d'Aida.",
+      "Ses opéras dominent encore le répertoire lyrique un siècle et demi après leur création.",
+      "Peu engagé politiquement, il autorise néanmoins l'utilisation de son image et de ses œuvres pour la réunification italienne, devenant une figure du Risorgimento aux côtés de Garibaldi et de Cavour."
+    ],
+    "facts_en": [
+      "He served briefly as an elected politician, and the chorus \"Va, pensiero\" from his early opera Nabucco (1842) became associated with the Italian unification movement.",
+      "He found further fame with the three peaks of his \"middle period\": Rigoletto (1851), Il trovatore and La traviata (both 1853).",
+      "After the success of Aida (1871), he surprised the musical world by returning with three late masterpieces: his Requiem (1874), and the operas Otello (1887) and Falstaff (1893)."
+    ]
+  },
+  {
+    "name": "Einstein",
+    "description": "Physicien théoricien d'origine allemande, auteur de la théorie de la relativité (XXe s.).",
+    "bio_fr": "Albert Einstein, né le 14 mars 1879 à Ulm et mort le 18 avril 1955 à Princeton, est un physicien théoricien helvético-américain d'origine allemande.",
+    "bio_en": "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity. Einstein also made important contributions to quantum theory. His mass–energy equivalence formula E = mc2, which arises from special relativity, has been called \"the world's most famous equation\". He received the 1921 Nobel Prize in Physics for \"his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/330px-Albert_Einstein_Head_cleaned.jpg",
+    "facts_fr": [
+      "Il publie la théorie de la relativité restreinte en 1905 puis celle de la relativité générale en 1915, et reçoit le prix Nobel de physique de 1921 pour son explication de l'effet photoélectrique.",
+      "Il est notamment connu du grand public comme l'auteur de l'équation E = mc2, qui établit une équivalence entre la masse et l'énergie d'un système.",
+      "Il a été marié avec la mathématicienne Mileva Marić, puis avec sa cousine Elsa Einstein."
+    ],
+    "facts_en": [
+      "In 1933, while visiting the United States, he decided to remain there after Adolf Hitler's rise to power in Germany, and was granted American citizenship in 1940.",
+      "In 1905, sometimes described as his \"annus mirabilis,\" he published four groundbreaking papers explaining the photoelectric effect, Brownian motion, special relativity, and mass-energy equivalence.",
+      "He objected to quantum theory's introduction of fundamental randomness, famously stating \"God does not play dice,\" and spent much of his later career pursuing an unsuccessful unified field theory."
+    ]
+  },
+  {
+    "name": "Tesla",
+    "description": "Ingénieur et inventeur américain d'origine serbe, pionnier du courant alternatif (XIXe-XXe s.).",
+    "bio_fr": "Nikola Tesla, né le 10 juillet 1856 à Smiljan dans l'empire d'Autriche et mort le 7 janvier 1943 à New York, est un inventeur et ingénieur américain d'origine serbe. Il est connu pour son rôle prépondérant dans le développement et l'adoption du courant alternatif pour le transport et la distribution de l'électricité.",
+    "bio_en": "Nikola Tesla was a Serbian-American engineer, futurist, and inventor. He is known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/330px-Tesla_circa_1890.jpeg",
+    "facts_fr": [
+      "Il émigre aux États-Unis en 1884 pour travailler avec Thomas Edison puis avec George Westinghouse, qui enregistre un grand nombre de ses brevets ; il dépose au total quelque 300 brevets couvrant 125 inventions, dont beaucoup seront attribuées à tort à Edison.",
+      "Grand humaniste, il se fixait comme objectif d'apporter gratuitement l'électricité dans les foyers et de la véhiculer sans fil.",
+      "En 1960, son nom est donné à l'unité internationale d'induction magnétique, le tesla ; en 2003, le constructeur automobile Tesla Inc. est nommé en son honneur."
+    ],
+    "facts_en": [
+      "His AC induction motor and related polyphase AC patents, licensed by Westinghouse Electric in 1888, became the cornerstone of the polyphase system that Westinghouse marketed.",
+      "He built a wirelessly controlled boat, one of the first wirelessly controlled vehicles ever produced, and pursued wireless lighting and worldwide wireless power distribution through his unfinished Wardenclyffe Tower project.",
+      "He spent most of his money and lived in a series of New York hotels, leaving unpaid bills, before dying in New York City in January 1943; in 2013, Time named him one of the 100 most significant figures of all time."
+    ]
+  },
+  {
+    "name": "Edison",
+    "description": "Inventeur, scientifique et industriel américain, fondateur de la General Electric (XIXe-XXe s.).",
+    "bio_fr": "Thomas Edison, né le 11 février 1847 à Milan (Ohio) et mort le 18 octobre 1931 à West Orange, est un inventeur, scientifique et industriel américain.",
+    "bio_en": "Thomas Alva Edison was an American inventor and businessman known for his work on the incandescent light bulb, the phonograph, electric power distribution and early motion pictures. The merger of the Edison General Electric Company and the competitor Thomson-Houston Electric Company resulted in the formation of General Electric. Edison registered 1,093 patents in the United States.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/330px-Thomas_Edison2.jpg",
+    "facts_fr": [
+      "Fondateur de la General Electric, il est un inventeur prolifique avec plus de mille brevets.",
+      "Il est l'un des principaux inventeurs du cinéma, aux côtés notamment de William Kennedy Laurie Dickson, Émile Reynaud et Auguste et Louis Lumière, et de l'enregistrement du son, aux côtés de Charles Cros.",
+      "Parfois surnommé « le sorcier de Menlo Park », il donne son nom en 1954 à cette ville du New Jersey, rebaptisée « Edison » en son honneur."
+    ],
+    "facts_en": [
+      "He became deaf as a child and learned largely through books and tinkering, beginning work at a young age as a railroad telegrapher.",
+      "He developed Menlo Park, now considered the first industrial research laboratory, and rose to international fame with the invention of the phonograph.",
+      "Competition with Westinghouse's AC system forced Edison to yield, resulting in the creation of General Electric; his last obsession was the search for domestic rubber production."
+    ]
+  },
+  {
+    "name": "Turing",
+    "description": "Mathématicien et cryptologue britannique, pionnier de l'informatique théorique et de l'intelligence artificielle (XXe s.).",
+    "bio_fr": "Alan Mathison Turing, né le 23 juin 1912 à Londres et mort le 7 juin 1954 à Wilmslow, est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique. Il est aussi un des pionniers de l'Intelligence artificielle.",
+    "bio_en": "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/330px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg",
+    "facts_fr": [
+      "En 1936, il présente une expérience de pensée, la future « machine de Turing », qui contribue à établir la thèse de Church définissant le concept mathématique de fonction calculable.",
+      "Durant la Seconde Guerre mondiale, il joue un rôle majeur dans la cryptanalyse de la machine Enigma ; ses machines, les « bombes », font passer le décryptage à plusieurs milliers de messages par jour, mais ce travail reste secret jusque dans les années 1970.",
+      "Poursuivi en justice en 1952 pour homosexualité, il choisit la castration chimique pour éviter la prison, et est retrouvé mort par empoisonnement au cyanure en 1954 ; la reine Élisabeth II lui accorde une grâce royale posthume en 2013."
+    ],
+    "facts_en": [
+      "During World War II he worked at Bletchley Park, Britain's codebreaking centre, where he led Hut 8, the section responsible for German naval cryptanalysis, devising techniques including improvements to the pre-war Polish bomba method.",
+      "After the war he designed the Automatic Computing Engine at the National Physical Laboratory, one of the first designs for a stored-program computer, and later became interested in mathematical biology.",
+      "His portrait appears on the Bank of England £50 note, first released in 2021 to coincide with his birthday, and a 2019 BBC audience vote named him the greatest scientist of the 20th century."
+    ]
+  },
+  {
+    "name": "Ampère",
+    "description": "Physicien, mathématicien et chimiste français, fondateur de l'électrodynamique (XVIIIe-XIXe s.).",
+    "bio_fr": "André-Marie Ampère est un mathématicien, physicien, chimiste et philosophe français. Il a été membre de l'Académie des sciences, ainsi que professeur à l'École polytechnique et au Collège de France.",
+    "bio_en": "André-Marie Ampère was a French physicist and mathematician who was one of the founders of the science of classical electromagnetism, which he referred to as electrodynamics. He made also important contributions in chemistry and philosophy. He is also the inventor of numerous applications, such as the solenoid and the electrical telegraph. As an autodidact, Ampère was a member of the French Academy of Sciences and professor at the École polytechnique and the Collège de France.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Ampere_portrait_at_the_Musee_Poleymieux.jpg/330px-Ampere_portrait_at_the_Musee_Poleymieux.jpg",
+    "facts_fr": [
+      "Il découvre et théorise l'électrodynamique, invente le solénoïde et propose un principe de télégraphe électrique ; avec François Arago, il démontre l'aimantation du fer et de l'acier par le courant, préfigurant l'invention de l'électroaimant.",
+      "Il donne leur sens moderne aux termes « courant » et « tension » et introduit la notion de circuit électrique ; l'unité internationale de l'intensité du courant électrique, l'ampère, porte son nom.",
+      "Partisan de l'atomisme en chimie, il découvre indépendamment d'Amedeo Avogadro la loi qui porte aujourd'hui le nom de loi d'Avogadro, parfois appelée loi d'Avogadro-Ampère."
+    ],
+    "facts_en": [
+      "The SI unit of electric current, the ampere, is named after him.",
+      "His name is one of the 72 names inscribed on the Eiffel Tower.",
+      "The English word \"kinematic\" derives from his term \"cinématique,\" which he coined from the Greek kinema (\"movement, motion\")."
+    ]
+  },
+  {
+    "name": "Christophe Colomb",
+    "description": "Navigateur génois au service des Rois catholiques, qui atteint les Caraïbes en 1492 (XVe-XVIe s.).",
+    "bio_fr": "Christophe Colomb est un navigateur génois, né en 1451 sur le territoire de la république de Gênes et mort le 20 mai 1506 à Valladolid (Espagne). Il est célèbre pour avoir, selon la formulation traditionnelle mais contestée, « découvert l'Amérique » en octobre 1492, alors qu’il est au service des « Rois catholiques », Isabelle de Castille et Ferdinand d'Aragon.",
+    "bio_en": "Christopher Columbus was an Italian explorer and navigator from the Republic of Genoa who completed four Spanish transatlantic voyages in the name of the Catholic Monarchs, opening the way for the widespread European exploration and colonization of the Americas. His expeditions were the first known European contact with the Caribbean and Central and South America.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg/330px-Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg",
+    "facts_fr": [
+      "Après le rejet de son projet par le roi du Portugal Jean II en 1484, il émigre en Castille où il obtient l'appui des Rois catholiques ; mandaté par les capitulations de Santa Fe en avril 1492, il quitte Palos de la Frontera en août avec trois caravelles.",
+      "À son retour en mars 1493, il est nommé « amiral de la mer Océane, gouverneur et vice-roi des Indes » ; mais critiqué comme administrateur colonial, il est arrêté et renvoyé en Espagne en 1500 et perd ses titres.",
+      "Il a découvert un grand nombre d'îles des Caraïbes et en a nommé plusieurs, dont la Guadeloupe, Marie-Galante, la Désirade, la Trinité et la Dominique."
+    ],
+    "facts_en": [
+      "He married Portuguese noblewoman Filipa Moniz Perestrelo, with whom he had a son, Diego, and was based in Lisbon for several years; he later had a son, Ferdinand, with his Castilian mistress, Beatriz Enríquez de Arana.",
+      "He left the Port of Palos in August 1492 with three ships and made landfall in the Americas on 12 October, at an island in the Bahamas known by its native inhabitants as Guanahani.",
+      "He made three further voyages to the Americas — exploring the Lesser Antilles in 1493, Trinidad and the northern coast of South America in 1498, and the east coast of Central America in 1502 — and, as a colonial governor, was accused by some of his contemporaries of significant brutality and removed from his post."
+    ]
   }
 ]

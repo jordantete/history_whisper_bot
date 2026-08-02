@@ -14,184 +14,66 @@
       ]
     },
     {
-      "name": "Monet",
-      "description": "",
-      "bio_fr": "Oscar Claude Monet, dit Claude Monet, né le 14 novembre 1840 à Paris et mort le 5 décembre 1926 à Giverny, est un peintre français et l’un des fondateurs de l'impressionnisme.",
-      "bio_en": "Oscar-Claude Monet was a French painter and founder of Impressionism who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of Impressionism's philosophy of expressing one's perceptions of nature, especially as applied to plein air (outdoor) landscape painting. The term \"Impressionism\" is derived from the title of his painting Impression, Sunrise, which was exhibited in 1874 at the First Impressionist Exhibition, initiated by Monet and a number of like-minded artists as an alternative to the Salon.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/330px-Claude_Monet_1899_Nadar_crop.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Rodin",
-      "description": "",
-      "bio_fr": "Auguste Rodin, né à Paris le 12 novembre 1840 et mort à Meudon le 17 novembre 1917, est l'un des plus importants sculpteurs français de la seconde moitié du XIXe siècle, considéré comme un des pères de la sculpture moderne.",
-      "bio_en": "François Auguste René Rodin was a French sculptor generally considered the founder of modern sculpture. He was schooled traditionally and took a craftsman-like approach to his work. Rodin possessed a unique ability to model a complex, turbulent, and deeply pocketed surface in clay. He is known for such sculptures as The Thinker, Monument to Balzac, The Kiss, The Burghers of Calais, and The Gates of Hell.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg/330px-Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Le Caravage",
-      "description": "",
-      "bio_fr": "Michelangelo Merisi da Caravaggio, francisé Caravage ou le Caravage, est un peintre italien, né le 29 septembre 1571 à Milan et mort le 18 juillet 1610 à Porto Ercole.",
-      "bio_en": "Michelangelo Merisi da Caravaggio, known mononymously as Caravaggio, was an Italian painter active in Rome for a significant portion of his artistic life. He began his apprenticeship in Milan in 1584, and during the final four years of his life, he moved between Naples, Malta, and Sicily. His paintings have been characterized by art critics as combining a realistic observation of the human state, both physical and emotional, with a dramatic use of lighting, which had a formative influence on Baroque painting.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg/330px-Bild-Ottavio_Leoni%2C_Caravaggio.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Mozart",
-      "description": "",
-      "bio_fr": "Wolfgang Amadeus Mozart ou Johannes Chrysostomus Wolfgangus Theophilus Mozart, né le 27 janvier 1756 à Salzbourg et mort le 5 décembre 1791 à Vienne, est un compositeur germano-autrichien de la période classique. Il est considéré comme l'un des plus grands compositeurs de l'histoire de la musique. Avec Joseph Haydn et Ludwig van Beethoven, il porte à son apogée l'école classique viennoise.",
-      "bio_en": "Wolfgang Amadeus Mozart was a Classical composer and musician. He completed more than 800 works in his life—including outstanding examples of most of the genres of his time: symphonies, concertos, chamber music, opera, and choral music—and is regarded as one of the greatest composers in the history of Western music.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mozart_%28unfinished%29_by_Lange_1782.jpg/330px-Mozart_%28unfinished%29_by_Lange_1782.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Beethoven",
-      "description": "",
-      "bio_fr": "Ludwig van Beethoven est un compositeur, pianiste et chef d'orchestre allemand né le 15 ou le 16 décembre 1770 à Bonn et mort le 26 mars 1827 à Vienne.",
-      "bio_en": "Ludwig van Beethoven was a German composer, conductor, and pianist. Regarded as one of the greatest composers in the history of Western music, he was mentored during the Classical period, and his musical style was a key driver of the transition to Romantic music, and the expansion of instrumental forms such as the symphony, the piano sonata and the string quartet. His compositions have attracted extraordinary casual and scholarly interest, and remain among the most performed in the world.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/330px-Beethoven.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Jean-Sébastien Bach",
-      "description": "",
-      "bio_fr": "Jean-Sébastien Bach est un compositeur et musicien allemand né le 21 mars 1685 à Eisenach dans le duché de Saxe-Eisenach et mort le 28 juillet 1750 à Leipzig. Il est souvent surnommé le « Cantor de Leipzig ».",
-      "bio_en": "Johann Sebastian Bach was a German composer and musician of the late Baroque period. He is known for his prolific output across a variety of instruments and forms, including the orchestral Brandenburg Concertos; solo instrumental works such as the Cello Suites and Sonatas and Partitas for Solo Violin; keyboard works such as the Goldberg Variations and The Well-Tempered Clavier; organ works such as the Schübler Chorales and the Toccata and Fugue in D minor; and choral works such as the St. Matthew Passion and the Mass in B minor. He is known for his mastery of counterpoint, as heard in The Musical Offering and The Art of Fugue. Felix Mendelssohn precipitated the Bach Revival with a performance of the St. Matthew Passion in 1829. Ever since, Bach has been acclaimed as one of the greatest composers in the history of Western music.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/330px-Johann_Sebastian_Bach.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Chopin",
-      "description": "",
-      "bio_fr": "Frédéric Chopin, né Fryderyk Franciszek Chopin le 1er mars 1810 à Żelazowa Wola et mort le 17 octobre 1849 dans le 2e arrondissement de Paris (Seine), est un compositeur et pianiste d'ascendance franco-polonaise.",
-      "bio_en": "Frédéric François Chopin was a Polish composer and virtuoso pianist of the early Romantic period who wrote primarily for solo piano. He has maintained worldwide renown as a leading composer of his era whose \"poetic genius was based on a professional technique that was without equal in his generation\".",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Frederic_Chopin_photo.jpeg/330px-Frederic_Chopin_photo.jpeg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Wagner",
-      "description": "",
-      "bio_fr": "Wilhelm Richard Wagner [ˈʁɪçaʁt ˈvaːɡnɐ], né le 22 mai 1813 à Leipzig et mort le 13 février 1883 à Venise, est un compositeur, directeur de théâtre, écrivain et chef d'orchestre allemand de la période romantique. Il est particulièrement connu pour ses quatorze opéras et drames lyriques, dont les dix principaux sont régulièrement joués lors du Festival annuel, qu'il a créé en 1876, qui se déroule chaque été dans le palais des festivals de Bayreuth, conçu par lui-même pour l'exécution de ses œuvres. Il est par ailleurs, auteur de plus d'une vingtaine d'ouvrages philosophiques et théoriques.",
-      "bio_en": "Wilhelm Richard Wagner was a German composer, theatre director, essayist, and conductor, best known for his operas, although his mature works are often referred to as music dramas. Unlike most composers, Wagner wrote both the libretti and the music for all of his stage works. He first achieved recognition with works in the Romantic tradition of Carl Maria von Weber and Giacomo Meyerbeer, but revolutionised the genre through his concept of the Gesamtkunstwerk, which sought to unite poetic, musical, visual, and dramatic elements. In that approach, the drama unfolds as a continuously sung narrative, with the music evolving organically from the text rather than alternating between arias and recitatives. Wagner outlined those ideas in a series of essays published between 1849 and 1852, most fully realising them in the first half of his four-opera cycle Der Ring des Nibelungen.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RichardWagner.jpg/330px-RichardWagner.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Vivaldi",
-      "description": "",
-      "bio_fr": "Antonio Lucio Vivaldi [anˈtɔːnjo ˈluːtʃo viˈvaldi], né le 4 mars 1678 à Venise et mort le 28 juillet 1741 à Vienne, est un violoniste et compositeur de musique baroque italien. Il était également prêtre de l'Église catholique.",
-      "bio_en": "Antonio Lucio Vivaldi was an Italian composer, virtuoso violinist and impresario of Baroque music. Regarded as one of the greatest Baroque composers, Vivaldi's influence during his lifetime was widespread across Europe, giving origin to many imitators and admirers. He pioneered many developments in orchestration, violin technique and programmatic music. He consolidated the emerging concerto form, especially the solo concerto, into a widely accepted and followed idiom.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Antonio_Vivaldi.jpg/330px-Antonio_Vivaldi.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Verdi",
-      "description": "",
-      "bio_fr": "Giuseppe Fortunino Francesco Verdi, né Joseph Fortunin François Verdi le 10 octobre 1813 à Roncole et mort le 27 janvier 1901 à Milan, est un compositeur romantique italien. Son œuvre, composée essentiellement d'opéras, unissant le pouvoir mélodique à la profondeur psychologique et légendaire, est l'une des plus importantes de l'histoire du théâtre musical.",
-      "bio_en": "Giuseppe Fortunino Francesco Verdi was an Italian composer best known for his operas. He was born near Busseto, a small town in the modern province of Parma, to a family of moderate means, receiving a musical education with the help of a local patron named Antonio Barezzi.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Verdi-photo-Brogi.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Einstein",
-      "description": "",
-      "bio_fr": "Albert Einstein, né le 14 mars 1879 à Ulm et mort le 18 avril 1955 à Princeton, est un physicien théoricien helvético-américain d'origine allemande.",
-      "bio_en": "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity. Einstein also made important contributions to quantum theory. His mass–energy equivalence formula E = mc2, which arises from special relativity, has been called \"the world's most famous equation\". He received the 1921 Nobel Prize in Physics for \"his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\".",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/330px-Albert_Einstein_Head_cleaned.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
       "name": "Copernic",
-      "description": "",
+      "description": "Astronome polonais, chanoine et mathématicien, père de l'héliocentrisme moderne (XVe-XVIe s.).",
       "bio_fr": "Nicolas Copernic est un astronome polonais, également chanoine, médecin et mathématicien, né le 19 février 1473 à Thorn (Toruń) en Prusse royale, et mort le 24 mai 1543 à Frauenburg.",
       "bio_en": "Nicolaus Copernicus was a Renaissance polymath who formulated a model of the universe that placed the Sun rather than Earth at its center. The publication of Copernicus's model in his book De revolutionibus orbium coelestium, just before his death in 1543, was a major event in the history of science, triggering the Copernican Revolution and making a pioneering contribution to the Scientific Revolution. Though a similar heliocentric model had been developed eighteen centuries earlier by Aristarchus of Samos, an ancient Greek astronomer, Copernicus likely arrived at his model independently.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/330px-Nikolaus_Kopernikus.jpg",
-      "facts_fr": [],
-      "facts_en": []
+      "facts_fr": [
+        "Il développe et défend la théorie de l'héliocentrisme, selon laquelle la Terre tourne autour du Soleil supposé au centre de l'Univers, contre l'opinion alors admise que la Terre était centrale et immobile.",
+        "Les conséquences de cette théorie, qui bouleversent les points de vue scientifique, philosophique et religieux, sont désignées comme la révolution copernicienne."
+      ],
+      "facts_en": [
+        "He obtained a doctorate in canon law and worked as a mathematician, astronomer, physician, classics scholar, translator, governor, diplomat, and economist.",
+        "In 1517 he derived a quantity theory of money, a key concept in economics, and in 1519 he formulated an economic principle later known as Gresham's law.",
+        "He was born and died in Royal Prussia, a semi-autonomous, multilingual region within the Kingdom of Poland created from lands regained from the Teutonic Order after the Thirteen Years' War."
+      ]
     },
     {
       "name": "Kepler",
-      "description": "",
+      "description": "Astronome allemand, découvreur des lois du mouvement des planètes sur des orbites elliptiques (XVIe-XVIIe s.).",
       "bio_fr": "Johannes Kepler, né le 27 décembre 1571 à Weil der Stadt et mort le 15 novembre 1630 à Ratisbonne, est un astronome allemand célèbre pour avoir étudié l'hypothèse héliocentrique de Nicolas Copernic, affirmant que la Terre tourne autour du Soleil, et surtout pour avoir découvert que les planètes ne tournent pas autour du Soleil en suivant des trajectoires circulaires parfaites, mais elliptiques.",
       "bio_en": "Johannes Kepler was a German polymath who was an astronomer, mathematician, astrologer, natural philosopher and music theorist. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion, and his books Astronomia nova, Harmonice Mundi, and Epitome Astronomiae Copernicanae. The variety and impact of his work made Kepler one of the founders and fathers of modern astronomy, the scientific method, natural science, and modern science. He has been described as the \"father of science fiction\" for his novel Somnium.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/JKepler.jpg/330px-JKepler.jpg",
-      "facts_fr": [],
-      "facts_en": []
+      "facts_fr": [
+        "Il découvre les relations mathématiques, dites lois de Kepler, qui régissent le mouvement des planètes sur leur orbite.",
+        "Ces relations seront ensuite exploitées par Isaac Newton pour élaborer sa théorie de la gravitation universelle."
+      ],
+      "facts_en": [
+        "He worked as an assistant to astronomer Tycho Brahe in Prague and later became imperial mathematician to Emperor Rudolf II and his two successors, Matthias and Ferdinand II.",
+        "He did fundamental work in optics, earning recognition as the father of modern optics, and invented an improved version of the refracting telescope known as the Keplerian telescope.",
+        "He postulated the Kepler conjecture and influenced Isaac Newton, providing one of the foundations for Newton's theory of universal gravitation."
+      ]
     },
     {
       "name": "Mendeleïev",
-      "description": "",
+      "description": "Chimiste russe, créateur du tableau périodique des éléments (XIXe-XXe s.).",
       "bio_fr": "Dmitri Ivanovitch Mendeleïev, né le 27 janvier 1834 à Tobolsk et mort le 20 janvier 1907 à Saint-Pétersbourg, est un chimiste russe.",
       "bio_en": "Dmitri Ivanovich Mendeleev was a Russian chemist known for formulating the periodic law and creating a version of the periodic table of elements. He used the periodic law not only to correct the then-accepted properties of some known elements, such as the valence and atomic weight of uranium, but also to predict the properties of three elements that were yet to be discovered. The synthetic element mendelevium is named in his honor.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/DIMendeleevCab.jpg/330px-DIMendeleevCab.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Tesla",
-      "description": "",
-      "bio_fr": "Nikola Tesla, né le 10 juillet 1856 à Smiljan dans l'empire d'Autriche et mort le 7 janvier 1943 à New York, est un inventeur et ingénieur américain d'origine serbe. Il est connu pour son rôle prépondérant dans le développement et l'adoption du courant alternatif pour le transport et la distribution de l'électricité.",
-      "bio_en": "Nikola Tesla was a Serbian-American engineer, futurist, and inventor. He is known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/330px-Tesla_circa_1890.jpeg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Edison",
-      "description": "",
-      "bio_fr": "Thomas Edison, né le 11 février 1847 à Milan (Ohio) et mort le 18 octobre 1931 à West Orange, est un inventeur, scientifique et industriel américain.",
-      "bio_en": "Thomas Alva Edison was an American inventor and businessman known for his work on the incandescent light bulb, the phonograph, electric power distribution and early motion pictures. The merger of the Edison General Electric Company and the competitor Thomson-Houston Electric Company resulted in the formation of General Electric. Edison registered 1,093 patents in the United States.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/330px-Thomas_Edison2.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Turing",
-      "description": "",
-      "bio_fr": "Alan Mathison Turing, né le 23 juin 1912 à Londres et mort le 7 juin 1954 à Wilmslow, est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique. Il est aussi un des pionniers de l'Intelligence artificielle.",
-      "bio_en": "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/330px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg",
-      "facts_fr": [],
-      "facts_en": []
+      "facts_fr": [
+        "Il est principalement connu pour son travail sur la classification périodique des éléments, publiée en 1869-1870 et également appelée « tableau de Mendeleïev ».",
+        "Il déclara que les éléments chimiques pouvaient être arrangés selon un modèle qui permettait de prévoir les propriétés des éléments encore non découverts."
+      ],
+      "facts_en": [
+        "The three elements whose properties he predicted from the periodic law before their discovery were germanium, gallium, and scandium."
+      ]
     },
     {
       "name": "Fleming",
-      "description": "",
+      "description": "Médecin et biologiste britannique, découvreur de la pénicilline (XIXe-XXe s.).",
       "bio_fr": "Alexander Fleming est un médecin, biologiste et pharmacologue britannique, né le 6 août 1881 à Darvel, Ayrshire en Écosse et mort le 11 mars 1955 à Londres. Il a publié de nombreux articles concernant la bactériologie, l'immunologie et la chimiothérapie.",
       "bio_en": "Sir Alexander Fleming was a Scottish physician and microbiologist. He shared the 1945 Nobel Prize in Physiology or Medicine with Howard Florey and Ernst Chain \"for the discovery of penicillin and its curative effect in various infectious diseases\".\nThis was the first antibiotic substance discovered. His discovery in 1928 of what was later named benzylpenicillin from the mould Penicillium rubens has been described as the \"single greatest victory ever achieved over disease\".",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Alexander_Fleming_1945.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Ampère",
-      "description": "",
-      "bio_fr": "André-Marie Ampère est un mathématicien, physicien, chimiste et philosophe français. Il a été membre de l'Académie des sciences, ainsi que professeur à l'École polytechnique et au Collège de France.",
-      "bio_en": "André-Marie Ampère was a French physicist and mathematician who was one of the founders of the science of classical electromagnetism, which he referred to as electrodynamics. He made also important contributions in chemistry and philosophy. He is also the inventor of numerous applications, such as the solenoid and the electrical telegraph. As an autodidact, Ampère was a member of the French Academy of Sciences and professor at the École polytechnique and the Collège de France.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Ampere_portrait_at_the_Musee_Poleymieux.jpg/330px-Ampere_portrait_at_the_Musee_Poleymieux.jpg",
-      "facts_fr": [],
-      "facts_en": []
-    },
-    {
-      "name": "Christophe Colomb",
-      "description": "",
-      "bio_fr": "Christophe Colomb est un navigateur génois, né en 1451 sur le territoire de la république de Gênes et mort le 20 mai 1506 à Valladolid (Espagne). Il est célèbre pour avoir, selon la formulation traditionnelle mais contestée, « découvert l'Amérique » en octobre 1492, alors qu’il est au service des « Rois catholiques », Isabelle de Castille et Ferdinand d'Aragon.",
-      "bio_en": "Christopher Columbus was an Italian explorer and navigator from the Republic of Genoa who completed four Spanish transatlantic voyages in the name of the Catholic Monarchs, opening the way for the widespread European exploration and colonization of the Americas. His expeditions were the first known European contact with the Caribbean and Central and South America.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg/330px-Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg",
-      "facts_fr": [],
-      "facts_en": []
+      "facts_fr": [
+        "Il isole la pénicilline à partir du champignon Penicillium notatum en 1928, découverte pour laquelle il partage le prix Nobel de physiologie ou médecine avec Howard Walter Florey et Ernst Boris Chain en 1945.",
+        "Il découvre également l'enzyme lysozyme en 1922."
+      ],
+      "facts_en": [
+        "He discovered the enzyme lysozyme from his own nasal discharge in 1922, along with a bacterium he named Micrococcus lysodeikticus, later renamed Micrococcus luteus.",
+        "He was knighted for his scientific achievements in 1944, and in 1999 was named in Time magazine's list of the 100 Most Important People of the 20th century.",
+        "In 2009 he was voted third \"greatest Scot\" in an opinion poll conducted by STV, behind only Robert Burns and William Wallace."
+      ]
     },
     {
       "name": "Magellan",
