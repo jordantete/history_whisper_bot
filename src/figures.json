@@ -2793,5 +2793,328 @@
       "He descended into the underworld to bring back his wife Eurydice — and failed at the very last moment, the defining episode of his myth.",
       "A prophet of the 'Orphic' mysteries, legend has him killed by the maenads of Dionysus; in 1912 Apollinaire named the 'Orphism' art movement after him."
     ]
+  },
+  {
+    "name": "Archimède",
+    "description": "Mathématicien, physicien et ingénieur grec de l'Antiquité (IIIe s. av. J.-C.), considéré comme l'un des plus grands savants de tous les temps.",
+    "bio_fr": "Archimède de Syracuse, né à Syracuse vers 287 av. J.-C. et mort en cette même ville en 212 av. J.-C., est un grand scientifique grec de Sicile (Grande-Grèce) de l'Antiquité : physicien, astronome, mathématicien et ingénieur.",
+    "bio_en": "Archimedes of Syracuse was an Ancient Greek mathematician, physicist, engineer, astronomer, and inventor from the city of Syracuse in Sicily. Although few details of his life are known, based on his surviving work, he is considered one of the leading scientists in classical antiquity, and one of the greatest mathematicians of all time. Archimedes anticipated modern calculus and analysis by applying the concept of the infinitesimals and the method of exhaustion to derive and rigorously prove many geometrical theorems, including the area of a circle, the surface area and volume of a sphere, the area of an ellipse, the area under a parabola, the volume of a segment of a paraboloid of revolution, the volume of a segment of a hyperboloid of revolution, and the area of a spiral.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg/330px-Retrato_de_un_erudito_%28%C2%BFArqu%C3%ADmedes%3F%29%2C_por_Domenico_Fetti.jpg",
+    "facts_fr": [
+      "Il est crédité de la conception de plusieurs outils innovants, comme la vis d'Archimède, le palan, ou des systèmes de défense tels que la griffe d'Archimède, conçus pour protéger Syracuse lors de la deuxième guerre punique.",
+      "Considéré comme le plus grand mathématicien de l'Antiquité, il utilise la méthode d'exhaustion pour calculer l'aire sous un arc de parabole et donner un encadrement de π d'une remarquable précision.",
+      "Il meurt lors du siège de Syracuse, tué par un soldat romain malgré la volonté du général Marcus Claudius Marcellus de l'épargner."
+    ],
+    "facts_en": [
+      "He also derived an approximation of pi, defined the Archimedean spiral, and devised a system using exponentiation to express very large numbers.",
+      "He was one of the first to apply mathematics to physical phenomena, proving the law of the lever and formulating the law of buoyancy now known as Archimedes' principle.",
+      "He died during the siege of Syracuse, killed by a Roman soldier despite orders that he should not be harmed; his mathematical writings remained little known until Isidore of Miletus compiled them around 530 AD."
+    ]
+  },
+  {
+    "name": "Pythagore",
+    "description": "Philosophe et mathématicien présocratique grec (VIe s. av. J.-C.), fondateur du pythagorisme et théoricien de la métempsycose.",
+    "bio_fr": "Pythagore est un philosophe présocratique qui serait né aux environs de 580 av. J.-C. à Samos, une île du sud-est de la mer Égée ; on situe sa mort vers 495 av. J.-C., à l'âge de 85 ans. Il a introduit la notion de métempsycose dans le monde grec ; son nom est aussi lié aux mathématiques, à la philosophie des nombres ainsi qu'à la notion d'harmonie céleste — même si l'approfondissement de ces notions est plutôt dû à ses disciples et épigones, ceux que l'on appelle les pythagoriciens. Par ailleurs, maître de sagesse charismatique, il a fondé en Italie du Sud, à Crotone, une communauté à mi-chemin entre la politique et la philosophie, qui s'est distinguée par son mode de vie spécifique.",
+    "bio_en": "Pythagoras of Samos was an ancient Ionian Greek philosopher, polymath, and the eponymous founder of Pythagoreanism. His political and religious teachings were well known in Magna Graecia and influenced the philosophies of Plato, Aristotle, and, through them, Western philosophy. Modern scholars disagree regarding Pythagoras's education and influences, but most agree that he travelled to Croton in southern Italy around 530 BC, where he founded a school in which initiates were allegedly sworn to secrecy and lived a communal, ascetic lifestyle.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg/330px-Kapitolinischer_Pythagoras_adjusted.jpg",
+    "facts_fr": [
+      "Son nom, étymologiquement « celui qui a été annoncé par la Pythie », proviendrait de l'annonce de sa naissance faite à son père lors d'un voyage à Delphes.",
+      "Selon une remarque d'Héraclide du Pont rapportée par Cicéron, Pythagore serait le premier penseur grec à s'être qualifié lui-même de philosophos, « ami du savoir ».",
+      "Hérodote le comptait parmi les plus grands esprits de la Grèce, et Hegel le qualifiait de « premier maître universel »."
+    ],
+    "facts_en": [
+      "In antiquity he was credited with mathematical and scientific discoveries such as the Pythagorean theorem, Pythagorean tuning, the five regular solids, and the sphericity of the Earth, though historians debate whether these were his own or made later by followers such as Hippasus and Philolaus.",
+      "His teaching of metempsychosis held that every soul is immortal and, upon death, enters a new body; he may also have devised the doctrine of musica universalis, holding that the planets move according to mathematical ratios producing an inaudible symphony.",
+      "Following Croton's victory over Sybaris around 510 BC, his followers clashed with supporters of democracy and their meeting houses were burned; Pythagoras may have been killed in this persecution or escaped to Metapontum, where he died."
+    ]
+  },
+  {
+    "name": "Euclide",
+    "description": "Mathématicien grec de l'Antiquité (IIIe s. av. J.-C.), auteur des Éléments, texte fondateur de la géométrie occidentale.",
+    "bio_fr": "Euclide, dit parfois Euclide d'Alexandrie, est un mathématicien de la Grèce antique, auteur d’un traité de mathématiques, qui constitue l'un des textes fondateurs de cette discipline en Occident. Aucune information fiable n'est parvenue sur la vie ou la mort d'Euclide ; il est possible qu'il ait vécu vers 300 avant notre ère.",
+    "bio_en": "Euclid was an ancient Greek mathematician active as a geometer and logician. Considered the \"father of geometry\", he is chiefly known for the Elements treatise, which established the foundations of geometry that largely dominated the field until the early 19th century. His system, now referred to as Euclidean geometry, involved innovations in combination with a synthesis of theories from earlier Greek mathematicians, including Eudoxus of Cnidus, Hippocrates of Chios, Thales and Theaetetus. With Archimedes and Apollonius of Perga, Euclid is generally considered among the greatest mathematicians of antiquity, and one of the most influential in the history of mathematics.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Euklid-von-Alexandria_1.jpg",
+    "facts_fr": [
+      "Son ouvrage le plus célèbre, les Éléments, est l'un des plus anciens traités connus présentant systématiquement, à partir d'axiomes et de postulats, un large ensemble de théorèmes de géométrie et d'arithmétique théorique.",
+      "L'ouvrage a connu des centaines d'éditions en toutes langues et ses thèmes restent à la base de l'enseignement des mathématiques au niveau secondaire dans de nombreux pays.",
+      "Son nom a donné naissance à plusieurs concepts mathématiques, dont l'algorithme d'Euclide, la géométrie euclidienne et non euclidienne, et la division euclidienne."
+    ],
+    "facts_en": [
+      "Medieval Islamic mathematicians invented a fanciful biography of him, and medieval Byzantine and early Renaissance scholars mistakenly conflated him with the earlier philosopher Euclid of Megara.",
+      "It is now generally accepted that he spent his career in Alexandria around 300 BC, bridging the earlier Platonic tradition in Athens with the later tradition of Alexandria.",
+      "Beyond the Elements, he wrote a central early text on optics, Optics, and lesser-known works including Data and Phaenomena; his authorship of On Divisions of Figures and Catoptrics has been questioned."
+    ]
+  },
+  {
+    "name": "Hippocrate",
+    "description": "Médecin et philosophe grec de l'Antiquité (Ve-IVe s. av. J.-C.), traditionnellement considéré comme le « père de la médecine ».",
+    "bio_fr": "Hippocrate de Kos, ou simplement Hippocrate, né vers 460 avant J.-C. sur l’île de Kos et mort vers 377 av. J.-C. à Larissa, est un médecin et philosophe grec du siècle de Périclès, considéré traditionnellement comme le « père de la médecine ».",
+    "bio_en": "Hippocrates of Kos, also known as Hippocrates II, named after his grandfather Hippocrates I was a Greek physician and philosopher of the classical period who is considered one of the most outstanding figures in the history of medicine. He is traditionally referred to as the \"Father of Medicine\" in recognition of his lasting contributions to the field, such as the use of prognosis and clinical observation, the systematic categorization of diseases, and the formulation of humoral theory. His studies set out the basic ideas of modern-day specialties, including surgery, urology, neurology, acute medicine and orthopedics, and advanced the systematic study of clinical medicine.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hippocrates_rubens.jpg/330px-Hippocrates_rubens.jpg",
+    "facts_fr": [
+      "Il fonde l'école hippocratique, qui révolutionne intellectuellement la médecine en Grèce antique en la rendant distincte et autonome de la théurgie et de la philosophie.",
+      "Bien que l'on sache très peu de choses sur sa vie, il est l'initiateur d'un style et d'une méthode d'observation clinique.",
+      "Le serment d'Hippocrate, ainsi que d'autres textes du Corpus hippocratique, lui valent d'être considéré comme le fondateur des règles éthiques pour les médecins."
+    ],
+    "facts_en": [
+      "The Hippocratic school of medicine established medicine as a distinct, autonomous profession, separate from the fields of theurgy and philosophy with which it had traditionally been associated.",
+      "He is credited with the Hippocratic Oath, a code of medical ethics that remains in use today.",
+      "Very little is concretely known about what Hippocrates himself thought, wrote, and did, since his achievements were often conflated with those of later practitioners of Hippocratic medicine and the writers of the Hippocratic Corpus."
+    ]
+  },
+  {
+    "name": "Ératosthène",
+    "description": "Astronome, géographe et mathématicien grec (IIIe s. av. J.-C.), premier à évaluer avec précision la circonférence de la Terre.",
+    "bio_fr": "Ératosthène ou Ératosthène de Cyrène, né vers 276 av. J.-C. à Cyrène et mort vers 194 av. J.-C. à Alexandrie, est un astronome, géographe, philosophe et mathématicien grec. Érudit reconnu par ses pairs, il est nommé directeur de la bibliothèque d'Alexandrie par le roi d'Égypte Ptolémée III vers 245 av. J.-C.",
+    "bio_en": "Eratosthenes of Cyrene was an Ancient Greek polymath: a philosopher, scholar, mathematician, geographer, poet, astronomer, and music theorist. Eratosthenes eventually became the chief librarian at the Library of Alexandria. His work was the precursor to the modern discipline of geography, and he introduced some of its terminology, coining the terms geography and geographer.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Eratosthene.01.png",
+    "facts_fr": [
+      "Il est resté célèbre pour son évaluation de la circonférence de la Terre, obtenue par un calcul géométrique et remarquablement proche de la valeur réelle.",
+      "Sa méthode s'appuie sur la longueur de l'ombre portée à midi le jour du solstice de juin, comparée à un lieu situé à une distance connue du tropique du Cancer où, à cette heure précise, le Soleil ne projette aucune ombre.",
+      "Il est considéré comme le plus grand savant du IIIe siècle av. J.-C. et l'inventeur de la géographie, terme encore utilisé aujourd'hui."
+    ],
+    "facts_en": [
+      "He was the first known person to calculate the Earth's circumference and also the first to calculate Earth's axial tilt, both with remarkable accuracy.",
+      "As the founder of scientific chronology, he used Egyptian and Persian records to date the main events of the Trojan War, placing the sack of Troy in 1184 BC.",
+      "In number theory he introduced the sieve of Eratosthenes, an efficient method for identifying prime numbers; his admirers nicknamed him Pentathlos for his well-roundedness, while critics called him Beta because he always came in second in every field."
+    ]
+  },
+  {
+    "name": "Ptolémée",
+    "description": "Astronome, mathématicien et géographe gréco-romain (IIe s.), auteur de l'Almageste et de la Géographie.",
+    "bio_fr": "Claude Ptolémée, communément appelé Ptolémée, né vers 100 et mort vers 168 à Canope, est un astronome, astrologue, mathématicien et géographe grec qui vécut à Alexandrie (Égypte). Il est également l’un des précurseurs de la géographie. Sa vie est mal connue. Son cognomen Ptolemæus semble indiquer des origines gréco-égyptiennes, et son nomen Claudius une citoyenneté romaine. Son prænomen est inconnu.",
+    "bio_en": "Claudius Ptolemy, better known mononymously as Ptolemy, was a Greco-Roman mathematician, astronomer, astrologer, geographer, and music theorist who wrote about a dozen scientific treatises, three of which were important to later Byzantine, Islamic, and Western European science. The first was his astronomical treatise now known as the Almagest, originally entitled Mathēmatikḗ Syntaxis. The second is the Geography, which is a thorough discussion on maps and the geographic knowledge of the Greco-Roman world. The third is the astrological treatise in which he attempted to adapt horoscopic astrology to the Aristotelian natural philosophy of his day. This is sometimes known as the Apotelesmatika but more commonly known as the Tetrábiblos.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ptolemy_16century.jpg/330px-Ptolemy_16century.jpg",
+    "facts_fr": [
+      "Il est l'auteur de l'Almageste, traité d'astronomie dont le titre grec original, Mathēmatikḗ súntaxis (« Composition mathématique »), fut arabisé en al-Majisṭiyy.",
+      "Sa Géographie constitue une synthèse des connaissances géographiques du monde gréco-romain.",
+      "Avec l'œuvre d'Aristote, c'est essentiellement à travers celle de Ptolémée, transmise par les Arabes et les Byzantins, que l'Occident redécouvre la science grecque au Moyen Âge et à la Renaissance."
+    ],
+    "facts_en": [
+      "He produced the only mathematically sound geocentric model of the Solar System, a model later promoted by the Catholic Church.",
+      "His writings, foremost the Almagest, were unusually well preserved for a Greek mathematician, continuing to be copied and evaluated throughout late antiquity and into the Middle Ages.",
+      "Because few readers truly mastered the mathematics his work required, many abridged and watered-down introductions to his astronomy circulated among Arab and Byzantine scholars."
+    ]
+  },
+  {
+    "name": "Descartes",
+    "description": "Mathématicien, physicien et philosophe français (XVIIe s.), considéré comme l'un des fondateurs de la philosophie moderne.",
+    "bio_fr": "René Descartes est un mathématicien, physicien et philosophe français, né le 31 mars 1596 à La Haye-en-Touraine, commune de l'Indre-et-Loire qui porte aujourd'hui son nom, et mort le 11 février 1650 à Stockholm.",
+    "bio_en": "René Descartes was a French polymath, active across philosophy, including metaphysics, epistemology, ethics, and the philosophy of science; theology; mathematics, in which he connected the previously separate fields of geometry and algebra into analytic geometry; science, including physics, optics, mechanics, cosmology, and meteorology; physiology; and medicine. He has been credited as the father of modern philosophy, particularly due to his transformation of methodology by introducing a systematic, method-based approach to pursuing knowledge.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/330px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+    "facts_fr": [
+      "Il reste célèbre pour avoir exprimé, dans son Discours de la méthode, le cogito — « Je pense, donc je suis » — qui fonde le système des sciences sur le sujet connaissant face au monde qu'il se représente.",
+      "En mathématiques, il est à l'origine de la géométrie analytique, et en physique il a contribué à l'optique et est considéré comme l'un des fondateurs du mécanisme.",
+      "Rallié comme Galilée au système cosmologique copernicien, il « avance masqué » par prudence envers la censure, dissimulant partiellement ses idées nouvelles dans ses écrits métaphysiques."
+    ],
+    "facts_en": [
+      "In the opening of his Passions of the Soul, he asserted he would write about emotions \"as if no one had written on these matters before\", reflecting his refusal to accept the authority of earlier philosophers.",
+      "His best-known philosophical statement is \"cogito, ergo sum\" (\"I think, therefore I am\").",
+      "The Cartesian coordinate system is named after him, and his analytic geometry is credited with facilitating the later discovery of infinitesimal calculus."
+    ]
+  },
+  {
+    "name": "Kant",
+    "description": "Philosophe prussien des Lumières (XVIIIe s.), fondateur du criticisme et de l'idéalisme transcendantal.",
+    "bio_fr": "Emmanuel Kant, né le 22 avril 1724 à Königsberg en Prusse, et mort le 12 février 1804 dans cette même ville, est un philosophe prussien, fondateur du criticisme et de l’idéalisme transcendantal.",
+    "bio_en": "Immanuel Kant was a German philosopher. Born in Königsberg in the Kingdom of Prussia, he is considered one of the central thinkers of the Enlightenment. His comprehensive and systematic works in epistemology, metaphysics, logic, ethics, aesthetics, political theory, and the philosophy of religion have made him one of the most influential and highly discussed figures in modern Western philosophy.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/330px-Immanuel_Kant_-_Gemaelde_1.jpg",
+    "facts_fr": [
+      "Grand penseur de l'Aufklärung (les Lumières allemandes), il exerce une influence considérable sur l'idéalisme allemand, la philosophie analytique et la phénoménologie.",
+      "Son œuvre est centrée autour de trois Critiques : la Critique de la raison pure, la Critique de la raison pratique et la Critique de la faculté de juger.",
+      "Du fait de sa diversité, son œuvre continue de faire l'objet d'appropriations et d'interprétations successives et divergentes."
+    ],
+    "facts_en": [
+      "In the Critique of Pure Reason (1781/1787), he argued for transcendental idealism, the doctrine that space and time are mere \"forms of intuition\" structuring all experience, so we know only \"appearances\", not things as they are in themselves.",
+      "He drew a parallel to the Copernican Revolution, proposing that objects of experience conform to the mind's forms of intuition rather than the mind conforming to its objects.",
+      "He believed reason is the source of morality and that the categorical imperative binds all rational agents, and hoped perpetual peace could be secured through an international federation of republican states."
+    ]
+  },
+  {
+    "name": "Nietzsche",
+    "description": "Philosophe et philologue allemand (XIXe s.), critique de la morale occidentale et penseur de la volonté de puissance.",
+    "bio_fr": "Friedrich Nietzsche, né le 15 octobre 1844 à Röcken en Prusse et mort le 25 août 1900 à Weimar en Saxe-Weimar-Eisenach, est un philosophe, philologue, critique culturel, compositeur, poète, et écrivain allemand dont l'œuvre a exercé une profonde influence sur l'histoire intellectuelle contemporaine.",
+    "bio_en": "Friedrich Wilhelm Nietzsche was a German philosopher and writer who started his career as a classical philologist and turned to philosophy early in his academic career. In 1869, at age 24, he was appointed Professor of Classical Philology at the University of Basel. Plagued by health problems for most of his life, he resigned from the university in 1879. He afterward lived as an independent writer, spending much of his life in relative solitude and financial insecurity while moving between Switzerland, Italy, and southern France in search of climates that might alleviate his condition, and in the following decade, he completed much of his core writing. In 1889, aged 44, he suffered a neurological collapse, and thereafter a complete loss of his mental faculties, with paralysis and vascular dementia; he lived out his remaining 11 years, first under the care of his mother, and later his sister, until his death. His works and his philosophy have fostered not only extensive scholarship but also much popular interest.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Portrait_of_Friedrich_Nietzsche.jpg/330px-Portrait_of_Friedrich_Nietzsche.jpg",
+    "facts_fr": [
+      "En 1869, à seulement 24 ans, il devient la plus jeune personnalité à occuper la chaire de philologie classique de l'université de Bâle.",
+      "Il démissionne de cette chaire en 1879 en raison de problèmes de santé qui le tourmenteront presque toute sa vie, puis achève la plupart de ses écrits fondamentaux au cours de la décennie suivante.",
+      "En 1889, à 44 ans, il est victime d'un effondrement suivi d'une perte totale de ses facultés mentales ; il passe ses dernières années sous la garde de sa mère puis de sa sœur Elisabeth Förster-Nietzsche."
+    ],
+    "facts_en": [
+      "His philosophy includes a critique of objective truth in favour of perspectivism, a genealogical critique of Christian morality, and the notion of the will-to-power as the expression of competing wills.",
+      "His later work developed influential concepts such as the Übermensch, the transvaluation of values, and his unique formulation of eternal return, drawing inspiration from Greek tragedy, Schopenhauer, Emerson, and Wagner.",
+      "After his death, his sister Elisabeth Förster-Nietzsche became curator of his manuscripts; recent scholarship disputes the traditional claim that she falsified his work for Nazi ideology, arguing her selective editing aimed instead to protect him from criticism."
+    ]
+  },
+  {
+    "name": "Marx",
+    "description": "Philosophe, économiste et théoricien révolutionnaire allemand (XIXe s.), fondateur du matérialisme historique et coauteur du Manifeste du parti communiste.",
+    "bio_fr": "Karl Marx, né le 5 mai 1818 à Trèves dans le grand-duché du Bas-Rhin et mort le 14 mars 1883 à Londres, est un philosophe, économiste, historien, sociologue, journaliste, théoricien de la révolution, du socialisme, du socialisme libertaire et du communisme, un internationaliste et idéologue prussien.",
+    "bio_en": "Karl Marx was a German philosopher, social and political theorist, economist, and revolutionary socialist. He developed the theory of historical materialism, analyzing class struggle under capitalism and predicting the system's overthrow by the proletariat in favour of communism. Marx co-authored The Communist Manifesto (1848) with Friedrich Engels, and undertook a critique of classical political economy in his magnum opus, Das Kapital (1867–1894). Marx's ideas and their subsequent development, collectively known as Marxism, have had enormous influence and have influenced revolutions and uprisings in many countries.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png/330px-Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png",
+    "facts_fr": [
+      "Il fut l'un des membres dirigeants de l'Association Internationale des Travailleurs (AIT), sa pensée s'exprimant notamment via le slogan « Prolétaires de tous les pays, unissez-vous ! ».",
+      "Sa pensée politique vise une société sans classes sociales, sans argent et sans États, résumée par l'adage « De chacun selon ses moyens, à chacun selon ses besoins ».",
+      "Selon lui, « l'émancipation de la classe ouvrière doit être l'œuvre des travailleurs eux-mêmes », principe illustré au XXe siècle par l'instauration de « conseils de travailleurs » révolutionnaires."
+    ],
+    "facts_en": [
+      "He earned a doctoral degree in philosophy from the University of Jena in 1841, and in Paris began a close collaboration with Friedrich Engels while writing his Economic and Philosophic Manuscripts of 1844.",
+      "Expelled from Germany after the Revolutions of 1848, he moved to London, where he wrote his Grundrisse notebooks and the three volumes of Das Kapital.",
+      "As a leading figure in the International Workingmen's Association (First International), he battled the influence of anarchists led by Mikhail Bakunin and celebrated the Paris Commune of 1871."
+    ]
+  },
+  {
+    "name": "Spinoza",
+    "description": "Philosophe néerlandais d'origine portugaise (XVIIe s.), figure majeure du rationalisme moderne, auteur de l'Éthique.",
+    "bio_fr": "Baruch Spinoza, né le 24 novembre 1632 à Amsterdam et mort le 21 février 1677 à La Haye, est un philosophe ayant vécu aux Pays-Bas ou Provinces-Unies à l'époque, d'origine portugaise, issu de la communauté séfarade. Son père, Miguel de Espinosa, est né à Vidigueira (Alentejo) et sa mère, Ana Débora Gomes Garcês de Espinosa, à Ponte de Lima (Minho). Baruch Spinoza occupe une place importante dans l'histoire de la philosophie, sa pensée, appartenant au courant des modernes rationalistes, ayant eu une influence considérable sur ses contemporains et nombre de penseurs ultérieurs.",
+    "bio_en": "Baruch (de) Spinoza, also known under his Latinized pen name Benedictus de Spinoza, was a philosopher of Portuguese-Jewish origin who was born and lived in the Dutch Republic. A forerunner of the Enlightenment, Spinoza significantly influenced modern biblical criticism, 17th-century rationalism, and Dutch intellectual culture, establishing himself as one of the most important and radical philosophers of the early modern period. Influenced by Stoicism, Thomas Hobbes, René Descartes, and heterodox Christians, Spinoza was a leading philosopher of the Dutch Golden Age.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Spinoza.jpg/330px-Spinoza.jpg",
+    "facts_fr": [
+      "À 23 ans, en 1656, il est frappé d'un herem (excommunication) par la communauté juive portugaise d'Amsterdam, et gagne ensuite sa vie en taillant des lentilles optiques pour lunettes et microscopes.",
+      "Son Traité théologico-politique, où il critique le texte biblique et défend la liberté de philosopher, est censuré, et il renonce à publier de son vivant son magnum opus, l'Éthique.",
+      "Hegel voyait en lui « un point crucial dans la philosophie moderne », tandis que Gilles Deleuze le surnommait le « Prince des philosophes »."
+    ],
+    "facts_en": [
+      "Following his permanent expulsion from Amsterdam's Jewish community in 1656, he distanced himself from all religious affiliations and supported himself by lens grinding.",
+      "In his Tractatus Theologico-Politicus — described by scholar Steven Nadler as \"one of the most important books of Western thought\" — he questioned the divine origin of the Hebrew Bible and argued ecclesiastic authority should have no role in a secular, democratic state.",
+      "Rejecting messianism and an emphasis on the afterlife, he instead emphasized appreciating and valuing life for oneself and others."
+    ]
+  },
+  {
+    "name": "John Locke",
+    "description": "Philosophe et médecin anglais (XVIIe s.), considéré comme le « père du libéralisme ».",
+    "bio_fr": "John Locke, né le 29 août 1632 à Wrington et mort le 28 octobre 1704 à High Laver, est un philosophe anglais. Il vit à une époque charnière qui voit la fin des guerres de Religion, les débuts du rationalisme et une forte opposition à l'absolutisme en Angleterre. Proche du comte de Shaftesbury, homme politique influent, Locke est partie prenante à ses débats et aux théories alors naissantes du contrat social, de la loi et du droit naturel, ainsi que de l'état de nature. Il s'intéresse aussi au droit de propriété et aux prémices de ce qui sera appelé à compter du XIXe siècle le libéralisme.",
+    "bio_en": "John Locke was an English philosopher and physician, widely regarded as one of the most influential of the Enlightenment thinkers and commonly known as the \"father of liberalism\". His important works include A Letter Concerning Toleration (1689), Two Treatises of Government (1689/90), both published anonymously, and An Essay Concerning Human Understanding (1689/90). His writing on toleration contends that religion is a matter for the individual and that the churches are voluntary associations, ruling out religious coercion and uniformity; these lead to the idea of separation of church and state. His Two Treatises on Government argues for government based on the consent of the governed and the right to revolt against tyrannous government which has lost consent. The Two Treatises are believed to have influenced the language that Thomas Jefferson chose in his drafting the July 1776 Declaration of Independence during the War of American Independence.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JohnLocke.png/330px-JohnLocke.png",
+    "facts_fr": [
+      "Dans ses écrits sur la tolérance (Essai sur la tolérance, 1667 ; Lettre sur la tolérance, 1689), il défend l'idée que le politique s'occupe du monde présent et la religion du monde de l'au-delà, les deux ne devant pas interférer.",
+      "Sa théorie politique s'oppose à l'absolutisme qui se met alors en place en France, et il est l'un des fondateurs de la notion de rule of law.",
+      "Dans son Essai sur l'entendement humain, il rejette la notion d'idées innées soutenue par Descartes et considère que l'expérience est à l'origine de la connaissance — une théorie qualifiée d'empiriste."
+    ],
+    "facts_en": [
+      "He was elected a Fellow of the Royal Society in 1668, and after Lord Shaftesbury's fall from royal favour went into political exile in the Netherlands for five years (1683–85), where he wrote some of his most important works.",
+      "He postulated that at birth the mind is a blank slate, or tabula rasa, maintaining — against Cartesian philosophy — that we are born without innate ideas and that knowledge comes only from experience derived from sense perception.",
+      "He is often credited with describing private property as a natural right, arguing that resources can be removed from the common state of nature when a person metaphorically mixes their labour with it."
+    ]
+  },
+  {
+    "name": "Hegel",
+    "description": "Philosophe allemand (XVIIIe-XIXe s.), figure majeure de l'idéalisme allemand, auteur de la Phénoménologie de l'esprit.",
+    "bio_fr": "Georg Wilhelm Friedrich Hegel, né le 27 août 1770 à Stuttgart et mort le 14 novembre 1831 à Berlin, est un philosophe allemand.",
+    "bio_en": "Georg Wilhelm Friedrich Hegel was a German philosopher and a major figure in the tradition of German idealism. His influence on Western philosophy extends across a wide range of topics—from metaphysical issues in epistemology and ontology, to political philosophy, to philosophy of art and philosophy of religion.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Hegel_by_Schlesinger.jpg/330px-Hegel_by_Schlesinger.jpg",
+    "facts_fr": [
+      "Son œuvre, postérieure à celle d'Emmanuel Kant, appartient à l'idéalisme allemand et a eu une influence décisive sur l'ensemble de la philosophie contemporaine.",
+      "Il enseigne la philosophie sous la forme d'un système unissant tous les savoirs suivant une logique dialectique, présenté successivement comme une « phénoménologie de l'esprit » puis comme une « encyclopédie des sciences philosophiques ».",
+      "Ce système englobe l'ensemble des domaines philosophiques, dont la métaphysique, l'ontologie, la philosophie de l'art, de la religion, de la nature, de l'histoire, ainsi que la philosophie morale, politique et du droit."
+    ],
+    "facts_en": [
+      "His thought was shaped by the French Revolution and the Napoleonic wars, which he interpreted from a philosophical perspective; his career culminated in the chair of philosophy at the University of Berlin.",
+      "His major works, including the Phenomenology of Spirit (1807) and the Science of Logic (1812–1816), develop his dialectical method and the central concept of \"spirit\" (Geist); he famously asserted that \"world history is progress in the consciousness of freedom.\"",
+      "After his death his followers split into rival \"Right\" and \"Left\" Hegelian camps; the Left, including Ludwig Feuerbach and Karl Marx, adapted his dialectical method for their materialist critiques of religion and society."
+    ]
+  },
+  {
+    "name": "Érasme",
+    "description": "Humaniste, théologien et philologue néerlandais de la Renaissance (XVe-XVIe s.), auteur de l'Éloge de la folie.",
+    "bio_fr": "Érasme, également appelé Érasme de Rotterdam, Didier Érasme et Désiré Érasme de Rotterdam, né dans la nuit du 27 au 28 octobre 1466, 1467 ou en 1469, à Rotterdam, mort le 12 juillet 1536 à Bâle, est un chanoine régulier de Saint-Augustin, philosophe, humaniste et théologien néerlandais, considéré comme l'une des figures majeures de la culture néerlandaise et occidentale.",
+    "bio_en": "Desiderius Erasmus Roterodamus, commonly known in English as Erasmus of Rotterdam or simply Erasmus, was a Dutch humanist, Catholic theologian, and pioneering philologist and educationalist. He was, through his writings and translations, one of the most influential scholars of the Northern Renaissance and a major figure of Western culture.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Portrait_of_Erasmus_by_Hans_Holbein_d._J.-Kunstmuseum_Basel.jpg/330px-Portrait_of_Erasmus_by_Hans_Holbein_d._J.-Kunstmuseum_Basel.jpg",
+    "facts_fr": [
+      "Il reste surtout connu pour sa déclamation satirique Éloge de la folie (1511).",
+      "Il est aussi l'auteur des Adages (1500), une anthologie de plus de quatre mille citations grecques et latines.",
+      "Ses Colloques (1518) forment un recueil d'essais didactiques aux thèmes variés, s'ajoutant à une œuvre vaste traitant aussi d'art, d'éducation, de religion, de guerre et de philosophie."
+    ],
+    "facts_en": [
+      "As a Catholic priest, he prepared pioneering new Latin and Greek scholarly editions of the New Testament and of the Church Fathers, with annotations that proved vitally influential in both the Protestant and Catholic Reformations.",
+      "He remained a member of the Catholic Church all his life while promoting the doctrine of synergism, which reformers such as Martin Luther and John Calvin rejected in favour of monergism.",
+      "His influential middle-road approach — advocating peaceable concord and pastoral tolerance — disappointed, and even angered, partisans in both the Protestant and Catholic camps."
+    ]
+  },
+  {
+    "name": "Michel-Ange",
+    "description": "Sculpteur, peintre et architecte florentin de la Haute Renaissance (XVe-XVIe s.), auteur du David et de la chapelle Sixtine.",
+    "bio_fr": "Michel-Ange [mikɛlɑ̃ʒ], mononyme de Michelangelo di Lodovico Buonarroti Simoni [mikeˈland͡ʒelo di lodoˈviːko ˌbwɔnarˈrɔːti siˈmoːni], né le 6 mars 1475 à Caprese et mort le 18 février 1564 à Rome, est un sculpteur, peintre, architecte, poète et urbaniste florentin de la Haute Renaissance.",
+    "bio_en": "Michelangelo di Lodovico Buonarroti Simoni, known mononymously as Michelangelo, was an Italian sculptor, painter, architect, and poet of the High Renaissance. He was born in the Republic of Florence but was mostly active in Rome from his 30s onwards. His work was inspired by models from classical antiquity and had a lasting influence on Western art. Michelangelo's creative abilities and mastery in a range of artistic arenas define him as an archetypal Renaissance man, along with his rival and elder contemporary, Leonardo da Vinci. Given the sheer volume of surviving correspondence, sketches, and reminiscences, Michelangelo is one of the best-documented artists of the 16th century. He was lauded by contemporary biographers as the most accomplished artist of his era.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/330px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg",
+    "facts_fr": [
+      "Ses capacités créatives dans plusieurs domaines artistiques font de lui un archétype de l'homme de la Renaissance, aux côtés de son rival et contemporain Léonard de Vinci.",
+      "Compte tenu du volume considérable de correspondance, de croquis et d'ouvrages qui subsistent, il est l'un des artistes les mieux documentés du XVIe siècle ; trois biographies paraissent de son vivant, dont celle de Giorgio Vasari en 1550.",
+      "Parmi ses chefs-d'œuvre figurent le David (1504), la Pietà (1499), le Moïse (1515) et le plafond de la chapelle Sixtine, peint entre 1508 et 1512."
+    ],
+    "facts_en": [
+      "Although he did not consider himself a painter, he created two of the most influential frescoes in the history of Western art: the Genesis scenes on the Sistine Chapel ceiling and The Last Judgment on its altar wall.",
+      "At the age of 71, he succeeded Antonio da Sangallo the Younger as architect of St. Peter's Basilica, transforming the plan so that the western end and the dome were finished to his design after his death.",
+      "He was the first Western artist whose biography was published while he was alive; Giorgio Vasari's biography proposed that his work was \"supreme in not one art alone but in all three.\""
+    ]
+  },
+  {
+    "name": "Raphaël",
+    "description": "Peintre et architecte italien de la Haute Renaissance (XVe-XVIe s.), auteur de L'École d'Athènes.",
+    "bio_fr": "Raphaël, nom francisé de Raffaello Sanzio, est un peintre et architecte italien de la Haute Renaissance, né le 28 mars ou 6 avril 1483 à Urbino dans les Marches italiennes et mort le 6 avril 1520 à Rome.",
+    "bio_en": "Raffaello Sanzio da Urbino, now generally known in English as Raphael, was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Leonardo da Vinci and Michelangelo, he forms the traditional trinity of great masters of that period.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/330px-Raffaello_Sanzio.jpg",
+    "facts_fr": [
+      "Avec Michel-Ange et Léonard de Vinci, il forme la trinité traditionnelle des grands maîtres de la Haute Renaissance.",
+      "Malgré sa mort prématurée à 37 ans, il laisse un travail considérable, dont son œuvre la plus connue, L'École d'Athènes, peinte dans la Chambre de la Signature au palais du Vatican.",
+      "Son père, peintre de la cour d'Urbino, meurt quand Raphaël a onze ans ; il se forme ensuite dans l'atelier du Pérugin et est décrit comme un « maître » pleinement formé dès 1500."
+    ],
+    "facts_en": [
+      "He moved to Rome in 1508 at the invitation of Pope Julius II, working on the Apostolic Palace at the Vatican, and remained at the height of his powers until his death in 1520.",
+      "After his early years in Rome, much of his work was executed by his workshop from his own drawings, with considerable loss of quality; outside Rome, he was known mainly through collaborative printmaking.",
+      "After his death, his rival Michelangelo's influence exceeded his own until the 18th and 19th centuries, when art historian Johann Joachim Winckelmann's influence made Raphael a formative model for Neoclassical painting."
+    ]
+  },
+  {
+    "name": "Rembrandt",
+    "description": "Peintre et graveur néerlandais du Siècle d'or (XVIIe s.), considéré comme l'un des plus grands artistes visuels de l'histoire.",
+    "bio_fr": "Rembrandt Harmenszoon van Rijn, habituellement désigné sous son seul prénom Rembrandt, est un peintre et graveur néerlandais, né à Leyde le 15 juillet 1606 ou 1607 et mort à Amsterdam le 4 octobre 1669. Artiste innovant et prolifique, il est l'un des plus grands artistes visuels de l'histoire de la peinture et l'un des principaux peintres de l'École hollandaise du XVIIe siècle, le siècle d'or néerlandais.",
+    "bio_en": "Rembrandt Harmenszoon van Rijn, known mononymously as Rembrandt, was a Dutch Golden Age painter, printmaker, and draughtsman. He is generally considered one of the greatest visual artists in the history of Western art. It is estimated that Rembrandt's surviving works amount to about three hundred paintings, three hundred etchings, and several hundred drawings.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/330px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
+    "facts_fr": [
+      "Il réalise près de quatre cents peintures, trois cents eaux-fortes et trois cents dessins, abordant un éventail de styles inhabituel pour l'époque : portraits, paysages, scènes bibliques, mythologiques et études animales.",
+      "Sa spécificité est l'utilisation du clair-obscur, inspiré du Caravage, ainsi qu'un style de peinture rugueux et matériel, en opposition avec le style lisse de ses contemporains.",
+      "Sa contribution à la gravure transforme l'eau-forte, d'une technique de reproduction en une forme d'art à part entière, et sa réputation de plus grand graveur du médium s'établit dès son vivant."
+    ],
+    "facts_en": [
+      "He never travelled abroad, yet was considerably influenced by Italian Old Masters and by Dutch and Flemish artists who had studied in Italy.",
+      "After early success as a portrait painter, his later years were marked by personal tragedy and financial hardship, though his reputation remained high and he taught many important Dutch painters for twenty years.",
+      "He painted roughly 100 self-portraits, over 40 of which are paintings, forming what is considered an intimate autobiography."
+    ]
+  },
+  {
+    "name": "Vermeer",
+    "description": "Peintre néerlandais du Siècle d'or (XVIIe s.), maître de la peinture de genre, auteur de La Jeune Fille à la perle.",
+    "bio_fr": "Johannes ou Jan Van der Meer, dit Vermeer ou Vermeer de Delft, né à une date inconnue, baptisé le 31 octobre 1632 à Delft, et mort le 15 décembre 1675 dans cette même ville, est un peintre néerlandais du mouvement de la peinture de genre néerlandaise.",
+    "bio_en": "Johannes Vermeer was a Dutch painter who specialized in domestic interior scenes of middle-class life. He is considered one of the greatest painters of the Dutch Golden Age. During his lifetime, he was a moderately successful provincial genre painter, recognized in Delft and The Hague. He produced relatively few paintings, primarily earning his living as an art dealer. He was not wealthy; at his death, his wife was left in debt.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg/330px-Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg",
+    "facts_fr": [
+      "Sa production, évaluée à quarante-cinq tableaux maximum en vingt ans, et une biographie longtemps restée obscure lui valent le surnom de « Sphinx de Delft ».",
+      "Il n'est réellement mis en lumière qu'au XIXe siècle, lorsque le critique français Théophile Thoré-Bürger lui consacre une série d'articles publiés en 1866 dans la Gazette des beaux-arts.",
+      "Parmi les 34 tableaux qui lui sont attribués avec certitude, La Jeune Fille à la perle et La Laitière comptent parmi les œuvres les plus célèbres de l'histoire de la peinture."
+    ],
+    "facts_en": [
+      "He worked slowly and with great care, frequently using very expensive pigments, and is particularly renowned for his masterful use of light.",
+      "Nearly all his paintings are set in two small rooms of his house in Delft, showing the same furniture and often the same people, mostly women.",
+      "He was barely mentioned in a major 1718 source book on Dutch painting and was omitted from surveys of Dutch art for nearly two centuries, until 19th-century critics Gustav Friedrich Waagen and Théophile Thoré-Bürger rediscovered him."
+    ]
+  },
+  {
+    "name": "Dürer",
+    "description": "Peintre, graveur et théoricien allemand de la Renaissance (XVe-XVIe s.), célèbre pour ses gravures sur bois et ses estampes maîtresses.",
+    "bio_fr": "Albrecht Dürer, né le 21 mai 1471 à Nuremberg, où il est mort le 6 avril 1528, est un dessinateur, graveur et peintre allemand de la Renaissance, également connu comme théoricien de la géométrie et de la perspective linéaire. Prenant racine en sa ville natale, Dürer établit sa réputation et son influence à travers l'Europe dans sa vingtaine grâce à ses gravures sur bois de haute qualité. Il est en contact avec les grands artistes italiens de son temps, dont Raphaël, Giovanni Bellini et Léonard de Vinci et, à partir de 1512, il est patronné par l'empereur Maximilien Ier.",
+    "bio_en": "Albrecht Dürer, sometimes spelled in English as Durer or Duerer, was a German painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe in his twenties due to his high-quality woodcut prints. He was in contact with the major Italian artists of his time, including Raphael, Giovanni Bellini and Leonardo da Vinci, and from 1512 was patronized by Emperor Maximilian I.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg/330px-Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg",
+    "facts_fr": [
+      "Ses trois estampes maîtresses (Meisterstiche) — Le Chevalier, la Mort et le Diable (1513), Saint Jérôme dans sa cellule (1514) et Melencolia I (1514) — comptent parmi ses gravures les plus connues.",
+      "Ses aquarelles font de lui l'un des premiers paysagistes européens, tandis que ses gravures sur bois révolutionnent le potentiel de ce médium.",
+      "L'introduction de motifs classiques dans l'art du Nord lui vaut la réputation d'être l'une des figures les plus importantes de la Renaissance nordique, renforcée par ses traités théoriques sur la perspective et les proportions idéales."
+    ],
+    "facts_en": [
+      "Engravings became his preferred technique in his later prints, and his extraordinary handling of the burin especially expanded the tonal range of his engravings.",
+      "His woodcut series are stylistically more Gothic than the rest of his output, yet they revolutionised the potential of that medium.",
+      "His introduction of classical motifs and the nude into Northern art, drawing on his knowledge of Italian artists and German humanists, secured his reputation as one of the most important figures of the Northern Renaissance, reinforced by his theoretical treatises on linear perspective and body proportions."
+    ]
   }
 ]
