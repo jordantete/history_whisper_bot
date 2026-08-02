@@ -3388,5 +3388,345 @@
       "He left the Port of Palos in August 1492 with three ships and made landfall in the Americas on 12 October, at an island in the Bahamas known by its native inhabitants as Guanahani.",
       "He made three further voyages to the Americas — exploring the Lesser Antilles in 1493, Trinidad and the northern coast of South America in 1498, and the east coast of Central America in 1502 — and, as a colonial governor, was accused by some of his contemporaries of significant brutality and removed from his post."
     ]
+  },
+  {
+    "name": "Botticelli",
+    "description": "Peintre toscan de la Renaissance italienne (XVe s.), auteur de La Naissance de Vénus et du Printemps.",
+    "bio_fr": "Alessandro di Mariano di Vanni Filipepi, dit Sandro Botticelli, est un peintre toscan, né à Florence le 1er mars 1445 et mort le 17 mai 1510 dans la même ville. Botticelli est l'un des peintres les plus importants de la Renaissance italienne et de l'histoire de l'art.",
+    "bio_en": "Alessandro di Mariano di Vanni Filipepi, better known as Sandro Botticelli or simply Botticelli, was an Italian painter of the Early Renaissance. Botticelli's posthumous reputation suffered until the late 19th century, when he was rediscovered by the Pre-Raphaelites who stimulated a reappraisal of his work. Since then, his paintings have been seen to represent the linear grace of late Italian Gothic and some Early Renaissance painting, even though they date from the latter half of the Italian Renaissance period.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sandro_Botticelli_Self-portrait_ca_1475.jpg/330px-Sandro_Botticelli_Self-portrait_ca_1475.jpg",
+    "facts_fr": [
+      "Il grandit dans une famille modeste, fils d'un tanneur, et son surnom « Botticelli » viendrait de celui de son frère Giovanni, agent public surnommé « Botticello » dans le cadastre de 1458.",
+      "Son véritable apprentissage se déroule de 1464 à 1467 dans l'atelier de Filippo Lippi, avec qui il travaille à Prato sur les fresques des Vies de saint Étienne et de saint Jean-Baptiste.",
+      "Sa première commande publique, en 1470, est une allégorie de la Force pour le Tribunal de Commerce de Florence, insérée dans un cycle des sept vertus chrétiennes dont Piero Pollaiuolo peint les six autres panneaux."
+    ],
+    "facts_en": [
+      "His best-known works, The Birth of Venus and Primavera, both hang in the Uffizi in Florence, which holds many of his paintings.",
+      "He lived all his life in the same Florence neighbourhood; his only significant time elsewhere was spent painting in Pisa in 1474 and the Sistine Chapel in Rome in 1481–82.",
+      "The 1480s were his most successful decade, producing his large mythological paintings and many of his famous Madonnas, but by the 1490s his style turned more personal and, in his last works, more Gothic or \"archaic\" — moving in the opposite direction from the new High Renaissance style of Leonardo da Vinci."
+    ]
+  },
+  {
+    "name": "Copernic",
+    "description": "Astronome polonais, chanoine et mathématicien, père de l'héliocentrisme moderne (XVe-XVIe s.).",
+    "bio_fr": "Nicolas Copernic est un astronome polonais, également chanoine, médecin et mathématicien, né le 19 février 1473 à Thorn (Toruń) en Prusse royale, et mort le 24 mai 1543 à Frauenburg.",
+    "bio_en": "Nicolaus Copernicus was a Renaissance polymath who formulated a model of the universe that placed the Sun rather than Earth at its center. The publication of Copernicus's model in his book De revolutionibus orbium coelestium, just before his death in 1543, was a major event in the history of science, triggering the Copernican Revolution and making a pioneering contribution to the Scientific Revolution. Though a similar heliocentric model had been developed eighteen centuries earlier by Aristarchus of Samos, an ancient Greek astronomer, Copernicus likely arrived at his model independently.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/330px-Nikolaus_Kopernikus.jpg",
+    "facts_fr": [
+      "Il développe et défend la théorie de l'héliocentrisme, selon laquelle la Terre tourne autour du Soleil supposé au centre de l'Univers, contre l'opinion alors admise que la Terre était centrale et immobile.",
+      "Les bouleversements scientifiques, philosophiques et religieux causés par la théorie héliocentrique de Copernic sont désignés comme la révolution copernicienne.",
+      "Dès 1511-1513, il rédige le Commentariolus, un court traité exposant le système héliocentrique, qu'il fait circuler secrètement sous forme manuscrite auprès de ses amis."
+    ],
+    "facts_en": [
+      "He obtained a doctorate in canon law and worked as a mathematician, astronomer, physician, classics scholar, translator, governor, diplomat, and economist.",
+      "In 1517 he derived a quantity theory of money, a key concept in economics, and in 1519 he formulated an economic principle later known as Gresham's law.",
+      "He was born and died in Royal Prussia, a semi-autonomous, multilingual region within the Kingdom of Poland created from lands regained from the Teutonic Order after the Thirteen Years' War."
+    ]
+  },
+  {
+    "name": "Kepler",
+    "description": "Astronome allemand, découvreur des lois du mouvement des planètes sur des orbites elliptiques (XVIe-XVIIe s.).",
+    "bio_fr": "Johannes Kepler, né le 27 décembre 1571 à Weil der Stadt et mort le 15 novembre 1630 à Ratisbonne, est un astronome allemand célèbre pour avoir étudié l'hypothèse héliocentrique de Nicolas Copernic, affirmant que la Terre tourne autour du Soleil, et surtout pour avoir découvert que les planètes ne tournent pas autour du Soleil en suivant des trajectoires circulaires parfaites, mais elliptiques.",
+    "bio_en": "Johannes Kepler was a German polymath who was an astronomer, mathematician, astrologer, natural philosopher and music theorist. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion, and his books Astronomia nova, Harmonice Mundi, and Epitome Astronomiae Copernicanae. The variety and impact of his work made Kepler one of the founders and fathers of modern astronomy, the scientific method, natural science, and modern science. He has been described as the \"father of science fiction\" for his novel Somnium.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/JKepler.jpg/330px-JKepler.jpg",
+    "facts_fr": [
+      "Il découvre les relations mathématiques, dites lois de Kepler, qui régissent le mouvement des planètes sur leur orbite.",
+      "Les lois de Kepler seront ensuite exploitées par Isaac Newton pour élaborer sa théorie de la gravitation universelle.",
+      "En 1615, sa mère est accusée de sorcellerie par les autorités de sa ville natale de Leonberg ; il consacre six années à assurer sa défense devant les tribunaux jusqu'à son acquittement en 1621, mais elle meurt six mois plus tard, affaiblie par ces années de procès et d'emprisonnement."
+    ],
+    "facts_en": [
+      "He worked as an assistant to astronomer Tycho Brahe in Prague and later became imperial mathematician to Emperor Rudolf II and his two successors, Matthias and Ferdinand II.",
+      "He did fundamental work in optics, earning recognition as the father of modern optics, and invented an improved version of the refracting telescope known as the Keplerian telescope.",
+      "He postulated the Kepler conjecture and influenced Isaac Newton, providing one of the foundations for Newton's theory of universal gravitation."
+    ]
+  },
+  {
+    "name": "Mendeleïev",
+    "description": "Chimiste russe, créateur du tableau périodique des éléments (XIXe-XXe s.).",
+    "bio_fr": "Dmitri Ivanovitch Mendeleïev, né le 27 janvier 1834 à Tobolsk et mort le 20 janvier 1907 à Saint-Pétersbourg, est un chimiste russe.",
+    "bio_en": "Dmitri Ivanovich Mendeleev was a Russian chemist known for formulating the periodic law and creating a version of the periodic table of elements. He used the periodic law not only to correct the then-accepted properties of some known elements, such as the valence and atomic weight of uranium, but also to predict the properties of three elements that were yet to be discovered. The synthetic element mendelevium is named in his honor.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/DIMendeleevCab.jpg/330px-DIMendeleevCab.jpg",
+    "facts_fr": [
+      "Il est principalement connu pour son travail sur la classification périodique des éléments, publiée en 1869-1870 et également appelée « tableau de Mendeleïev ».",
+      "Il déclara que les éléments chimiques pouvaient être arrangés selon un modèle qui permettait de prévoir les propriétés des éléments encore non découverts.",
+      "Nommé directeur du Conservatoire des étalons des poids et des mesures de Russie en 1893, il œuvre à unifier les unités de mesure de l'Empire russe et à convertir le pays au système métrique, dont l'adoption — d'abord optionnelle en 1899 puis obligatoire après la révolution de 1917 — est étroitement liée à son action de coordinateur et administrateur."
+    ],
+    "facts_en": [
+      "The three elements whose properties he predicted from the periodic law before their discovery were germanium, gallium, and scandium.",
+      "While writing his chemistry textbook, he later claimed to have envisioned the complete arrangement of the elements in a dream, waking to write it down with only one correction needed.",
+      "He formally presented his periodic table to the Russian Chemical Society on 6 March 1869, apparently unaware that other scientists, including John Newlands and Lothar Meyer, had already been investigating element periodicity earlier in the 1860s."
+    ]
+  },
+  {
+    "name": "Fleming",
+    "description": "Médecin et biologiste britannique, découvreur de la pénicilline (XIXe-XXe s.).",
+    "bio_fr": "Alexander Fleming est un médecin, biologiste et pharmacologue britannique, né le 6 août 1881 à Darvel, Ayrshire en Écosse et mort le 11 mars 1955 à Londres. Il a publié de nombreux articles concernant la bactériologie, l'immunologie et la chimiothérapie.",
+    "bio_en": "Sir Alexander Fleming was a Scottish physician and microbiologist. He shared the 1945 Nobel Prize in Physiology or Medicine with Howard Florey and Ernst Chain \"for the discovery of penicillin and its curative effect in various infectious diseases\". This was the first antibiotic substance discovered. His discovery in 1928 of what was later named benzylpenicillin from the mould Penicillium rubens has been described as the \"single greatest victory ever achieved over disease\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Alexander_Fleming_1945.jpg",
+    "facts_fr": [
+      "Il isole la pénicilline à partir du champignon Penicillium notatum en 1928, découverte pour laquelle il partage le prix Nobel de physiologie ou médecine avec Howard Walter Florey et Ernst Boris Chain en 1945.",
+      "Il découvre également l'enzyme lysozyme en 1922.",
+      "Pendant la Première Guerre mondiale, il sert dans le Corps des médecins militaires sur le front occidental en France, où il publie dans The Lancet un article expliquant pourquoi les antiseptiques utilisés sur les blessures de guerre tuaient davantage de soldats que les infections elles-mêmes."
+    ],
+    "facts_en": [
+      "He discovered the enzyme lysozyme from his own nasal discharge in 1922, along with a bacterium he named Micrococcus lysodeikticus, later renamed Micrococcus luteus.",
+      "He was knighted for his scientific achievements in 1944, and in 1999 was named in Time magazine's list of the 100 Most Important People of the 20th century.",
+      "In 2009 he was voted third \"greatest Scot\" in an opinion poll conducted by STV, behind only Robert Burns and William Wallace."
+    ]
+  },
+  {
+    "name": "Magellan",
+    "description": "Navigateur portugais passé au service de l'Espagne, dont l'expédition acheva la première circumnavigation du globe (XVe-XVIe s.).",
+    "bio_fr": "Fernand de Magellan, né vers 1480 probablement à Porto et mort le 27 avril 1521 sur l'île de Mactan, est un navigateur et explorateur portugais de l'époque des grandes découvertes, passé au service de la couronne de Castille, avec le projet d'atteindre les Indes orientales, notamment les îles Moluques en Indonésie, en naviguant vers l'ouest, ce qui était le projet inabouti de Christophe Colomb en 1492 ; Magellan espère donc trouver un passage de l'océan Atlantique à l'océan oriental auquel il donnera le nom d'océan Pacifique.",
+    "bio_en": "Ferdinand Magellan was a Portuguese explorer best known for planning and leading the 1519–1522 Spanish expedition to the East Indies. During this expedition, he became the first European to encounter the Strait of Magellan, performed the first European crossing of the Pacific Ocean, and made the first known European contact with the Philippines. Magellan was killed in battle in the Philippines in 1521, but his crew, commanded by Spanish navigator Juan Sebastián Elcano, completed the return trip to Spain in 1522, achieving the first circumnavigation of Earth in history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ferdinand_Magellan.jpg/330px-Ferdinand_Magellan.jpg",
+    "facts_fr": [
+      "Parti de Séville en 1519, il longe la côte d'Amérique du Sud, où il rencontre un peuple qu'il nomme Patagons, avant de franchir, guidé par des pêcheurs fuégiens, le passage qui prendra le nom de détroit de Magellan.",
+      "Il est tué en avril 1521 aux Philippines après s'être impliqué dans un conflit entre chefs indigènes ; son escadre, réduite à deux navires, atteint ensuite les Moluques, seul endroit au monde où pousse alors le giroflier.",
+      "Magellan a souvent été considéré comme le premier homme à avoir fait le tour du monde, bien qu'il n'en ait parcouru que la moitié ; cet honneur reviendrait plutôt à Enrique, un esclave malais qu'il avait embarqué avec lui, ou aux survivants de l'expédition menés par Elcano."
+    ],
+    "facts_en": [
+      "Born around 1480 into minor Portuguese nobility, he served the Portuguese Crown in Asia, but King Manuel I refused to back his westward route to the Moluccas, so he took the plan to King Charles I of Spain instead, who approved it.",
+      "Despite storms and mutinies, his fleet passed through the Strait of Magellan into what he renamed the Mar Pacifico, then reached Guam after an arduous Pacific crossing before landing in the Philippines, where he died in the Battle of Mactan after being shot with a poison arrow.",
+      "Because he had earlier reached Southeast Asia's Malay Archipelago while sailing east for Portugal (1505–1511/12), his later westward voyage gave him a nearly complete personal circumnavigation of the globe."
+    ]
+  },
+  {
+    "name": "Vasco de Gama",
+    "description": "Navigateur portugais, considéré comme le premier Européen à atteindre les Indes par la route maritime du cap de Bonne-Espérance (XVe-XVIe s.).",
+    "bio_fr": "Vasco de Gama né vers 1460 ou 1469 à Sines (Portugal) et mort le 24 décembre 1524 à Cochin aux Indes orientales, est un grand navigateur portugais, considéré comme le premier Européen à atteindre les Indes orientales par la route des Indes maritime, vers l'océan Indien, en contournant en 1498 le cap de Bonne-Espérance en Afrique du Sud, découvert en 1488 par Bartolomeu Dias, pendant la période des grandes découvertes.",
+    "bio_en": "Vasco da Gama was a Portuguese mariner, explorer and nobleman. His discovery of the first direct maritime route between Europe and India via the Cape of Good Hope and across the Indian Ocean from Malindi in Kenya to Kozhikode was to open up European exploration of, and commerce with, India, and is considered a landmark event and a turning point in world history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vasco_da_Gama_-_1838.png/330px-Vasco_da_Gama_-_1838.png",
+    "facts_fr": [
+      "En 1492, le roi Jean II l'envoie en mission à Setúbal et en Algarve pour saisir des navires français en représailles d'attaques commises en temps de paix contre des navires portugais, une mission qu'il mène rapidement et efficacement.",
+      "Il quitte l'estuaire du Tage le 8 juillet 1497 à la tête d'une flotte de quatre navires et 200 hommes d'équipage ; malgré tempêtes, mutineries, dysenterie et scorbut, il atteint le 21 mai 1498 le port indien de Pantalayini, à une vingtaine de kilomètres de Calicut, avant de débarquer le 28 mai sur la plage de Kappad, son équipage exténué et en guenilles.",
+      "Le voyage se solde par un échec commercial : déçu par les marchandises proposées — miel, chapeaux, pots de chambre —, le Zamorin de Calicut lui refuse les avantages commerciaux demandés ; Vasco de Gama n'en est pas moins couvert d'honneurs à son retour et nommé « amiral des Indes »."
+    ],
+    "facts_en": [
+      "Although his 1497–1499 voyage was the first to link Europe and Asia by rounding the southern tip of Africa, he was not the first Portuguese mariner to round the Cape; his outward and return voyages were nonetheless the longest known ocean voyages completed up to that time.",
+      "Sailors had spent decades trying to reach the Indies, with thousands of lives and dozens of ships lost to shipwrecks and attacks, before da Gama finally succeeded, landing at Kozhikode on 20 May 1498.",
+      "As reward for his achievements he was ennobled Count of Vidigueira in 1519 and appointed Governor of India, with the title of Viceroy, in 1524; he later became the subject of the Portuguese national epic Os Lusíadas, written in his honor by Luís de Camões."
+    ]
+  },
+  {
+    "name": "Marco Polo",
+    "description": "Marchand, explorateur et écrivain vénitien, dont le récit de voyage en Asie fit découvrir l'empire mongol à l'Europe (XIIIe-XIVe s.).",
+    "bio_fr": "Marco Polo ou Marc Pol est un célèbre marchand, explorateur, diplomate, ethnologue et écrivain vénitien, de la période des préludes des grandes découvertes, devenu mondialement célèbre pour une des plus anciennes descriptions qu'il a données de l'empire sino-mongol du Khagan Kubilai Khan, avec son Livre de Marco Polo de 1298, recopié et traduit avec succès en de nombreuses langues.",
+    "bio_en": "Marco Polo was a Venetian merchant, explorer, and writer who travelled through Asia along the Silk Road between 1271 and 1295. His travels are recorded in The Travels of Marco Polo, a book that described the then-mysterious culture and inner workings of the Eastern world, including the wealth and great size of the Mongol Empire and China under the Yuan dynasty, giving Europeans their first comprehensive look into China, Persia, India, Japan, and other Asian societies.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg/330px-Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg",
+    "facts_fr": [
+      "À 17 ans, en 1271, il part avec son père et son oncle, Niccolò et Matteo Polo, pour retourner en Chine par les routes de la soie et des épices, un voyage de trois ans et demi jusqu'à Pékin pour rejoindre le Grand Khan Kubilai.",
+      "Fait prisonnier par les Génois à son retour à Venise, il rédige en français, durant sa captivité, ses souvenirs et descriptions de l'Asie avec son compagnon de cellule Rustichello de Pise.",
+      "N'étant pas le premier Européen à la cour de l'empereur mongol, il est le premier à décrire des réalités chinoises comme le papier-monnaie ; son récit influença Christophe Colomb, et l'Atlas catalan ainsi que la carte de Fra Mauro s'appuient en partie sur lui."
+    ],
+    "facts_en": [
+      "Appointed Kublai Khan's foreign emissary, he was sent on diplomatic missions across the empire and Southeast Asia — visiting present-day Myanmar, India, Indonesia, Sri Lanka, and Vietnam — and lived inside China for 17 years.",
+      "Around 1291 the Polos escorted the Mongol princess Kököchin to Persia, then travelled overland to Constantinople and finally home to Venice, arriving after 24 years away.",
+      "Captured by the Genoese after joining Venice's war effort, he dictated his travel accounts to his cellmate Rustichello da Pisa while imprisoned, providing Europe's first Western record of Chinese paper money, among other novelties."
+    ]
+  },
+  {
+    "name": "James Cook",
+    "description": "Navigateur, explorateur et cartographe britannique de la Royal Navy, qui mena trois expéditions dans le Pacifique (XVIIIe s.).",
+    "bio_fr": "James Cook est un navigateur, explorateur et cartographe britannique, né le 7 novembre 1728 à Marton (Middlesbrough) et mort le 14 février 1779 à Hawaï.",
+    "bio_en": "Captain James Cook was a British Royal Navy officer, explorer, and cartographer who led three voyages of exploration to the Pacific and Southern Oceans between 1768 and 1779. He completed the first recorded circumnavigation of the main islands of New Zealand, and led the first recorded visit by Europeans to the east coast of Australia and the Hawaiian Islands.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg",
+    "facts_fr": [
+      "Après avoir servi dans la marine marchande britannique, il intègre la marine royale en 1755 pendant la guerre de Sept Ans ; sa cartographie de l'embouchure du Saint-Laurent lors du siège de Québec permet au général James Wolfe de mener son attaque décisive sur les Plaines d'Abraham.",
+      "Il est le premier navigateur à faire le tour de l'Antarctique et à cartographier Terre-Neuve et la Nouvelle-Zélande, et le premier Européen à débarquer sur la côte est de l'Australie, en Nouvelle-Calédonie, aux îles Sandwich du Sud et à Hawaï.",
+      "Il meurt à Hawaï en 1779 lors d'un combat contre des autochtones, alors qu'il commande sa troisième expédition, partie à la recherche du passage du Nord-Ouest."
+    ],
+    "facts_en": [
+      "He joined the merchant navy as a teenager before enlisting in the Royal Navy in 1755, seeing his first combat at the Siege of Louisbourg during the Seven Years' War.",
+      "His mapping of coastlines and islands — including Easter Island, Alaska, and South Georgia Island — went into greater detail than any previous charts, and his work on preventing scurvy among his crews earned him the Royal Society's Copley Gold Medal.",
+      "Described as patient, persistent, sober, and competent but sometimes hot-tempered, he was killed in 1779 when a dispute with Native Hawaiians turned violent during his second visit to Hawaii."
+    ]
+  },
+  {
+    "name": "Amundsen",
+    "description": "Marin et explorateur polaire norvégien, premier homme à atteindre le pôle Sud (XIXe-XXe s.).",
+    "bio_fr": "Roald Engelbregt Gravning Amundsen, né le 16 juillet 1872 à Borge en Norvège et mort le 18 juin 1928 vers l'île aux Ours, est un marin et explorateur polaire norvégien.",
+    "bio_en": "Roald Engelbregt Gravning Amundsen was a Norwegian explorer of polar regions. He was a key figure of the period known as the Heroic Age of Antarctic Exploration.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amundsen_in_fur_skins.jpg/330px-Amundsen_in_fur_skins.jpg",
+    "facts_fr": [
+      "En 1898, il participe à l'expédition polaire belge d'Adrien de Gerlache, qui réalise le premier hivernage en Antarctique ; il s'y lie avec le médecin de bord Frederick Cook, qui lui révèle l'intérêt des chiens de traîneau pour les expéditions polaires.",
+      "Après avoir appris que Robert Peary affirmait avoir atteint le pôle Nord en 1909 — une annonce ensuite contestée —, il change ses plans pour se diriger vers le pôle Sud, qu'il atteint le premier le 14 décembre 1911.",
+      "En 1926, après avoir survolé le pôle Nord en dirigeable, il devient le premier homme à avoir atteint les deux pôles ; il disparaît en juin 1928 lors d'une mission de recherche et sauvetage de l'explorateur italien Umberto Nobile."
+    ],
+    "facts_en": [
+      "From 1903 to 1906 he led the first expedition to successfully traverse the Northwest Passage, sailing the sloop Gjøa.",
+      "He left Norway in June 1910 aboard the ship Fram, establishing a camp at the Bay of Whales before his five-man party set out and became the first to reach the South Pole on 14 December 1911.",
+      "After a failed 1918 attempt to reach the North Pole via the Northeast Passage, he and fifteen other men became the first explorers verified to have reached the North Pole, flying over it in the airship Norge on 12 May 1926; he disappeared in 1928 and his remains were never found."
+    ]
+  },
+  {
+    "name": "Shackleton",
+    "description": "Explorateur anglo-irlandais, l'une des principales figures de l'âge héroïque de l'exploration en Antarctique (XIXe-XXe s.).",
+    "bio_fr": "Ernest Shackleton, né le 15 février 1874 à Kilkea en Irlande et mort le 5 janvier 1922 sur l'île de la Géorgie du Sud, est un explorateur anglo-irlandais, considéré comme l'une des principales figures de l'âge héroïque de l'exploration en Antarctique.",
+    "bio_en": "Sir Ernest Henry Shackleton was an Anglo-Irish Antarctic explorer who led three British expeditions to the Antarctic. He was one of the principal figures of the period known as the Heroic Age of Antarctic Exploration.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/South_-_the_story_of_Shackleton%27s_last_expedition%2C_1914-1917_-_The_Leader_%28cropped%29.jpg/330px-South_-_the_story_of_Shackleton%27s_last_expedition%2C_1914-1917_-_The_Leader_%28cropped%29.jpg",
+    "facts_fr": [
+      "Sa première expérience des régions polaires date de 1901, comme troisième officier de l'expédition Discovery de Robert Falcon Scott, qu'il doit quitter avant son terme pour raisons de santé.",
+      "En janvier 1909, lors de l'expédition Nimrod, il établit avec trois compagnons un record à la latitude 88°23' S, à moins de cent milles du pôle Sud, exploit qui lui vaut d'être anobli par le roi Édouard VII.",
+      "Lorsque son navire l'Endurance est écrasé par les glaces lors de l'expédition transantarctique de 1914-1917, il rejoint avec quelques hommes la Géorgie du Sud à bord d'une simple chaloupe puis traverse à pied l'île pour chercher du secours, ramenant finalement tout son équipage sain et sauf."
+    ],
+    "facts_en": [
+      "During the 1901-1904 Discovery expedition, he and Scott and Edward Wilson set a new southern record by marching to latitude 82°S, though Shackleton was sent home early on health grounds; during the 1907-1909 Nimrod Expedition he and three companions pushed the record to 88°23'S, the largest single advance to the pole in exploration history.",
+      "After Endurance became trapped in pack ice and sank in the Weddell Sea in November 1915, the crew camped on the disintegrating sea ice before launching lifeboats on a 720-nautical-mile voyage to South Georgia, an exploit that became his most famous feat.",
+      "Away from his expeditions his life was restless and unfulfilled — his business ventures failed to prosper and he died heavily in debt — and though lauded in the press at his death, he was thereafter largely forgotten while his rival Scott's heroic reputation was sustained for decades."
+    ]
+  },
+  {
+    "name": "Ibn Battuta",
+    "description": "Explorateur et voyageur berbère du Maghreb, qui aurait parcouru plus de 120 000 km à travers l'Afrique, l'Asie et l'Europe (XIVe s.).",
+    "bio_fr": "Ibn Battûta, de son nom complet ʾAbu ʿAbd Allah Muḥammad Ibn ʿAbd Allah al-Lawātī aṭ-Ṭanjī Ibn Baṭṭūṭa, né le 24 février 1304 à Tanger et mort en 1368 à Fès ou Marrakech, est un explorateur et voyageur d'origine berbère qui aurait parcouru plus de 120 000 km entre 1325 et 1349, de l'ancien territoire du khanat bulgare de la Volga au nord, jusqu'à Tombouctou au sud, et de Tanger à l’ouest jusqu'à Quanzhou en Extrême-Orient.",
+    "bio_en": "Ibn Battuta was a Maghrebi Muslim traveller, explorer and scholar from Tangier. Over a period of 30 years from 1325 to 1354, he visited much of Africa, Asia, and the Iberian Peninsula. Near the end of his life, Ibn Battuta dictated an account of his journeys, titled A Gift to Those Who Contemplate the Wonders of Cities and the Marvels of Travelling, commonly known as The Rihla. Ibn Battuta travelled more than any other explorer in pre-modern history, totalling around 117,000 km (73,000 mi), surpassing Zheng He with about 50,000 km (31,000 mi) and Marco Polo with 24,000 km (15,000 mi).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg/330px-Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg",
+    "facts_fr": [
+      "Ses mémoires sont compilées par le lettré Ibn Juzayy al-Kalbi dans un ouvrage communément appelé « Voyages » (Rihla).",
+      "Il faut toutefois rester prudent sur la fiabilité de certaines parties de ces écrits, certains historiens doutant qu'il ait réellement effectué la totalité des pèlerinages et voyages relatés.",
+      "De passage à Tripoli au début de son voyage, il se marie une première fois, avant de divorcer à la suite d'un différend avec son beau-père, puis de se remarier avec une autre femme de la caravane, fille d'un lettré originaire de Fès."
+    ],
+    "facts_en": [
+      "Born into a family of Islamic legal scholars (qadis) in Tangier, he set off at age 21, on 14 June 1325, to perform the hajj to Mecca — a journey that would ordinarily take sixteen months — and did not return to Morocco again for 24 years.",
+      "Instead of continuing to Baghdad with the caravan after his first hajj, he took a six-month detour into Iran — through Najaf, Basra, Isfahan, and Shiraz — before returning across the mountains to Baghdad in June 1327, when parts of the city still lay in ruins from the Mongol invasion of 1258.",
+      "In Alexandria he met an ascetic, Sheikh Burhanuddin, who is supposed to have foretold his destiny as a world traveller and urged him to visit his own brothers in India, Sind, and China; after completing his first hajj, Ibn Battuta chose to keep travelling rather than return home."
+    ]
+  },
+  {
+    "name": "Jacques Cartier",
+    "description": "Navigateur et explorateur français de Bretagne, qui explore le golfe du Saint-Laurent et nomme le « Canada » (XVIe s.).",
+    "bio_fr": "Jacques Cartier, né vers 1491 à Saint-Malo où il meurt le 1er septembre 1557, est un navigateur et explorateur français de Bretagne. Mandaté par le roi de France François Ier, il atteint en mai 1534 le golfe du Saint-Laurent et explore les territoires alentour, auxquels il donne le nom de « Canada », tiré du mot iroquoien kanata (« village »). Il y effectue un second voyage en 1535-1536, et un troisième en 1541-1542 qui constitue l'une des premières tentatives de colonisation française des Amériques.",
+    "bio_en": "Jacques Cartier was a French maritime explorer from Brittany. Jacques Cartier was the first European to describe and map the Gulf of Saint Lawrence and the shores of the Saint Lawrence River, which he named \"Canada\" after the Iroquoian names for the two big settlements he saw at Stadacona and at Hochelaga.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jacques_Cartier_1851-1852.jpg/330px-Jacques_Cartier_1851-1852.jpg",
+    "facts_fr": [
+      "Auteur de cartes aujourd'hui perdues et de Relations relatant ses voyages, il est le premier Européen à décrire et à nommer cette région et ses habitants.",
+      "Ses voyages se déroulent à une époque où les Espagnols sont déjà installés dans les îles Caraïbes, au Mexique et en Amérique centrale, et entament la conquête du Pérou.",
+      "Lors de son premier voyage, avec deux navires et 61 hommes d'équipage, il explore minutieusement le golfe du Saint-Laurent à partir de juin 1534 ; le 24 juillet, il plante une croix de trente pieds à Gaspé pour revendiquer la région au nom du roi de France, où ses hommes rencontrent des Iroquoiens du Saint-Laurent menés par le chef Donnacona."
+    ],
+    "facts_en": [
+      "The two settlements he saw and after which he named the region \"Canada\" — Stadacona and Hochelaga — correspond to present-day Quebec City and Montreal Island.",
+      "As author of now-lost maps and accounts of his voyages, he was the first European to describe and name the region and its inhabitants.",
+      "His voyages took place at a time when the Spanish had already settled the Caribbean, Mexico, and Central America, and were beginning their conquest of Peru."
+    ]
+  },
+  {
+    "name": "Champlain",
+    "description": "Navigateur, cartographe et explorateur français, fondateur de la ville de Québec (XVIe-XVIIe s.).",
+    "bio_fr": "Samuel de Champlain, né vraisemblablement à Brouage entre 1567 et 1574 et mort à Québec en Nouvelle-France le 25 décembre 1635, est un colonisateur, navigateur, cartographe, soldat, explorateur, ethnologue, géographe, commandant et auteur de récits de voyage français. Il fonde la ville de Québec le 3 juillet 1608.",
+    "bio_en": "Samuel de Champlain was a French explorer, navigator, cartographer, soldier, geographer, diplomat, and chronicler who founded Quebec City and established New France as a permanent French colony in North America.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Samchamprifle.jpg/330px-Samchamprifle.jpg",
+    "facts_fr": [
+      "Formé comme navigateur en Saintonge vers 1586-1594, il explore successivement les colonies espagnoles d'Amérique (1599-1601), le fleuve Saint-Laurent (1603), puis l'Acadie et la côte atlantique jusqu'au Cap Cod (1604-1607), avant d'enraciner la première colonie française permanente, d'abord à Port-Royal puis à Québec.",
+      "N'appartenant pas à la grande noblesse, il agit toute sa carrière comme subalterne d'un noble désigné par le roi, d'abord lieutenant de Pierre Dugua de Mons, puis à partir de 1612 lieutenant de plusieurs vice-rois successifs de la Nouvelle-France, et enfin lieutenant du cardinal de Richelieu à partir de 1633.",
+      "Ce n'est que dans les dix-huit derniers mois de sa vie, aux étés 1634-1635, que son rêve de colonisation se concrétise avec l'arrivée de quelques dizaines de familles de colons ; son acharnement lui vaut, depuis le milieu du XIXe siècle, le surnom de « Père de la Nouvelle-France »."
+    ],
+    "facts_en": [
+      "He made between 21 and 29 Atlantic crossings during his career, and as a cartographer created the first accurate maps of North America's eastern coastline and the Great Lakes region by combining direct observation with information from Indigenous peoples.",
+      "From 1604 to 1607 he helped establish Port Royal in Acadia, the first permanent European settlement north of Florida, before founding Quebec in 1608.",
+      "He forged crucial alliances with the Innu, Algonquin, and Wendat peoples — joining their conflicts against the Iroquois confederacy and living for extended periods among Indigenous communities — and, though never formally titled governor because he was not of noble birth, effectively governed New France until his death."
+    ]
+  },
+  {
+    "name": "Livingstone",
+    "description": "Médecin, missionnaire protestant et explorateur britannique, figure de la lutte contre la traite esclavagiste en Afrique australe (XIXe s.).",
+    "bio_fr": "David Livingstone, né le 19 mars 1813 à Blantyre et mort le 1er mai 1873 près du lac Bangwelo, est un médecin, missionnaire protestant et explorateur britannique qui contribue à la fois au développement et à la promotion de l'empire commercial britannique d'une part, à la lutte contre la traite esclavagiste et à l'évangélisation du Sud du continent africain d'autre part.",
+    "bio_en": "David Livingstone was a Scottish doctor, Congregationalist, pioneer Christian missionary with the London Missionary Society, and an explorer in Africa. Livingstone was married to Mary Moffat Livingstone, from the prominent 18th-century Moffat missionary family. Livingstone came to have a mythic status as a Protestant missionary martyr, working-class \"rags-to-riches\" inspirational story, scientific investigator and explorer, imperial reformer, anti-slavery crusader, and advocate of British commercial and colonial expansion. As a result, he became one of the most popular British heroes of the late 19th-century Victorian era.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/David_Livingstone_by_Thomas_Annan.jpg/330px-David_Livingstone_by_Thomas_Annan.jpg",
+    "facts_fr": [
+      "Il participe au mouvement d'exploration et de cartographie de l'intérieur du continent africain qui précède le « partage de l'Afrique » entre grandes puissances européennes, et consacre une partie de sa vie à rechercher les sources du Nil.",
+      "Sa vision de la civilisation britannique comme un bienfait à apporter aux Africains, combinée à sa volonté de recenser les richesses commerciales du continent, fait de lui un précurseur de l'impérialisme colonial européen qui se déploie après sa mort.",
+      "Sa « disparition » en Afrique, suivie de l'expédition menée par Henry Morton Stanley pour le retrouver, contribue à la glorification et au mythe victorien qui l'entourent."
+    ],
+    "facts_en": [
+      "His obsession with finding the sources of the Nile was rooted in the belief that solving that mystery would give him the influence needed to end the East African Arab-Swahili slave trade.",
+      "His exploration of the central African watershed marked what has been called the culmination of the classic period of European geographical discovery and colonial penetration of Africa.",
+      "His posthumous glorification as a national hero in 1874, following his 'disappearance' and death in Africa, helped launch several major Christian missionary initiatives in central Africa during the era of the European 'Scramble for Africa.'"
+    ]
+  },
+  {
+    "name": "Saladin",
+    "description": "Sultan kurde d'Égypte et de Syrie, fondateur de la dynastie ayyoubide et principal adversaire des croisés au XIIe siècle.",
+    "bio_fr": "Saladin, né en 1138 à Tikrit et mort le 4 mars 1193 à Damas, est le premier dirigeant de la dynastie ayyoubide, dynastie musulmane qui tient son nom de son père Najm ad-Din Ayyub et qui a régné sur l'Égypte de 1169 à 1250 et sur la Syrie de 1174 à 1260. Saladin dirige l'Égypte de 1169 à 1193, Damas de 1174 à 1193 et Alep de 1183 à 1193.",
+    "bio_en": "Salah ad-Din Yusuf ibn Ayyub, commonly known as Saladin, was a Kurdish commander and political leader. He was the founder of the Ayyubid dynasty and the first sultan of both Egypt and Syria. An important figure of the Third Crusade, he spearheaded the Muslim military effort against the Crusader states in the Levant. At the height of his power, the Ayyubid realm spanned Egypt, Syria, Upper Mesopotamia, the Hejaz, Yemen, and Nubia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Saladin_coin_obverse.jpg/330px-Saladin_coin_obverse.jpg",
+    "facts_fr": [
+      "D'origine kurde mais arabophone, il sert d'abord l'émir zengide de Syrie Nur ad-Din avant d'être envoyé en Égypte, où il est nommé vizir en 1169 puis abolit le califat fatimide en 1171.",
+      "En 1187, il mène les musulmans à la reconquête de Jérusalem, avant d'affronter la troisième croisade menée par Philippe Auguste et Richard Cœur de Lion, avec qui il conclut une paix lui permettant de conserver la ville.",
+      "Réputé pour sa tolérance et son traitement humain de ses ennemis, il gagne, notamment lors du siège du château de Kérak, le respect de ses adversaires croisés — en particulier celui de Richard Cœur de Lion — au point de s'imposer en Europe occidentale comme un symbole de chevalerie plutôt qu'une figure honnie."
+    ],
+    "facts_en": [
+      "Sent to Fatimid Egypt in 1164 alongside his uncle Shirkuh, he became vizier in 1169 and, after al-Adid's death in 1171, abolished the Shia Fatimid Caliphate and realigned Egypt with the Sunni Abbasid Caliphate in Baghdad.",
+      "He escaped two assassination attempts by the Order of Assassins while campaigning in northern Syria and Upper Mesopotamia, and defeated the Crusaders at the decisive Battle of Hattin in 1187, capturing Jerusalem.",
+      "He died in Damascus in 1193 after giving away much of his personal wealth to his subjects, and has frequently been described as the most famous Kurdish figure in history."
+    ]
+  },
+  {
+    "name": "Averroès",
+    "description": "Philosophe, théologien, juriste et médecin andalou du XIIe siècle, célèbre commentateur d'Aristote.",
+    "bio_fr": "Ibn Rochd de Cordoue , plus connu en Occident sous son nom latinisé Averroès, est un philosophe, théologien, juriste et médecin musulman andalou de langue arabe du XIIe siècle, né le 14 avril 1126 à Cordoue en Andalousie et mort le 10 décembre 1198 à Marrakech au Maroc. Il exerce les fonctions de grand cadi à Séville et à Cordoue, et de médecin privé des sultans almohades, à Marrakech, à une époque charnière où le pouvoir passe des Almoravides aux Almohades.",
+    "bio_en": "Ibn Rushd, Latinized as Averroes, was an Andalusian polymath and jurist who was proficient in a variety of intellectual fields, including philosophy, theology, medicine, astronomy, physics, psychology, mathematics, neurology, Islamic jurisprudence and law, and linguistics. The author of more than 100 books and treatises, his philosophical works include numerous commentaries on Aristotle, for which he was known in the Western world as \"The Commentator\" and \"Father of Rationalism\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/AverroesColor.jpg/330px-AverroesColor.jpg",
+    "facts_fr": [
+      "Considéré comme l'un des plus grands philosophes de la civilisation islamique, il est pourtant accusé d'hérésie à la fin de sa vie et n'a pas de postérité immédiate dans le monde musulman ; il n'y sera redécouvert qu'au XIXe siècle, lors de la Nahda, où il inspire les courants rationalistes et réformateurs.",
+      "Son œuvre influence fortement les philosophes médiévaux latins et juifs dits averroïstes, comme Siger de Brabant, Boèce de Dacie, Isaac Albalag et Moïse Narboni, et est particulièrement étudiée à Padoue à la Renaissance.",
+      "Les scolastiques, qui le surnomment le « Commentateur » du « Philosophe » Aristote, l'estiment généralement, mais Thomas d'Aquin puis les néoplatoniciens de Florence lui reprochent de nier l'immortalité de l'âme individuelle au profit d'un Intellect unique commun à tous les hommes."
+    ],
+    "facts_en": [
+      "He defended the pursuit of philosophy against criticism from Ash'ari theologians like Al-Ghazali, arguing that philosophy was permissible in Islam and even compulsory for certain elites, and that scripture should be read allegorically where it conflicted with reason.",
+      "In medicine he proposed a new theory of stroke, was the first to describe the signs and symptoms of Parkinson's disease, and may have been the first to identify the retina as the eye's light-sensing part; his medical encyclopedia Al-Kulliyat fi al-Tibb, known in Latin as the Colliget, remained a European textbook for centuries.",
+      "His works were condemned by the Catholic Church in 1270 and 1277, yet the philosophical movement called Averroism that they inspired continued to attract followers in Latin Christendom up to the sixteenth century."
+    ]
+  },
+  {
+    "name": "Avicenne",
+    "description": "Philosophe et médecin persan des Xe-XIe siècles, auteur du Canon de la médecine.",
+    "bio_fr": "Ibn Sina, connu en Occident sous le nom d'Avicenne, est un philosophe et médecin persan, né le 7 août 980 à Afshona, près de Boukhara, dans l'actuel Ouzbékistan et mort en août 1037 à Hamadan (Iran). Il est l'auteur d'ouvrages de référence en médecine et en philosophie, ainsi que de sciences voisines comme l'astronomie, l'alchimie, et la psychologie, rédigés principalement en arabe classique.",
+    "bio_en": "Ibn Sina, commonly known in the West as Avicenna, was a preeminent philosopher and physician of the Muslim world. He was a seminal figure of the Islamic Golden Age, serving in the courts of various Iranian rulers, and was influential to medieval European medical and Scholastic thought. Avicenna is considered one of the greatest thinkers and medical scholars in history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Avicenna-miniatur.jpg/330px-Avicenna-miniatur.jpg",
+    "facts_fr": [
+      "Ses disciples le surnommaient cheikh el-raïs, « prince des savants », ou encore le troisième maître, après Aristote et Al-Fârâbî.",
+      "Dans son Qanûn (Canon de la médecine), il opère une vaste synthèse médico-philosophique associant la logique d'Aristote et le néo-platonisme, élevant la médecine au rang de discipline intellectuelle compatible avec le monothéisme.",
+      "Si son œuvre médicale n'a plus qu'un intérêt historique, son œuvre philosophique, à la croisée des pensées orientale et occidentale, reste étudiée au début du XXIe siècle, aussi bien dans le cadre de l'islam que de la philosophie académique."
+    ],
+    "facts_en": [
+      "Often described as the father of early modern medicine, he is best known for The Book of Healing, a philosophical and scientific encyclopedia, and The Canon of Medicine, which remained a standard medical text at European universities as late as 1650.",
+      "Of the roughly 450 works he is believed to have written — in both Arabic and Persian — around 240 survive, including 150 on philosophy and 40 on medicine.",
+      "He combined empirical observation, philosophical reasoning, and logical analysis in his methodology, especially in The Canon of Medicine."
+    ]
+  },
+  {
+    "name": "Ibn Khaldoun",
+    "description": "Historien, économiste et homme d'État arabe du XIVe siècle, précurseur de la sociologie moderne.",
+    "bio_fr": "Ibn Khaldoun (en arabe : [ɪbn̩ χɐlduːn]; nom complet : أبو زيد عبد الرحمن بن محمد بن خلدون الحضرمي, né le 27 mai 1332 à Tunis et mort le 17 mars 1406 au Caire, est un historien, économiste, géographe, démographe, précurseur de la sociologie et homme d'État arabe.",
+    "bio_en": "Ibn Khaldun was an Arab scholar, historian, philosopher, and sociologist. He is widely acknowledged to be one of the greatest social scientists of the Middle Ages, and is considered by a number of scholars to be a major forerunner of historiography, sociology, economics, and demography studies.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bust_of_Ibn_Khaldun_%28Casbah_of_Bejaia%2C_Algeria%29.jpg/330px-Bust_of_Ibn_Khaldun_%28Casbah_of_Bejaia%2C_Algeria%29.jpg",
+    "facts_fr": [
+      "Issu d'une grande famille andalouse d'origine yéménite chassée de la péninsule ibérique par la Reconquista, il se retire à 45 ans au Caire, alors sous domination mamelouke, après une carrière active de conseiller et de ministre auprès de souverains du Maghreb.",
+      "De passage à Damas en 1401, peu avant que la ville ne soit assiégée et prise par Tamerlan, il obtient du conquérant qu'il épargne la vie des habitants, chose rarissime chez Tamerlan qui massacrait en général toute la population sauf quelques artisans.",
+      "Dans la Muqaddima, l'introduction de son œuvre majeure Le Livre des exemples, il expose sa vision de la naissance et de la mort des empires ; les savants européens du XIXe siècle en reconnaissent l'importance et considèrent Ibn Khaldoun comme l'un des plus grands philosophes du Moyen Âge."
+    ],
+    "facts_en": [
+      "He wrote his best-known book, the Muqaddimah, in just six months according to his own autobiography; it later influenced Ottoman historians such as Kâtip Çelebi, Mustafa Naima, and Ahmed Cevdet Pasha in analyzing the Ottoman Empire's growth and decline.",
+      "His works have more recently been compared to those of European philosophers such as Machiavelli, Vico, Hume, Hegel, Marx, and Comte, and economists Ricardo and Adam Smith, suggesting their ideas found precedent — though not direct influence — in his.",
+      "He has been called one of the most prominent Muslim and Arab scholars and historians, and he personally interacted with Tamerlane, the founder of the Timurid Empire."
+    ]
+  },
+  {
+    "name": "Soliman le Magnifique",
+    "description": "Sultan ottoman du XVIe siècle, dont le règne marque l'apogée de la puissance de l'Empire ottoman.",
+    "bio_fr": "Soliman Ier est probablement né le 6 novembre 1494 à Trébizonde dans l'actuelle Turquie et mort le 6 septembre 1566 à Szigetvár dans l'actuelle Hongrie",
+    "bio_en": "Suleiman I, commonly known as Suleiman the Magnificent, was the Ottoman sultan from 1520 to 1566. The longest reign among the Ottoman sultans, his rule brought about a notable peak in the Ottoman Empire's economic, military and political power, and raised the number of the empire's subjects to at least 25 million people.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EmperorSuleiman.jpg/330px-EmperorSuleiman.jpg",
+    "facts_fr": [
+      "Surnommé « le Législateur » en Orient pour sa refonte complète du système juridique ottoman, il instaure durant son règne des changements législatifs concernant la société, l'éducation, l'économie et la justice, et son code civil (le Kanun) fixe la forme de l'empire pour plusieurs siècles.",
+      "Il mène ses armées à la conquête de Belgrade, de Rhodes et de la Hongrie avant de devoir s'arrêter devant Vienne en 1529, tandis que sa marine, commandée notamment par l'amiral Barberousse, domine la Méditerranée, la mer Rouge et le golfe Persique.",
+      "En rupture avec les traditions ottomanes, il épouse l'une des femmes de son harem, Roxelane, devenue Hürrem Sultan, dont l'influence à la cour assurera la renommée."
+    ],
+    "facts_en": [
+      "His judicial reforms, carried out with chief judicial official Ebussuud Efendi, merged sultanic law (Kanun) with Islamic law (Sharia) into a unified system governing society, education, taxation, and criminal law.",
+      "In 1534 he broke with Ottoman tradition by marrying Hürrem, a woman from his imperial harem, helping usher in what became known as the \"Sultanate of Women\" period in Ottoman history.",
+      "Although his death in 1566 marked a watershed in Ottoman history, scholars typically regard the following decades — often called the Era of Transformation — as a period of crisis and adaptation rather than simple decline."
+    ]
   }
 ]
