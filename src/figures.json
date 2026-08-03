@@ -4408,5 +4408,345 @@
       "In 1964, the FBI mailed King a threatening anonymous letter, which he interpreted as an attempt to make him commit suicide.",
       "In 1968, King was planning a national occupation of Washington, D.C., to be called the Poor People's Campaign, when he was assassinated on April 4 in Memphis, Tennessee."
     ]
+  },
+  {
+    "name": "Calvin",
+    "description": "Théologien, pasteur et réformateur français, principal artisan du calvinisme (XVIe s.).",
+    "bio_fr": "Jean Calvin, né Jehan Cauvin le 10 juillet 1509 à Noyon et mort le 27 mai 1564 à Genève, est un théologien français, un important réformateur, et un pasteur emblématique de la Réforme protestante du XVIe siècle, notamment pour son apport à la doctrine dite du calvinisme.",
+    "bio_en": "John Calvin was a French theologian, pastor and reformer in Geneva during the Protestant Reformation. He was the principal figure in the development of the system of Christian theology later called Calvinism, including its doctrines of predestination and of God's absolute sovereignty in the salvation of the human soul from death and eternal damnation. Calvinist doctrines were influenced by and elaborated upon Augustinian and other Christian traditions. Various Reformed Church movements, including Continental Reformed, Congregationalism, Presbyterianism, Waldensians, Baptist Reformed, Calvinist Methodism, and Reformed Anglican Churches, which look to Calvin as the chief expositor of their beliefs, have spread throughout the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png/330px-John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png",
+    "facts_fr": [
+      "Après des études de droit, il rompt avec l'Église catholique romaine vers 1530 et se réfugie à Bâle, où il publie en 1536 la première édition de son œuvre maîtresse, l'Institution de la religion chrétienne.",
+      "Recruté par Guillaume Farel pour réformer l'Église genevoise, il en est expulsé après un différend avec le Conseil municipal, puis s'installe à Strasbourg (1538-1541) comme pasteur d'une communauté de réfugiés français.",
+      "De retour à Genève en 1541, il fait face à l'opposition de puissantes familles, notamment lors du procès de Michel Servet, brûlé vif sur un bûcher."
+    ],
+    "facts_en": [
+      "Originally trained as a humanist lawyer, he broke from the Roman Catholic Church around 1530 and fled to Basel after violence erupted against Protestants in France, publishing the first edition of the Institutes there in 1536.",
+      "Recruited by William Farel to join the Reformation in Geneva, he was expelled after the governing council resisted his ideas, then became minister to a church of French refugees in Strasbourg.",
+      "After returning to Geneva in 1541, Michael Servetus was denounced by Calvin and burned at the stake for heresy by the city council."
+    ]
+  },
+  {
+    "name": "Saint Augustin",
+    "description": "Philosophe et théologien chrétien, évêque d'Hippone et Père de l'Église latine (IVe-Ve s.).",
+    "bio_fr": "Augustin d'Hippone ou saint Augustin, dont le nom latin est Aurelius Augustinus, né le 13 novembre 354 à Thagaste et mort le 28 août 430 à Hippone, est un philosophe et théologien chrétien romain originaire d'Afrique romaine qui, après une carrière de rhéteur, occupe la fonction d'évêque à Hippone. Canonisé en 1298, il est avec Ambroise de Milan, Jérôme de Stridon et Grégoire le Grand, l'un des quatre premiers Pères de l'Église latine à se voir conférer le titre honorifique de docteur de l'Église.",
+    "bio_en": "Augustine of Hippo was a Christian theologian and philosopher from Thagaste, Numidia Cirtensis and the Bishop of Hippo Regius. He is generally regarded as one of the most influential philosophers in the history of the Western world, and he is viewed as one of the most important Church Fathers of the Latin Church in the Patristic Period.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sandro_Botticelli_050.jpg/330px-Sandro_Botticelli_050.jpg",
+    "facts_fr": [
+      "Né d'une mère profondément pieuse et d'un père païen, il se passionne d'abord pour la philosophie avant de devenir manichéen, puis se convertit au christianisme en 386 après sa rencontre avec Ambroise de Milan.",
+      "Il s'engage après sa conversion dans une série de controverses, contre les manichéens, les donatistes puis le pélagianisme, controverses qui donnent naissance à des œuvres majeures : Les Confessions, La Cité de Dieu et De la Trinité.",
+      "Il reste le penseur le plus influent du monde occidental jusqu'à Thomas d'Aquin, qui, huit siècles plus tard, donnera un tour plus aristotélicien au christianisme."
+    ],
+    "facts_en": [
+      "In his youth he was drawn to the Manichaean faith and later to Neoplatonism, before converting to Christianity and being baptized in 386 by Saint Ambrose.",
+      "He is known as \"Doctor of Grace\" for his influential views on unmerited grace and original sin, and in The City of God he imagined the Church as a spiritual City, distinct from the material Earthly City, against the backdrop of the fall of the Western Roman Empire.",
+      "His Confessions is considered the first Western autobiography, and he was the most cited author in the Summa Theologiae of St. Thomas Aquinas."
+    ]
+  },
+  {
+    "name": "Shakespeare",
+    "description": "Dramaturge, poète et acteur anglais, l'un des plus grands auteurs de langue anglaise (XVIe-XVIIe s.).",
+    "bio_fr": "William Shakespeare est un dramaturge, poète et acteur anglais né le 23 avril 1564 à Stratford-upon-Avon et mort le 23 avril 1616 dans la même ville. Surnommé « le Barde d'Avon », « le Barde immortel » ou simplement « le Barde », il est considéré comme l'un des plus grands poètes et dramaturges de langue anglaise. Son œuvre, traduite dans de nombreuses langues, se compose de 39 pièces, 154 sonnets et quelques poèmes supplémentaires, dont certains ne lui sont pas attribués de manière certaine.",
+    "bio_en": "William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\" or simply \"the Bard\". His extant works, including collaborations, consist of some 39 plays, 154 sonnets, three long narrative poems and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright. Shakespeare remains arguably the most influential writer in the English language, and his works continue to be studied and reinterpreted.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/330px-Shakespeare.jpg",
+    "facts_fr": [
+      "Marié à 18 ans à Anne Hathaway avec qui il a trois enfants, il entame, à une date inconnue entre 1585 et 1592, sa carrière d'acteur et auteur à Londres au sein des Lord Chamberlain's Men, troupe dont il est actionnaire.",
+      "Il ne subsiste guère de traces de l'homme Shakespeare, ce qui a nourri des spéculations sur son apparence, sa sexualité et sa religion, ainsi que des théories marginales selon lesquelles son œuvre aurait été écrite par un autre.",
+      "En 1623, deux de ses amis publient le « Premier Folio », un recueil réunissant presque toute son œuvre théâtrale, dont la préface de Ben Jonson prédit le caractère intemporel de Shakespeare."
+    ],
+    "facts_en": [
+      "At 18 he married Anne Hathaway, with whom he had three children — Susanna and twins Hamnet and Judith — before beginning a successful career in London sometime between 1585 and 1592.",
+      "Few records of his private life survive, which has stimulated speculation about his appearance, sexuality, and religious beliefs, and even fringe theories that his works were written by others.",
+      "In 1623, two fellow actors and friends published the First Folio, a posthumous collected edition including 36 of his plays, prefaced by Ben Jonson's poem hailing him with the now-famous epithet \"not of an age, but for all time.\""
+    ]
+  },
+  {
+    "name": "Cervantès",
+    "description": "Romancier, poète et dramaturge espagnol, auteur de Don Quichotte (XVIe-XVIIe s.).",
+    "bio_fr": "Miguel de Cervantes, parfois francisé en Michel de Cervantès, né le 29 septembre 1547 à Alcalá de Henares et enterré le 23 avril 1616 à Madrid, est un romancier, poète et dramaturge espagnol. Il est célèbre pour son roman L’Ingénieux Hidalgo Don Quichotte de la Manche, publié en 1605 et reconnu comme le premier roman moderne.",
+    "bio_en": "Miguel de Cervantes Saavedra was a Spanish writer widely regarded as the greatest writer in the Spanish language and one of the world's pre-eminent novelists. He is best known for his two-part novel Don Quixote, a work considered to be the first modern novel. Don Quixote has been labelled by many well-known authors as the \"best book of all time\" and the \"best and most central work in world literature\".",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/330px-Cervantes_J%C3%A1uregui.jpg",
+    "facts_fr": [
+      "Menant d'abord une vie de soldat, il participe à la bataille de Lépante en 1571, où il perd l'usage de la main gauche, ce qui lui vaut le surnom de « Manchot de Lépante ».",
+      "Capturé en 1575 par le barbaresque Mami Arnaute avec son frère Rodrigo, il reste captif à Alger malgré quatre tentatives d'évasion, jusqu'à son rachat par les Trinitaires en 1580.",
+      "La seconde partie de Don Quichotte ne paraît qu'en 1615, dix ans après la première ; son roman a depuis été traduit en plus de 140 langues et dialectes."
+    ],
+    "facts_en": [
+      "Forced to leave Spain for Rome in 1569, he enlisted in the Spanish Navy the following year and was badly wounded at the Battle of Lepanto in October 1571, losing the use of his left hand.",
+      "He served as a soldier until 1575, when he was captured by Barbary pirates and ransomed after five years in captivity.",
+      "Part One of Don Quixote was published in 1605 and Part Two in 1615; his posthumous novel The Travails of Persiles and Sigismunda appeared in 1617."
+    ]
+  },
+  {
+    "name": "Dante",
+    "description": "Poète, écrivain et homme politique italien, auteur de la Divine Comédie (XIIIe-XIVe s.).",
+    "bio_fr": "Dante Alighieri est un poète, écrivain, penseur et homme politique italien de la république de Florence, né entre 1265 et 1267 à Florence et mort le 14 septembre 1321 à Ravenne.",
+    "bio_en": "Dante Alighieri, widely known mononymously as Dante, was an Italian poet, writer, and philosopher. His Divine Comedy, originally called Comedìa and later christened Divina by Giovanni Boccaccio, is widely considered one of the most important poems of the Middle Ages and the greatest literary work in the Italian language.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_de_Dante.jpg/330px-Portrait_de_Dante.jpg",
+    "facts_fr": [
+      "Il est, avec Pétrarque et Boccace, l'une des « trois couronnes » qui imposèrent le toscan comme langue littéraire, et l'auteur de la Divine Comédie, souvent considérée comme le chef-d'œuvre de cette langue.",
+      "Selon la tradition, il rencontre en 1274 pour la première fois Béatrice, dont l'amour inspire la Vita Nuova ; de nombreux critiques mettent cependant en doute l'existence réelle de cette figure, y voyant une allégorie.",
+      "Guelfe ardent engagé dans la vie politique florentine, il est nommé prieur de Florence en 1300, l'un des magistrats suprêmes de l'exécutif de la cité."
+    ],
+    "facts_en": [
+      "Writing in his native Tuscan dialect rather than in Latin or the French/Provençal traditions favored by other Italian poets, he helped establish the modern-day standardized Italian language and is credited with the first use of the terza rima rhyme scheme.",
+      "He said he first met Beatrice Portinari when he was nine and claimed to have fallen in love with her at first sight, though he was later promised in marriage at 12 to Gemma di Manetto Donati.",
+      "He fought with the Guelph cavalry at the Battle of Campaldino in 1289, a victory that brought about a reform of the Florentine constitution."
+    ]
+  },
+  {
+    "name": "Homère",
+    "description": "Aède grec auquel sont attribuées l'Iliade et l'Odyssée, dont l'existence historique reste débattue (VIIIe s. av. J.-C.).",
+    "bio_fr": "Homère aurait été un aède de la fin du VIIIe siècle av. J.-C. Il était surnommé « le Poète » par les Anciens. Les deux premières œuvres de la littérature occidentale que sont l'Iliade et l'Odyssée lui sont attribuées.",
+    "bio_en": "Homer was an ancient Greek poet who is widely credited as the author of the Iliad and the Odyssey, two epic poems that are foundational works of ancient Greek literature. Although his life and authorship remain obscure, Homer was revered in ancient Greek society and is considered one of the most influential authors in history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Homeros_MFA_Munich_272.jpg/330px-Homeros_MFA_Munich_272.jpg",
+    "facts_fr": [
+      "Il est difficile de dire aujourd'hui s'il est un personnage historique ou une identité construite, et si l'Iliade et l'Odyssée lui sont réellement dues, ce qui alimente la « question homérique » — les savants modernes penchant plutôt pour un personnage inventé.",
+      "Plusieurs villes ioniennes (Chios, Smyrne, Cymé, Colophon) se disputaient son origine, et la tradition le décrivait comme aveugle.",
+      "Deux poèmes satiriques, la Batrachomyomachie (« la bataille des grenouilles et des rats ») et le Margitès, lui sont également attribués, ainsi que des Hymnes homériques dont on doute cependant qu'il soit l'auteur."
+    ],
+    "facts_en": [
+      "Scholars generally regard the Iliad and the Odyssey as the works of separate authors, thought to have been composed around the late eighth or early seventh century BC, though this continues to be debated.",
+      "Many accounts of his life circulated in classical antiquity, the most widespread describing him as a blind bard from Ionia associated with Chios and Samos, but modern scholars consider these accounts legendary.",
+      "To Plato, Homer was said to be the one who \"has educated Greece,\" and in Dante's Divine Comedy, Virgil refers to Homer as \"Poet sovereign,\" king of all poets."
+    ]
+  },
+  {
+    "name": "Virgile",
+    "description": "Poète latin de l'époque augustéenne, auteur de l'Énéide (Ier s. av. J.-C.).",
+    "bio_fr": "Virgile, dit « le Cygne de Mantoue », né vers le 15 octobre 70 av. J.-C. à Andes, dans l'actuelle Lombardie et mort le 21 septembre 19 av. J.-C. à Brindisi, est un poète latin contemporain de la fin de la République romaine et du début du règne de l'empereur Auguste.",
+    "bio_en": "Publius Vergilius Maro, usually called Virgil or Vergil in English, was an ancient Roman poet of the Augustan period. He composed three of the most famous poems in Latin literature: the Eclogues, the Georgics, and the epic Aeneid. Some minor poems, collected in the Appendix Vergiliana, were attributed to him in ancient times, but modern scholars regard these as spurious, with the possible exception of some short pieces.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Virgilio.png",
+    "facts_fr": [
+      "Sa tradition biographique repose sur des Vies rédigées au IVe siècle, elles-mêmes inspirées d'une biographie aujourd'hui perdue de son éditeur Varius — des sources jugées problématiques par les critiques actuels.",
+      "Selon la tradition, il serait né dans une famille modeste, mais les historiens actuels le pensent plutôt issu d'une famille bourgeoise, sa mère étant fille d'un riche marchand et son père un propriétaire terrien vivant de l'apiculture.",
+      "Selon la tradition, après trois années passées à se documenter en Asie Mineure et en Grèce pour achever l'Énéide, il meurt d'une insolation contractée près de Mégare peu après son retour à Brindes ; Auguste s'oppose à la destruction de l'œuvre inachevée que Virgile avait demandée à ses exécuteurs testamentaires."
+    ],
+    "facts_en": [
+      "Biographical information comes chiefly from ancient \"lives\" prefixed to commentaries by Probus, Donatus and Servius, themselves believed to derive from a now-lost work by Suetonius — details considered \"somewhat problematic.\"",
+      "He is said to have been tall and stout, with a swarthy complexion and a rustic appearance, and schoolmates considered him shy and reserved.",
+      "He rapidly replaced Ennius and other earlier authors as a standard school text and remained the most popular Latin poet through late antiquity, the Middle Ages, and early modernity, appearing as Dante's guide through Hell and Purgatory in the Divine Comedy."
+    ]
+  },
+  {
+    "name": "Jules Verne",
+    "description": "Écrivain français, précurseur du roman d'aventures scientifiques (XIXe s.).",
+    "bio_fr": "Jules Verne, né le 8 février 1828 à Nantes et mort le 24 mars 1905 à Amiens, est un écrivain français dont l'œuvre est, pour la plus grande partie, constituée de romans d'aventures évoquant les progrès scientifiques du XIXe siècle.",
+    "bio_en": "Jules Gabriel Verne was a French novelist, poet, and playwright.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg/330px-F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg",
+    "facts_fr": [
+      "Après avoir d'abord écrit des pièces de théâtre, il ne rencontre le succès qu'en 1863 avec son premier roman, Cinq Semaines en ballon, publié chez Pierre-Jules Hetzel.",
+      "À partir des Aventures du capitaine Hatteras, ses romans s'inscrivent dans le cycle des Voyages extraordinaires, qui comptent 62 romans et 18 nouvelles.",
+      "Selon l'Index Translationum, avec un total de 4 751 traductions, il est le deuxième auteur le plus traduit au monde après Agatha Christie et devant Shakespeare."
+    ],
+    "facts_en": [
+      "His collaboration with publisher Pierre-Jules Hetzel led to the Voyages extraordinaires series, including Journey to the Center of the Earth (1864), Twenty Thousand Leagues Under the Seas (1870), and Around the World in Eighty Days (1872).",
+      "He has sometimes been called the \"father of science fiction,\" a title that has also been given to H. G. Wells and Hugo Gernsback.",
+      "He has been the second most-translated author in the world since 1979, ranking below Agatha Christie and above William Shakespeare."
+    ]
+  },
+  {
+    "name": "Baudelaire",
+    "description": "Poète français, auteur des Fleurs du mal (XIXe s.).",
+    "bio_fr": "Charles Baudelaire, né le 9 avril 1821 à Paris et mort dans la même ville le 31 août 1867, est un poète français.",
+    "bio_en": "Charles-Pierre Baudelaire was a French poet, essayist, translator and art critic. His poems are described as exhibiting mastery of rhythm and rhyme, containing an exoticism inherited from the Romantics, and are based on observations of real life.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%C3%89tienne_Carjat%2C_Portrait_of_Charles_Baudelaire%2C_circa_1862.jpg/330px-%C3%89tienne_Carjat%2C_Portrait_of_Charles_Baudelaire%2C_circa_1862.jpg",
+    "facts_fr": [
+      "Surnommé « Dante d'une époque déchue » par Barbey d'Aurevilly, il occupe une place considérable dans la poésie française grâce au recueil Les Fleurs du mal, façonné tout au long de sa vie, et à ses poèmes en prose réunis dans Le Spleen de Paris.",
+      "Il est aussi un important critique d'art, défendant Eugène Delacroix dans ses Salons, et contribue à théoriser le dandysme tout en défendant la musique de Richard Wagner.",
+      "Peu reconnu de son vivant, il est condamné avec son éditeur pour outrage à la morale publique après la publication des Fleurs du mal, avant d'être lu et admiré par des générations de poètes après sa mort."
+    ],
+    "facts_en": [
+      "His most famous work, Les Fleurs du mal, expresses the changing nature of beauty in the rapidly industrialising Paris caused by Haussmann's renovation of the city.",
+      "He coined the term \"modernity\" (modernité) to designate the fleeting experience of urban life, and his original style influenced a generation of poets including Paul Verlaine, Arthur Rimbaud and Stéphane Mallarmé.",
+      "At 21 he received a sizable inheritance but squandered much of it within a few years, leading his family to obtain a decree placing his property in trust."
+    ]
+  },
+  {
+    "name": "Rimbaud",
+    "description": "Poète français à l'œuvre brève et fulgurante, figure majeure de la littérature moderne (XIXe s.).",
+    "bio_fr": "Arthur Rimbaud est un poète français, né le 20 octobre 1854 à Charleville et mort le 10 novembre 1891 à Marseille. Bien que brève, son œuvre poétique est caractérisée par une prodigieuse densité thématique et stylistique, faisant de lui une des grandes figures de la littérature française.",
+    "bio_en": "Jean Nicolas Arthur Rimbaud was a French poet known for his transgressive and surreal themes and for his influence on modern literature and arts, prefiguring surrealism.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Rimbaud.PNG/330px-Rimbaud.PNG",
+    "facts_fr": [
+      "Il écrit ses premiers poèmes à 15 ans et déclare que le poète doit se faire « voyant », cherchant à décrire l'inconnu au-delà des perceptions humaines usuelles, quitte à y sacrifier son intégrité mentale ou physique.",
+      "Il entretient une aventure amoureuse tumultueuse avec le poète Paul Verlaine, qui influence profondément son œuvre.",
+      "Vers l'âge de 20 ans, il renonce subitement à la littérature et devient négociant et explorateur en Abyssinie, où sa tentative d'armer Ménélik avec l'aval du consul de France s'avère désastreuse pour lui."
+    ],
+    "facts_en": [
+      "He started writing at a very young age and excelled as a student, but abandoned his formal education in his teenage years to run away to Paris amid the Franco-Prussian War.",
+      "He had a hectic, sometimes violent romantic relationship with fellow poet Paul Verlaine that lasted nearly two years.",
+      "After completely stopping writing literature at age 20, he travelled extensively on three continents as a merchant and explorer until his death from cancer just after his thirty-seventh birthday."
+    ]
+  },
+  {
+    "name": "Thésée",
+    "description": "Héros de la mythologie grecque, célèbre pour sa victoire sur le Minotaure.",
+    "bio_fr": "Dans la mythologie grecque, Thésée est un héros de l'Attique, fils d'Égée et d'Éthra. Son nom proviendrait de la même racine que θεσμός / thesmós, « institution sacrée, loi divine »[réf. souhaitée]. La légende la plus célèbre de Thésée est son combat et sa victoire contre le Minotaure, mi-homme mi-taureau.",
+    "bio_en": "Theseus was a divine hero in Greek mythology, famous for slaying the Minotaur. The myths surrounding Theseus, his journeys, exploits, and friends, have provided material for storytelling throughout the ages.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg/330px-Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg",
+    "facts_fr": [
+      "Vénéré par les Ioniens comme héros fondateur, il est considéré par les Athéniens comme responsable, selon l'historien Thucydide, de l'unification politique de l'Attique sous la domination athénienne — le synœcisme.",
+      "Selon le géographe Pausanias, il établit après le synœcisme un culte d'Aphrodite Pandémos et de Péitho sur le versant sud de l'Acropole.",
+      "Dans Les Grenouilles, Aristophane lui attribue l'invention de plusieurs traditions athéniennes, dont celle de la consécration de la chevelure des éphèbes ; certains spécialistes soulignent aussi l'importance de la mythologie lunaire dans ses légendes."
+    ],
+    "facts_en": [
+      "He is sometimes described as the son of Aegeus, king of Athens, and sometimes as the son of the god Poseidon, and was raised by his mother Aethra.",
+      "After reaching Athens, he found Aegeus married to Medea (formerly the wife of Jason), who plotted against him.",
+      "Beyond slaying the Minotaur, he went on to unite Attica under Athenian rule (the synoikismos) and is credited with building a palace on the fortress of the Acropolis; scholars believe he may have lived during the Late Bronze Age, or possibly as a king in the 8th or 9th century BC."
+    ]
+  },
+  {
+    "name": "Persée",
+    "description": "Héros de la mythologie grecque, vainqueur de la Gorgone Méduse.",
+    "bio_fr": "Persée, roi argien, est un héros de la mythologie grecque.",
+    "bio_en": "In Greek mythology, Perseus is the legendary founder of the Perseid dynasty. He was, alongside Cadmus and Bellerophon, the greatest Greek hero and slayer of monsters before the days of Heracles. He beheaded the Gorgon Medusa for Polydectes and saved Andromeda from the sea monster Cetus. He was a demigod, being the son of Zeus and the mortal Danaë, as well as the half-brother and great-grandfather of Heracles.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Perseus_Cellini_Loggia_dei_Lanzi_2005_09_13.jpg/330px-Perseus_Cellini_Loggia_dei_Lanzi_2005_09_13.jpg",
+    "facts_fr": [
+      "Averti par un oracle que son petit-fils le tuera, son grand-père Acrisios enferme sa mère Danaé dans une tour d'airain, ce qui n'empêche pas Zeus de la séduire sous la forme d'une pluie d'or.",
+      "Enfermé dans un coffre avec sa mère et jeté à la mer, il est recueilli sur l'île de Sériphos par le pêcheur Dictys, qui l'élève comme son fils.",
+      "En lançant le disque lors de jeux funèbres organisés à Larissa, il tue accidentellement son grand-père Acrisios, qui y assistait comme spectateur."
+    ],
+    "facts_en": [
+      "To keep Danaë childless, King Acrisius imprisoned her atop a bronze tower, but Zeus came to her as a shower of gold and fathered Perseus, who is also called Chrysopatros (\"gold-fathered\").",
+      "Cast into the sea in a wooden chest, mother and child washed ashore on Seriphos, where the fisherman Dictys took them in and raised the boy to manhood.",
+      "Hermes and Athena gave Perseus winged sandals, a sword, Hades's helm of invisibility and a reflective shield, which he used to behead Medusa without being petrified by her gaze."
+    ]
+  },
+  {
+    "name": "Pandore",
+    "description": "Dans la mythologie grecque, la première femme humaine, associée à la légende de la jarre des maux.",
+    "bio_fr": "Dans la mythologie grecque, Pandore ou Pandora est la première femme humaine, façonnée dans l'argile par Héphaïstos et animée par la déesse Athéna. Elle est associée à la légende de la « boîte de Pandore » — en fait, une jarre.",
+    "bio_en": "In Greek mythology, Pandora was the first human woman, created by Hephaestus on the instructions of Zeus. As Hesiod related it, each deity cooperated by giving her unique gifts. Her other name—inscribed against her figure on a white-ground kylix in the British Museum—is Anesidora.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ca%27_Rezzonico_-_Il_vaso_di_Pandora_%28Inv.70%29_-_Pietro_della_Vecchia.jpg/330px-Ca%27_Rezzonico_-_Il_vaso_di_Pandora_%28Inv.70%29_-_Pietro_della_Vecchia.jpg",
+    "facts_fr": [
+      "Selon Hésiode dans Les Travaux et les Jours, elle fut créée sur ordre de Zeus qui voulait se venger des hommes pour le vol du feu par Prométhée ; chaque dieu lui offrit un don, dont la beauté par Aphrodite et le mensonge par Hermès.",
+      "Zeus offrit sa main à Épiméthée, frère de Prométhée, qui accepta ce présent malgré la mise en garde de son frère de ne rien recevoir de Zeus.",
+      "Cédant à la curiosité que lui avait donnée Zeus, elle ouvrit la jarre contenant tous les maux de l'humanité ; seule l'Espérance, plus lente à réagir, y resta enfermée."
+    ],
+    "facts_en": [
+      "Prometheus had warned his brother Epimetheus not to accept gifts from Zeus, but Epimetheus accepted Pandora anyway, and according to some mythographers the couple had a daughter, Pyrrha, who later survived the great deluge with Deucalion.",
+      "Hermes gave Pandora the power of speech along with \"a shameless mind and a deceitful nature,\" while Aphrodite gave her \"cruel longing and cares that weary the limbs.\"",
+      "The mistranslation of the Greek pithos (a large storage jar) as \"box\" is usually attributed to the 16th-century humanist Erasmus of Rotterdam, whose Latin rendering pyxis gave rise to the enduring phrase \"Pandora's box.\""
+    ]
+  },
+  {
+    "name": "Sisyphe",
+    "description": "Dans la mythologie grecque, fondateur mythique de Corinthe condamné à rouler éternellement un rocher.",
+    "bio_fr": "Dans la mythologie grecque, Sisyphe, fils d'Énarété et d'Éole fils d'Hellen, est le fondateur mythique de Corinthe. Certains textes de l'Antiquité le nomment « Sesephos ». Il est surtout connu pour son châtiment, consistant à pousser une pierre au sommet d'une montagne, d'où elle finit toujours par retomber.",
+    "bio_en": "In Greek mythology, Sisyphus or Sisyphos is the founder and king of Ephyra. He reveals Zeus's abduction of Aegina to the river god Asopus, thereby incurring Zeus's wrath. His subsequent cheating of death earns him eternal punishment in the underworld, once he dies of old age. The gods condemned him to push an immense boulder up a hill only for it to roll back down every time it neared the top, repeating this action for eternity. Through the classical influence on contemporary culture, tasks that are laborious, futile, and never-ending are therefore often described as Sisyphean.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Punishment_sisyph.jpg/330px-Punishment_sisyph.jpg",
+    "facts_fr": [
+      "Il est l'époux de la Pléiade Mérope, dont il a plusieurs enfants, et certains récits en font le père d'Ulysse après avoir violé Anticlée.",
+      "Il parvient à enchaîner Thanatos, le dieu de la Mort venu le chercher, si bien que plus personne ne mourait sur terre, jusqu'à ce que Zeus envoie Arès le délivrer.",
+      "Albert Camus, dans Le Mythe de Sisyphe, en fait l'ultime héros absurde et affirme qu'« il faut imaginer Sisyphe heureux »."
+    ],
+    "facts_en": [
+      "He tricked Thanatos, the god of Death sent to chain him in Tartarus, into being chained himself instead, so that no one on Earth could die until Ares intervened and freed Thanatos.",
+      "In some versions of the myth, he was the true father of Odysseus by Anticleia instead of Laërtes.",
+      "Albert Camus, in his 1942 essay The Myth of Sisyphus, saw him as personifying the absurdity of human life but concluded \"one must imagine Sisyphus happy.\""
+    ]
+  },
+  {
+    "name": "Minotaure",
+    "description": "Dans la mythologie grecque, monstre mi-homme mi-taureau enfermé dans le labyrinthe de Crète.",
+    "bio_fr": "Dans la mythologie grecque, le Minotaure est un monstre fabuleux au corps d'un homme et à tête d'un taureau ou mi-homme et mi-taureau.",
+    "bio_en": "In Greek mythology, the Minotaur, also known as Asterion or Asterius, is a mythical creature portrayed during classical antiquity with the head and tail of a bull and the body of a man or, as described by Roman poet Ovid, a being \"part man and part bull\". He dwelt at the center of the Labyrinth, which was an elaborate maze-like construction designed by the architect Daedalus and his son Icarus, upon command of King Minos of Crete. According to tradition, every nine years the people of Athens were compelled by King Minos to choose fourteen young noble citizens to be offered as sacrificial victims to the Minotaur in retribution for the death of Minos's son Androgeus. The Minotaur was eventually slain by the Athenian hero Theseus, who managed to navigate the labyrinth with the help of a thread offered to him by the King's daughter, Ariadne.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Statue_of_the_Minotaur_%28Roman_copy_after_an_original_by_Myron%29_at_the_National_Archaeological_Museum_of_Athens_on_3_April_2018.jpg/330px-Statue_of_the_Minotaur_%28Roman_copy_after_an_original_by_Myron%29_at_the_National_Archaeological_Museum_of_Athens_on_3_April_2018.jpg",
+    "facts_fr": [
+      "Né des amours adultères de Pasiphaé, épouse du roi Minos, et d'un taureau blanc envoyé par Poséidon, il est enfermé par Minos dans un labyrinthe construit par Dédale au centre de la Crète.",
+      "Minos était devenu roi grâce à Poséidon en échange du sacrifice d'un taureau tout blanc, mais il en sacrifia un autre ; vexé, le dieu rendit l'épouse de Minos amoureuse de l'animal.",
+      "Amoureuse de Thésée, Ariane lui donna une pelote de fil pour retrouver son chemin dans le labyrinthe une fois le Minotaure tué ; Thésée l'oublia aussitôt après."
+    ],
+    "facts_en": [
+      "To punish Minos for substituting a lesser sacrifice, Poseidon arranged with Aphrodite for his wife Pasiphaë to fall in love with the bull; she had Daedalus fashion a hollow wooden cow to let the bull mate with her, and bore Asterius, the Minotaur.",
+      "As the unnatural offspring of a woman and a beast, the Minotaur had no natural source of nourishment and thus devoured humans for sustenance.",
+      "Ovid's Latin account, which did not specify which half was bull and which was man, led several medieval depictions to reverse the classical configuration, showing a man's head and torso on a bull's body."
+    ]
+  },
+  {
+    "name": "Philippe Auguste",
+    "description": "Roi de France capétien, premier monarque à porter ce titre (XIIe-XIIIe s.).",
+    "bio_fr": "Philippe II dit « Auguste » né le 21 août 1165 à Paris et mort à Mantes le 14 juillet 1223, est le septième roi (1180-1223) de la dynastie des Capétiens et le premier monarque auquel est attribué le titre de roi de France. Il est le fils héritier de Louis VII et d'Adèle de Champagne.",
+    "bio_en": "Philip II, also known as Philip Augustus, was King of France from 1180 to 1223. His predecessors had been known as kings of the Franks, but from 1190 onward, Philip became the first French monarch to style himself \"King of France\". The only son of King Louis VII and his third wife, Adela of Champagne, he was originally nicknamed 'God-given' because he was a first son and born late in his father's life. Philip was given the epithet \"Augustus\" by the chronicler Rigord for having extended the crown lands of France so remarkably.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Sceau_de_Philippe_Auguste._-_Archives_Nationales_-_SC-D157.jpg/330px-Sceau_de_Philippe_Auguste._-_Archives_Nationales_-_SC-D157.jpg",
+    "facts_fr": [
+      "Le surnom d'« Auguste » lui est donné par le moine Rigord après le traité de Boves de juillet 1185, où Philippe II ajoute au domaine royal les seigneuries d'Artois, du Valois, d'Amiens et une partie du Vermandois — et aussi parce qu'il est né au mois d'août.",
+      "Son chapelain et biographe Guillaume Le Breton le nomme « Philippe le Magnanime » dans sa chronique La Philippide, rédigée entre 1214 et 1224.",
+      "Il est le premier roi à faire porter sur ses actes, sporadiquement dès 1190 puis officiellement à partir de 1204, le titre de « roi de France » (Rex Franciæ) au lieu de « roi des Francs », titre reconnu par la papauté en juillet 1205."
+    ],
+    "facts_en": [
+      "Originally nicknamed 'God-given' (Dieudonné) because he was a first son born late in his father's life, he was later given the epithet \"Augustus\" by the chronicler Rigord for having extended the crown lands of France so remarkably.",
+      "He put an end to the Angevin Empire by defeating a coalition of his rivals at the Battle of Bouvines in 1214, a victory after which the authority of the French king became unchallenged.",
+      "He built a great wall around Paris — \"the Wall of Philip II Augustus\" — reorganised the French government, and brought financial stability to his country."
+    ]
+  },
+  {
+    "name": "Mendel",
+    "description": "Moine augustin et botaniste autrichien, père fondateur de la génétique (XIXe s.).",
+    "bio_fr": "Johann Gregor Mendel, né le 20 juillet 1822 à Hynčice et mort le 6 janvier 1884 à Brno, est un moine catholique, puis abbé mitré de l'abbaye Saint-Thomas de Brno, généticien et botaniste germanophone de nationalité autrichienne, communément reconnu comme le père fondateur de la génétique. Il est à l'origine des lois de Mendel déterminant la transmission des gènes de génération en génération.",
+    "bio_en": "Gregor Johann Mendel was an Austrian biologist, meteorologist, mathematician, Augustinian friar and abbot of St. Thomas' Abbey in Brno (Brünn), Margraviate of Moravia. Mendel was born in a German-speaking family in the Silesian part of the Austrian Empire and gained posthumous recognition as the founder of the modern science of genetics. Though farmers had known for millennia that crossbreeding of animals and plants could favor certain desirable traits, Mendel's pea plant experiments conducted between 1856 and 1863 established many of the rules of heredity, now referred to as the laws of Mendelian inheritance.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gregor_Mendel_2.jpg/330px-Gregor_Mendel_2.jpg",
+    "facts_fr": [
+      "Fils unique d'une famille paysanne germanophone, il aide dès son enfance son père dans la création d'un verger amélioré par greffage, avant que des difficultés financières ne l'empêchent de poursuivre des études universitaires classiques.",
+      "Entré au noviciat de l'abbaye Saint-Thomas de Brno en 1843, il y prend le nom de Gregor et suit une formation religieuse de quatre ans incluant le grec, le latin, l'hébreu et la théologie.",
+      "À partir de 1856, il mène pendant dix ans ses expériences d'hybridation sur des pois, publiant en 1866 les résultats dans Recherches sur des hybrides végétaux, mémoire qui pose les bases théoriques de la génétique moderne."
+    ],
+    "facts_en": [
+      "He worked with seven characteristics of pea plants — including seed colour and shape, pod shape and colour, and flower position and colour — and coined the terms \"dominant\" and \"recessive\" to describe how traits were inherited.",
+      "His work was not recognized until the turn of the 20th century, more than three decades later, when Erich von Tschermak, Hugo de Vries and Carl Correns independently verified his findings in 1900.",
+      "The genes he identified as invisible \"factors\" were only fully confirmed in a long process that ended in 2025, when the last three of the seven Mendel genes were identified in the pea genome."
+    ]
+  },
+  {
+    "name": "Luther",
+    "description": "Théologien et moine augustin allemand, initiateur du protestantisme (XVe-XVIe s.).",
+    "bio_fr": "Martin Luther [maʁtɛ̃ lytɛʁ], né le 10 novembre 1483 à Eisleben (Saxe) et mort le 18 février 1546 dans la même ville, est un prêtre augustin, théologien et professeur d'université allemand. Initiateur du protestantisme et réformateur de l'Église, ses idées exercèrent une grande influence sur la Réforme protestante, qui changea le cours de la civilisation occidentale.",
+    "bio_en": "Martin Luther was a German priest, theologian, author, hymnwriter, professor, and former Augustinian friar. Luther was the seminal figure of the Protestant Reformation, and his theological beliefs form the basis of Lutheranism. He is considered one of the most influential figures in Western and Christian history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Lucas_Cranach_d.%C3%84._%28Werkst.%29_-_Portr%C3%A4t_des_Martin_Luther_%28Lutherhaus_Wittenberg%29.jpg/330px-Lucas_Cranach_d.%C3%84._%28Werkst.%29_-_Portr%C3%A4t_des_Martin_Luther_%28Lutherhaus_Wittenberg%29.jpg",
+    "facts_fr": [
+      "Scandalisé par le commerce des indulgences instauré pour financer la basilique Saint-Pierre de Rome, il publie ses 95 thèses le 31 octobre 1517 et est excommunié par la bulle Decet romanum pontificem le 3 janvier 1521.",
+      "Convoqué devant la Diète de Worms par Charles Quint, il refuse de se rétracter et est mis au ban de l'Empire ; réfugié au château de la Wartbourg, il y traduit la Bible en allemand, œuvre d'une influence culturelle majeure.",
+      "Vers la fin de sa vie, il adopte une attitude de plus en plus antisémite : en 1543, il publie Des Juifs et de leurs mensonges, où il prône de brûler les synagogues, d'abattre les maisons des Juifs et de tuer les rabbins qui enseigneraient le judaïsme — un pamphlet que le philosophe allemand Karl Jaspers définit comme « l'ensemble du programme nazi »."
+    ],
+    "facts_en": [
+      "He came to reject the Roman Catholic Church's teaching on indulgences and papal authority, authoring the Ninety-five Theses in 1517 and being excommunicated by Pope Leo X in January 1521 after refusing to renounce his writings.",
+      "Later that year the Holy Roman Emperor Charles V condemned him as an outlaw at the Diet of Worms, and his excommunication was still in effect at the time of his death in 1546.",
+      "In his later work On the Jews and Their Lies, he expressed staunchly antisemitic views, calling for the expulsion of Jews and the burning of synagogues; while he did not advocate the murder of Jews, some historians contend that his rhetoric encouraged antisemitism in Germany and the emergence, centuries later, of the Nazi Party."
+    ]
+  },
+  {
+    "name": "Antigone",
+    "description": "Princesse thébaine de la mythologie grecque, héroïne des tragédies de Sophocle.",
+    "bio_fr": "Dans la mythologie grecque, Antigone est la fille d'Œdipe, roi de Thèbes, et de la reine Jocaste. Elle est la sœur d'Étéocle, de Polynice, d'Ismène. Son oncle Créon, frère de Jocaste, est également le père de son fiancé Hémon. Elle est surtout connue par deux tragédies de l'auteur athénien Sophocle, conservées jusqu'à nos jours : Antigone, où Antigone s'oppose jusqu'à la mort à Créon qui avait interdit d'ensevelir son frère Polynice pour des raisons politiques, et Œdipe à Colone, où elle apparaît principalement en tant que guide de son père Œdipe, aveugle et exilé. Ces deux pièces ont connu une abondante postérité dans les arts pendant et après l'Antiquité, jusqu'à l'époque actuelle. Antigone, et en particulier son combat contre Créon, ont revêtu de nombreuses significations selon les œuvres.",
+    "bio_en": "In Greek mythology, Antigone was a Theban princess and a character in several ancient Greek tragedies. She was the daughter of Oedipus, king of Thebes; her mother/grandmother was either Jocasta or, in another variation of the myth, Euryganeia. She was the sister of Polynices, Eteocles, and Ismene.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lytras_nikiforos_antigone_polynices.jpeg/330px-Lytras_nikiforos_antigone_polynices.jpeg",
+    "facts_fr": [
+      "Dans l'Œdipodie, épopée aujourd'hui perdue, Antigone, Ismène, Polynice et Étéocle n'étaient pas nés d'une union incestueuse : leur mère y était Euryganée, une précédente épouse d'Œdipe.",
+      "Elle apparaît pour la première fois dans une œuvre conservée avec Les Sept contre Thèbes d'Eschyle, où elle annonce qu'elle enterrera Polynice malgré l'interdit de Créon — une scène finale que certains hellénistes jugent postérieure à Eschyle lui-même.",
+      "Chez Euripide, dont l'Antigone n'est conservée qu'en fragments, elle est surprise en train d'ensevelir son frère mais échappe à la mort et épouse tout de même Hémon, à qui elle donne un fils nommé Maion — à la différence de la version de Sophocle."
+    ],
+    "facts_en": [
+      "In the oldest version of the story, the burial of Polynices took place during Oedipus's reign in Thebes, before Oedipus married his mother Jocasta.",
+      "In Euripides's now-lost version of the play, the calamity is averted by the intercession of the god Dionysus, followed by the marriage of Antigone and Haemon.",
+      "In Hyginus's version, Creon hands Antigone to Haemon to be killed, but Haemon secretly hides her in a shepherd's hut, where she bears him a son, Maeon, later recognized by a birthmark linking him to the Spartoi lineage."
+    ]
+  },
+  {
+    "name": "Chaka Zulu",
+    "description": "Roi zoulou, fondateur du royaume zoulou (XVIIIe-XIXe s.).",
+    "bio_fr": "Chaka kaSenzangakhona, aussi appelé Chaka Zoulou ou Shaka Zulu, né en 1787 et mort en 1828, est un roi zoulou. Il est le fondateur du royaume zoulou.",
+    "bio_en": "Shaka kaSenzangakhona, also known as Shaka Zulu, Shaka the Zulu, and Sigidi kaSenzangakhona, was the king of the Zulu Kingdom from 1816 to 1828. One of the most influential monarchs of the Zulu, he ordered wide-reaching reforms that reorganized the military into a formidable force.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/KingShaka.jpg/330px-KingShaka.jpg",
+    "facts_fr": [
+      "Selon la légende, il serait né d'une union illégitime entre Nandi, princesse Langeni, et Senzangakhona, chef du clan zoulou, et aurait été rejeté et humilié comme un bâtard par son père.",
+      "Devenu guerrier dans l'armée de Dingiswayo, souverain des Bathwetwa, il en devient le porte-parole et le bras droit ; à la mort de leur père, c'est d'abord son demi-frère Sigujana qui succède conformément à la volonté paternelle, avant que Dingiswayo n'appuie Chaka et que Sigujana ne trouve la mort au combat.",
+      "Il réorganise l'armée zouloue en adoptant la stratégie d'attaque « en tête de buffle » et la tactique de la terre brûlée ; en 1820, quatre ans après le début de sa première campagne, il avait conquis un territoire grand comme le tiers de la France."
+    ],
+    "facts_en": [
+      "Born in July 1787 in Mthonjaneni, he was the son of Zulu King Senzangakhona kaJama but was spurned as an illegitimate son, spending part of his childhood in his mother's settlements before being initiated into a fighting regiment under Inkosi Dingiswayo.",
+      "He refined the ibutho military system with the Mthethwa Paramountcy's support, forging alliances with smaller neighbours to counter Ndwandwe raids, and preferred applying pressure diplomatically with occasional strategic assassination, although he also engaged in several battles.",
+      "His reign coincided with the start of the Mfecane/Difaqane, a period of devastating warfare that depopulated southern Africa between 1815 and 1840; his role in it remains controversial, and in 1828 he was assassinated by his half-brothers King Dingane and Prince Mhlangana and Mbopha kaSithayi."
+    ]
   }
 ]
