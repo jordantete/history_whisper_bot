@@ -248,6 +248,59 @@ OVERRIDES = {
     "Sisyphe": {"fr": "Sisyphe", "en": "Sisyphus"},
     "Minotaure": {"fr": "Minotaure", "en": "Minotaur"},
     "Antigone": {"fr": "Antigone (mythologie)", "en": "Antigone"},  # titre nu = homonymie illustrée
+    # ---- Lot 2026-08 (60 figures) ----
+    # femmes
+    "Hypatie": {"fr": "Hypatie d'Alexandrie", "en": "Hypatia"},
+    "Théodora": {"fr": "Théodora (femme de Justinien)", "en": "Theodora (wife of Justinian I)"},
+    "Anna Nzinga": {"fr": "Anna Nzinga", "en": "Nzinga of Ndongo and Matamba"},
+    # Rome
+    "Marc Aurèle": {"fr": "Marc Aurèle", "en": "Marcus Aurelius"},
+    "Hadrien": {"fr": "Hadrien", "en": "Hadrian"},
+    "Constantin": {"fr": "Constantin Ier (empereur romain)", "en": "Constantine the Great"},
+    "Justinien": {"fr": "Justinien Ier", "en": "Justinian I"},
+    "Sénèque": {"fr": "Sénèque", "en": "Seneca the Younger"},
+    "Marc Antoine": {"fr": "Marc Antoine", "en": "Mark Antony"},
+    "Pompée": {"fr": "Pompée", "en": "Pompey"},
+    "Tacite": {"fr": "Tacite", "en": "Tacitus"},
+    # sciences
+    "Leibniz": {"fr": "Gottfried Wilhelm Leibniz", "en": "Gottfried Wilhelm Leibniz"},
+    "Euler": {"fr": "Leonhard Euler", "en": "Leonhard Euler"},
+    "Maxwell": {"fr": "James Clerk Maxwell", "en": "James Clerk Maxwell"},
+    "Gauss": {"fr": "Carl Friedrich Gauss", "en": "Carl Friedrich Gauss"},
+    "Heisenberg": {"fr": "Werner Heisenberg", "en": "Werner Heisenberg"},
+    "Lamarck": {"fr": "Jean-Baptiste de Lamarck", "en": "Jean-Baptiste Lamarck"},
+    "Linné": {"fr": "Carl von Linné", "en": "Carl Linnaeus"},
+    "Humboldt": {"fr": "Alexander von Humboldt", "en": "Alexander von Humboldt"},
+    "Von Neumann": {"fr": "John von Neumann", "en": "John von Neumann"},
+    # lettres
+    "Montaigne": {"fr": "Michel de Montaigne", "en": "Michel de Montaigne"},
+    "Rabelais": {"fr": "François Rabelais", "en": "François Rabelais"},
+    "Proust": {"fr": "Marcel Proust", "en": "Marcel Proust"},
+    "Racine": {"fr": "Jean Racine", "en": "Jean Racine"},
+    "La Fontaine": {"fr": "Jean de La Fontaine", "en": "Jean de La Fontaine"},
+    "Corneille": {"fr": "Pierre Corneille", "en": "Pierre Corneille"},
+    "Maupassant": {"fr": "Guy de Maupassant", "en": "Guy de Maupassant"},
+    "Kafka": {"fr": "Franz Kafka", "en": "Franz Kafka"},
+    "Verlaine": {"fr": "Paul Verlaine", "en": "Paul Verlaine"},
+    # art & musique
+    "Titien": {"fr": "Titien", "en": "Titian"},
+    "Rubens": {"fr": "Pierre Paul Rubens", "en": "Peter Paul Rubens"},
+    "Le Bernin": {"fr": "Le Bernin", "en": "Gian Lorenzo Bernini"},
+    "Delacroix": {"fr": "Eugène Delacroix", "en": "Eugène Delacroix"},
+    "Cézanne": {"fr": "Paul Cézanne", "en": "Paul Cézanne"},
+    "Haydn": {"fr": "Joseph Haydn", "en": "Joseph Haydn"},
+    "Schubert": {"fr": "Franz Schubert", "en": "Franz Schubert"},
+    "Debussy": {"fr": "Claude Debussy", "en": "Claude Debussy"},
+    # philosophie
+    "Épicure": {"fr": "Épicure", "en": "Epicurus"},
+    "Diogène": {"fr": "Diogène de Sinope", "en": "Diogenes"},
+    "Épictète": {"fr": "Épictète", "en": "Epictetus"},
+    "Schopenhauer": {"fr": "Arthur Schopenhauer", "en": "Arthur Schopenhauer"},
+    "Kierkegaard": {"fr": "Søren Kierkegaard", "en": "Søren Kierkegaard"},
+    "Wittgenstein": {"fr": "Ludwig Wittgenstein", "en": "Ludwig Wittgenstein"},
+    "Maïmonide": {"fr": "Moïse Maïmonide", "en": "Maimonides"},
+    "Sartre": {"fr": "Jean-Paul Sartre", "en": "Jean-Paul Sartre"},
+    "Camus": {"fr": "Albert Camus", "en": "Albert Camus"},
 }
 
 

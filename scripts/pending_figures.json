@@ -1,3 +1,544 @@
 {
-  "figures": []
+  "figures": [
+    {
+      "name": "Sappho",
+      "description": "",
+      "bio_fr": "Sappho ou encore Sapho, Psaphô, Psapha est une poétesse grecque de l’Antiquité qui a vécu aux VIIe et VIe siècles av. J.-C., à Mytilène sur l’île de Lesbos.",
+      "bio_en": "Sappho was an ancient Greek poet from Eresos or Mytilene on the island of Lesbos. She is known for her lyric poetry, written to be sung while accompanied by music. In ancient times, she was widely regarded as one of the greatest lyric poets and was given names such as the \"Tenth Muse\" and \"The Poetess\". Most of Sappho's poetry is now lost, and what is not has mostly survived in fragmentary form; only the Ode to Aphrodite is certainly complete. As well as lyric poetry, ancient commentators claimed that Sappho wrote elegiac and iambic poetry. Three epigrams formerly attributed to Sappho have survived, but these are actually Hellenistic imitations of Sappho's style.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/The_so-called_Sappho_portrait%2C_Pompeii_%28AD_45-79%29.jpg/330px-The_so-called_Sappho_portrait%2C_Pompeii_%28AD_45-79%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hypatie",
+      "description": "",
+      "bio_fr": "Hypatie, née entre 355 et 370 selon les sources et assassinée par des chrétiens fanatiques en 415, est une philosophe néoplatonicienne, astronome et mathématicienne grecque d'Alexandrie. Femme de lettres et de sciences, elle est à la tête de l'école néoplatonicienne d'Alexandrie, au sein de laquelle elle enseigne la philosophie et l'astronomie. C'est la première mathématicienne dont la vie soit bien documentée.",
+      "bio_en": "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province of Egypt and a major city of the Roman Empire. In Alexandria, Hypatia was a prominent thinker who taught subjects including philosophy and astronomy, and in her lifetime was renowned as a great teacher and a wise counselor. Not the only fourth century Alexandrian female mathematician, Hypatia was preceded by Pandrosion. However, Hypatia is the first female mathematician whose life is reasonably well recorded. She wrote a commentary on Diophantus's thirteen-volume Arithmetica, which may survive in part, having been interpolated into Diophantus's original text, and another commentary on Apollonius of Perga's treatise on conic sections, which has not survived. Many modern scholars also believe that Hypatia may have edited the surviving text of Ptolemy's Almagest, based on the title of her father Theon's commentary on Book III of the Almagest.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Alfred_Seifert_Hypatia.jpg/330px-Alfred_Seifert_Hypatia.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Théodora",
+      "description": "",
+      "bio_fr": "Théodora est une impératrice byzantine née vers 500 à Chypre ou en Paphlagonie et morte en 548 à Constantinople.",
+      "bio_en": "Theodora was the wife of emperor Justinian I and Eastern Roman empress from 527 until her death. Theodora was one of Justinian's chief political advisers. She is recognized as a saint in the Eastern Orthodox and Oriental Orthodox Churches, and commemorated on 14 November.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Theodora_mosaic_-_Basilica_San_Vitale_%28Ravenna%29.jpg/330px-Theodora_mosaic_-_Basilica_San_Vitale_%28Ravenna%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Christine de Pizan",
+      "description": "",
+      "bio_fr": "Christine de Pizan ou de Pisan, née en 1364 à Venise et morte vers 1430 au monastère de Poissy, est une philosophe, chroniqueuse et poétesse française de naissance vénitienne, notamment célèbre pour ses écrits rédigés en français.",
+      "bio_en": "Christine de Pizan or Pisan, was an Italian-born French court writer for King Charles VI of France and several French royal dukes, in both prose and poetry.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Christine_de_Pisan_-_cathedra.jpg/330px-Christine_de_Pisan_-_cathedra.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Anna Nzinga",
+      "description": "",
+      "bio_fr": "Anna, Anne, Ana de Sousa Nzinga Mbande ou Njinga ou Mbandi, connue également sous le nom de Nzinga du Ndongo et du Matamba, née vers 1583 et morte le 17 décembre 1663, est une reine du royaume de Ndongo et du royaume de Matamba dans l'actuel Angola.",
+      "bio_en": "Nzinga or Njinga Ana de Sousa Mbande was a southwest African paramount ruler who ruled as queen of the Ambundu Kingdoms of Ndongo (1624–1663) and Matamba (1631–1663), located in present-day northern Angola. Born into the ruling family of Ndongo, her grandfather Ngola Kilombo Kia Kasenda was the king of Ndongo, succeeded by her father.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ann_Zingha.jpg/330px-Ann_Zingha.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Jane Austen",
+      "description": "",
+      "bio_fr": "Jane Austen [ˈd͡ʒeɪn ˈɒstɪn], née le 16 décembre 1775 à Steventon dans le Hampshire en Angleterre et morte le 18 juillet 1817 à Winchester dans le même comté, est une romancière et femme de lettres anglaise.",
+      "bio_en": "Jane Austen was an English writer known primarily for her six novels, which implicitly interpret, critique, and comment on the English landed gentry at the end of the 18th century.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Jane_Austen%2C_from_A_Memoir_of_Jane_Austen_%281870%29.jpg/330px-Jane_Austen%2C_from_A_Memoir_of_Jane_Austen_%281870%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Emmeline Pankhurst",
+      "description": "",
+      "bio_fr": "Emmeline Pankhurst, née Emmeline Goulden à Moss Side, Manchester le 15 juillet 1858 et morte le 14 juin 1928, est une femme politique britannique féministe.",
+      "bio_en": "Emmeline Pankhurst was a British political activist who organised the British suffragette movement and helped women to win the right to vote in Great Britain and Ireland in 1918, partially due to her role in the White Feather Campaign. In 1999, Time named her as one of the 100 Most Important People of the 20th Century, stating that \"she shaped an idea of objects for our time\" and \"shook society into a new pattern from which there could be no going back\". She was widely criticised for her militant tactics, and historians disagree about their effectiveness, but her work is recognised as a crucial element in achieving women's suffrage in the United Kingdom.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Emmeline_Pankhurst%2C_seated_%281913%29.jpg/330px-Emmeline_Pankhurst%2C_seated_%281913%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Rosa Luxemburg",
+      "description": "",
+      "bio_fr": "Rosa Luxemburg, en polonais Róża Luksemburg, parfois retranscrit, à tort, en français, Rosa Luxembourg, née Rozalia Luksenburg le 5 mars 1871 à Zamość en Pologne et morte assassinée le 15 janvier 1919 à Berlin en Allemagne, est une militante socialiste et communiste, et une théoricienne marxiste.",
+      "bio_en": "Rosa Luxemburg was a Polish and naturalised-German Marxist theorist and revolutionary. She was a leading theorist of the Social Democratic Party of Germany (SPD) and later co-founded the anti-war Spartacus League, which evolved into the Communist Party of Germany (KPD). An influential member of the international socialist movement, she is remembered for her writings on imperialism and revolution, and as a champion of socialist democracy.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bundesarchiv_Bild_183-14077-006%2C_Rosa_Luxemburg.jpg/330px-Bundesarchiv_Bild_183-14077-006%2C_Rosa_Luxemburg.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Emmy Noether",
+      "description": "",
+      "bio_fr": "Amalie Emmy Noether est une mathématicienne allemande spécialiste d'algèbre abstraite et de physique théorique. Considérée par Albert Einstein comme « le génie mathématique créatif le plus considérable produit depuis que les femmes ont eu accès aux études supérieures », elle a révolutionné les théories des anneaux, des corps et des algèbres. En physique, le théorème de Noether explique le lien fondamental entre la symétrie et les lois de conservation et est considéré comme aussi important que la théorie de la relativité.",
+      "bio_en": "Amalie Emmy Noether was a German mathematician who made many important contributions to abstract algebra. She also proved Noether's first and second theorems, which are fundamental in mathematical physics. Noether was described by Pavel Alexandrov, Albert Einstein, Jean Dieudonné, Hermann Weyl, and Norbert Wiener as the most important woman in the history of mathematics. As one of the leading mathematicians of her time, she developed theories of rings, fields, and algebras. In physics, Noether's theorem explains the connection between symmetry and conservation laws.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Noether.jpg/330px-Noether.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Frida Kahlo",
+      "description": "",
+      "bio_fr": "Frida Kahlo est une artiste peintre mexicaine, née le 6 juillet 1907 à Coyoacán (Mexico) et morte au même endroit le 13 juillet 1954.",
+      "bio_en": "Magdalena Carmen Frida Kahlo y Calderón was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class, and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist. She is also known for painting about her experience of chronic pain. Her 1940 self-portrait titled The Dream holds the record for the most expensive work by a female artist ever auctioned, at $54.7 million.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/330px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Marc Aurèle",
+      "description": "",
+      "bio_fr": "Marc Aurèle, né le 26 avril 121 à Rome et mort le 17 mars 180 à Sirmium ou à Vindobona, est un empereur et philosophe romain de la dynastie des Antonins, consul en 140, 145 et 161, régnant de 161 à 180.",
+      "bio_en": "Marcus Aurelius Antoninus was Roman emperor from 161 to 180 and a Stoic philosopher. He was a member of the Nerva–Antonine dynasty, the last of the rulers later known as the Five Good Emperors and the last emperor of the Pax Romana, an age of relative peace, calm, and stability for the Roman Empire lasting from 27 BC to 180 AD. He served as Roman consul in 140, 145, and 161.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/MSR-ra-61-b-1-DM_%28cropped%29.jpg/330px-MSR-ra-61-b-1-DM_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Trajan",
+      "description": "",
+      "bio_fr": "Trajan, né sous le nom de Marcus Ulpius Traianus le 18 septembre 53 à Italica, en Bétique à dix kilomètres de l'actuelle Séville, et mort le 8 ou 9 août 117 à Selinus, en Cilicie, est empereur romain de fin janvier 98 à août 117. À sa mort, il porte le nom et les surnoms d'Imperator Caesar Divi Nervae Filius Nerva Traianus Optimus Augustus Germanicus Dacicus Parthicus.",
+      "bio_en": "Trajan was a Roman emperor from AD 98 to 117, remembered as the second of the Five Good Emperors of the Nerva–Antonine dynasty. He was a philanthropic ruler and a successful soldier-emperor who presided over one of the greatest military expansions in Roman history, during which, by the time of his death, the Roman Empire reached its maximum territorial extent. He was given the title of optimus princeps by the Roman Senate.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Traianus_Glyptothek_Munich_72.jpg/330px-Traianus_Glyptothek_Munich_72.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hadrien",
+      "description": "",
+      "bio_fr": "Hadrien, né Publius Aelius Hadrianus le 24 janvier 76 à Italica et mort le 10 juillet 138 à Baïes, est un empereur romain de la dynastie des Antonins. Il succède à Trajan en 117 et règne jusqu'à sa mort en 138.",
+      "bio_en": "Hadrian was Roman emperor from 117 to 138. His form of address as Roman emperor was Imperator Caesar Traianus Hadrianus Augustus. Hadrian was born in Italica, in the present-day Andalusian province of Seville in southern Spain, an Italic settlement in Hispania Baetica; his gens Aelia came from the town of Hadria in central Italy. He was a member of the Nerva–Antonine dynasty.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%28Venice%29_Ancient_Roman_busts_in_the_Museo_archeologico_nazionale_-_Colossal_head_of_Hadrian.jpg/330px-%28Venice%29_Ancient_Roman_busts_in_the_Museo_archeologico_nazionale_-_Colossal_head_of_Hadrian.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Constantin",
+      "description": "",
+      "bio_fr": "Constantin Ier, né le 27 février 272 à Naissus en Mésie supérieure et mort le 22 mai 337 près de Nicomédie, dans la Province Romaine de Bithynie et Pont, est un empereur romain majeur du IVe siècle.",
+      "bio_en": "Constantine I, also known as Constantine the Great, was Roman emperor from AD 306 to 337 and the first Roman emperor to convert to Christianity. He played a pivotal role in elevating the status of Christianity in the Roman Empire, the Edict of Milan decriminalising Christian practice and ceasing Christian persecution. This was a turning point in the Christianisation of the Roman Empire. He founded the city of Constantinople and made it the capital of the Empire, which it remained for over a millennium.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Head_Constantine_Musei_Capitolini_MC1072.jpg/330px-Head_Constantine_Musei_Capitolini_MC1072.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Justinien",
+      "description": "",
+      "bio_fr": "Justinien Ier ou Justinien le Grand, né vers 482 à Tauresium, près de Justiniana Prima en Illyrie, et mort le 15 novembre 565 à Constantinople, est un empereur romain d'Orient ayant régné de 527 jusqu'à sa mort. Il est l'une des principales figures de l'Antiquité tardive. Que ce soit sur le plan du régime législatif, de l'expansion des frontières de l'Empire ou de la politique religieuse, il a laissé une œuvre considérable.",
+      "bio_en": "Justinian I, also known as Justinian the Great, was Roman emperor from 527 to 565. His reign was marked by the ambitious but only partly realized renovatio imperii. This ambition was expressed by the partial recovery of the territories of the defunct Western Roman Empire.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mosaic_of_Justinianus_I_-_Basilica_San_Vitale_%28Ravenna%29.jpg/330px-Mosaic_of_Justinianus_I_-_Basilica_San_Vitale_%28Ravenna%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Spartacus",
+      "description": "",
+      "bio_fr": "Spartacus, en grec ancien : Σπάρτακος, en latin : Spartacus, est un gladiateur d'origine thrace, qui, avec les esclaves gaulois Crixus, Gannicus, Castus et Œnomaüs, est à l'origine de la troisième guerre servile, le plus important soulèvement d'esclaves contre la République romaine, entre 73 et 71 av. J.-C.",
+      "bio_en": "Spartacus was a Thracian gladiator who was one of the escaped slave leaders in the Third Servile War, a major slave uprising against the Roman Republic.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Tod_des_Spartacus_by_Hermann_Vogel.jpg/330px-Tod_des_Spartacus_by_Hermann_Vogel.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Sénèque",
+      "description": "",
+      "bio_fr": "Sénèque, parfois nommé Sénèque le Jeune, Sénèque le Philosophe ou Sénèque le Tragique, né vers l'an 4 av. J.-C. à Corduba et mort le 12 avril 65 à Rome, est un homme d'État romain, un philosophe et un dramaturge.",
+      "bio_en": "Lucius Annaeus Seneca the Younger, usually known mononymously as Seneca, was a Stoic philosopher of Ancient Rome, a statesman, a dramatist, and in one work, a satirist, from the post-Augustan age of Latin literature.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg/330px-Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Marc Antoine",
+      "description": "",
+      "bio_fr": "Marc Antoine, en latin Marcus Antonius (M•ANTONIVS•M•F•M•N), né le 14 janvier 83 av. J.-C. à Rome et mort le 1er août 30 av. J.-C. à Alexandrie (Égypte), est un homme politique et militaire romain.",
+      "bio_en": "Marcus Antonius, commonly known in English as Mark Antony, was a Roman politician and general who played a critical role in the transformation of the Roman Republic from a constitutional republic into the autocratic Roman Empire.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Marcus_Antonius_marble_bust_in_the_Vatican_Museums.jpg/330px-Marcus_Antonius_marble_bust_in_the_Vatican_Museums.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Pompée",
+      "description": "",
+      "bio_fr": "Pompée dit « le Grand », né le 29 septembre 106 av. J.-C. dans le Picénum et mort le 28 septembre 48 av. J.-C. à Péluse, en Égypte ptolémaïque, est un militaire et homme d'État romain.",
+      "bio_en": "Gnaeus Pompeius Magnus, known in English as Pompey or Pompey the Great, was a Roman general and statesman who was prominent in the final decades of the Roman Republic. As a young man, he was a partisan and protégé of the dictator Sulla, after whose death he achieved significant military and political success.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pompey_the_Great.jpg/330px-Pompey_the_Great.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Tacite",
+      "description": "",
+      "bio_fr": "Tacite, en latin Publius Cornelius Tacitus Ca(ecina Paetus), né en 58 et mort vers 120 ap. J.-C, mène comme sénateur romain une carrière dans la haute administration impériale. Il est renommé comme historien, grâce à ses ouvrages les Annales et les Histoires, chronique de la période des quatre empereurs julio-claudiens après Auguste.",
+      "bio_en": "Publius Cornelius Tacitus, known simply as Tacitus, was a Roman historian and politician. He is widely regarded as one of the greatest Roman historians by modern scholars.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Tacitus%2C_Cornelius_%2850_-_116%29.jpg/330px-Tacitus%2C_Cornelius_%2850_-_116%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Leibniz",
+      "description": "",
+      "bio_fr": "Gottfried Wilhelm Leibniz, parfois francisé en Godefroid-Guillaume Leibniz, né à Leipzig le 1er juillet 1646 et mort à Hanovre le 14 novembre 1716, est un philosophe, scientifique, mathématicien, logicien, diplomate, juriste, historien, bibliothécaire et philologue allemand. Esprit polymathe, personnalité importante de la période Frühaufklärung, il occupe une place primordiale dans l'histoire de la philosophie en Occident et l'histoire des sciences et est parfois considéré comme le dernier « génie universel ».",
+      "bio_en": "Gottfried Wilhelm Leibniz was a German polymath active as a mathematician, philosopher, scientist, and diplomat who is credited, alongside Isaac Newton, with the creation of calculus in addition to many other branches of mathematics, such as binary arithmetic and statistics. Leibniz has been called the \"last universal genius\" due to his vast expertise across fields, which became a rarity after his lifetime with the coming of the Industrial Revolution and the spread of specialized labour. He is a prominent figure in both the history of philosophy and the history of mathematics. He wrote works on philosophy, theology, ethics, politics, law, history, philology, games, music, economics and other studies. Leibniz also made major contributions to physics and technology, and anticipated notions that surfaced much later in probability theory, biology, medicine, geology, psychology, linguistics and computer science.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Euler",
+      "description": "",
+      "bio_fr": "Leonhard Euler, né le 15 avril 1707 à Bâle (Suisse) et mort le 7 septembre 1783 à Saint-Pétersbourg, est un mathématicien et physicien suisse, qui passa la plus grande partie de sa vie dans l'Empire russe et en Allemagne. Il était notamment membre de l'Académie royale des sciences de Prusse à Berlin.",
+      "bio_en": "Leonhard Euler was a Swiss polymath who was active as a mathematician, physicist, astronomer, logician, geographer, music theorist and engineer. He founded the studies of graph theory and topology and made influential discoveries in many other branches of mathematics, such as analytic number theory, complex analysis, and infinitesimal calculus. He also introduced much of modern mathematical terminology and notation, including the notion of a mathematical function. He is known for his work in mechanics, fluid dynamics, optics, astronomy, and music theory. Euler has been called a \"universal genius\" who \"was fully equipped with almost unlimited powers of imagination, intellectual gifts and extraordinary memory\". He spent most of his adult life in Saint Petersburg, Russia, and in Berlin, then the capital of Prussia.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Leonhard_Euler_2.jpg/330px-Leonhard_Euler_2.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Maxwell",
+      "description": "",
+      "bio_fr": "James Clerk Maxwell, né le 13 juin 1831 à Édimbourg et mort le 5 novembre 1879 à Cambridge, est un physicien et mathématicien écossais. Il est principalement connu pour avoir unifié en un seul ensemble d'équations, les équations de Maxwell, l'électricité, le magnétisme et l'induction, en incluant une importante modification du théorème d'Ampère. Ce fut à l'époque le modèle le plus unifié de l'électromagnétisme. Il est également célèbre pour avoir interprété, dans un article scientifique, la lumière comme étant un phénomène électromagnétique en s'appuyant sur les travaux de Michael Faraday. Il a notamment démontré que les champs électriques et magnétiques se propagent dans l'espace sous la forme d'une onde et à la vitesse de la lumière.",
+      "bio_en": "James Clerk Maxwell was a Scottish physicist and mathematician who was responsible for the classical theory of electromagnetic radiation, which was the first theory to describe electricity, magnetism and light as different manifestations of the same phenomenon. Maxwell's equations for electromagnetism achieved the second great unification in physics, where the first one had been realised by Isaac Newton. Maxwell was also key in the creation of statistical mechanics.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/James-Clerk-Maxwell-1831-1879.jpg/330px-James-Clerk-Maxwell-1831-1879.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Gauss",
+      "description": "",
+      "bio_fr": "Johann Carl Friedrich Gauß, né le 30 avril 1777 à Brunswick et mort le 23 février 1855 à Göttingen, est un mathématicien, astronome et physicien allemand. Il a apporté de très importantes contributions à ces trois domaines. Surnommé « le prince des mathématiciens », il est considéré comme l'un des plus grands mathématiciens de tous les temps.",
+      "bio_en": "Johann Carl Friedrich Gauss was a German mathematician, astronomer, geodesist, and physicist, who contributed to many fields in mathematics and science. His mathematical contributions spanned the branches of number theory, algebra, analysis, geometry, statistics, and probability. Gauss was director of the Göttingen Observatory in Germany and professor of astronomy from 1807 until his death in 1855.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Carl_Friedrich_Gauss.jpg/330px-Carl_Friedrich_Gauss.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Niels Bohr",
+      "description": "",
+      "bio_fr": "Niels Henrik David Bohr est un physicien danois. Il est surtout connu pour son apport à l'édification de la mécanique quantique, pour lequel il a reçu de nombreux honneurs. Il est notamment lauréat du prix Nobel de physique de 1922.",
+      "bio_en": "Niels Henrik David Bohr was a Danish theoretical physicist who made foundational contributions to understanding atomic structure and quantum theory, for which he received the Nobel Prize in Physics in 1922. He was also a philosopher and a promoter of scientific research.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Niels_Bohr.jpg/330px-Niels_Bohr.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Heisenberg",
+      "description": "",
+      "bio_fr": "Werner Heisenberg, né le 5 décembre 1901 à Wurtzbourg et mort le 1er février 1976 à Munich, est un physicien allemand qui est l'un des fondateurs de la mécanique quantique, notamment en mettant en évidence le principe d'incertitude et en développant la formulation probabiliste de la fonction d'onde.",
+      "bio_en": "Werner Karl Heisenberg was a German theoretical physicist, one of the main pioneers of the theory of quantum mechanics and a principal scientist in the German nuclear program during World War II.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg/330px-Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Lamarck",
+      "description": "",
+      "bio_fr": "Jean-Baptiste de Lamarck, ou Jean-Baptiste Pierre Antoine de Monet, chevalier de La Marck, est un naturaliste français, né le 1er août 1744 à Bazentin, France, et mort le 18 décembre 1829 à Paris. D'abord botaniste, il se consacre ensuite à la zoologie des insectes et des vers. Au début du XIXe siècle, il réalise la classification des invertébrés, qui regroupent environ 80 % des animaux. Il est le premier qui utilise le terme de « biologie » pour désigner la science qui étudie les êtres vivants.",
+      "bio_en": "Jean-Baptiste Pierre Antoine de Monet, chevalier de Lamarck, often known simply as Lamarck, was a French naturalist, biologist, academic, and soldier. He was an early proponent of the idea that biological evolution occurred and proceeded in accordance with natural laws, though the mechanism he suggested has been refuted at large.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jean-Baptiste_de_Lamarck.jpg/330px-Jean-Baptiste_de_Lamarck.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Linné",
+      "description": "",
+      "bio_fr": "Carl Linnæus, puis Carl von Linné après son anoblissement, est un naturaliste suédois né le 23 mai 1707 à Råshult et mort le 10 janvier 1778 à Uppsala qui a posé les bases du système moderne de la nomenclature binominale. Considérant que la connaissance scientifique nécessite de nommer les choses, il a répertorié, nommé et classé, systématiquement, l'essentiel des espèces vivantes connues à son époque, en s'appuyant sur ses observations, ainsi que sur celles de son réseau de correspondants.",
+      "bio_en": "Carl Linnaeus, also known after ennoblement in 1761 as Carl von Linné, was a Swedish biologist and physician who formalised binomial nomenclature, the modern system of naming organisms. He is known as the \"father of modern taxonomy\". Many of his writings were in Latin; his name is rendered in Latin as Carolus Linnæus and, after his 1761 ennoblement, as Carolus a Linné.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Carl_von_Linn%C3%A9.jpg/330px-Carl_von_Linn%C3%A9.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Humboldt",
+      "description": "",
+      "bio_fr": "Alexander von Humboldt, parfois aussi nommé Alexandre de Humboldt ou Friedrich Karl Wilhelm Heinrich Alexander, baron von Humboldt, est un naturaliste, géographe et explorateur prussien né le 14 septembre 1769 à Berlin et mort le 6 mai 1859 dans cette même ville.",
+      "bio_en": "Friedrich Wilhelm Heinrich Alexander von Humboldt was a German polymath, geographer, naturalist, explorer, and proponent of Romantic philosophy and science. He was the younger brother of the Prussian minister, philosopher, and linguist Wilhelm von Humboldt (1767–1835). Humboldt's quantitative work on botanical geography laid the foundation for the field of biogeography, while his advocacy of long-term systematic geophysical measurement pioneered modern geomagnetic and meteorological monitoring. Humboldt and Carl Ritter are both regarded as the founders of modern geography as they established it as an independent scientific discipline.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/AvHumboldt.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Von Neumann",
+      "description": "",
+      "bio_fr": "John von Neumann, né le 28 décembre 1903 à Budapest et mort le 8 février 1957 à Washington, est un polymathe, logicien, mathématicien et physicien américano-hongrois. Il a apporté d'importantes contributions en mécanique quantique, en analyse fonctionnelle, en logique mathématique, en logique quantique, en informatique théorique, en sciences économiques et dans beaucoup d'autres domaines des mathématiques, de la physique et de l'économie comportementale.",
+      "bio_en": "John von Neumann was a Hungarian and American mathematician, physicist, computer scientist and engineer. Von Neumann had perhaps the widest coverage of any mathematician of his time, integrating pure and applied sciences and making major contributions to many fields, including mathematics, physics, economics, computing, and statistics. He was a pioneer in building the mathematical framework of quantum physics, in the development of functional analysis, and in game theory, introducing or codifying concepts including cellular automata, the universal constructor and the digital computer. His analysis of the structure of self-replication preceded the discovery of the structure of DNA.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/JohnvonNeumann-LosAlamos.jpg/330px-JohnvonNeumann-LosAlamos.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Montaigne",
+      "description": "",
+      "bio_fr": "Michel Eyquem, seigneur de Montaigne, plus connu sous la simple dénomination de Montaigne, né le 28 février 1533 au château de Saint-Michel-de-Montaigne et mort le 13 septembre 1592 dans la même ville, est un philosophe, humaniste, écrivain érudit et moraliste français de la Renaissance.",
+      "bio_en": "Michel Eyquem, Seigneur de Montaigne, commonly known as just Michel de Montaigne, was one of the most significant writers of the French Renaissance. He is known for popularising the essay as a literary genre. His work is noted for its merging of casual anecdotes and autobiography with intellectual insight. Montaigne had a direct influence on numerous writers of Western literature; his Essais contain some of the most influential essays ever written.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Montaigne-Dumonstier.jpg/330px-Montaigne-Dumonstier.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Rabelais",
+      "description": "",
+      "bio_fr": "François Rabelais, né à la Devinière à Seuilly, près de Chinon, en 1483 ou en 1494 selon les sources, et mort à Paris le 9 avril 1553, est un écrivain français humaniste de la Renaissance.",
+      "bio_en": "François Rabelais was a French writer who has been called the first great French prose author. A humanist of the French Renaissance and Greek scholar, he attracted opposition from both Protestant theologian John Calvin and from the hierarchy of the Catholic Church. Though in his day he was best known as a physician, scholar, diplomat, and Catholic priest, later he became better known as a satirist for his depictions of the grotesque, and for his larger-than-life characters.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Francois_Rabelais_-_Portrait.jpg/330px-Francois_Rabelais_-_Portrait.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Proust",
+      "description": "",
+      "bio_fr": "Marcel Proust, né le 10 juillet 1871 à Paris et mort le 18 novembre 1922 dans la même ville, est un écrivain français, dont l'œuvre principale est la suite romanesque intitulée À la recherche du temps perdu, publiée entre 1913 et 1927.",
+      "bio_en": "Valentin Louis Georges Eugène Marcel Proust was a French novelist, literary critic, and essayist best known for his novel À la recherche du temps perdu, which was published in seven volumes between 1913 and 1927. He is considered by critics and writers to be one of the most influential authors of the twentieth century.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Otto_Wegener_Proust_vers_1895_bis.jpg/330px-Otto_Wegener_Proust_vers_1895_bis.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Racine",
+      "description": "",
+      "bio_fr": "Jean Racine, né le 22 décembre 1639 à La Ferté-Milon et mort le 21 avril 1699 à Paris, est un dramaturge et poète français.",
+      "bio_en": "Jean-Baptiste Racine was a French dramatist, one of the three great playwrights of 17th-century France, along with Molière and Corneille, as well as an important literary figure in the Western tradition and world literature. Racine was primarily a tragedian, producing such \"examples of neoclassical perfection\" as Phèdre, Andromaque, and Athalie. He did write one comedy, Les Plaideurs, and a muted tragedy, Esther, for the young.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Portrait_de_Jean_Racine_d%27apr%C3%A8s_Jean-Baptiste_Santerre.jpg/330px-Portrait_de_Jean_Racine_d%27apr%C3%A8s_Jean-Baptiste_Santerre.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "La Fontaine",
+      "description": "",
+      "bio_fr": "Jean de La Fontaine, baptisé le 8 juillet 1621 en l'église Saint-Crépin-hors-les-murs à Château-Thierry et mort le 13 avril 1695 à Paris, est un homme de lettres du Grand siècle et l'un des principaux représentants du classicisme français. Outre ses Fables et ses Contes libertins, qui ont établi sa célébrité dès les années 1660, on lui doit divers poèmes, pièces de théâtre et livrets d'opéra qui confirment son ambition de moraliste.",
+      "bio_en": "Jean de La Fontaine was a French fabulist and one of the most widely read French poets of the 17th century. He is known above all for his Fables, which provided a model for subsequent fabulists across Europe and numerous alternative versions in France, as well as in French regional languages.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jean_de_La_Fontaine.PNG/330px-Jean_de_La_Fontaine.PNG",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Corneille",
+      "description": "",
+      "bio_fr": "Pierre Corneille, aussi appelé « le Grand Corneille » ou « Corneille l'aîné », né le 6 juin 1606 à Rouen et mort le 1er octobre 1684 à Paris, est un dramaturge et poète français du XVIIe siècle.",
+      "bio_en": "Pierre Corneille was a French tragedian. He is generally considered one of the three great 17th-century French dramatists, along with Molière and Racine.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Pierre_Corneille_2.jpg/330px-Pierre_Corneille_2.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Stendhal",
+      "description": "",
+      "bio_fr": "Henri Beyle, plus connu sous le nom de plume de Stendhal, né le 23 janvier 1783 à Grenoble et mort d'apoplexie le 23 mars 1842 dans le 2e arrondissement de Paris, est un écrivain et chroniqueur français, connu en particulier pour ses romans Le Rouge et le Noir et La Chartreuse de Parme.",
+      "bio_en": "Marie-Henri Beyle, better known by his pen name Stendhal, was a French writer. Best known for the novels Le Rouge et le Noir and La Chartreuse de Parme, he is highly regarded for the acute analysis of his characters' psychology and considered one of the early and foremost practitioners of realism. A self-proclaimed egotist, the neologism for the same characteristic in his characters was \"Beylism\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Stendhal.jpg/330px-Stendhal.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Maupassant",
+      "description": "",
+      "bio_fr": "Guy de Maupassant (prononcé : /gi d mo.pa.sɑ̃/, né le 5 août 1850 au château de Miromesnil près de Tourville-sur-Arques et mort le 6 juillet 1893 dans le 16e arrondissement de Paris, est un écrivain et journaliste littéraire français.",
+      "bio_en": "Henri René Albert Guy de Maupassant was a 19th-century French author, celebrated as a master of the short story and associated with the naturalist literary school of thought, depicting human lives, destinies, and social forces in disillusioned and often pessimistic terms.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Maupassant_par_Nadar.jpg/330px-Maupassant_par_Nadar.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Kafka",
+      "description": "",
+      "bio_fr": "Franz Kafka, né le 3 juillet 1883 à Prague et mort le 3 juin 1924 à Kierling, est un écrivain tchèque de langue allemande. Il est considéré comme l'un des écrivains majeurs du XXe siècle.",
+      "bio_en": "Franz Kafka was a German-language Jewish Czech writer and novelist born in Prague, in the Austro-Hungarian Empire. Widely regarded as a major figure of 20th-century literature, his works fuse elements of realism and the fantastique, and typically feature isolated protagonists facing bizarre or surreal predicaments and incomprehensible socio-bureaucratic powers. The term Kafkaesque has entered the lexicon to describe situations like those depicted in his writings. His best-known works include the novella The Metamorphosis (1915) and the novels The Trial (1924) and The Castle (1926). He is also celebrated for his brief fables and aphorisms, which frequently incorporated comedic elements alongside the darker themes of his longer works. His work has widely influenced artists, philosophers, composers, filmmakers, literary historians, religious scholars, and cultural theorists.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/330px-Franz_Kafka%2C_1923.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Verlaine",
+      "description": "",
+      "bio_fr": "Paul Verlaine, né le 30 mars 1844 à Metz (Moselle) et mort le 8 janvier 1896 à Paris, est un écrivain et poète français.",
+      "bio_en": "Paul Marie Verlaine was a French poet, writer and critic associated with the Symbolist, Parnassianist and Decadent movements. He is considered one of the paramount exponents of the fin de siècle in French and international poetry.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Paul_Verlaine.jpeg/330px-Paul_Verlaine.jpeg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Titien",
+      "description": "",
+      "bio_fr": "Tiziano Vecellio, Tiziano Vecelli ou Tiziano da Cador, plus communément appelé Titien ou le Titien en français, né vers 1488 à Pieve di Cadore et mort le 27 août 1576 à Venise, est un peintre et graveur italien (vénitien) de l'école vénitienne, auteur d'une importante œuvre picturale. Il est considéré comme un des plus grands portraitistes de cette époque, notamment grâce à son habileté à faire ressortir les traits de caractère des personnages.",
+      "bio_en": "Tiziano Vecellio, Latinized as Titianus, hence known in English as Titian, was an Italian Renaissance painter. The most important artist of Renaissance Venetian painting, he was born in Pieve di Cadore, near Belluno.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Self-Portrait_%28by_Titian%29_%E2%80%93_Gem%C3%A4ldegalerie%2C_Berlin.jpg/330px-Self-Portrait_%28by_Titian%29_%E2%80%93_Gem%C3%A4ldegalerie%2C_Berlin.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Rubens",
+      "description": "",
+      "bio_fr": "Pierre Paul Rubens — ou Petrus Paulus Rubens, ou Peter Paul Rubens en néerlandais, et Pietro Paolo Rubens à partir de 1608 — est un peintre anversois de l'école baroque flamande, né le 28 juin 1577 à Siegen et mort le 30 mai 1640 à Anvers.",
+      "bio_en": "Sir Peter Paul Rubens was a Flemish artist and diplomat. He is considered the most influential artist of the Flemish Baroque tradition. Rubens's highly charged compositions reference erudite aspects of classical and Christian history. His unique and immensely popular Baroque style emphasised movement, colour, and sensuality, which followed the immediate, dramatic artistic style promoted in the Counter-Reformation. Rubens was a painter producing altarpieces, portraits, landscapes, and history paintings of mythological and allegorical subjects. He was also a prolific designer of cartoons for the Flemish tapestry workshops and of frontispieces for the publishers in Antwerp.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Peter_Paul_Rubens_-_Self-portrait_-_RH.S.180_-_Rubenshuis_%28after_restoration%29.jpg/330px-Peter_Paul_Rubens_-_Self-portrait_-_RH.S.180_-_Rubenshuis_%28after_restoration%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Donatello",
+      "description": "",
+      "bio_fr": "Donato di Niccolò di Betto Bardi, dit Donatello, est un sculpteur florentin.",
+      "bio_en": "Donato di Niccolò di Betto Bardi, known mononymously as Donatello, was an Italian sculptor of the Renaissance period. Born in Florence, he studied classical sculpture and used his knowledge to develop an Early Renaissance style of sculpture. He spent time in other cities, where he worked on commissions and taught others; his periods in Rome, Padua, and Siena introduced to other parts of Italy the techniques he had developed in the course of a long and productive career. His David was the first freestanding nude male sculpture since antiquity; like much of his work, it was commissioned by the Medici family.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Uffizi_Donatello.jpg/330px-Uffizi_Donatello.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Le Bernin",
+      "description": "",
+      "bio_fr": "Gian Lorenzo Bernini, dit le Bernin ou Cavalier Bernin, né le 7 décembre 1598 à Naples et mort le 28 novembre 1680 à Rome, est un sculpteur, architecte et un peintre italien du baroque. Artiste éminent, il fut surnommé le « second Michel-Ange ».",
+      "bio_en": "Gian Lorenzo Bernini was an Italian sculptor, architect, painter and city planner. Bernini's creative abilities and mastery in a range of artistic arenas define him as a uomo universale or Renaissance man. While a major figure in the world of architecture, he was more prominently the leading sculptor of his age, credited with creating the Baroque style of sculpture.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gian_Lorenzo_Bernini%2C_self-portrait%2C_c1623.jpg/330px-Gian_Lorenzo_Bernini%2C_self-portrait%2C_c1623.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Delacroix",
+      "description": "",
+      "bio_fr": "Eugène Delacroix est un peintre français né le 26 avril 1798 à Charenton-Saint-Maurice et mort le 13 août 1863 à Paris.",
+      "bio_en": "Ferdinand Victor Eugène Delacroix was a French Romantic artist who was regarded as the leader of the French Romantic school.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/F%C3%A9lix_Nadar_1820-1910_portraits_Eug%C3%A8ne_Delacroix.jpg/330px-F%C3%A9lix_Nadar_1820-1910_portraits_Eug%C3%A8ne_Delacroix.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Cézanne",
+      "description": "",
+      "bio_fr": "Paul Cézanne ou Paul Cezanne, né le 19 janvier 1839 à Aix-en-Provence et mort le 22 octobre 1906 dans la même ville, est un peintre français provençal, membre un temps du mouvement impressionniste et considéré comme le précurseur du post-impressionnisme et du cubisme.",
+      "bio_en": "Paul Cézanne was a French Post-Impressionist painter whose work introduced new modes of representation, influenced avant-garde artistic movements of the early 20th century and formed the bridge between late 19th-century Impressionism and early 20th-century Cubism.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Paul_C%C3%A9zanne_O.I..jpg/330px-Paul_C%C3%A9zanne_O.I..jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hokusai",
+      "description": "",
+      "bio_fr": "Katsushika Hokusai (葛飾 北斎) est un peintre, dessinateur et graveur japonais du XVIIIe siècle, spécialiste de l’ukiyo-e, ainsi que l'auteur d'écrits populaires, surtout connu sous le nom de Hokusai (北斎), ou son surnom de Gakyōjin, littéralement « Vieux Fou de dessin ».",
+      "bio_en": "Katsushika Hokusai was a Japanese ukiyo-e artist of the Edo period, active as a painter and printmaker. His woodblock print series Thirty-Six Views of Mount Fuji includes the iconic print The Great Wave off Kanagawa. Hokusai was instrumental in developing ukiyo-e from a style of portraiture largely focused on courtesans and actors into a much broader style of art that focused on landscapes, plants, and animals. His works had a significant influence on Vincent van Gogh and Claude Monet during the wave of Japonisme that spread across Europe in the late 19th century.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Hokusai_portrait.jpg/330px-Hokusai_portrait.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Haydn",
+      "description": "",
+      "bio_fr": "Franz Joseph Haydn — il n'utilisait jamais son premier prénom —, né le 31 mars 1732 à Rohrau sur la Leitha en Basse-Autriche et mort le 31 mai 1809 à Vienne, est un compositeur autrichien. Il incarne le classicisme viennois au même titre que Mozart et Beethoven, les trois compositeurs étant regroupés par la postérité sous le vocable de « trinité classique viennoise ».",
+      "bio_en": "Franz Joseph Haydn was an Austrian composer of the Classical period. He was pivotal in the evolution of chamber music forms like the string quartet and piano trio. His contributions to musical form have led him to be called \"Father of the Symphony\", \"Father of the String quartet\" and \"Father of Sonata form\".",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Joseph_Haydn.jpg/330px-Joseph_Haydn.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Schubert",
+      "description": "",
+      "bio_fr": "Franz Schubert, né le 31 janvier 1797 à Lichtental et mort le 19 novembre 1828 à Vienne, est un compositeur autrichien.",
+      "bio_en": "Franz Peter Schubert was an Austrian composer of the late Classical and early Romantic eras. He was immensely prolific despite living a short life, leaving behind a vast oeuvre of more than 1,000 compositions, including over 600 Lieder and other vocal works, seven complete symphonies, sacred music, operas, incidental music, and a large body of piano and chamber music. Among these are the songs \"Gretchen am Spinnrade\", \"Erlkönig\" and \"Ave Maria\"; the Trout Quintet; the Symphony No. 8 in B minor (Unfinished); the Symphony No. 9 in C major ; the String Quartet No. 14 in D minor ; the String Quintet in C major; the Impromptus for solo piano; the last three piano sonatas; the Fantasia in F minor for piano four hands; the incidental music to the play Rosamunde; the song cycles Die schöne Müllerin and Winterreise; and the song collection Schwanengesang.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Franz_Schubert_by_Wilhelm_August_Rieder_1875.jpg/330px-Franz_Schubert_by_Wilhelm_August_Rieder_1875.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Debussy",
+      "description": "",
+      "bio_fr": "Claude Debussy est un compositeur français né le 22 août 1862 à Saint-Germain-en-Laye et mort le 25 mars 1918 à Paris.",
+      "bio_en": "Achille Claude Debussy was a French composer, born in Saint-Germain-en-Laye. He is sometimes seen as the first Impressionist composer, although he vigorously rejected the term. He was among the most influential composers of the late 19th and early 20th centuries.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Claude_Debussy_by_Atelier_Nadar.jpg/330px-Claude_Debussy_by_Atelier_Nadar.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Épicure",
+      "description": "",
+      "bio_fr": "Épicure est un philosophe grec, né à la fin de l'année 342 av. J.-C. ou au début de l'année 341 av. J.-C. et mort en 270 av. J.-C. Il est le fondateur, en 306 av. J.-C., de l'épicurisme, l'une des plus importantes écoles philosophiques de l'Antiquité.",
+      "bio_en": "Epicurus was an ancient Greek philosopher who founded the philosophical school of Epicureanism, which taught that management of one's desires, removal of unnecessary fears, friendship, and virtuous living led to a pleasant life and constant happiness, the highest good.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Epikouros_BM_1843.jpg/330px-Epikouros_BM_1843.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Diogène",
+      "description": "",
+      "bio_fr": "Diogène de Sinope, également appelé Diogène le Cynique et Diogène le Chien, né à Sinope vers 413 av. J.-C. et mort vers 323 av. J.-C. à Corinthe, est un philosophe de la Grèce antique, le plus célèbre représentant de l'école cynique. Il est contemporain de Philippe II de Macédoine et de son fils Alexandre le Grand, qu'il a rencontré.",
+      "bio_en": "Diogenes the Cynic, also known as Diogenes of Sinope, was an ancient Greek philosopher during the period of Classical Greece, and one of the founders of Cynicism.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_Diogenes_-_Walters_37131.jpg/330px-Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_Diogenes_-_Walters_37131.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Épictète",
+      "description": "",
+      "bio_fr": "Épictète est un philosophe de l’école stoïcienne.",
+      "bio_en": "Epictetus was a Greek Stoic philosopher. He was born into slavery at Hierapolis, Phrygia and lived in Rome until his banishment, after which he spent the rest of his life in Nicopolis in northwestern Greece.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Epictetus_from_L._Annaei_Senecae_philosophi_Opera%2C_1605%2C_title_page_detail.png/330px-Epictetus_from_L._Annaei_Senecae_philosophi_Opera%2C_1605%2C_title_page_detail.png",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Schopenhauer",
+      "description": "",
+      "bio_fr": "Arthur Schopenhauer est un philosophe allemand, né le 22 février 1788 à Dantzig, aujourd'hui Gdańsk, et mort le 21 septembre 1860 à Francfort-sur-le-Main.",
+      "bio_en": "Arthur Schopenhauer was a German philosopher and writer. He is known for his 1818 work The World as Will and Representation, which characterizes the phenomenal world as the manifestation of a blind and irrational noumenal will. Building on the transcendental idealism of Immanuel Kant, Schopenhauer developed an atheistic metaphysical and ethical system that rejected the contemporaneous ideas of German idealism.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Schopenhauer_by_Jules_Luntesch%C3%BCtz.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Kierkegaard",
+      "description": "",
+      "bio_fr": "Søren Aabye Kierkegaard, né le 5 mai 1813 et mort le 11 novembre 1855 à Copenhague, est un théologien, philosophe, écrivain et poète danois protestant, dont l’œuvre est considérée comme une première forme de l'existentialisme chrétien.",
+      "bio_en": "Søren Aabye Kierkegaard was a Danish philosopher, Lutheran theologian, poet, social critic, and religious author who is widely considered to be the first existentialist philosopher. He wrote critical texts on organized religion, Christianity, morality, ethics, psychology, love, and the philosophy of religion, displaying a fondness for metaphor, irony, and parables. Much of his philosophical work deals with the issues around how one lives as a \"single individual\", highlighting the importance of authenticity, personal choice and commitment, and the duty to love. Kierkegaard prioritized concrete human reality over abstract thinking.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kierkegaard_1902_by_Luplau_Janssen.jpg/330px-Kierkegaard_1902_by_Luplau_Janssen.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Wittgenstein",
+      "description": "",
+      "bio_fr": "Ludwig Josef Johann Wittgenstein, né à Vienne en Autriche le 26 avril 1889 et mort à Cambridge au Royaume-Uni le 29 avril 1951, est un philosophe, mathématicien, ingénieur, pédagogue et architecte de nationalité autrichienne, puis, à partir de 1939, britannique, ayant exploré de manière décisive certains domaines fondamentaux de la connaissance tels que la logique, les fondements des mathématiques et la philosophie du langage.",
+      "bio_en": "Ludwig Josef Johann Wittgenstein was an Austro-British philosopher who worked in logic, philosophy of mathematics, philosophy of mind, and philosophy of language.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ludwig_Wittgenstein_%28cropped%29.jpg/330px-Ludwig_Wittgenstein_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Maïmonide",
+      "description": "",
+      "bio_fr": "Moshe ben Maïmon, plus couramment connu en français sous le nom de Moïse Maïmonide et mentionné dans la littérature juive sous une forme vocalisée de l'acronyme formé à partir des lettres hébraïques initiales de Rabbi Moshe Ben Maïmon (RMBM) : HaRambam, né à Cordoue le 30 mars 1138 et mort à Fostat, le 13 décembre 1204, est un rabbin séfarade du XIIe siècle, considéré comme un savant religieux et l'une des plus éminentes autorités rabbiniques du Moyen Âge.",
+      "bio_en": "Moses ben Maimon, commonly known as Maimonides and also referred to by the Hebrew acronym Rambam, was a Sephardic Jewish rabbi who is widely acknowledged as one of the most prolific and influential Torah scholars of the Middle Ages.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Maimonides_bas-relief_in_the_U.S._House_of_Representatives_chamber_cropped.jpg/330px-Maimonides_bas-relief_in_the_U.S._House_of_Representatives_chamber_cropped.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Sartre",
+      "description": "",
+      "bio_fr": "Jean-Paul Sartre, né le 21 juin 1905 dans le 16e arrondissement de Paris et mort le 15 avril 1980 dans le 14e arrondissement, est un philosophe, écrivain et journaliste français.",
+      "bio_en": "Jean-Paul Charles Aymard Sartre was a French philosopher, playwright, novelist, screenwriter, political activist, biographer, and literary critic, considered a leading figure in 20th-century French philosophy and Marxism. Sartre was one of the key figures in the philosophy of existentialism and was a proponent of Libertarian Marxism. His work has influenced sociology, critical theory, post-colonial theory, and literary studies. He was awarded the 1964 Nobel Prize in Literature despite attempting to refuse it, saying that he always declined official honors and that \"a writer should not allow himself to be turned into an institution.\"",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flickr_-_Government_Press_Office_%28GPO%29_-_Jean_Paul_Sartre_and_Simone_De_Beauvoir_welcomed_by_Avraham_Shlonsky_and_Leah_Goldberg_%28cropped%29.jpg/330px-Flickr_-_Government_Press_Office_%28GPO%29_-_Jean_Paul_Sartre_and_Simone_De_Beauvoir_welcomed_by_Avraham_Shlonsky_and_Leah_Goldberg_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Camus",
+      "description": "",
+      "bio_fr": "Albert Camus, né le 7 novembre 1913 à Mondovi, dans le département de Constantine, en Algérie, alors territoire français, et mort dans un accident de voiture le 4 janvier 1960 à Villeblevin (Yonne), est un philosophe, écrivain, journaliste militant, romancier, dramaturge, essayiste et nouvelliste français, lauréat du prix Nobel de littérature en 1957.",
+      "bio_en": "Albert Camus was a French philosopher, novelist, author, dramatist, journalist, world federalist, and political activist. He was the recipient of the 1957 Nobel Prize in Literature at the age of 44, the second-youngest recipient in history, and the first laureate in literature born in Africa. His works include The Stranger, The Plague, The Myth of Sisyphus, The Fall and The Rebel.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Albert_Camus%2C_gagnant_de_prix_Nobel%2C_portrait_en_buste%2C_pos%C3%A9_au_bureau%2C_faisant_face_%C3%A0_gauche%2C_cigarette_de_tabagisme.jpg/330px-Albert_Camus%2C_gagnant_de_prix_Nobel%2C_portrait_en_buste%2C_pos%C3%A9_au_bureau%2C_faisant_face_%C3%A0_gauche%2C_cigarette_de_tabagisme.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    },
+    {
+      "name": "Hannah Arendt",
+      "description": "",
+      "bio_fr": "Hannah Arendt, née Johanna Arendt le 14 octobre 1906 à Hanovre et morte le 4 décembre 1975 dans l'Upper West Side, est une politologue, philosophe et journaliste allemande naturalisée américaine, connue pour ses travaux sur l’activité politique, le totalitarisme, la modernité et la philosophie de l'histoire.",
+      "bio_en": "Hannah Arendt was a German and American historian and philosopher. She was one of the most influential political theorists of the twentieth century.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg/330px-Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg",
+      "facts_fr": [],
+      "facts_en": []
+    }
+  ]
 }
