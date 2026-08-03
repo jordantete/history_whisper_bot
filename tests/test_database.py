@@ -36,7 +36,7 @@ class TestDatabase(unittest.TestCase):
 
     def test_loads_full_roster_from_json(self):
         figures = self.database.get_all_figures()
-        self.assertEqual(len(figures), 299)
+        self.assertEqual(len(figures), 309)
         self.assertTrue(all(f.name and f.description for f in figures))
 
     def test_raw_json_prose_is_free_of_line_breaks(self):
