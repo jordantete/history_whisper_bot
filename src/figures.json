@@ -5428,5 +5428,175 @@
       "His peregrinations with Rimbaud through England and Belgium ended in their split in 1873, caused by his wounding Rimbaud with a revolver; following trial he was sentenced to two years in prison for battery and sodomy.",
       "He was honoured with the title of Prince of Poets in 1894, following a referendum organised by Maurice Barrès consulting various people of letters."
     ]
+  },
+  {
+    "name": "Leibniz",
+    "description": "Philosophe, mathématicien et diplomate allemand, esprit polymathe (XVIIe-XVIIIe s.).",
+    "bio_fr": "Gottfried Wilhelm Leibniz, parfois francisé en Godefroid-Guillaume Leibniz, né à Leipzig le 1er juillet 1646 et mort à Hanovre le 14 novembre 1716, est un philosophe, scientifique, mathématicien, logicien, diplomate, juriste, historien, bibliothécaire et philologue allemand. Esprit polymathe, personnalité importante de la période Frühaufklärung, il occupe une place primordiale dans l'histoire de la philosophie en Occident et l'histoire des sciences et est parfois considéré comme le dernier « génie universel ».",
+    "bio_en": "Gottfried Wilhelm Leibniz was a German polymath active as a mathematician, philosopher, scientist, and diplomat who is credited, alongside Isaac Newton, with the creation of calculus in addition to many other branches of mathematics, such as binary arithmetic and statistics. Leibniz has been called the \"last universal genius\" due to his vast expertise across fields, which became a rarity after his lifetime with the coming of the Industrial Revolution and the spread of specialized labour. He is a prominent figure in both the history of philosophy and the history of mathematics. He wrote works on philosophy, theology, ethics, politics, law, history, philology, games, music, economics and other studies. Leibniz also made major contributions to physics and technology, and anticipated notions that surfaced much later in probability theory, biology, medicine, geology, psychology, linguistics and computer science.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg",
+    "facts_fr": [
+      "Sa contribution principale en mathématiques est l'invention du calcul infinitésimal : si la paternité de cette découverte l'a longtemps opposé à Isaac Newton, les historiens s'accordent aujourd'hui pour dire que les deux hommes l'ont développé plus ou moins indépendamment, et ce sont les notations de Leibniz, plus commodes, qui restent en usage.",
+      "Concevant les pensées comme des combinaisons de concepts de base, il théorise la caractéristique universelle, langue hypothétique qui permettrait d'exprimer toutes les pensées humaines et de résoudre des problèmes par le calcul, anticipant l'informatique de plus de trois siècles.",
+      "Il laisse un immense patrimoine littéraire d'environ 50 000 documents, dont 15 000 lettres échangées avec plus de mille correspondants différents, conservé pour l'essentiel à la bibliothèque de Hanovre et toujours pas entièrement publié."
+    ],
+    "facts_en": [
+      "He contributed to library science by developing a cataloguing system at the Herzog August Library in Wolfenbüttel that came to serve as a model for many of Europe's largest libraries.",
+      "He was a pioneer of mechanical calculators: while working on adding automatic multiplication and division to Pascal's calculator, he was the first to describe a pinwheel calculator in 1685 and invented the Leibniz wheel, later used in the arithmometer.",
+      "He is credited with devising the modern binary number system underlying digital computing, though the English astronomer Thomas Harriot had devised the same system decades before."
+    ]
+  },
+  {
+    "name": "Euler",
+    "description": "Mathématicien et physicien suisse, l'un des plus prolifiques de l'histoire (XVIIIe s.).",
+    "bio_fr": "Leonhard Euler, né le 15 avril 1707 à Bâle (Suisse) et mort le 7 septembre 1783 à Saint-Pétersbourg, est un mathématicien et physicien suisse, qui passa la plus grande partie de sa vie dans l'Empire russe et en Allemagne. Il était notamment membre de l'Académie royale des sciences de Prusse à Berlin.",
+    "bio_en": "Leonhard Euler was a Swiss polymath who was active as a mathematician, physicist, astronomer, logician, geographer, music theorist and engineer. He founded the studies of graph theory and topology and made influential discoveries in many other branches of mathematics, such as analytic number theory, complex analysis, and infinitesimal calculus. He also introduced much of modern mathematical terminology and notation, including the notion of a mathematical function. He is known for his work in mechanics, fluid dynamics, optics, astronomy, and music theory. Euler has been called a \"universal genius\" who \"was fully equipped with almost unlimited powers of imagination, intellectual gifts and extraordinary memory\". He spent most of his adult life in Saint Petersburg, Russia, and in Berlin, then the capital of Prussia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Leonhard_Euler_2.jpg/330px-Leonhard_Euler_2.jpg",
+    "facts_fr": [
+      "Il introduisit une grande partie de la terminologie et de la notation des mathématiques modernes, en particulier pour l'analyse, comme la notion de fonction mathématique.",
+      "Une déclaration attribuée à Pierre-Simon de Laplace résume son influence : « Lisez Euler, lisez Euler, c'est notre maître à tous. »",
+      "C'était un fervent chrétien, croyant en l'inerrance biblique, et il s'opposa avec force aux libre-penseurs éminents de son temps."
+    ],
+    "facts_en": [
+      "He is credited with popularizing the Greek letter π for the ratio of a circle's circumference to its diameter, with first using f(x) for the value of a function, i for the imaginary unit and Σ for summations, and with giving the current definition of the constant e.",
+      "He solved several unsolved problems in number theory and analysis, including the famous Basel problem, and has been credited with discovering that vertices plus faces minus edges equals 2 for a polyhedron with no holes — the Euler characteristic.",
+      "His 866 publications and his correspondence were collected in the Opera Omnia; Carl Friedrich Gauss wrote that studying his works \"will remain the best school for the different fields of mathematics, and nothing else can replace it\"."
+    ]
+  },
+  {
+    "name": "Maxwell",
+    "description": "Physicien et mathématicien écossais (XIXe s.).",
+    "bio_fr": "James Clerk Maxwell, né le 13 juin 1831 à Édimbourg et mort le 5 novembre 1879 à Cambridge, est un physicien et mathématicien écossais. Il est principalement connu pour avoir unifié en un seul ensemble d'équations, les équations de Maxwell, l'électricité, le magnétisme et l'induction, en incluant une importante modification du théorème d'Ampère. Ce fut à l'époque le modèle le plus unifié de l'électromagnétisme. Il est également célèbre pour avoir interprété, dans un article scientifique, la lumière comme étant un phénomène électromagnétique en s'appuyant sur les travaux de Michael Faraday. Il a notamment démontré que les champs électriques et magnétiques se propagent dans l'espace sous la forme d'une onde et à la vitesse de la lumière.",
+    "bio_en": "James Clerk Maxwell was a Scottish physicist and mathematician who was responsible for the classical theory of electromagnetic radiation, which was the first theory to describe electricity, magnetism and light as different manifestations of the same phenomenon. Maxwell's equations for electromagnetism achieved the second great unification in physics, where the first one had been realised by Isaac Newton. Maxwell was also key in the creation of statistical mechanics.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/James-Clerk-Maxwell-1831-1879.jpg/330px-James-Clerk-Maxwell-1831-1879.jpg",
+    "facts_fr": [
+      "On lui doit la distribution de Maxwell, méthode statistique de description de la théorie cinétique des gaz, ainsi que la première photographie en vraie couleur, réalisée devant les membres de la Royal Institution de Londres.",
+      "En 1931, pour le centenaire de sa naissance, Einstein décrivait ses travaux comme les « plus profonds et fructueux que la physique ait connus depuis le temps de Newton ».",
+      "À 14 ans, il rédige son premier travail scientifique, Oval Curves, sur les moyens mécaniques de tracer des courbes avec un morceau de ficelle ; le travail est présenté à la Royal Society of Edinburgh par le professeur James Forbes, Maxwell étant jugé trop jeune pour le faire lui-même."
+    ],
+    "facts_en": [
+      "Holding the Chair of Natural Philosophy at Marischal College in Aberdeen, he studied the rings of Saturn and correctly proposed that they were composed of numerous small particles, work that earned him the Adams Prize in 1859.",
+      "In 1867 he proposed the thought experiment known as Maxwell's demon, which challenges how information affects entropy in thermodynamics.",
+      "In 1871 he returned to Cambridge as the first Cavendish Professor of Physics, overseeing the construction of the Cavendish Laboratory."
+    ]
+  },
+  {
+    "name": "Gauss",
+    "description": "Mathématicien, astronome et physicien allemand (XVIIIe-XIXe s.).",
+    "bio_fr": "Johann Carl Friedrich Gauß, né le 30 avril 1777 à Brunswick et mort le 23 février 1855 à Göttingen, est un mathématicien, astronome et physicien allemand. Il a apporté de très importantes contributions à ces trois domaines. Surnommé « le prince des mathématiciens », il est considéré comme l'un des plus grands mathématiciens de tous les temps.",
+    "bio_en": "Johann Carl Friedrich Gauss was a German mathematician, astronomer, geodesist, and physicist, who contributed to many fields in mathematics and science. His mathematical contributions spanned the branches of number theory, algebra, analysis, geometry, statistics, and probability. Gauss was director of the Göttingen Observatory in Germany and professor of astronomy from 1807 until his death in 1855.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Carl_Friedrich_Gauss.jpg/330px-Carl_Friedrich_Gauss.jpg",
+    "facts_fr": [
+      "En 1796, à l'âge de 19 ans, il caractérise presque complètement tous les polygones réguliers constructibles à la règle et au compas ; satisfait de ce résultat, il demande qu'un heptadécagone régulier soit gravé sur son tombeau.",
+      "En 1801, il publie les Disquisitiones arithmeticae, qui définissent pour la première fois les congruences, et parvient à prédire par une nouvelle méthode de calcul l'emplacement où doit apparaître Cérès : ces résultats le rendent célèbre à travers l'Europe.",
+      "N'ayant publié qu'une partie de ses découvertes, la postérité découvrit surtout l'étendue de ses travaux lors de la publication de ses Œuvres, de son journal et d'une partie de ses archives, à la fin du XIXe siècle."
+    ],
+    "facts_en": [
+      "His practical work led to the invention of the heliotrope in 1821, a magnetometer in 1833 and — with Wilhelm Eduard Weber — the first electromagnetic telegraph in 1833.",
+      "He was one of the founders of geophysics: he provided the first absolute measurement of Earth's magnetic field in 1832, later applying his own invention of spherical harmonic analysis to show that most of that field was internal.",
+      "He was the first to develop a fast Fourier transform, doing so some 160 years before John Tukey and James Cooley."
+    ]
+  },
+  {
+    "name": "Niels Bohr",
+    "description": "Physicien danois, artisan de l'édification de la mécanique quantique (XXe s.).",
+    "bio_fr": "Niels Henrik David Bohr est un physicien danois. Il est surtout connu pour son apport à l'édification de la mécanique quantique, pour lequel il a reçu de nombreux honneurs. Il est notamment lauréat du prix Nobel de physique de 1922.",
+    "bio_en": "Niels Henrik David Bohr was a Danish theoretical physicist who made foundational contributions to understanding atomic structure and quantum theory, for which he received the Nobel Prize in Physics in 1922. He was also a philosopher and a promoter of scientific research.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Niels_Bohr.jpg/330px-Niels_Bohr.jpg",
+    "facts_fr": [
+      "Se basant sur les théories de Rutherford, il publie en 1913 son modèle de la structure de l'atome dans une série de trois articles de la revue Philosophical Magazine ; le modèle sera confirmé expérimentalement quelques années plus tard.",
+      "Il est à l'origine du principe de complémentarité — des analyses distinctes peuvent faire apparaître des propriétés contraires, la lumière se comportant tantôt comme une onde, tantôt comme un faisceau de particules — idée qui inspire son blason, où le taijitu accompagne la devise Contraria sunt complementa.",
+      "Son frère cadet Harald, mathématicien et sportif de haut niveau, joua dans l'équipe nationale de football et participa aux Jeux olympiques de 1908 à Londres ; Niels était lui-même un très bon footballeur."
+    ],
+    "facts_en": [
+      "He predicted the properties of a new zirconium-like element, named hafnium after the Latin name for Copenhagen, where it was discovered; the synthetic element bohrium was later named after him.",
+      "In September 1943, word reached him that he was about to be arrested by the Germans, so he fled to Sweden and was flown on to Britain, where he joined the Tube Alloys nuclear weapons project and was part of the British mission to the Manhattan Project.",
+      "After the war he called for international cooperation on nuclear energy, was involved with the establishment of CERN, and became the first chairman of the Nordic Institute for Theoretical Physics in 1957."
+    ]
+  },
+  {
+    "name": "Heisenberg",
+    "description": "Physicien allemand, l'un des fondateurs de la mécanique quantique (XXe s.).",
+    "bio_fr": "Werner Heisenberg, né le 5 décembre 1901 à Wurtzbourg et mort le 1er février 1976 à Munich, est un physicien allemand qui est l'un des fondateurs de la mécanique quantique, notamment en mettant en évidence le principe d'incertitude et en développant la formulation probabiliste de la fonction d'onde.",
+    "bio_en": "Werner Karl Heisenberg was a German theoretical physicist, one of the main pioneers of the theory of quantum mechanics and a principal scientist in the German nuclear program during World War II.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg/330px-Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg",
+    "facts_fr": [
+      "Il publie en 1925 la première formalisation de la mécanique quantique, une « mécanique matricielle » à multiplication non commutative, en même temps qu'Erwin Schrödinger propose une approche ondulatoire ; on croit d'abord les deux théories distinctes jusqu'à ce que Schrödinger établisse l'année suivante leur équivalence mathématique.",
+      "Recruté en 1927 comme professeur de physique atomique théorique à l'université de Leipzig, à seulement 26 ans, il en fait l'un des hauts lieux de la physique théorique de l'entre-deux-guerres et y reste jusqu'en 1941.",
+      "Pendant la Seconde Guerre mondiale, il participe aux recherches atomiques sous le Troisième Reich et fait de la propagande en faveur de l'Allemagne nazie ; capturé après la guerre, il est relâché après plusieurs mois de captivité et poursuit une carrière académique en Allemagne."
+    ],
+    "facts_en": [
+      "In 1925, after weeks of failing to relieve a severe bout of hay fever, he retreated to the pollen-free North Sea island of Helgoland to focus on quantum mechanics; his seminal Umdeutung paper was published that September.",
+      "He is known for the uncertainty principle, which he published in 1927 — in that paper he used the word \"Ungenauigkeit\" (imprecision), not uncertainty, to describe it.",
+      "He was instrumental in planning the first West German nuclear reactor at the Kernforschungszentrum Karlsruhe, together with one at Garching, in 1957 — both research reactors."
+    ]
+  },
+  {
+    "name": "Lamarck",
+    "description": "Naturaliste français, botaniste puis zoologiste des invertébrés (XVIIIe-XIXe s.).",
+    "bio_fr": "Jean-Baptiste de Lamarck, ou Jean-Baptiste Pierre Antoine de Monet, chevalier de La Marck, est un naturaliste français, né le 1er août 1744 à Bazentin, France, et mort le 18 décembre 1829 à Paris. D'abord botaniste, il se consacre ensuite à la zoologie des insectes et des vers. Au début du XIXe siècle, il réalise la classification des invertébrés, qui regroupent environ 80 % des animaux. Il est le premier qui utilise le terme de « biologie » pour désigner la science qui étudie les êtres vivants.",
+    "bio_en": "Jean-Baptiste Pierre Antoine de Monet, chevalier de Lamarck, often known simply as Lamarck, was a French naturalist, biologist, academic, and soldier. He was an early proponent of the idea that biological evolution occurred and proceeded in accordance with natural laws, though the mechanism he suggested has been refuted at large.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jean-Baptiste_de_Lamarck.jpg/330px-Jean-Baptiste_de_Lamarck.jpg",
+    "facts_fr": [
+      "Sa théorie transformiste repose sur deux principes : la complexification croissante de l'organisation des êtres vivants sous l'effet de leur métabolisme, et leur diversification en espèces par adaptation de leur comportement ou de leurs organes à leur milieu ; il est ainsi un des premiers naturalistes à avoir supposé la nécessité théorique de l'évolution.",
+      "En 1778, l'Imprimerie royale publie sa Flore française, qui lui apporte une notoriété immédiate et lui vaut d'être élu l'année suivante à l'Académie des sciences, avec l'appui de Buffon.",
+      "Cuvier, violemment opposé à ses idées, composa un éloge funèbre qui les tournait en ridicule et les déformait ; traduit en anglais, ce texte est fort probablement à l'origine de l'idée erronée selon laquelle Lamarck attribuerait la transformation des animaux à leur « volonté » et à leur « désir »."
+    ],
+    "facts_en": [
+      "He fought in the Seven Years' War against Prussia and was awarded a commission for bravery on the battlefield; posted to Monaco, he became interested in natural history and resolved to study medicine.",
+      "In 1801 he published Système des animaux sans vertèbres, a major work on the classification of invertebrates — a term which he coined.",
+      "The modern era generally remembers him for the theory of inheritance of acquired characteristics, called Lamarckism (inaccurately named after him), which he described in his 1809 Philosophie zoologique, though the idea antedates him and was a small element of his theory of evolution."
+    ]
+  },
+  {
+    "name": "Linné",
+    "description": "Naturaliste suédois, père de la taxinomie moderne (XVIIIe s.).",
+    "bio_fr": "Carl Linnæus, puis Carl von Linné après son anoblissement, est un naturaliste suédois né le 23 mai 1707 à Råshult et mort le 10 janvier 1778 à Uppsala qui a posé les bases du système moderne de la nomenclature binominale. Considérant que la connaissance scientifique nécessite de nommer les choses, il a répertorié, nommé et classé, systématiquement, l'essentiel des espèces vivantes connues à son époque, en s'appuyant sur ses observations, ainsi que sur celles de son réseau de correspondants.",
+    "bio_en": "Carl Linnaeus, also known after ennoblement in 1761 as Carl von Linné, was a Swedish biologist and physician who formalised binomial nomenclature, the modern system of naming organisms. He is known as the \"father of modern taxonomy\". Many of his writings were in Latin; his name is rendered in Latin as Carolus Linnæus and, after his 1761 ennoblement, as Carolus a Linné.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Carl_von_Linn%C3%A9.jpg/330px-Carl_von_Linn%C3%A9.jpg",
+    "facts_fr": [
+      "Il est le père du concept de biodiversité par son identification de près de 6 000 espèces végétales et 4 400 espèces animales.",
+      "La hiérarchie des classifications qu'il met en avant s'impose au XIXe siècle comme la nomenclature standard.",
+      "Sa classification systématique est fixiste, dans un contexte où la notion d'évolution des espèces n'existe pas encore ; elle n'intégrera le concept d'évolution qu'à la suite de Jean-Baptiste de Lamarck, fondateur du transformisme."
+    ],
+    "facts_en": [
+      "He lived abroad between 1735 and 1738, publishing the first edition of his Systema Naturae in the Netherlands, then returned to Sweden as professor of medicine and botany at Uppsala.",
+      "He has been called Princeps botanicorum (Prince of Botanists) and \"The Pliny of the North\", and is also considered one of the founders of modern ecology.",
+      "He is designated as the type specimen for the human species, Homo sapiens."
+    ]
+  },
+  {
+    "name": "Humboldt",
+    "description": "Naturaliste, géographe et explorateur prussien (XVIIIe-XIXe s.).",
+    "bio_fr": "Alexander von Humboldt, parfois aussi nommé Alexandre de Humboldt ou Friedrich Karl Wilhelm Heinrich Alexander, baron von Humboldt, est un naturaliste, géographe et explorateur prussien né le 14 septembre 1769 à Berlin et mort le 6 mai 1859 dans cette même ville.",
+    "bio_en": "Friedrich Wilhelm Heinrich Alexander von Humboldt was a German polymath, geographer, naturalist, explorer, and proponent of Romantic philosophy and science. He was the younger brother of the Prussian minister, philosopher, and linguist Wilhelm von Humboldt (1767–1835). Humboldt's quantitative work on botanical geography laid the foundation for the field of biogeography, while his advocacy of long-term systematic geophysical measurement pioneered modern geomagnetic and meteorological monitoring. Humboldt and Carl Ritter are both regarded as the founders of modern geography as they established it as an independent scientific discipline.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/AvHumboldt.jpg",
+    "facts_fr": [
+      "Membre associé de l'Académie des sciences française et président de la Société de géographie de Paris, il a fondé les bases des explorations scientifiques par la qualité des relevés topographiques et des prélèvements de faune et de flore effectués lors de ses expéditions.",
+      "Il est le frère cadet de Wilhelm von Humboldt, linguiste, diplomate et ministre de Prusse, qui fonda l'université Humboldt de Berlin en 1810.",
+      "Promu inspecteur général des mines de Prusse, et face à des mineurs incapables de distinguer un minerai d'une roche sans valeur, il ouvre clandestinement une école de formation qu'il finance de ses propres deniers, refusant l'argent que le ministre von Heinitz lui envoie pour le défrayer."
+    ],
+    "facts_en": [
+      "Between 1799 and 1804 he travelled extensively in the Americas with the French explorer Aimé Bonpland, identifying the source of the Orinoco River and, in 1802, climbing the highest mountain in Ecuador to 19,286 feet — at the time a world record altitude for a Westerner.",
+      "He resurrected the word cosmos from the ancient Greek and assigned it to his multivolume treatise Kosmos, in which he sought to unify diverse branches of scientific knowledge and culture.",
+      "In 1800, and again in 1831, he described scientifically, on the basis of observations generated during his travels, local impacts of development causing human-induced climate change."
+    ]
+  },
+  {
+    "name": "Von Neumann",
+    "description": "Mathématicien, logicien et physicien américano-hongrois, esprit polymathe (XXe s.).",
+    "bio_fr": "John von Neumann, né le 28 décembre 1903 à Budapest et mort le 8 février 1957 à Washington, est un polymathe, logicien, mathématicien et physicien américano-hongrois. Il a apporté d'importantes contributions en mécanique quantique, en analyse fonctionnelle, en logique mathématique, en logique quantique, en informatique théorique, en sciences économiques et dans beaucoup d'autres domaines des mathématiques, de la physique et de l'économie comportementale.",
+    "bio_en": "John von Neumann was a Hungarian and American mathematician, physicist, computer scientist and engineer. Von Neumann had perhaps the widest coverage of any mathematician of his time, integrating pure and applied sciences and making major contributions to many fields, including mathematics, physics, economics, computing, and statistics. He was a pioneer in building the mathematical framework of quantum physics, in the development of functional analysis, and in game theory, introducing or codifying concepts including cellular automata, the universal constructor and the digital computer. His analysis of the structure of self-replication preceded the discovery of the structure of DNA.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/JohnvonNeumann-LosAlamos.jpg/330px-JohnvonNeumann-LosAlamos.jpg",
+    "facts_fr": [
+      "Enfant prodige, il converse à six ans avec son père en grec ancien et peut faire mentalement la division d'un nombre à huit chiffres.",
+      "À 22 ans, il reçoit son doctorat de mathématiques pour une thèse sur l'axiomatisation de la théorie des ensembles, tout en obtenant un diplôme de génie chimique à l'École polytechnique fédérale de Zurich à la demande de son père ; il sort major de promotion des deux universités.",
+      "Il meurt en 1957, à 53 ans, d'un cancer probablement dû à un contact prolongé avec des sources radioactives ; son lit d'hôpital est placé sous haute surveillance militaire, par crainte que, fortement drogué contre la douleur, il ne divulgue des secrets militaires."
+    ],
+    "facts_en": [
+      "By 19 he had published two major mathematical papers, the second of which gave the modern definition of ordinal numbers, superseding Georg Cantor's; at the end of his schooling he applied for and won the Eötvös Prize, a national award for mathematics.",
+      "During World War II he worked on the Manhattan Project, developing the mathematical models behind the explosive lenses used in the implosion-type nuclear weapon.",
+      "At the peak of his influence in the 1950s he chaired several Defense Department committees and played a key role alongside Bernard Schriever and Trevor Gardner in the design and development of the first US intercontinental ballistic missile programs."
+    ]
   }
 ]
