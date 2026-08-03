@@ -1,6 +1,7 @@
 import json, random, re
 from typing import List
 from src.historical_figure import HistoricalFigure
+from src.utils import Utils
 from src.logger import LOGGER
 
 FIGURES_PATH = "src/figures.json"
@@ -10,6 +11,7 @@ class Database:
     def __init__(self, figures_path: str = FIGURES_PATH):
         LOGGER.info("init DB")
         self.historical_figures = self._load_figures(figures_path)
+        self._by_slug = self._index_by_slug(self.historical_figures)
         LOGGER.info(f"Loaded {len(self.historical_figures)} figures")
 
     # Ordinary whitespace only: U+00A0 is left alone, French typography uses it
@@ -55,3 +57,26 @@ class Database:
         figures = self.get_all_figures()
         index = day.timetuple().tm_yday % len(figures)
         return figures[index]
+
+    @staticmethod
+    def _index_by_slug(figures):
+        """Index slug -> figure, construit une fois au chargement. Le slug sert
+        de payload de deep link ; une collision rendrait un lien partagé
+        ambigu, donc le premier arrivé gagne et la seconde est tracée."""
+        index = {}
+        for figure in figures:
+            slug = Utils.figure_slug(figure.name)
+            if not slug:
+                continue
+            if slug in index:
+                LOGGER.warning(
+                    f"Slug collision on '{slug}': keeping '{index[slug].name}', "
+                    f"ignoring '{figure.name}'")
+                continue
+            index[slug] = figure
+        return index
+
+    def get_figure_by_slug(self, slug):
+        """Résout le payload d'un deep link. Le slug est re-normalisé, donc la
+        casse et les accents reçus sont indifférents."""
+        return self._by_slug.get(Utils.figure_slug(slug))

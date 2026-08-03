@@ -105,3 +105,38 @@ class TestDatabase(unittest.TestCase):
         self.assertEqual(figures[0].facts_en, ["e1"])
         self.assertIsNone(figures[1].image_url)
         self.assertEqual(figures[1].facts_fr, [])
+    def test_get_figure_by_slug_finds_a_figure(self):
+        database = Database()
+        figure = database.get_figure_by_slug("george-sand")
+        self.assertIsNotNone(figure)
+        self.assertEqual(figure.name, "George Sand")
+
+    def test_get_figure_by_slug_returns_none_when_absent(self):
+        database = Database()
+        self.assertIsNone(database.get_figure_by_slug("figure-qui-nexiste-pas"))
+
+    def test_get_figure_by_slug_ignores_case_and_accents(self):
+        database = Database()
+        self.assertIsNotNone(database.get_figure_by_slug("GEORGE-SAND"))
+        self.assertIsNotNone(database.get_figure_by_slug("George Sand"))
+
+    def test_get_figure_by_slug_handles_empty_payload(self):
+        database = Database()
+        self.assertIsNone(database.get_figure_by_slug(""))
+
+    def test_slug_collision_keeps_the_first_figure_and_warns(self):
+        """Deux noms produisant le même slug ne doivent pas s'écraser en
+        silence : le premier gagne et la collision est tracée."""
+        payload = [
+            {"name": "Lucrèce", "description": "d"},
+            {"name": "LUCRECE", "description": "d"},
+        ]
+        handle, path = tempfile.mkstemp(suffix=".json")
+        os.close(handle)
+        self.addCleanup(os.unlink, path)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(payload, file)
+        with patch("src.database.LOGGER.warning") as warning:
+            database = Database(path)
+        self.assertEqual(database.get_figure_by_slug("lucrece").name, "Lucrèce")
+        warning.assert_called_once()
