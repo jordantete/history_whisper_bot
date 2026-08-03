@@ -44,9 +44,14 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         os.close(fd)
         os.unlink(self._subs_path)
         self.addCleanup(lambda: os.path.exists(self._subs_path) and os.unlink(self._subs_path))
+        fd, self._sugg_path = tempfile.mkstemp(suffix=".json")
+        os.close(fd)
+        os.unlink(self._sugg_path)
+        self.addCleanup(lambda: os.path.exists(self._sugg_path) and os.unlink(self._sugg_path))
         patcher = patch.dict(os.environ, {
             "TELEGRAM_BOT_TOKEN": "123456:ABC-test-token",
             "SUBSCRIBERS_FILE": self._subs_path,
+            "SUGGESTIONS_FILE": self._sugg_path,
         })
         patcher.start()
         self.addCleanup(patcher.stop)
@@ -150,6 +155,82 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         update, context = make_update(chat_id=555), make_context()
         await self.bot._Bot__unsubscribe_handler(update, context)
         context.bot.send_message.assert_called_once()
+
+    async def test_suggest_ignored_for_non_owner(self):
+        update, context = make_update(chat_id=999), make_context()
+        context.args = ["Vauban"]
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "42"}):
+            await self.bot._Bot__suggest_handler(update, context)
+        # Silence complet : la commande n'existe pas pour les autres.
+        context.bot.send_message.assert_not_called()
+        self.assertEqual(self.bot.suggestions.count(), 0)
+
+    async def test_suggest_refused_when_owner_unset(self):
+        """Fail closed : sans OWNER_CHAT_ID, personne ne passe."""
+        update, context = make_update(chat_id=42), make_context()
+        context.args = ["Vauban"]
+        with patch.dict(os.environ, {}, clear=True):
+            os.environ["TELEGRAM_BOT_TOKEN"] = "123456:ABC-test-token"
+            await self.bot._Bot__suggest_handler(update, context)
+        context.bot.send_message.assert_not_called()
+        self.assertEqual(self.bot.suggestions.count(), 0)
+
+    async def test_suggest_queues_name_for_owner(self):
+        update, context = make_update(chat_id=42), make_context()
+        context.args = ["Vauban"]
+        self.mock_database.get_all_figures.return_value = []
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "42"}):
+            await self.bot._Bot__suggest_handler(update, context)
+        self.assertEqual(self.bot.suggestions.all(), ["Vauban"])
+        _, kwargs = context.bot.send_message.call_args
+        self.assertIn("Vauban", kwargs["text"])
+
+    async def test_suggest_splits_on_commas(self):
+        update, context = make_update(chat_id=42), make_context()
+        context.args = ["Vauban,", "Lyautey,", "Gallieni"]
+        self.mock_database.get_all_figures.return_value = []
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "42"}):
+            await self.bot._Bot__suggest_handler(update, context)
+        self.assertEqual(self.bot.suggestions.all(), ["Vauban", "Lyautey", "Gallieni"])
+
+    async def test_suggest_warns_on_roster_collision_but_still_queues(self):
+        """Le cas Lesseps : le roster stocke une forme courte. On signale, mais
+        c'est l'humain qui tranche — l'heuristique produit des faux positifs."""
+        update, context = make_update(chat_id=42), make_context()
+        context.args = ["Ferdinand", "de", "Lesseps"]
+        self.mock_database.get_all_figures.return_value = [
+            HistoricalFigure(name="De Lesseps", description="d")
+        ]
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "42"}):
+            await self.bot._Bot__suggest_handler(update, context)
+        _, kwargs = context.bot.send_message.call_args
+        self.assertIn("De Lesseps", kwargs["text"])
+        self.assertEqual(self.bot.suggestions.all(), ["Ferdinand de Lesseps"])
+
+    async def test_suggest_reports_already_queued(self):
+        update, context = make_update(chat_id=42), make_context()
+        self.mock_database.get_all_figures.return_value = []
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "42"}):
+            context.args = ["Vauban"]
+            await self.bot._Bot__suggest_handler(update, context)
+            context.args = ["Vauban"]
+            await self.bot._Bot__suggest_handler(update, context)
+        self.assertEqual(self.bot.suggestions.count(), 1)
+
+    async def test_suggest_without_args_shows_usage(self):
+        update, context = make_update(chat_id=42), make_context()
+        context.args = []
+        with patch.dict(os.environ, {"OWNER_CHAT_ID": "42"}):
+            await self.bot._Bot__suggest_handler(update, context)
+        _, kwargs = context.bot.send_message.call_args
+        self.assertIn("/suggest", kwargs["text"])
+        self.assertEqual(self.bot.suggestions.count(), 0)
+
+    def test_suggest_absent_from_published_menu(self):
+        """Owner-only : la commande ne doit apparaître dans aucun menu."""
+        import inspect
+        source = inspect.getsource(self.bot._post_init)
+        self.assertNotIn("suggest", source)
 
     async def test_send_daily_delivers_localized_to_all_subscribers(self):
         figure = HistoricalFigure(name="Ada Lovelace", description="d", bio_en="EN bio", bio_fr="FR bio")  # no image
@@ -434,4 +515,4 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()
         handlers = self.bot.application.handlers[0]
-        self.assertEqual(len(handlers), 8)  # 6 commands + 1 feedback conversation + 1 callback query
+        self.assertEqual(len(handlers), 9)  # 7 commands + 1 feedback conversation + 1 callback query

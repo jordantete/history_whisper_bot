@@ -6,6 +6,7 @@ from zoneinfo import ZoneInfo
 
 from src.database import Database
 from src.subscribers import SubscriberStore
+from src.suggestions import SuggestionStore
 from src.utils import Utils
 from src.logger import LOGGER
 from telegram import (Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, BotCommand,
@@ -47,6 +48,8 @@ class Bot:
         self._feedback_last = {}  # user_id -> monotonic timestamp of last forwarded feedback
         self.subscribers = subscriber_store or SubscriberStore(
             os.environ.get("SUBSCRIBERS_FILE", "subscribers.json"))
+        self.suggestions = SuggestionStore(
+            os.environ.get("SUGGESTIONS_FILE", "suggestions.json"))
 
     def _locale(self, update: Update) -> str:
         language_code = update.effective_user.language_code if update.effective_user else None
@@ -315,6 +318,48 @@ class Bot:
         await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("feedback-cancel", update))
         return ConversationHandler.END
 
+    def _is_owner(self, update: Update) -> bool:
+        """Fail closed : sans OWNER_CHAT_ID configuré, personne n'est owner.
+        L'inverse ouvrirait /suggest à tous sur un simple oubli de config."""
+        owner_chat_id = os.environ.get("OWNER_CHAT_ID")
+        if not owner_chat_id:
+            LOGGER.warning("OWNER_CHAT_ID not set — /suggest refused")
+            return False
+        return str(update.effective_chat.id) == str(owner_chat_id)
+
+    async def __suggest_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Empile des noms de figures pour le pipeline de contenu. Owner-only,
+        absente du menu publié. Les réponses sont en dur, en français : ce sont
+        des messages d'opérateur, pas de la copie produit."""
+        if not self._is_owner(update):
+            LOGGER.info(f"/suggest ignored for chat {update.effective_chat.id}")
+            return
+
+        raw = " ".join(context.args) if context.args else ""
+        names = [n.strip() for n in raw.split(",") if n.strip()]
+        if not names:
+            await context.bot.send_message(
+                chat_id=update.effective_chat.id,
+                text="Usage : /suggest Nom, Autre nom, Encore un")
+            return
+
+        roster = [f.name for f in self.database.get_all_figures()]
+        lines = []
+        for name in names:
+            near = [r for r in roster if Utils.names_match(name, r)]
+            if self.suggestions.add(name):
+                # Rapprochement = avertissement, jamais un refus : le roster
+                # stocke des formes courtes qui produisent des faux positifs
+                # ('Philippe Auguste' contre 'Auguste'). L'humain tranche.
+                lines.append(f"⚠️ {name} — ressemble à {', '.join(near)} déjà au roster"
+                             if near else f"✅ {name}")
+            else:
+                lines.append(f"↩️ {name} — déjà en file")
+
+        lines.append(f"\nFile : {self.suggestions.count()}")
+        await context.bot.send_message(chat_id=update.effective_chat.id,
+                                       text="\n".join(lines))
+
     def register_handlers(self):
         # Global gate (runs before all group-0 handlers): private-chat-only.
         self.application.add_handler(TypeHandler(Update, self.__group_guard), group=-1)
@@ -324,6 +369,7 @@ class Bot:
         self.application.add_handler(CommandHandler('today', self.__today_handler))
         self.application.add_handler(CommandHandler('subscribe', self.__subscribe_handler))
         self.application.add_handler(CommandHandler('unsubscribe', self.__unsubscribe_handler))
+        self.application.add_handler(CommandHandler('suggest', self.__suggest_handler))
         self.application.add_handler(ConversationHandler(
             entry_points=[CommandHandler('feedback', self.__feedback_entry)],
             states={FEEDBACK_WAITING: [MessageHandler(filters.TEXT & ~filters.COMMAND, self.__feedback_receive)]},
