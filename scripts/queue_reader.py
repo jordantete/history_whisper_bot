@@ -12,6 +12,11 @@ import sys
 from dotenv import dotenv_values
 
 QUEUE_FILENAME = "suggestions.json"
+# Sentinel emitted by the remote command when the queue file does not exist
+# yet — a benign, expected state. Anything else non-zero is a real failure
+# (wrong path, permission denied, wrong host) and must not be conflated with
+# "nothing was suggested".
+NO_QUEUE_SENTINEL = "__NO_QUEUE__"
 
 
 def load_env(path=".env"):
@@ -29,9 +34,15 @@ def build_ssh_command(env):
         sys.exit("VPS_USER et VPS_HOST doivent être définis dans .env")
     bot_path = env.get("VPS_BOT_PATH") or "/root/history_whisper_bot"
     key = env.get("SSH_KEY") or os.path.expanduser("~/.ssh/id_ed25519")
-    # '|| true' : une file encore inexistante n'est pas une erreur.
-    return ["ssh", "-i", key, f"{user}@{host}",
-            f"cat {bot_path}/{QUEUE_FILENAME} 2>/dev/null || true"]
+    path = f"{bot_path}/{QUEUE_FILENAME}"
+    # Une file encore inexistante est un état bénin — distinct d'une lecture
+    # cassée (mauvais chemin, permission refusée, mauvais hôte). Le sentinel
+    # n'est émis QUE si le fichier est absent ; toute autre défaillance de
+    # `cat` fait échouer le `if` et remonte via le code de sortie non nul
+    # (piégé par check=True côté appelant) — pas de `A && B || C`, dont
+    # l'échec de B déclencherait C tout autant que l'échec de A.
+    remote_cmd = f"if [ -f {path} ]; then cat {path}; else echo {NO_QUEUE_SENTINEL}; fi"
+    return ["ssh", "-i", key, f"{user}@{host}", remote_cmd]
 
 
 def parse_queue_payload(payload):
@@ -45,7 +56,8 @@ def parse_queue_payload(payload):
         print(f"  ! {QUEUE_FILENAME} distant illisible, file ignorée")
         return []
     names = data.get("suggestions", []) if isinstance(data, dict) else []
-    return names if isinstance(names, list) else []
+    names = names if isinstance(names, list) else []
+    return [n for n in names if isinstance(n, str) and n.strip()]
 
 
 def read_remote_queue():
@@ -55,6 +67,9 @@ def read_remote_queue():
                                 text=True, check=True, timeout=30)
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
         sys.exit(f"Lecture de la file distante impossible : {e}")
-    names = parse_queue_payload(result.stdout)
+    if result.stdout.strip() == NO_QUEUE_SENTINEL:
+        names = []
+    else:
+        names = parse_queue_payload(result.stdout)
     print(f"File distante : {len(names)} nom(s).")
     return names

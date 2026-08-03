@@ -208,7 +208,10 @@ class TestDeepenPending(unittest.TestCase):
             deepened_forced, _ = deepen_pending([fig], intros, names=["Copernic"])
         self.assertEqual(deepened_default, [])  # chemin normal : marge trop large, ignoré
         self.assertTrue(any(name == "Copernic" and lang == "fr" for name, lang, *_ in deepened_forced))
-        self.assertGreaterEqual(fetch_mock.call_count, 1)
+        # --names force les DEUX langues, sans regarder la marge : c'est sa
+        # propriété définissante. >= 1 laisserait passer une dégradation
+        # silencieuse à une seule langue.
+        self.assertEqual(fetch_mock.call_count, 2)
 
     def test_names_still_refuses_shorter_text(self):
         """La non-régression n'a pas de dérogation via --names."""

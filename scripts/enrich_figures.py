@@ -5,12 +5,20 @@ write an enriched src/figures.json, and dump the intros for authoring faits.
 Run from the project root:  python -m scripts.enrich_figures
 Faits marquants (facts_en/facts_fr) are authored separately, grounded on the
 intros dumped to scripts/_intros.json, then merged into figures.json.
+
+WARNING: main() is a full-roster refresh, not the incremental path. It
+re-fetches and rewrites bio_fr/bio_en/image_url for every figure already in
+the roster. To add new figures, use scripts/add_figures.py (collect + stage)
+followed by scripts/merge_figures.py (promote) instead.
 """
 import json
+import os
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+
+from src.database import Database
 
 FIGURES_PATH = "src/figures.json"
 INTROS_PATH = "scripts/_intros.json"
@@ -357,6 +365,8 @@ def main():
             fig["wikidata_id"] = titles["wikidata_id"]
         bio_fr, img_fr = fetch_summary("fr", titles["fr"])
         bio_en, img_en = fetch_summary("en", titles["en"])
+        bio_fr = Database._clean(bio_fr)
+        bio_en = Database._clean(bio_en)
         if bio_fr:
             fig["bio_fr"] = bio_fr
         if bio_en:
@@ -371,9 +381,11 @@ def main():
         print(f"{name}: bio_fr={'Y' if bio_fr else '-'} bio_en={'Y' if bio_en else '-'} img={'Y' if image else '-'}")
         time.sleep(0.3)
 
-    with open(FIGURES_PATH, "w", encoding="utf-8") as f:
+    tmp = f"{FIGURES_PATH}.tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(figures, f, ensure_ascii=False, indent=2)
         f.write("\n")
+    os.replace(tmp, FIGURES_PATH)
     with open(INTROS_PATH, "w", encoding="utf-8") as f:
         json.dump(intros, f, ensure_ascii=False, indent=2)
 

@@ -2,8 +2,10 @@
 
 Issu de la tâche Notion *« Investiguer les sujets additionnels (Chine, Milgram, Péloponnèse…) »*.
 Objectif : élargir le backlog **au-delà des figures individuelles**. Recherche menée sujet par sujet,
-chaque figure vérifiée contre la contrainte dure du pipeline (`scripts/enrich_figures.py`) :
-**article Wikipédia EN + FR** (bio auto-fetch par titre) **+ portrait/illustration sur Commons**.
+chaque figure vérifiée contre la contrainte dure du pipeline (`scripts/add_figures.py`, qui
+promeut via `scripts/merge_figures.py` — `scripts/enrich_figures.py` n'est qu'un rafraîchissement
+plein-roster, pas le chemin d'ajout) : **article Wikipédia EN + FR** (bio auto-fetch par titre)
+**+ portrait/illustration sur Commons**.
 
 ## État d'implémentation (76 → 279 figures)
 

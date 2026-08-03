@@ -6,6 +6,7 @@ import tempfile
 import os
 from src.database import Database, FIGURES_PATH
 from src.historical_figure import HistoricalFigure
+from src.utils import Utils
 
 class TestDatabase(unittest.TestCase):
     def setUp(self):
@@ -66,6 +67,17 @@ class TestDatabase(unittest.TestCase):
         for figure in self.database.get_all_figures():
             self.assertTrue(figure.bio_fr, f"{figure.name}.bio_fr")
             self.assertTrue(figure.bio_en, f"{figure.name}.bio_en")
+
+    def test_roster_names_are_unique(self):
+        """merge_figures.promote() has no membership check, and --force
+        bypasses the only dedup (at collect time). A true duplicate staged
+        via --force would otherwise reach src/figures.json unnoticed and
+        get served twice by /today."""
+        names = [figure.name for figure in self.database.get_all_figures()]
+        self.assertEqual(len(names), len(set(names)))
+
+        normalized = [Utils.normalize_name(name) for name in names]
+        self.assertEqual(len(normalized), len(set(normalized)))
 
     def test_clean_collapses_whitespace_but_keeps_non_breaking_spaces(self):
         self.assertEqual(Database._clean("\n\n\nSigmund Freud, né le 6 mai"),
