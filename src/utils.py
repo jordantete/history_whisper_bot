@@ -1,4 +1,4 @@
-import os, json, unicodedata
+import os, json, re, unicodedata
 from src.logger import LOGGER
 
 
@@ -40,6 +40,14 @@ class Utils:
         decomposed = unicodedata.normalize("NFKD", name)
         stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
         return " ".join(stripped.casefold().split())
+
+    @staticmethod
+    def figure_slug(name) -> str:
+        """Identifiant URL-safe d'une figure, dérivé de son nom. C'est le payload
+        d'un deep link Telegram : 64 caractères max, charset [A-Za-z0-9_-].
+        Le roster n'a pas d'id stable — wikidata_id ne couvre que 7 des 339
+        figures — et les noms sont uniques, donc le nom fait foi."""
+        return re.sub(r"[^a-z0-9]+", "-", Utils.normalize_name(name)).strip("-")
 
     @staticmethod
     def names_match(a, b) -> bool:
