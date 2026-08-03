@@ -252,6 +252,10 @@ class Bot:
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
+        # Deep link t.me/<bot>?start=<slug> : Telegram passe le payload en args.
+        if context.args:
+            await self.__deliver_shared_figure(update, context, context.args[0])
+            return
         text = self._t("start-message", update)
         buttons = [
             InlineKeyboardButton("🎲 Random", callback_data="random"),
@@ -260,6 +264,23 @@ class Bot:
         ]
         reply_markup = InlineKeyboardMarkup([buttons])
         await context.bot.send_message(chat_id=update.effective_chat.id, text=text, reply_markup=reply_markup)
+
+    async def __deliver_shared_figure(self, update: Update, context: ContextTypes.DEFAULT_TYPE,
+                                      payload: str):
+        """Sert la figure d'un lien partagé. Le destinataire est un inconnu :
+        la ligne de contexte est le seul endroit où on lui dit où il est et
+        comment s'abonner. Un slug qui ne résout plus (figure renommée) le
+        renvoie sur la figure du jour plutôt que sur une erreur sèche."""
+        locale = self._locale(update)
+        figure = self.database.get_figure_by_slug(payload)
+        if figure:
+            intro = self._tl("shared-intro", locale)
+        else:
+            LOGGER.info(f"Unknown share payload: {payload!r}")
+            intro = self._tl("share-unknown", locale)
+            figure = self.database.get_figure_of_the_day(date.today())
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=intro)
+        await self._send_figure(update, context, figure)
 
     async def __help_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Help handler command called")

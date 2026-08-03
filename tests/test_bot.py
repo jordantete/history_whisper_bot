@@ -596,3 +596,45 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         app.bot.username = "HistoricalFiguresWhisperBot"
         await self.bot._post_init(app)
         self.assertEqual(self.bot._bot_username, "HistoricalFiguresWhisperBot")
+
+    async def test_start_with_payload_delivers_the_shared_figure(self):
+        figure = HistoricalFigure(name="George Sand", description="d", bio_fr="bio fr")
+        self.mock_database.get_figure_by_slug.return_value = figure
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["george-sand"]
+        await self.bot._Bot__start_handler(update, context)
+        self.mock_database.get_figure_by_slug.assert_called_once_with("george-sand")
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)          # ligne de contexte, puis carte
+        self.assertIn("/subscribe", texts[0])    # l'arrivant doit voir l'action
+        self.assertIn("George Sand", texts[1])
+
+    async def test_start_with_unknown_payload_falls_back_to_today(self):
+        """L'arrivant a cliqué : il repart avec une carte, pas avec une erreur."""
+        today = HistoricalFigure(name="Colbert", description="d", bio_fr="bio fr")
+        self.mock_database.get_figure_by_slug.return_value = None
+        self.mock_database.get_figure_of_the_day.return_value = today
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["figure-disparue"]
+        await self.bot._Bot__start_handler(update, context)
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("Colbert", texts[1])
+
+    async def test_start_without_payload_is_unchanged(self):
+        update, context = make_update(), make_context()
+        context.args = []
+        await self.bot._Bot__start_handler(update, context)
+        context.bot.send_message.assert_called_once()
+        self.mock_database.get_figure_by_slug.assert_not_called()
+
+    async def test_shared_link_renders_in_the_recipient_locale(self):
+        """La langue est celle du destinataire, pas celle de l'expéditeur."""
+        figure = HistoricalFigure(name="George Sand", description="d",
+                                  bio_en="EN bio", bio_fr="bio fr")
+        self.mock_database.get_figure_by_slug.return_value = figure
+        update, context = make_update(language_code="en"), make_context()
+        context.args = ["george-sand"]
+        await self.bot._Bot__start_handler(update, context)
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertIn("EN bio", texts[1])
