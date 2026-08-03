@@ -4068,5 +4068,345 @@
       "Ashoka's edicts suggest that a few years after the Kalinga War he was gradually drawn towards Buddhism; Buddhist legends credit him with establishing a large number of stupas, patronising the Third Buddhist council, and supporting Buddhist missionaries.",
       "Ashoka's existence as a historical emperor had almost been forgotten until the 19th-century decipherment of sources written in the Brahmi script; the State Emblem of modern India is an adaptation of the Lion Capital of Ashoka, and the Ashoka Chakra is at the centre of the National Flag of India."
     ]
+  },
+  {
+    "name": "Gandhi",
+    "description": "Avocat indien devenu théoricien de la résistance non violente et artisan de l'indépendance de l'Inde (XXe s.).",
+    "bio_fr": "Mohandas Karamchand Gandhi, né à Porbandar (Gujarat) le 2 octobre 1869 et mort assassiné à New Delhi le 30 janvier 1948, est un avocat indien, un nationaliste, anti-colonialiste et une personnalité politique connue pour avoir employé la résistance non violente.",
+    "bio_en": "Mohandas Karamchand Gandhi was an Indian lawyer, anti-colonial nationalist and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule, and to later inspire movements for civil rights and freedom across the world. The honorific Mahātmā, first applied to him in 1914 in South Africa, is now used throughout the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/330px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+    "facts_fr": [
+      "Pionnier et théoricien du satyāgraha, la résistance à l'oppression par la désobéissance civile de masse, fondée sur l'ahiṃsā, la non-violence.",
+      "Il conduit la marche du sel, célèbre opposition à la taxe sur le sel, et lance l'appel au mouvement Quit India le 8 août 1942 ; emprisonné plusieurs fois en Afrique du Sud et en Inde, il passe en tout six ans en prison.",
+      "Hindou profondément religieux, il vit simplement dans un ashram autosuffisant, tisse ses propres vêtements et pratique des jeûnes rigoureux comme moyen d'auto-purification et de protestation."
+    ],
+    "facts_en": [
+      "Trained in law at the Inner Temple in London, he moved to South Africa in 1893, where he lived for the next 21 years and first employed nonviolent resistance in a campaign for civil rights.",
+      "In 1930 he led the 400 km Dandi Salt March challenging the British-imposed salt tax, and in 1942 he called for the British to quit India; he was imprisoned many times in both South Africa and India.",
+      "He was assassinated on 30 January 1948 by Nathuram Godse, a militant Hindu nationalist who believed Gandhi had been too resolute in his defence of both Pakistan and Indian Muslims."
+    ]
+  },
+  {
+    "name": "Akbar",
+    "description": "Empereur moghol dont le règne, marqué par ses réformes administratives et sa tolérance religieuse, correspond à l'apogée de l'Empire moghol (XVIe s.).",
+    "bio_fr": "Jalâluddin Muhammad Akbar, né le 15 octobre 1542 à Amarkot et mort le 27 octobre 1605 à Āgrā, est un empereur moghol. Son règne, qui correspond à l'apogée de l'Empire moghol, est marqué par d'importantes réformes administratives et une tolérance religieuse qui renforcèrent l'unité de son empire. Ses contributions à l'art et à l'architecture firent rayonner la culture moghole dans toute l'Asie du Sud.",
+    "bio_en": "Akbar, also known as Akbar the Great, was the third Mughal emperor, who reigned from 1556 to 1605. Akbar succeeded his father, Humayun, under a regent, Bairam Khan, who helped the young emperor expand and consolidate Mughal domains in the Indian subcontinent. He is generally considered one of the greatest Mughal emperors.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Akbar_at_his_court.jpg/330px-Akbar_at_his_court.jpg",
+    "facts_fr": [
+      "En 1556, à 14 ans, il succède à son père Humâyûn sous la régence de Bairam Khân et remporte cette même année la bataille de Pânipat ; en 1560, il met fin à cette régence pour régner seul.",
+      "Il agrandit son empire par la conquête du Gujarat (1573), du Bengale (1576), du Sind (1590), de l'Orissa (1592) et du Balouchistan (1594), et hérite du Cachemire à la mort de son frère Hakîm en 1585.",
+      "En 1581, à l'issue de débats avec des représentants de plusieurs religions, dont des jésuites de Goa, il tire le Dîn-i-Ilâhî, une religion syncrétiste empruntant à l'islam, au christianisme et surtout au jaïnisme, qu'il espère ériger en facteur unifiant de son empire."
+    ],
+    "facts_en": [
+      "To unify the vast Mughal state, he established a centralised system of administration and adopted a policy of conciliating conquered rulers through marriage and diplomacy.",
+      "To preserve peace in his religiously and culturally diverse empire, he abolished the sectarian tax on non-Muslims and appointed them to high civil and military posts.",
+      "Under his rule, the Mughal economy tripled in size and wealth, and his courts at Delhi, Agra and Fatehpur Sikri became centres of the arts, letters and learning."
+    ]
+  },
+  {
+    "name": "Bouddha",
+    "description": "Maître spirituel indien, fondateur du bouddhisme (VIe ou Ve siècle av. J.-C.).",
+    "bio_fr": "Siddhārtha Gautama, plus couramment désigné comme le Bouddha (« l’Éveillé »), parfois comme Shakyamuni, est un maître spirituel qui vécut au VIe siècle av. J.-C. ou au Ve siècle av. J.-C., fondateur historique d'une communauté de moines errants qui donna naissance au bouddhisme.",
+    "bio_en": "Siddhartha Gautama, most commonly referred to as the Buddha, was a wandering ascetic and religious teacher who lived in the eastern Indo-Gangetic Plains during the 6th or 5th century BCE and founded Buddhism. According to Buddhist legends, he was born in Lumbini, in what is now Nepal, to royal parents of the Shakya clan, but renounced his home life to live as a wandering ascetic. After leading a life of mendicancy, asceticism, and meditation, he attained nirvana at Bodh Gaya in what is now Bihar, India. The Buddha then wandered through the lower Indo-Gangetic Plain, teaching and building a monastic order (sangha). Buddhist tradition holds he died in Kushinagar and reached parinirvana.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/330px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg",
+    "facts_fr": [
+      "Il serait né à Lumbinî, sur la route de Kapilavastu, capitale du clan familial, de Māyādevī et Śuddhodana, souverain des Śākyas de la caste des kṣatriyas, et fut actif dans les royaumes de Kosala et de Magadha.",
+      "Il aurait vécu environ quatre-vingts ans, mais les traditions ne s'accordent pas sur les dates exactes de sa vie : vers 623-543 av. J.-C. selon la tradition Theravāda, vers 563-483 av. J.-C. selon la majorité des spécialistes du début du XXe siècle.",
+      "Le titre de Bouddha lui aurait été donné plus tard par ses disciples, afin de le différencier des vingt-sept bouddhas qui l'ont précédé selon la tradition."
+    ],
+    "facts_en": [
+      "According to Buddhist tradition, he taught a Middle Way between sensual indulgence and severe asceticism, summarised in the Four Noble Truths and the Noble Eightfold Path.",
+      "His teachings on the five skandhas and dependent origination describe how mental states and things come into being and cease depending on other conditions, lacking an existence of their own.",
+      "He frequently referred to himself as the Tathāgata; his teachings were compiled by the Buddhist community into the Vinaya Piṭaka and Sūtra Piṭaka, and passed down through oral tradition for centuries."
+    ]
+  },
+  {
+    "name": "Mansa Moussa",
+    "description": "Dixième mansa de l'empire du Mali, dont le règne (XIVe s.) marque l'apogée de l'empire et dont le pèlerinage à La Mecque de 1324 reste célèbre.",
+    "bio_fr": "Mansa Moussa, aussi connu sous le nom de Mansa Musa et de Kankou Moussa, est le dixième mansa de l’empire du Mali, au pouvoir entre 1312 et 1337. Son règne marque l’apogée politique, économique et culturelle de l’Empire, étendu du Fouta-Djalon jusqu’au Gao, en passant par les anciens territoires du Ghana.",
+    "bio_en": "Mansa Musa was the ninth Mansa of the Mali Empire, which reached its territorial peak during his reign. Musa's reign is often regarded as the zenith of Mali's power and prestige, although he features less in Mandinka oral traditions than his predecessors.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Kanga_Moussa_Atlas_Catalan.jpg/330px-Kanga_Moussa_Atlas_Catalan.jpg",
+    "facts_fr": [
+      "Sa renommée nous parvient grâce aux chroniqueurs arabes comme Al-'Umari et Ibn Khaldoun, qui commentent son pèlerinage à La Mecque de 1324, épisode marquant l'ouverture diplomatique du Mali.",
+      "Il maintient des relations avec le Portugal, les mérinides, le sultanat hafside de Tunis et le sultanat mamelouk d'Égypte.",
+      "Une légende, fondée sur une extraction d'or malien évaluée entre trois et quatre tonnes par an, fait de lui l'homme le plus riche ayant existé — thèse qu'aucun travail universitaire ne vient corroborer à ce jour, l'historien Patrick Boucheron la qualifiant d'« indémontrable [et] fantasmatique »."
+    ],
+    "facts_en": [
+      "Contemporaries described him as inconceivably rich, though historians note that \"contemporary sources describe the king's riches in terms that are impossible for the time\" and that there is really no way to put an accurate number on his wealth.",
+      "His wealth came principally from the Mali Empire's control and taxing of the salt trade from the north and of gold panned and mined in Bambuk and Bure to the south; it is estimated that two-thirds of the gold circulating in the medieval Mediterranean came from West Africa.",
+      "In 1324 he went on Hajj to Mecca with an enormous entourage and a vast supply of gold, and while in Cairo his lavish gift-giving is said to have noticeably affected the value of gold in Egypt."
+    ]
+  },
+  {
+    "name": "Ramsès II",
+    "description": "Troisième pharaon de la XIXe dynastie égyptienne, surnommé Ramsès le Grand pour son long règne et ses innombrables monuments (XIIIe s. av. J.-C.).",
+    "bio_fr": "Ramsès II, né aux alentours de 1304 / 1301 av. J.-C. et mort à Pi-Ramsès vers 1213 av. J.-C., est le troisième pharaon de la XIXe dynastie égyptienne, au Nouvel Empire. Il est aussi appelé « Ramsès le Grand » ou encore « Ozymandias ». Manéthon l'appelle « Ramsès ».",
+    "bio_en": "Ramesses II, commonly known as Ramesses the Great, was the third pharaoh of the Nineteenth Dynasty of Egypt. Ramesses II is often regarded as the greatest, most celebrated, and most powerful pharaoh of the New Kingdom, which itself was the most powerful period of ancient Egypt. He is also widely considered one of ancient Egypt's most successful warrior pharaohs, conducting no fewer than 15 military campaigns, all resulting in victories, excluding the Battle of Kadesh, which is generally considered a stalemate. His 66-year rule was also the longest recorded reign of any pharaoh, possibly alongside Pepi II, who lived 1000 years earlier and is said to have reigned for over 90 years.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Le_mus%C3%A9e_%C3%A9gyptien_%28Turin%29_%282866334984%29.jpg/330px-Le_mus%C3%A9e_%C3%A9gyptien_%28Turin%29_%282866334984%29.jpg",
+    "facts_fr": [
+      "Son règne de soixante-six ans couvre à lui seul près de 60 % du nombre d'années total de la XIXe dynastie, une durée exceptionnelle pour l'époque.",
+      "Il lutte contre les Hittites et assure la domination de l'Égypte sur la Nubie et ses gisements aurifères, y construisant une série de temples dont les plus célèbres sont ceux d'Abou Simbel.",
+      "Il est souvent considéré comme le pharaon opposé à Moïse dans le Livre de l'Exode, mais son nom ne figure nulle part dans la Torah et l'historicité même de l'exode d'Israël hors d'Égypte est contestée."
+    ],
+    "facts_en": [
+      "He ascended the throne at age 25; early in his reign he founded the city of Pi-Ramesses in the Nile Delta as Egypt's new capital and used it as the main staging point for his campaigns in Syria.",
+      "He celebrated an unprecedented thirteen or fourteen Sed festivals — more than any other pharaoh — and estimates place his age at death at around 90 or 91.",
+      "Scholars dispute his popular identification as the pharaoh of the Exodus, including former Secretary-General of Egypt's Supreme Council of Antiquities Mostafa Wazir and Jewish historian Lester L. Grabbe."
+    ]
+  },
+  {
+    "name": "Hatchepsout",
+    "description": "Reine d'Égypte devenue pharaonne, cinquième souveraine de la XVIIIe dynastie et l'une des rares femmes à avoir régné en son nom propre (XVe s. av. J.-C.).",
+    "bio_fr": "Hatchepsout est une reine de l'Égypte antique, qui est devenue pharaonne, cinquième souveraine de la XVIIIe dynastie.",
+    "bio_en": "Hatshepsut was the sixth pharaoh of the Eighteenth Dynasty of Egypt, ruling first as regent, then as queen regnant from c. 1479 BC until c. 1458 BC and the Great Royal Wife of Pharaoh Thutmose II. She was Egypt's second confirmed woman who ruled in her own right, the first being Sobekneferu/Neferusobek in the Twelfth Dynasty.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/WLANL_-_koopmanrob_-_Maat-ka-Re_Hatsjepsoet_%28RMO%29.jpg/330px-WLANL_-_koopmanrob_-_Maat-ka-Re_Hatsjepsoet_%28RMO%29.jpg",
+    "facts_fr": [
+      "Selon l'égyptologue James Henry Breasted, elle est connue pour être la « première grande femme dont l'histoire ait gardé le nom », et elle est aussi l'un des archétypes les plus documentés de l'effet Matilda.",
+      "Fille de Thoutmôsis Ier et de la grande épouse royale Ahmès, elle épouse vers l'an VII du règne de son père son demi-frère Thoutmôsis II, union qui assure la légitimité de celui-ci sur le trône et fait d'elle la future grande épouse royale.",
+      "Elle monte sur le trône vers 1479 av. J.-C. et règne conjointement avec Thoutmôsis III, le fils de son époux et d'une épouse secondaire de celui-ci, Iset."
+    ],
+    "facts_en": [
+      "Upon the death of her husband and half-brother Thutmose II, she initially ruled as regent for her stepson Thutmose III, who inherited the throne at age two, before assuming the position of pharaoh herself several years into her regency.",
+      "To establish herself within the Egyptian patriarchy, she took on traditionally male roles and was depicted as a male pharaoh with masculine traits and traditional male garb, emphasizing that she was both mother and father to the realm.",
+      "Towards the end of the reign of Thutmose III and into that of his son Amenhotep II, an attempt was made to erase her from Egyptian historiography: her statues were destroyed, her monuments defaced, and many of her achievements ascribed to other pharaohs."
+    ]
+  },
+  {
+    "name": "Toussaint Louverture",
+    "description": "Esclave affranchi devenu général, figure majeure de la révolution haïtienne qui aboutit à l'indépendance d'Haïti (XVIIIe-XIXe s.).",
+    "bio_fr": "François-Dominique Toussaint Louverture, généralement appelé simplement Toussaint Louverture, à l'origine Toussaint de Bréda, est un esclave affranchi, général et homme politique franco-haïtien d'origine africaine, né vers 1743 à l'habitation Bréda du Haut-du-Cap près du Cap-Français, et mort en captivité le 7 avril 1803 à La Cluse-et-Mijoux, dans le département du Doubs, en France métropolitaine.",
+    "bio_en": "François-Dominique Toussaint Louverture, also known as Toussaint L'Ouverture or Toussaint Bréda, was a Haitian general and the most prominent leader of the Haitian Revolution. During his life, Louverture first fought and allied with Spanish forces against Saint-Domingue Royalists, then joined with Republican France, becoming Governor-General-for-life of Saint-Domingue, and lastly fought against Bonaparte's republican troops. As a revolutionary leader, Louverture displayed military and political acumen that helped transform the fledgling slave rebellion into a revolutionary movement. Along with Jean-Jacques Dessalines, Louverture is now known as one of the \"Fathers of Haiti\" and a figure of Haitian mythology, where he was celebrated as a founder of the black nation.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Toussaint_Louverture_par_Pierre-Charles_Baquoy.jpg",
+    "facts_fr": [
+      "Arrêté et emmené en France, il meurt en captivité en 1803 au fort de Joux, sans avoir pu connaître la proclamation d'indépendance d'Haïti le 1er janvier 1804 par son ancien esclave devenu son lieutenant, Jean-Jacques Dessalines.",
+      "Certains historiens font apparaître les aspects contradictoires du personnage : descendant d'esclaves noirs et affranchi, il devient lui-même propriétaire de plusieurs plantations et ne recherche pas toujours la libération effective des travailleurs noirs, tout en se montrant par ailleurs adepte d'un pouvoir pour le moins autoritaire, comme en témoigne la Constitution de Saint-Domingue de 1801.",
+      "Sa détention par Napoléon et sa mort en captivité achèvent de le transformer en héros, dont la légende dépasse parfois la réalité."
+    ],
+    "facts_en": [
+      "Born a slave in Saint-Domingue, he was manumitted as an affranchi before the French Revolution and became a slave owner himself, owning several coffee plantations at Petit Cormier, Grande Rivière, and Ennery.",
+      "Nearly 50 years old at the start of the Haitian Revolution, he began his military career as a lieutenant to Georges Biassou, initially allying with the Spaniards of neighboring Santo Domingo before switching allegiance to the French when the Republican government moved to abolish slavery in its colonies.",
+      "In 1802 he was invited to a parley by French Divisional General Jean-Baptiste Brunet but was arrested upon arrival, then deported to France and jailed at the Fort de Joux, where he died in 1803."
+    ]
+  },
+  {
+    "name": "Nelson Mandela",
+    "description": "Homme d'État sud-africain, figure historique de la lutte contre l'apartheid et premier président noir du pays, élu en 1994 (XXe s.).",
+    "bio_fr": "Nelson Rolihlahla Mandela, dont le nom du clan tribal est « Madiba », né le 18 juillet 1918 à Mvezo et mort le 5 décembre 2013 à Johannesburg (Gauteng), est un homme d'État sud-africain. Il a été l'un des dirigeants historiques de la lutte contre le système politique institutionnel de ségrégation raciale de l'apartheid, avant de devenir président de la république d'Afrique du Sud de 1994 à 1999, à la suite des premières élections nationales non ségrégationnistes de l'histoire du pays.",
+    "bio_en": "Nelson Rolihlahla Mandela was a South African anti-apartheid revolutionary, politician, and philanthropist, who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election. His government focused on dismantling the legacy of apartheid by tackling institutionalised racism and fostering racial reconciliation. Ideologically an African nationalist and socialist, he served as President of the African National Congress (ANC) party from 1991 to 1997.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg",
+    "facts_fr": [
+      "Il entre au Congrès national africain en 1943, devient avocat, puis fonde et dirige en 1961 la branche militaire de l'ANC, Umkhonto we Sizwe, qui mène une campagne de sabotage contre des installations publiques et militaires.",
+      "Arrêté le 5 août 1962 par la police sud-africaine sur indication de la CIA, il est condamné à la prison et aux travaux forcés à perpétuité lors du procès de Rivonia, et passe vingt-sept années d'emprisonnement avant d'être relâché le 11 février 1990.",
+      "En 1993, il reçoit avec Frederik de Klerk le prix Nobel de la paix pour avoir conjointement et pacifiquement mis fin au régime de l'apartheid et jeté les bases d'une nouvelle Afrique du Sud démocratique."
+    ],
+    "facts_en": [
+      "Influenced by Marxism, he secretly joined the South African Communist Party and, together with it, co-founded the militant Umkhonto we Sizwe in 1961, leading a sabotage campaign against the government.",
+      "He served 27 years in prison — initially on Robben Island, later in Pollsmoor and Victor Verster Prison — before being released in 1990 amid growing domestic and international pressure and fears of a racial civil war.",
+      "He was a controversial figure for much of his life: critics on the right denounced him as a communist terrorist, while those on the radical left deemed him too eager to negotiate and reconcile with apartheid's supporters."
+    ]
+  },
+  {
+    "name": "Néfertiti",
+    "description": "Reine d'Égypte, grande épouse royale du pharaon Akhenaton, connue notamment pour son buste conservé à Berlin (XIVe s. av. J.-C.).",
+    "bio_fr": "Néfertiti est une reine d'Égypte, grande épouse royale d'Akhenaton, l'un des derniers rois de la XVIIIe dynastie. Elle a vécu aux environs de 1370 à 1333 av. J.-C.",
+    "bio_en": "Nefertiti was a queen of the 18th Dynasty of Ancient Egypt, the great royal wife of Pharaoh Akhenaten. Nefertiti and her husband were known for their radical overhaul of state religious policy, in which they promoted an exclusivist and possibly even monotheistic religion, Atenism, centred on the sun disc and its direct connection to the royal household. With her husband, she reigned at what was arguably the wealthiest period of ancient Egyptian history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Nofretete_Neues_Museum.jpg/330px-Nofretete_Neues_Museum.jpg",
+    "facts_fr": [
+      "Certains égyptologues ont conjecturé qu'à la fin du règne d'Akhenaton, elle aurait été corégente sous le nom d'Ânkh-Khéperourê Néfernéférouaton et lui aurait succédé, mais il n'est pas établi qu'elle lui ait survécu.",
+      "Une équipe d'archéologues américains, en reconstituant virtuellement les parois du temple d'Aton à Karnak à partir de plus de six mille blocs de grès (talatates), a eu la surprise de constater que les représentations de Néfertiti y étaient plus nombreuses que celles d'Akhenaton, son royal époux.",
+      "L'hypothèse selon laquelle elle serait la princesse mittanienne Tadukhipa est jugée peu convaincante, puisqu'il a été établi que Néfertiti n'est pas une princesse du Mittani."
+    ],
+    "facts_en": [
+      "Some scholars believe Nefertiti ruled briefly as a female pharaoh under the throne name Neferneferuaten just before Tutankhamun's ascension — an identification that remains a matter of ongoing debate; if true, her reign was marked by the fall of Amarna and the relocation of the capital back to Memphis after her death.",
+      "She and Akhenaten are known to have had at least six daughters, including Meritaten, Meketaten and Ankhesenpaaten, who was later called Ankhesenamun when she married Tutankhamun; a genetic study on discovered mummies suggests Nefertiti was not the mother of Tutankhamun himself.",
+      "Nefertiti was made famous in the 20th century by the discovery and display of her bust, now in Berlin's Neues Museum and one of the most copied works of ancient Egyptian art, attributed to the sculptor Thutmose."
+    ]
+  },
+  {
+    "name": "Moctezuma",
+    "description": "Neuvième empereur aztèque, à la tête de l'Empire de 1502 à 1520, dont le règne s'achève avec l'arrivée des conquistadors espagnols et la chute de Mexico-Tenochtitlan (XVIe s.).",
+    "bio_fr": "Moctezuma II, de son nom complet en nahuatl Motecuhzoma Xocoyotzin, né vers 1466 et mort le 29 juin 1520 à Mexico-Tenochtitlan, neuvième tlatoani de la cité de Mexico-Tenochtitlan, est à la tête de l'Empire aztèque de 1502 à 1520.",
+    "bio_en": "Moctezuma Xocoyotzin, retroactively referred to in European sources as Moctezuma II, and often called Montezuma, was the ninth emperor of the Aztec Empire, reigning from 1502 or 1503 to 1520. Through his marriage with Queen Tlapalizquixochtzin of Ecatepec, one of his two wives, he was also the king consort of the altepetl.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Fig1_Moctezuma_%28C%C3%B3dice_Diego_Dur%C3%A1n%29.jpg/330px-Fig1_Moctezuma_%28C%C3%B3dice_Diego_Dur%C3%A1n%29.jpg",
+    "facts_fr": [
+      "Il s'efforce de consolider l'apogée de l'Empire aztèque en soumettant des territoires enclavés restés indépendants, notamment en pays mixtèque, et transforme l'ancien système de hiérarchie sociale méritocratique en creusant le fossé entre nobles (pipiltin) et roturiers (macehualtin), exclus des fonctions supérieures de l'administration.",
+      "Accueillis d'abord comme des hôtes par Moctezuma II en novembre 1519, Cortés et ses troupes voient les relations se tendre rapidement : en mai 1520 les habitants de Mexico se soulèvent, les Espagnols se retrouvent assiégés, et Moctezuma meurt le 29 juin dans des conditions mal connues.",
+      "De nombreuses sources le décrivent comme un chef faible et indécis à la tête d'un État vaincu, mais cette vision des choses ne correspond pas à sa conduite réelle face aux Espagnols."
+    ],
+    "facts_en": [
+      "Through warfare, he expanded Aztec territory as far south as Xoconosco in Chiapas and the Isthmus of Tehuantepec, incorporating the Zapotec and Yopi peoples into the empire.",
+      "Though two other Aztec rulers succeeded him after his death, their reigns were short-lived and the empire quickly collapsed under them.",
+      "Authentic depictions of him among his contemporaries are divided: some describe him as one of the greatest leaders Mexico had, a conqueror who tried his best to keep his nation together in a time of crisis, while others depict him as a tyrant seeking absolute control over the whole empire; accounts of how he died, and whether Spaniards or natives killed him, differ."
+    ]
+  },
+  {
+    "name": "Atahualpa",
+    "description": "Dernier empereur de l'Empire inca indépendant, dont le bref règne s'achève avec la conquête espagnole du Pérou (XVIe s.).",
+    "bio_fr": "Atahualpa, né vers 1500 et mort le 29 août 1533, est le dernier empereur de l'Empire inca indépendant. D'abord implanté dans la partie nord du royaume, une région dont les principales villes sont à l'époque Quito et Tomebamba, il s'empare du trône impérial de Cuzco après sa victoire lors de la guerre fratricide qui l'oppose à son demi-frère Huascar pour le pouvoir après la mort de leur père, l'empereur Huayna Capac. Sa victoire coïncide toutefois avec l'arrivée au Pérou des conquistadors espagnols.",
+    "bio_en": "Atawallpa, also Atahualpa or Ataw Wallpa, whose regnal name was Caccha Pachacuti Inca Yupanqui Inca, was the last effective Inca emperor, reigning from April 1532 until his capture and execution in July of the following year, as part of the Spanish conquest of the Inca Empire.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Atahualpa_Inca_XIV.png/330px-Atahualpa_Inca_XIV.png",
+    "facts_fr": [
+      "Capturé par ruse le 16 novembre 1532 par le conquistador Francisco Pizarro, il propose de payer une énorme rançon contre sa liberté ; Pizarro l'accepte, mais les Espagnols, craignant une attaque indigène, décident de se débarrasser de l'empereur.",
+      "Ayant reçu la rançon promise contre sa libération, les Espagnols l'accusent malgré tout de trahison, de complot contre la couronne espagnole et d'être à l'origine de l'assassinat de son frère Huascar, avant de le condamner à mort et de l'exécuter par étranglement.",
+      "Les incertitudes sur son lieu de naissance opposent chroniqueurs et historiens : Cieza de León et Betanzos le disent né à Cuzco d'une mère de la noblesse inca, tandis que d'autres historiens équatoriens le disent né à Quito ou à Caranqui."
+    ],
+    "facts_en": [
+      "He was the son of the emperor Huayna Cápac, who died around 1525 along with his heir Ninan Cuyochi in a smallpox epidemic; Atahualpa initially accepted his half-brother Huáscar as the new emperor, who appointed him governor of Quito.",
+      "From 1529 to 1532 the two half-brothers contested the succession in the Inca Civil War; Huáscar briefly took Atahualpa prisoner, but Atahualpa escaped, rallied his forces, and won several battles before capturing Huáscar himself.",
+      "In captivity after his capture at Cajamarca, he arranged for the execution of Huáscar and was sentenced to death by burning at the stake, but after his baptism in July 1533 he was garroted instead."
+    ]
+  },
+  {
+    "name": "Cortés",
+    "description": "Conquistador espagnol qui s'empare de l'Empire aztèque en 1521-1522 au nom de Charles Quint, acte fondateur de la Nouvelle-Espagne (XVIe s.).",
+    "bio_fr": "Hernán Cortés, de son nom complet Hernando Cortés de Monroy y Pizarro Altamirano, probablement né en 1485 à Medellín (Estrémadure) et mort le 2 décembre 1547 à Castilleja de la Cuesta, près de Séville, est un conquistador espagnol qui, en 1521-1522, s'est emparé de l'Empire aztèque au nom de Charles Quint, roi de Castille et roi d'Aragon, acte fondateur de la Nouvelle-Espagne.",
+    "bio_en": "Hernán Cortés, 1st Marquis of the Valley of Oaxaca was a Spanish conquistador, military commander, explorer, captain general, and writer who led an expedition that caused the fall of the Aztec Empire and brought large portions of what is now mainland Mexico under the rule of the King of Castile in the early 16th century. Cortés was part of the generation of Spanish explorers and conquistadors who began the first phase of the Spanish colonization of the Americas.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg/330px-Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg",
+    "facts_fr": [
+      "Il est cousin au second degré de Francisco Pizarro, qui s'empare quelques années plus tard de l'Empire inca, et reçoit en récompense de sa conquête le titre de marquis de la Vallée d'Oaxaca, créé pour lui le 20 juillet 1529.",
+      "Envoyé à 14 ans étudier à Salamanque auprès de son oncle, un grammairien, il n'y reste que deux ans et quitte l'université sans diplôme, mais y acquiert des bases en latin, droit et rhétorique dont il usera par la suite.",
+      "Le 10 février 1519, il quitte Cuba avec onze navires, cent dix marins, seize cavaliers et trente-deux chevaux, cinq cent dix-huit fantassins et treize artilleurs, pour l'expédition qui le mène au Mexique."
+    ],
+    "facts_en": [
+      "His enmity with the governor of Cuba, Diego Velázquez de Cuéllar, resulted in the recall of his 1519 expedition to the mainland at the last moment — an order which Cortés simply ignored.",
+      "He executed a successful strategy of allying with some indigenous peoples against others, and used a native woman, Doña Marina, as an interpreter; she later gave birth to his first son.",
+      "After overthrowing the Aztec Empire, Cortés was awarded the title of marqués del Valle de Oaxaca, while the more prestigious title of viceroy went instead to the nobleman Antonio de Mendoza."
+    ]
+  },
+  {
+    "name": "George Washington",
+    "description": "Premier président des États-Unis (1789-1797) et commandant en chef de l'Armée continentale pendant la guerre d'indépendance (XVIIIe s.).",
+    "bio_fr": "George Washington, né le 22 février 1732 à Pope's Creek et mort le 14 décembre 1799 à Mount Vernon (Virginie), est un militaire, planteur esclavagiste et homme d'État américain. Après avoir été commandant en chef de l'Armée continentale pendant la guerre d'indépendance entre 1775 et 1783, il est le 1er président des États-Unis, en fonction du 30 avril 1789 au 4 mars 1797.",
+    "bio_en": "George Washington was a Founding Father and the first president of the United States, serving from 1789 to 1797. As commander of the Continental Army, Washington led Patriot forces to victory in the American Revolutionary War against the British Empire. He is commonly known as the Father of His Country for his role in bringing about American independence.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+    "facts_fr": [
+      "L'un des planteurs les plus riches de Virginie grâce à son domaine de Mount Vernon, il devient célèbre des deux côtés de l'Atlantique grâce à sa participation à la guerre de Sept Ans (1756-1763).",
+      "Après la guerre d'indépendance, il participe à la rédaction de la Constitution des États-Unis et fait l'unanimité lors de la première élection présidentielle.",
+      "Son nom a été donné à la capitale des États-Unis ainsi qu'à un État du nord-ouest de l'Union, et son effigie figure depuis 1932 sur la pièce de 25 cents ainsi que sur le billet d'un dollar."
+    ],
+    "facts_en": [
+      "He crossed the Delaware River to win the battles of Trenton in late 1776 and Princeton in early 1777, before ultimately leading a combined French and American force to a decisive victory over the British at Yorktown in 1781.",
+      "As president, he set enduring precedents for the office, including republicanism, a peaceful transfer of power, the use of the title \"Mr. President\", and the two-term tradition.",
+      "As a planter of tobacco and wheat at Mount Vernon, Washington owned many slaves; he began opposing slavery near the end of his life and provided in his will for the eventual manumission of his slaves."
+    ]
+  },
+  {
+    "name": "Lincoln",
+    "description": "Seizième président des États-Unis, qui dirige le pays pendant la guerre de Sécession et œuvre à l'abolition de l'esclavage (XIXe s.).",
+    "bio_fr": "Abraham Lincoln, né le 12 février 1809 à Hodgenville (Kentucky) et mort assassiné le 15 avril 1865 à Washington, D.C., est un homme d'État américain. Il est le 16e président des États-Unis, en fonction du 4 mars 1861 jusqu'à sa mort, et le premier issu du Parti républicain. Figure emblématique de l'histoire américaine, Lincoln préside les États-Unis durant la guerre de Sécession — la pire crise constitutionnelle, militaire et morale qu'ait connue le pays —, préserve l'Union contre les États confédérés et fait adopter le 13e amendement abolissant l'esclavage. Sorti victorieux du conflit, il est assassiné cinq jours après la fin des hostilités, au début de son second mandat, dans le cadre d'un complot mené par des partisans confédérés.",
+    "bio_en": "Abraham Lincoln was the 16th president of the United States, serving from 1861 until his assassination in 1865. He led the United States through the American Civil War, defeating the Confederacy and playing a major role in the abolition of slavery.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/330px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+    "facts_fr": [
+      "Issu d'une famille modeste du Kentucky, il apprend seul le droit grâce à ses talents d'autodidacte et devient avocat itinérant avant d'être élu à la Chambre des représentants de l'Illinois dans les années 1830, puis à celle des États-Unis dans les années 1840.",
+      "Il acquiert une notoriété nationale en 1858 à la suite des débats Lincoln-Douglas face à Stephen A. Douglas, partisan du droit des États à décider de l'introduction ou non de l'esclavage.",
+      "En 1863, il proclame la Proclamation d'émancipation, qui libère les esclaves des États rebelles et encourage les États intermédiaires à abolir progressivement l'esclavage."
+    ],
+    "facts_en": [
+      "Angered by the Kansas–Nebraska Act of 1854, which opened the territories to slavery, he became a leader of the new Republican Party and reached a national audience in the 1858 Senate campaign debates against Stephen A. Douglas.",
+      "He suspended the writ of habeas corpus in April 1861 — an action Chief Justice Roger Taney found in Ex parte Merryman only Congress could do — and averted war with Britain by defusing the Trent Affair.",
+      "On November 19, 1863, he delivered the Gettysburg Address, which became one of the most famous speeches in American history."
+    ]
+  },
+  {
+    "name": "Bolívar",
+    "description": "Général et homme d'État vénézuélien surnommé « El Libertador », artisan de l'indépendance de plusieurs pays d'Amérique du Sud face à l'Empire espagnol (XIXe s.).",
+    "bio_fr": "Simón Bolívar /siˈmon boˈliβaɾ/, de son nom complet Simón José Antonio de la Santísima Trinidad Bolívar y Palacios, surnommé El Libertador, né le 24 juillet 1783 à Caracas dans la vice-royauté de Nouvelle-Grenade, et mort le 17 décembre 1830 à Santa Marta en Grande Colombie, est un général et homme d'État vénézuélien.",
+    "bio_en": "Simón José Antonio de la Santísima Trinidad Bolívar Palacios Ponte y Blanco was a Venezuelan military officer and statesman who led what are currently the countries of Bolivia, Colombia, Ecuador, Panama, Peru, and Venezuela to independence from the Spanish Empire. He is known colloquially as El Libertador, \"the Liberator,\" of America.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Portrait_of_Sim%C3%B3n_Bol%C3%ADvar_by_Arturo_Michelena.jpg/330px-Portrait_of_Sim%C3%B3n_Bol%C3%ADvar_by_Arturo_Michelena.jpg",
+    "facts_fr": [
+      "Il est, avec Antonio José de Sucre, l'Argentin José de San Martín et le Chilien Bernardo O'Higgins, une figure emblématique de l'émancipation des colonies espagnoles d'Amérique du Sud dès 1813, et contribue à la création de la Grande Colombie, dont il est le premier président.",
+      "Il mène une centaine de batailles, dont soixante-dix-neuf décisives, parcourant pendant ses campagnes 70 000 kilomètres à cheval, soit dix fois plus qu'Hannibal, trois fois plus que Napoléon et deux fois plus qu'Alexandre le Grand.",
+      "Ses idées inspirent un courant politique, le bolivarisme, proche du panaméricanisme, dont se réclame directement au Venezuela la révolution bolivarienne de 1999 à travers le chavisme."
+    ],
+    "facts_en": [
+      "After his wife María Teresa Rodríguez del Toro y Alaysa died of yellow fever in 1803, he undertook a Grand Tour that ended in Rome, where he swore to end Spanish rule in the Americas.",
+      "In exile in Haiti after Spanish forces subdued New Granada in 1815, he befriended Haitian revolutionary leader Alexandre Pétion, who gave him military support after Bolívar promised to abolish slavery in Spanish America.",
+      "Increasingly disillusioned with the South American republics in his final years, he was successively removed from his offices until he resigned the presidency of Colombia and died of tuberculosis in 1830."
+    ]
+  },
+  {
+    "name": "Benjamin Franklin",
+    "description": "Imprimeur, savant et homme politique américain, l'un des Pères fondateurs et signataire de la déclaration d'indépendance (XVIIIe s.).",
+    "bio_fr": "Benjamin Franklin /ˈbɛnd͡ʒəmɪn ˈfɹæŋklɪn/, né le 17 janvier 1706 à Boston et mort le 17 avril 1790 à Philadelphie, est un imprimeur, éditeur, écrivain, naturaliste, humaniste, inventeur, abolitionniste, diplomate et homme politique américain.",
+    "bio_en": "Benjamin Franklin was an American polymath who was one of the Founding Fathers of the United States; a drafter and signer of the Declaration of Independence; and the first postmaster general.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Benjamin_Franklin_1767.jpg/330px-Benjamin_Franklin_1767.jpg",
+    "facts_fr": [
+      "Il fonde à Philadelphie les premiers pompiers volontaires et la première bibliothèque de prêt des États-Unis, et invente le poêle à bois à combustion contrôlée ainsi que le paratonnerre, qui permet d'écarter le danger jusqu'alors représenté par la foudre.",
+      "À 42 ans, il se retire des affaires pour entrer en politique ; il participe à la rédaction de la déclaration d'indépendance, dont il est l'un des signataires, puis négocie en France le traité d'alliance avec les Français ainsi que le traité de Paris.",
+      "Délégué de la convention de Philadelphie, il participe à l'élaboration de la Constitution des États-Unis ; son portrait figure aujourd'hui sur les billets de 100 dollars américains."
+    ],
+    "facts_en": [
+      "As an agent in London for several colonies, he became a hero in North America when he spearheaded the repeal of the unpopular Stamp Act by the British Parliament, and was later widely admired as the first US ambassador to France.",
+      "Although he owned at least seven slaves from around 1735 and ran \"for sale\" ads for slaves in his newspaper, by the late 1750s he had begun arguing against slavery and became an active abolitionist.",
+      "He is the only person to have signed the Declaration of Independence, the Treaty of Paris peace with Britain, and the Constitution."
+    ]
+  },
+  {
+    "name": "Churchill",
+    "description": "Homme d'État et écrivain britannique, Premier ministre du Royaume-Uni pendant la Seconde Guerre mondiale (XXe s.).",
+    "bio_fr": "Winston Churchill est un homme d'État et écrivain britannique, né le 30 novembre 1874 à Woodstock et mort le 24 janvier 1965 à Londres. Membre du Parti conservateur malgré un intermède au Parti libéral, il est Premier ministre du Royaume-Uni de mai 1940 à juillet 1945 puis d’octobre 1951 à avril 1955 ; il joue un rôle décisif dans la victoire des Alliés lors de la Seconde Guerre mondiale.",
+    "bio_en": "Sir Winston Leonard Spencer Churchill was a British statesman, military officer, and writer who was Prime Minister of the United Kingdom from 1940 to 1945, during the Second World War, and again from 1951 to 1955. For some 62 of the years between 1900 and 1964, he was a Member of Parliament (MP) and represented a total of five constituencies over that time. Ideologically an adherent to economic liberalism and imperialism, he was for most of his career a member of the Conservative Party, which he led from 1940 to 1955. He was a member of the Liberal Party from 1904 to 1924.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sir_Winston_Churchill_-_19086236948_%28cropped2%29.jpg/330px-Sir_Winston_Churchill_-_19086236948_%28cropped2%29.jpg",
+    "facts_fr": [
+      "À l'approche de la fin du conflit, il plaide auprès du président américain Franklin D. Roosevelt pour qu'il reconnaisse la France libre de Charles de Gaulle, puis obtient à la France une place au Conseil de sécurité des Nations unies ainsi qu'une zone d'occupation en Allemagne.",
+      "Il perd de façon inattendue les élections législatives de 1945 malgré son action pendant la Seconde Guerre mondiale, et dénonce dès 1946 le rideau de fer depuis son poste de chef de l'opposition.",
+      "Il est parfois critiqué pour son opposition à la décolonisation, ses déclarations jugées racistes contre les peuples non-européens et son attitude jugée complaisante vis-à-vis de certaines dictatures."
+    ],
+    "facts_en": [
+      "He returned sterling to the gold standard in 1925 as Chancellor of the Exchequer, depressing the UK economy, and later spent the 1930s in the political \"wilderness\" leading calls for rearmament against the threat of Nazi Germany.",
+      "Amid the developing Cold War with the Soviet Union, he publicly warned of an \"iron curtain\" of Soviet influence in Europe and was awarded the Nobel Prize in Literature in 1953.",
+      "A staunch imperialist, he has sometimes been criticised for comments on race, in addition to some wartime decisions such as area bombing."
+    ]
+  },
+  {
+    "name": "De Gaulle",
+    "description": "Général et homme d'État français, fondateur de la France libre pendant la Seconde Guerre mondiale et premier président de la Ve République (XXe s.).",
+    "bio_fr": "Charles de Gaulle, couramment appelé le général de Gaulle ou simplement le Général, né le 22 novembre 1890 à Lille (Nord) et mort le 9 novembre 1970 à Colombey-les-Deux-Églises (Haute-Marne), est un militaire, résistant, homme d'État et écrivain français. Pendant la Seconde Guerre mondiale, Charles de Gaulle a fondé la France libre ; à la Libération, il préside le gouvernement provisoire à partir de 1944 jusqu'en 1946. Instigateur de la Ve République, il en a été le premier président du 8 janvier 1959 au 28 avril 1969.",
+    "bio_en": "Charles André Joseph Marie de Gaulle was a French general and statesman who led the Free French Forces against Nazi Germany and Vichy France in World War II and chaired the Provisional Government of the French Republic from 1944 to 1946 to restore democracy in France. Following the 1958 Algiers putsch, he came out of retirement at the request of President René Coty, who appointed him Prime Minister. He commissioned a new constitution which was approved by voters in a referendum, establishing the Fifth Republic. He was subsequently elected President of France later that year, a position he held until his resignation in 1969.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/De_Gaulle-OWI_%283x4_cropped%29_%282%29.jpg/330px-De_Gaulle-OWI_%283x4_cropped%29_%282%29.jpg",
+    "facts_fr": [
+      "Rejetant l'armistice du 22 juin 1940, il lance de Londres l'« appel du 18 Juin » à la BBC, incitant le peuple français à résister ; condamné à mort par contumace et déchu de la nationalité française par le régime de Vichy, il entretient des relations froides avec Franklin Roosevelt mais bénéficie généralement de l'appui de Winston Churchill.",
+      "De retour au pouvoir après la crise de mai 1958 dans le contexte de la guerre d'Algérie, il fait approuver la Cinquième République par référendum, puis renonce par étapes à l'Algérie française malgré l'opposition des pieds-noirs et des militaires qui avaient favorisé son retour.",
+      "Défenseur d'une « politique de grandeur » et de l'« indépendance nationale », il dote la France d'une force de dissuasion nucléaire, retire le pays du commandement militaire de l'OTAN et oppose un veto à l'entrée du Royaume-Uni dans la Communauté économique européenne."
+    ],
+    "facts_en": [
+      "As early as 1944 he introduced a dirigiste economic policy involving substantial state-directed control over a capitalist economy, which was followed by 30 years of unprecedented growth known as the Trente Glorieuses.",
+      "He restored cordial France–Germany relations with Konrad Adenauer, creating a European counterweight between the Anglo-American and Soviet spheres of influence through the Élysée Treaty of 22 January 1963.",
+      "He openly criticised the US intervention in Vietnam and the \"exorbitant privilege\" of the US dollar, and his use of the slogan \"Vive le Québec libre\" during a speech in Montreal generated considerable controversy."
+    ]
+  },
+  {
+    "name": "Roosevelt",
+    "description": "Trente-deuxième président des États-Unis, qui conduit le pays à travers la Grande Dépression et la Seconde Guerre mondiale (XXe s.).",
+    "bio_fr": "Franklin Delano Roosevelt, généralement appelé Franklin D. Roosevelt et également connu sous ses initiales FDR, né le 30 janvier 1882 à Hyde Park et mort le 12 avril 1945 à Warm Springs, est un homme d'État américain. Membre du Parti démocrate, il est le 32e président des États-Unis, en fonction du 4 mars 1933 jusqu'à sa mort. Roosevelt préside les États-Unis juste après l'arrivée au pouvoir d'Adolf Hitler en Allemagne et jusqu'aux derniers mois de la Seconde Guerre mondiale.",
+    "bio_en": "Franklin Delano Roosevelt, also known as FDR, was the 32nd president of the United States, serving from 1933 until his death in 1945. He is the longest-serving US president and the only one to have served more than two terms. His first two terms were centered on combating the Great Depression, while his third and fourth focused on US involvement in World War II. A member of the Democratic Party, Roosevelt served in the New York State Senate from 1911 to 1913 and as the 44th governor of New York from 1929 to 1932.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/1944_Official_Campaign_Portrait_session_%288145288140%29.jpg/330px-1944_Official_Campaign_Portrait_session_%288145288140%29.jpg",
+    "facts_fr": [
+      "Face à la Grande Dépression (1929-1939), il met en œuvre le New Deal, réforme le système bancaire américain, fonde la Social Security et crée de nombreuses agences gouvernementales telles que la Work Projects Administration, la National Recovery Administration ou l'Agricultural Adjustment Administration.",
+      "Avant l'entrée en guerre des États-Unis, il lance le programme prêt-bail pour fournir les pays alliés en matériel de guerre ; après l'attaque de Pearl Harbor par les Japonais, il assume pleinement ses fonctions de commandant en chef de l'armée américaine.",
+      "Il joue un rôle de premier plan dans la transformation du monde à la sortie du conflit, inspirant notamment la fondation de l'ONU, même si son action est aussi critiquée sur des points comme l'internement des Nippo-Américains ou la confiscation de l'or des particuliers."
+    ],
+    "facts_en": [
+      "Elected governor of New York in 1928, he defeated President Herbert Hoover in a landslide in the 1932 election and, in his first 100 days, spearheaded unprecedented federal legislation launching the New Deal.",
+      "He was unable to expand the Supreme Court in 1937, the same year a conservative coalition formed to block further New Deal programs and reforms; surviving legislation from his presidency includes the Securities and Exchange Commission, the National Labor Relations Act, the FDIC, and Social Security.",
+      "Following the Japanese attack on Pearl Harbor, he obtained a declaration of war on Japan and subsequently on Nazi Germany and Fascist Italy, initiated the development of the first atomic bomb, and worked with the other Allied leaders to lay the groundwork for the United Nations."
+    ]
+  },
+  {
+    "name": "Martin Luther King",
+    "description": "Pasteur baptiste afro-américain, figure du mouvement des droits civiques et lauréat du prix Nobel de la paix en 1964 (XXe s.).",
+    "bio_fr": "Martin Luther King Jr., né Michael King Jr., plus couramment appelé Martin Luther King, né à Atlanta, en Géorgie, le 15 janvier 1929, et mort assassiné le 4 avril 1968 à Memphis, dans le Tennessee, est un pasteur chrétien baptiste et militant non violent afro-américain pour le mouvement américain des droits civiques, fervent militant pour la paix et contre la pauvreté.",
+    "bio_en": "Martin Luther King Jr. was an American civil rights activist and Baptist minister who was a prominent leader of the civil rights movement from 1955 until his assassination in 1968. He advanced civil rights for people of color in the United States through the use of nonviolent resistance and civil disobedience against Jim Crow laws and other forms of legalized discrimination, which most commonly affected African Americans.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/330px-Martin_Luther_King%2C_Jr..jpg",
+    "facts_fr": [
+      "Il organise et dirige des actions telles que le boycott des bus de Montgomery pour défendre le droit de vote, la déségrégation et l'emploi des minorités ethniques.",
+      "Son discours « I have a dream », prononcé le 28 août 1963 devant le Lincoln Memorial durant la marche pour l'emploi et la liberté, est soutenu par John Fitzgerald Kennedy dans la lutte contre la ségrégation raciale.",
+      "Il devient en 1964 le plus jeune lauréat du prix Nobel de la paix pour sa lutte non violente contre la ségrégation raciale, avant d'être assassiné en 1968 dans un meurtre officiellement attribué à James Earl Ray, dont la culpabilité et la participation à un complot restent débattues."
+    ],
+    "facts_en": [
+      "FBI Director J. Edgar Hoover considered King a radical and made him an object of COINTELPRO from 1963; FBI agents investigated him for possible communist ties, spied on his personal life, and secretly recorded him.",
+      "In 1964, the FBI mailed King a threatening anonymous letter, which he interpreted as an attempt to make him commit suicide.",
+      "In 1968, King was planning a national occupation of Washington, D.C., to be called the Poor People's Campaign, when he was assassinated on April 4 in Memphis, Tennessee."
+    ]
   }
 ]
