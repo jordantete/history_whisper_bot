@@ -5,7 +5,7 @@ Objectif : élargir le backlog **au-delà des figures individuelles**. Recherche
 chaque figure vérifiée contre la contrainte dure du pipeline (`scripts/enrich_figures.py`) :
 **article Wikipédia EN + FR** (bio auto-fetch par titre) **+ portrait/illustration sur Commons**.
 
-## État d'implémentation (76 → 164 figures)
+## État d'implémentation (76 → 279 figures)
 
 **60 figures ajoutées** en 5 lots + Mao. Tous les sujets Notion couverts.
 **+ Lafayette** (demande utilisateur, 2026-07-16) — héros des deux mondes ; Lamartine était déjà présent.
@@ -31,6 +31,102 @@ portrait Commons + 3 faits marquants EN/FR *grounded* et distincts de la bio.
   - *Han Xin* : pas d'article FR → rejetée (gate EN+FR).
   - *Kubilai Khan* : abandonnée (chevauche Gengis Khan déjà présent).
 - **Gardée malgré la sensibilité** : Mao Zedong (portrait ✅).
+
+## Lot 2026-07-31 → 2026-08-03 : +115 figures (164 → 279)
+
+Premier lot passé par le nouveau pipeline en trois étapes : `scripts/add_figures.py`
+(collecte + contrainte dure bio EN+FR) → `scripts/pending_figures.json` (staging) →
+`scripts/merge_figures.py` (promotion vers `src/figures.json`), avec
+`scripts/deepen_intros.py` en renfort pour les intros trop minces. Rédigé en 6
+sous-lots de 20 figures (Task 7), validés utilisateur. Le staging existe pour une
+raison précise : la suite de tests exige que **toute** figure du roster ait au
+moins 3 faits FR + 3 faits EN ; sans étape intermédiaire, une figure incomplète
+committée directement dans `src/figures.json` fait échouer la suite pour
+l'ensemble de la campagne, pas seulement pour elle-même.
+
+### Domaines ouverts (zéro absolu)
+
+- **Musique** : Mozart, Beethoven, Jean-Sébastien Bach, Chopin, Wagner, Vivaldi, Verdi.
+- **Japon** : Oda Nobunaga, Toyotomi Hideyoshi, Tokugawa Ieyasu, Miyamoto Musashi, Meiji.
+- **Inde** : Ashoka, Akbar, Gandhi, Bouddha.
+- **Afrique & Égypte antique** : Mansa Moussa, Chaka Zulu, Ramsès II, Hatchepsout,
+  Néfertiti, Toussaint Louverture, Nelson Mandela.
+- **Monde arabo-musulman** : Saladin, Averroès, Avicenne, Ibn Khaldoun,
+  Soliman le Magnifique, Al-Khwarizmi, Haroun al-Rachid.
+- **Amériques** : George Washington, Lincoln, Bolívar, Benjamin Franklin,
+  Moctezuma, Atahualpa, Cortés.
+
+### Domaines étoffés
+
+- **Explorateurs** (2 → 13) : + Christophe Colomb, Magellan, Vasco de Gama, Marco
+  Polo, James Cook, Amundsen, Shackleton, Ibn Battuta, Jacques Cartier, Champlain,
+  Livingstone.
+- **Russie** (2 → 8) : + Pierre le Grand, Catherine II, Tolstoï, Dostoïevski,
+  Lénine, Raspoutine.
+- **Philosophie** : Descartes, Kant, Nietzsche, Marx, Spinoza, John Locke, Hegel, Érasme.
+- **Art & Renaissance** : Michel-Ange, Raphaël, Botticelli, Rembrandt, Vermeer,
+  Dürer, Monet, Rodin, Le Caravage.
+- **Sciences modernes** : Einstein, Copernic, Kepler, Mendeleïev, Mendel, Tesla,
+  Edison, Turing, Fleming, Ampère.
+- **Sciences antiques** : Archimède, Pythagore, Euclide, Hippocrate, Ératosthène, Ptolémée.
+- **Médiéval européen** : Charlemagne, Guillaume le Conquérant, Aliénor
+  d'Aquitaine, Saint Louis, Thomas d'Aquin, Frédéric Barberousse, Philippe Auguste.
+- **Lettres** : Shakespeare, Cervantès, Dante, Homère, Virgile, Jules Verne, Baudelaire, Rimbaud.
+- **Mythes** : Thésée, Persée, Pandore, Sisyphe, Antigone, Minotaure.
+- **XXe siècle** : Churchill, De Gaulle, Roosevelt, Martin Luther King.
+- **Réforme** : Luther, Calvin, Saint Augustin.
+
+### Pièges rencontrés — à connaître pour le prochain lot
+
+Cette section est la plus utile du lot pour qui rédigera la suite : ce sont des
+échecs constatés, pas des risques théoriques.
+
+- **La contrainte dure prouve qu'une bio *existe*, pas qu'elle décrit le bon
+  sujet.** `Archimède` sans override a renvoyé la bio_en d'un bathyscaphe de la
+  Marine française (Task 3). `Antigone` et `Chaka Zulu` ont *passé* la contrainte
+  malgré une page de désambiguïsation/renvoi côté FR, parce que le portrait venait
+  du repli EN — l'hypothèse initiale « les pages d'homonymie n'ont pas de
+  portrait » s'est révélée fausse. Les deux ont été corrigées manuellement
+  (`Antigone (mythologie)`, `Chaka Zoulou`). **Le contrôle d'entité reste manuel** :
+  rien dans le pipeline ne le fait automatiquement.
+- **Le dédoublonnage flou produit de vrais faux positifs.** `Philippe Auguste`
+  contre `Auguste`, `Mendel` contre `Mendeleïev`, `Luther` contre `Martin Luther
+  King` : les trois ont dû être ajoutés avec `--force`.
+- **Une intro Wikipédia courte est souvent déjà épuisée par la bio affichée sur la
+  carte**, ne laissant rien à écrire. `scripts/deepen_intros.py` va chercher le
+  corps de l'article plutôt que le seul chapeau. Mais le seuil de marge est un
+  **proxy de longueur**, pas de contenu : `Copernic` et `Fleming` étaient tous les
+  deux au-dessus du seuil et n'ont pourtant livré que 2 faits chacun — une intro
+  peut être longue et sémantiquement à sec.
+- **Les deux Wikipédias se contredisent plus souvent que prévu.** Cas relevés :
+  le lieu du premier mariage d'Ibn Battuta (Tripoli en FR / Sfax en EN),
+  l'arrivée de Raspoutine à la cour (1907 en FR / fin 1906 en EN), le disciple
+  destinataire du testament de Musashi (Terao Katsunobu en FR / Terao Magonojō en
+  EN), la composition du Dîn-i-Ilâhî d'Akbar, les ordinaux dynastiques de Mansa
+  Moussa et Hatchepsout, la profession du père de Virgile, et l'annexion de la
+  Corée par Meiji (protectorat 1905 / annexion formelle 1910). **Remède appliqué
+  systématiquement : écrire sur autre chose dans une des deux langues plutôt que
+  trancher entre les sources.**
+- **Wikipédia se contredit parfois lui-même**, deux fois relevé : l'intro FR de
+  Michel-Ange date le dôme de Saint-Pierre de 1508 (il n'en a hérité la charge
+  qu'à 71 ans, vers 1546) ; l'intro FR de Turing donne à la fois le 7 et le 8 juin
+  1954 pour sa mort.
+- **Le défaut de rédaction récurrent était l'effacement des nuances de la
+  source** (« l'un des » → « le », « aurait » → affirmation, etc.) : 17 occurrences
+  sur les trois premiers sous-lots, puis zéro une fois les modes de défaillance
+  nommés explicitement avec des exemples réels dans les instructions.
+
+### Décision éditoriale — l'antisémitisme de Luther (sous-lot 6/6)
+
+Les deux intros sources (FR et EN) se referment sur l'antisémitisme tardif de
+Luther, citant l'historien Karl Jaspers qualifiant *Des Juifs et de leurs
+mensonges* d'« ensemble du programme nazi ». Le rédacteur l'avait initialement
+écarté des trois faits par langue pour donner la priorité au récit de la
+Réforme (95 thèses, diète de Worms, traduction de la Bible). Le vérificateur a
+remonté la question et le fait a été réintégré, au principe que la campagne
+reprend le cadrage de la source dans les deux sens — l'omettre revient à
+adoucir le sujet, ce qui est en soi une forme d'éditorialisation. Validé par le
+propriétaire du projet.
 
 ## Décision de modèle de données (recommandation unanime)
 
