@@ -2,6 +2,7 @@ import os
 import html
 import time
 from datetime import date, time as dtime
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 from src.database import Database
@@ -50,6 +51,8 @@ class Bot:
             os.environ.get("SUBSCRIBERS_FILE", "subscribers.json"))
         self.suggestions = SuggestionStore(
             os.environ.get("SUGGESTIONS_FILE", "suggestions.json"))
+        # Renseigné dans _post_init : sans lui, pas de deep link possible.
+        self._bot_username = None
 
     def _locale(self, update: Update) -> str:
         language_code = update.effective_user.language_code if update.effective_user else None
@@ -66,6 +69,8 @@ class Bot:
         Telegram once, at startup. Default (no language_code) carries English;
         French is registered explicitly. Shown in the '/' menu and on the
         bot's start screen / profile."""
+        # Needed to build share deep links; the button is omitted until it is known.
+        self._bot_username = application.bot.username
         menu = ("today", "random", "subscribe", "unsubscribe", "feedback", "help")
         for locale, language_code in (("en", None), ("fr", "fr")):
             # The display name is Telegram's top in-app search ranking factor, so it
@@ -153,14 +158,32 @@ class Bot:
         site = "frwiki" if locale == "fr" else "enwiki"
         return f"https://www.wikidata.org/wiki/Special:GoToLinkedPage?site={site}&itemid={figure.wikidata_id}"
 
+    def _share_url(self, figure, locale: str):
+        """Lien vers la feuille de partage native de Telegram, pré-remplie avec
+        une accroche et un deep link vers cette figure. Renvoie None tant que
+        l'username du bot est inconnu — le bouton est alors simplement omis."""
+        if not self._bot_username:
+            return None
+        deep_link = f"https://t.me/{self._bot_username}?start={Utils.figure_slug(figure.name)}"
+        text = self._tl("share-text", locale).format(name=figure.name)
+        return f"https://t.me/share/url?url={quote(deep_link, safe='')}&text={quote(text, safe='')}"
+
     def _figure_keyboard(self, locale: str, figure) -> InlineKeyboardMarkup:
         rows = [[
             InlineKeyboardButton(self._tl("btn-another", locale), callback_data="random"),
             InlineKeyboardButton(self._tl("btn-today", locale), callback_data="today"),
         ]]
-        url = self._read_more_url(figure, locale)
-        if url:
-            rows.append([InlineKeyboardButton(self._tl("btn-read-more", locale), url=url)])
+        # Seconde rangée adaptative : « Read more » n'existe que sur les figures
+        # à wikidata_id (7 sur 339), le partage sur toutes.
+        second = []
+        read_more = self._read_more_url(figure, locale)
+        if read_more:
+            second.append(InlineKeyboardButton(self._tl("btn-read-more", locale), url=read_more))
+        share = self._share_url(figure, locale)
+        if share:
+            second.append(InlineKeyboardButton(self._tl("btn-share", locale), url=share))
+        if second:
+            rows.append(second)
         return InlineKeyboardMarkup(rows)
 
     async def _deliver_figure(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, figure) -> None:

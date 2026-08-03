@@ -551,3 +551,48 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         self.bot.register_handlers()
         handlers = self.bot.application.handlers[0]
         self.assertEqual(len(handlers), 9)  # 7 commands + 1 feedback conversation + 1 callback query
+
+    async def test_figure_keyboard_carries_a_share_button(self):
+        self.bot._bot_username = "HistoricalFiguresWhisperBot"
+        figure = HistoricalFigure(name="George Sand", description="d")
+        markup = self.bot._figure_keyboard("fr", figure)
+        urls = [b.url for row in markup.inline_keyboard for b in row if b.url]
+        self.assertEqual(len(urls), 1)
+        self.assertTrue(urls[0].startswith("https://t.me/share/url?url="))
+        # Le deep link est percent-encodé dans le paramètre url.
+        self.assertIn("start%3Dgeorge-sand", urls[0])
+
+    async def test_share_button_is_omitted_without_a_known_username(self):
+        """Avant _post_init l'username est inconnu : mieux vaut pas de bouton
+        qu'un lien cassé."""
+        self.bot._bot_username = None
+        figure = HistoricalFigure(name="George Sand", description="d")
+        markup = self.bot._figure_keyboard("fr", figure)
+        urls = [b.url for row in markup.inline_keyboard for b in row if b.url]
+        self.assertEqual(urls, [])
+
+    async def test_share_and_read_more_share_one_row(self):
+        self.bot._bot_username = "HistoricalFiguresWhisperBot"
+        figure = HistoricalFigure(name="Lafayette", description="d", wikidata_id="Q184960")
+        markup = self.bot._figure_keyboard("fr", figure)
+        self.assertEqual(len(markup.inline_keyboard), 2)
+        self.assertEqual(len(markup.inline_keyboard[1]), 2)
+
+    async def test_share_text_is_localized_and_names_the_figure(self):
+        self.bot._bot_username = "HistoricalFiguresWhisperBot"
+        figure = HistoricalFigure(name="George Sand", description="d")
+        url_fr = self.bot._share_url(figure, "fr")
+        url_en = self.bot._share_url(figure, "en")
+        self.assertIn("George%20Sand", url_fr)
+        self.assertNotEqual(url_fr, url_en)
+
+    async def test_post_init_captures_the_bot_username(self):
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(return_value=BotName("stale name"))
+        app.bot.set_my_name = AsyncMock()
+        app.bot.username = "HistoricalFiguresWhisperBot"
+        await self.bot._post_init(app)
+        self.assertEqual(self.bot._bot_username, "HistoricalFiguresWhisperBot")
