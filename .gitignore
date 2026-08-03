@@ -40,6 +40,10 @@ coverage.xml
 subscribers.json
 subscribers.json.tmp
 
+# Runtime data (figure suggestions queued via /suggest, written on the VPS)
+suggestions.json
+suggestions.json.tmp
+
 # Conda
 conda_packages.txt
 

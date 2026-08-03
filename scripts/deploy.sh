@@ -44,6 +44,8 @@ rsync -av --delete \
     --exclude 'logs/' \
     --exclude 'subscribers.json' \
     --exclude 'subscribers.json.tmp' \
+    --exclude 'suggestions.json' \
+    --exclude 'suggestions.json.tmp' \
     --exclude '.pytest_cache' \
     --exclude '.ruff_cache' \
     --exclude '__pycache__' \
