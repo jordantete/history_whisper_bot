@@ -37,8 +37,16 @@ class SuggestionStore:
         os.replace(tmp, self.path)  # atomique sur POSIX
 
     def add(self, name: str) -> bool:
-        """Empile un nom. False s'il y est déjà, à la casse et aux accents près."""
+        """Empile un nom. False s'il y est déjà, à la casse et aux accents près, ou s'il est vide.
+
+        Rejette les entrées vides, whitespace-only et None car ce store reçoit du texte saisi par
+        l'utilisateur sur Telegram : une entrée vide est un cas ordinaire, pas une erreur de
+        programmation. Sans garde, on polluerait la file avec du bruit inutile.
+        """
         normalized = Utils.normalize_name(name)
+        # Rejette les noms qui se normalisent à vide (None, "", "   ")
+        if not normalized:
+            return False
         if any(Utils.normalize_name(n) == normalized for n in self._names):
             return False
         self._names.append(name)
@@ -46,6 +54,7 @@ class SuggestionStore:
         return True
 
     def all(self) -> list:
+        """Return a fresh copy of all queued names, safe to iterate without mutual interference."""
         return list(self._names)
 
     def count(self) -> int:

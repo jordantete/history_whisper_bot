@@ -62,6 +62,31 @@ class TestSuggestionStore(unittest.TestCase):
         store.add("Vauban")
         self.assertFalse(os.path.exists(f"{self.path}.tmp"))
 
+    def test_reject_empty_string(self):
+        store = SuggestionStore(self.path)
+        self.assertFalse(store.add(""))
+        self.assertEqual(store.count(), 0)
+        self.assertEqual(store.all(), [])
+
+    def test_reject_whitespace_only(self):
+        store = SuggestionStore(self.path)
+        self.assertFalse(store.add("   "))
+        self.assertEqual(store.count(), 0)
+        self.assertEqual(store.all(), [])
+
+    def test_reject_none(self):
+        store = SuggestionStore(self.path)
+        self.assertFalse(store.add(None))
+        self.assertEqual(store.count(), 0)
+        self.assertEqual(store.all(), [])
+
+    def test_no_file_written_for_blank_input(self):
+        store = SuggestionStore(self.path)
+        store.add("")
+        store.add("   ")
+        store.add(None)
+        self.assertFalse(os.path.exists(self.path))
+
 
 if __name__ == "__main__":
     unittest.main()
