@@ -130,6 +130,23 @@ reprend le cadrage de la source dans les deux sens — l'omettre revient à
 adoucir le sujet, ce qui est en soi une forme d'éditorialisation. Validé par le
 propriétaire du projet.
 
+## Lot 2026-08-24 : +5 figures (339 → 344) — marine de l'Ancien Régime
+
+Premier lot issu de la file `/suggest` (`scripts/queue_reader.py` → `--from-queue`) :
+cinq marins français, tous absents du roster et tous conformes à la contrainte dure
+(article FR + EN + portrait Commons).
+
+| Figure | Portrait | Note |
+|---|---|---|
+| Duquesne | ✅ | huguenot, jamais abjuré ; titre FR/EN « Abraham Duquesne » |
+| Jean Bart | ✅ | corsaire de Dunkerque ; intro EN trop mince → `deepen_intros` |
+| De Grasse | ✅ | Chesapeake / Yorktown ; titre complet requis (« François Joseph Paul de Grasse ») |
+| Tourville | ✅ | ⚠ titres FR/EN différents : FR « Anne Hilarion de Costentin de Tourville », EN « Anne Hilarion de Tourville » (le FR nu est une page d'homonymie) |
+| Suffren | ✅ | « amiral Satan » ; océan Indien |
+
+La file distante `suggestions.json` n'est pas purgée par la lecture : les cinq noms
+y restent après traitement.
+
 ## Décision de modèle de données (recommandation unanime)
 
 Le bot sert **une personne par entrée** (`HistoricalFigure`). Plusieurs sujets sont des

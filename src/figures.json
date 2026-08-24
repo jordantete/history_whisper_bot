@@ -5768,5 +5768,90 @@
       "In 1884 he won France's most prestigious musical award, the Prix de Rome, with his cantata L'enfant prodigue; he found the artistic atmosphere of the Villa Medici stifling, the company boorish, the food bad and the accommodation \"abominable\".",
       "His works have strongly influenced a wide range of composers including Bartók, Stravinsky, Gershwin, Messiaen and the jazz pianist Bill Evans; he died of cancer at his home in Paris at the age of 55."
     ]
+  },
+  {
+    "name": "Duquesne",
+    "description": "Lieutenant général des armées navales de Louis XIV, huguenot inflexible (XVIIe s.).",
+    "bio_fr": "Abraham Duquesne, baron d'Indret dès 1650 puis marquis du Quesne en 1682, né à Dieppe en 1610 et mort le 2 février 1688 à Paris, est l'un des grands officiers de la marine de guerre française du XVIIe siècle.",
+    "bio_en": "Vice-Admiral Abraham Duquesne, marquis du Bouchet was a French naval officer, who also saw service as an admiral in the Swedish navy. He was born in Dieppe, a seaport, in 1610, and was a Huguenot. He was the son of a naval officer and therefore became a sailor himself, spending his early years in merchant service.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Graincourt_-_Abraham_Duquesne_-_Versailles.jpg/330px-Graincourt_-_Abraham_Duquesne_-_Versailles.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "facts_fr": [
+      "Il sert sous Louis XIII pendant la guerre de Trente Ans et se distingue aux combats de Tarragone et du cap de Gata, avant de devoir quitter la marine en 1644 pour avoir perdu un navire.",
+      "Pendant la minorité de Louis XIV, il obtient de Mazarin l'autorisation de servir dans la marine royale suédoise : à la bataille de Fehmarn, pendant la guerre de Torstenson, il enlève le vaisseau amiral du commandant danois Pros Mund.",
+      "Envoyé en 1669 au secours de Candie assiégée par les Turcs, il s'illustre surtout à Agosta et à Palerme en 1676 ; son avancement restera pourtant freiné par sa religion, qu'il refuse d'abjurer malgré l'insistance de Louis XIV, de Colbert et de Bossuet."
+    ],
+    "facts_en": [
+      "He served under Louis XIII during the Thirty Years' War, distinguishing himself at Tarragona and Cartagena, but was forced out of the navy in 1644 after losing a ship.",
+      "With Cardinal Mazarin's permission he fought for the Swedish Royal Navy alongside his brother in the Torstenson War, capturing the flagship of Danish commander Pros Mund at the Battle of Fehmarn.",
+      "Sent in 1669 to relieve Candia from its Turkish siege, he fought through the Franco-Dutch War and stood out above all at the battles of Augusta and Palermo in 1676, ending his career as a lieutenant general of the naval forces."
+    ]
+  },
+  {
+    "name": "Jean Bart",
+    "description": "Corsaire dunkerquois devenu chef d'escadre de Louis XIV (XVIIe s.).",
+    "bio_fr": "Jean Bart, en flamand Jan Bart ou Jan Baert, né le 21 octobre 1650 à Dunkerque et mort le 27 avril 1702 dans cette même ville, est un corsaire célèbre pour ses exploits au service de la France durant les guerres de Louis XIV.",
+    "bio_en": "Jean Bart was a Franco-Flemish naval commander and privateer.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jean_Bart_mg_9487.jpg/330px-Jean_Bart_mg_9487.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "facts_fr": [
+      "Il commence à naviguer à quinze ans sous les ordres de Michiel de Ruyter et participe en 1667 au raid hollandais sur la Tamise, avant de courir sus aux Hollandais pour le compte de la France : plus de cinquante prises entre 1674 et 1678.",
+      "Chargé en 1689 de conduire un convoi de Dunkerque à Brest, il est fait prisonnier par les Anglais, s'évade et regagne Saint-Malo en traversant la Manche à la rame.",
+      "Son exploit le plus célèbre, qui lui vaut des lettres de noblesse, est la reprise aux Hollandais devant l'île du Texel, en juin 1694, d'un convoi de cent-dix navires chargés du blé que la France avait acheté à la Norvège."
+    ],
+    "facts_en": [
+      "Barred from an officer's commission by his low birth, he commanded a Dunkirk privateer instead, and his boldness so impressed Louis XIV that the king sent him on a special mission to the Mediterranean.",
+      "Captured by an English warship in 1689 and held at Plymouth with Claude de Forbin, he escaped three days later and reached Brittany in a rowboat with twenty other prisoners.",
+      "He took 386 ships in all; Dunkirk honours him with a statue that survived the destruction of 70% of the town in the Second World War, and every carnival the townspeople kneel before it to sing the Cantate à Jean Bart."
+    ]
+  },
+  {
+    "name": "De Grasse",
+    "description": "Amiral français dont la victoire de la Chesapeake scelle l'indépendance américaine (XVIIIe s.).",
+    "bio_fr": "François Joseph Paul, marquis de Grasse Tilly, comte de Grasse, né au château des Valettes du Bar le 13 septembre 1722, et mort le 11 janvier 1788 au château de Tilly, est un officier de marine français qui sert la Marine royale française. Il assume divers commandements lors des guerres de Succession d'Autriche et de Sept Ans avant de terminer sa carrière comme lieutenant-général lors de la guerre d'indépendance américaine.",
+    "bio_en": "Lieutenant général des armées navales François Joseph Paul, Comte de Grasse, Marquis of Grasse-Tilly, KM was a French naval officer. He is best known for his crucial victory over the Royal Navy at the Battle of the Chesapeake in 1781 during the American Revolutionary War. The battle directly led to the Franco-American victory at the siege of Yorktown and helped secure the independence of the United States.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Franecois_joseph_paul_comte_d115883.jpg/330px-Franecois_joseph_paul_comte_d115883.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "facts_fr": [
+      "Nommé en 1781 à la tête de la principale escadre française, son action résolue dans la baie de la Chesapeake rend possible la victoire décisive de Yorktown.",
+      "Lourdement battu et capturé en 1782 à la bataille des Saintes, il connaît la disgrâce royale jusqu'à sa mort, alors même que ce combat resta sans conséquence sur la suite de la guerre.",
+      "Les historiens l'ont depuis réhabilité, et les marines française et américaine donnent régulièrement son nom à leurs grosses unités de guerre."
+    ],
+    "facts_en": [
+      "He became a page to the Grand Master of the Knights Hospitaller in 1734 and served as an ensign on the Order's galleys against the Ottoman navy and the Barbary corsairs before formally entering the French Navy in 1740, aged 17.",
+      "Answering Washington and Rochambeau's appeal in 1781, he sailed from Saint-Domingue with 3,000 troops and landed them in Virginia immediately before beating the British fleet off the Chesapeake.",
+      "Defeated and captured by Sir George Rodney at the Battle of the Saintes in 1782, he blamed his captains on returning to France in 1784; a court-martial exonerated every one of them, effectively ending his naval career."
+    ]
+  },
+  {
+    "name": "Tourville",
+    "description": "Vice-amiral et maréchal de France, grand tacticien de la marine du Roi-Soleil (XVIIe s.).",
+    "bio_fr": "Anne Hilarion de Costentin, comte de Tourville, est un vice-amiral et maréchal de France, né le 24 novembre 1642 à Paris et mort le 23 mai 1701 à Paris.",
+    "bio_en": "Anne-Hilarion de Costentin, Comte de Tourville was a French Navy officer who served under King Louis XIV. Born in Paris, he was made a Marshal of France in 1693. Tourville is considered by some as one of the most talented naval officers in French military history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tourville-musee-marine.jpg/330px-Tourville-musee-marine.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "facts_fr": [
+      "Présenté à quatre ans dans l'ordre de Saint-Jean de Jérusalem à Malte, il mène très jeune des campagnes en Méditerranée contre les Barbaresques et les Turcs, avant d'intégrer la Marine royale en 1666 et d'être fait capitaine de vaisseau l'année suivante.",
+      "Il se distingue une première fois pendant la guerre de Hollande, lors de la campagne de Sicile, aux batailles d'Alicudi, d'Agosta et de Palerme en 1676.",
+      "Nommé vice-amiral du Levant en 1689, un an après la mort du « Grand Duquesne », il s'illustre pendant la guerre de la Ligue d'Augsbourg au cap Béveziers en 1690 puis à Lagos en 1693, avant d'être fait maréchal de France."
+    ],
+    "facts_en": [
+      "At seventeen, as a Knight of Malta, he fought his first naval battle aboard a frigate of the Order, and he served under Abraham Duquesne during the campaigns of 1676.",
+      "At Beachy Head in 1690 he beat an Anglo-Dutch fleet, sinking, destroying or capturing seven ships — yet after raiding Teignmouth with galleys three days later he was relieved of command by Louis XIV for failing to exploit his supremacy in the Channel.",
+      "Reinstated, he faced an Anglo-Dutch fleet of 97 ships with only 45 at Barfleur on 29 May 1692 and had to retreat, then defeated George Rooke's convoy at the Battle of Cape St Vincent on 27 June 1693."
+    ]
+  },
+  {
+    "name": "Suffren",
+    "description": "Vice-amiral français, l'« amiral Satan » redouté des Anglais dans l'océan Indien (XVIIIe s.).",
+    "bio_fr": "Pierre André de Suffren, dit « le bailli de Suffren » et également connu sous le nom de « Suffren de Saint-Tropez », est un vice-amiral français, bailli et commandeur de l’ordre de Saint-Jean de Jérusalem, né le 17 juillet 1729 au château de Saint-Cannat près d’Aix-en-Provence et mort le 8 décembre 1788 à Paris.",
+    "bio_en": "Vice-Admiral Pierre André de Suffren de Saint-Tropez, bailli de Suffren was a French naval officer. Beginning his career during the War of the Austrian Succession, he briefly served in the Maltese Navy before fighting in the Seven Years' War, where Suffren was taken prisoner by the British at the Battle of Lagos. Promoted to captain in 1772, he served under Charles Henri Hector, Count of Estaing during the naval battles of the American Revolutionary War, taking part in the siege of Savannah in 1779.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Pierre-de-Suffren-Saint-Tropez-par-Pompeo-Girolamo-Batoni.jpeg/330px-Pierre-de-Suffren-Saint-Tropez-par-Pompeo-Girolamo-Batoni.jpeg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "facts_fr": [
+      "Les officiers anglais qui l'affrontent le surnomment de son vivant l'« amiral Satan » ; en France, les officiers de marine qui le détestaient l'appelaient le « gros calfat », pour son physique autant que pour son comportement.",
+      "En 1942, l'amiral King, alors chef de la marine américaine, le range parmi les cinq plus fameux amiraux du passé, aux côtés de John Jervis, Horatio Nelson, Maarten Tromp et David Farragut.",
+      "Napoléon regrettait de ne pas l'avoir eu sous la main — « j'en eusse fait notre Nelson », rapporte Las Cases — mais tous les historiens ne suivent pas : en 1996, l'amiral François Caron juge son action « d'une grande banalité » au vu de ses résultats réels."
+    ],
+    "facts_en": [
+      "He went to sea at fourteen: sent to Toulon as a Garde-Marine in October 1743, he spent only six months ashore before being posted to a ship, and fought at the Battle of Toulon in 1744 aboard the 64-gun Solide.",
+      "His first spell as a British prisoner came in 1747 at the Second Battle of Cape Finisterre, where his captain La Bédoyère was killed and the badly damaged Monarque was captured.",
+      "Between wars he sailed for the Order of Saint John, cruising against Barbary pirates in the 20-gun xebecs Caméléon and Singe and rising from Knight to Commander before returning to Toulon as a ship-of-the-line captain in 1772."
+    ]
   }
 ]

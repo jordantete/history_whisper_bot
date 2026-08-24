@@ -301,6 +301,12 @@ OVERRIDES = {
     "Maïmonide": {"fr": "Moïse Maïmonide", "en": "Maimonides"},
     "Sartre": {"fr": "Jean-Paul Sartre", "en": "Jean-Paul Sartre"},
     "Camus": {"fr": "Albert Camus", "en": "Albert Camus"},
+    # ---- Lot 2026-08-24 : marine de l'Ancien Régime (file /suggest) ----
+    "Duquesne": {"fr": "Abraham Duquesne", "en": "Abraham Duquesne"},
+    "Jean Bart": {"fr": "Jean Bart", "en": "Jean Bart"},
+    "De Grasse": {"fr": "François Joseph Paul de Grasse", "en": "François Joseph Paul de Grasse"},
+    "Tourville": {"fr": "Anne Hilarion de Costentin de Tourville", "en": "Anne Hilarion de Tourville"},  # titres FR/EN différents
+    "Suffren": {"fr": "Pierre André de Suffren", "en": "Pierre André de Suffren"},
 }
 
 
