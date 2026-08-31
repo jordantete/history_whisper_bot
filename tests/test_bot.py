@@ -706,6 +706,49 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
         self.assertIn("EN bio", texts[1])
 
+    async def test_start_with_a_quote_payload_delivers_the_shared_quote(self):
+        self.mock_database.get_quote_by_id.return_value = make_quote()
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["q-abc1234567"]
+        await self.bot._Bot__start_handler(update, context)
+        self.mock_database.get_quote_by_id.assert_called_once_with("abc1234567")
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("/subscribe", texts[0])
+        self.assertIn("Les vraies conquêtes", texts[1])
+
+    async def test_start_with_an_unknown_quote_payload_falls_back_to_today(self):
+        self.mock_database.get_quote_by_id.return_value = None
+        self.mock_database.get_quote_of_the_day.return_value = make_quote(author="Voltaire")
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["q-0000000000"]
+        await self.bot._Bot__start_handler(update, context)
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("Voltaire", texts[1])
+
+    async def test_start_with_an_unknown_quote_payload_and_empty_corpus_says_so(self):
+        self.mock_database.get_quote_by_id.return_value = None
+        self.mock_database.get_quote_of_the_day.return_value = None
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["q-0000000000"]
+        await self.bot._Bot__start_handler(update, context)
+        context.bot.send_message.assert_called_once()
+        self.assertEqual(context.bot.send_message.call_args.kwargs["text"],
+                         "Aucune citation trouvée, réessaie.")
+
+    async def test_figure_slugs_are_never_routed_to_quotes(self):
+        """Le motif exact protège qin-shi-huang et tout futur « Q-… »."""
+        figure = HistoricalFigure(name="Qin Shi Huang", description="d", bio_fr="bio fr")
+        self.mock_database.get_figure_by_slug.return_value = figure
+        for payload in ("qin-shi-huang", "q-bert", "q-abc"):
+            with self.subTest(payload=payload):
+                update, context = make_update(language_code="fr"), make_context()
+                context.args = [payload]
+                await self.bot._Bot__start_handler(update, context)
+                self.mock_database.get_figure_by_slug.assert_called_with(payload)
+                self.mock_database.get_quote_by_id.assert_not_called()
+
     def test_quote_lang_prefers_the_reader_locale(self):
         quote = make_quote(text_en="True conquests are those made over ignorance.")
         self.assertEqual(Bot._quote_lang(quote, "fr"), "fr")

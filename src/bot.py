@@ -359,9 +359,14 @@ class Bot:
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
-        # Deep link t.me/<bot>?start=<slug> : Telegram passe le payload en args.
+        # Deep link t.me/<bot>?start=<payload> : Telegram passe le payload en args.
+        # 'q-<hash>' désigne une citation, tout le reste un slug de figure.
         if context.args:
-            await self.__deliver_shared_figure(update, context, context.args[0])
+            payload = context.args[0]
+            if Utils.is_quote_payload(payload):
+                await self.__deliver_shared_quote(update, context, payload)
+            else:
+                await self.__deliver_shared_figure(update, context, payload)
             return
         text = self._t("start-message", update)
         buttons = [
@@ -388,6 +393,27 @@ class Bot:
             figure = self.database.get_figure_of_the_day(date.today())
         await context.bot.send_message(chat_id=update.effective_chat.id, text=intro)
         await self._send_figure(update, context, figure)
+
+    async def __deliver_shared_quote(self, update: Update, context: ContextTypes.DEFAULT_TYPE,
+                                     payload: str):
+        """Sert la citation d'un lien partagé. Même contrat que pour les
+        figures : le destinataire est un inconnu, la ligne de contexte est le
+        seul endroit où on lui dit où il est et comment s'abonner, et un id qui
+        ne résout plus le renvoie sur la citation du jour plutôt que sur une
+        erreur sèche."""
+        locale = self._locale(update)
+        quote = self.database.get_quote_by_id(payload[2:])  # sans le préfixe 'q-'
+        if quote:
+            intro = self._tl("shared-quote-intro", locale)
+        else:
+            LOGGER.info(f"Unknown quote payload: {payload!r}")
+            intro = self._tl("share-quote-unknown", locale)
+            quote = self.database.get_quote_of_the_day(date.today())
+        if not quote:
+            await self._send_quote(update, context, None)
+            return
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=intro)
+        await self._deliver_quote(context, update.effective_chat.id, locale, quote)
 
     async def __help_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Help handler command called")
