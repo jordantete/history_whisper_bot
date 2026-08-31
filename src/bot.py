@@ -71,7 +71,7 @@ class Bot:
         bot's start screen / profile."""
         # Needed to build share deep links; the button is omitted until it is known.
         self._bot_username = application.bot.username
-        menu = ("today", "random", "subscribe", "unsubscribe", "feedback", "help")
+        menu = ("today", "random", "quote", "subscribe", "unsubscribe", "feedback", "help")
         for locale, language_code in (("en", None), ("fr", "fr")):
             # The display name is Telegram's top in-app search ranking factor, so it
             # carries keywords. Telegram rate-limits name changes, hence the read
@@ -391,6 +391,19 @@ class Bot:
         figure = self.database.get_figure_of_the_day(date.today())
         await self._send_figure(update, context, figure)
 
+    async def _send_quote(self, update: Update, context: ContextTypes.DEFAULT_TYPE, quote) -> None:
+        # Envoie une citation, ou le message "pas de citation" si le corpus est vide.
+        if not quote:
+            await context.bot.send_message(chat_id=update.effective_chat.id,
+                                           text=self._t("no-quotes", update))
+            return
+        await self._deliver_quote(context, update.effective_chat.id, self._locale(update), quote)
+
+    async def __quote_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Quote handler command called")
+        quote = self.database.get_quote_of_the_day(date.today())
+        await self._send_quote(update, context, quote)
+
     async def __button_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         query = update.callback_query
         await query.answer()
@@ -399,6 +412,8 @@ class Bot:
             await self._send_figure(update, context, self.database.get_random_figure())
         elif query.data == "today":
             await self._send_figure(update, context, self.database.get_figure_of_the_day(date.today()))
+        elif query.data == "random_quote":
+            await self._send_quote(update, context, self.database.get_random_quote())
         elif query.data == "help":
             await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("help-message", update))
 
@@ -517,6 +532,7 @@ class Bot:
         self.application.add_handler(CommandHandler('help', self.__help_handler))
         self.application.add_handler(CommandHandler('random', self.__random_handler))
         self.application.add_handler(CommandHandler('today', self.__today_handler))
+        self.application.add_handler(CommandHandler('quote', self.__quote_handler))
         self.application.add_handler(CommandHandler('subscribe', self.__subscribe_handler))
         self.application.add_handler(CommandHandler('unsubscribe', self.__unsubscribe_handler))
         self.application.add_handler(CommandHandler('suggest', self.__suggest_handler))

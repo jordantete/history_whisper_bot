@@ -566,7 +566,7 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()
         handlers = self.bot.application.handlers[0]
-        self.assertEqual(len(handlers), 9)  # 7 commands + 1 feedback conversation + 1 callback query
+        self.assertEqual(len(handlers), 10)  # 8 commands + 1 feedback conversation + 1 callback query
 
     async def test_figure_keyboard_carries_a_share_button(self):
         self.bot._bot_username = "HistoricalFiguresWhisperBot"
@@ -748,3 +748,43 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         markup = context.bot.send_message.call_args.kwargs["reply_markup"]
         flat = [button for row in markup.inline_keyboard for button in row]
         self.assertFalse(any(button.url and "t.me/share" in button.url for button in flat))
+
+    async def test_quote_command_sends_the_quote_of_the_day(self):
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        update, context = make_update(language_code="fr"), make_context()
+        await self.bot._Bot__quote_handler(update, context)
+        self.mock_database.get_quote_of_the_day.assert_called_once()
+        self.assertIn("Les vraies conquêtes", context.bot.send_message.call_args.kwargs["text"])
+
+    async def test_quote_command_reports_an_empty_corpus(self):
+        self.mock_database.get_quote_of_the_day.return_value = None
+        update, context = make_update(language_code="fr"), make_context()
+        await self.bot._Bot__quote_handler(update, context)
+        self.assertEqual(context.bot.send_message.call_args.kwargs["text"],
+                         "Aucune citation trouvée, réessaie.")
+
+    async def test_random_quote_button_sends_a_random_quote(self):
+        self.mock_database.get_random_quote.return_value = make_quote(author="Voltaire")
+        update, context = make_update(language_code="fr"), make_context()
+        update.callback_query = Mock()
+        update.callback_query.data = "random_quote"
+        update.callback_query.answer = AsyncMock()
+        await self.bot._Bot__button_handler(update, context)
+        self.mock_database.get_random_quote.assert_called_once()
+        self.assertIn("Voltaire", context.bot.send_message.call_args.kwargs["text"])
+
+    def test_quote_is_published_in_the_command_menu(self):
+        import inspect
+        self.assertIn("quote", inspect.getsource(self.bot._post_init))
+
+    def test_quote_is_registered_as_a_command_handler(self):
+        self.bot.register_handlers()
+        commands = set()
+        for group in self.bot.application.handlers.values():
+            for handler in group:
+                commands |= set(getattr(handler, "commands", ()) or ())
+        self.assertIn("quote", commands)
+
+    def test_help_message_mentions_quote_in_both_locales(self):
+        self.assertIn("/quote", self.bot._tl("help-message", "en"))
+        self.assertIn("/quote", self.bot._tl("help-message", "fr"))
