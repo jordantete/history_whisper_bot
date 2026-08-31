@@ -62,6 +62,35 @@ class TestStripMarkup(unittest.TestCase):
     def test_reduces_a_multi_argument_template_to_its_last_argument(self):
         self.assertEqual(strip_markup("{{tpl|a|b|c}} fin"), "c fin")
 
+    def test_strips_a_labelled_external_link_mid_string(self):
+        self.assertEqual(
+            strip_markup("Novum Organum [http://gallica.bnf.fr/ark:/12148/bpt6k201287p "
+                         "(lire en ligne)], Hachette, 1857, p. 7"),
+            "Novum Organum (lire en ligne), Hachette, 1857, p. 7")
+
+    def test_strips_a_labelled_external_link_at_the_start_of_the_string(self):
+        self.assertEqual(
+            strip_markup("[http://archive.org/details/worksofarchimede029517mbp "
+                         "The Works Of Archimedes], Cambridge University Press, 1897, p. 193"),
+            "The Works Of Archimedes, Cambridge University Press, 1897, p. 193")
+
+    def test_removes_a_bare_external_link_with_no_label(self):
+        self.assertEqual(strip_markup("Voir [https://example.org/page] ici."), "Voir ici.")
+
+    def test_still_reduces_a_wikilink_pipe_after_the_external_link_rule(self):
+        """La règle de lien externe ne doit pas prendre un [[…]] pour deux
+        liens simples — elle est placée après les règles [[…]]."""
+        self.assertEqual(strip_markup("Les [[France|Français]] d'abord"), "Les Français d'abord")
+
+    def test_leaves_an_unpaired_bracket_in_prose_alone(self):
+        """Round 1 : un crochet seul, mal apparié (intervalle mathématique),
+        ne doit provoquer ni troncature ni corruption — confirmé ici côté
+        strip_markup, en plus de la protection déjà testée côté
+        template_field."""
+        self.assertEqual(
+            strip_markup("La probabilite est dans [0,1[ selon Kolmogorov."),
+            "La probabilite est dans [0,1[ selon Kolmogorov.")
+
 
 class TestTemplateParsing(unittest.TestCase):
     def test_iter_templates_yields_name_and_body(self):

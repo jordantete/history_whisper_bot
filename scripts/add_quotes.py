@@ -73,6 +73,11 @@ def strip_markup(text: str) -> str:
         text = reduced
     text = re.sub(r"\[\[[^|\]]*\|([^\]]*)\]\]", r"\1", text)          # [[cible|texte]]
     text = re.sub(r"\[\[([^\]]*)\]\]", r"\1", text)                   # [[texte]]
+    # Lien externe MediaWiki : crochet simple, espace (pas de '|') avant le
+    # libellé. Placé après les règles [[…]] pour qu'un wikilien double ne soit
+    # jamais pris pour deux liens externes simples.
+    text = re.sub(r"\[(?:https?:)?//\S+(?:\s+([^\]]*))?\]",
+                  lambda m: m.group(1) or "", text)
     text = re.sub(r"'''(.*?)'''", r"\1", text, flags=re.S)
     text = re.sub(r"''(.*?)''", r"\1", text, flags=re.S)
     return Database._clean(html.unescape(text))
