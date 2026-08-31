@@ -28,9 +28,10 @@
 ## About
 
 Historical Figures Whisper Bot sends you a historical figure whenever you ask for one. Use `/random`
-for a figure at random, `/today` for the figure of the day, or `/subscribe` to get one automatically
-each day. Every figure arrives as a card with a portrait, a short biography, a few highlights, and a
-link to read more on Wikipedia.
+for a figure at random, `/today` for the figure of the day, `/quote` for a sourced quote, or
+`/subscribe` to get a figure and a quote automatically each day. Every figure arrives as a card with a
+portrait, a short biography, a few highlights, and a link to read more on Wikipedia; every quote
+arrives as its own card with its author and source.
 
 The bot runs as a single long-polling process, so it needs no public HTTP endpoint and no webhook. It
 is deployed to a VPS inside a dedicated `tmux` session. All user-facing text is available in English
@@ -41,10 +42,12 @@ and French, and the language is picked automatically from each user's Telegram s
 |                     |                                                                                     |
 | ------------------- | ----------------------------------------------------------------------------------- |
 | **Curated figures** | Hand-picked historical figures with biographies and highlights, enriched from Wikidata |
+| **Quote of the day** | Independent pool of sourced quotes harvested from Wikiquote FR, served on `/quote` and delivered right after the daily figure |
 | **Bilingual EN/FR** | Language chosen per user from their Telegram `language_code`, with no per-user storage |
 | **Figure cards**    | HTML cards with a bold name, an italic biography, highlights, a portrait, and a Wikipedia link |
-| **Daily delivery**  | Optional daily figure sent to subscribers at 12:00 Europe/Paris through the JobQueue |
-| **Inline buttons**  | Random, Today, and Read more buttons under every card                                |
+| **Quote cards**     | HTML cards with the quote, its author, and its source, distinct from the figure card |
+| **Daily delivery**  | Optional daily figure and quote sent to subscribers at 12:00 Europe/Paris through the JobQueue |
+| **Inline buttons**  | Random, Today, Read more, and Share under a figure card; Another quote, Source, and Share under a quote card |
 | **Feedback**        | `/feedback` forwards suggestions to the owner, with a per-user cooldown against flooding |
 | **Private only**    | The bot leaves any group or channel and works one to one                            |
 | **Rate limited**    | `AIORateLimiter` paces outgoing calls so bursts of traffic stay within Telegram's limits |
@@ -57,9 +60,11 @@ and French, and the language is picked automatically from each user's Telegram s
 | `/help` | List the available commands |
 | `/random` | A random historical figure |
 | `/today` | The historical figure of the day |
-| `/subscribe` | Start receiving the daily figure |
-| `/unsubscribe` | Stop the daily figure |
+| `/quote` | The quote of the day |
+| `/subscribe` | Start receiving the daily figure and quote |
+| `/unsubscribe` | Stop the daily delivery |
 | `/feedback` | Suggest a figure or send feedback, either as `/feedback <text>` or interactively |
+| `/suggest` | Owner-only: queue candidate figure names for the content pipeline; not in the published menu |
 
 ## Tech Stack
 
@@ -67,7 +72,8 @@ and French, and the language is picked automatically from each user's Telegram s
 - [python-telegram-bot](https://python-telegram-bot.org/) 22.8, using the `rate-limiter` and `job-queue` extras for flood control and the daily scheduler
 - loguru for logging to `logs/app.log`
 - python-dotenv for `.env` configuration
-- JSON files for storage: figures in `src/figures.json` and subscribers in `subscribers.json`
+- JSON files for storage: figures in `src/figures.json`, quotes in `src/quotes.json`, subscribers in
+  `subscribers.json`, and owner-submitted figure suggestions in `suggestions.json`
 
 ## Quick Start
 
@@ -146,18 +152,25 @@ ssh $VPS_USER@$VPS_HOST 'tmux attach -t history-whisper-bot'
 ```
 src/
 ├── main.py               # entrypoint: load_dotenv, build Database + Bot, bot.run()
-├── bot.py                # Bot: handlers, figure cards, daily job, feedback
-├── database.py           # Database: loads and serves figures from figures.json
+├── bot.py                # Bot: handlers, figure/quote cards, daily job, feedback
+├── database.py           # Database: loads and serves figures + quotes
 ├── subscribers.py        # SubscriberStore: JSON-persisted daily subscribers
+├── suggestions.py        # SuggestionStore: JSON-persisted /suggest queue
 ├── historical_figure.py  # HistoricalFigure model
-├── utils.py              # env vars and i18n (localize, resolve_locale)
+├── quote.py              # Quote model
+├── utils.py              # env vars, i18n (localize, resolve_locale), slugs/ids
 ├── logger.py             # configured loguru LOGGER singleton
 ├── figures.json          # curated figures (bios, facts, Wikidata ids)
+├── quotes.json           # curated, sourced quotes (Wikiquote FR)
 └── localizable.json      # EN/FR strings, keyed by locale
 scripts/
 ├── deploy.sh             # rsync, venv, restart the tmux session
 ├── start.sh              # exec python -m src.main (what tmux runs)
-└── enrich_figures.py     # Wikidata enrichment for the figure dataset
+├── enrich_figures.py     # Wikidata enrichment for the figure dataset
+├── add_figures.py        # stage candidate figures for the roster
+├── merge_figures.py      # promote complete staged figures into figures.json
+├── add_quotes.py         # harvest sourced quotes from Wikiquote FR into staging
+└── merge_quotes.py       # promote complete staged quotes into quotes.json
 tests/                    # pytest suite
 ```
 

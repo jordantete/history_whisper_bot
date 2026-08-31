@@ -2,7 +2,7 @@ import os
 import html
 import time
 from datetime import date, time as dtime
-from urllib.parse import quote
+from urllib.parse import quote as url_quote
 from zoneinfo import ZoneInfo
 
 from src.database import Database
@@ -71,7 +71,7 @@ class Bot:
         bot's start screen / profile."""
         # Needed to build share deep links; the button is omitted until it is known.
         self._bot_username = application.bot.username
-        menu = ("today", "random", "subscribe", "unsubscribe", "feedback", "help")
+        menu = ("today", "random", "quote", "subscribe", "unsubscribe", "feedback", "help")
         for locale, language_code in (("en", None), ("fr", "fr")):
             # The display name is Telegram's top in-app search ranking factor, so it
             # carries keywords. Telegram rate-limits name changes, hence the read
@@ -166,7 +166,7 @@ class Bot:
             return None
         deep_link = f"https://t.me/{self._bot_username}?start={Utils.figure_slug(figure.name)}"
         text = self._tl("share-text", locale).format(name=figure.name)
-        return f"https://t.me/share/url?url={quote(deep_link, safe='')}&text={quote(text, safe='')}"
+        return f"https://t.me/share/url?url={url_quote(deep_link, safe='')}&text={url_quote(text, safe='')}"
 
     def _figure_keyboard(self, locale: str, figure) -> InlineKeyboardMarkup:
         rows = [[
@@ -185,6 +185,101 @@ class Bot:
         if second:
             rows.append(second)
         return InlineKeyboardMarkup(rows)
+
+    @staticmethod
+    def _quote_lang(quote, locale: str) -> str:
+        """Langue effectivement servie : celle du lecteur si la citation existe
+        dans cette langue, sinon l'autre. Le corpus étant francophone tant que
+        la dette de traduction EN n'est pas traitée, un lecteur anglophone
+        reçoit le français plutôt que rien."""
+        if locale == "fr":
+            return "fr" if quote.text_fr else "en"
+        return "en" if quote.text_en else "fr"
+
+    @staticmethod
+    def _quote_parts(quote, lang: str):
+        """Texte et source pris dans la même langue. Les déparier — un texte
+        français sous une source anglaise — serait incohérent à la lecture."""
+        if lang == "fr":
+            return quote.text_fr or "", quote.source_fr or ""
+        return quote.text_en or "", quote.source_en or ""
+
+    @staticmethod
+    def _build_quote_text(text: str, author: str, source: str, header: str,
+                          limit: int = MessageLimit.MAX_TEXT_LENGTH) -> str:
+        """Render an HTML quote card. Unlike `_build_card_text`, no arbitration
+        is needed between competing blocks: the pipeline caps quote text at 600
+        visible characters, so the clamp below only guards against a corpus
+        entry edited by hand."""
+        def esc(s):
+            return html.escape(s, quote=False)
+
+        # Décoration fixe : en-tête, guillemets, tiret cadratin, sauts de ligne.
+        overhead = len(header) + len(author) + len(source) + 12
+        budget = limit - overhead
+        if len(text) > budget:
+            text = text[:max(budget - 1, 0)].rstrip() + "…"
+
+        lines = [f"<b>{esc(header)}</b>", "", f"<i>« {esc(text)} »</i>", "",
+                 f"— <b>{esc(author)}</b>"]
+        if source:
+            lines.append(f"<i>{esc(source)}</i>")
+        return "\n".join(lines)
+
+    @staticmethod
+    def _quote_source_url(quote, lang: str):
+        """Page Wikiquote d'où la citation provient. Sert de bouton « Source »
+        et vaut attribution CC BY-SA. None quand le titre est absent : le
+        bouton est alors simplement omis."""
+        title = quote.wikiquote_fr if lang == "fr" else quote.wikiquote_en
+        if not title:
+            return None
+        return f"https://{lang}.wikiquote.org/wiki/{url_quote(title, safe='')}"
+
+    def _quote_share_url(self, quote, lang: str):
+        """Feuille de partage native de Telegram, pré-remplie avec la citation
+        et un deep link vers elle. Le payload porte le préfixe 'q-' qui le
+        distingue d'un slug de figure."""
+        if not self._bot_username:
+            return None
+        deep_link = f"https://t.me/{self._bot_username}?start=q-{quote.id}"
+        text, _ = self._quote_parts(quote, lang)
+        share_text = self._tl("share-quote-text", lang).format(text=text, author=quote.author)
+        return (f"https://t.me/share/url?url={url_quote(deep_link, safe='')}"
+                f"&text={url_quote(share_text, safe='')}")
+
+    def _quote_keyboard(self, locale: str, quote, lang: str) -> InlineKeyboardMarkup:
+        """`locale` porte les libellés (langue du lecteur), `lang` les liens
+        (langue dans laquelle la citation est servie)."""
+        rows = [[InlineKeyboardButton(self._tl("btn-another-quote", locale),
+                                      callback_data="random_quote")]]
+        second = []
+        source_url = self._quote_source_url(quote, lang)
+        if source_url:
+            second.append(InlineKeyboardButton(self._tl("btn-quote-source", locale), url=source_url))
+        share = self._quote_share_url(quote, lang)
+        if share:
+            second.append(InlineKeyboardButton(self._tl("btn-share", locale), url=share))
+        if second:
+            rows.append(second)
+        return InlineKeyboardMarkup(rows)
+
+    async def _deliver_quote(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, quote) -> None:
+        """Envoie une carte citation à un chat donné. Partagée par la commande
+        interactive et le job quotidien, comme `_deliver_figure`.
+
+        Aucune image : l'aperçu de lien est explicitement désactivé, sans quoi
+        Telegram tenterait de rendre une URL présente dans la source.
+
+        Forbidden (l'utilisateur a bloqué le bot) se propage, pour que les
+        appelants puissent réagir."""
+        lang = self._quote_lang(quote, locale)
+        text, source = self._quote_parts(quote, lang)
+        rendered = self._build_quote_text(text, quote.author, source,
+                                          self._tl("quote-header", locale))
+        await context.bot.send_message(chat_id=chat_id, text=rendered, parse_mode=ParseMode.HTML,
+                                       reply_markup=self._quote_keyboard(locale, quote, lang),
+                                       link_preview_options=LinkPreviewOptions(is_disabled=True))
 
     async def _deliver_figure(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, figure) -> None:
         """Send a rendered figure card to a specific chat in a specific locale.
@@ -217,17 +312,29 @@ class Bot:
 
     async def _send_daily(self, context: ContextTypes.DEFAULT_TYPE) -> None:
         """JobQueue callback: deliver the figure of the day to all subscribers,
-        each in their own locale. Subscribers who blocked the bot are dropped."""
+        each in their own locale, followed by the quote of the day as its own
+        card. Subscribers who blocked the bot are dropped.
+
+        Both cards go out inside the same per-recipient try block: a Forbidden
+        on either one means the same blocked user, so it must unsubscribe them
+        once and count as one failed delivery, not two.
+
+        An empty corpus is a supported state — the figure ships alone."""
         figure = self.database.get_figure_of_the_day(date.today())
         if not figure:
             LOGGER.warning("No figure of the day — skipping daily delivery")
             return
+        quote = self.database.get_quote_of_the_day(date.today())
+        if not quote:
+            LOGGER.warning("No quote of the day — delivering the figure alone")
         recipients = self.subscribers.all()
         LOGGER.info(f"Daily delivery starting for {len(recipients)} subscriber(s)")
         sent = 0
         for chat_id, locale in recipients:
             try:
                 await self._deliver_figure(context, chat_id, locale, figure)
+                if quote:
+                    await self._deliver_quote(context, chat_id, locale, quote)
                 sent += 1
             except Forbidden:
                 LOGGER.info(f"Subscriber {chat_id} blocked the bot — removing")
@@ -252,9 +359,14 @@ class Bot:
 
     async def __start_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Start handler command called")
-        # Deep link t.me/<bot>?start=<slug> : Telegram passe le payload en args.
+        # Deep link t.me/<bot>?start=<payload> : Telegram passe le payload en args.
+        # 'q-<hash>' désigne une citation, tout le reste un slug de figure.
         if context.args:
-            await self.__deliver_shared_figure(update, context, context.args[0])
+            payload = context.args[0]
+            if Utils.is_quote_payload(payload):
+                await self.__deliver_shared_quote(update, context, payload)
+            else:
+                await self.__deliver_shared_figure(update, context, payload)
             return
         text = self._t("start-message", update)
         buttons = [
@@ -282,6 +394,27 @@ class Bot:
         await context.bot.send_message(chat_id=update.effective_chat.id, text=intro)
         await self._send_figure(update, context, figure)
 
+    async def __deliver_shared_quote(self, update: Update, context: ContextTypes.DEFAULT_TYPE,
+                                     payload: str):
+        """Sert la citation d'un lien partagé. Même contrat que pour les
+        figures : le destinataire est un inconnu, la ligne de contexte est le
+        seul endroit où on lui dit où il est et comment s'abonner, et un id qui
+        ne résout plus le renvoie sur la citation du jour plutôt que sur une
+        erreur sèche."""
+        locale = self._locale(update)
+        quote = self.database.get_quote_by_id(payload[2:])  # sans le préfixe 'q-'
+        if quote:
+            intro = self._tl("shared-quote-intro", locale)
+        else:
+            LOGGER.info(f"Unknown quote payload: {payload!r}")
+            intro = self._tl("share-quote-unknown", locale)
+            quote = self.database.get_quote_of_the_day(date.today())
+        if not quote:
+            await self._send_quote(update, context, None)
+            return
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=intro)
+        await self._deliver_quote(context, update.effective_chat.id, locale, quote)
+
     async def __help_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         LOGGER.info("Help handler command called")
         await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("help-message", update))
@@ -296,6 +429,19 @@ class Bot:
         figure = self.database.get_figure_of_the_day(date.today())
         await self._send_figure(update, context, figure)
 
+    async def _send_quote(self, update: Update, context: ContextTypes.DEFAULT_TYPE, quote) -> None:
+        # Envoie une citation, ou le message "pas de citation" si le corpus est vide.
+        if not quote:
+            await context.bot.send_message(chat_id=update.effective_chat.id,
+                                           text=self._t("no-quotes", update))
+            return
+        await self._deliver_quote(context, update.effective_chat.id, self._locale(update), quote)
+
+    async def __quote_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        LOGGER.info("Quote handler command called")
+        quote = self.database.get_quote_of_the_day(date.today())
+        await self._send_quote(update, context, quote)
+
     async def __button_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         query = update.callback_query
         await query.answer()
@@ -304,6 +450,8 @@ class Bot:
             await self._send_figure(update, context, self.database.get_random_figure())
         elif query.data == "today":
             await self._send_figure(update, context, self.database.get_figure_of_the_day(date.today()))
+        elif query.data == "random_quote":
+            await self._send_quote(update, context, self.database.get_random_quote())
         elif query.data == "help":
             await context.bot.send_message(chat_id=update.effective_chat.id, text=self._t("help-message", update))
 
@@ -422,6 +570,7 @@ class Bot:
         self.application.add_handler(CommandHandler('help', self.__help_handler))
         self.application.add_handler(CommandHandler('random', self.__random_handler))
         self.application.add_handler(CommandHandler('today', self.__today_handler))
+        self.application.add_handler(CommandHandler('quote', self.__quote_handler))
         self.application.add_handler(CommandHandler('subscribe', self.__subscribe_handler))
         self.application.add_handler(CommandHandler('unsubscribe', self.__unsubscribe_handler))
         self.application.add_handler(CommandHandler('suggest', self.__suggest_handler))

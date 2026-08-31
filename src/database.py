@@ -1,18 +1,23 @@
-import json, random, re
+import json, os, random, re
 from typing import List
 from src.historical_figure import HistoricalFigure
+from src.quote import Quote
 from src.utils import Utils
 from src.logger import LOGGER
 
 FIGURES_PATH = "src/figures.json"
+QUOTES_PATH = "src/quotes.json"
 
 
 class Database:
-    def __init__(self, figures_path: str = FIGURES_PATH):
+    def __init__(self, figures_path: str = FIGURES_PATH, quotes_path: str = QUOTES_PATH):
         LOGGER.info("init DB")
         self.historical_figures = self._load_figures(figures_path)
         self._by_slug = self._index_by_slug(self.historical_figures)
         LOGGER.info(f"Loaded {len(self.historical_figures)} figures")
+        self.quotes = self._load_quotes(quotes_path)
+        self._by_quote_id = self._index_by_quote_id(self.quotes)
+        LOGGER.info(f"Loaded {len(self.quotes)} quotes")
 
     # Ordinary whitespace only: U+00A0 is left alone, French typography uses it
     # before ':' / ';' and inside "Ier siècle" and must not become a break point.
@@ -80,3 +85,61 @@ class Database:
         """Résout le payload d'un deep link. Le slug est re-normalisé, donc la
         casse et les accents reçus sont indifférents."""
         return self._by_slug.get(Utils.figure_slug(slug))
+
+    @classmethod
+    def _load_quotes(cls, quotes_path: str) -> List[Quote]:
+        """Le corpus peut ne pas exister : entre la livraison du code et le
+        premier lot promu, le bot sert la figure seule. Ce n'est pas une erreur.
+
+        `_clean` s'applique aux textes et aux sources pour la même raison que
+        sur les bios — le contenu atterrit verbatim dans le message."""
+        if not os.path.exists(quotes_path):
+            LOGGER.warning(f"No quotes file at {quotes_path} — quotes disabled")
+            return []
+        with open(quotes_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+        return [
+            Quote(
+                id=item["id"],
+                author=cls._clean(item["author"]),
+                lang=item.get("lang", "fr"),
+                text_fr=cls._clean(item.get("text_fr")),
+                text_en=cls._clean(item.get("text_en")),
+                source_fr=cls._clean(item.get("source_fr")),
+                source_en=cls._clean(item.get("source_en")),
+                wikiquote_fr=item.get("wikiquote_fr"),
+                wikiquote_en=item.get("wikiquote_en"),
+            )
+            for item in data
+        ]
+
+    @staticmethod
+    def _index_by_quote_id(quotes):
+        """Index id -> citation. Même précaution que pour les slugs de figures :
+        merge_quotes n'a pas de contrôle d'appartenance, et un id dupliqué
+        rendrait un lien partagé ambigu. Le premier arrivé gagne."""
+        index = {}
+        for quote in quotes:
+            if quote.id in index:
+                LOGGER.warning(
+                    f"Quote id collision on '{quote.id}': keeping "
+                    f"'{index[quote.id].author}', ignoring '{quote.author}'")
+                continue
+            index[quote.id] = quote
+        return index
+
+    def get_all_quotes(self) -> List[Quote]:
+        return self.quotes
+
+    def get_random_quote(self):
+        if not self.quotes:
+            return None
+        return self.quotes[random.randint(0, len(self.quotes) - 1)]
+
+    def get_quote_of_the_day(self, day):
+        if not self.quotes:
+            return None
+        return self.quotes[day.timetuple().tm_yday % len(self.quotes)]
+
+    def get_quote_by_id(self, quote_id):
+        return self._by_quote_id.get(quote_id)

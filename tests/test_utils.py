@@ -101,3 +101,44 @@ def test_every_roster_slug_is_unique_and_telegram_safe():
     assert len(set(slugs)) == len(slugs), "collision de slug dans figures.json"
     for slug in slugs:
         assert re.fullmatch(r"[A-Za-z0-9_-]{1,64}", slug), f"slug invalide : {slug!r}"
+
+
+def test_quote_id_is_ten_lowercase_hex_characters():
+    quote_id = Utils.quote_id("Les vraies conquêtes sont celles que l'on fait sur l'ignorance.")
+    assert re.fullmatch(r"[a-f0-9]{10}", quote_id)
+
+
+def test_quote_id_is_stable_for_the_same_text():
+    text = "Une société sans religion est comme un vaisseau sans boussole."
+    assert Utils.quote_id(text) == Utils.quote_id(text)
+
+
+def test_quote_id_ignores_surrounding_and_collapsed_whitespace():
+    """Le wikitext arrive avec des retours à la ligne et des espaces doubles.
+    Deux récoltes de la même citation doivent produire le même id, sinon la
+    déduplication du pipeline laisse passer des doublons."""
+    assert (
+        Utils.quote_id("  L'erreur est humaine,\n  la reproduire est diabolique. ") ==
+        Utils.quote_id("L'erreur est humaine, la reproduire est diabolique."))
+
+
+def test_quote_id_differs_for_different_texts():
+    assert Utils.quote_id("Alea jacta est") != Utils.quote_id("Veni vidi vici")
+
+
+def test_is_quote_payload_accepts_a_well_formed_quote_deep_link():
+    assert Utils.is_quote_payload("q-0123456789")
+    assert Utils.is_quote_payload("q-abcdef0123")
+
+
+def test_is_quote_payload_rejects_figure_slugs():
+    """Le seul slug du roster commençant par 'q' est qin-shi-huang. Le motif
+    exact plutôt qu'un préfixe 'q-' garantit qu'une figure future nommée
+    « Q-… » ne soit pas détournée vers les citations."""
+    for payload in ("qin-shi-huang", "q-bert", "q-shi-huang", "colbert"):
+        assert not Utils.is_quote_payload(payload), payload
+
+
+def test_is_quote_payload_rejects_malformed_and_empty_payloads():
+    for payload in ("q-abc", "q-abcdef01234", "q-ABCDEF0123", "q-", "", None):
+        assert not Utils.is_quote_payload(payload), repr(payload)

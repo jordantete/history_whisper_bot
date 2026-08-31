@@ -1,4 +1,4 @@
-import os, json, re, unicodedata
+import os, json, re, unicodedata, hashlib
 from src.logger import LOGGER
 
 
@@ -60,3 +60,24 @@ class Utils:
         if not na or not nb:
             return False
         return na in nb or nb in na
+
+    # Motif d'un payload de deep link désignant une citation. Le motif exact
+    # plutôt qu'un simple préfixe 'q-' : le roster ne contient aujourd'hui aucun
+    # slug qui matche, et cette formulation le garde vrai quoi qu'on y ajoute.
+    QUOTE_PAYLOAD_PATTERN = re.compile(r"^q-[a-f0-9]{10}$")
+
+    @staticmethod
+    def quote_id(text) -> str:
+        """Identifiant stable d'une citation, dérivé de son texte d'origine.
+        Contrairement aux figures, une citation n'a pas de nom dont dériver un
+        slug. Un hash reste stable quand le fichier est réordonné, sert de clé
+        de déduplication au pipeline, et tient dans les 64 caractères et le
+        charset [A-Za-z0-9_-] d'un payload Telegram."""
+        normalized = " ".join((text or "").split())
+        return hashlib.sha1(normalized.encode("utf-8")).hexdigest()[:10]
+
+    @staticmethod
+    def is_quote_payload(payload) -> bool:
+        """Vrai quand un payload de deep link désigne une citation. Tout le
+        reste part vers la résolution de slug de figure, comportement inchangé."""
+        return bool(Utils.QUOTE_PAYLOAD_PATTERN.match(payload or ""))

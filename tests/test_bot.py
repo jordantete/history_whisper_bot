@@ -4,12 +4,13 @@ import html
 import tempfile
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
-from telegram import ForceReply, BotName
+from telegram import ForceReply, BotName, BotCommand
 from telegram.error import TelegramError, Forbidden
 from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler, AIORateLimiter
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
 from src.historical_figure import HistoricalFigure
+from src.quote import Quote
 
 
 def visible_len(html_str):
@@ -36,6 +37,21 @@ def make_context():
     return context
 
 
+def make_quote(**overrides):
+    """Citation de test, francophone par défaut — c'est la forme que produit le
+    pipeline tant que la dette de traduction EN n'est pas traitée."""
+    fields = {
+        "id": "abc1234567",
+        "author": "Napoléon Ier",
+        "lang": "fr",
+        "text_fr": "Les vraies conquêtes sont celles que l'on fait sur l'ignorance.",
+        "source_fr": "La campagne d'Égypte, Belin, 2018, p. 111",
+        "wikiquote_fr": "Napoléon Ier",
+    }
+    fields.update(overrides)
+    return Quote(**fields)
+
+
 class TestBot(unittest.IsolatedAsyncioTestCase):
     def setUp(self):
         # Point the subscriber store at a throwaway temp file so Bot tests never
@@ -56,6 +72,11 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         patcher.start()
         self.addCleanup(patcher.stop)
         self.mock_database = Mock(spec=Database)
+        # Corpus vide par défaut : les tests qui veulent une citation la
+        # déclarent explicitement. Sans ce défaut, Mock(spec=…) renvoie un Mock
+        # truthy et _send_daily tenterait de rendre une citation factice.
+        self.mock_database.get_quote_of_the_day.return_value = None
+        self.mock_database.get_random_quote.return_value = None
         self.bot = Bot(database=self.mock_database)
 
     def test_init(self):
@@ -260,6 +281,52 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context = make_context()
         await self.bot._send_daily(context)
         context.bot.send_message.assert_not_called()
+
+    async def test_send_daily_delivers_the_figure_then_the_quote(self):
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Ada Lovelace", description="d", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        self.bot.subscribers.subscribe(111, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("Ada Lovelace", texts[0])
+        self.assertIn("Citation du jour", texts[1])
+
+    async def test_send_daily_delivers_both_cards_to_every_subscriber(self):
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Ada Lovelace", description="d", bio_en="EN bio", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        self.bot.subscribers.subscribe(111, "en")
+        self.bot.subscribers.subscribe(222, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        self.assertEqual(context.bot.send_message.call_count, 4)
+
+    async def test_send_daily_delivers_the_figure_alone_when_the_corpus_is_empty(self):
+        """État du dépôt entre la livraison du code et le premier lot promu."""
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Colbert", description="d", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = None
+        self.bot.subscribers.subscribe(111, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        self.assertEqual(context.bot.send_message.call_count, 1)
+        self.assertIn("Colbert", context.bot.send_message.call_args.kwargs["text"])
+
+    async def test_send_daily_unsubscribes_once_when_the_quote_send_is_forbidden(self):
+        """La figure part, la citation échoue : un seul désabonnement, et pas
+        de double comptage dans le journal."""
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Colbert", description="d", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        self.bot.subscribers.subscribe(111, "fr")
+        context = make_context()
+        context.bot.send_message = AsyncMock(
+            side_effect=[None, Forbidden("bot was blocked by the user")])
+        await self.bot._send_daily(context)
+        self.assertFalse(self.bot.subscribers.is_subscribed(111))
 
     async def test_post_init_schedules_daily_job_at_noon_paris(self):
         app = Mock()
@@ -550,7 +617,7 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
     def test_register_handlers_registers_all(self):
         self.bot.register_handlers()
         handlers = self.bot.application.handlers[0]
-        self.assertEqual(len(handlers), 9)  # 7 commands + 1 feedback conversation + 1 callback query
+        self.assertEqual(len(handlers), 10)  # 8 commands + 1 feedback conversation + 1 callback query
 
     async def test_figure_keyboard_carries_a_share_button(self):
         self.bot._bot_username = "HistoricalFiguresWhisperBot"
@@ -638,3 +705,194 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         await self.bot._Bot__start_handler(update, context)
         texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
         self.assertIn("EN bio", texts[1])
+
+    async def test_start_with_a_quote_payload_delivers_the_shared_quote(self):
+        self.mock_database.get_quote_by_id.return_value = make_quote()
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["q-abc1234567"]
+        await self.bot._Bot__start_handler(update, context)
+        self.mock_database.get_quote_by_id.assert_called_once_with("abc1234567")
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("/subscribe", texts[0])
+        self.assertIn("Les vraies conquêtes", texts[1])
+
+    async def test_start_with_an_unknown_quote_payload_falls_back_to_today(self):
+        self.mock_database.get_quote_by_id.return_value = None
+        self.mock_database.get_quote_of_the_day.return_value = make_quote(author="Voltaire")
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["q-0000000000"]
+        await self.bot._Bot__start_handler(update, context)
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("Voltaire", texts[1])
+
+    async def test_start_with_an_unknown_quote_payload_and_empty_corpus_says_so(self):
+        self.mock_database.get_quote_by_id.return_value = None
+        self.mock_database.get_quote_of_the_day.return_value = None
+        update, context = make_update(language_code="fr"), make_context()
+        context.args = ["q-0000000000"]
+        await self.bot._Bot__start_handler(update, context)
+        context.bot.send_message.assert_called_once()
+        self.assertEqual(context.bot.send_message.call_args.kwargs["text"],
+                         "Aucune citation trouvée, réessaie.")
+
+    async def test_figure_slugs_are_never_routed_to_quotes(self):
+        """Le motif exact protège qin-shi-huang et tout futur « Q-… »."""
+        figure = HistoricalFigure(name="Qin Shi Huang", description="d", bio_fr="bio fr")
+        self.mock_database.get_figure_by_slug.return_value = figure
+        for payload in ("qin-shi-huang", "q-bert", "q-abc"):
+            with self.subTest(payload=payload):
+                update, context = make_update(language_code="fr"), make_context()
+                context.args = [payload]
+                await self.bot._Bot__start_handler(update, context)
+                self.mock_database.get_figure_by_slug.assert_called_with(payload)
+                self.mock_database.get_quote_by_id.assert_not_called()
+
+    def test_quote_lang_prefers_the_reader_locale(self):
+        quote = make_quote(text_en="True conquests are those made over ignorance.")
+        self.assertEqual(Bot._quote_lang(quote, "fr"), "fr")
+        self.assertEqual(Bot._quote_lang(quote, "en"), "en")
+
+    def test_quote_lang_falls_back_to_the_only_available_language(self):
+        """Le corpus est francophone tant que la dette EN n'est pas traitée :
+        un lecteur anglophone reçoit le français plutôt que rien."""
+        self.assertEqual(Bot._quote_lang(make_quote(), "en"), "fr")
+
+    def test_quote_parts_never_pair_a_text_with_the_other_language_source(self):
+        quote = make_quote(text_en="True conquests are those made over ignorance.",
+                           source_en="The Egyptian Campaign, Belin, 2018, p. 111")
+        text, source = Bot._quote_parts(quote, "en")
+        self.assertEqual(text, "True conquests are those made over ignorance.")
+        self.assertEqual(source, "The Egyptian Campaign, Belin, 2018, p. 111")
+
+    def test_build_quote_text_renders_header_quote_author_and_source(self):
+        rendered = Bot._build_quote_text(
+            "Le mieux est l'ennemi du bien.", "Voltaire",
+            "Dictionnaire philosophique, 1770", "💬 Citation du jour")
+        self.assertIn("<b>💬 Citation du jour</b>", rendered)
+        self.assertIn("« Le mieux est l'ennemi du bien. »", rendered)
+        self.assertIn("<b>Voltaire</b>", rendered)
+        self.assertIn("Dictionnaire philosophique, 1770", rendered)
+
+    def test_build_quote_text_omits_the_source_line_when_absent(self):
+        rendered = Bot._build_quote_text("Alea jacta est.", "César", "", "Header")
+        self.assertIn("César", rendered)
+        self.assertNotIn("<i></i>", rendered)
+
+    def test_build_quote_text_escapes_html_in_every_dynamic_part(self):
+        rendered = Bot._build_quote_text(
+            "1 < 2 & 3 > 2", "<script>", "Tom & Jerry, 1940", "Header")
+        self.assertNotIn("<script>", rendered)
+        self.assertIn("&lt;script&gt;", rendered)
+        self.assertIn("1 &lt; 2 &amp; 3 &gt; 2", rendered)
+        self.assertIn("Tom &amp; Jerry", rendered)
+
+    def test_build_quote_text_clamps_an_oversized_quote(self):
+        """Le plafond de 600 caractères est imposé au pipeline ; ce garde-fou
+        protège d'une entrée corrigée à la main, pas d'un cas nominal."""
+        rendered = Bot._build_quote_text("x" * 500, "A", "S", "H", limit=200)
+        self.assertLessEqual(visible_len(rendered), 200)
+        self.assertIn("…", rendered)
+
+    def test_quote_source_url_points_at_the_served_language_wikiquote(self):
+        quote = make_quote(wikiquote_en="Napoleon I of France")
+        self.assertEqual(Bot._quote_source_url(quote, "fr"),
+                         "https://fr.wikiquote.org/wiki/Napol%C3%A9on%20Ier")
+        self.assertEqual(Bot._quote_source_url(quote, "en"),
+                         "https://en.wikiquote.org/wiki/Napoleon%20I%20of%20France")
+
+    def test_quote_source_url_is_none_without_a_wikiquote_title(self):
+        self.assertIsNone(Bot._quote_source_url(make_quote(wikiquote_fr=None), "fr"))
+
+    async def test_deliver_quote_sends_an_html_card_without_a_preview(self):
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "fr", make_quote())
+        kwargs = context.bot.send_message.call_args.kwargs
+        self.assertEqual(kwargs["chat_id"], 42)
+        self.assertIn("Citation du jour", kwargs["text"])
+        self.assertIn("Napoléon Ier", kwargs["text"])
+        self.assertTrue(kwargs["link_preview_options"].is_disabled)
+
+    async def test_deliver_quote_uses_the_reader_locale_for_the_header(self):
+        """L'en-tête et les boutons suivent le lecteur ; le corps suit la langue
+        dans laquelle la citation existe."""
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "en", make_quote())
+        text = context.bot.send_message.call_args.kwargs["text"]
+        self.assertIn("Quote of the day", text)
+        self.assertIn("Les vraies conquêtes", text)
+
+    async def test_quote_keyboard_carries_another_source_and_share(self):
+        self.bot._bot_username = "HistoricalFiguresWhisperBot"
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "fr", make_quote())
+        markup = context.bot.send_message.call_args.kwargs["reply_markup"]
+        flat = [button for row in markup.inline_keyboard for button in row]
+        self.assertEqual(flat[0].callback_data, "random_quote")
+        urls = [button.url for button in flat if button.url]
+        self.assertTrue(any("fr.wikiquote.org" in url for url in urls))
+        self.assertTrue(any("t.me/share/url" in url for url in urls))
+        self.assertTrue(any("start%3Dq-abc1234567" in url for url in urls))
+
+    async def test_quote_share_button_is_omitted_before_the_username_is_known(self):
+        self.bot._bot_username = None
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "fr", make_quote())
+        markup = context.bot.send_message.call_args.kwargs["reply_markup"]
+        flat = [button for row in markup.inline_keyboard for button in row]
+        self.assertFalse(any(button.url and "t.me/share" in button.url for button in flat))
+
+    async def test_quote_command_sends_the_quote_of_the_day(self):
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        update, context = make_update(language_code="fr"), make_context()
+        await self.bot._Bot__quote_handler(update, context)
+        self.mock_database.get_quote_of_the_day.assert_called_once()
+        self.assertIn("Les vraies conquêtes", context.bot.send_message.call_args.kwargs["text"])
+
+    async def test_quote_command_reports_an_empty_corpus(self):
+        self.mock_database.get_quote_of_the_day.return_value = None
+        update, context = make_update(language_code="fr"), make_context()
+        await self.bot._Bot__quote_handler(update, context)
+        self.assertEqual(context.bot.send_message.call_args.kwargs["text"],
+                         "Aucune citation trouvée, réessaie.")
+
+    async def test_random_quote_button_sends_a_random_quote(self):
+        self.mock_database.get_random_quote.return_value = make_quote(author="Voltaire")
+        update, context = make_update(language_code="fr"), make_context()
+        update.callback_query = Mock()
+        update.callback_query.data = "random_quote"
+        update.callback_query.answer = AsyncMock()
+        await self.bot._Bot__button_handler(update, context)
+        self.mock_database.get_random_quote.assert_called_once()
+        self.assertIn("Voltaire", context.bot.send_message.call_args.kwargs["text"])
+
+    async def test_quote_is_published_in_the_command_menu(self):
+        """`/quote` must actually reach Telegram's published command list, not
+        merely be mentioned somewhere in `_post_init`'s source (a comment would
+        have satisfied the old assertion)."""
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(return_value=BotName("stale name"))
+        app.bot.set_my_name = AsyncMock()
+        app.job_queue.run_daily = Mock()
+        await self.bot._post_init(app)
+        self.assertTrue(app.bot.set_my_commands.call_args_list)
+        for call in app.bot.set_my_commands.call_args_list:
+            commands = call.args[0]
+            self.assertTrue(any(isinstance(c, BotCommand) and c.command == "quote"
+                                for c in commands))
+
+    def test_quote_is_registered_as_a_command_handler(self):
+        self.bot.register_handlers()
+        commands = set()
+        for group in self.bot.application.handlers.values():
+            for handler in group:
+                commands |= set(getattr(handler, "commands", ()) or ())
+        self.assertIn("quote", commands)
+
+    def test_help_message_mentions_quote_in_both_locales(self):
+        self.assertIn("/quote", self.bot._tl("help-message", "en"))
+        self.assertIn("/quote", self.bot._tl("help-message", "fr"))
