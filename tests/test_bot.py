@@ -72,6 +72,11 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         patcher.start()
         self.addCleanup(patcher.stop)
         self.mock_database = Mock(spec=Database)
+        # Corpus vide par défaut : les tests qui veulent une citation la
+        # déclarent explicitement. Sans ce défaut, Mock(spec=…) renvoie un Mock
+        # truthy et _send_daily tenterait de rendre une citation factice.
+        self.mock_database.get_quote_of_the_day.return_value = None
+        self.mock_database.get_random_quote.return_value = None
         self.bot = Bot(database=self.mock_database)
 
     def test_init(self):
@@ -276,6 +281,52 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         context = make_context()
         await self.bot._send_daily(context)
         context.bot.send_message.assert_not_called()
+
+    async def test_send_daily_delivers_the_figure_then_the_quote(self):
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Ada Lovelace", description="d", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        self.bot.subscribers.subscribe(111, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
+        self.assertEqual(len(texts), 2)
+        self.assertIn("Ada Lovelace", texts[0])
+        self.assertIn("Citation du jour", texts[1])
+
+    async def test_send_daily_delivers_both_cards_to_every_subscriber(self):
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Ada Lovelace", description="d", bio_en="EN bio", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        self.bot.subscribers.subscribe(111, "en")
+        self.bot.subscribers.subscribe(222, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        self.assertEqual(context.bot.send_message.call_count, 4)
+
+    async def test_send_daily_delivers_the_figure_alone_when_the_corpus_is_empty(self):
+        """État du dépôt entre la livraison du code et le premier lot promu."""
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Colbert", description="d", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = None
+        self.bot.subscribers.subscribe(111, "fr")
+        context = make_context()
+        await self.bot._send_daily(context)
+        self.assertEqual(context.bot.send_message.call_count, 1)
+        self.assertIn("Colbert", context.bot.send_message.call_args.kwargs["text"])
+
+    async def test_send_daily_unsubscribes_once_when_the_quote_send_is_forbidden(self):
+        """La figure part, la citation échoue : un seul désabonnement, et pas
+        de double comptage dans le journal."""
+        self.mock_database.get_figure_of_the_day.return_value = HistoricalFigure(
+            name="Colbert", description="d", bio_fr="FR bio")
+        self.mock_database.get_quote_of_the_day.return_value = make_quote()
+        self.bot.subscribers.subscribe(111, "fr")
+        context = make_context()
+        context.bot.send_message = AsyncMock(
+            side_effect=[None, Forbidden("bot was blocked by the user")])
+        await self.bot._send_daily(context)
+        self.assertFalse(self.bot.subscribers.is_subscribed(111))
 
     async def test_post_init_schedules_daily_job_at_noon_paris(self):
         app = Mock()

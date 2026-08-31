@@ -312,17 +312,29 @@ class Bot:
 
     async def _send_daily(self, context: ContextTypes.DEFAULT_TYPE) -> None:
         """JobQueue callback: deliver the figure of the day to all subscribers,
-        each in their own locale. Subscribers who blocked the bot are dropped."""
+        each in their own locale, followed by the quote of the day as its own
+        card. Subscribers who blocked the bot are dropped.
+
+        Both cards go out inside the same per-recipient try block: a Forbidden
+        on either one means the same blocked user, so it must unsubscribe them
+        once and count as one failed delivery, not two.
+
+        An empty corpus is a supported state — the figure ships alone."""
         figure = self.database.get_figure_of_the_day(date.today())
         if not figure:
             LOGGER.warning("No figure of the day — skipping daily delivery")
             return
+        quote = self.database.get_quote_of_the_day(date.today())
+        if not quote:
+            LOGGER.warning("No quote of the day — delivering the figure alone")
         recipients = self.subscribers.all()
         LOGGER.info(f"Daily delivery starting for {len(recipients)} subscriber(s)")
         sent = 0
         for chat_id, locale in recipients:
             try:
                 await self._deliver_figure(context, chat_id, locale, figure)
+                if quote:
+                    await self._deliver_quote(context, chat_id, locale, quote)
                 sent += 1
             except Forbidden:
                 LOGGER.info(f"Subscriber {chat_id} blocked the bot — removing")
