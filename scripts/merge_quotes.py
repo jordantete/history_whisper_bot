@@ -39,22 +39,27 @@ def is_complete(entry):
 
 
 def promote(quotes, pending):
-    """Renvoie (corpus augmenté, staging restant, ids promus).
+    """Renvoie (corpus augmenté, staging restant, ids promus, ids en doublon).
 
     La déduplication sur l'id est ici et nulle part ailleurs : Database avertit
     d'une collision mais ne peut plus la corriger, et un id dupliqué rendrait
-    un deep link partagé ambigu."""
+    un deep link partagé ambigu.
+
+    Un doublon (complet, mais déjà au corpus) n'est ni promu ni conservé en
+    staging — il est donc déjà retiré de `remaining` ici. `main()` doit
+    persister `remaining` telle quelle, sans quoi ces lignes reviennent
+    indéfiniment à chaque exécution suivante."""
     known = {entry["id"] for entry in quotes}
-    promoted, remaining = [], []
+    promoted, remaining, duplicates = [], [], []
     for entry in pending:
         if not is_complete(entry):
             remaining.append(entry)
         elif entry["id"] in known:
-            continue          # doublon : abandonné, ni promu ni conservé
+            duplicates.append(entry["id"])   # doublon : abandonné, ni promu ni conservé
         else:
             known.add(entry["id"])
             promoted.append(entry)
-    return quotes + promoted, remaining, [entry["id"] for entry in promoted]
+    return quotes + promoted, remaining, [entry["id"] for entry in promoted], duplicates
 
 
 def main():
@@ -70,9 +75,11 @@ def main():
         print("Staging vide, rien à promouvoir.")
         return
 
-    new_quotes, remaining, promoted = promote(quotes, pending)
+    new_quotes, remaining, promoted, duplicates = promote(quotes, pending)
 
     print(f"Prêtes ({len(promoted)}) sur {len(pending)} en staging.")
+    if duplicates:
+        print(f"Doublons déjà au corpus, retirés du staging ({len(duplicates)}).")
     if remaining:
         print(f"\nEncore à compléter ({len(remaining)}) :")
         for entry in remaining[:20]:
@@ -83,12 +90,23 @@ def main():
     if args.dry_run:
         print("\n--dry-run : rien écrit.")
         return
+
+    # `remaining` a déjà perdu les doublons (et gagné les promotions) par
+    # rapport à `pending` dès que l'un ou l'autre est non vide : persister
+    # dans ce cas, même quand rien n'est promouvable, sans quoi les doublons
+    # reviennent et sont re-rejetés à chaque exécution suivante.
+    if remaining != pending:
+        write_json(PENDING_PATH, {"quotes": remaining})
+
     if not promoted:
-        print("\nAucune citation complète, rien écrit.")
+        if duplicates:
+            print(f"\nAucune citation complète à promouvoir ; "
+                 f"{len(duplicates)} doublon(s) retiré(s) du staging.")
+        else:
+            print("\nAucune citation complète, rien écrit.")
         return
 
     write_json(QUOTES_PATH, new_quotes)
-    write_json(PENDING_PATH, {"quotes": remaining})
     print(f"\n{len(promoted)} citation(s) promue(s). Corpus : {len(new_quotes)}.")
     print(f"→ Bumper test_corpus_size dans tests/test_database.py à {len(new_quotes)}, puis :")
     print("  ./.venv/bin/python -m pytest tests/")

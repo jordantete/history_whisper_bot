@@ -250,6 +250,26 @@ class TestParsePage(unittest.TestCase):
         self.assertEqual(len(kept), 1)
         self.assertEqual(rejected["doublon"], 1)
 
+    def test_a_second_pass_with_known_ids_yields_the_next_quotes_not_nothing(self):
+        """Sans le paramètre `known`, un second `--from-roster` retrouve
+        systématiquement les trois mêmes citations déjà en staging (le
+        plafond par auteur les capture avant que `collect` ne les rejette
+        comme doublons) et le rendement mesuré tombe à zéro."""
+        blocks = "".join(
+            f"{{{{Citation|citation=Citation numéro {i}.}}}}\n{{{{Réf Livre|titre=T{i}|année=2000}}}}\n"
+            for i in range(6))
+        wikitext = "== Citations ==\n" + blocks
+
+        first_pass, _ = parse_page("A", "A", wikitext, max_per_author=3)
+        self.assertEqual(len(first_pass), 3)
+        known = {entry["id"] for entry in first_pass}
+
+        second_pass, rejected = parse_page("A", "A", wikitext, max_per_author=3, known=known)
+        self.assertEqual(
+            {entry["text_fr"] for entry in second_pass},
+            {"Citation numéro 3.", "Citation numéro 4.", "Citation numéro 5."})
+        self.assertEqual(rejected["déjà connu"], 3)
+
 
 if __name__ == "__main__":
     unittest.main()

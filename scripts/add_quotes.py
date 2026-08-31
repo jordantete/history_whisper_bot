@@ -234,7 +234,8 @@ def _following_ref(templates, index: int):
     return None
 
 
-def parse_page(author: str, title: str, wikitext: str, max_per_author: int = MAX_PER_AUTHOR):
+def parse_page(author: str, title: str, wikitext: str, max_per_author: int = MAX_PER_AUTHOR,
+              known=frozenset()):
     """Extrait les citations retenues d'une page Wikiquote FR.
 
     Renvoie (entrées de staging, compteur de rejets par motif). Le compteur
@@ -243,7 +244,13 @@ def parse_page(author: str, title: str, wikitext: str, max_per_author: int = MAX
 
     `author` est le nom du roster — c'est lui qui s'affiche sur la carte ;
     `title` est le titre Wikiquote après redirection, qui sert de lien.
-    """
+
+    `known` : ids déjà présents au corpus, en staging, ou retenus plus tôt
+    dans cette même exécution. Un id connu est écarté AVANT de compter dans
+    le plafond par auteur — sans quoi un second `--from-roster` retrouve
+    systématiquement les trois mêmes premières citations (déjà en staging),
+    les voit rejetées comme doublons par `collect`, et n'avance jamais au-delà
+    d'elles."""
     kept, rejected, seen = [], Counter(), set()
     headings = [(match.start(), match.group(1)) for match in HEADING.finditer(wikitext)]
     templates = list(iter_templates(wikitext))
@@ -251,8 +258,6 @@ def parse_page(author: str, title: str, wikitext: str, max_per_author: int = MAX
     for index, (name, body, position) in enumerate(templates):
         if Utils.normalize_name(name) != "citation":
             continue
-        if len(kept) >= max_per_author:
-            break
         if _is_excluded(_section_at(headings, position)):
             rejected["section exclue"] += 1
             continue
@@ -272,6 +277,11 @@ def parse_page(author: str, title: str, wikitext: str, max_per_author: int = MAX
         if quote_id in seen:
             rejected["doublon"] += 1
             continue
+        if quote_id in known:
+            rejected["déjà connu"] += 1
+            continue
+        if len(kept) >= max_per_author:
+            break
         seen.add(quote_id)
         kept.append({
             "id": quote_id,
@@ -351,12 +361,12 @@ def collect(names, max_per_author=MAX_PER_AUTHOR):
                 missing.append(name)
                 continue
             title, wikitext = pages[name]
-            kept, page_rejected = parse_page(name, title, wikitext, max_per_author)
+            # `known` est passé à parse_page : les ids déjà connus y sont
+            # écartés avant de compter dans le plafond par auteur, si bien
+            # qu'un id retenu ici n'y figure jamais déjà.
+            kept, page_rejected = parse_page(name, title, wikitext, max_per_author, known)
             rejected.update(page_rejected)
             for entry in kept:
-                if entry["id"] in known:
-                    rejected["déjà connu"] += 1
-                    continue
                 known.add(entry["id"])
                 added.append(entry)
         time.sleep(REQUEST_DELAY)
