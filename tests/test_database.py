@@ -228,4 +228,4 @@ class TestDatabase(unittest.TestCase):
     def test_corpus_size(self):
         """Compteur en dur, à bumper à chaque lot promu — même convention que
         test_loads_full_roster_from_json pour le roster."""
-        self.assertEqual(len(Database().get_all_quotes()), 200)
+        self.assertEqual(len(Database().get_all_quotes()), 197)
