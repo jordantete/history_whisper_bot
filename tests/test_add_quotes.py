@@ -65,6 +65,24 @@ class TestTemplateParsing(unittest.TestCase):
         self.assertEqual(template_field(body, "citation"), "Les [[France|Français]] d'abord")
         self.assertEqual(template_field(body, "précisions"), "Discours")
 
+    def test_template_field_survives_an_unpaired_opening_bracket_in_prose(self):
+        """« [0,1[ » est la notation française standard d'un intervalle semi-
+        ouvert : un crochet seul, non apparié, ne doit pas désynchroniser le
+        compteur de profondeur et masquer le '|' de premier niveau qui suit."""
+        body = ("Citation|citation=La probabilite est dans [0,1[ selon Kolmogorov."
+                "|precisions=Note editoriale")
+        self.assertEqual(template_field(body, "citation"),
+                         "La probabilite est dans [0,1[ selon Kolmogorov.")
+        self.assertEqual(template_field(body, "precisions"), "Note editoriale")
+
+    def test_template_field_survives_an_unpaired_closing_bracket_in_prose(self):
+        """Même défaut avec un ']' orphelin — artefact de transcription."""
+        body = ("Citation|citation=Une phrase mal transcrite] avec un reste."
+                "|precisions=Note editoriale")
+        self.assertEqual(template_field(body, "citation"),
+                         "Une phrase mal transcrite] avec un reste.")
+        self.assertEqual(template_field(body, "precisions"), "Note editoriale")
+
     def test_template_field_falls_back_to_the_positional_argument(self):
         self.assertEqual(template_field("Citation|Un texte positionnel", "citation"),
                          "Un texte positionnel")

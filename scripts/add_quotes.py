@@ -92,18 +92,36 @@ def iter_templates(wikitext: str):
 
 def _split_fields(body: str):
     """Découpe le corps d'un template sur ses '|' de premier niveau. Les '|' à
-    l'intérieur d'un [[…]] ou d'un {{…}} imbriqué ne séparent pas des champs."""
-    parts, depth, current = [], 0, []
-    for char in body:
-        if char in "{[":
+    l'intérieur d'un [[…]] ou d'un {{…}} imbriqué ne séparent pas des champs.
+
+    La profondeur ne suit que les jetons à DEUX caractères ('{{', '}}', '[[',
+    ']]'), jamais une accolade ou un crochet isolé. Un crochet seul et mal
+    apparié dans la prose — intervalle mathématique « [0,1[ », artefact de
+    transcription « ] » orphelin — désynchroniserait sinon durablement le
+    compteur et masquerait le '|' de premier niveau qui sépare réellement les
+    champs, laissant fuir le template suivant dans le texte de la citation.
+    Les liens externes ('[url texte]') séparent leur libellé par un espace,
+    jamais un '|' : un crochet simple n'a donc jamais besoin d'être protégé."""
+    parts, depth, current, index = [], 0, [], 0
+    while index < len(body):
+        two = body[index:index + 2]
+        if two in ("{{", "[["):
             depth += 1
-        elif char in "}]":
-            depth -= 1
+            current.append(two)
+            index += 2
+            continue
+        if two in ("}}", "]]"):
+            depth = max(0, depth - 1)
+            current.append(two)
+            index += 2
+            continue
+        char = body[index]
         if char == "|" and depth == 0:
             parts.append("".join(current))
             current = []
         else:
             current.append(char)
+        index += 1
     parts.append("".join(current))
     return parts
 
