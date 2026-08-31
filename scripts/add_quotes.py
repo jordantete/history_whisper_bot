@@ -45,6 +45,15 @@ EXCLUDED_SECTIONS = ("citations attribuees", "attribuees", "apocryphe", "a propo
 HEADING = re.compile(r"^=+\s*(.+?)\s*=+\s*$", re.M)
 
 
+def _reduce_template(match) -> str:
+    """Réduit un template sans balisage imbriqué à son dernier argument
+    positionnel ({{Personnage|Socrate}} → 'Socrate' : c'est l'attribution de
+    réplique d'une citation de théâtre/dialogue, elle appartient au texte).
+    Un gabarit sans '|' (pas d'argument) disparaît entièrement."""
+    parts = match.group(1).split("|")
+    return parts[-1] if len(parts) > 1 else ""
+
+
 def strip_markup(text: str) -> str:
     """Wikitext → texte nu. Le rendu Telegram est du HTML : tout reliquat de
     balisage wiki y apparaîtrait tel quel."""
@@ -53,6 +62,15 @@ def strip_markup(text: str) -> str:
     text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"\{\{\s*w\s*\|[^|}]*\|([^}]*)\}\}", r"\1", text)   # {{w|article|texte}}
     text = re.sub(r"\{\{\s*w\s*\|([^}]*)\}\}", r"\1", text)           # {{w|article}}
+    # Repli générique : tout autre template restant (attribution de réplique
+    # {{Personnage|…}}, souverain, etc. — la liste des noms possibles n'est pas
+    # prévisible). Boucle bornée pour réduire les templates imbriqués de
+    # l'intérieur vers l'extérieur, une couche par itération.
+    for _ in range(10):
+        reduced = re.sub(r"\{\{([^{}]*)\}\}", _reduce_template, text)
+        if reduced == text:
+            break
+        text = reduced
     text = re.sub(r"\[\[[^|\]]*\|([^\]]*)\]\]", r"\1", text)          # [[cible|texte]]
     text = re.sub(r"\[\[([^\]]*)\]\]", r"\1", text)                   # [[texte]]
     text = re.sub(r"'''(.*?)'''", r"\1", text, flags=re.S)

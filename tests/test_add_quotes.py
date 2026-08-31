@@ -45,6 +45,23 @@ class TestStripMarkup(unittest.TestCase):
     def test_collapses_whitespace_and_decodes_entities(self):
         self.assertEqual(strip_markup("  Deux\n  mots &amp; trois  "), "Deux mots & trois")
 
+    def test_reduces_an_unrecognized_template_to_its_last_argument(self):
+        """{{Personnage|…}} est l'attribution de réplique des citations de
+        théâtre/dialogue sur Wikiquote ; son nom n'est pas prévisible à
+        l'avance, d'où le repli générique plutôt qu'une règle nommée."""
+        self.assertEqual(strip_markup("{{Personnage|Socrate}} : Une vie sans examen…"),
+                         "Socrate : Une vie sans examen…")
+
+    def test_reduces_an_unrecognized_template_case_insensitively(self):
+        self.assertEqual(strip_markup("{{personnage|Mascarille}} : On ne meurt qu'une fois"),
+                         "Mascarille : On ne meurt qu'une fois")
+
+    def test_removes_a_bare_template_with_no_argument(self):
+        self.assertEqual(strip_markup("Au {{Ier}} siècle"), "Au siècle")
+
+    def test_reduces_a_multi_argument_template_to_its_last_argument(self):
+        self.assertEqual(strip_markup("{{tpl|a|b|c}} fin"), "c fin")
+
 
 class TestTemplateParsing(unittest.TestCase):
     def test_iter_templates_yields_name_and_body(self):
