@@ -4,7 +4,7 @@ import html
 import tempfile
 import unittest
 from unittest.mock import patch, Mock, AsyncMock
-from telegram import ForceReply, BotName
+from telegram import ForceReply, BotName, BotCommand
 from telegram.error import TelegramError, Forbidden
 from telegram.ext import Application, ConversationHandler, ApplicationHandlerStop, TypeHandler, AIORateLimiter
 from src.database import Database
@@ -867,9 +867,23 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         self.mock_database.get_random_quote.assert_called_once()
         self.assertIn("Voltaire", context.bot.send_message.call_args.kwargs["text"])
 
-    def test_quote_is_published_in_the_command_menu(self):
-        import inspect
-        self.assertIn("quote", inspect.getsource(self.bot._post_init))
+    async def test_quote_is_published_in_the_command_menu(self):
+        """`/quote` must actually reach Telegram's published command list, not
+        merely be mentioned somewhere in `_post_init`'s source (a comment would
+        have satisfied the old assertion)."""
+        app = Mock()
+        app.bot.set_my_commands = AsyncMock()
+        app.bot.set_my_description = AsyncMock()
+        app.bot.set_my_short_description = AsyncMock()
+        app.bot.get_my_name = AsyncMock(return_value=BotName("stale name"))
+        app.bot.set_my_name = AsyncMock()
+        app.job_queue.run_daily = Mock()
+        await self.bot._post_init(app)
+        self.assertTrue(app.bot.set_my_commands.call_args_list)
+        for call in app.bot.set_my_commands.call_args_list:
+            commands = call.args[0]
+            self.assertTrue(any(isinstance(c, BotCommand) and c.command == "quote"
+                                for c in commands))
 
     def test_quote_is_registered_as_a_command_handler(self):
         self.bot.register_handlers()

@@ -198,6 +198,16 @@ class TestDatabase(unittest.TestCase):
         self.assertEqual(database.get_quote_by_id("abc1234567").author, "Voltaire")
         self.assertIsNone(database.get_quote_by_id("0000000000"))
 
+    def test_get_random_quote_returns_a_quote_from_a_non_empty_corpus(self):
+        """Le seul test existant sur get_random_quote couvrait le corpus vide —
+        rien ne vérifiait le chemin nominal."""
+        database = self._database_with_quotes([
+            {"id": "abc1234567", "author": "Voltaire", "lang": "fr",
+             "text_fr": "Le mieux est l'ennemi du bien.", "source_fr": "S"}])
+        quote = database.get_random_quote()
+        self.assertIsInstance(quote, Quote)
+        self.assertEqual(quote.id, "abc1234567")
+
     def test_empty_corpus_is_a_supported_state(self):
         """État du dépôt entre la livraison du code et le premier lot promu :
         le bot doit servir la figure seule, pas planter."""
@@ -224,6 +234,15 @@ class TestDatabase(unittest.TestCase):
     def test_corpus_ids_are_unique(self):
         ids = [quote.id for quote in Database().get_all_quotes()]
         self.assertEqual(len(ids), len(set(ids)))
+
+    def test_corpus_ids_derive_from_their_text_and_are_valid_deep_link_payloads(self):
+        """Rien ne vérifiait jusqu'ici que `id` dérive toujours de `text_fr` :
+        un curateur qui corrige une coquille à la main sur une entrée casse
+        silencieusement tout deep link déjà partagé pour cette citation."""
+        for quote in Database().get_all_quotes():
+            self.assertEqual(Utils.quote_id(quote.text_fr), quote.id, quote.author)
+            self.assertLessEqual(len(quote.text_fr), 600, quote.author)
+            self.assertTrue(Utils.is_quote_payload(f"q-{quote.id}"), quote.author)
 
     def test_corpus_size(self):
         """Compteur en dur, à bumper à chaque lot promu — même convention que
