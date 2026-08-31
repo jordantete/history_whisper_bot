@@ -54,11 +54,31 @@ def _reduce_template(match) -> str:
     return parts[-1] if len(parts) > 1 else ""
 
 
+# Une paire de guillemets qui enveloppe le texte en entier : la citation était
+# déjà mise entre guillemets sur la page Wikiquote, et le rendu Telegram
+# l'entoure une seconde fois (« « … » »). Uniquement quand l'ouvrant ET le
+# fermant encadrent la totalité du texte — une citation rapportée qui ne
+# porte des guillemets qu'à l'intérieur de la phrase (discours direct) doit
+# rester intacte.
+_ENCLOSING_QUOTE_PAIRS = (("«", "»"), ('"', '"'), ("“", "”"))
+
+
+def _unwrap_enclosing_quotes(text: str) -> str:
+    for opening, closing in _ENCLOSING_QUOTE_PAIRS:
+        if len(text) >= 2 and text.startswith(opening) and text.endswith(closing):
+            return text[len(opening):-len(closing)].strip()
+    return text
+
+
 def strip_markup(text: str) -> str:
     """Wikitext → texte nu. Le rendu Telegram est du HTML : tout reliquat de
     balisage wiki y apparaîtrait tel quel."""
     text = re.sub(r"<ref[^>]*/>", "", text)
     text = re.sub(r"<ref[^>]*>.*?</ref>", "", text, flags=re.S)
+    # Saut de ligne wikitext : le supprimer sans rien laisser à la place colle
+    # les mots voisins ('mot<br/>suivant' -> 'motsuivant'). Placé avant le
+    # retrait générique des balises, qui lui n'insère aucun séparateur.
+    text = re.sub(r"<\s*br\s*/?\s*>", " ", text, flags=re.I)
     text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"\{\{\s*w\s*\|[^|}]*\|([^}]*)\}\}", r"\1", text)   # {{w|article|texte}}
     text = re.sub(r"\{\{\s*w\s*\|([^}]*)\}\}", r"\1", text)           # {{w|article}}
@@ -80,7 +100,7 @@ def strip_markup(text: str) -> str:
                   lambda m: m.group(1) or "", text)
     text = re.sub(r"'''(.*?)'''", r"\1", text, flags=re.S)
     text = re.sub(r"''(.*?)''", r"\1", text, flags=re.S)
-    return Database._clean(html.unescape(text))
+    return _unwrap_enclosing_quotes(Database._clean(html.unescape(text)))
 
 
 def iter_templates(wikitext: str):
@@ -151,12 +171,18 @@ def _split_fields(body: str):
 
 def template_field(body: str, field: str):
     """Valeur d'un champ nommé. À défaut, le premier argument positionnel —
-    certaines pages écrivent {{Citation|texte}} sans nommer le champ."""
+    certaines pages écrivent {{Citation|texte}} sans nommer le champ.
+
+    La comparaison passe par `Utils.normalize_name` des deux côtés : une page
+    qui écrit 'Editeur' ou 'annee' (sans accent) doit toujours apparier
+    'éditeur' / 'année', sans quoi le fragment correspondant disparaît
+    silencieusement de la ligne de source."""
+    target = Utils.normalize_name(field)
     parts = _split_fields(body)
     for part in parts[1:]:
         if "=" in part:
             key, value = part.split("=", 1)
-            if key.strip().lower() == field:
+            if Utils.normalize_name(key) == target:
                 return value.strip()
     if field == "citation":
         for part in parts[1:]:

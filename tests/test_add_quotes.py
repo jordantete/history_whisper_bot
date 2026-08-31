@@ -91,6 +91,40 @@ class TestStripMarkup(unittest.TestCase):
             strip_markup("La probabilite est dans [0,1[ selon Kolmogorov."),
             "La probabilite est dans [0,1[ selon Kolmogorov.")
 
+    def test_unwraps_a_quote_already_enclosed_in_guillemets(self):
+        """Le cas Mao Zedong (622633b040) : la page Wikiquote met déjà la
+        citation entre « », et sans ce dépouillement le rendu Telegram double
+        les guillemets (« « … » »)."""
+        self.assertEqual(
+            strip_markup("« La révolution n'est pas un dîner de gala. »"),
+            "La révolution n'est pas un dîner de gala.")
+
+    def test_leaves_an_internal_guillemet_pair_alone(self):
+        """Discours direct rapporté à l'intérieur de la phrase : les
+        guillemets ne portent pas sur le texte entier, ils doivent rester."""
+        self.assertEqual(
+            strip_markup("Ma tante me disait : « Si tu te tais, on te croira sage. »"),
+            "Ma tante me disait : « Si tu te tais, on te croira sage. »")
+
+    def test_leaves_a_trailing_closing_guillemet_without_a_matching_opening_alone(self):
+        """Une citation qui finit sur '»' sans avoir commencé par '«' n'est pas
+        une paire enveloppante — ne rien toucher."""
+        self.assertEqual(
+            strip_markup("toute la sagesse humaine sera dans ces deux mots :« Attendre et espérer ! »"),
+            "toute la sagesse humaine sera dans ces deux mots :« Attendre et espérer ! »")
+
+    def test_replaces_br_with_a_space_instead_of_gluing_words(self):
+        """Un saut de ligne wikitext supprimé sans rien à la place colle les
+        mots voisins (observé sur 'ÉPIGRAMMEOuvrage…' dans le corpus récolté)."""
+        self.assertEqual(strip_markup("mot<br/>suivant"), "mot suivant")
+        self.assertEqual(strip_markup("mot<br />suivant"), "mot suivant")
+        self.assertEqual(strip_markup("mot<BR>suivant"), "mot suivant")
+
+    def test_still_glues_words_across_a_generic_tag(self):
+        """Le correctif est ciblé sur <br> uniquement : une autre balise
+        (ex. <i>) ne doit pas se voir attribuer le même traitement."""
+        self.assertEqual(strip_markup("mot<i>x</i>suivant"), "motxsuivant")
+
 
 class TestTemplateParsing(unittest.TestCase):
     def test_iter_templates_yields_name_and_body(self):
@@ -135,6 +169,14 @@ class TestTemplateParsing(unittest.TestCase):
 
     def test_template_field_returns_none_for_a_missing_field(self):
         self.assertIsNone(template_field("Citation|citation=Texte", "absent"))
+
+    def test_template_field_matches_an_unaccented_field_name(self):
+        """Une page qui écrit 'Editeur'/'annee' sans accent ne doit pas perdre
+        le fragment correspondant dans la ligne de source."""
+        self.assertEqual(
+            template_field("Réf Livre|Editeur=Belin|annee=2018", "éditeur"), "Belin")
+        self.assertEqual(
+            template_field("Réf Livre|Editeur=Belin|annee=2018", "année"), "2018")
 
     def test_format_ref_builds_a_readable_source_line(self):
         _, body, _ = list(iter_templates(SOURCED))[1]
