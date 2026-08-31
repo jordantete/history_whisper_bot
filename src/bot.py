@@ -2,7 +2,7 @@ import os
 import html
 import time
 from datetime import date, time as dtime
-from urllib.parse import quote
+from urllib.parse import quote as url_quote
 from zoneinfo import ZoneInfo
 
 from src.database import Database
@@ -166,7 +166,7 @@ class Bot:
             return None
         deep_link = f"https://t.me/{self._bot_username}?start={Utils.figure_slug(figure.name)}"
         text = self._tl("share-text", locale).format(name=figure.name)
-        return f"https://t.me/share/url?url={quote(deep_link, safe='')}&text={quote(text, safe='')}"
+        return f"https://t.me/share/url?url={url_quote(deep_link, safe='')}&text={url_quote(text, safe='')}"
 
     def _figure_keyboard(self, locale: str, figure) -> InlineKeyboardMarkup:
         rows = [[
@@ -185,6 +185,101 @@ class Bot:
         if second:
             rows.append(second)
         return InlineKeyboardMarkup(rows)
+
+    @staticmethod
+    def _quote_lang(quote, locale: str) -> str:
+        """Langue effectivement servie : celle du lecteur si la citation existe
+        dans cette langue, sinon l'autre. Le corpus étant francophone tant que
+        la dette de traduction EN n'est pas traitée, un lecteur anglophone
+        reçoit le français plutôt que rien."""
+        if locale == "fr":
+            return "fr" if quote.text_fr else "en"
+        return "en" if quote.text_en else "fr"
+
+    @staticmethod
+    def _quote_parts(quote, lang: str):
+        """Texte et source pris dans la même langue. Les déparier — un texte
+        français sous une source anglaise — serait incohérent à la lecture."""
+        if lang == "fr":
+            return quote.text_fr or "", quote.source_fr or ""
+        return quote.text_en or "", quote.source_en or ""
+
+    @staticmethod
+    def _build_quote_text(text: str, author: str, source: str, header: str,
+                          limit: int = MessageLimit.MAX_TEXT_LENGTH) -> str:
+        """Render an HTML quote card. Unlike `_build_card_text`, no arbitration
+        is needed between competing blocks: the pipeline caps quote text at 600
+        visible characters, so the clamp below only guards against a corpus
+        entry edited by hand."""
+        def esc(s):
+            return html.escape(s, quote=False)
+
+        # Décoration fixe : en-tête, guillemets, tiret cadratin, sauts de ligne.
+        overhead = len(header) + len(author) + len(source) + 12
+        budget = limit - overhead
+        if len(text) > budget:
+            text = text[:max(budget - 1, 0)].rstrip() + "…"
+
+        lines = [f"<b>{esc(header)}</b>", "", f"<i>« {esc(text)} »</i>", "",
+                 f"— <b>{esc(author)}</b>"]
+        if source:
+            lines.append(f"<i>{esc(source)}</i>")
+        return "\n".join(lines)
+
+    @staticmethod
+    def _quote_source_url(quote, lang: str):
+        """Page Wikiquote d'où la citation provient. Sert de bouton « Source »
+        et vaut attribution CC BY-SA. None quand le titre est absent : le
+        bouton est alors simplement omis."""
+        title = quote.wikiquote_fr if lang == "fr" else quote.wikiquote_en
+        if not title:
+            return None
+        return f"https://{lang}.wikiquote.org/wiki/{url_quote(title, safe='')}"
+
+    def _quote_share_url(self, quote, lang: str):
+        """Feuille de partage native de Telegram, pré-remplie avec la citation
+        et un deep link vers elle. Le payload porte le préfixe 'q-' qui le
+        distingue d'un slug de figure."""
+        if not self._bot_username:
+            return None
+        deep_link = f"https://t.me/{self._bot_username}?start=q-{quote.id}"
+        text, _ = self._quote_parts(quote, lang)
+        share_text = self._tl("share-quote-text", lang).format(text=text, author=quote.author)
+        return (f"https://t.me/share/url?url={url_quote(deep_link, safe='')}"
+                f"&text={url_quote(share_text, safe='')}")
+
+    def _quote_keyboard(self, locale: str, quote, lang: str) -> InlineKeyboardMarkup:
+        """`locale` porte les libellés (langue du lecteur), `lang` les liens
+        (langue dans laquelle la citation est servie)."""
+        rows = [[InlineKeyboardButton(self._tl("btn-another-quote", locale),
+                                      callback_data="random_quote")]]
+        second = []
+        source_url = self._quote_source_url(quote, lang)
+        if source_url:
+            second.append(InlineKeyboardButton(self._tl("btn-quote-source", locale), url=source_url))
+        share = self._quote_share_url(quote, lang)
+        if share:
+            second.append(InlineKeyboardButton(self._tl("btn-share", locale), url=share))
+        if second:
+            rows.append(second)
+        return InlineKeyboardMarkup(rows)
+
+    async def _deliver_quote(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, quote) -> None:
+        """Envoie une carte citation à un chat donné. Partagée par la commande
+        interactive et le job quotidien, comme `_deliver_figure`.
+
+        Aucune image : l'aperçu de lien est explicitement désactivé, sans quoi
+        Telegram tenterait de rendre une URL présente dans la source.
+
+        Forbidden (l'utilisateur a bloqué le bot) se propage, pour que les
+        appelants puissent réagir."""
+        lang = self._quote_lang(quote, locale)
+        text, source = self._quote_parts(quote, lang)
+        rendered = self._build_quote_text(text, quote.author, source,
+                                          self._tl("quote-header", locale))
+        await context.bot.send_message(chat_id=chat_id, text=rendered, parse_mode=ParseMode.HTML,
+                                       reply_markup=self._quote_keyboard(locale, quote, lang),
+                                       link_preview_options=LinkPreviewOptions(is_disabled=True))
 
     async def _deliver_figure(self, context: ContextTypes.DEFAULT_TYPE, chat_id, locale: str, figure) -> None:
         """Send a rendered figure card to a specific chat in a specific locale.

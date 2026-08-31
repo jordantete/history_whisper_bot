@@ -10,6 +10,7 @@ from telegram.ext import Application, ConversationHandler, ApplicationHandlerSto
 from src.database import Database
 from src.bot import Bot, FEEDBACK_WAITING
 from src.historical_figure import HistoricalFigure
+from src.quote import Quote
 
 
 def visible_len(html_str):
@@ -34,6 +35,21 @@ def make_context():
     context.bot.send_chat_action = AsyncMock(return_value=None)
     context.args = []
     return context
+
+
+def make_quote(**overrides):
+    """Citation de test, francophone par défaut — c'est la forme que produit le
+    pipeline tant que la dette de traduction EN n'est pas traitée."""
+    fields = {
+        "id": "abc1234567",
+        "author": "Napoléon Ier",
+        "lang": "fr",
+        "text_fr": "Les vraies conquêtes sont celles que l'on fait sur l'ignorance.",
+        "source_fr": "La campagne d'Égypte, Belin, 2018, p. 111",
+        "wikiquote_fr": "Napoléon Ier",
+    }
+    fields.update(overrides)
+    return Quote(**fields)
 
 
 class TestBot(unittest.IsolatedAsyncioTestCase):
@@ -638,3 +654,97 @@ class TestBot(unittest.IsolatedAsyncioTestCase):
         await self.bot._Bot__start_handler(update, context)
         texts = [c.kwargs["text"] for c in context.bot.send_message.call_args_list]
         self.assertIn("EN bio", texts[1])
+
+    def test_quote_lang_prefers_the_reader_locale(self):
+        quote = make_quote(text_en="True conquests are those made over ignorance.")
+        self.assertEqual(Bot._quote_lang(quote, "fr"), "fr")
+        self.assertEqual(Bot._quote_lang(quote, "en"), "en")
+
+    def test_quote_lang_falls_back_to_the_only_available_language(self):
+        """Le corpus est francophone tant que la dette EN n'est pas traitée :
+        un lecteur anglophone reçoit le français plutôt que rien."""
+        self.assertEqual(Bot._quote_lang(make_quote(), "en"), "fr")
+
+    def test_quote_parts_never_pair_a_text_with_the_other_language_source(self):
+        quote = make_quote(text_en="True conquests are those made over ignorance.",
+                           source_en="The Egyptian Campaign, Belin, 2018, p. 111")
+        text, source = Bot._quote_parts(quote, "en")
+        self.assertEqual(text, "True conquests are those made over ignorance.")
+        self.assertEqual(source, "The Egyptian Campaign, Belin, 2018, p. 111")
+
+    def test_build_quote_text_renders_header_quote_author_and_source(self):
+        rendered = Bot._build_quote_text(
+            "Le mieux est l'ennemi du bien.", "Voltaire",
+            "Dictionnaire philosophique, 1770", "💬 Citation du jour")
+        self.assertIn("<b>💬 Citation du jour</b>", rendered)
+        self.assertIn("« Le mieux est l'ennemi du bien. »", rendered)
+        self.assertIn("<b>Voltaire</b>", rendered)
+        self.assertIn("Dictionnaire philosophique, 1770", rendered)
+
+    def test_build_quote_text_omits_the_source_line_when_absent(self):
+        rendered = Bot._build_quote_text("Alea jacta est.", "César", "", "Header")
+        self.assertIn("César", rendered)
+        self.assertNotIn("<i></i>", rendered)
+
+    def test_build_quote_text_escapes_html_in_every_dynamic_part(self):
+        rendered = Bot._build_quote_text(
+            "1 < 2 & 3 > 2", "<script>", "Tom & Jerry, 1940", "Header")
+        self.assertNotIn("<script>", rendered)
+        self.assertIn("&lt;script&gt;", rendered)
+        self.assertIn("1 &lt; 2 &amp; 3 &gt; 2", rendered)
+        self.assertIn("Tom &amp; Jerry", rendered)
+
+    def test_build_quote_text_clamps_an_oversized_quote(self):
+        """Le plafond de 600 caractères est imposé au pipeline ; ce garde-fou
+        protège d'une entrée corrigée à la main, pas d'un cas nominal."""
+        rendered = Bot._build_quote_text("x" * 500, "A", "S", "H", limit=200)
+        self.assertLessEqual(visible_len(rendered), 200)
+        self.assertIn("…", rendered)
+
+    def test_quote_source_url_points_at_the_served_language_wikiquote(self):
+        quote = make_quote(wikiquote_en="Napoleon I of France")
+        self.assertEqual(Bot._quote_source_url(quote, "fr"),
+                         "https://fr.wikiquote.org/wiki/Napol%C3%A9on%20Ier")
+        self.assertEqual(Bot._quote_source_url(quote, "en"),
+                         "https://en.wikiquote.org/wiki/Napoleon%20I%20of%20France")
+
+    def test_quote_source_url_is_none_without_a_wikiquote_title(self):
+        self.assertIsNone(Bot._quote_source_url(make_quote(wikiquote_fr=None), "fr"))
+
+    async def test_deliver_quote_sends_an_html_card_without_a_preview(self):
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "fr", make_quote())
+        kwargs = context.bot.send_message.call_args.kwargs
+        self.assertEqual(kwargs["chat_id"], 42)
+        self.assertIn("Citation du jour", kwargs["text"])
+        self.assertIn("Napoléon Ier", kwargs["text"])
+        self.assertTrue(kwargs["link_preview_options"].is_disabled)
+
+    async def test_deliver_quote_uses_the_reader_locale_for_the_header(self):
+        """L'en-tête et les boutons suivent le lecteur ; le corps suit la langue
+        dans laquelle la citation existe."""
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "en", make_quote())
+        text = context.bot.send_message.call_args.kwargs["text"]
+        self.assertIn("Quote of the day", text)
+        self.assertIn("Les vraies conquêtes", text)
+
+    async def test_quote_keyboard_carries_another_source_and_share(self):
+        self.bot._bot_username = "HistoricalFiguresWhisperBot"
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "fr", make_quote())
+        markup = context.bot.send_message.call_args.kwargs["reply_markup"]
+        flat = [button for row in markup.inline_keyboard for button in row]
+        self.assertEqual(flat[0].callback_data, "random_quote")
+        urls = [button.url for button in flat if button.url]
+        self.assertTrue(any("fr.wikiquote.org" in url for url in urls))
+        self.assertTrue(any("t.me/share/url" in url for url in urls))
+        self.assertTrue(any("start%3Dq-abc1234567" in url for url in urls))
+
+    async def test_quote_share_button_is_omitted_before_the_username_is_known(self):
+        self.bot._bot_username = None
+        context = make_context()
+        await self.bot._deliver_quote(context, 42, "fr", make_quote())
+        markup = context.bot.send_message.call_args.kwargs["reply_markup"]
+        flat = [button for row in markup.inline_keyboard for button in row]
+        self.assertFalse(any(button.url and "t.me/share" in button.url for button in flat))
